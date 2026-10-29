@@ -34,14 +34,19 @@ export const fmt = (n) => {
   return neg ? '-' + s : s
 }
 const rnd = (a, b) => a + Math.random() * (b - a)
-const bizDef = (id) => BUSINESSES.find(b => b.id === (id || '').split('@')[0])
+// Pass 3.4 micro-opt: bizDef har branch har phase me chalta hai — Array.find ki jagah Map lookup (key-cache ke saath)
+const BIZ_BY_ID = new Map(BUSINESSES.map((b) => [b.id, b]))
+const BIZ_KEY_CACHE = new Map()
+const bizDef = (id) => { let d = BIZ_KEY_CACHE.get(id); if (!d) { d = BIZ_BY_ID.get((id || '').split('@')[0]); if (d) BIZ_KEY_CACHE.set(id, d) } return d }
 export { bizDef }
 
 export function netWorth(s) {
   let nw = s.cash + s.bank + s.sip + s.bonds - s.loan.amount
   for (const [id, o] of Object.entries(s.biz)) { const d = bizDef(id); nw += d.cost * (0.6 + 0.25 * o.lv) }
-  for (const [sym, q] of Object.entries(s.holdings)) { const st = [...s.stocks, ...s.commodities].find(x => x.sym === sym); if (st) nw += st.price * q }
-  for (const pid of s.props) { const p = PROPERTIES.find(x => x.id === pid); if (p) nw += p.cost * Math.pow(1.06, s.day / 365) }
+  const ASSET_BY_SYM = new Map([...s.stocks, ...s.commodities].map((x) => [x.sym, x])) // Pass 3.4: loop ke andar spread+find hata diya
+  for (const [sym, q] of Object.entries(s.holdings)) { const st = ASSET_BY_SYM.get(sym); if (st) nw += st.price * q }
+  const PROP_BY_ID = new Map(PROPERTIES.map((x) => [x.id, x]))
+  for (const pid of s.props) { const p = PROP_BY_ID.get(pid); if (p) nw += p.cost * Math.pow(1.06, s.day / 365) }
   for (const f of s.fds) nw += f.amt
   nw += wealthValue(s)
   return Math.round(nw)

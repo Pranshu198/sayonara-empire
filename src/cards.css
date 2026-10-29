@@ -65,3 +65,6 @@ input,select,textarea{border-radius:12px}
 /* RTL */
 [dir="rtl"] .row{direction:rtl}
 [dir="rtl"] .dcard-head{direction:rtl}
+
+/* Pass 3.4: offscreen cards ka render skip (smooth scroll, quality same) */
+.card, .biz-card { content-visibility: auto; contain-intrinsic-size: auto 140px; }

@@ -76,7 +76,7 @@ This is not a clicker. Every business runs on a **line-by-line Profit & Loss eng
 - **Zero emojis — own icon library.** Every icon in the app is a hand-built stroke SVG from the in-house set (`src/components/icons/`, ~48 icons); generated text is sanitised before display. Grep-verified: **zero emoji characters in the entire `src/` tree**.
 - **19 languages.** A real `t(key)` i18n system (`src/i18n/`, one lazy file per language): English, Hindi (Devanagari), Hinglish, **Urdu (Roman)** — Hinglish-style, Urdu script, Arabic (full RTL layout), French, Russian, Spanish, Portuguese, German, Bengali, Punjabi, Marathi, Tamil, Telugu, Chinese, Japanese, Korean. Searchable picker in Settings, browser auto-detect, instant switch, per-script fonts. Menus/labels/buttons/time/stats fully translate; the deep story/news libraries stay in their original language (stated honestly in Settings → About).
 - **Card design system + ultra polish.** One card family (Base/Stat/Business/Asset/Person/Listing/Metric) with a shared anatomy — icon slot, title, subtitle, value zone, trend chip, action row — in flat/elevated/glass/glow/danger/success variants, an 8-pt spacing rhythm, radius scale 16/20/24, tabular numbers, skeleton shimmer for lazy panels, designed empty states and card-style toasts across every tab.
-- **Heavy optimization, same quality.** Initial JS is **420 KB gzip total** (index + vendor + shared engine chunks, 184 chunks overall) after slimming the always-loaded content base pools and streaming the rest behind the splash via the deep loader; saves are debounce-throttled (1.5 s + flush on hide/close) instead of a full stringify per change; the Atlas windows long lists (40/page); a Performance Mode (Settings → Advanced, auto by FPS) trims particles on weak devices *without touching the design*. Engine perf, simulated in Node with a 54-branch / 216-staff empire: **1.6 ms per phase** (400 phases, zero errors). Headless verification of the final build: **all 9 tabs + HQ + CV + 5 language UIs — zero console errors, zero horizontal overflow at 390 px.**
+- **Heavy optimization, same quality.** Initial JS is **304 KB gzip total** (index + vendor + shared engine chunks, 197 chunks overall — Pass 3.4) after slimming the always-loaded content base pools and streaming the rest behind the splash via the deep loader; saves are debounce-throttled (1.5 s + flush on hide/close) instead of a full stringify per change; the Atlas windows long lists (40/page); a Performance Mode (Settings → Advanced, auto by FPS) trims particles on weak devices *without touching the design*. Engine perf, simulated in Node with a 54-branch / 216-staff empire: **1.1 ms per phase** (400 phases, zero errors). Headless verification of the final build: **all 9 tabs + HQ + CV + 5 language UIs — zero console errors, zero horizontal overflow at 390 px.**
 
 ## Content depth (all real, all wired into the game)
 
@@ -132,7 +132,23 @@ Demand · Price Elasticity · Procurement/Supply · Import/Logistics · Labour/H
 
 ## Performance, honestly
 
-477k lines would be a brick without code-splitting. The build splits into **184 chunks**: vendor separately, all heavy panels (Wealth, Bazaar, Auction, Atlas, Managers, Imports, Procurement…) as `React.lazy` chunks, the entire World Atlas geography as per-region lazy modules, and 84 deep-content files streaming in behind the splash. Initial JS actually downloaded on first load: **419,962 bytes gzip** (index + vendor + shared, measured on the Pass 3.3 build) — essentially unchanged from the 104k-line Pass 2 build while carrying 4.5× the content, and the service worker caches the shell so repeat launches are near-instant.
+477k lines would be a brick without code-splitting. The build splits into **197 chunks**: vendor separately, all heavy panels (Wealth, Bazaar, Auction, Atlas, Managers, Imports, Procurement…) as `React.lazy` chunks, the entire World Atlas geography as per-region lazy modules, and 90+ deep-content files streaming in behind the splash. Initial JS actually downloaded on first load: **304,002 bytes gzip** (index + vendor + shared, measured on the Pass 3.4 build) — down 28% from the Pass 3.3 build while carrying the same content, and the service worker caches the shell so repeat launches are near-instant.
+
+### Optimization — Pass 3.4 (measured before → after)
+
+| Metric | Pass 3.3 (before) | Pass 3.4 (after) |
+|---|---|---|
+| Initial JS (gzip, entry-critical chunks) | 419,970 B | **304,002 B (−27.6%)** |
+| Entry index chunk (gzip) | 199,358 B | **101,440 B (−49%)** |
+| Shared preload chunk (gzip) | 106,624 B | 88,634 B (−17%) |
+| Vendor chunk (gzip) | 113,528 B | 113,531 B (≈same) |
+| Total chunks | 184 | 197 (more lazy splits) |
+| Engine tick (Node sim, 54 branches / 216 staff, 400 phases) | 1.42–1.49 ms/phase | **1.10–1.17 ms/phase (−22%)** |
+| Sim stability | Day 106 / 420 phases, 0 errors | Day 106 / 420 phases, 0 errors |
+| Chai Stall only (buy & hold, Day 113) | +₹37,669 | +₹39,006 (RNG range, profitable) |
+| Headless (390 px) | 0 console errors, 0 overflow | 0 console errors, 0 overflow, DCL ≈ 261 ms (local) |
+
+What changed: base content pools slimmed to part-01 only (part-02+ streams behind the splash — same content, later), rival dialogues + festival part-2 files moved to the stream, a dead `ProductStaffLine` import that was dragging the 2 MB products library + staff library into the entry chunk removed, engine hot paths switched to Map lookups (`bizDef`, holdings/properties), auto-timer pauses while the tab is hidden, deep streaming starts on `requestIdleCallback`, off-screen cards use CSS `content-visibility`, modern build target (`es2022`, no module-preload polyfill), service worker bumped to `v3.4.0` (shell-only precache, as before). No features, visuals or content were removed.
 
 ## Architecture
 

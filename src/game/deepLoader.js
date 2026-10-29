@@ -17,9 +17,14 @@ import { PREDICTIONS } from './content/opportunities/index.js'
 import { ENCYCLOPEDIA } from './content/encyclopedia/terms.js'
 import { BULK_ACH } from './content/achievements/bulk.js'
 import { ALL_DIALOGUES } from './content/rivals/index.js'
+import { ALL_FESTIVALS } from './festivals/index.js'
 const jobs = []
 // Pass 3.2 optimization: bade base pools bhi stream — pehli paint sirf chhote base (parts 01-02) se
 function load(fn, target, name) { jobs.push(fn().then((m) => { if (m[name]) target.push(...m[name]) }).catch(() => {})) }
+load(() => import('./content/events/events02.js'), ALL_EVENTS, 'EVENTS_2')
+load(() => import('./content/customers/customers02.js'), ALL_CUSTOMERS, 'CUSTOMERS_2')
+load(() => import('./content/news/news02.js'), ALL_NEWS, 'NEWS_2')
+load(() => import('./content/decisions/cards02.js'), ALL_CARDS, 'CARDS_2')
 load(() => import('./content/events/events03.js'), ALL_EVENTS, 'EVENTS_3')
 load(() => import('./content/events/events04.js'), ALL_EVENTS, 'EVENTS_4')
 load(() => import('./content/events/events05.js'), ALL_EVENTS, 'EVENTS_5')
@@ -109,6 +114,14 @@ load(() => import('./content/encyclopedia/terms2.js'), ENCYCLOPEDIA, 'ENCYCLOPED
 load(() => import('./content/encyclopedia/terms3.js'), ENCYCLOPEDIA, 'ENCYCLOPEDIA_3')
 load(() => import('./content/achievements/bulk2.js'), BULK_ACH, 'BULK_ACH_2')
 load(() => import('./content/achievements/bulk3.js'), BULK_ACH, 'BULK_ACH_3')
+load(() => import('./festivals/india2.js'), ALL_FESTIVALS, 'FESTIVALS_INDIA_2')
+load(() => import('./festivals/world2.js'), ALL_FESTIVALS, 'FESTIVALS_WORLD_2')
+load(() => import('./content/rivals/simran.js'), ALL_DIALOGUES, 'DIALOGUES')
+load(() => import('./content/rivals/vikram.js'), ALL_DIALOGUES, 'DIALOGUES')
+load(() => import('./content/rivals/ananya.js'), ALL_DIALOGUES, 'DIALOGUES')
+load(() => import('./content/rivals/rohit.js'), ALL_DIALOGUES, 'DIALOGUES')
+load(() => import('./content/rivals/priya.js'), ALL_DIALOGUES, 'DIALOGUES')
+load(() => import('./content/rivals/sharma.js'), ALL_DIALOGUES, 'DIALOGUES')
 load(() => import('./content/rivals/dialogues_simran2.js'), ALL_DIALOGUES, 'DIALOGUES_DEEP')
 load(() => import('./content/rivals/dialogues_vikram2.js'), ALL_DIALOGUES, 'DIALOGUES_DEEP')
 load(() => import('./content/rivals/dialogues_ananya2.js'), ALL_DIALOGUES, 'DIALOGUES_DEEP')

@@ -1,10 +1,8 @@
 // Global Festivals — saari duniya ke tyohar, game calendar (360 din = 12 mahine x 30 din) par
 // Engine yahi se har sheher ke liye sakriya tyohar aur demand asar nikalta hai
 import { FESTIVALS_INDIA } from './india.js'
-import { FESTIVALS_INDIA_2 } from './india2.js'
 import { FESTIVALS_WORLD } from './world.js'
-import { FESTIVALS_WORLD_2 } from './world2.js'
-export const ALL_FESTIVALS = [FESTIVALS_INDIA, FESTIVALS_INDIA_2, FESTIVALS_WORLD, FESTIVALS_WORLD_2].flat()
+export const ALL_FESTIVALS = [FESTIVALS_INDIA, FESTIVALS_WORLD].flat() // base (Pass 3.4 diet); india2/world2 deepLoader se stream hote hain (live array)
 export const dayOfYear = (day) => ((Math.max(1, day) - 1) % 360) + 1
 export const monthOfDay = (day) => Math.floor((dayOfYear(day) - 1) / 30) + 1
 export const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']

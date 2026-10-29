@@ -6,7 +6,6 @@ import { Section, AnimatedNumber, Burst, Toast } from './components/ui.jsx'
 import { Splash } from './components/Splash.jsx'
 import { PhaseArc } from './components/PhaseArc.jsx'
 import { FpsMeter } from './components/FpsMeter.jsx'
-import { ProductStaffLine } from './components/ProductStaffLine.jsx'
 import { cityOf, cityNameOf, HOME_CITY } from './game/atlas/cityIndex.js'
 import { activeFestivals, seasonOf } from './game/festivals/index.js'
 import { stockNewsOf } from './game/stocknews/index.js'
@@ -160,7 +159,7 @@ export default function App() {
   useEffect(() => {
     if (s.mode !== 'auto') return
     const ms = (s.dayLen * 1000 / 4) / s.speed
-    const iv = setInterval(() => setS(p => phaseTick(p)), ms)
+    const iv = setInterval(() => { if (document.hidden) return; setS(p => phaseTick(p)) }, ms) // Pass 3.4: tab hidden ho to auto-timer pause (battery)
     return () => clearInterval(iv)
   }, [s.mode, s.dayLen, s.speed])
 

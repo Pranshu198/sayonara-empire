@@ -2,7 +2,7 @@
    Versioned cache: naam badlo to purana cache khud saaf ho jata hai, update turant land hota hai.
    Strategy: navigations = network-first (hamesha fresh index, offline par cache fallback),
    hashed assets / icons / manifest = cache-first (immutable). */
-const VERSION = 'v3.3.1'
+const VERSION = 'v3.4.0'
 const CACHE = `sayonara-empire-${VERSION}`
 const CORE = [
   './',
