@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useAnimatedSpring } from '../hooks/useAnimatedSpring.js'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export function Section({ id, title, right, children, defaultOpen = true }) {
@@ -23,16 +24,8 @@ export function Section({ id, title, right, children, defaultOpen = true }) {
 }
 
 export function AnimatedNumber({ value, format }) {
-  const [display, setDisplay] = useState(value)
-  const prev = useRef(value)
-  useEffect(() => {
-    const from = prev.current, to = value, t0 = performance.now(), dur = 600
-    let raf
-    const step = (t) => { const p = Math.min(1, (t - t0) / dur); const e = 1 - Math.pow(1 - p, 3); setDisplay(from + (to - from) * e); if (p < 1) raf = requestAnimationFrame(step); else prev.current = to }
-    raf = requestAnimationFrame(step)
-    return () => cancelAnimationFrame(raf)
-  }, [value])
-  return <span>{format(display)}</span>
+  const text = useAnimatedSpring(value, format)
+  return <motion.span>{text}</motion.span>
 }
 
 export function Burst({ burstKey }) {

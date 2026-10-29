@@ -1,0 +1,1603 @@
+// Sheher Times headline templates — part 6: {player}, {rival}, {biz}, {stock} bhar kar akhbaar banta hai
+export const NEWS_6 = [
+  {
+    id: "nw_2001", kind: "city",
+    tpl: "Chandni Chowk ki metro line me safai abhiyan chala. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2002", kind: "market",
+    tpl: "Bank ke share naye record par pahunche — Samajhdar paisa kabhi sota nahi.",
+  },
+  {
+    id: "nw_2003", kind: "player",
+    tpl: "Naujawan udyami {player} ki dukaan par subah se line hai. Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2004", kind: "city",
+    tpl: "Rohini ki metro line ke daam badhne ke sanket hain. Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2005", kind: "economy",
+    tpl: "Chhote karobaron ke loan me rahat ke sanket hain. Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2006", kind: "market",
+    tpl: "SIP ka paisa naye record par pahunche — Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2007", kind: "market",
+    tpl: "SIP ka paisa ne aaj sabko chonka diya. Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2008", kind: "player",
+    tpl: "Naujawan udyami {player} ne staff ke saath jeet ka jashn manaya. Grahak khush, to sab khush.",
+  },
+  {
+    id: "nw_2009", kind: "economy",
+    tpl: "Byaaj darein se aam aadmi khush hai. Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2010", kind: "rival",
+    tpl: "Bazaar ke purane khiladi {rival} ki girti saakh par sawal uth rahe hain. Bazaar garam hai.",
+  },
+  {
+    id: "nw_2011", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} Karol Bagh me apna adda majboot kar raha hai. Takkar aur dilchasp hogi.",
+  },
+  {
+    id: "nw_2012", kind: "festival",
+    tpl: "Chhath ka bazaar par Pitampura saj gaya hai — Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2013", kind: "player",
+    tpl: "Naujawan udyami {player} ne kimaton ka naya khel dikhaya — Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2014", kind: "city",
+    tpl: "Laxmi Nagar ki metro line ki kismat chamak sakti hai — Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2015", kind: "city",
+    tpl: "Laxmi Nagar me bijli vyavastha me safai abhiyan chala — Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2016", kind: "festival",
+    tpl: "Lohri ki taiyari ke liye vishesh bazaar laga hai. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2017", kind: "market",
+    tpl: "{stock} me chhote investors ki bheed badhi. Samajhdar paisa kabhi sota nahi.",
+  },
+  {
+    id: "nw_2018", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} ne chup chaap bada hissa kharida. Kya {player} jawab dega?",
+  },
+  {
+    id: "nw_2019", kind: "city",
+    tpl: "Karol Bagh ka park ke dukaan-daar khush hain — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2020", kind: "player",
+    tpl: "{biz} wala {player} ki safalta ki kahani fail rahi hai. Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2021", kind: "festival",
+    tpl: "Durga Puja ka bazaar me dukaanen raat der tak khuli hain. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2022", kind: "economy",
+    tpl: "Mehengaai se aam aadmi khush hai — Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2023", kind: "festival",
+    tpl: "Pongal ka bazaar par Karol Bagh saj gaya hai",
+  },
+  {
+    id: "nw_2024", kind: "city",
+    tpl: "Uttam Nagar ka park me badlav ki leher hai — Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2025", kind: "festival",
+    tpl: "Durga Puja ki raunak ke liye vishesh bazaar laga hai — Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2026", kind: "player",
+    tpl: "{player} aur unka {biz} ne staff ke saath jeet ka jashn manaya. Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2027", kind: "rival",
+    tpl: "Bazaar ke purane khiladi {rival} ne naya daav chala hai — Sheher ki nazar is takkar par hai.",
+  },
+  {
+    id: "nw_2028", kind: "city",
+    tpl: "Rohini ka park me raat ki raunak badhi hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2029", kind: "market",
+    tpl: "Bank ke share par bade khiladiyon ki nazar hai. Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2030", kind: "city",
+    tpl: "Sarojini Nagar me nayi sadken banne ki taiyari me hai. Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2031", kind: "market",
+    tpl: "SIP ka paisa me girawat se investors dare — Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2032", kind: "rival",
+    tpl: "Bazaar ke purane khiladi {rival} bade saude ki taiyari me hai",
+  },
+  {
+    id: "nw_2033", kind: "rival",
+    tpl: "{rival} ka samrajya Rohini me apna adda majboot kar raha hai. Takkar aur dilchasp hogi.",
+  },
+  {
+    id: "nw_2034", kind: "city",
+    tpl: "Chandni Chowk ki paani supply me badlav ki leher hai. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2035", kind: "economy",
+    tpl: "GST ka naya niyam par charcha garam hai",
+  },
+  {
+    id: "nw_2036", kind: "market",
+    tpl: "Dividend ka season naye record par pahunche",
+  },
+  {
+    id: "nw_2037", kind: "festival",
+    tpl: "Eid ka bazaar ke liye vishesh bazaar laga hai. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2038", kind: "city",
+    tpl: "Sarojini Nagar ka bazaar banne ki taiyari me hai — Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2039", kind: "festival",
+    tpl: "Onam ka bazaar ne record tod diya",
+  },
+  {
+    id: "nw_2040", kind: "player",
+    tpl: "{player} aur unka {biz} ka jadoo grahakon par chala. Grahak khush, to sab khush.",
+  },
+  {
+    id: "nw_2041", kind: "city",
+    tpl: "Mayur Vihar ki metro line ke dukaan-daar khush hain. Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2042", kind: "economy",
+    tpl: "Shaadi season ka kharcha se vyapariyon me ummeed jagi hai",
+  },
+  {
+    id: "nw_2043", kind: "city",
+    tpl: "Laxmi Nagar me naya flyover banne ki taiyari me hai",
+  },
+  {
+    id: "nw_2044", kind: "rival",
+    tpl: "{rival} ka samrajya ki dukaanon par offer ki baadh hai — Sheher ki nazar is takkar par hai.",
+  },
+  {
+    id: "nw_2045", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} ki dukaanon par offer ki baadh hai. Kya {player} jawab dega?",
+  },
+  {
+    id: "nw_2046", kind: "city",
+    tpl: "Mayur Vihar ka bazaar me raat ki raunak badhi hai. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2047", kind: "player",
+    tpl: "{biz} wala {player} ne purane record tod diye — Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2048", kind: "festival",
+    tpl: "Navratri ki taiyari me mithaas ki demand aasmaan par hai",
+  },
+  {
+    id: "nw_2049", kind: "player",
+    tpl: "{player} aur unka {biz} ne bazaar me dhoom macha di — Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2050", kind: "player",
+    tpl: "{player} ka {biz} ki safalta ki kahani fail rahi hai. Mohalla Times ki khaas report.",
+  },
+  {
+    id: "nw_2051", kind: "market",
+    tpl: "Crypto bazaar par bade khiladiyon ki nazar hai — Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2052", kind: "economy",
+    tpl: "Digital payment par charcha garam hai. Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2053", kind: "city",
+    tpl: "Chandni Chowk me bijli vyavastha me badlav ki leher hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2054", kind: "economy",
+    tpl: "Digital payment se vyapariyon me ummeed jagi hai. Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2055", kind: "player",
+    tpl: "Sheher ke ubharte sitare {player} ka agla plan sabko hairaan kar sakta hai — Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2056", kind: "festival",
+    tpl: "Baisakhi ka bazaar ke liye vishesh bazaar laga hai",
+  },
+  {
+    id: "nw_2057", kind: "market",
+    tpl: "Sensex naye record par pahunche. Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2058", kind: "festival",
+    tpl: "Durga Puja se pehle ki khareedi ne record tod diya — Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2059", kind: "player",
+    tpl: "Naujawan udyami {player} ne bazaar me dhoom macha di. Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2060", kind: "rival",
+    tpl: "{rival} ki chal se bazaar me hulchul hai — Sheher ki nazar is takkar par hai.",
+  },
+  {
+    id: "nw_2061", kind: "festival",
+    tpl: "Baisakhi ki raunak ke liye vishesh bazaar laga hai. Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2062", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} ne ek aur sampatti apne naam ki — Kya {player} jawab dega?",
+  },
+  {
+    id: "nw_2063", kind: "economy",
+    tpl: "Chhote karobaron ke loan me sarkar ka naya elaan hai — Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2064", kind: "city",
+    tpl: "Saket ki paani supply ke dukaan-daar khush hain — Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2065", kind: "market",
+    tpl: "Crypto bazaar me tez uchhaal dekha gaya — Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2066", kind: "economy",
+    tpl: "Shaadi season ka kharcha ki disha badal sakti hai. Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2067", kind: "city",
+    tpl: "Gurgaon ki metro line par kaam tez ho gaya hai. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2068", kind: "city",
+    tpl: "Saket me bijli vyavastha ke dukaan-daar khush hain. Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2069", kind: "market",
+    tpl: "Crypto bazaar ne aaj sabko chonka diya — Samajhdar paisa kabhi sota nahi.",
+  },
+  {
+    id: "nw_2070", kind: "city",
+    tpl: "Pitampura me bijli vyavastha par kaam tez ho gaya hai",
+  },
+  {
+    id: "nw_2071", kind: "player",
+    tpl: "{player} ki dukaan {biz} ne staff ke saath jeet ka jashn manaya. Grahak khush, to sab khush.",
+  },
+  {
+    id: "nw_2072", kind: "city",
+    tpl: "Mayur Vihar me naya flyover ki kismat chamak sakti hai — Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2073", kind: "economy",
+    tpl: "Export ka karobar ne record toda hai. Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2074", kind: "market",
+    tpl: "Dividend ka season me girawat se investors dare — Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2075", kind: "city",
+    tpl: "Chandni Chowk ka bazaar banne ki taiyari me hai — Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2076", kind: "festival",
+    tpl: "Lohri se pehle ki khareedi zoron par hai. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2077", kind: "player",
+    tpl: "{biz} wala {player} ne mohalle ka naam roshan kiya",
+  },
+  {
+    id: "nw_2078", kind: "player",
+    tpl: "{player} ki dukaan {biz} aaj kal har zubaan par hai — Ye to bas shuruaat batayi ja rahi hai.",
+  },
+  {
+    id: "nw_2079", kind: "city",
+    tpl: "Rohini ki paani supply ke dukaan-daar khush hain — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2080", kind: "player",
+    tpl: "{player} aur unka {biz} ka jadoo grahakon par chala — Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2081", kind: "player",
+    tpl: "Sheher ke ubharte sitare {player} ne mohalle ka naam roshan kiya. Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2082", kind: "festival",
+    tpl: "Christmas ka bazaar me dukaanen raat der tak khuli hain. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2083", kind: "market",
+    tpl: "Bank ke share ne aaj sabko chonka diya. Samajhdar paisa kabhi sota nahi.",
+  },
+  {
+    id: "nw_2084", kind: "player",
+    tpl: "{biz} wala {player} ne bazaar me dhoom macha di. Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2085", kind: "economy",
+    tpl: "Petrol ke daam ka asar har dukaan par padega — Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2086", kind: "festival",
+    tpl: "Makar Sankranti ka bazaar me dukaanen raat der tak khuli hain",
+  },
+  {
+    id: "nw_2087", kind: "city",
+    tpl: "Rajouri ka bazaar par kaam tez ho gaya hai — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2088", kind: "city",
+    tpl: "Karol Bagh ka park par kaam tez ho gaya hai — Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2089", kind: "market",
+    tpl: "Crypto bazaar me badi halchal hai — Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2090", kind: "player",
+    tpl: "Sheher ke ubharte sitare {player} ne staff ke saath jeet ka jashn manaya — Mohalla Times ki khaas report.",
+  },
+  {
+    id: "nw_2091", kind: "city",
+    tpl: "Laxmi Nagar ka park par kaam tez ho gaya hai",
+  },
+  {
+    id: "nw_2092", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} Connaught Place me apna adda majboot kar raha hai. Sheher ki nazar is takkar par hai.",
+  },
+  {
+    id: "nw_2093", kind: "rival",
+    tpl: "Bazaar ke purane khiladi {rival} bade saude ki taiyari me hai. Bazaar garam hai.",
+  },
+  {
+    id: "nw_2094", kind: "city",
+    tpl: "Laxmi Nagar ka mashhoor chowk par kaam tez ho gaya hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2095", kind: "market",
+    tpl: "Property ke daam ne aaj sabko chonka diya — Samajhdar paisa kabhi sota nahi.",
+  },
+  {
+    id: "nw_2096", kind: "festival",
+    tpl: "Holi ki raunak me dukaanen raat der tak khuli hain",
+  },
+  {
+    id: "nw_2097", kind: "city",
+    tpl: "Rohini ki paani supply ki kismat chamak sakti hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2098", kind: "rival",
+    tpl: "Bazaar ke purane khiladi {rival} Lajpat Nagar me apna adda majboot kar raha hai. Bazaar garam hai.",
+  },
+  {
+    id: "nw_2099", kind: "festival",
+    tpl: "Rakhi ka bazaar me mithaas ki demand aasmaan par hai — Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2100", kind: "economy",
+    tpl: "Fasal ki paidawar ka asar har dukaan par padega — Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2101", kind: "player",
+    tpl: "{biz} wala {player} ki dukaan par subah se line hai — Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2102", kind: "rival",
+    tpl: "{rival} ka samrajya ne {player} ko seedhi chunauti di hai — Dekhte hain kaun baazi marta hai.",
+  },
+  {
+    id: "nw_2103", kind: "player",
+    tpl: "{player} aur unka {biz} ki mehnat rang la rahi hai",
+  },
+  {
+    id: "nw_2104", kind: "city",
+    tpl: "Gurgaon me naya flyover ke daam badhne ke sanket hain. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2105", kind: "festival",
+    tpl: "Makar Sankranti ki taiyari me dukaanen raat der tak khuli hain. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2106", kind: "market",
+    tpl: "Crypto bazaar me girawat se investors dare — Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2107", kind: "city",
+    tpl: "Connaught Place ka bazaar me safai abhiyan chala. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2108", kind: "city",
+    tpl: "Janakpuri ka bazaar me raat ki raunak badhi hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2109", kind: "festival",
+    tpl: "Baisakhi se pehle ki khareedi par Mayur Vihar saj gaya hai. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2110", kind: "rival",
+    tpl: "{rival} ne ek aur sampatti apne naam ki — Dekhte hain kaun baazi marta hai.",
+  },
+  {
+    id: "nw_2111", kind: "city",
+    tpl: "Connaught Place ka mashhoor chowk me badlav ki leher hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2112", kind: "festival",
+    tpl: "Diwali se pehle ki khareedi ke liye vishesh bazaar laga hai. Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2113", kind: "city",
+    tpl: "Dwarka ki metro line banne ki taiyari me hai. Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2114", kind: "city",
+    tpl: "Lajpat Nagar ki paani supply me safai abhiyan chala. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2115", kind: "festival",
+    tpl: "Karwa Chauth se pehle ki khareedi ne record tod diya — Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2116", kind: "player",
+    tpl: "{biz} wala {player} ne mohalle ka naam roshan kiya. Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2117", kind: "city",
+    tpl: "Janakpuri me bijli vyavastha ke daam badhne ke sanket hain",
+  },
+  {
+    id: "nw_2118", kind: "market",
+    tpl: "Sona-chaandi me girawat se investors dare",
+  },
+  {
+    id: "nw_2119", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} ki girti saakh par sawal uth rahe hain — Bazaar garam hai.",
+  },
+  {
+    id: "nw_2120", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} ki girti saakh par sawal uth rahe hain",
+  },
+  {
+    id: "nw_2121", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} ki dukaanon par offer ki baadh hai. Sheher ki nazar is takkar par hai.",
+  },
+  {
+    id: "nw_2122", kind: "festival",
+    tpl: "Karwa Chauth ki taiyari par Karol Bagh saj gaya hai. Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2123", kind: "city",
+    tpl: "Sarojini Nagar ki metro line ke daam badhne ke sanket hain — Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2124", kind: "market",
+    tpl: "Property ke daam par bade khiladiyon ki nazar hai — Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2125", kind: "city",
+    tpl: "Karol Bagh ka bazaar ke dukaan-daar khush hain. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2126", kind: "festival",
+    tpl: "Rakhi ki taiyari me dukaanen raat der tak khuli hain. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2127", kind: "market",
+    tpl: "SIP ka paisa ne aaj sabko chonka diya — Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2128", kind: "festival",
+    tpl: "Dussehra ki raunak par Saket saj gaya hai. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2129", kind: "economy",
+    tpl: "GST ka naya niyam me rahat ke sanket hain",
+  },
+  {
+    id: "nw_2130", kind: "city",
+    tpl: "Rohini ka mashhoor chowk ki kismat chamak sakti hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2131", kind: "market",
+    tpl: "Sona-chaandi me girawat se investors dare. Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2132", kind: "player",
+    tpl: "{player} aur unka {biz} ne mohalle ka naam roshan kiya — Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2133", kind: "city",
+    tpl: "Karol Bagh me bijli vyavastha me safai abhiyan chala. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2134", kind: "city",
+    tpl: "Lajpat Nagar me bijli vyavastha par kaam tez ho gaya hai",
+  },
+  {
+    id: "nw_2135", kind: "city",
+    tpl: "Lajpat Nagar me nayi sadken ke daam badhne ke sanket hain. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2136", kind: "city",
+    tpl: "Uttam Nagar me nayi sadken ke daam badhne ke sanket hain. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2137", kind: "city",
+    tpl: "Pitampura me nayi sadken ki kismat chamak sakti hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2138", kind: "festival",
+    tpl: "Rakhi se pehle ki khareedi ke liye vishesh bazaar laga hai. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2139", kind: "player",
+    tpl: "{player} ki dukaan {biz} ki dukaan par subah se line hai — Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2140", kind: "city",
+    tpl: "Gurgaon ki metro line me raat ki raunak badhi hai — Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2141", kind: "economy",
+    tpl: "Digital payment ki disha badal sakti hai",
+  },
+  {
+    id: "nw_2142", kind: "festival",
+    tpl: "Navratri se pehle ki khareedi ke liye vishesh bazaar laga hai. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2143", kind: "player",
+    tpl: "{player} aur unka {biz} ne ek aur kadam aage badhaya — Grahak khush, to sab khush.",
+  },
+  {
+    id: "nw_2144", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} Janakpuri me apna adda majboot kar raha hai. Kya {player} jawab dega?",
+  },
+  {
+    id: "nw_2145", kind: "economy",
+    tpl: "Chhote karobaron ke loan ki disha badal sakti hai. Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2146", kind: "festival",
+    tpl: "Navratri ki taiyari me mithaas ki demand aasmaan par hai. Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2147", kind: "market",
+    tpl: "Dividend ka season me girawat se investors dare — Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2148", kind: "city",
+    tpl: "Saket ka park me badlav ki leher hai — Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2149", kind: "festival",
+    tpl: "Baisakhi se pehle ki khareedi me mithaas ki demand aasmaan par hai. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2150", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} ne naya daav chala hai. Sheher ki nazar is takkar par hai.",
+  },
+  {
+    id: "nw_2151", kind: "city",
+    tpl: "Laxmi Nagar me bijli vyavastha me raat ki raunak badhi hai",
+  },
+  {
+    id: "nw_2152", kind: "festival",
+    tpl: "Onam ka bazaar me mithaas ki demand aasmaan par hai — Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2153", kind: "festival",
+    tpl: "Dussehra ki raunak ke liye vishesh bazaar laga hai. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2154", kind: "player",
+    tpl: "{biz} wala {player} ne staff ke saath jeet ka jashn manaya — Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2155", kind: "festival",
+    tpl: "Navratri se pehle ki khareedi zoron par hai. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2156", kind: "player",
+    tpl: "Naujawan udyami {player} aaj kal har zubaan par hai — Ye to bas shuruaat batayi ja rahi hai.",
+  },
+  {
+    id: "nw_2157", kind: "festival",
+    tpl: "Dussehra ka bazaar par Mayur Vihar saj gaya hai. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2158", kind: "city",
+    tpl: "Pitampura ki paani supply ki kismat chamak sakti hai — Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2159", kind: "player",
+    tpl: "{biz} ke peeche ka dimaag {player} ka jadoo grahakon par chala — Grahak khush, to sab khush.",
+  },
+  {
+    id: "nw_2160", kind: "festival",
+    tpl: "Eid ka bazaar zoron par hai — Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2161", kind: "city",
+    tpl: "Sarojini Nagar me nayi sadken banne ki taiyari me hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2162", kind: "city",
+    tpl: "Chandni Chowk me bijli vyavastha banne ki taiyari me hai. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2163", kind: "player",
+    tpl: "{player} ki dukaan {biz} ka jadoo grahakon par chala — Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2164", kind: "player",
+    tpl: "{player} ka {biz} ne mohalle ka naam roshan kiya. Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2165", kind: "player",
+    tpl: "{player} ki dukaan {biz} ne staff ke saath jeet ka jashn manaya",
+  },
+  {
+    id: "nw_2166", kind: "market",
+    tpl: "Dividend ka season ne aaj sabko chonka diya. Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2167", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} bade saude ki taiyari me hai — Takkar aur dilchasp hogi.",
+  },
+  {
+    id: "nw_2168", kind: "market",
+    tpl: "Crypto bazaar me tez uchhaal dekha gaya. Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2169", kind: "player",
+    tpl: "{player} ka {biz} ka agla plan sabko hairaan kar sakta hai. Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2170", kind: "economy",
+    tpl: "Mehengaai ne record toda hai. Apne hisaab par nazar rakho.",
+  },
+  {
+    id: "nw_2171", kind: "player",
+    tpl: "{biz} ke peeche ka dimaag {player} ne staff ke saath jeet ka jashn manaya — Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2172", kind: "rival",
+    tpl: "{rival} Sarojini Nagar me apna adda majboot kar raha hai",
+  },
+  {
+    id: "nw_2173", kind: "economy",
+    tpl: "Chhote karobaron ke loan se aam aadmi khush hai. Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2174", kind: "city",
+    tpl: "Karol Bagh ka bazaar ki kismat chamak sakti hai",
+  },
+  {
+    id: "nw_2175", kind: "player",
+    tpl: "Naujawan udyami {player} ki dukaan par subah se line hai",
+  },
+  {
+    id: "nw_2176", kind: "city",
+    tpl: "Dwarka ka bazaar me raat ki raunak badhi hai — Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2177", kind: "city",
+    tpl: "Chandni Chowk ki paani supply par kaam tez ho gaya hai — Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2178", kind: "player",
+    tpl: "{biz} ke malik {player} ne purane record tod diye",
+  },
+  {
+    id: "nw_2179", kind: "player",
+    tpl: "{biz} wala {player} ka jadoo grahakon par chala — Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2180", kind: "market",
+    tpl: "Sensex me girawat se investors dare. Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2181", kind: "city",
+    tpl: "Connaught Place ki metro line banne ki taiyari me hai. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2182", kind: "rival",
+    tpl: "{rival} ka samrajya ka kharcha bhi badha, naam bhi — Dekhte hain kaun baazi marta hai.",
+  },
+  {
+    id: "nw_2183", kind: "economy",
+    tpl: "Mehengaai ne record toda hai — Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2184", kind: "city",
+    tpl: "Connaught Place ki metro line me raat ki raunak badhi hai — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2185", kind: "market",
+    tpl: "SIP ka paisa naye record par pahunche — Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2186", kind: "city",
+    tpl: "Karol Bagh ka mashhoor chowk me raat ki raunak badhi hai",
+  },
+  {
+    id: "nw_2187", kind: "player",
+    tpl: "{player} ka {biz} ka agla plan sabko hairaan kar sakta hai. Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2188", kind: "city",
+    tpl: "Dwarka me nayi sadken ke dukaan-daar khush hain",
+  },
+  {
+    id: "nw_2189", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} ki ek galti mehngi pad sakti hai",
+  },
+  {
+    id: "nw_2190", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} ne ek aur sampatti apne naam ki — Bazaar garam hai.",
+  },
+  {
+    id: "nw_2191", kind: "festival",
+    tpl: "Lohri ki taiyari me dukaanen raat der tak khuli hain. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2192", kind: "city",
+    tpl: "Laxmi Nagar ka bazaar par kaam tez ho gaya hai. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2193", kind: "market",
+    tpl: "SIP ka paisa me girawat se investors dare",
+  },
+  {
+    id: "nw_2194", kind: "city",
+    tpl: "Sarojini Nagar me naya flyover me safai abhiyan chala — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2195", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} ka kharcha bhi badha, naam bhi",
+  },
+  {
+    id: "nw_2196", kind: "city",
+    tpl: "Saket me naya flyover ke dukaan-daar khush hain — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2197", kind: "city",
+    tpl: "Saket ka bazaar par kaam tez ho gaya hai",
+  },
+  {
+    id: "nw_2198", kind: "festival",
+    tpl: "Karwa Chauth se pehle ki khareedi me mithaas ki demand aasmaan par hai. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2199", kind: "economy",
+    tpl: "Fasal ki paidawar me rahat ke sanket hain — Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2200", kind: "player",
+    tpl: "{biz} ke peeche ka dimaag {player} ne purane record tod diye — Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2201", kind: "city",
+    tpl: "Janakpuri me bijli vyavastha ke dukaan-daar khush hain — Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2202", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} Rajouri me apna adda majboot kar raha hai",
+  },
+  {
+    id: "nw_2203", kind: "market",
+    tpl: "Property ke daam me badi halchal hai",
+  },
+  {
+    id: "nw_2204", kind: "city",
+    tpl: "Lajpat Nagar me naya flyover par kaam tez ho gaya hai. Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2205", kind: "city",
+    tpl: "Lajpat Nagar me bijli vyavastha par kaam tez ho gaya hai — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2206", kind: "player",
+    tpl: "{player} ka {biz} ne bazaar me dhoom macha di. Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2207", kind: "festival",
+    tpl: "Chhath se pehle ki khareedi par Gurgaon saj gaya hai. Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2208", kind: "festival",
+    tpl: "Dussehra ka bazaar par Karol Bagh saj gaya hai — Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2209", kind: "city",
+    tpl: "Pitampura ka bazaar me safai abhiyan chala — Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2210", kind: "player",
+    tpl: "Naujawan udyami {player} aaj kal har zubaan par hai. Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2211", kind: "market",
+    tpl: "Bank ke share naye record par pahunche — Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2212", kind: "market",
+    tpl: "Dividend ka season par bade khiladiyon ki nazar hai. Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2213", kind: "festival",
+    tpl: "Durga Puja ka bazaar me dukaanen raat der tak khuli hain",
+  },
+  {
+    id: "nw_2214", kind: "market",
+    tpl: "Property ke daam me girawat se investors dare — Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2215", kind: "city",
+    tpl: "Karol Bagh me bijli vyavastha me badlav ki leher hai. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2216", kind: "festival",
+    tpl: "Durga Puja se pehle ki khareedi ne record tod diya. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2217", kind: "city",
+    tpl: "Connaught Place ka park par kaam tez ho gaya hai",
+  },
+  {
+    id: "nw_2218", kind: "festival",
+    tpl: "Lohri ki raunak ke liye vishesh bazaar laga hai",
+  },
+  {
+    id: "nw_2219", kind: "rival",
+    tpl: "{rival} Laxmi Nagar me apna adda majboot kar raha hai. Takkar aur dilchasp hogi.",
+  },
+  {
+    id: "nw_2220", kind: "festival",
+    tpl: "Pongal se pehle ki khareedi par Janakpuri saj gaya hai. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2221", kind: "city",
+    tpl: "Laxmi Nagar ka park me badlav ki leher hai. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2222", kind: "player",
+    tpl: "{biz} ke malik {player} ki mehnat rang la rahi hai — Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2223", kind: "player",
+    tpl: "Sheher ke ubharte sitare {player} ne staff ke saath jeet ka jashn manaya",
+  },
+  {
+    id: "nw_2224", kind: "city",
+    tpl: "Mayur Vihar me bijli vyavastha me badlav ki leher hai. Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2225", kind: "festival",
+    tpl: "Onam ki raunak par Janakpuri saj gaya hai. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2226", kind: "player",
+    tpl: "{biz} ke malik {player} aaj kal har zubaan par hai. Ye to bas shuruaat batayi ja rahi hai.",
+  },
+  {
+    id: "nw_2227", kind: "player",
+    tpl: "Sheher ke ubharte sitare {player} ki mehnat rang la rahi hai. Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2228", kind: "economy",
+    tpl: "Byaaj darein ne record toda hai — Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2229", kind: "market",
+    tpl: "Property ke daam naye record par pahunche — Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2230", kind: "economy",
+    tpl: "Mehengaai me rahat ke sanket hain. Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2231", kind: "city",
+    tpl: "Lajpat Nagar me nayi sadken me badlav ki leher hai — Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2232", kind: "player",
+    tpl: "{biz} ke peeche ka dimaag {player} ka agla plan sabko hairaan kar sakta hai — Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2233", kind: "festival",
+    tpl: "Holi ka bazaar me mithaas ki demand aasmaan par hai — Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2234", kind: "player",
+    tpl: "{player} aur unka {biz} ka agla plan sabko hairaan kar sakta hai",
+  },
+  {
+    id: "nw_2235", kind: "player",
+    tpl: "{player} aur unka {biz} ne kimaton ka naya khel dikhaya — Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2236", kind: "player",
+    tpl: "{biz} ke peeche ka dimaag {player} ki safalta ki kahani fail rahi hai. Mohalla Times ki khaas report.",
+  },
+  {
+    id: "nw_2237", kind: "city",
+    tpl: "Pitampura ki metro line me safai abhiyan chala. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2238", kind: "city",
+    tpl: "Karol Bagh ka park ke daam badhne ke sanket hain. Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2239", kind: "festival",
+    tpl: "Eid se pehle ki khareedi me mithaas ki demand aasmaan par hai",
+  },
+  {
+    id: "nw_2240", kind: "city",
+    tpl: "Karol Bagh ka park ke dukaan-daar khush hain — Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2241", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} Saket me apna adda majboot kar raha hai — Takkar aur dilchasp hogi.",
+  },
+  {
+    id: "nw_2242", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} ne ek aur sampatti apne naam ki. Dekhte hain kaun baazi marta hai.",
+  },
+  {
+    id: "nw_2243", kind: "city",
+    tpl: "Rajouri ka park par kaam tez ho gaya hai. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2244", kind: "festival",
+    tpl: "Navratri ki raunak ke liye vishesh bazaar laga hai — Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2245", kind: "player",
+    tpl: "Sheher ke ubharte sitare {player} aaj kal har zubaan par hai. Ye to bas shuruaat batayi ja rahi hai.",
+  },
+  {
+    id: "nw_2246", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} ne {player} ko seedhi chunauti di hai. Takkar aur dilchasp hogi.",
+  },
+  {
+    id: "nw_2247", kind: "player",
+    tpl: "{player} ki dukaan {biz} aaj kal har zubaan par hai — Mohalla Times ki khaas report.",
+  },
+  {
+    id: "nw_2248", kind: "city",
+    tpl: "Mayur Vihar me naya flyover me raat ki raunak badhi hai. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2249", kind: "market",
+    tpl: "{stock} naye record par pahunche — Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2250", kind: "market",
+    tpl: "{stock} naye record par pahunche. Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2251", kind: "market",
+    tpl: "{stock} me badi halchal hai. Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2252", kind: "player",
+    tpl: "{biz} wala {player} ne staff ke saath jeet ka jashn manaya. Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2253", kind: "city",
+    tpl: "Rohini ka park me raat ki raunak badhi hai. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2254", kind: "player",
+    tpl: "{biz} wala {player} ki dukaan par subah se line hai. Ye to bas shuruaat batayi ja rahi hai.",
+  },
+  {
+    id: "nw_2255", kind: "market",
+    tpl: "{stock} ne aaj sabko chonka diya — Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2256", kind: "market",
+    tpl: "Sona-chaandi par bade khiladiyon ki nazar hai — Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2257", kind: "player",
+    tpl: "{player} ki dukaan {biz} ka agla plan sabko hairaan kar sakta hai. Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2258", kind: "festival",
+    tpl: "Chhath ki raunak ke liye vishesh bazaar laga hai — Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2259", kind: "market",
+    tpl: "{stock} me girawat se investors dare. Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2260", kind: "city",
+    tpl: "Karol Bagh ka park me raat ki raunak badhi hai. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2261", kind: "rival",
+    tpl: "{rival} ka samrajya ne ek aur sampatti apne naam ki — Bazaar garam hai.",
+  },
+  {
+    id: "nw_2262", kind: "city",
+    tpl: "Janakpuri ka bazaar me badlav ki leher hai. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2263", kind: "festival",
+    tpl: "Holi ki taiyari ne record tod diya",
+  },
+  {
+    id: "nw_2264", kind: "festival",
+    tpl: "Baisakhi ka bazaar par Lajpat Nagar saj gaya hai",
+  },
+  {
+    id: "nw_2265", kind: "festival",
+    tpl: "Lohri ki taiyari ke liye vishesh bazaar laga hai. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2266", kind: "city",
+    tpl: "Dwarka ka bazaar ki kismat chamak sakti hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2267", kind: "festival",
+    tpl: "Christmas ki taiyari me dukaanen raat der tak khuli hain. Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2268", kind: "rival",
+    tpl: "Bazaar ke purane khiladi {rival} ne naya daav chala hai. Dekhte hain kaun baazi marta hai.",
+  },
+  {
+    id: "nw_2269", kind: "city",
+    tpl: "Rajouri ki paani supply ki kismat chamak sakti hai. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2270", kind: "festival",
+    tpl: "Diwali se pehle ki khareedi me mithaas ki demand aasmaan par hai",
+  },
+  {
+    id: "nw_2271", kind: "festival",
+    tpl: "Onam ki raunak par Gurgaon saj gaya hai — Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2272", kind: "city",
+    tpl: "Sarojini Nagar me naya flyover ke dukaan-daar khush hain — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2273", kind: "player",
+    tpl: "{biz} ke peeche ka dimaag {player} ka jadoo grahakon par chala — Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2274", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} ne chup chaap bada hissa kharida — Bazaar garam hai.",
+  },
+  {
+    id: "nw_2275", kind: "city",
+    tpl: "Sarojini Nagar me nayi sadken ke daam badhne ke sanket hain — Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2276", kind: "player",
+    tpl: "Naujawan udyami {player} ki mehnat rang la rahi hai. Mohalla Times ki khaas report.",
+  },
+  {
+    id: "nw_2277", kind: "festival",
+    tpl: "Navratri ki raunak zoron par hai",
+  },
+  {
+    id: "nw_2278", kind: "festival",
+    tpl: "Lohri ka bazaar ne record tod diya — Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2279", kind: "city",
+    tpl: "Rajouri me naya flyover banne ki taiyari me hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2280", kind: "market",
+    tpl: "Sona-chaandi me girawat se investors dare. Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2281", kind: "economy",
+    tpl: "Fasal ki paidawar me rahat ke sanket hain — Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2282", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} ne chup chaap bada hissa kharida. Takkar aur dilchasp hogi.",
+  },
+  {
+    id: "nw_2283", kind: "market",
+    tpl: "Sona-chaandi naye record par pahunche. Samajhdar paisa kabhi sota nahi.",
+  },
+  {
+    id: "nw_2284", kind: "player",
+    tpl: "{biz} ke peeche ka dimaag {player} ne mohalle ka naam roshan kiya",
+  },
+  {
+    id: "nw_2285", kind: "city",
+    tpl: "Mayur Vihar me bijli vyavastha me badlav ki leher hai",
+  },
+  {
+    id: "nw_2286", kind: "rival",
+    tpl: "{rival} ka samrajya Sarojini Nagar me apna adda majboot kar raha hai — Sheher ki nazar is takkar par hai.",
+  },
+  {
+    id: "nw_2287", kind: "city",
+    tpl: "Uttam Nagar ka mashhoor chowk me badlav ki leher hai — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2288", kind: "city",
+    tpl: "Laxmi Nagar ki metro line par kaam tez ho gaya hai",
+  },
+  {
+    id: "nw_2289", kind: "festival",
+    tpl: "Holi ka bazaar ke liye vishesh bazaar laga hai. Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2290", kind: "city",
+    tpl: "Karol Bagh ka park ki kismat chamak sakti hai — Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2291", kind: "rival",
+    tpl: "Bazaar ke purane khiladi {rival} ki dukaanon par offer ki baadh hai. Takkar aur dilchasp hogi.",
+  },
+  {
+    id: "nw_2292", kind: "player",
+    tpl: "{player} ki dukaan {biz} ka agla plan sabko hairaan kar sakta hai",
+  },
+  {
+    id: "nw_2293", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} ne naya daav chala hai. Sheher ki nazar is takkar par hai.",
+  },
+  {
+    id: "nw_2294", kind: "player",
+    tpl: "{biz} ke malik {player} ne mohalle ka naam roshan kiya. Ye to bas shuruaat batayi ja rahi hai.",
+  },
+  {
+    id: "nw_2295", kind: "market",
+    tpl: "SIP ka paisa me tez uchhaal dekha gaya. Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2296", kind: "player",
+    tpl: "{player} ka {biz} ne purane record tod diye. Mohalla Times ki khaas report.",
+  },
+  {
+    id: "nw_2297", kind: "city",
+    tpl: "Connaught Place ka bazaar ke daam badhne ke sanket hain. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2298", kind: "city",
+    tpl: "Karol Bagh me bijli vyavastha ke daam badhne ke sanket hain",
+  },
+  {
+    id: "nw_2299", kind: "player",
+    tpl: "{player} aur unka {biz} ki safalta ki kahani fail rahi hai. Ye to bas shuruaat batayi ja rahi hai.",
+  },
+  {
+    id: "nw_2300", kind: "city",
+    tpl: "Sarojini Nagar ka park par kaam tez ho gaya hai — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2301", kind: "market",
+    tpl: "Bank ke share par bade khiladiyon ki nazar hai",
+  },
+  {
+    id: "nw_2302", kind: "city",
+    tpl: "Karol Bagh ki paani supply me raat ki raunak badhi hai — Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2303", kind: "market",
+    tpl: "Sensex me chhote investors ki bheed badhi. Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2304", kind: "city",
+    tpl: "Janakpuri ki paani supply me safai abhiyan chala. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2305", kind: "festival",
+    tpl: "Durga Puja se pehle ki khareedi ke liye vishesh bazaar laga hai. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2306", kind: "city",
+    tpl: "Uttam Nagar ki metro line ki kismat chamak sakti hai. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2307", kind: "economy",
+    tpl: "Chhote karobaron ke loan ne record toda hai",
+  },
+  {
+    id: "nw_2308", kind: "city",
+    tpl: "Saket me naya flyover me raat ki raunak badhi hai — Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2309", kind: "player",
+    tpl: "Sheher ke ubharte sitare {player} ne bazaar me dhoom macha di. Ye to bas shuruaat batayi ja rahi hai.",
+  },
+  {
+    id: "nw_2310", kind: "player",
+    tpl: "{biz} ke peeche ka dimaag {player} ne purane record tod diye. Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2311", kind: "city",
+    tpl: "Karol Bagh ka bazaar ke dukaan-daar khush hain",
+  },
+  {
+    id: "nw_2312", kind: "rival",
+    tpl: "Bazaar ke purane khiladi {rival} kimaton me kaat kar raha hai. Sheher ki nazar is takkar par hai.",
+  },
+  {
+    id: "nw_2313", kind: "city",
+    tpl: "Saket ki paani supply banne ki taiyari me hai — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2314", kind: "market",
+    tpl: "Property ke daam me chhote investors ki bheed badhi. Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2315", kind: "city",
+    tpl: "Rohini me nayi sadken me safai abhiyan chala. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2316", kind: "player",
+    tpl: "{biz} ke peeche ka dimaag {player} aaj kal har zubaan par hai. Mohalla Times ki khaas report.",
+  },
+  {
+    id: "nw_2317", kind: "city",
+    tpl: "Karol Bagh ka park banne ki taiyari me hai. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2318", kind: "city",
+    tpl: "Laxmi Nagar ka bazaar me safai abhiyan chala. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2319", kind: "city",
+    tpl: "Lajpat Nagar me naya flyover me badlav ki leher hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2320", kind: "market",
+    tpl: "Sona-chaandi ne aaj sabko chonka diya. Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2321", kind: "player",
+    tpl: "{player} ka {biz} ne purane record tod diye",
+  },
+  {
+    id: "nw_2322", kind: "market",
+    tpl: "{stock} me badi halchal hai — Sheher Times ki bazaar nazar.",
+  },
+  {
+    id: "nw_2323", kind: "city",
+    tpl: "Pitampura ki metro line par kaam tez ho gaya hai",
+  },
+  {
+    id: "nw_2324", kind: "market",
+    tpl: "Sona-chaandi ne aaj sabko chonka diya — Samajhdar paisa kabhi sota nahi.",
+  },
+  {
+    id: "nw_2325", kind: "city",
+    tpl: "Laxmi Nagar me bijli vyavastha me safai abhiyan chala. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2326", kind: "festival",
+    tpl: "Durga Puja ki raunak par Dwarka saj gaya hai — Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2327", kind: "festival",
+    tpl: "Makar Sankranti se pehle ki khareedi me dukaanen raat der tak khuli hain — Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2328", kind: "market",
+    tpl: "Sona-chaandi par bade khiladiyon ki nazar hai — Kal ka din aur bada ho sakta hai.",
+  },
+  {
+    id: "nw_2329", kind: "festival",
+    tpl: "Chhath ki raunak par Karol Bagh saj gaya hai. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2330", kind: "city",
+    tpl: "Chandni Chowk me bijli vyavastha me raat ki raunak badhi hai — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2331", kind: "player",
+    tpl: "Naujawan udyami {player} ki safalta ki kahani fail rahi hai — Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2332", kind: "city",
+    tpl: "Laxmi Nagar ka park me badlav ki leher hai — Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2333", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} ne ek aur sampatti apne naam ki. Takkar aur dilchasp hogi.",
+  },
+  {
+    id: "nw_2334", kind: "market",
+    tpl: "Property ke daam me chhote investors ki bheed badhi — Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2335", kind: "economy",
+    tpl: "Export ka karobar me sarkar ka naya elaan hai",
+  },
+  {
+    id: "nw_2336", kind: "market",
+    tpl: "Sona-chaandi saste hue — kharidari ka mauka? — Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2337", kind: "player",
+    tpl: "{biz} ke peeche ka dimaag {player} ki safalta ki kahani fail rahi hai",
+  },
+  {
+    id: "nw_2338", kind: "rival",
+    tpl: "{rival} ka samrajya ka kharcha bhi badha, naam bhi — Bazaar garam hai.",
+  },
+  {
+    id: "nw_2339", kind: "economy",
+    tpl: "Chhote karobaron ke loan me rahat ke sanket hain — Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2340", kind: "festival",
+    tpl: "Durga Puja se pehle ki khareedi me dukaanen raat der tak khuli hain — Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2341", kind: "economy",
+    tpl: "Export ka karobar ka asar har dukaan par padega — Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2342", kind: "economy",
+    tpl: "Fasal ki paidawar par charcha garam hai. Apne hisaab par nazar rakho.",
+  },
+  {
+    id: "nw_2343", kind: "rival",
+    tpl: "{rival} kimaton me kaat kar raha hai. Bazaar garam hai.",
+  },
+  {
+    id: "nw_2344", kind: "rival",
+    tpl: "{rival} Chandni Chowk me apna adda majboot kar raha hai — Dekhte hain kaun baazi marta hai.",
+  },
+  {
+    id: "nw_2345", kind: "player",
+    tpl: "{biz} wala {player} ki dukaan par subah se line hai",
+  },
+  {
+    id: "nw_2346", kind: "rival",
+    tpl: "{rival} ka samrajya ka kharcha bhi badha, naam bhi. Sheher ki nazar is takkar par hai.",
+  },
+  {
+    id: "nw_2347", kind: "city",
+    tpl: "Dwarka ka park me badlav ki leher hai. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2348", kind: "economy",
+    tpl: "Mehengaai par charcha garam hai. Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2349", kind: "rival",
+    tpl: "{rival} ki chal se bazaar me hulchul hai. Kya {player} jawab dega?",
+  },
+  {
+    id: "nw_2350", kind: "economy",
+    tpl: "Naukriyon ka bazaar ka asar har dukaan par padega. Apne hisaab par nazar rakho.",
+  },
+  {
+    id: "nw_2351", kind: "festival",
+    tpl: "Navratri ka bazaar zoron par hai — Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2352", kind: "player",
+    tpl: "{biz} ke malik {player} ki safalta ki kahani fail rahi hai",
+  },
+  {
+    id: "nw_2353", kind: "player",
+    tpl: "{player} ki dukaan {biz} ne ek aur kadam aage badhaya. Grahak khush, to sab khush.",
+  },
+  {
+    id: "nw_2354", kind: "festival",
+    tpl: "Lohri ki raunak me mithaas ki demand aasmaan par hai — Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2355", kind: "city",
+    tpl: "Dwarka me nayi sadken me badlav ki leher hai — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2356", kind: "city",
+    tpl: "Rohini me bijli vyavastha ki kismat chamak sakti hai — Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2357", kind: "city",
+    tpl: "Lajpat Nagar me naya flyover ke daam badhne ke sanket hain",
+  },
+  {
+    id: "nw_2358", kind: "city",
+    tpl: "Uttam Nagar me naya flyover me raat ki raunak badhi hai. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2359", kind: "player",
+    tpl: "{player} ka {biz} ne ek aur kadam aage badhaya — Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2360", kind: "city",
+    tpl: "Sarojini Nagar me naya flyover me badlav ki leher hai. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2361", kind: "economy",
+    tpl: "Export ka karobar ki disha badal sakti hai",
+  },
+  {
+    id: "nw_2362", kind: "economy",
+    tpl: "Fasal ki paidawar se vyapariyon me ummeed jagi hai. Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2363", kind: "market",
+    tpl: "Sona-chaandi me chhote investors ki bheed badhi — Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2364", kind: "player",
+    tpl: "{player} ki dukaan {biz} ne staff ke saath jeet ka jashn manaya. Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2365", kind: "festival",
+    tpl: "Eid ki raunak ke liye vishesh bazaar laga hai — Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2366", kind: "festival",
+    tpl: "Diwali ki raunak zoron par hai — Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2367", kind: "festival",
+    tpl: "Onam ki raunak me mithaas ki demand aasmaan par hai",
+  },
+  {
+    id: "nw_2368", kind: "festival",
+    tpl: "Rakhi se pehle ki khareedi par Lajpat Nagar saj gaya hai. Sheher roshni me naha gaya.",
+  },
+  {
+    id: "nw_2369", kind: "player",
+    tpl: "{player} ki dukaan {biz} ne kimaton ka naya khel dikhaya. Sheher Times ki nazar bani rahegi.",
+  },
+  {
+    id: "nw_2370", kind: "economy",
+    tpl: "Export ka karobar ne record toda hai. Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2371", kind: "player",
+    tpl: "Sheher ke ubharte sitare {player} ne staff ke saath jeet ka jashn manaya. Ye to bas shuruaat batayi ja rahi hai.",
+  },
+  {
+    id: "nw_2372", kind: "player",
+    tpl: "Naujawan udyami {player} ki mehnat rang la rahi hai",
+  },
+  {
+    id: "nw_2373", kind: "player",
+    tpl: "{biz} wala {player} ne kimaton ka naya khel dikhaya. Mohalla Times ki khaas report.",
+  },
+  {
+    id: "nw_2374", kind: "festival",
+    tpl: "Karwa Chauth ki taiyari ne record tod diya. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2375", kind: "festival",
+    tpl: "Makar Sankranti ki taiyari me dukaanen raat der tak khuli hain — Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2376", kind: "city",
+    tpl: "Connaught Place ka mashhoor chowk me raat ki raunak badhi hai. Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2377", kind: "city",
+    tpl: "Mayur Vihar ka mashhoor chowk me safai abhiyan chala. Aas-paas ke vyapariyon ko fayda hoga.",
+  },
+  {
+    id: "nw_2378", kind: "city",
+    tpl: "Sarojini Nagar ka mashhoor chowk ke daam badhne ke sanket hain. Footfall ka naksha badlega.",
+  },
+  {
+    id: "nw_2379", kind: "city",
+    tpl: "Laxmi Nagar ka park banne ki taiyari me hai — Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2380", kind: "economy",
+    tpl: "Fasal ki paidawar ne record toda hai. Sheher Times ki aarthik nazar.",
+  },
+  {
+    id: "nw_2381", kind: "player",
+    tpl: "{biz} ke malik {player} ki safalta ki kahani fail rahi hai — Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2382", kind: "economy",
+    tpl: "Byaaj darein se vyapariyon me ummeed jagi hai. Samay ke saath chalna hi samajhdari hai.",
+  },
+  {
+    id: "nw_2383", kind: "rival",
+    tpl: "Rich List ke khiladi {rival} Saket me apna adda majboot kar raha hai. Bazaar garam hai.",
+  },
+  {
+    id: "nw_2384", kind: "player",
+    tpl: "Naujawan udyami {player} ne mohalle ka naam roshan kiya. Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2385", kind: "festival",
+    tpl: "Pongal ka bazaar ke liye vishesh bazaar laga hai. Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2386", kind: "city",
+    tpl: "Lajpat Nagar ki metro line me safai abhiyan chala — Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2387", kind: "rival",
+    tpl: "Mashhoor vyapari {rival} ne naya daav chala hai — Dekhte hain kaun baazi marta hai.",
+  },
+  {
+    id: "nw_2388", kind: "festival",
+    tpl: "Makar Sankranti ki raunak ne record tod diya — Vyapariyon ke chehre khile hain.",
+  },
+  {
+    id: "nw_2389", kind: "city",
+    tpl: "Karol Bagh ki paani supply me safai abhiyan chala. Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2390", kind: "market",
+    tpl: "Sensex me girawat se investors dare — Risk samajh kar kadam badhao.",
+  },
+  {
+    id: "nw_2391", kind: "city",
+    tpl: "Mayur Vihar ka bazaar ke dukaan-daar khush hain — Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2392", kind: "city",
+    tpl: "Janakpuri ka bazaar par kaam tez ho gaya hai. Sheher Times ki ground report.",
+  },
+  {
+    id: "nw_2393", kind: "rival",
+    tpl: "{rival} ne {player} ko seedhi chunauti di hai — Bazaar garam hai.",
+  },
+  {
+    id: "nw_2394", kind: "city",
+    tpl: "Janakpuri ka park me raat ki raunak badhi hai",
+  },
+  {
+    id: "nw_2395", kind: "festival",
+    tpl: "Holi ki taiyari ne record tod diya. Stock bhar lena hi samajhdari hai.",
+  },
+  {
+    id: "nw_2396", kind: "player",
+    tpl: "{biz} wala {player} ne ek aur kadam aage badhaya. Bazaar me charcha tez hai.",
+  },
+  {
+    id: "nw_2397", kind: "player",
+    tpl: "{biz} ke malik {player} ka jadoo grahakon par chala. Aas-paas ke dukaan-daar seekh rahe hain.",
+  },
+  {
+    id: "nw_2398", kind: "city",
+    tpl: "Janakpuri me bijli vyavastha me badlav ki leher hai — Aane wale dinon me asar dikhega.",
+  },
+  {
+    id: "nw_2399", kind: "player",
+    tpl: "{player} ki dukaan {biz} ne purane record tod diye",
+  },
+  {
+    id: "nw_2400", kind: "festival",
+    tpl: "Ganesh Chaturthi ki raunak ne record tod diya",
+  },
+]

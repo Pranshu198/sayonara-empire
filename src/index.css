@@ -64,3 +64,34 @@ nav.tabbar button.on .ic{filter:drop-shadow(0 0 6px rgba(245,197,66,.6))}
 .bar{height:8px;background:#1a1a1a;border-radius:99px;overflow:hidden;margin-top:5px}
 .bar i{display:block;height:100%;background:linear-gradient(90deg,#c99a00,var(--gold));border-radius:99px}
 .kbd{background:#1a1a1a;border:1px solid #333;border-radius:6px;padding:1px 6px;font-size:11px}
+
+/* ===== Pass 2: Motion-graphics splash (reference style: black + purple/magenta gradient glow) ===== */
+.splash{position:fixed;inset:0;z-index:200;background:#000;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.splash-wheel{position:absolute;width:340px;height:340px;opacity:.85}
+.splash-lines{position:absolute;width:100%;height:60px;top:38%}
+.splash-title{position:relative;text-align:center;z-index:2}
+.splash-line1{display:flex;justify-content:center;gap:2px;font-size:44px;font-weight:900;letter-spacing:3px}
+.splash-line1 span{background:linear-gradient(92deg,#c084fc,#f0abfc 50%,#f5c542);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;filter:drop-shadow(0 0 14px rgba(217,70,239,.45))}
+.splash-line2{display:flex;justify-content:center;gap:6px;font-size:30px;font-weight:800;letter-spacing:14px;color:#fff;margin-top:2px}
+.splash-line2 span{display:inline-block;text-shadow:0 0 18px rgba(168,85,247,.65)}
+.splash-sub{color:#c084fc;letter-spacing:4px;font-size:11px;margin-top:14px}
+.splash-bar{height:2px;background:linear-gradient(90deg,#a855f7,#e879f9,#f5c542);margin:16px auto 0;width:210px;transform-origin:left;border-radius:2px}
+.splash-tap{color:#777;font-size:11px;margin-top:12px}
+/* ===== Phase arc ===== */
+.phase-arc{position:relative;height:46px;margin-top:2px}
+.arc-svg{width:100%;height:44px;display:block}
+.arc-orb{position:absolute;font-size:19px;filter:drop-shadow(0 0 8px rgba(245,197,66,.8))}
+.arc-label{position:absolute;right:2px;bottom:0;font-size:10px;color:var(--muted)}
+/* ===== Settings ===== */
+.set-row{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--line)}
+.set-row:last-child{border-bottom:none}
+.set-info{flex:1;min-width:0}
+.set-ctrl{flex:1.2;display:flex;justify-content:flex-end}
+.sandbox-banner{background:linear-gradient(90deg,#3b0764,#701a75);border:1px solid #a855f7;color:#f5d0fe;padding:9px 12px;border-radius:12px;font-weight:700;font-size:12.5px;margin-bottom:10px;text-align:center}
+.fps-meter{position:fixed;top:8px;right:10px;z-index:300;background:rgba(10,10,10,.85);border:1px solid var(--gold);color:var(--gold);font-size:11px;font-weight:700;padding:3px 8px;border-radius:8px}
+select{background:var(--surface2);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:9px;min-height:42px;font-family:inherit;width:100%}
+.app.contrast{--line:#3d3d3d;--muted:#c9c9c9}
+.app.contrast .card,.app.contrast .biz-card{border-color:#3d3d3d}
+.app.amoled-soft{--surface:#0d0d0f;--surface2:#16161a}
+.spark i.neg-bar{background:var(--red)!important}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}

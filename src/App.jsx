@@ -3,13 +3,39 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { BUSINESSES, CATEGORIES, CAT_LABEL, PHASES, PROPERTIES, DISTRICTS, ACHIEVEMENTS, levelOf, ownedCount } from './game/data.js'
 import { fmt, initialState, phaseTick, netWorth, bizDef, missionProgress } from './game/engine.js'
 import { Section, AnimatedNumber, Burst, Toast } from './components/ui.jsx'
+import { Splash } from './components/Splash.jsx'
+import { PhaseArc } from './components/PhaseArc.jsx'
+import { SettingsPanel } from './components/SettingsPanel.jsx'
+import { WealthPanel } from './components/WealthPanel.jsx'
+import { BazaarPanel } from './components/BazaarPanel.jsx'
+import { AuctionPanel } from './components/AuctionPanel.jsx'
+import { ReviewsPanel } from './components/ReviewsPanel.jsx'
+import { DecisionPanel } from './components/DecisionPanel.jsx'
+import { EncyclopediaPanel } from './components/EncyclopediaPanel.jsx'
+import { BulkAchievements } from './components/BulkAchievements.jsx'
+import { FpsMeter } from './components/FpsMeter.jsx'
+import { ProductStaffLine } from './components/ProductStaffLine.jsx'
+import { withDefaults, chromeText } from './game/settings.js'
+import { playSound } from './utils/sound.js'
+import { profileOf } from './game/content/stocks/index.js'
+import { dialogueOf } from './game/content/rivals/index.js'
+import { loreOf } from './game/content/districts/index.js'
+
+const fmtFull = (n) => { n = Math.round(n || 0); const neg = n < 0; n = Math.abs(n); return (neg ? '-₹' : '₹') + n.toLocaleString('en-IN') }
+function migrate(saved) {
+  if (!saved) return saved
+  const base = initialState()
+  for (const k of Object.keys(base)) if (saved[k] === undefined) saved[k] = base[k]
+  saved.settings = withDefaults(saved.settings)
+  return saved
+}
 
 const SAVE_KEY = 'sayonara_empire_vite_v1'
 const load = () => { try { const r = localStorage.getItem(SAVE_KEY); return r ? JSON.parse(r) : null } catch { return null } }
 
 export default function App() {
   const [s, setS] = useState(() => {
-    const saved = load()
+    const saved = migrate(load())
     if (saved) {
       // offline earnings: 20% of estimated daily profit per real hour away, capped 8h
       const awayH = Math.min(8, (Date.now() - (saved.lastSaveAt || Date.now())) / 3600000)
@@ -26,9 +52,18 @@ export default function App() {
   const [catFilter, setCatFilter] = useState('All')
   const [importTxt, setImportTxt] = useState('')
   const [spinDeg, setSpinDeg] = useState(0)
+  const [showSplash, setShowSplash] = useState(true)
+  useEffect(() => {
+    const st = s.settings || {}
+    if (st.animLevel === 'off' || st.reducedMotion) { setShowSplash(false); return }
+    const tm = setTimeout(() => setShowSplash(false), 2700)
+    return () => clearTimeout(tm)
+  }, [])
+  const fmtN = (s.settings && s.settings.numFmt === 'full') ? fmtFull : fmt
+  const chrome = chromeText(s.settings)
   const toastT = useRef(null)
   const nw = useMemo(() => netWorth(s), [s])
-  const say = (m, celebrate) => { setToast(m); if (celebrate) setBurst(b => b + 1); clearTimeout(toastT.current); toastT.current = setTimeout(() => setToast(''), 2600) }
+  const say = (m, celebrate) => { setToast(m); if (celebrate) setBurst(b => b + 1); playSound(celebrate ? 'cash' : 'click', s.settings); clearTimeout(toastT.current); toastT.current = setTimeout(() => setToast(''), 2600) }
 
   useEffect(() => { try { localStorage.setItem(SAVE_KEY, JSON.stringify({ ...s, lastSaveAt: Date.now() })) } catch {} }, [s])
   useEffect(() => { if (s.offlineGain) { say(`🌙 Offline kamaai mili: ${fmt(s.offlineGain)}`, true); setS(p => ({ ...p, offlineGain: 0 })) } }, [])
@@ -69,20 +104,30 @@ export default function App() {
   const claimAch = (a) => { upd(n => { n.cash += a.reward; n.ach.push(a.id); n.xp += 15 }); say(`🏆 ${a.name}: +${fmt(a.reward)}`, true) }
   const claimMission = (m) => { upd(n => { n.cash += m.reward; n.missionsDone = [...n.missionsDone, m.id + '_' + n.day] }); say(`✅ Mission complete: +${fmt(m.reward)}`, true) }
 
-  const tabs = [['home', '🏠', 'Empire'], ['biz', '🏪', 'Business'], ['market', '📈', 'Markets'], ['prop', '🏠', 'Property'], ['bank', '🏦', 'Bank'], ['more', '⋯', 'More']]
+  const doExport = () => { const code = btoa(unescape(encodeURIComponent(JSON.stringify(s)))); if (navigator.clipboard) navigator.clipboard.writeText(code); setImportTxt(code); say('Save code copy ho gaya') }
+  const doImportBox = () => { try { const obj = migrate(JSON.parse(decodeURIComponent(escape(atob(importTxt.trim()))))); setS(obj); say('Save import ho gaya!') } catch { say('Galat code hai') } }
+  const doImportData = (obj) => { setS(migrate(obj)) }
+  const doReset = () => { localStorage.removeItem(SAVE_KEY); setS(initialState()); say('Naya game shuru!') }
+
+  const tabs = [['home', '🏠', chrome.empire], ['biz', '🏪', chrome.business], ['market', '📈', chrome.markets], ['prop', '🏠', chrome.property], ['wealth', '💰', chrome.wealth], ['bank', '🏦', chrome.bankTab], ['more', '⋯', chrome.more]]
   const xpLv = levelOf(s.xp)
 
+  const accentColor = { gold: '#f5c542', violet: '#a855f7', green: '#2ee06f', pink: '#ec4899' }[(s.settings && s.settings.accent) || 'gold']
+  const zoomScale = ((s.settings && s.settings.fontScale) || 1) * ((s.settings && s.settings.largeText) ? 1.12 : 1)
   return (
-    <div className="app">
+    <div className={'app' + ((s.settings && s.settings.contrast) ? ' contrast' : '') + ((s.settings && s.settings.amoled === 'soft') ? ' amoled-soft' : '')} style={{ '--gold': accentColor, zoom: zoomScale }}>
+      <Splash show={showSplash} onDone={() => setShowSplash(false)} />
+      {s.settings && s.settings.showFps && <FpsMeter />}
       <Burst burstKey={burst} />
       <header className="hud">
         <div className="brand"><h1>SAYONARA <span>EMPIRE</span></h1><div className="dayline">Day {s.day} • {PHASES[s.phase]} • Lv {xpLv}</div></div>
         <div className="money-row">
-          <div className="money-box"><div className="lbl">Cash</div><div className="val green"><AnimatedNumber value={s.cash} format={fmt} /></div></div>
-          <div className="money-box"><div className="lbl">Bank</div><div className="val"><AnimatedNumber value={s.bank} format={fmt} /></div></div>
-          <div className="money-box"><div className="lbl">Net Worth</div><div className="val gold"><AnimatedNumber value={nw} format={fmt} /></div></div>
+          <div className="money-box"><div className="lbl">{chrome.cash}</div><div className="val green"><AnimatedNumber value={s.cash} format={fmtN} /></div></div>
+          <div className="money-box"><div className="lbl">{chrome.bank}</div><div className="val"><AnimatedNumber value={s.bank} format={fmtN} /></div></div>
+          <div className="money-box"><div className="lbl">{chrome.netWorth}</div><div className="val gold"><AnimatedNumber value={nw} format={fmtN} /></div></div>
         </div>
         <div className="phase-bar">{PHASES.map((p, i) => <div key={p} className={'phase-dot' + (i === s.phase ? ' on' : '')}>{p}</div>)}</div>
+        <PhaseArc phase={s.phase} />
       </header>
 
       <main>
@@ -115,6 +160,8 @@ export default function App() {
                 <div className="row"><span>Market Sentiment</span><b>{s.sentiment > 0.5 ? '📈 Bullish' : s.sentiment < -0.5 ? '📉 Bearish' : '➡️ Sideways'}</b></div>
               </Section>
 
+              <DecisionPanel s={s} upd={upd} say={say} />
+
               <Section id="missions" title="🎯 Daily Missions">
                 {s.missions.map(m => { const pr = missionProgress(s, m); const done = pr >= m.target; const claimed = s.missionsDone.includes(m.id + '_' + s.day); return (
                   <div className="row" key={m.id}><div><div className="small">{m.text}</div><div className="bar"><i style={{ width: Math.min(100, pr / m.target * 100) + '%' }} /></div><div className="muted">{Math.min(pr, m.target)}/{m.target} • Reward {fmt(m.reward)}</div></div>
@@ -122,8 +169,10 @@ export default function App() {
               </Section>
 
               <Section id="city" title="🗺️ Sheher — Districts" defaultOpen={false}>
-                {DISTRICTS.map(d => <div className="row" key={d.name}><div><b>{d.name}</b> {nw < d.unlock && <span className="muted">🔒 {fmt(d.unlock)}</span>}<div className="muted">{d.mood} • Rent trend {d.rentTrend}</div></div></div>)}
+                {DISTRICTS.map(d => { const lore = loreOf(d.name); return <div className="row" key={d.name}><div><b>{d.name}</b> {nw < d.unlock && <span className="muted">🔒 {fmt(d.unlock)}</span>}<div className="muted">{d.mood} • Rent trend {d.rentTrend}</div>{lore && <div className="muted">📖 {lore.history} Nishaniyan: {lore.landmarks.slice(0, 3).join(', ')}</div>}</div></div> })}
               </Section>
+
+              <ReviewsPanel s={s} />
 
               <Section id="news" title="📰 Sheher Times" defaultOpen={false}>
                 {s.news.map((n, i) => <div className="news-item" key={i}><span className="muted">Day {n.day} • </span>{n.text}</div>)}
@@ -139,6 +188,7 @@ export default function App() {
                   {BUSINESSES.filter(b => b.cat === cat).map((d, i) => { const o = s.biz[d.id]; return (
                     <motion.div key={d.id} className="biz-card" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
                       <div className="row" style={{ border: 'none', padding: 0 }}><b>{d.icon} {d.name}</b>{o ? <span className="gold">Lv {o.lv} • ⭐{o.rating.toFixed(1)}</span> : <b>{fmt(d.cost)}</b>}</div>
+                      <div className="muted">{d.tagline}</div>
                       <div className="muted">Base bikri {fmt(d.rev)}/din • COGS {Math.round(d.cogs * 100)}% • Staff {d.staff} • Rent {fmt(d.rent)}/din</div>
                       {!o && <button className="btn" style={{ width: '100%', marginTop: 8 }} onClick={() => buyBiz(d)}>🛒 Kharido — {fmt(d.cost)}</button>}
                       {o && <>
@@ -155,6 +205,7 @@ export default function App() {
                           <button className="btn small ghost" onClick={() => setStaff(d, -1)}>👥 Staff−</button>
                           <button className="btn small red" onClick={() => sellBiz(d)}>💸 Becho</button>
                         </div>
+                        <ProductStaffLine bizId={d.id} cat={d.cat} staffCount={o.staff} fmt={fmt} />
                         <p className="muted">P&L samajh: Bikri = Footfall × Conversion × Price × Rating × Season. Kharcha = maal (supplier rate {s.supplier.toFixed(2)}x) + wages + rent + bijli + 2% wastage + depreciation. 15% bikri udhaar me — kal cash aata hai, isliye Profit ≠ Cashflow.</p>
                       </>}
                     </motion.div>) })}
@@ -167,6 +218,7 @@ export default function App() {
                 {s.stocks.map(st => <div key={st.sym} className="biz-card">
                   <div className="row" style={{ border: 'none', padding: 0 }}><b>{st.sym}</b><b>{fmt(st.price)}</b></div>
                   <div className="muted">{st.name} • Tumhare paas: {s.holdings[st.sym] || 0}</div>
+                  <div className="muted">{profileOf(st.sym) ? '🏢 ' + profileOf(st.sym).sector + ' — ' + profileOf(st.sym).about : ''}</div>
                   <div className="spark">{st.hist.map((h, i) => <i key={i} style={{ height: Math.max(8, h / Math.max(...st.hist) * 34) + 'px' }} />)}</div>
                   <div style={{ display: 'flex', gap: 7, marginTop: 8 }}>
                     <button className="btn small green" onClick={() => buyAsset('stocks', st.sym, 1)}>Buy 1</button>
@@ -207,6 +259,8 @@ export default function App() {
                     : <button className="btn small red" style={{ marginTop: 8 }} onClick={() => sellProp(p)}>Becho {fmt(val)}</button>}
                 </motion.div>) })}
             </Section>}
+
+            {tab === 'wealth' && <WealthPanel s={s} nw={nw} upd={upd} say={say} />}
 
             {tab === 'bank' && <>
               <Section id="bankmain" title="🏦 Bank" right={`Credit Score: ${s.credit}`}>
@@ -250,6 +304,7 @@ export default function App() {
               <Section id="rich" title="🏆 Rich List — Rivals" defaultOpen={false}>
                 {[...s.rivals].sort((a, b) => b.nw - a.nw).map((r, i) => <div className="row" key={r.name}><span>#{i + 1} {['🏬', '🚀', '👑', '🦈', '☕', '🏪'][i % 6]} <b>{r.name}</b><div className="muted">{r.pers} • Focus: {r.focus}</div></span><b className="gold">{fmt(r.nw)}</b></div>)}
                 <div className="row"><span>⭐ <b>TUM (Sayonara Empire)</b></span><b className="pos">{fmt(nw)}</b></div>
+                {[...s.rivals].sort((a, b) => b.nw - a.nw).slice(0, 2).map((r) => { const dg = dialogueOf(r.name); return dg ? <div className="news-item" key={r.name}>💬 <b>{r.name}:</b> {dg.text}</div> : null })}
               </Section>
               <Section id="ach" title="🏆 Achievements" defaultOpen={false}>
                 {ACHIEVEMENTS.map(a => { const st = { ...s, _nw: nw }; const done = a.check(st); const got = s.ach.includes(a.id); return (
@@ -271,6 +326,12 @@ export default function App() {
                 <textarea rows={3} style={{ marginTop: 8 }} placeholder="Export code yaha aayega / Import ke liye code paste karo" value={importTxt} onChange={e => setImportTxt(e.target.value)} />
                 <button className="btn red" style={{ width: '100%', marginTop: 8 }} onClick={() => { if (confirm('Pakka? Pura game reset ho jayega!')) { localStorage.removeItem(SAVE_KEY); setS(initialState()) } }}>🗑️ Reset Game</button>
               </Section>
+              <BazaarPanel s={s} upd={upd} say={say} />
+              <AuctionPanel s={s} upd={upd} say={say} />
+              <BulkAchievements s={s} nw={nw} upd={upd} say={say} />
+              <EncyclopediaPanel />
+              <SettingsPanel s={s} upd={upd} say={say} onExport={doExport} onImport={(data) => { if (data) doImportData(data); else doImportBox() }} importTxt={importTxt} setImportTxt={setImportTxt} onReset={doReset} />
+
               <Section id="help" title="❓ Kaise Khele — Simple Bhasha Me" defaultOpen={false}>
                 <p className="small">1) Business kharido → har phase (subah/dopahar/shaam/raat) bikri hogi.<br />2) Price zyada = zyada margin par kam customers; sahi balance rakho.<br />3) Stock khatm hone se pehle Restock karo, Marketing se 3 din demand badegi.<br />4) Munafa bank me rakho, FD/SIP se badhao; shares me paisa lagao par risk samjho.<br />5) Property se roz rent, loan se tezi — par EMI time par.<br />6) Manual mode = time tumhare haath me; Auto mode = din khud chalega.<br />7) Tax har 30 din me sirf us mahine ke profit par lagta hai — Day 30 par game rukta NAHI hai.</p>
               </Section>
