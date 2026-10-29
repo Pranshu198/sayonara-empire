@@ -52,27 +52,31 @@ for (const lang of LANGS) {
     } catch {}
   }, lang)
   for (const tab of TABS) {
-    await page.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true })
-    await page.goto(BASE + '?tab=' + tab, { waitUntil: 'networkidle2', timeout: 60000 }).catch(() => {})
-    await new Promise((r) => setTimeout(r, 1600))
-    const overflow = await page.evaluate(() => {
-      const de = document.documentElement
-      const bad = []
-      if (de.scrollWidth > window.innerWidth + 1) bad.push('doc:' + de.scrollWidth)
-      document.querySelectorAll('*').forEach((el) => {
-        const r = el.getBoundingClientRect()
-        if (r.width && (r.right > window.innerWidth + 2 || r.left < -2) && el.children.length === 0) bad.push(el.className.toString().slice(0, 30) + ':' + Math.round(r.right))
+    try {
+      await page.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true })
+      await page.goto(BASE + '?tab=' + tab, { waitUntil: 'load', timeout: 45000 }).catch(() => {})
+      await new Promise((r) => setTimeout(r, 1700))
+      const overflow = await page.evaluate(() => {
+        const de = document.documentElement
+        const bad = []
+        if (de.scrollWidth > window.innerWidth + 1) bad.push('doc:' + de.scrollWidth)
+        document.querySelectorAll('*').forEach((el) => {
+          const r = el.getBoundingClientRect()
+          if (r.width && (r.right > window.innerWidth + 2 || r.left < -2) && el.children.length === 0) bad.push(el.className.toString().slice(0, 30) + ':' + Math.round(r.right))
+        })
+        return bad.slice(0, 5)
       })
-      return bad.slice(0, 5)
-    })
-    await page.screenshot({ path: `${OUT}/${lang}-${tab}.png` })
-    if (overflow.length) { fail++; console.log(`OVERFLOW ${lang}/${tab}:`, overflow.join(' | ')) }
+      await page.screenshot({ path: `${OUT}/${lang}-${tab}.png`, timeout: 20000 })
+      if (overflow.length) { fail++; console.log(`OVERFLOW ${lang}/${tab}:`, overflow.join(' | ')) }
+    } catch (e) { fail++; console.log(`TAB FAIL ${lang}/${tab}:`, String(e).slice(0, 120)) }
   }
   // desktop frame shot (home)
-  await page.setViewport({ width: 1280, height: 900 })
-  await page.goto(BASE + '?tab=home', { waitUntil: 'networkidle2', timeout: 60000 }).catch(() => {})
-  await new Promise((r) => setTimeout(r, 1500))
-  await page.screenshot({ path: `${OUT}/${lang}-desktop.png` })
+  try {
+    await page.setViewport({ width: 1280, height: 900 })
+    await page.goto(BASE + '?tab=home', { waitUntil: 'load', timeout: 45000 }).catch(() => {})
+    await new Promise((r) => setTimeout(r, 1500))
+    await page.screenshot({ path: `${OUT}/${lang}-desktop.png`, timeout: 20000 })
+  } catch (e) { fail++; console.log(`DESKTOP FAIL ${lang}:`, String(e).slice(0, 120)) }
   if (errors.length) { fail++; console.log(`CONSOLE ERRORS ${lang}:`, [...new Set(errors)].slice(0, 6).join(' || ')) }
   else console.log(`OK ${lang}: no console errors`)
   await page.close()
