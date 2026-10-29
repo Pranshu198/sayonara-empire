@@ -2,7 +2,7 @@
    Versioned cache: naam badlo to purana cache khud saaf ho jata hai, update turant land hota hai.
    Strategy: navigations = network-first (hamesha fresh index, offline par cache fallback),
    hashed assets / icons / manifest = cache-first (immutable). */
-const VERSION = 'v3.4.0'
+const VERSION = 'v3.5.0'
 const CACHE = `sayonara-empire-${VERSION}`
 const CORE = [
   './',
@@ -16,11 +16,13 @@ const CORE = [
 ]
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(
-    caches.open(CACHE)
-      .then((c) => c.addAll(CORE))
-      .then(() => self.skipWaiting())
-  )
+  // Pass 3.5: khud skipWaiting NAHI — app "New version available — Refresh" prompt dikhayega,
+  // user ke Refresh par SKIP_WAITING message aane par hi naya SW sakriya hoga.
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)))
+})
+
+self.addEventListener('message', (e) => {
+  if (e.data && e.data.type === 'SKIP_WAITING') self.skipWaiting()
 })
 
 self.addEventListener('activate', (e) => {
