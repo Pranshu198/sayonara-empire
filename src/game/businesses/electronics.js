@@ -2,7 +2,7 @@
 export default {
   id: 'electronics',
   name: 'Electronics Showroom',
-  icon: '📺',
+  icon: '',
   cat: 'Retail',
   cost: 600000,
   rev: 75000,

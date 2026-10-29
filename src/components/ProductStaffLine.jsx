@@ -7,8 +7,8 @@ export function ProductStaffLine({ bizId, cat, staffCount, fmt }) {
   const staff = useMemo(() => staffForBiz(bizId, cat, Math.max(1, staffCount)), [bizId, cat, staffCount])
   return (
     <>
-      <div className="muted" style={{ marginTop: 6 }}>🏆 Top Products: {products.map((p) => `${p.name} (${fmt(p.price)})`).join(' • ')}</div>
-      <div className="muted">👥 Team: {staff.map((p) => `${p.name} (${p.role}, skill ${p.skill})`).join(' • ')}</div>
+      <div className="muted" style={{ marginTop: 6 }}> Top Products: {products.map((p) => `${p.name} (${fmt(p.price)})`).join(' • ')}</div>
+      <div className="muted"> Team: {staff.map((p) => `${p.name} (${p.role}, skill ${p.skill})`).join(' • ')}</div>
     </>
   )
 }

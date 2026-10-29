@@ -2,7 +2,7 @@
 export default {
   id: 'mobileshop',
   name: 'Mobile Shop',
-  icon: '📱',
+  icon: '',
   cat: 'Retail',
   cost: 150000,
   rev: 20000,

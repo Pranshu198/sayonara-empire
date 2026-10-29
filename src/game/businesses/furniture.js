@@ -2,7 +2,7 @@
 export default {
   id: 'furniture',
   name: 'Furniture Workshop',
-  icon: '🪑',
+  icon: '',
   cat: 'Industry',
   cost: 300000,
   rev: 35000,

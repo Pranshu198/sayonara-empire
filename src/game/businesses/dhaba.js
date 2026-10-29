@@ -2,7 +2,7 @@
 export default {
   id: 'dhaba',
   name: 'Dhaba',
-  icon: '🍛',
+  icon: '',
   cat: 'Food',
   cost: 75000,
   rev: 11500,

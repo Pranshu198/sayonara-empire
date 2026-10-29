@@ -6,10 +6,10 @@ import { BULK_ACH, bulkProgress } from '../game/content/achievements/index.js'
 export function BulkAchievements({ s, nw, upd, say }) {
   const owned = ownedCount(s); const level = levelOf(s.xp)
   const claimed = s.ach2 || []
-  const claim = (a) => { upd((n) => { n.cash += a.reward; n.ach2 = [...(n.ach2 || []), a.id]; n.xp += 10 }); say(`🏆 ${a.name}: +${fmt(a.reward)}`, true) }
+  const claim = (a) => { upd((n) => { n.cash += a.reward; n.ach2 = [...(n.ach2 || []), a.id]; n.xp += 10 }); say(` ${a.name}: +${fmt(a.reward)}`, true) }
   const visible = BULK_ACH.filter((a) => !claimed.includes(a.id)).slice(0, 14)
   return (
-    <Section id="bulkach" title="🏅 Lambe Lakshya (Legacy Seedhi)" defaultOpen={false} right={claimed.length + ' poore'}>
+    <Section id="bulkach" title="Lambe Lakshya (Legacy Seedhi)" defaultOpen={false} right={claimed.length + ' poore'}>
       <p className="muted">Ye lakshya mahino ke khel ke liye hain — har jeet par inaam aur Legacy badhta hai. Poore hue: {claimed.length}/{BULK_ACH.length}</p>
       {visible.map((a) => {
         const pr = bulkProgress(s, a, nw, owned, level); const done = pr >= a.target

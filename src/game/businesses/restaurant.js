@@ -2,7 +2,7 @@
 export default {
   id: 'restaurant',
   name: 'Restaurant',
-  icon: '🍽️',
+  icon: '',
   cat: 'Food',
   cost: 300000,
   rev: 42000,

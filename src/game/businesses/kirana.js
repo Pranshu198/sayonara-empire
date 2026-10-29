@@ -2,7 +2,7 @@
 export default {
   id: 'kirana',
   name: 'Kirana Store',
-  icon: '🏪',
+  icon: '',
   cat: 'Retail',
   cost: 40000,
   rev: 6500,

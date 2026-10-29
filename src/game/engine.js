@@ -20,7 +20,7 @@ import { growRivals, topRival } from './engines/rival.js'
 import { ratingDrift, complaintHit } from './engines/reputation.js'
 import { wastageRateFor, complaintChance } from './engines/risk.js'
 import { monthEnd } from './engines/treasury.js'
-import { runManagerPhase, runManagerDay, processDeliveries } from './engines/automation.js'
+import { runManagerPhase, runManagerDay, runHrDay, processDeliveries } from './engines/automation.js'
 import { corporateOrder } from './engines/festival.js'
 
 export const fmt = (n) => {
@@ -34,7 +34,7 @@ export const fmt = (n) => {
   return neg ? '-' + s : s
 }
 const rnd = (a, b) => a + Math.random() * (b - a)
-const bizDef = (id) => BUSINESSES.find(b => b.id === id)
+const bizDef = (id) => BUSINESSES.find(b => b.id === (id || '').split('@')[0])
 export { bizDef }
 
 export function netWorth(s) {
@@ -66,7 +66,7 @@ export function initialState(savedElapsedSec = 0) {
     monthProfit: 0, lastTaxDay: 0, receivables: 0,
     dayRevenue: 0, dayCosts: 0, lastDayReport: null,
     rivals: RIVALS.map(r => ({ ...r })),
-    news: [{ day: 1, text: '📰 Sheher Times: Naya udyami sheher me aaya — Sayonara Empire ki shuruaat!' }],
+    news: [{ day: 1, text: ' Sheher Times: Naya udyami sheher me aaya — Sayonara Empire ki shuruaat!' }],
     eventEff: 'calm',
     missions: genMissions(1), missionsDone: [],
     ach: [], xp: 0,
@@ -121,17 +121,21 @@ export function phaseTick(prev) {
     const contract = (s.contracts || {})[id]
     const ceilF = ceilingPenalty(o.price, contract)
     const impF = (s.importedBoost || {})[id] > 0 ? 1.15 : 1
-    const fullRev = d.rev * w * lvMult * o.price * elasticity * ratingF * mktF * eventF * stockF * locF * festF * leaveF * ceilF * impF * s.seasonBoost * rnd(0.9, 1.1) * s.prestigeMult * difficultyFactor(s.settings)
+    const empList = o.employees || []
+    const empWagePhase = empList.reduce((a, e) => a + (e.salary || 0), 0) / 120
+    const empAvgQ = empList.length ? empList.reduce((a, e) => a + ((e.skillPct || 50) + (e.effPct || 50)) / 2, 0) / empList.length / 100 : 0
+    const empF = (empList.length ? Math.min(1.3, 1 + 0.28 * empAvgQ) : 1) * (s.hrMorale || 1)
+    const fullRev = d.rev * w * lvMult * o.price * elasticity * ratingF * mktF * eventF * stockF * locF * festF * leaveF * ceilF * impF * empF * s.seasonBoost * rnd(0.9, 1.1) * s.prestigeMult * difficultyFactor(s.settings)
     const cogs = fullRev * d.cogs * s.supplier * contractCogsMult(contract)
     const fixed = fixedDailyCost(d, o, city) * 0.25
     const wastage = fullRev * wastageRateFor(contract)
-    const costs = cogs + fixed + wastage
+    const costs = cogs + fixed + wastage + empWagePhase
     if (contract && Math.random() < complaintChance(contract)) complaintHit(o)
     const profit = fullRev - costs
     // ---- Stats: lifetime counters + din ka kharcha-breakdown (wages/rent/cogs/util/wastage alag-alag) ----
     const cityRent = city ? city.rent : 1
-    s.bd.cogs += cogs; s.bd.wages += o.staff * d.wage * 0.25; s.bd.rent += d.rent * cityRent * 0.25; s.bd.util += d.util * 0.25; s.bd.wastage += wastage
-    s.life.rev += fullRev; s.life.costs += costs; s.life.wages += o.staff * d.wage * 0.25
+    s.bd.cogs += cogs; s.bd.wages += o.staff * d.wage * 0.25 + empWagePhase; s.bd.rent += d.rent * cityRent * 0.25; s.bd.util += d.util * 0.25; s.bd.wastage += wastage
+    s.life.rev += fullRev; s.life.costs += costs; s.life.wages += o.staff * d.wage * 0.25 + empWagePhase
     const custEst = fullRev / (55 * Math.max(0.5, o.price))
     s.life.customers += custEst; s.life.items += custEst * 1.6
     // cashflow: 85% abhi, 15% udhaar (receivables, kal settle)
@@ -190,7 +194,7 @@ function endDay(s) {
   } else s.eventEff = 'calm'
   if (Math.random() < 0.2) {
     const top = topRival(s)
-    s.news = [{ day: s.day + 1, text: `📰 Sheher Times: ${top.name} abhi aage (${fmt(top.nw)}) — ${top.pers} style se badh raha hai.` }, ...s.news].slice(0, 12)
+    s.news = [{ day: s.day + 1, text: ` Sheher Times: ${top.name} abhi aage (${fmt(top.nw)}) — ${top.pers} style se badh raha hai.` }, ...s.news].slice(0, 12)
   }
   // day report + history
   s.lastDayReport = { day: s.day, revenue: Math.round(s.dayRevenue), costs: Math.round(s.dayCosts), profit: Math.round(s.dayRevenue - s.dayCosts), rent: Math.round(rent) }
@@ -223,16 +227,17 @@ function endDay(s) {
   const ownedCats2 = [...new Set(Object.keys(s.biz).map((id) => bizDef(id).cat))]
   const myCities = (s.unlockedCities || ['india_delhi']).map((cid) => cityOf(cid))
   const co = corporateOrder(s, myCities, ownedCats2.includes('Food') || ownedCats2.includes('Retail'), Math.random)
-  if (co) { const bonus = Math.round(25000 * (0.8 + Math.random() * 0.7)); s.cash += bonus; s.news = [{ day: s.day + 1, text: `🎁 ${co.f.name} (${co.city.name}): Corporate hamper order mila — ${fmt(bonus)} ki ek saath kamaai! Taiyari ka fayda.` }, ...s.news].slice(0, 12) }
+  if (co) { const bonus = Math.round(25000 * (0.8 + Math.random() * 0.7)); s.cash += bonus; s.news = [{ day: s.day + 1, text: ` ${co.f.name} (${co.city.name}): Corporate hamper order mila — ${fmt(bonus)} ki ek saath kamaai! Taiyari ka fayda.` }, ...s.news].slice(0, 12) }
   // Imported tag ki miyaad ghatao
   if (s.importedBoost) for (const k of Object.keys(s.importedBoost)) { s.importedBoost[k] -= 1; if (s.importedBoost[k] <= 0) delete s.importedBoost[k] }
   // AI Managers ke din-bhar ke kaam (finance/trading/hr/expansion)
   runManagerDay(s, bizDef, fmt, netWorth)
+  runHrDay(s, bizDef, fmt)
   // Sheher Times ki taazi headline (badi library se)
   if (Math.random() < 0.5) {
     const topBiz = Object.keys(s.biz)[0] ? bizDef(Object.keys(s.biz)[0]).name : 'nayi dukaan'
     const txt = headline(null, { player: 'Sayonara Empire', rival: [...s.rivals].sort((a, b) => b.nw - a.nw)[0].name, biz: topBiz, stock: pickStockName(s), place: 'Uttam Nagar', fest: 'Diwali' })
-    s.news = [{ day: s.day + 1, text: '📰 Sheher Times: ' + txt }, ...s.news].slice(0, 12)
+    s.news = [{ day: s.day + 1, text: ' Sheher Times: ' + txt }, ...s.news].slice(0, 12)
   }
   // Graahak reviews (badi customer library se)
   const ownedCats = [...new Set(Object.keys(s.biz).map((id) => bizDef(id).cat))]

@@ -18,7 +18,24 @@ import { ENCYCLOPEDIA } from './content/encyclopedia/terms.js'
 import { BULK_ACH } from './content/achievements/bulk.js'
 import { ALL_DIALOGUES } from './content/rivals/index.js'
 const jobs = []
+// Pass 3.2 optimization: bade base pools bhi stream — pehli paint sirf chhote base (parts 01-02) se
 function load(fn, target, name) { jobs.push(fn().then((m) => { if (m[name]) target.push(...m[name]) }).catch(() => {})) }
+load(() => import('./content/events/events03.js'), ALL_EVENTS, 'EVENTS_3')
+load(() => import('./content/events/events04.js'), ALL_EVENTS, 'EVENTS_4')
+load(() => import('./content/events/events05.js'), ALL_EVENTS, 'EVENTS_5')
+load(() => import('./content/events/events06.js'), ALL_EVENTS, 'EVENTS_6')
+load(() => import('./content/events/events07.js'), ALL_EVENTS, 'EVENTS_7')
+load(() => import('./content/events/events08.js'), ALL_EVENTS, 'EVENTS_8')
+load(() => import('./content/news/news03.js'), ALL_NEWS, 'NEWS_3')
+load(() => import('./content/news/news04.js'), ALL_NEWS, 'NEWS_4')
+load(() => import('./content/news/news05.js'), ALL_NEWS, 'NEWS_5')
+load(() => import('./content/news/news06.js'), ALL_NEWS, 'NEWS_6')
+load(() => import('./content/customers/customers03.js'), ALL_CUSTOMERS, 'CUSTOMERS_3')
+load(() => import('./content/customers/customers04.js'), ALL_CUSTOMERS, 'CUSTOMERS_4')
+load(() => import('./content/customers/customers05.js'), ALL_CUSTOMERS, 'CUSTOMERS_5')
+load(() => import('./content/customers/customers06.js'), ALL_CUSTOMERS, 'CUSTOMERS_6')
+load(() => import('./content/customers/customers07.js'), ALL_CUSTOMERS, 'CUSTOMERS_7')
+load(() => import('./content/customers/customers08.js'), ALL_CUSTOMERS, 'CUSTOMERS_8')
 load(() => import('./content/events/events09.js'), ALL_EVENTS, 'EVENTS_9')
 load(() => import('./content/events/events10.js'), ALL_EVENTS, 'EVENTS_10')
 load(() => import('./content/events/events11.js'), ALL_EVENTS, 'EVENTS_11')

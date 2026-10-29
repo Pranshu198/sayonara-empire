@@ -2,7 +2,7 @@
 export default {
   id: 'hospital',
   name: 'Hospital',
-  icon: '🏨',
+  icon: '',
   cat: 'Health',
   cost: 2500000,
   rev: 260000,

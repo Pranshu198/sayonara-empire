@@ -11,10 +11,10 @@ export function monthEnd(s, fmt) {
     const tax = s.monthProfit * taxRateOf(s.settings)
     s.cash -= tax
     if (s.life) s.life.tax = (s.life.tax || 0) + tax
-    s.news = [{ day: s.day, text: `🧾 Month-end: Is mahine ke profit par tax ${fmt(tax)} kata. (Sirf is mahine ka profit ginna gaya${s.managers && s.managers.finance ? ', Finance Manager ne provisioning kar rakhi thi' : ''})` }, ...s.news].slice(0, 12)
+    s.news = [{ day: s.day, text: ` Month-end: Is mahine ke profit par tax ${fmt(tax)} kata. (Sirf is mahine ka profit ginna gaya${s.managers && s.managers.finance ? ', Finance Manager ne provisioning kar rakhi thi' : ''})` }, ...s.news].slice(0, 12)
   }
   const div = dividendCalc(s)
-  if (div > 0) { s.cash += div; s.news = [{ day: s.day, text: `💰 Dividend mila: ${fmt(div)}` }, ...s.news].slice(0, 12) }
+  if (div > 0) { s.cash += div; s.news = [{ day: s.day, text: ` Dividend mila: ${fmt(div)}` }, ...s.news].slice(0, 12) }
   if (s.sipMonthly > 0 && s.cash >= s.sipMonthly) { s.cash -= s.sipMonthly; s.sip += s.sipMonthly }
   if (s.loan.amount > 0) {
     s.cash -= s.loan.emi
@@ -29,11 +29,11 @@ export function monthEnd(s, fmt) {
     if (totalSal > 0) {
       if (s.cash + s.bank >= totalSal) {
         const fromCash = Math.min(s.cash, totalSal); s.cash -= fromCash; s.bank -= (totalSal - fromCash)
-        s.news = [{ day: s.day, text: `👔 Manager tankhwah: ${fmt(totalSal)} diya gaya (${mgrs.length} managers)` }, ...s.news].slice(0, 12)
+        s.news = [{ day: s.day, text: ` Manager tankhwah: ${fmt(totalSal)} diya gaya (${mgrs.length} managers)` }, ...s.news].slice(0, 12)
       } else {
         const leaving = mgrs[0]
         delete s.managers[leaving.role]
-        s.news = [{ day: s.day, text: `⚠️ Tankhwah na milne se ${leaving.name} (${leaving.roleName}) chala gaya!` }, ...s.news].slice(0, 12)
+        s.news = [{ day: s.day, text: ` Tankhwah na milne se ${leaving.name} (${leaving.roleName}) chala gaya!` }, ...s.news].slice(0, 12)
       }
     }
   }

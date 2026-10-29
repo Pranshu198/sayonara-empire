@@ -2,7 +2,7 @@
 export default {
   id: 'salon',
   name: 'Salon',
-  icon: '💇',
+  icon: '',
   cat: 'Service',
   cost: 60000,
   rev: 8500,

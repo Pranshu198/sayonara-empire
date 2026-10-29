@@ -36,7 +36,10 @@ import { PHASES, PHASE_W, bestPhaseOf } from './phaseWeights.js'
 
 export const BUSINESSES = [chai, momo, dhaba, restaurant, kirana, mobileshop, boutique, electronics, salon, carwash, repair, gym, tuition, coaching, playschool, computer, pharmacy, dental, lab, hospital, appstartup, ytstudio, gaming, itagency, bakeryf, garment, furniture, printing, evcharge, solar, petrol, roplant]
 export const BIZ_BY_ID = Object.fromEntries(BUSINESSES.map((b) => [b.id, b]))
-export function bizDef(id) { return BIZ_BY_ID[id] }
+export function bizIdOf(key) { return (key || '').split('@')[0] }
+export function branchKey(id, city) { return id + '@' + (city || 'india_delhi') }
+export function cityOfKey(key) { const p = (key || '').split('@'); return p[1] || 'india_delhi' }
+export function bizDef(id) { return BIZ_BY_ID[bizIdOf(id)] }
 export function businessesOfCat(cat) { return BUSINESSES.filter((b) => b.cat === cat) }
 export function cheapestBusiness() { return [...BUSINESSES].sort((a, b) => a.cost - b.cost)[0] }
 export { CATEGORIES, CAT_LABEL, CAT_BLURB, PHASES, PHASE_W, bestPhaseOf }

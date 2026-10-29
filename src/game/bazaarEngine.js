@@ -67,7 +67,7 @@ export function bazaarDayTick(s) {
     l.daysLeft -= 1
     if (l.daysLeft <= 0 || chance(0.10)) {
       const buyer = pick(s.rivals)
-      news.push({ day: s.day, text: `🏪 Business Bazaar: ${buyer.name} ne ${bizDef(l.bizId).name} (${l.district}) kharid liya — tumse pehle!` })
+      news.push({ day: s.day, text: ` Business Bazaar: ${buyer.name} ne ${bizDef(l.bizId).name} (${l.district}) kharid liya — tumse pehle!` })
       s.bazaar = s.bazaar.filter((x) => x.uid !== l.uid)
     }
   }
@@ -81,7 +81,7 @@ export function bazaarDayTick(s) {
       const base = ml.ask
       const amt = Math.round(base * rnd(0.55, 1.05))
       if (!ml.offers.some((o) => o.bidder === bidder)) ml.offers.push({ bidder, amt, day: s.day })
-      if (amt >= base * 0.9) news.push({ day: s.day, text: `💰 Tumhari listing (${bizDef(ml.bizId).name}) par badi boli: ${bidder} — akhbaar me charcha!` })
+      if (amt >= base * 0.9) news.push({ day: s.day, text: ` Tumhari listing (${bizDef(ml.bizId).name}) par badi boli: ${bidder} — akhbaar me charcha!` })
     }
   }
   return news
@@ -89,9 +89,9 @@ export function bazaarDayTick(s) {
 // Mol-bhaav: seller ka jawab — desperation aur offer ke hisaab se
 export function negotiate(listing, offerAmt) {
   const ratio = offerAmt / listing.ask
-  if (ratio >= 0.97) return { result: 'accept', msg: 'Seller: "Theek hai, sauda pakka! Tum jeete." 😄' }
+  if (ratio >= 0.97) return { result: 'accept', msg: 'Seller: "Theek hai, sauda pakka! Tum jeete." ' }
   if (ratio >= listing.desperation - 0.12) {
-    if (chance(0.6)) return { result: 'accept', msg: 'Seller: "Bahut socha... chalo, tumhara hua." 🤝' }
+    if (chance(0.6)) return { result: 'accept', msg: 'Seller: "Bahut socha... chalo, tumhara hua." ' }
     const counter = Math.round(listing.ask * rnd(0.93, 0.97))
     return { result: 'counter', counter, msg: `Seller: "Thoda aur badhao — ${counter} par baat banegi."` }
   }
@@ -99,5 +99,5 @@ export function negotiate(listing, offerAmt) {
     const counter = Math.round(listing.ask * rnd(0.9, 0.98))
     return { result: 'counter', counter, msg: `Seller: "Itne kam me nahi hoga. ${counter} soch lo."` }
   }
-  return { result: 'reject', msg: 'Seller: "Ye to mazak hai. Ciddi mat karo." 😤' }
+  return { result: 'reject', msg: 'Seller: "Ye to mazak hai. Ciddi mat karo." ' }
 }

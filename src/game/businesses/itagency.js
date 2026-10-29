@@ -2,7 +2,7 @@
 export default {
   id: 'itagency',
   name: 'IT Services Agency',
-  icon: '🧑‍💻',
+  icon: '‍',
   cat: 'Tech',
   cost: 800000,
   rev: 60000,

@@ -2,7 +2,7 @@
 export default {
   id: 'momo',
   name: 'Momo Corner',
-  icon: '🥟',
+  icon: '',
   cat: 'Food',
   cost: 25000,
   rev: 4200,

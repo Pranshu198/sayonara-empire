@@ -1,6 +1,6 @@
 // Din ke 4 hisso (Morning/Afternoon/Evening/Night) me har category ki demand ka hissa
 // Chai subah-shaam, restaurant raat — real life ki rhythm yahi se aati hai
-export const PHASES = ['🌅 Morning', '☀️ Afternoon', '🌆 Evening', '🌙 Night']
+export const PHASES = [' Morning', ' Afternoon', ' Evening', ' Night']
 export const PHASE_KEYS = ['morning', 'afternoon', 'evening', 'night']
 export const PHASE_W = {
   Food: [0.30, 0.25, 0.32, 0.13], Retail: [0.18, 0.34, 0.36, 0.12], Service: [0.22, 0.32, 0.34, 0.12],

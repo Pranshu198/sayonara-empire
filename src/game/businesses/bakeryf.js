@@ -2,7 +2,7 @@
 export default {
   id: 'bakeryf',
   name: 'Bakery Factory',
-  icon: '🏭',
+  icon: '',
   cat: 'Industry',
   cost: 600000,
   rev: 68000,

@@ -1,9 +1,9 @@
 // Business categories aur unke Hindi-mix labels
 export const CATEGORIES = ['Food', 'Retail', 'Service', 'Edu', 'Health', 'Tech', 'Industry', 'Energy']
 export const CAT_LABEL = {
-  Food: '🍔 Food & Drinks', Retail: '🛍️ Retail & Shopping', Service: '✂️ Services',
-  Edu: '🎓 Education', Health: '🏥 Health', Tech: '💻 Tech & Media',
-  Industry: '🏭 Industry', Energy: '⚡ Energy',
+  Food: ' Food & Drinks', Retail: ' Retail & Shopping', Service: ' Services',
+  Edu: ' Education', Health: ' Health', Tech: ' Tech & Media',
+  Industry: ' Industry', Energy: ' Energy',
 }
 export const CAT_BLURB = {
   Food: 'Roz ki bhookh, roz ki kamaai — footfall sabse zyada, margin patla.',

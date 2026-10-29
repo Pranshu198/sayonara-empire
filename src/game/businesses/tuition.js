@@ -2,7 +2,7 @@
 export default {
   id: 'tuition',
   name: 'Tuition Centre',
-  icon: '📚',
+  icon: '',
   cat: 'Edu',
   cost: 30000,
   rev: 6000,

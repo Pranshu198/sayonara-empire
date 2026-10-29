@@ -2,7 +2,7 @@
 export default {
   id: 'gym',
   name: 'Gym',
-  icon: '🏋️',
+  icon: '',
   cat: 'Service',
   cost: 250000,
   rev: 22000,

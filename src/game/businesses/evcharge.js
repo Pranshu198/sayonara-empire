@@ -2,7 +2,7 @@
 export default {
   id: 'evcharge',
   name: 'EV Charging Station',
-  icon: '🔌',
+  icon: '',
   cat: 'Energy',
   cost: 400000,
   rev: 30000,

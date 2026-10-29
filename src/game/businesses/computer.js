@@ -2,7 +2,7 @@
 export default {
   id: 'computer',
   name: 'Computer Institute',
-  icon: '🖥️',
+  icon: '',
   cat: 'Edu',
   cost: 180000,
   rev: 18000,

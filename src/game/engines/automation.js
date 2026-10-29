@@ -2,6 +2,7 @@
 // Har action Manager Activity Report (s.managerLog) me likha jaata hai — khiladi audit kar sakta hai
 // Skill zyada = galti kam; kam skill wala manager kabhi mehenga/galat order bhi kar deta hai (khabar sahi aati hai)
 import { defaultItemFor } from '../procurement/index.js'
+import { candidatesForBranch, rolesForCat, newEmployee } from '../staffSystem.js'
 import { chooseSeller, orderCost } from './supply.js'
 const totalPhases = (s) => (s.day - 1) * 4 + s.phase
 function log(s, role, text, delta = 0) {
@@ -15,6 +16,7 @@ function markGood(s, role) { const st = (s.managerStats || {})[role]; if (st) st
 
 // ---- Phase par chalne wale kaam: purchase / inventory / pricing / marketing ----
 export function runManagerPhase(s, bizDef, fmt) {
+  runStockOfficers(s, bizDef, fmt)
   const M = s.managers || {}
   for (const [id, o] of Object.entries(s.biz)) {
     const d = bizDef(id); if (!d) continue
@@ -26,7 +28,7 @@ export function runManagerPhase(s, bizDef, fmt) {
       const miss = Math.min(100, 100 - o.stock + 10)
       let cost = orderCost(d, miss, seller, item ? item.basePrice : 0)
       let qtyNote = ''
-      if (mistake(s, pm)) { cost = Math.round(cost * 1.5); qtyNote = ' ⚠️ (galti: zyada mehenga order ho gaya)'; markBad(s, 'purchase') } else markGood(s, 'purchase')
+      if (mistake(s, pm)) { cost = Math.round(cost * 1.5); qtyNote = '  (galti: zyada mehenga order ho gaya)'; markBad(s, 'purchase') } else markGood(s, 'purchase')
       if (s.cash >= cost) {
         const payNow = !seller || seller.terms !== 'credit15'
         if (payNow) s.cash -= cost
@@ -79,11 +81,76 @@ export function runManagerDay(s, bizDef, fmt, netWorthFn) {
   if (hr && hr.on) {
     for (const [id, o] of Object.entries(s.biz)) { const d = bizDef(id); if (d && o.staff < d.staff && s.cash > 50000) { o.staff += 1; log(s, 'hr', `${d.name}: ek staff bharti kiya (kul ${o.staff}) — team puri`); markGood(s, 'hr') } }
   }
+  // HR AUTO-HIRE: salary cap niyam ho to khali roles par sabse sasta achha candidate khud rakho
+  if (hr && hr.on && (hr.rules?.autoHireCap || 0) > 0) {
+    for (const [key, o] of Object.entries(s.biz)) {
+      const d = bizDef(key); if (!d) continue
+      const cap = 6 + (o.lv || 1) * 4 + d.staff * 2
+      if ((o.employees || []).length >= Math.ceil(cap / 2)) continue
+      {
+        const role = rolesForCat(d.cat).find((r) => !(o.employees || []).some((e) => e.role === r)) || 'counter'
+        const cands = candidatesForBranch(s, key, d.cat, role, 4).filter((c) => c.salary <= hr.rules.autoHireCap)
+        if (cands.length) { const c = cands[0]; o.employees = [...(o.employees || []), { ...newEmployee(c, role), hiredDay: s.day }]; log(s, 'hr', `${d.name}: HR ne auto-hire kiya — ${c.name} (${role}), tankhwah ${fmt(c.salary)}/mahina, skill ${c.skillPct}%`); markGood(s, 'hr') }
+      }
+    }
+  }
   const ex = M.expansion
   if (ex && ex.on && s.day % 7 === 0 && netWorthFn) {
     log(s, 'expansion', `Vistaar report: net worth ${fmt(netWorthFn(s))} — naya sheher kholne ki taiyari ka samay ${(netWorthFn(s) > 500000) ? 'aa gaya hai, Atlas dekho' : 'abhi nahi, pehle kamaai badhao'}`)
   }
 }
+
+// ---- BRANCH STOCK OFFICER — stockofficer role ka employee apni branch ka stock khud sambhalta hai ----
+// Niyam branch par: o.stockRules { target, maxPrice, pref, allowImport, on }
+export function runStockOfficers(s, bizDef, fmt) {
+  for (const [key, o] of Object.entries(s.biz)) {
+    const officer = (o.employees || []).find((e) => e.role === 'stockofficer')
+    if (!officer) continue
+    const rules = o.stockRules || { target: 30, maxPrice: 0, pref: 'cheapest', allowImport: false, on: true }
+    if (rules.on === false) continue
+    const d = bizDef(key); if (!d) continue
+    if (o.stock >= (rules.target ?? 30)) continue
+    if ((s.pendingDeliveries || []).some((x) => x.bizId === key)) continue
+    const item = defaultItemFor(key, d.cat)
+    const seller = item ? chooseSeller(item, rules.pref || 'cheapest') : null
+    if (seller && rules.maxPrice > 0 && seller.unitPrice > rules.maxPrice) { log(s, 'stockofficer', `${d.name}: Stock Officer ne order roka — seller ka daam ${fmt(seller.unitPrice)} tumhari max limit ${fmt(rules.maxPrice)} se upar hai`); continue }
+    const miss = Math.min(100, 100 - o.stock + 10)
+    let cost = orderCost(d, miss, seller, item ? item.basePrice : 0)
+    // Import option: officer ko ijazat ho aur stock bahut kam ho to sasta container import (der se aayega)
+    if (rules.allowImport && o.stock < (rules.target ?? 30) / 2) {
+      const impCost = Math.round(cost * 0.78)
+      if (s.cash >= impCost) {
+        s.cash -= impCost
+        s.pendingDeliveries = [...(s.pendingDeliveries || []), { bizId: key, qty: miss, arriveTP: totalPhases(s) + 12, kind: 'import', item: item ? item.item : 'maal', country: 'China', cost: impCost, payOnDelivery: false, rel: 92 }]
+        log(s, 'stockofficer', `${d.name}: Stock Officer ne IMPORT order kiya (China) — ${fmt(impCost)}, 3 din me aayega, Imported tag milega`, -impCost)
+        continue
+      }
+    }
+    if (s.cash >= cost) {
+      const payNow = !seller || seller.terms !== 'credit15'
+      if (payNow) s.cash -= cost
+      s.pendingDeliveries = [...(s.pendingDeliveries || []), { bizId: key, qty: miss, arriveTP: totalPhases(s) + (seller ? seller.deliveryDays : 0) * 4 + 1, kind: 'proc', item: item ? item.item : 'maal', seller: seller ? seller.seller : 'local', cost, payOnDelivery: !payNow, rel: seller ? seller.reliability : 90 }]
+      if (item && seller) { if (!s.contracts) s.contracts = {}; s.contracts[key] = { itemId: item.id, item: item.item, sellerName: seller.seller, quality: seller.quality, unitPrice: seller.unitPrice, basePrice: item.basePrice, complaintRisk: seller.complaintRisk, reliability: seller.reliability, deliveryDays: seller.deliveryDays, terms: seller.terms } }
+      log(s, 'stockofficer', `${d.name}: Stock Officer (${officer.name}) ne stock ${Math.round(o.stock)}% par order kiya (${seller ? seller.seller : 'local'}) — ${fmt(cost)}`, payNow ? -cost : 0)
+    }
+  }
+}
+// ---- HR DAY: morale, appraisal, aur niyam ho to salary-cap ke andar auto-hire (employees) ----
+export function runHrDay(s, bizDef, fmt) {
+  const hr = (s.managers || {}).hr
+  const allEmp = Object.values(s.biz || {}).flatMap((o) => o.employees || [])
+  if (allEmp.length) {
+    for (const e of allEmp) e.morale = Math.max(35, Math.min(100, (e.morale ?? 70) + (hr && hr.on ? 2 : -0.4)))
+    const avgMorale = allEmp.reduce((a, e) => a + (e.morale ?? 70), 0) / allEmp.length
+    s.hrMorale = hr && hr.on ? 1 + Math.min(0.08, (avgMorale - 60) / 500) : 1
+  } else s.hrMorale = 1
+  if (hr && hr.on && s.day % 30 === 0) {
+    let raised = 0
+    for (const o of Object.values(s.biz || {})) for (const e of (o.employees || [])) { if (e.effPct < 99) { e.effPct += 1; raised++ } }
+    if (raised) log(s, 'hr', `Saalana appraisal: ${raised} employees ki efficiency +1% (HR ki mehnat)`)
+  }
+}
+
 // Deliveries (procurement + import) ka aana — har phase check
 export function processDeliveries(s, fmt) {
   const tp = totalPhases(s)
@@ -96,8 +163,8 @@ export function processDeliveries(s, fmt) {
         const got = partial ? Math.round(dl.qty * 0.7) : dl.qty
         o.stock = Math.min(100, o.stock + got)
         if (dl.payOnDelivery) s.cash -= dl.cost
-        if (dl.kind === 'import') { s.importedBoost = { ...(s.importedBoost || {}), [dl.bizId]: 14 }; s.news = [{ day: s.day, text: `🚢 Import pahuncha: ${dl.item} (${dl.country}) — 'Imported' tag 14 din demand badhayega${partial ? ' (port par kuch maal atka — 70% hi aaya)' : ''}` }, ...s.news].slice(0, 12) }
-        else if (partial) s.news = [{ day: s.day, text: `⚠️ Delivery aadhi aayi: ${dl.item} ka 70% hi mila (seller reliability)` }, ...s.news].slice(0, 12)
+        if (dl.kind === 'import') { s.importedBoost = { ...(s.importedBoost || {}), [dl.bizId]: 14 }; s.news = [{ day: s.day, text: ` Import pahuncha: ${dl.item} (${dl.country}) — 'Imported' tag 14 din demand badhayega${partial ? ' (port par kuch maal atka — 70% hi aaya)' : ''}` }, ...s.news].slice(0, 12) }
+        else if (partial) s.news = [{ day: s.day, text: ` Delivery aadhi aayi: ${dl.item} ka 70% hi mila (seller reliability)` }, ...s.news].slice(0, 12)
       }
     } else keep.push(dl)
   }

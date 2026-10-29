@@ -2,7 +2,7 @@
 export default {
   id: 'repair',
   name: 'Mobile Repair',
-  icon: '🔧',
+  icon: '',
   cat: 'Service',
   cost: 35000,
   rev: 5500,

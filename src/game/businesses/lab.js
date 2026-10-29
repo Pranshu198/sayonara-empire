@@ -2,7 +2,7 @@
 export default {
   id: 'lab',
   name: 'Diagnostic Lab',
-  icon: '🔬',
+  icon: '',
   cat: 'Health',
   cost: 500000,
   rev: 42000,

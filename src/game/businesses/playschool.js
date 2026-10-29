@@ -2,7 +2,7 @@
 export default {
   id: 'playschool',
   name: 'Kids Play School',
-  icon: '🧸',
+  icon: '',
   cat: 'Edu',
   cost: 400000,
   rev: 32000,

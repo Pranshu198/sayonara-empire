@@ -82,11 +82,11 @@ export function wealthDayTick(s) {
       if (chance(1 - st.failChance)) {
         const gain = Math.round(pos.amt * st.upside)
         s.cash += gain
-        news.push({ day: s.day, text: `🚀 STARTUP EXIT! ${st.name} bik gaya — tumhare ${fmtLocal(pos.amt)} ke badle ${fmtLocal(gain)} mile!` })
+        news.push({ day: s.day, text: ` STARTUP EXIT! ${st.name} bik gaya — tumhare ${fmtLocal(pos.amt)} ke badle ${fmtLocal(gain)} mile!` })
         s.story = [`Day ${s.day}: ${st.name} se bada exit (${fmtLocal(gain)})`, ...s.story].slice(0, 30)
         delete s.startups[id]
       } else {
-        news.push({ day: s.day, text: `💀 Startup dooba: ${st.name} band ho gaya. Angel investing ka khatra yahi hai.` })
+        news.push({ day: s.day, text: ` Startup dooba: ${st.name} band ho gaya. Angel investing ka khatra yahi hai.` })
         s.story = [`Day ${s.day}: ${st.name} dooba — sabak mila`, ...s.story].slice(0, 30)
         delete s.startups[id]
       }
@@ -99,10 +99,10 @@ export function wealthDayTick(s) {
       if (chance(mv.hitChance)) {
         const gain = Math.round(pos.amt * mv.mult)
         s.cash += gain
-        news.push({ day: s.day, text: `🎬 BLOCKBUSTER! '${mv.title}' hit — producer ko ${fmtLocal(gain)} mile!` })
+        news.push({ day: s.day, text: ` BLOCKBUSTER! '${mv.title}' hit — producer ko ${fmtLocal(gain)} mile!` })
         s.story = [`Day ${s.day}: Film '${mv.title}' HIT — ${fmtLocal(gain)}`, ...s.story].slice(0, 30)
       } else {
-        news.push({ day: s.day, text: `🎬 Flop: '${mv.title}' doobi. Cinema ka khel aisa hi hai.` })
+        news.push({ day: s.day, text: ` Flop: '${mv.title}' doobi. Cinema ka khel aisa hi hai.` })
         s.story = [`Day ${s.day}: Film '${mv.title}' flop — paisa gaya`, ...s.story].slice(0, 30)
       }
       delete s.movies[id]
@@ -113,7 +113,7 @@ export function wealthDayTick(s) {
   for (const c of matured) {
     const total = Math.round(c.amt * (1 + c.bonus))
     s.cash += total
-    news.push({ day: s.day, text: `⏳ Time Capsule khula! Band rakha paisa bonus ke saath ${fmtLocal(total)} mila. Sabr ka phal.` })
+    news.push({ day: s.day, text: ` Time Capsule khula! Band rakha paisa bonus ke saath ${fmtLocal(total)} mila. Sabr ka phal.` })
   }
   if (matured.length) s.capsules = s.capsules.filter((c) => s.day < c.unlockDay)
   // Treasure talaash ka nateeja
@@ -122,10 +122,10 @@ export function wealthDayTick(s) {
     if (chance(t.findChance)) {
       const prize = Math.round(t.cost * t.prizeMult)
       s.cash += prize
-      news.push({ day: s.day, text: `🏆 KHAZANA MILA! ${t.place} par talaash safal — ${fmtLocal(prize)} ka khazana haath laga!` })
+      news.push({ day: s.day, text: ` KHAZANA MILA! ${t.place} par talaash safal — ${fmtLocal(prize)} ka khazana haath laga!` })
       s.story = [`Day ${s.day}: Khazana mila ${t.place} par (${fmtLocal(prize)})`, ...s.story].slice(0, 30)
     } else {
-      news.push({ day: s.day, text: `⛏️ Talaash khaali gayi: ${t.place} par kuch nahi mila — par kahani akhbaar me chhapi.` })
+      news.push({ day: s.day, text: ` Talaash khaali gayi: ${t.place} par kuch nahi mila — par kahani akhbaar me chhapi.` })
       s.rep = Math.min(100, (s.rep || 50) + 1)
     }
   }
@@ -138,9 +138,9 @@ export function wealthDayTick(s) {
     if (win) {
       const gain = Math.round(p.amt * p.payout)
       s.cash += gain
-      news.push({ day: s.day, text: `🔮 Andaza sahi nikla! Prediction par ${fmtLocal(gain)} mile.` })
+      news.push({ day: s.day, text: ` Andaza sahi nikla! Prediction par ${fmtLocal(gain)} mile.` })
     } else {
-      news.push({ day: s.day, text: `🔮 Andaza galat — prediction ki rakam gayi. Economy padhna seekho.` })
+      news.push({ day: s.day, text: ` Andaza galat — prediction ki rakam gayi. Economy padhna seekho.` })
     }
   }
   if (dueP.length) s.predictions = s.predictions.filter((p) => s.day < p.dueDay)
@@ -172,10 +172,10 @@ export function legacyScore(s, nw) {
   return wealthPart + charityPart + lifePart + cityPart + dayPart + geoPart + (s.prestige || 0) * 25
 }
 export function legacyTitle(score) {
-  if (score >= 220) return '👑 Legend'
-  if (score >= 170) return '🏰 Sheher ka Seth'
-  if (score >= 120) return '🌟 Bada Naam'
-  if (score >= 80) return '💼 Ubharta Seth'
-  if (score >= 45) return '🏪 Pakka Vyapari'
-  return '🌱 Shuruaat Wala'
+  if (score >= 220) return ' Legend'
+  if (score >= 170) return ' Sheher ka Seth'
+  if (score >= 120) return ' Bada Naam'
+  if (score >= 80) return ' Ubharta Seth'
+  if (score >= 45) return ' Pakka Vyapari'
+  return ' Shuruaat Wala'
 }

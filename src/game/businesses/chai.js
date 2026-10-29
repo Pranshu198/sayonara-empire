@@ -2,7 +2,7 @@
 export default {
   id: 'chai',
   name: 'Chai Stall',
-  icon: '☕',
+  icon: '',
   cat: 'Food',
   cost: 10000,
   rev: 1800,

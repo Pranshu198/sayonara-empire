@@ -14,8 +14,8 @@ Start with a single chai stall in Uttam Nagar, Delhi — end with businesses acr
 ![Live](https://img.shields.io/badge/status-live-brightgreen)
 ![React](https://img.shields.io/badge/React-19.3-61dafb)
 ![Vite](https://img.shields.io/badge/Vite-8.3-a855f7)
-![Lines of Code](https://img.shields.io/badge/lines_of_code-475%2C567-blueviolet)
-![Source Files](https://img.shields.io/badge/src_files-386-orange)
+![Lines of Code](https://img.shields.io/badge/lines_of_code-477%2C506-blueviolet)
+![Source Files](https://img.shields.io/badge/src_files-415-orange)
 ![Content Entries](https://img.shields.io/badge/content_entries-44%2C000%2B-red)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -37,6 +37,14 @@ Start with a single chai stall in Uttam Nagar, Delhi — end with businesses acr
 |---|
 | <img src="docs/screenshots/stats.png" width="250" /> |
 
+| My Empire HQ — brand rollup, branches | HQ Detail — per-branch P&L & control | Staff — CV Team (hire/train/promote) |
+|---|---|---|
+| <img src="docs/screenshots/hq.png" width="250" /> | <img src="docs/screenshots/hq-detail.png" width="250" /> | <img src="docs/screenshots/hq-cv.png" width="250" /> |
+
+| UI in Hindi (Devanagari) | UI in Urdu (Roman) | UI in Arabic (RTL) |
+|---|---|---|
+| <img src="docs/screenshots/hindi.png" width="250" /> | <img src="docs/screenshots/urdu-roman.png" width="250" /> | <img src="docs/screenshots/arabic.png" width="250" /> |
+
 ---
 
 ## What is this?
@@ -53,6 +61,17 @@ This is not a clicker. Every business runs on a **line-by-line Profit & Loss eng
 - **Import system — 1,500 listings.** Buy from Atlas countries with the full landed cost shown *before* you confirm: base price × live FX + shipping + customs duty − container discount. Stock arrives days later (port delays happen), and earns the business a 14-day **"Imported" tag** that lifts demand.
 - **AI Managers — 640 profiles, 8 roles.** Hire Purchase, Inventory, Pricing, Marketing, Finance, HR, Trading and Expansion managers. Set their rules (restock below X%, auto-sell at +Y%, keep cash above Z); they act every phase and **log every action** in an auditable Manager Activity Report. High skill = fewer mistakes. A bad manager *will* lose you money — and the report will honestly say so.
 - **Stats / Analytics command center.** A dedicated tab (own SVG icon) with live rate meters — income/sec, burn/sec and net/sec derived honestly from the engine's actual recent P&L (in Manual mode they switch to per-phase units), a burn breakdown by wages/rent/COGS/utilities/wastage/interest, lifetime counters (income, expenses, taxes paid, wages paid, estimated customers & items, best/worst day, biggest expense day), an empire snapshot (branches, cities, countries, staff, portfolio, net-worth chart, profit-share donut by category, top-5 cities), and records — milestone days for ₹1L/₹10L/₹1Cr+, profit streaks, rival rank and Legacy score. Lifetime counters are persisted in the save and, on older saves, honestly start counting from the day the feature arrived.
+
+## Pass 3.2 — HQ, people, languages & polish
+
+- **My Empire HQ (new tab).** Only *your* running businesses live here — grouped by brand with a profit rollup, every branch as its own card (city, level, rating, stock, staff, today's profit). Open a branch for its full HQ detail: P&L rows, price slider, restock/upgrade/marketing/sell, its own procurement contracts, franchise expansion, staff and auto-buy rules.
+- **Franchise — true multi-location.** The same brand can run in many Atlas cities at once (each branch = its own staff, stock, P&L and city rent/demand; setup cost 50% of the business price, no branch limit but your cash). Old saves migrate automatically: every existing business becomes a branch in its city.
+- **Deep staff with CVs.** Per-branch hiring from a 4,200-profile candidate library. Every CV shows name, role, skill %, efficiency %, experience, expected salary, trait and past employer — hire (25% signing), train, promote, raise or fire. Staff are real in the engine: their wages are a P&L cost line and their average quality moves revenue (capacity scales with level — a Lv 3 stall seats 20).
+- **Auto-Stock Officer + HR Manager.** A Stock Officer hired *inside* a branch auto-buys its material by your rules (target stock %, max unit price, seller preference, imports allowed) and logs every purchase. The HR Manager improves the candidate pool, value-sorts the CV shortlist, can auto-hire under a salary cap, and runs morale + Day-30 appraisals.
+- **Zero emojis — own icon library.** Every icon in the app is a hand-built stroke SVG from the in-house set (`src/components/icons/`, ~48 icons); generated text is sanitised before display. Grep-verified: **zero emoji characters in the entire `src/` tree**.
+- **19 languages.** A real `t(key)` i18n system (`src/i18n/`, one lazy file per language): English, Hindi (Devanagari), Hinglish, **Urdu (Roman)** — Hinglish-style, Urdu script, Arabic (full RTL layout), French, Russian, Spanish, Portuguese, German, Bengali, Punjabi, Marathi, Tamil, Telugu, Chinese, Japanese, Korean. Searchable picker in Settings, browser auto-detect, instant switch, per-script fonts. Menus/labels/buttons/time/stats fully translate; the deep story/news libraries stay in their original language (stated honestly in Settings → About).
+- **Card design system + ultra polish.** One card family (Base/Stat/Business/Asset/Person/Listing/Metric) with a shared anatomy — icon slot, title, subtitle, value zone, trend chip, action row — in flat/elevated/glass/glow/danger/success variants, an 8-pt spacing rhythm, radius scale 16/20/24, tabular numbers, skeleton shimmer for lazy panels, designed empty states and card-style toasts across every tab.
+- **Heavy optimization, same quality.** Initial JS is **419 KB gzip total** (index + vendor + shared engine chunks, 183 chunks overall) after slimming the always-loaded content base pools and streaming the rest behind the splash via the deep loader; saves are debounce-throttled (1.5 s + flush on hide/close) instead of a full stringify per change; the Atlas windows long lists (40/page); a Performance Mode (Settings → Advanced, auto by FPS) trims particles on weak devices *without touching the design*. Engine perf, simulated in Node with a 54-branch / 216-staff empire: **1.6 ms per phase** (400 phases, zero errors). Headless verification of the final build: **all 9 tabs + HQ + CV + 5 language UIs — zero console errors, zero horizontal overflow at 390 px.**
 
 ## Content depth (all real, all wired into the game)
 

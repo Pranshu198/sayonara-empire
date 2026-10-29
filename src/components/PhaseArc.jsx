@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { PHASES } from '../game/data.js'
+import { Icon } from './icons/index.jsx'
 // Din ka arc: suraj/chaand safar karta hai, behti hui progress line ke saath (reference ki flowing-line bhasha)
 export function PhaseArc({ phase }) {
   const pct = (phase + 0.5) / 4
@@ -17,7 +18,7 @@ export function PhaseArc({ phase }) {
         </defs>
       </svg>
       <motion.div className="arc-orb" animate={{ left: `calc(${pct * 100}% - 13px)`, top: `${30 - Math.sin(pct * Math.PI) * 24}px` }} transition={{ type: 'spring', stiffness: 120, damping: 18 }}>
-        {isNight ? '🌙' : '☀️'}
+        {isNight ? <Icon name="spark" size={19} /> : <Icon name="sun" size={19} />}
       </motion.div>
       <div className="arc-label">{PHASES[phase]}</div>
     </div>

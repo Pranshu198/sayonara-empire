@@ -2,7 +2,7 @@
 export default {
   id: 'carwash',
   name: 'Car Wash',
-  icon: '🚗',
+  icon: '',
   cat: 'Service',
   cost: 90000,
   rev: 11000,

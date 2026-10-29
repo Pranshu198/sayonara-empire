@@ -2,7 +2,7 @@
 export default {
   id: 'solar',
   name: 'Solar Plant',
-  icon: '🌞',
+  icon: '',
   cat: 'Energy',
   cost: 1500000,
   rev: 70000,

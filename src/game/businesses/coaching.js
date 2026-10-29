@@ -2,7 +2,7 @@
 export default {
   id: 'coaching',
   name: 'Coaching Institute',
-  icon: '🎯',
+  icon: '',
   cat: 'Edu',
   cost: 200000,
   rev: 20000,

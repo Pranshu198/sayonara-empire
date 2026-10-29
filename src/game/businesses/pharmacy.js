@@ -2,7 +2,7 @@
 export default {
   id: 'pharmacy',
   name: 'Pharmacy',
-  icon: '💊',
+  icon: '',
   cat: 'Health',
   cost: 120000,
   rev: 17000,

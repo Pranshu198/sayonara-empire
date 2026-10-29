@@ -2,7 +2,7 @@
 export default {
   id: 'printing',
   name: 'Printing Press',
-  icon: '🖨️',
+  icon: '',
   cat: 'Industry',
   cost: 220000,
   rev: 26000,

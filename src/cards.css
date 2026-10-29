@@ -1,0 +1,67 @@
+/* ============ DESIGN TOKENS + CARD SYSTEM (Pass 3.2 Ultra Polish) ============ */
+:root{
+  --r-sm:16px; --r-md:20px; --r-lg:24px;
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:32px;
+  --violet:#a855f7; --magenta:#e879f9;
+  --shadow-card:0 10px 30px rgba(0,0,0,.5);
+  --glow-gold:0 0 0 1px rgba(245,197,66,.35),0 0 22px rgba(245,197,66,.12);
+}
+html{scrollbar-color:#2c2c2c #000}
+::-webkit-scrollbar{width:9px;height:9px} ::-webkit-scrollbar-thumb{background:#2c2c2c;border-radius:99px} ::-webkit-scrollbar-track{background:#000}
+body{font-variant-numeric:tabular-nums lining-nums}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.num,.val,.money-box .val,.rate-val{font-variant-numeric:tabular-nums}
+/* Type scale */
+.sec-title{font-size:16px;font-weight:800;letter-spacing:.2px}
+.dcard-title{font-size:14.5px;font-weight:750;line-height:1.25}
+.dcard-sub{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.35}
+.small,.muted{line-height:1.45}
+/* Card family */
+.dcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--sp-3) var(--sp-4);margin-bottom:var(--sp-2);position:relative}
+.dcard.s-sm{padding:10px 12px;border-radius:var(--r-sm)}
+.dcard.s-lg{padding:18px;border-radius:var(--r-lg)}
+.dcard.v-elevated{background:linear-gradient(180deg,#101010,#0a0a0a);box-shadow:var(--shadow-card)}
+.dcard.v-glass{background:rgba(17,17,17,.72);backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.dcard.v-glow{border-color:rgba(245,197,66,.4);box-shadow:var(--glow-gold);background:linear-gradient(180deg,#131100,#0a0a0a)}
+.dcard.v-danger{border-color:#571d1d;background:linear-gradient(180deg,#160808,#0a0a0a)}
+.dcard.v-success{border-color:#14532d;background:linear-gradient(180deg,#061508,#0a0a0a)}
+.dcard.tappable{cursor:pointer;transition:transform .12s ease,border-color .15s ease}
+.dcard.tappable:hover{border-color:#333}
+.dcard-head{display:flex;align-items:flex-start;gap:10px}
+.dcard-ic{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:11px;background:var(--surface2);border:1px solid var(--line);color:var(--gold);flex-shrink:0}
+.dcard-titles{flex:1;min-width:0}
+.dcard-value{text-align:right;font-weight:800;font-size:14px;display:flex;flex-direction:column;align-items:flex-end;gap:3px}
+.dcard-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+.dcard-line{font-size:12px;color:var(--muted);padding:2px 0}
+.trend{font-size:10.5px;font-weight:800;padding:2.5px 7px;border-radius:99px;letter-spacing:.2px}
+.trend.up{background:#06280f;color:var(--green);border:1px solid #14532d}
+.trend.down{background:#2a0d0d;color:var(--red);border:1px solid #571d1d}
+.trend.flat{background:#171717;color:var(--muted);border:1px solid var(--line)}
+.avatar{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#2b2100,#171717);border:1px solid #4a3a00;color:var(--gold);font-weight:900;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.empty-card{text-align:center;padding:26px 16px}
+.empty-ic{display:inline-flex;width:58px;height:58px;border-radius:18px;background:var(--surface2);border:1px solid var(--line);color:var(--gold);align-items:center;justify-content:center;margin-bottom:10px}
+.skeleton-card{overflow:hidden}
+.skl{height:11px;border-radius:6px;background:linear-gradient(100deg,#141414 40%,#1f1f1f 50%,#141414 60%);background-size:200% 100%;animation:sklShimmer 1.3s infinite;margin:8px 0}
+.skl-t{height:15px;width:55%}
+@keyframes sklShimmer{from{background-position:180% 0}to{background-position:-20% 0}}
+/* Maujooda classes ko system me milana — radius/padding rhythm ek jaisa */
+.card{border-radius:var(--r-md)}
+.biz-card{border-radius:var(--r-sm);padding:13px 14px;background:linear-gradient(180deg,#121212,#0d0d0d);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.money-box{border-radius:var(--r-sm);background:linear-gradient(180deg,#131313,#0d0d0d)}
+.rate-card,.chart-box{border-radius:var(--r-sm)!important}
+.btn{border-radius:13px;transition:transform .1s ease,filter .15s ease}
+.btn:hover{filter:brightness(1.06)}
+.chip{transition:transform .1s ease,border-color .15s ease}
+.chip:active{transform:scale(.96)}
+.toast{border-radius:16px;display:flex;gap:9px;align-items:center;box-shadow:0 14px 40px rgba(0,0,0,.85);border-color:#2e2e2e}
+.phase-dot.on{box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
+nav.tabbar button{transition:color .15s ease}
+nav.tabbar button.on{background:rgba(245,197,66,.06)}
+.wheel{box-shadow:0 0 34px rgba(168,85,247,.25),inset 0 2px 0 rgba(255,255,255,.15)}
+.spark i{border-radius:3px 3px 1px 1px}
+input,select,textarea{border-radius:12px}
+.bar{border-radius:99px;background:#161616}
+.bar i{transition:width .35s ease}
+/* RTL */
+[dir="rtl"] .row{direction:rtl}
+[dir="rtl"] .dcard-head{direction:rtl}

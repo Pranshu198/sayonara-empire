@@ -2,7 +2,7 @@
 export default {
   id: 'dental',
   name: 'Dental Clinic',
-  icon: '🦷',
+  icon: '',
   cat: 'Health',
   cost: 350000,
   rev: 28000,

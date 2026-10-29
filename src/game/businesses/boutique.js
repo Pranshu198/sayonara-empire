@@ -2,7 +2,7 @@
 export default {
   id: 'boutique',
   name: 'Boutique',
-  icon: '👗',
+  icon: '',
   cat: 'Retail',
   cost: 120000,
   rev: 15000,

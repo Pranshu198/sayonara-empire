@@ -34,25 +34,26 @@ export const DEFAULT_SETTINGS = {
   // Sandbox (alag section — save par nishan lagta hai)
   sandbox: false,
   // Language
-  lang: 'hinglish',          // hinglish | hindi | english (main chrome + naye panels)
+  lang: 'hinglish',          // i18n pack id (src/i18n) — 19 bhashayein
+  perfMode: 'auto',          // auto | on | off — kamzor device par animation halka (design same)          // hinglish | hindi | english (main chrome + naye panels)
 }
 
 export const SETTING_GROUPS = [
-  { id: 'gameplay', title: '🎮 Gameplay', keys: ['difficulty', 'dayLenDefault', 'startMode', 'eventFreq', 'volatility', 'taxStrict'] },
-  { id: 'simulation', title: '🧪 Simulation', keys: ['inflation', 'compAggro', 'custStrict', 'marketVol'] },
-  { id: 'display', title: '🎨 Display / UI', keys: ['accent', 'fontScale', 'animLevel', 'numFmt', 'amoled'] },
-  { id: 'audio', title: '🔊 Audio', keys: ['sound', 'volume'] },
-  { id: 'data', title: '💾 Data', keys: ['autosaveSec'] },
-  { id: 'access', title: '♿ Accessibility', keys: ['largeText', 'contrast', 'reducedMotion'] },
-  { id: 'advanced', title: '🛠️ Advanced / Developer', keys: ['showFps', 'debug'] },
-  { id: 'sandbox', title: '🏖️ Cheats / Sandbox (save par nishan lagega)', keys: ['sandbox'] },
-  { id: 'language', title: '🌐 Language', keys: ['lang'] },
+  { id: 'gameplay', title: ' Gameplay', keys: ['difficulty', 'dayLenDefault', 'startMode', 'eventFreq', 'volatility', 'taxStrict'] },
+  { id: 'simulation', title: ' Simulation', keys: ['inflation', 'compAggro', 'custStrict', 'marketVol'] },
+  { id: 'display', title: ' Display / UI', keys: ['accent', 'fontScale', 'animLevel', 'numFmt', 'amoled'] },
+  { id: 'audio', title: ' Audio', keys: ['sound', 'volume'] },
+  { id: 'data', title: ' Data', keys: ['autosaveSec'] },
+  { id: 'access', title: ' Accessibility', keys: ['largeText', 'contrast', 'reducedMotion'] },
+  { id: 'advanced', title: ' Advanced / Developer', keys: ['showFps', 'debug', 'perfMode'] },
+  { id: 'sandbox', title: ' Cheats / Sandbox (save par nishan lagega)', keys: ['sandbox'] },
+  { id: 'language', title: ' Language', keys: ['lang'] },
 ]
 
 export const SETTING_META = {
-  difficulty: { label: 'Difficulty', type: 'choice', options: [['easy', '😊 Easy (aamdani +15%)'], ['normal', '😐 Normal'], ['hard', '🔥 Hard (aamdani −10%, asli chunauti)']], help: 'Aamdani ke factor ko badalta hai. Naya game shuru karne par asar sabse saaf dikhta hai, chalte game me bhi factor lagta hai.' },
+  difficulty: { label: 'Difficulty', type: 'choice', options: [['easy', ' Easy (aamdani +15%)'], ['normal', ' Normal'], ['hard', ' Hard (aamdani −10%, asli chunauti)']], help: 'Aamdani ke factor ko badalta hai. Naya game shuru karne par asar sabse saaf dikhta hai, chalte game me bhi factor lagta hai.' },
   dayLenDefault: { label: 'Default Day Length', type: 'choice', options: [[30, '30 sec'], [60, '60 sec'], [120, '2 min'], [300, '5 min']], help: 'Auto mode me ek din kitni der chalega — yahi se turant lag jata hai.' },
-  startMode: { label: 'Start Mode', type: 'choice', options: [['manual', '✋ Manual'], ['auto', '▶️ Auto']], help: 'Naya/reset game kis time mode me khulega.' },
+  startMode: { label: 'Start Mode', type: 'choice', options: [['manual', ' Manual'], ['auto', ' Auto']], help: 'Naya/reset game kis time mode me khulega.' },
   eventFreq: { label: 'Event Frequency', type: 'slider', min: 0, max: 2, step: 0.25, help: '0 = shaant sheher, 2 = roz hungama. Random events ki sambhavna badalta hai.' },
   volatility: { label: 'Economy Volatility', type: 'slider', min: 0.5, max: 2, step: 0.25, help: 'Supplier rate aur sentiment kitni tez ghumega.' },
   taxStrict: { label: 'Tax Strictness', type: 'slider', min: 0, max: 2, step: 0.25, help: 'Mahine ke munafe par tax = 10% × ye number. 0 = koi tax nahi (par imaandaari ki baat alag hai).' },
@@ -60,9 +61,9 @@ export const SETTING_META = {
   compAggro: { label: 'Competitor Aggression', type: 'slider', min: 0, max: 2, step: 0.25, help: 'Rivals kitni tez badhenge — 2 par ve tumhe peeche chhodne ki poori koshish karenge.' },
   custStrict: { label: 'Customer Strictness', type: 'slider', min: 0, max: 2, step: 0.25, help: 'Grahak rating kitni sakhti se ghataenge. Zyada price par asar dugna.' },
   marketVol: { label: 'Market Volatility', type: 'slider', min: 0.5, max: 2.5, step: 0.25, help: 'Share/sone ke daam kitni tez uchlenge-girenge.' },
-  accent: { label: 'Accent Colour', type: 'choice', options: [['gold', '🟡 Gold'], ['violet', '🟣 Violet (motion-graphics wala)'], ['green', '🟢 Green'], ['pink', '🩷 Pink']], help: 'Poori app ke highlight rang badal jata hai.' },
+  accent: { label: 'Accent Colour', type: 'choice', options: [['gold', ' Gold'], ['violet', ' Violet (motion-graphics wala)'], ['green', ' Green'], ['pink', ' Pink']], help: 'Poori app ke highlight rang badal jata hai.' },
   fontScale: { label: 'Font Size', type: 'choice', options: [[0.9, 'Chhota'], [1, 'Aam'], [1.15, 'Bada']], help: 'Poori app ke akshar bade/chhote.' },
-  animLevel: { label: 'Animations', type: 'choice', options: [['full', '✨ Full (motion graphics)'], ['reduced', 'Halki'], ['off', 'Band']], help: 'Splash, bursts aur bade animations ka star.' },
+  animLevel: { label: 'Animations', type: 'choice', options: [['full', ' Full (motion graphics)'], ['reduced', 'Halki'], ['off', 'Band']], help: 'Splash, bursts aur bade animations ka star.' },
   numFmt: { label: 'Number Format', type: 'choice', options: [['short', '₹1.2 L (chhota)'], ['full', '₹1,20,000 (poora)']], help: 'Paisa kis roop me dikhe — HUD ke number turant badalte hain.' },
   amoled: { label: 'AMOLED Style', type: 'choice', options: [['pure', 'Pure Black (#000)'], ['soft', 'Soft Black (halki roshni)']], help: 'Pure = battery bachat zyada; Soft = cards thode zyada saaf.' },
   sound: { label: 'Sound Effects', type: 'toggle', help: 'Chhoti WebAudio awaazein — kamaai, click aur jeet par. Koi file nahi, browser khud banata hai.' },
@@ -73,8 +74,9 @@ export const SETTING_META = {
   reducedMotion: { label: 'Reduced Motion', type: 'toggle', help: 'Saare bade animations band — aankh aur battery dono ke liye shaant.' },
   showFps: { label: 'Show FPS', type: 'toggle', help: 'Screen ke kone me frames-per-second ka live number.' },
   debug: { label: 'Engine Debug Stats', type: 'toggle', help: 'More me engine ke andar ke number: demand factor, supplier drift, sentiment, season — jo khiladi ko aam taur par nahi dikhta.' },
-  sandbox: { label: '🏖️ Unlimited Money (SANDBOX)', type: 'toggle', help: 'Saksham karte hi nakad ₹100 Cr ho jayegi aur save hamesha SANDBOX nishan ke saath rahega. Izzat ki race ke liye nahi, maza aur testing ke liye hai.' },
-  lang: { label: 'UI Language', type: 'choice', options: [['hinglish', 'Hinglish (mix)'], ['hindi', 'हिंदी'], ['english', 'English']], help: 'Main hisse (tabs, paisa labels, naye panels) ki bhasha badalti hai. Kuch purani lambi vyakhya Hinglish me hi rehti hai.' },
+  sandbox: { label: ' Unlimited Money (SANDBOX)', type: 'toggle', help: 'Saksham karte hi nakad ₹100 Cr ho jayegi aur save hamesha SANDBOX nishan ke saath rahega. Izzat ki race ke liye nahi, maza aur testing ke liye hai.' },
+  lang: { label: 'UI Language', type: 'langpicker', help: 'Poora UI chrome (tabs, HUD, panels, buttons, settings, categories, time, stats labels) 19 bhashaon me. Gehri kahaaniyan/khabrein apni asli Hinglish/English me rehti hain.' },
+  perfMode: { label: 'Performance Mode', type: 'choice', options: [['auto', 'Auto (FPS girne par halka)'], ['on', 'Hamesha On (halka)'], ['off', 'Off (poora animation)']], help: 'Kamzor device par particles/shadow kam ho jate hain — cards, rang aur design bilkul same rehte hain.' },
 }
 
 export function difficultyFactor(settings) {

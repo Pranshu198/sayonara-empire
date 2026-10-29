@@ -2,7 +2,7 @@
 export default {
   id: 'roplant',
   name: 'RO Water Plant',
-  icon: '💧',
+  icon: '',
   cat: 'Energy',
   cost: 280000,
   rev: 26000,

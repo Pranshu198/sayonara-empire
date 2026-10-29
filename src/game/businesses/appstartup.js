@@ -2,7 +2,7 @@
 export default {
   id: 'appstartup',
   name: 'App Startup',
-  icon: '🚀',
+  icon: '',
   cat: 'Tech',
   cost: 500000,
   rev: 35000,

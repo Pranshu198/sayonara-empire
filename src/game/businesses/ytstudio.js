@@ -2,7 +2,7 @@
 export default {
   id: 'ytstudio',
   name: 'YouTube Studio',
-  icon: '🎬',
+  icon: '',
   cat: 'Tech',
   cost: 80000,
   rev: 9000,

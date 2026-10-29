@@ -31,7 +31,7 @@ export function genLot(day, phaseCount = 4) {
   } else {
     const c = dailyPicks(1)[0]
     lot = { ...lot, name: `${c.kind}: ${c.name}`, desc: c.story + ' Collectible lot — keemat samay ke saath ghumti hai.', refId: c.id, start: Math.round(c.price * 0.5), value: c.price }
-    if (kind === 'rare') { lot.start = Math.round(c.price * 0.7); lot.name = '⭐ RARE: ' + lot.name }
+    if (kind === 'rare') { lot.start = Math.round(c.price * 0.7); lot.name = ' RARE: ' + lot.name }
   }
   lot.current = lot.start
   return lot
@@ -74,11 +74,11 @@ export function auctionPhaseTick(s) {
         if (lot.leader) {
           const pay = Math.round(lot.current * 0.95)
           s.cash += pay
-          news.push({ day: s.day, text: `🔨 Tumhari lot biki: ${lot.name} — ${fmtLocal(pay)} mile (5% nilami fees kat kar).` })
+          news.push({ day: s.day, text: ` Tumhari lot biki: ${lot.name} — ${fmtLocal(pay)} mile (5% nilami fees kat kar).` })
         } else {
           if (lot.kind === 'property' && lot.refId && !s.props.includes(lot.refId)) s.props.push(lot.refId)
           if (lot.kind === 'collectible' && lot.refId && !(s.collectibles || []).includes(lot.refId)) s.collectibles = [...(s.collectibles || []), lot.refId]
-          news.push({ day: s.day, text: `🔨 Tumhari lot par koi boli nahi aayi — cheez wapas tumhare paas.` })
+          news.push({ day: s.day, text: ` Tumhari lot par koi boli nahi aayi — cheez wapas tumhare paas.` })
         }
         auc.hist = [{ day: s.day, name: lot.name, winner: lot.leader || '— (wapas)', amt: lot.current, playerWon: false }, ...(auc.hist || [])].slice(0, 15)
         auc.lots = auc.lots.filter((x) => x.uid !== lot.uid)
@@ -88,11 +88,11 @@ export function auctionPhaseTick(s) {
       if (lot.leaderIsPlayer) {
         s.cash -= lot.current
         settleWonLot(s, lot)
-        news.push({ day: s.day, text: `🔨 Nilami jeeti tumne: ${lot.name} — boli par tumhara naam!` })
+        news.push({ day: s.day, text: ` Nilami jeeti tumne: ${lot.name} — boli par tumhara naam!` })
       } else if (lot.leader) {
-        news.push({ day: s.day, text: `🔨 Nilami: ${lot.name} ${lot.leader} le gaya.` })
+        news.push({ day: s.day, text: ` Nilami: ${lot.name} ${lot.leader} le gaya.` })
       } else {
-        news.push({ day: s.day, text: `🔨 Nilami bina boli ke band: ${lot.name}` })
+        news.push({ day: s.day, text: ` Nilami bina boli ke band: ${lot.name}` })
       }
       auc.hist = [{ day: s.day, name: lot.name, winner: lot.leader || '—', amt: lot.current, playerWon: !!lot.leaderIsPlayer }, ...(auc.hist || [])].slice(0, 15)
       auc.lots = auc.lots.filter((x) => x.uid !== lot.uid)
@@ -106,21 +106,21 @@ export function playerBid(s, lot, amt) {
   if (s.cash < amt) return { ok: false, msg: 'Cash kam hai itni boli ke liye' }
   // Purani khud ki boli par sirf farak rokna hai — saral: jeetne par hi kul rakam kategi, abhi sirf naam lagta hai
   lot.current = amt; lot.leader = 'TUM'; lot.leaderIsPlayer = true
-  lot.hist = [...lot.hist.slice(-6), { bidder: 'TUM ⭐', amt }]
+  lot.hist = [...lot.hist.slice(-6), { bidder: 'TUM ', amt }]
   return { ok: true, msg: 'Boli lag gayi — tum aage ho!' }
 }
 // Jeetne par sampatti dena — endDay/phase settlement App/engine se: yaha sirf sampatti jodne ka kaam
 export function settleWonLot(s, lot) {
   if (lot.kind === 'property' && lot.refId && !s.props.includes(lot.refId)) s.props.push(lot.refId)
-  else if (lot.kind === 'business' && lot.refId && !s.biz[lot.refId]) {
+  else if (lot.kind === 'business' && lot.refId && !s.biz[lot.refId + '@india_delhi']) {
     const d = BUSINESSES.find((b) => b.id === lot.refId)
-    s.biz[lot.refId] = { lv: 2, price: 1, stock: 80, staff: d.staff, profitToday: 0, profitTotal: 0, rating: 3.8, mktDays: 0 }
+    s.biz[lot.refId + '@india_delhi'] = { lv: 2, price: 1, stock: 80, staff: d.staff, profitToday: 0, profitTotal: 0, rating: 3.8, mktDays: 0, loc: 'india_delhi', employees: [] }
   } else if ((lot.kind === 'collectible' || lot.kind === 'rare') && lot.refId) {
     if (!s.collectibles.includes(lot.refId)) s.collectibles.push(lot.refId)
   } else if (lot.kind === 'surplus') {
     const resale = Math.round((lot.value || lot.current) * rnd(0.8, 1.5))
     s.cash += resale
-    s.news = [{ day: s.day, text: `📦 Surplus lot becha — andaz se zyada mila: kul wapasi ka hissa cash me aaya.` }, ...s.news].slice(0, 12)
+    s.news = [{ day: s.day, text: ` Surplus lot becha — andaz se zyada mila: kul wapasi ka hissa cash me aaya.` }, ...s.news].slice(0, 12)
   }
 }
 

@@ -2,7 +2,7 @@
 export default {
   id: 'petrol',
   name: 'Petrol Pump',
-  icon: '⛽',
+  icon: '',
   cat: 'Energy',
   cost: 2000000,
   rev: 220000,

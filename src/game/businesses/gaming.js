@@ -2,7 +2,7 @@
 export default {
   id: 'gaming',
   name: 'Gaming Zone',
-  icon: '🎮',
+  icon: '',
   cat: 'Tech',
   cost: 160000,
   rev: 15000,

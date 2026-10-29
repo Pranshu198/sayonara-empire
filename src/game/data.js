@@ -13,12 +13,12 @@ export const COMMODITIES = [
   { sym: 'BTC', name: 'Bitcoin', price: 6850000 }, { sym: 'DOGE', name: 'Dogecoin', price: 14.5 },
 ]
 export const PROPERTIES = [
-  { id: 'flat1', name: '1BHK Flat — Uttam Nagar', icon: '🏠', cost: 2500000, rent: 12000 },
-  { id: 'flat2', name: '3BHK Flat — Dwarka', icon: '🏢', cost: 7500000, rent: 32000 },
-  { id: 'shop1', name: 'Market Shop — Laxmi Nagar', icon: '🏬', cost: 4000000, rent: 28000 },
-  { id: 'plot', name: 'Plot — Gurgaon Sec 62', icon: '🌳', cost: 12000000, rent: 0 },
-  { id: 'office', name: 'Office — CP Delhi', icon: '🏙️', cost: 20000000, rent: 150000 },
-  { id: 'pg', name: 'PG Building — Karol Bagh', icon: '🛏️', cost: 9000000, rent: 65000 },
+  { id: 'flat1', name: '1BHK Flat — Uttam Nagar', icon: '', cost: 2500000, rent: 12000 },
+  { id: 'flat2', name: '3BHK Flat — Dwarka', icon: '', cost: 7500000, rent: 32000 },
+  { id: 'shop1', name: 'Market Shop — Laxmi Nagar', icon: '', cost: 4000000, rent: 28000 },
+  { id: 'plot', name: 'Plot — Gurgaon Sec 62', icon: '', cost: 12000000, rent: 0 },
+  { id: 'office', name: 'Office — CP Delhi', icon: '', cost: 20000000, rent: 150000 },
+  { id: 'pg', name: 'PG Building — Karol Bagh', icon: '', cost: 9000000, rent: 65000 },
 ]
 export const RIVALS = [
   { name: 'Simran (Mall Mogul)', pers: 'Aggressive (price war)', focus: 'Retail', nw: 21000000, g: 0.012 },
@@ -37,14 +37,14 @@ export const DISTRICTS = [
   { name: 'Gurgaon Cyber City', mood: 'Corporate, highest rents', rentTrend: '+6%/yr', unlock: 25000000 },
 ]
 export const LEGACY_EVENTS = [
-  { t: '🎉 Festival season! Food & Retail demand +30% aaj', eff: 'boom' },
-  { t: '📉 Market me girawat — stocks saste ho gaye', eff: 'crash' },
-  { t: '🌧️ Baarish! Footfall kam, delivery demand zyada', eff: 'rain' },
-  { t: '🔥 Viral trend — ek business ki demand double ke aas-paas', eff: 'viral' },
-  { t: '🛠️ Supplier ne rate badhaye — COGS mehenga aaj', eff: 'costly' },
-  { t: '🏏 India match day — Evening footfall zabardast', eff: 'match' },
-  { t: '😌 Aam din — koi khaas halchal nahi', eff: 'calm' },
-  { t: '💼 Salary week! Shopping demand +20%', eff: 'salary' },
+  { t: ' Festival season! Food & Retail demand +30% aaj', eff: 'boom' },
+  { t: ' Market me girawat — stocks saste ho gaye', eff: 'crash' },
+  { t: ' Baarish! Footfall kam, delivery demand zyada', eff: 'rain' },
+  { t: ' Viral trend — ek business ki demand double ke aas-paas', eff: 'viral' },
+  { t: ' Supplier ne rate badhaye — COGS mehenga aaj', eff: 'costly' },
+  { t: ' India match day — Evening footfall zabardast', eff: 'match' },
+  { t: ' Aam din — koi khaas halchal nahi', eff: 'calm' },
+  { t: ' Salary week! Shopping demand +20%', eff: 'salary' },
 ]
 export const ACHIEVEMENTS = [
   { id: 'a1', name: 'Pehla Business', desc: '1 business kharido', check: s => ownedCount(s) >= 1, reward: 500 },

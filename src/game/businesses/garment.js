@@ -2,7 +2,7 @@
 export default {
   id: 'garment',
   name: 'Garment Factory',
-  icon: '👕',
+  icon: '',
   cat: 'Industry',
   cost: 1200000,
   rev: 130000,
