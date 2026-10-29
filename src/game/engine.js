@@ -47,6 +47,10 @@ export function netWorth(s) {
   return Math.round(nw)
 }
 
+// Lifetime stats counters (Stats tab yahi se padhta hai) — purane saves par ye ab se ginne shuru hote hain
+export function freshLife(day = 1) {
+  return { rev: 0, costs: 0, tax: 0, wages: 0, customers: 0, items: 0, phases: 0, bestDayProfit: null, worstDayProfit: null, bestDay: 0, worstDay: 0, biggestDayCost: 0, streak: 0, longestStreak: 0, milestones: {}, lifeStartDay: day }
+}
 export function initialState(savedElapsedSec = 0) {
   return {
     cash: 50000, bank: 0, day: 1, phase: 0,
@@ -79,6 +83,7 @@ export function initialState(savedElapsedSec = 0) {
     unlockedCities: ['india_delhi'],
     contracts: {}, pendingDeliveries: [], importedBoost: {},
     managers: {}, managerLog: [], managerStats: {}, mgrState: {}, holdAvg: {},
+    life: freshLife(1), lastBreakdown: null, bd: null,
     nwHist: [50000],
     totalEarned: 0,
   }
@@ -98,6 +103,9 @@ export function missionProgress(s, m) {
 // ---- one phase tick (Morning/Afternoon/Evening/Night) ----
 export function phaseTick(prev) {
   const s = structuredClone(prev)
+  if (!s.life) s.life = freshLife(s.day || 1)
+  s.life.phases += 1
+  if (!s.bd) s.bd = { cogs: 0, wages: 0, rent: 0, util: 0, wastage: 0 }
   processDeliveries(s, fmt)
   const phaseW = s.phase
   let phaseRev = 0, phaseCost = 0
@@ -120,6 +128,12 @@ export function phaseTick(prev) {
     const costs = cogs + fixed + wastage
     if (contract && Math.random() < complaintChance(contract)) complaintHit(o)
     const profit = fullRev - costs
+    // ---- Stats: lifetime counters + din ka kharcha-breakdown (wages/rent/cogs/util/wastage alag-alag) ----
+    const cityRent = city ? city.rent : 1
+    s.bd.cogs += cogs; s.bd.wages += o.staff * d.wage * 0.25; s.bd.rent += d.rent * cityRent * 0.25; s.bd.util += d.util * 0.25; s.bd.wastage += wastage
+    s.life.rev += fullRev; s.life.costs += costs; s.life.wages += o.staff * d.wage * 0.25
+    const custEst = fullRev / (55 * Math.max(0.5, o.price))
+    s.life.customers += custEst; s.life.items += custEst * 1.6
     // cashflow: 85% abhi, 15% udhaar (receivables, kal settle)
     s.cash += fullRev * 0.85 - costs
     s.receivables += fullRev * 0.15
@@ -180,7 +194,19 @@ function endDay(s) {
   }
   // day report + history
   s.lastDayReport = { day: s.day, revenue: Math.round(s.dayRevenue), costs: Math.round(s.dayCosts), profit: Math.round(s.dayRevenue - s.dayCosts), rent: Math.round(rent) }
-  s.nwHist = [...s.nwHist.slice(-59), netWorth(s)]
+  const nwNow = netWorth(s)
+  s.nwHist = [...s.nwHist.slice(-59), nwNow]
+  // ---- Stats: din ke records, streaks, milestones, kharcha-breakdown band karo ----
+  if (!s.life) s.life = freshLife(s.day)
+  const dp = s.lastDayReport.profit
+  if (s.life.bestDayProfit === null || dp > s.life.bestDayProfit) { s.life.bestDayProfit = dp; s.life.bestDay = s.day }
+  if (s.life.worstDayProfit === null || dp < s.life.worstDayProfit) { s.life.worstDayProfit = dp; s.life.worstDay = s.day }
+  s.life.biggestDayCost = Math.max(s.life.biggestDayCost || 0, s.lastDayReport.costs)
+  if (dp > 0) { s.life.streak = (s.life.streak || 0) + 1; s.life.longestStreak = Math.max(s.life.longestStreak || 0, s.life.streak) } else s.life.streak = 0
+  s.life.milestones = s.life.milestones || {}
+  for (const [k, t] of [['nw1L', 100000], ['nw10L', 1000000], ['nw1Cr', 10000000], ['nw10Cr', 100000000], ['nw100Cr', 1000000000]]) if (nwNow >= t && !s.life.milestones[k]) s.life.milestones[k] = s.day
+  s.lastBreakdown = { ...(s.bd || { cogs: 0, wages: 0, rent: 0, util: 0, wastage: 0 }), interest: s.loan.amount > 0 ? Math.round(s.loan.emi / 30) : 0 }
+  s.bd = { cogs: 0, wages: 0, rent: 0, util: 0, wastage: 0 }
   for (const o of Object.values(s.biz)) o.profitToday = 0
   s.dayRevenue = 0; s.dayCosts = 0
   s.day += 1

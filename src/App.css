@@ -182,3 +182,22 @@
     border-right-color: var(--border);
   }
 }
+
+/* ---- Stats / Analytics tab ---- */
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 6px; }
+.rate-card { background: var(--surface2, #0a0a0a); border: 1px solid var(--line, #1f1f1f); border-radius: 14px; padding: 10px; }
+.rate-val { font-size: 19px; font-weight: 800; line-height: 1.15; }
+.rate-unit { font-size: 11px; color: var(--muted, #9a9a9a); margin-left: 3px; font-weight: 600; }
+.bar-row { display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+.bar-lbl { width: 108px; font-size: 12px; color: var(--muted, #9a9a9a); flex-shrink: 0; }
+.bar-track { flex: 1; height: 9px; background: #161616; border-radius: 99px; overflow: hidden; }
+.bar-track i { display: block; height: 100%; border-radius: 99px; }
+.chart-box { background: var(--surface2, #0a0a0a); border: 1px solid var(--line, #1f1f1f); border-radius: 14px; padding: 10px; margin-top: 6px; }
+.nw-svg { width: 100%; height: 92px; display: block; }
+.donut-wrap { display: flex; gap: 14px; align-items: center; margin-top: 6px; }
+.donut-svg { width: 92px; height: 92px; flex-shrink: 0; }
+.donut-legend { flex: 1; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; }
+.live-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #2ee06f; box-shadow: 0 0 0 0 rgba(46, 224, 111, 0.55); animation: livePulse 1.6s infinite; vertical-align: middle; }
+@keyframes livePulse { 0% { box-shadow: 0 0 0 0 rgba(46, 224, 111, 0.55); } 70% { box-shadow: 0 0 0 8px rgba(46, 224, 111, 0); } 100% { box-shadow: 0 0 0 0 rgba(46, 224, 111, 0); } }
+.tabbar .ic svg { display: block; margin: 0 auto; }

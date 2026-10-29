@@ -24,6 +24,8 @@ const AtlasPanel = lazyNamed(import('./components/AtlasPanel.jsx'), 'AtlasPanel'
 const ManagersPanel = lazyNamed(import('./components/ManagersPanel.jsx'), 'ManagersPanel')
 const ImportPanel = lazyNamed(import('./components/ImportPanel.jsx'), 'ImportPanel')
 const ProcurementPanel = lazyNamed(import('./components/ProcurementPanel.jsx'), 'ProcurementPanel')
+const StatsPanel = lazyNamed(import('./components/StatsPanel.jsx'), 'StatsPanel')
+import { StatsIcon } from './components/StatsIcon.jsx'
 const PanelFallback = () => <div className="panel"><p className="muted">⏳ Panel load ho raha hai…</p></div>
 import { withDefaults, chromeText } from './game/settings.js'
 import { playSound } from './utils/sound.js'
@@ -34,8 +36,11 @@ import { loreOf } from './game/content/districts/index.js'
 const fmtFull = (n) => { n = Math.round(n || 0); const neg = n < 0; n = Math.abs(n); return (neg ? '-₹' : '₹') + n.toLocaleString('en-IN') }
 function migrate(saved) {
   if (!saved) return saved
+  const hadLife = !!saved.life
   const base = initialState()
   for (const k of Object.keys(base)) if (saved[k] === undefined) saved[k] = base[k]
+  // Purana save: lifetime counters aaj (uske maujooda din) se ginne shuru — Stats tab par note bhi yahi kehta hai
+  if (!hadLife && saved.life) saved.life = { ...saved.life, lifeStartDay: saved.day || 1 }
   saved.settings = withDefaults(saved.settings)
   return saved
 }
@@ -57,7 +62,7 @@ export default function App() {
     return initialState()
   })
   const urlTab = new URLSearchParams(window.location.search).get('tab')
-  const [tab, setTab] = useState(['home', 'biz', 'market', 'prop', 'wealth', 'bank', 'more'].includes(urlTab) ? urlTab : 'home')
+  const [tab, setTab] = useState(['home', 'biz', 'stats', 'market', 'prop', 'wealth', 'bank', 'more'].includes(urlTab) ? urlTab : 'home')
   const [buyLoc, setBuyLoc] = useState(null)
   const [toast, setToast] = useState('')
   const [burst, setBurst] = useState(0)
@@ -122,7 +127,7 @@ export default function App() {
   const doImportData = (obj) => { setS(migrate(obj)) }
   const doReset = () => { localStorage.removeItem(SAVE_KEY); setS(initialState()); say('Naya game shuru!') }
 
-  const tabs = [['home', '🏠', chrome.empire], ['biz', '🏪', chrome.business], ['market', '📈', chrome.markets], ['prop', '🏠', chrome.property], ['wealth', '💰', chrome.wealth], ['bank', '🏦', chrome.bankTab], ['more', '⋯', chrome.more]]
+  const tabs = [['home', '🏠', chrome.empire], ['biz', '🏪', chrome.business], ['stats', 'stats', chrome.stats || 'Stats'], ['market', '📈', chrome.markets], ['prop', '🏠', chrome.property], ['wealth', '💰', chrome.wealth], ['bank', '🏦', chrome.bankTab], ['more', '⋯', chrome.more]]
   const xpLv = levelOf(s.xp)
 
   const accentColor = { gold: '#f5c542', violet: '#a855f7', green: '#2ee06f', pink: '#ec4899' }[(s.settings && s.settings.accent) || 'gold']
@@ -234,6 +239,8 @@ export default function App() {
                 </Section>
               ))}
             </>}
+
+            {tab === 'stats' && <Suspense fallback={<PanelFallback />}><StatsPanel s={s} /></Suspense>}
 
             {tab === 'market' && <>
               <Section id="stocks" title="📈 Stocks" right="Dividend har 30 din">
@@ -367,7 +374,7 @@ export default function App() {
       </main>
 
       <nav className="tabbar">
-        {tabs.map(([id, ic, label]) => <button key={id} className={tab === id ? 'on' : ''} onClick={() => setTab(id)}><span className="ic">{ic}</span>{label}</button>)}
+        {tabs.map(([id, ic, label]) => <button key={id} className={tab === id ? 'on' : ''} onClick={() => setTab(id)}><span className="ic">{id === 'stats' ? <StatsIcon size={20} /> : ic}</span>{label}</button>)}
       </nav>
       <Toast msg={toast} />
     </div>

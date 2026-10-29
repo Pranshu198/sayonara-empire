@@ -14,7 +14,7 @@ Start with a single chai stall in Uttam Nagar, Delhi — end with businesses acr
 ![Live](https://img.shields.io/badge/status-live-brightgreen)
 ![React](https://img.shields.io/badge/React-19.3-61dafb)
 ![Vite](https://img.shields.io/badge/Vite-8.3-a855f7)
-![Lines of Code](https://img.shields.io/badge/lines_of_code-475%2C299-blueviolet)
+![Lines of Code](https://img.shields.io/badge/lines_of_code-475%2C567-blueviolet)
 ![Source Files](https://img.shields.io/badge/src_files-386-orange)
 ![Content Entries](https://img.shields.io/badge/content_entries-44%2C000%2B-red)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -33,6 +33,10 @@ Start with a single chai stall in Uttam Nagar, Delhi — end with businesses acr
 |---|---|---|
 | <img src="docs/screenshots/markets.png" width="250" /> | <img src="docs/screenshots/wealth.png" width="250" /> | <img src="docs/screenshots/atlas.png" width="250" /> |
 
+| Stats / Analytics — live rates, lifetime, records |
+|---|
+| <img src="docs/screenshots/stats.png" width="250" /> |
+
 ---
 
 ## What is this?
@@ -48,6 +52,7 @@ This is not a clicker. Every business runs on a **line-by-line Profit & Loss eng
 - **Procurement engine — 340 items.** Every input has several sellers side-by-side (local mandi, national distributor, company direct) differing in quality tier (Local / Economy / Premium / Branded), unit price, bulk slabs, delivery days, reliability % and payment terms. Your chosen contract changes COGS, wastage, complaint risk and your **price ceiling** in the live P&L.
 - **Import system — 1,500 listings.** Buy from Atlas countries with the full landed cost shown *before* you confirm: base price × live FX + shipping + customs duty − container discount. Stock arrives days later (port delays happen), and earns the business a 14-day **"Imported" tag** that lifts demand.
 - **AI Managers — 640 profiles, 8 roles.** Hire Purchase, Inventory, Pricing, Marketing, Finance, HR, Trading and Expansion managers. Set their rules (restock below X%, auto-sell at +Y%, keep cash above Z); they act every phase and **log every action** in an auditable Manager Activity Report. High skill = fewer mistakes. A bad manager *will* lose you money — and the report will honestly say so.
+- **Stats / Analytics command center.** A dedicated tab (own SVG icon) with live rate meters — income/sec, burn/sec and net/sec derived honestly from the engine's actual recent P&L (in Manual mode they switch to per-phase units), a burn breakdown by wages/rent/COGS/utilities/wastage/interest, lifetime counters (income, expenses, taxes paid, wages paid, estimated customers & items, best/worst day, biggest expense day), an empire snapshot (branches, cities, countries, staff, portfolio, net-worth chart, profit-share donut by category, top-5 cities), and records — milestone days for ₹1L/₹10L/₹1Cr+, profit streaks, rival rank and Legacy score. Lifetime counters are persisted in the save and, on older saves, honestly start counting from the day the feature arrived.
 
 ## Content depth (all real, all wired into the game)
 
@@ -86,7 +91,7 @@ Demand · Price Elasticity · Procurement/Supply · Import/Logistics · Labour/H
 
 ## Performance, honestly
 
-475k lines would be a brick without code-splitting. The build splits into **143 chunks**: vendor separately, all heavy panels (Wealth, Bazaar, Auction, Atlas, Managers, Imports, Procurement…) as `React.lazy` chunks, the entire World Atlas geography as per-region lazy modules, and 84 deep-content files streaming in behind the splash. Entry chunk: **482,901 → 419,299 bytes gzip (−13%)** versus the 104k-line Pass 2 build — smaller *and* 4.5× the content.
+475k lines would be a brick without code-splitting. The build splits into **143 chunks**: vendor separately, all heavy panels (Wealth, Bazaar, Auction, Atlas, Managers, Imports, Procurement…) as `React.lazy` chunks, the entire World Atlas geography as per-region lazy modules, and 84 deep-content files streaming in behind the splash. Entry chunk: **482,901 → 423,675 bytes gzip** versus the 104k-line Pass 2 build — smaller *and* 4.5× the content.
 
 ## Architecture
 

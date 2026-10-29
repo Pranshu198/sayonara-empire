@@ -10,6 +10,7 @@ export function monthEnd(s, fmt) {
   if (s.monthProfit > 0) {
     const tax = s.monthProfit * taxRateOf(s.settings)
     s.cash -= tax
+    if (s.life) s.life.tax = (s.life.tax || 0) + tax
     s.news = [{ day: s.day, text: `🧾 Month-end: Is mahine ke profit par tax ${fmt(tax)} kata. (Sirf is mahine ka profit ginna gaya${s.managers && s.managers.finance ? ', Finance Manager ne provisioning kar rakhi thi' : ''})` }, ...s.news].slice(0, 12)
   }
   const div = dividendCalc(s)
