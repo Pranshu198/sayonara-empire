@@ -42,7 +42,7 @@ export { bizDef }
 
 export function netWorth(s) {
   let nw = s.cash + s.bank + s.sip + s.bonds - s.loan.amount
-  for (const [id, o] of Object.entries(s.biz)) { const d = bizDef(id); nw += d.cost * (0.6 + 0.25 * o.lv) }
+  for (const [id, o] of Object.entries(s.biz)) { const d = bizDef(id); if (d) nw += d.cost * (0.6 + 0.25 * o.lv) }
   const ASSET_BY_SYM = new Map([...s.stocks, ...s.commodities].map((x) => [x.sym, x])) // Pass 3.4: loop ke andar spread+find hata diya
   for (const [sym, q] of Object.entries(s.holdings)) { const st = ASSET_BY_SYM.get(sym); if (st) nw += st.price * q }
   const PROP_BY_ID = new Map(PROPERTIES.map((x) => [x.id, x]))
@@ -260,7 +260,7 @@ function endDay(s) {
   const bzNews = bazaarDayTick(s)
   if (bzNews.length) s.news = [...bzNews, ...s.news].slice(0, 12)
   // Festival Engine: bade tyohar par corporate hamper order (Food/Retail maliko ko)
-  const ownedCats2 = [...new Set(Object.keys(s.biz).map((id) => bizDef(id).cat))]
+  const ownedCats2 = [...new Set(Object.keys(s.biz).map((id) => bizDef(id)).filter(Boolean).map((d) => d.cat))]
   const myCities = (s.unlockedCities || ['india_delhi']).map((cid) => cityOf(cid))
   const co = corporateOrder(s, myCities, ownedCats2.includes('Food') || ownedCats2.includes('Retail'), Math.random)
   if (co) { const bonus = Math.round(25000 * (0.8 + Math.random() * 0.7)); s.cash += bonus; s.news = [{ day: s.day + 1, text: ` ${co.f.name} (${co.city.name}): Corporate hamper order mila — ${fmt(bonus)} ki ek saath kamaai! Taiyari ka fayda.` }, ...s.news].slice(0, 12) }
@@ -271,12 +271,13 @@ function endDay(s) {
   runHrDay(s, bizDef, fmt)
   // Sheher Times ki taazi headline (badi library se)
   if (Math.random() < 0.5) {
-    const topBiz = Object.keys(s.biz)[0] ? bizDef(Object.keys(s.biz)[0]).name : 'nayi dukaan'
+    const firstDef = Object.keys(s.biz).length ? bizDef(Object.keys(s.biz)[0]) : null
+    const topBiz = firstDef ? firstDef.name : 'nayi dukaan'
     const txt = headline(null, { player: 'Sayonara Empire', rival: [...s.rivals].sort((a, b) => b.nw - a.nw)[0].name, biz: topBiz, stock: pickStockName(s), place: 'Uttam Nagar', fest: 'Diwali' })
     s.news = [{ day: s.day + 1, text: ' Sheher Times: ' + txt }, ...s.news].slice(0, 12)
   }
   // Graahak reviews (badi customer library se)
-  const ownedCats = [...new Set(Object.keys(s.biz).map((id) => bizDef(id).cat))]
+  const ownedCats = [...new Set(Object.keys(s.biz).map((id) => bizDef(id)).filter(Boolean).map((d) => d.cat))]
   if (ownedCats.length && Math.random() < 0.8) {
     const c = randomCustomer(ownedCats[Math.floor(Math.random() * ownedCats.length)])
     s.reviews = [{ day: s.day + 1, name: c.name, job: c.job, stars: c.stars, text: c.text, cat: c.cat }, ...(s.reviews || [])].slice(0, 10)

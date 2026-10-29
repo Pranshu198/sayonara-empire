@@ -75,6 +75,8 @@ function migrate(saved) {
       else { const loc = o.loc || 'india_delhi'; nb[k + '@' + loc] = { ...o, loc, employees: o.employees || [] } }
     }
     saved.biz = nb
+    // Pass 3.5: jo biz id ab data me hai hi nahi, use migration me hi hata do — warna engine ke kai hisse crash karte
+    for (const k of Object.keys(saved.biz)) if (!bizDef(k)) delete saved.biz[k]
   }
   return saved
 }
@@ -93,7 +95,7 @@ export default function App() {
     if (saved) {
       // offline earnings: 20% of estimated daily profit per real hour away, capped 8h
       const awayH = Math.min(8, (Date.now() - (saved.lastSaveAt || Date.now())) / 3600000)
-      const est = Object.entries(saved.biz || {}).reduce((a, [id, o]) => { const d = bizDef(id); return a + d.rev * 0.3 * (1 + 0.18 * (o.lv - 1)) }, 0)
+      const est = Object.entries(saved.biz || {}).reduce((a, [id, o]) => { const d = bizDef(id); return d ? a + d.rev * 0.3 * (1 + 0.18 * (o.lv - 1)) : a }, 0)
       saved.offlineGain = Math.round(est * awayH * 0.2)
       if (saved.offlineGain > 0) { saved.cash += saved.offlineGain; saved.awayReport = { hours: Math.round(awayH * 10) / 10, gain: saved.offlineGain } }
       return saved
