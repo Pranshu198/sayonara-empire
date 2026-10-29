@@ -150,6 +150,32 @@ Demand · Price Elasticity · Procurement/Supply · Import/Logistics · Labour/H
 
 What changed: base content pools slimmed to part-01 only (part-02+ streams behind the splash — same content, later), rival dialogues + festival part-2 files moved to the stream, a dead `ProductStaffLine` import that was dragging the 2 MB products library + staff library into the entry chunk removed, engine hot paths switched to Map lookups (`bizDef`, holdings/properties), auto-timer pauses while the tab is hidden, deep streaming starts on `requestIdleCallback`, off-screen cards use CSS `content-visibility`, modern build target (`es2022`, no module-preload polyfill), service worker bumped to `v3.4.0` (shell-only precache, as before). No features, visuals or content were removed.
 
+## Pass 3.5 — Command centre, balance rescue & stability (measured)
+
+A designer/engineer/QA overhaul pass. Full audit: `docs/AUDIT-3.5.md` (top-20 issues). Balance constants: `docs/BALANCE.md`.
+
+- **Home is now a command centre.** Net-worth hero card (animated counter, SVG sparkline of the last 60 days, trend chip), today's profit so far, cash vs receivables, next-festival countdown, a **"Why did profit move?"** line (biggest cost head + yesterday's result), and an **alerts card with one-tap actions** — low stock → restock, claimable mission → claim, idle cash → deposit, EMI due → bank. The first suggested action is labelled *Next best action*.
+- **Guided first run.** A skippable 5-step First Steps card (buy → set price in HQ → restock → finish a day → read the Day Report) that ticks itself off from real play; veteran saves auto-complete it.
+- **"While you were away" summary** card (hours away + offline earnings) instead of a fleeting toast, plus milestone celebrations with haptics.
+- **35 new UI strings in all 19 language packs** (101 keys each) for the new chrome; an **international number format** (₹1.2M) joins Indian short/full in Settings; **haptics setting** (navigator.vibrate) on buys/wins/tabs.
+- **Native-feel upgrades:** quick-action FAB with a back-friendly bottom sheet (Next Phase / End Day / Daily Reward), **Prestige finally asks for confirmation** in that sheet, reward badge dot on the More tab, desktop keyboard shortcuts (Space/→, E, 1–9), aria labels/current on tabs, `aria-expanded` on sections.
+- **Balance rescue (found by 4-strategy × 150-day simulation, `scripts/sim-strategies.mjs`):** the World Atlas was *dead content* — every non-Delhi city was gated at ≥ ₹1.45 Cr net worth (the prestige threshold). City cost/unlock are now a tier ladder (₹75K → ₹75L gates); the franchise sim went from 1 → 18 branches. Imports were a *cash trap* (₹1.9 L order → 20 stock points; sim ₹1.15 L NW vs ₹9.82 L control) — landed cost now carries a documented game-economy scale (0.05) and deliveries convert qty/2 into stock; imports are a premium timed tool, no longer a trap. Managers verified scale-dependent (≈ +50% gross profit, salaries eat it at small scale — by design).
+- **Rivals react now.** Rival growth carries a chase factor (×1.45 when you're ahead of them, ×0.8 when you're far behind), and rank changes make Sheher Times headlines.
+- **Stability:** automatic **last-good-save backup** (corrupt main save now recovers from backup — browser-verified), **checksum-verified export/import** (old raw codes still import), unknown business ids in old saves are purged at migration instead of crashing the game (browser-verified through a full day), NaN/Infinity sanitiser in the engine.
+- **P&L Waterfall in Stats** — last full day: revenue → COGS → wages → rent → utilities → wastage → interest → net profit, tap any bar for its share of revenue.
+- **PWA:** service worker `v3.5.0` with a real **"New version available — Refresh"** flow (no more silent skipWaiting), manifest **shortcuts** (HQ / Business / Stats).
+- **Tests:** Vitest suite (dev-only) — 11 tests: tax, receivables, EMI, festival boost, import landed cost, wages, manager salary rules, NaN/ghost-biz guards, 150-day sim. All passing.
+
+| Metric | Pass 3.4 (before) | Pass 3.5 (after) |
+|---|---|---|
+| Src lines / files | 477,497 / 415 | **478,599 / 418** |
+| Initial JS (gzip, entry-critical) | 304,002 B | 308,252 B (+1.4% — App-shell features; Home panel itself is lazy) |
+| Engine tick (54 branches / 216 staff) | 1.10–1.17 ms/phase | **1.01 ms/phase** |
+| Tests | none | **11 Vitest tests, all passing** |
+| Headless 390 px | 0 errors / 0 overflow | 0 errors / 0 overflow (en + hi full passes; ur-roman home verified; fr/ar full re-run blocked by a headless-Chrome host failure — see Limitations) |
+
+**Limitations, honestly:** deep content (events/stories/encyclopedia) still renders in its original Hinglish/English — only UI chrome is translated, as the in-game note says. The fr/ar full-tab headless re-run for this pass could not be completed: the CI VM's headless Chrome began crashing at OS level (SIGTRAP) mid-gate, after en/hi passes and all browser scenario tests (fresh save, pre-3.5 save migration, ghost-biz save, corrupt-save backup recovery) had passed on the final build. Manifest screenshot entries were also dropped for the same environment reason (shortcuts shipped instead). A real-phone install + Arabic pass remains the final human check, as with every pass.
+
 ## Architecture
 
 ```
