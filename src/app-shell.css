@@ -1,0 +1,138 @@
+/* ===== Pass 3.3: Native mobile-app shell =====
+   Web page nahi, app: phone column framing desktop par, full-bleed mobile par,
+   native tab bar pill, overscroll control, no-select chrome, hidden scrollbars. */
+
+:root{ --appw:430px }
+
+html{
+  overscroll-behavior:none;
+  -webkit-text-size-adjust:100%;
+}
+body{
+  overscroll-behavior:none;
+  -webkit-overflow-scrolling:touch;
+  touch-action:manipulation;
+  background:#000;
+}
+/* Ambient backdrop sirf badi screen par dikhta hai (app ke peeche ki duniya) */
+@media (min-width:560px){
+  body{
+    background:
+      radial-gradient(60% 42% at 18% 0%, rgba(168,85,247,.20) 0%, transparent 60%),
+      radial-gradient(55% 40% at 85% 12%, rgba(245,197,66,.12) 0%, transparent 55%),
+      radial-gradient(80% 60% at 50% 110%, rgba(78,20,120,.18) 0%, transparent 60%),
+      #050505;
+    background-attachment:fixed;
+  }
+}
+
+/* App column = device frame */
+.app{
+  max-width:var(--appw);
+  height:100dvh;
+  min-height:100dvh;
+  margin:0 auto;
+  overflow-y:auto;
+  overflow-x:clip;
+  overscroll-behavior:contain;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  padding-bottom:calc(92px + env(safe-area-inset-bottom));
+}
+.app::-webkit-scrollbar{ width:0; height:0; display:none }
+@media (min-width:560px){
+  .app{
+    height:min(96dvh, 980px);
+    min-height:0;
+    margin-top:2dvh;
+    border:1px solid #2a2a2a;
+    border-radius:34px;
+    box-shadow:0 40px 120px rgba(0,0,0,.9), 0 0 0 6px #0b0b0b, 0 0 90px rgba(168,85,247,.14);
+    overflow-y:auto;
+    position:relative;
+  }
+  /* Fixed chrome (tabbar/toast/burst) bhi frame ke andar rahe */
+  nav.tabbar, .toast{ max-width:var(--appw) }
+  nav.tabbar{ bottom:2dvh; border-radius:0 0 34px 34px; border-left:1px solid #2a2a2a; border-right:1px solid #2a2a2a }
+  .splash{ border-radius:34px; left:50%; right:auto; width:var(--appw); transform:translateX(-50%); top:2dvh; bottom:auto; height:min(96dvh,980px) }
+}
+@media (max-width:559px){
+  .app{ border-radius:0 }
+}
+
+/* Chrome par text-selection / callout band — app jaisa feel */
+header.hud, nav.tabbar, .brand, .phase-bar, .time-ctrl, button, .chip, .sec-head{
+  -webkit-user-select:none; user-select:none;
+  -webkit-touch-callout:none;
+}
+input, textarea, select{ -webkit-user-select:text; user-select:text }
+
+/* Sticky app header: status-bar safe + native blur title bar */
+header.hud{
+  padding-top:calc(12px + env(safe-area-inset-top));
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+/* Native bottom navigation: active pill indicator */
+nav.tabbar{
+  max-width:var(--appw);
+  padding:8px 6px calc(8px + env(safe-area-inset-bottom));
+  gap:2px;
+}
+nav.tabbar button{
+  position:relative;
+  border-radius:16px;
+  transition:transform .12s ease, color .18s ease, background .18s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+nav.tabbar button:active{ transform:scale(.92) }
+nav.tabbar button.on{
+  background:linear-gradient(180deg, rgba(245,197,66,.16), rgba(245,197,66,.07));
+  color:var(--gold);
+}
+nav.tabbar button.on::after{
+  content:''; position:absolute; left:50%; bottom:4px; transform:translateX(-50%);
+  width:18px; height:3px; border-radius:99px; background:var(--gold);
+  box-shadow:0 0 8px rgba(245,197,66,.8);
+}
+nav.tabbar button .ic{ transition:transform .18s cubic-bezier(.34,1.56,.64,1) }
+nav.tabbar button.on .ic{ transform:translateY(-1px) scale(1.08) }
+
+/* Press feedback har interactive element par */
+.btn:active, .chip:active, .biz-card:active{ transform:scale(.975) }
+.biz-card, .card{ transition:border-color .18s ease }
+
+/* Inputs keyboard-safe + app-like focus */
+input:focus, textarea:focus, select:focus{
+  outline:none; border-color:rgba(245,197,66,.55);
+  box-shadow:0 0 0 3px rgba(245,197,66,.12);
+}
+
+/* Momentum feel lists ke liye */
+main{ -webkit-overflow-scrolling:touch }
+
+/* Toast ko bhi safe-area ke upar rakho */
+.toast{ bottom:calc(104px + env(safe-area-inset-bottom)) }
+@media (min-width:560px){
+  .toast{ bottom:auto; top:calc(2dvh + 18px) }
+}
+
+/* Install hint chip (PWA) — App.jsx se render hota hai */
+.install-chip{
+  position:fixed; left:50%; transform:translateX(-50%);
+  bottom:calc(96px + env(safe-area-inset-bottom)); z-index:95;
+  display:flex; align-items:center; gap:10px;
+  background:rgba(14,14,14,.96); border:1px solid rgba(245,197,66,.45);
+  border-radius:16px; padding:10px 12px; max-width:min(92vw, 398px);
+  box-shadow:0 14px 40px rgba(0,0,0,.85); backdrop-filter:blur(14px);
+}
+.install-chip img{ width:38px; height:38px; border-radius:10px }
+.install-chip .ic-t{ font-size:12.5px; font-weight:700; line-height:1.35 }
+.install-chip .ic-s{ font-size:11px; color:var(--muted); font-weight:500 }
+.install-chip button{
+  background:linear-gradient(135deg,#ffd964,#e0a800); color:#111; border:none;
+  border-radius:11px; padding:9px 13px; font-weight:800; font-size:12.5px; min-height:38px;
+}
+.install-chip .ic-x{
+  background:none; color:var(--muted); padding:6px; font-size:15px; min-height:0;
+}

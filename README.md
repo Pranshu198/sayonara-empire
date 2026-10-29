@@ -12,9 +12,10 @@ Start with a single chai stall in Uttam Nagar, Delhi — end with businesses acr
 [![▶ Play the Live Game](https://img.shields.io/badge/▶_PLAY_LIVE-sayonara--empire-gold?style=for-the-badge)](https://pranshu198.github.io/sayonara-empire/)
 
 ![Live](https://img.shields.io/badge/status-live-brightgreen)
+![PWA](https://img.shields.io/badge/PWA-installable-5a0fc8)
 ![React](https://img.shields.io/badge/React-19.3-61dafb)
 ![Vite](https://img.shields.io/badge/Vite-8.3-a855f7)
-![Lines of Code](https://img.shields.io/badge/lines_of_code-477%2C506-blueviolet)
+![Lines of Code](https://img.shields.io/badge/lines_of_code-477%2C488-blueviolet)
 ![Source Files](https://img.shields.io/badge/src_files-415-orange)
 ![Content Entries](https://img.shields.io/badge/content_entries-44%2C000%2B-red)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -24,6 +25,10 @@ Start with a single chai stall in Uttam Nagar, Delhi — end with businesses acr
 ---
 
 ## Screenshots (real, from the live build)
+
+| The app on desktop — device frame | The app on phone — swipe tabs, pill nav |
+|---|---|
+| <img src="docs/screenshots/app-frame.png" width="420" /> | <img src="docs/screenshots/app-home.png" width="250" /> |
 
 | Splash | Dashboard — Day 47 | Businesses & Procurement |
 |---|---|---|
@@ -71,7 +76,7 @@ This is not a clicker. Every business runs on a **line-by-line Profit & Loss eng
 - **Zero emojis — own icon library.** Every icon in the app is a hand-built stroke SVG from the in-house set (`src/components/icons/`, ~48 icons); generated text is sanitised before display. Grep-verified: **zero emoji characters in the entire `src/` tree**.
 - **19 languages.** A real `t(key)` i18n system (`src/i18n/`, one lazy file per language): English, Hindi (Devanagari), Hinglish, **Urdu (Roman)** — Hinglish-style, Urdu script, Arabic (full RTL layout), French, Russian, Spanish, Portuguese, German, Bengali, Punjabi, Marathi, Tamil, Telugu, Chinese, Japanese, Korean. Searchable picker in Settings, browser auto-detect, instant switch, per-script fonts. Menus/labels/buttons/time/stats fully translate; the deep story/news libraries stay in their original language (stated honestly in Settings → About).
 - **Card design system + ultra polish.** One card family (Base/Stat/Business/Asset/Person/Listing/Metric) with a shared anatomy — icon slot, title, subtitle, value zone, trend chip, action row — in flat/elevated/glass/glow/danger/success variants, an 8-pt spacing rhythm, radius scale 16/20/24, tabular numbers, skeleton shimmer for lazy panels, designed empty states and card-style toasts across every tab.
-- **Heavy optimization, same quality.** Initial JS is **419 KB gzip total** (index + vendor + shared engine chunks, 183 chunks overall) after slimming the always-loaded content base pools and streaming the rest behind the splash via the deep loader; saves are debounce-throttled (1.5 s + flush on hide/close) instead of a full stringify per change; the Atlas windows long lists (40/page); a Performance Mode (Settings → Advanced, auto by FPS) trims particles on weak devices *without touching the design*. Engine perf, simulated in Node with a 54-branch / 216-staff empire: **1.6 ms per phase** (400 phases, zero errors). Headless verification of the final build: **all 9 tabs + HQ + CV + 5 language UIs — zero console errors, zero horizontal overflow at 390 px.**
+- **Heavy optimization, same quality.** Initial JS is **420 KB gzip total** (index + vendor + shared engine chunks, 184 chunks overall) after slimming the always-loaded content base pools and streaming the rest behind the splash via the deep loader; saves are debounce-throttled (1.5 s + flush on hide/close) instead of a full stringify per change; the Atlas windows long lists (40/page); a Performance Mode (Settings → Advanced, auto by FPS) trims particles on weak devices *without touching the design*. Engine perf, simulated in Node with a 54-branch / 216-staff empire: **1.6 ms per phase** (400 phases, zero errors). Headless verification of the final build: **all 9 tabs + HQ + CV + 5 language UIs — zero console errors, zero horizontal overflow at 390 px.**
 
 ## Content depth (all real, all wired into the game)
 
@@ -88,6 +93,23 @@ This is not a clicker. Every business runs on a **line-by-line Profit & Loss eng
 | Encyclopedia terms | 370+ | Bulk achievements | 240+ |
 
 Plus: a stock market (9 stocks + gold/silver/BTC/DOGE with per-stock news), property with rising values, a Business Bazaar (buy ready-made businesses, negotiate, list your own), a multi-bidder **Auction House** (including a Sniper and a Bluffer), 15 classes of wealth assets, collectibles trading, movie production, time capsules, a luxury ladder, charity, city projects, dynasty & heirs, prestige, and a Legacy Score that counts your cities and countries.
+
+## Install as an App (PWA)
+
+Sayonara Empire is a full **Progressive Web App** — it installs like a native application, with its own gold-crown icon, fullscreen standalone launch (no browser chrome), offline play via a versioned service-worker app shell, and native-style touches throughout: swipe left/right to change tabs, a pill-indicator bottom navigation, safe-area-aware chrome, a device-frame presentation on desktop, and an in-app **Install** chip when your browser offers installation.
+
+**Android / Chrome:** open the live game → tap **Install** on the chip (or ⋮ menu → *Add to Home screen* / *Install app*).
+**iPhone / Safari:** open the live game → Share → *Add to Home Screen*.
+**Desktop Chrome/Edge:** click the install icon in the address bar.
+
+Once installed it launches fullscreen from your home screen and keeps working offline — your save lives on your device.
+
+## Pass 3.3 — a real mobile application
+
+- **Native app shell.** The web-page frame is gone: on phones the game is full-bleed edge-to-edge; on desktop/tablet it presents centred in a rounded device column (430 px) over an ambient purple/gold backdrop, with the tab bar docked inside the frame.
+- **PWA plumbing.** Web app manifest (standalone, portrait, AMOLED `#000000` theme), generated icon set (192 / 512 / maskable / apple-touch, from the game's own crown-S monogram), and a hand-rolled service worker — network-first navigations so new deploys land instantly, cache-first hashed assets, old caches purged by version (`v3.3.1`). Verified: SW registers and activates, and the game **reloads fully offline**.
+- **Native interactions.** Swipe gestures switch tabs (inputs/sliders/modals are exempt), overscroll/pull-to-refresh is contained inside the app, UI chrome is non-selectable with no tap highlight or tap delay, scrollbars are hidden, and every press keeps the haptic-style micro-scale feedback.
+- **Verified like before.** Headless run of the final build: all tabs + HQ + Stats — **zero console errors, zero horizontal overflow at 390 px**, swipe Empire → Business confirmed, desktop frame renders at exactly 430 px.
 
 ## How to play
 
@@ -110,13 +132,19 @@ Demand · Price Elasticity · Procurement/Supply · Import/Logistics · Labour/H
 
 ## Performance, honestly
 
-475k lines would be a brick without code-splitting. The build splits into **143 chunks**: vendor separately, all heavy panels (Wealth, Bazaar, Auction, Atlas, Managers, Imports, Procurement…) as `React.lazy` chunks, the entire World Atlas geography as per-region lazy modules, and 84 deep-content files streaming in behind the splash. Entry chunk: **482,901 → 423,675 bytes gzip** versus the 104k-line Pass 2 build — smaller *and* 4.5× the content.
+477k lines would be a brick without code-splitting. The build splits into **184 chunks**: vendor separately, all heavy panels (Wealth, Bazaar, Auction, Atlas, Managers, Imports, Procurement…) as `React.lazy` chunks, the entire World Atlas geography as per-region lazy modules, and 84 deep-content files streaming in behind the splash. Initial JS actually downloaded on first load: **419,962 bytes gzip** (index + vendor + shared, measured on the Pass 3.3 build) — essentially unchanged from the 104k-line Pass 2 build while carrying 4.5× the content, and the service worker caches the shell so repeat launches are near-instant.
 
 ## Architecture
 
 ```
+index.html                — PWA meta, manifest + icon links
+public/
+  manifest.webmanifest    — standalone PWA manifest (portrait, #000 theme)
+  sw.js                   — versioned app-shell service worker (offline)
+  icon-*.png              — generated crown-S app icons (192/512/maskable/apple)
 src/
-  App.jsx                 — shell, tabs, HUD, time control
+  App.jsx                 — shell, tabs, HUD, time control, swipe nav, install chip
+  app-shell.css           — native app framing, pill nav, overscroll, safe areas
   components/             — panels (most are lazy chunks)
   game/
     engine.js             — core economy loop (phases, day-end, month-end)
@@ -132,7 +160,7 @@ src/
 
 ## Tech stack
 
-React 19 · Vite 8 · Framer Motion · pure CSS (AMOLED design system) · localStorage saves (export/import codes) · GitHub Pages hosting. No backend, no tracking, no ads — the whole empire runs on the player's phone.
+React 19 · Vite 8 · Framer Motion · pure CSS (AMOLED design system) · PWA (manifest + service worker, offline) · localStorage saves (export/import codes) · GitHub Pages hosting. No backend, no tracking, no ads — the whole empire runs on the player's phone.
 
 ## Roadmap
 
@@ -147,7 +175,7 @@ Built solo in Delhi with a phone and stubbornness. Issues and ideas welcome — 
 
 <div align="center">
 
-*Ek chai stall se duniya tak — ye safar abhi baaki hai.* ☕🌍
+*Ek chai stall se duniya tak — ye safar abhi baaki hai.*
 
 **[▶ Play now — pranshu198.github.io/sayonara-empire](https://pranshu198.github.io/sayonara-empire/)**
 

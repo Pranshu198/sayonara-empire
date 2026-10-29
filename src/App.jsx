@@ -92,6 +92,34 @@ export default function App() {
   })
   const urlTab = new URLSearchParams(window.location.search).get('tab')
   const [tab, setTab] = useState(['home', 'biz', 'hq', 'stats', 'market', 'prop', 'wealth', 'bank', 'more'].includes(urlTab) ? urlTab : 'home')
+  // Pass 3.3: native swipe — left/right se tab badlo (input/range/modal par nahi)
+  const touchRef = useRef(null)
+  const TAB_ORDER = ['home', 'biz', 'hq', 'stats', 'market', 'prop', 'wealth', 'bank', 'more']
+  const onTouchStart = (e) => {
+    const t = e.target
+    if (t.closest('input, textarea, select, .splash, [data-noswipe]')) { touchRef.current = null; return }
+    const c = e.touches[0]
+    touchRef.current = { x: c.clientX, y: c.clientY }
+  }
+  const onTouchEnd = (e) => {
+    const st = touchRef.current; touchRef.current = null
+    if (!st) return
+    const c = e.changedTouches[0]
+    const dx = c.clientX - st.x, dy = c.clientY - st.y
+    if (Math.abs(dx) < 64 || Math.abs(dx) < Math.abs(dy) * 1.6) return
+    const i = TAB_ORDER.indexOf(tab)
+    const n = dx < 0 ? Math.min(TAB_ORDER.length - 1, i + 1) : Math.max(0, i - 1)
+    if (n !== i) setTab(TAB_ORDER[n])
+  }
+  // Pass 3.3: PWA install prompt (Add to Home Screen jaisa native flow)
+  const [installEvt, setInstallEvt] = useState(null)
+  const [installClosed, setInstallClosed] = useState(() => { try { return !!localStorage.getItem('se_install_closed') } catch { return false } })
+  useEffect(() => {
+    const h = (e) => { e.preventDefault(); setInstallEvt(e) }
+    window.addEventListener('beforeinstallprompt', h)
+    return () => window.removeEventListener('beforeinstallprompt', h)
+  }, [])
+  const standalone = typeof window !== 'undefined' && (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone)
   const [buyLoc, setBuyLoc] = useState(null)
   const [toast, setToast] = useState('')
   const [burst, setBurst] = useState(0)
@@ -176,7 +204,7 @@ export default function App() {
   const accentColor = { gold: '#f5c542', violet: '#a855f7', green: '#2ee06f', pink: '#ec4899' }[(s.settings && s.settings.accent) || 'gold']
   const zoomScale = ((s.settings && s.settings.fontScale) || 1) * ((s.settings && s.settings.largeText) ? 1.12 : 1)
   return (
-    <div dir={isRTL(langId) ? 'rtl' : 'ltr'} lang={langId} className={'app' + ((s.settings && s.settings.contrast) ? ' contrast' : '') + ((s.settings && s.settings.amoled === 'soft') ? ' amoled-soft' : '')} style={{ '--gold': accentColor, zoom: zoomScale, fontFamily: FONT_STACKS[langId] || undefined }}>
+    <div dir={isRTL(langId) ? 'rtl' : 'ltr'} lang={langId} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd} className={'app' + ((s.settings && s.settings.contrast) ? ' contrast' : '') + ((s.settings && s.settings.amoled === 'soft') ? ' amoled-soft' : '')} style={{ '--gold': accentColor, zoom: zoomScale, fontFamily: FONT_STACKS[langId] || undefined }}>
       <PerfGuard mode={(s.settings && s.settings.perfMode) || 'auto'} />
       <Splash show={showSplash} onDone={() => setShowSplash(false)} />
       {s.settings && s.settings.showFps && <FpsMeter />}
@@ -401,6 +429,17 @@ export default function App() {
         </AnimatePresence>
       </main>
 
+      {installEvt && !installClosed && !standalone && !showSplash && (
+        <div className="install-chip">
+          <img src={`${import.meta.env.BASE_URL}icon-192.png`} alt="" />
+          <div style={{ flex: 1 }}>
+            <div className="ic-t">Sayonara Empire ko App ki tarah lagao</div>
+            <div className="ic-s">Home screen icon • Fullscreen • Offline bhi chalega</div>
+          </div>
+          <button onClick={async () => { try { installEvt.prompt(); await installEvt.userChoice } catch {} setInstallEvt(null) }}>Install</button>
+          <button className="ic-x" onClick={() => { setInstallClosed(true); try { localStorage.setItem('se_install_closed', '1') } catch {} }}>✕</button>
+        </div>
+      )}
       <nav className="tabbar">
         {tabs.map(([id, ic, label]) => <button key={id} className={tab === id ? 'on' : ''} onClick={() => setTab(id)}><span className="ic">{id === 'stats' ? <StatsIcon size={20} /> : <Icon name={ic} size={20} />}</span>{label}</button>)}
       </nav>
