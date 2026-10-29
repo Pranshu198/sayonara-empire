@@ -100,5 +100,16 @@ export default {
  "quickActions": "Quick Actions",
  "whyTitle": "Munafa kyun hila?",
  "topCost": "Sab se bara kharcha",
- "festBoost": "Tehwaar ki demand boost chalu hai"
+ "festBoost": "Tehwaar ki demand boost chalu hai",
+ "evoT1": "Shuruaat",
+ "evoT2": "Jamti Dukaan",
+ "evoT3": "Brand",
+ "evoT4": "Sheher ka Seth",
+ "evoT5": "Saltanat",
+ "evoNext": "Agla irtiqa Lv {lv} par",
+ "evoTitle": "Irtiqa!",
+ "evoSub": "{name} ab {tier} hai",
+ "evoPerk": "Har darjay par +1% demand (max +4%)",
+ "ladderTitle": "Saltanat ki seedhi",
+ "evoMax": "Sab se bada irtiqa — Saltanat",
 }

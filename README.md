@@ -176,6 +176,30 @@ A designer/engineer/QA overhaul pass. Full audit: `docs/AUDIT-3.5.md` (top-20 is
 
 **Limitations, honestly:** deep content (events/stories/encyclopedia) still renders in its original Hinglish/English — only UI chrome is translated, as the in-game note says. The fr/ar full-tab headless re-run for this pass could not be completed: the CI VM's headless Chrome began crashing at OS level (SIGTRAP) mid-gate, after en/hi passes and all browser scenario tests (fresh save, pre-3.5 save migration, ghost-biz save, corrupt-save backup recovery) had passed on the final build. Manifest screenshot entries were also dropped for the same environment reason (shortcuts shipped instead). A real-phone install + Arabic pass remains the final human check, as with every pass.
 
+## Pass 3.6 — Visual evolution: businesses you can SEE grow (measured)
+
+The presentation model of the big idle-tycoon games, rebuilt in Sayonara's own identity — progress you can see, feedback you can feel. No borrowed art: every scene is original in-house SVG.
+
+- **Visual business evolution (the core model).** Every business now has 5 evolution tiers — **Shuruaat** (Lv 1–4) → **Jamti Dukaan** (5–9) → **Brand** (10–19) → **Sheher ka Seth** (20–34) → **Samrajya** (35+). One reusable scene system (`BizScene`) composes category scenes (Food, Retail, Service, Edu, Health, Tech, Industry, Energy) from SVG primitives: the stall gains a sign board, string lights, a side wing, lit windows — and at Samrajya, a gold frame and crown. Business cards lead with the scene; HQ opens each branch with a hero band (scene + tier + city).
+- **The level cap rose from 10 to 50** so the top tiers are real, reachable goals (upgrade cost formula unchanged — Samrajya is a long-term money sink, not a shortcut). Each owned card shows a slim **next-evolution progress bar** and a **phase-progress strip**; the Atlas gained an **empire ladder** strip (Delhi → T5) showing where you stand.
+- **Evolution moment.** When a branch crosses a tier, a celebration bottom sheet appears (scene, crown, haptic + sound) — the moment the genre lives for.
+- **Juicy core loop.** Phase earnings float up over the Home hero (+₹X, throttled, off under reduced-motion/Performance Mode), buy/upgrade/claim success states reuse the coin-burst + WebAudio blips behind the existing sound toggle.
+- **A tiny, honest perk:** each tier adds **+1% demand** (max +4%) — a bigger shop genuinely pulls a bigger crowd. Documented in `docs/BALANCE.md`; the 4-strategy × 150-day sim was re-run: no new dominant strategy (franchise still tops lifetime profit, as in 3.5), zero errors, engine tick **1.02 ms/phase**.
+- **11 new UI strings in all 19 language packs** (112 keys each) for tiers/evolution/ladder; Arabic RTL verified in the headless gate.
+- **Bug found & fixed on the way:** the first business bought in the Biz tab was keyed `id@[object Object]` (the `HOME_CITY` object was used where an id string belonged) — it only "worked" through fallbacks. Root cause fixed, and migration rekeys affected branches in old saves to their real city, data intact.
+- **Tests:** Vitest suite now **15 tests** (4 new for tier boundaries, progress and the demand perk), all passing. Lint 0 errors. SW `v3.6.0`.
+
+| Metric | Pass 3.5 (before) | Pass 3.6 (after) |
+|---|---|---|
+| Src lines / files | 478,599 / 418 | **479,050 / 421** |
+| Initial JS (gzip, entry-critical) | 308,252 B | 311,393 B (+1.0% — the scene system ships in the entry because the Business tab is core; HQ/Atlas scenes reuse the same chunk) |
+| Engine tick (54 branches / 216 staff) | 1.01 ms/phase | 1.02 ms/phase |
+| Tests | 11 passing | **15 passing** |
+| Headless 390 px | en + hi full passes | **en + hi + ar full passes, 0 errors / 0 overflow** + seeded evolution screenshots |
+
+**Limitations, honestly:** the HQ-detail hero screenshot could not be re-captured for this pass — the CI VM's headless Chrome and local git writes began failing at OS level mid-ship (the same class of host incident as Pass 3.5); the final build was instead verified by the full en/hi/ar gate run on the identical scene code plus the seeded Business/HQ screenshots in `docs/shots36/`, and this release was pushed via the GitHub API. Deep content remains in its original Hinglish/English, as the in-game note says.
+
+
 ## Architecture
 
 ```

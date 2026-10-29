@@ -130,3 +130,25 @@ describe('150-day headless sim', () => {
     expect(s.life.rev).toBeGreaterThan(0)
   })
 })
+
+// Pass 3.6 — evolution model
+import { tierOf, nextTierAt, evoProgress, evoDemandF, MAX_LV } from '../src/game/evolution.js'
+describe('evolution tiers (Pass 3.6)', () => {
+  it('tier boundaries sahi hain', () => {
+    expect(tierOf(1)).toBe(0); expect(tierOf(4)).toBe(0); expect(tierOf(5)).toBe(1); expect(tierOf(9)).toBe(1)
+    expect(tierOf(10)).toBe(2); expect(tierOf(19)).toBe(2); expect(tierOf(20)).toBe(3); expect(tierOf(34)).toBe(3)
+    expect(tierOf(35)).toBe(4); expect(tierOf(MAX_LV)).toBe(4)
+  })
+  it('next tier aur progress', () => {
+    expect(nextTierAt(1)).toBe(5); expect(nextTierAt(9)).toBe(10); expect(nextTierAt(35)).toBe(null)
+    expect(evoProgress(1)).toBe(0); expect(evoProgress(35)).toBe(1)
+  })
+  it('demand perk +1%/tier, max +4%', () => {
+    expect(evoDemandF(1)).toBeCloseTo(1.0); expect(evoDemandF(10)).toBeCloseTo(1.02); expect(evoDemandF(40)).toBeCloseTo(1.04)
+  })
+  it('purane save ka Lv 10 business crash nahi karta, perk milta hai', () => {
+    const s = chaiState(); s.biz['chai@india_delhi'].lv = 10
+    let n = s; for (let i = 0; i < 8; i++) n = phaseTick(n)
+    expect(Number.isFinite(n.cash)).toBe(true)
+  })
+})

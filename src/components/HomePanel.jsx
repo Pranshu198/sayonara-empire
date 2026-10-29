@@ -1,7 +1,7 @@
 // ============ PASS 3.5 — HOME COMMAND CENTRE ============
 // Hero (net worth + sparkline + aaj ka munafa), Alerts/Next-Best-Action, Guided First Run, Away summary.
 // Saare naye labels t(key) se — 19 bhashaon ke packs me keys maujood hain.
-import { useMemo } from 'react'
+import { useMemo, useRef, useState, useEffect } from 'react'
 import { AnimatedNumber } from './ui.jsx'
 import { TrendChip } from './cards.jsx'
 import { Icon } from './icons/index.jsx'
@@ -27,6 +27,23 @@ function Sparkline({ hist, nw }) {
 }
 
 export function HomePanel({ s, nw, fmtN, tx, go, upd, say, act }) {
+  // Pass 3.6: JUICY — phase ki kamaai hero par float-up (+₹X), throttled; reduced-motion/perf par band
+  const [floatAmt, setFloatAmt] = useState(null)
+  const prevRevRef = useRef(s.dayRevenue || 0)
+  const lastFloatRef = useRef(0)
+  useEffect(() => {
+    const prev = prevRevRef.current; const cur = s.dayRevenue || 0
+    prevRevRef.current = cur
+    if (cur <= prev) return
+    const st = s.settings || {}
+    if (st.reducedMotion || st.animLevel === 'off') return
+    const now = Date.now()
+    if (now - lastFloatRef.current < 1100) return
+    lastFloatRef.current = now
+    setFloatAmt({ amt: Math.round(cur - prev), k: now })
+    const tm = setTimeout(() => setFloatAmt(null), 1350)
+    return () => clearTimeout(tm)
+  }, [s.dayRevenue])
   const entries = Object.entries(s.biz || {})
   const tut = s.tut || {}
   const todayProfit = Math.round((s.dayRevenue || 0) - (s.dayCosts || 0))
@@ -89,6 +106,7 @@ export function HomePanel({ s, nw, fmtN, tx, go, upd, say, act }) {
       )}
 
       <div className="hero-card">
+        {floatAmt && <span key={floatAmt.k} className="float-earn" aria-hidden="true">+{fmtN(floatAmt.amt)}</span>}
         <div className="hero-lbl">{tx('netWorth')}</div>
         <div className="hero-nw"><AnimatedNumber value={nw} format={fmtN} /></div>
         <TrendChip dir={nwDelta > 0.05 ? 'up' : nwDelta < -0.05 ? 'down' : 'flat'}>{(nwDelta >= 0 ? '+' : '') + nwDelta.toFixed(1)}%</TrendChip>

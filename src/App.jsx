@@ -27,6 +27,8 @@ const StatsPanel = lazyNamed(import('./components/StatsPanel.jsx'), 'StatsPanel'
 const HqPanel = lazyNamed(import('./components/HqPanel.jsx'), 'HqPanel')
 const HomePanel = lazyNamed(import('./components/HomePanel.jsx'), 'HomePanel')
 import { StatsIcon } from './components/StatsIcon.jsx'
+import { BizScene } from './components/BizScene.jsx'
+import { tierOf, tierKeyOf, nextTierAt, evoProgress, MAX_LV } from './game/evolution.js'
 import { Icon, CatIcon } from './components/icons/index.jsx'
 import { SkeletonCard } from './components/cards.jsx'
 import { bizIdOf, branchKey } from './game/businesses/index.js'
@@ -71,8 +73,11 @@ function migrate(saved) {
   if (saved.biz) {
     const nb = {}
     for (const [k, o] of Object.entries(saved.biz)) {
-      if (k.includes('@')) { nb[k] = { employees: [], ...o } }
-      else { const loc = o.loc || 'india_delhi'; nb[k + '@' + loc] = { ...o, loc, employees: o.employees || [] } }
+      // Pass 3.6 fix: kuch purane saves me branch key 'id@[object Object]' ban gayi thi (HOME_CITY object bug) — use asal sheher par rekey karo, data same rakho
+      const oo = { ...o }
+      if (typeof oo.loc !== 'string') oo.loc = 'india_delhi'
+      if (k.includes('@')) { const key = k.includes('[object Object]') ? k.split('@')[0] + '@india_delhi' : k; if (!nb[key]) nb[key] = { employees: [], ...oo } }
+      else { const loc = oo.loc || 'india_delhi'; nb[k + '@' + loc] = { ...oo, loc, employees: oo.employees || [] } }
     }
     saved.biz = nb
     // Pass 3.5: jo biz id ab data me hai hi nahi, use migration me hi hata do — warna engine ke kai hisse crash karte
@@ -187,6 +192,23 @@ export default function App() {
     if (!t.report && (t.day || patch.day) && tab === 'home') patch.report = 1
     if (Object.keys(patch).length) setS(p => ({ ...p, tut: { ...(p.tut || {}), ...patch } }))
   }, [s, tab])
+  // Pass 3.6: EVOLUTION MOMENT — koi branch tier cross kare to celebration sheet + haptic + sound
+  const [evo, setEvo] = useState(null)
+  const tierMapRef = useRef(null)
+  useEffect(() => {
+    const cur = {}
+    for (const [k, o] of Object.entries(s.biz || {})) cur[k] = tierOf(o.lv)
+    if (tierMapRef.current === null) { tierMapRef.current = cur; return }
+    const prev = tierMapRef.current; tierMapRef.current = cur
+    for (const [k, t] of Object.entries(cur)) {
+      if (prev[k] !== undefined && t > prev[k]) {
+        const d = bizDef(k); const o = s.biz[k]
+        setEvo({ name: d ? d.name : k, cat: d ? d.cat : 'Food', tier: t, lv: o ? o.lv : 1 })
+        buzz(s.settings, BUZZ.big); playSound('win', s.settings); setBurst(b => b + 1)
+        break
+      }
+    }
+  }, [s.biz])
   const msCount = useRef(-1)
   useEffect(() => {
     const c = Object.keys((s.life && s.life.milestones) || {}).length
@@ -241,10 +263,10 @@ export default function App() {
   }, [sheet])
 
   // ---------- business actions ----------
-  const buyBiz = (d) => { const locId = buyLoc || HOME_CITY; const key = branchKey(d.id, locId); const isBranch = !!s.biz[key] || Object.keys(s.biz).some((k) => bizIdOf(k) === d.id); const price = isBranch && !s.biz[key] ? Math.round(d.cost * 0.5) : d.cost; if (s.biz[key]) return say('Is sheher me is brand ki branch pehle se hai — HQ se nayi jagah kholo'); if (s.cash < price) return say('Cash kam hai!'); upd(n => { n.cash -= price; n.biz[key] = { lv: 1, price: 1, stock: 100, staff: d.staff, profitToday: 0, profitTotal: 0, rating: 4.0, mktDays: 0, loc: locId, employees: [] }; n.xp += 20; n.story = [`Day ${n.day}: ${d.name} ${isBranch ? 'ki nayi branch' : 'kharida'} ${fmt(price)} me — ${cityNameOf(locId)}`, ...n.story].slice(0, 20) }); say(`${d.name} ${isBranch ? 'ki branch' : ''} tumhara hua — ${cityNameOf(locId)}`, true) }
+  const buyBiz = (d) => { const locId = buyLoc || 'india_delhi'; const key = branchKey(d.id, locId); const isBranch = !!s.biz[key] || Object.keys(s.biz).some((k) => bizIdOf(k) === d.id); const price = isBranch && !s.biz[key] ? Math.round(d.cost * 0.5) : d.cost; if (s.biz[key]) return say('Is sheher me is brand ki branch pehle se hai — HQ se nayi jagah kholo'); if (s.cash < price) return say('Cash kam hai!'); upd(n => { n.cash -= price; n.biz[key] = { lv: 1, price: 1, stock: 100, staff: d.staff, profitToday: 0, profitTotal: 0, rating: 4.0, mktDays: 0, loc: locId, employees: [] }; n.xp += 20; n.story = [`Day ${n.day}: ${d.name} ${isBranch ? 'ki nayi branch' : 'kharida'} ${fmt(price)} me — ${cityNameOf(locId)}`, ...n.story].slice(0, 20) }); say(`${d.name} ${isBranch ? 'ki branch' : ''} tumhara hua — ${cityNameOf(locId)}`, true) }
   const relocate = (d, cityId) => { const fee = 5000; if (s.cash < fee) return say(' Relocation fee ke paise nahi'); upd(n => { n.cash -= fee; n.biz[d.id].loc = cityId; n.story = [`Day ${n.day}:  ${d.name} ab ${cityNameOf(cityId)} me shift`, ...n.story].slice(0, 20) }); say(` ${d.name} ab  ${cityNameOf(cityId)} me — waha ke rent/demand lagenge`) }
   const sellBiz = (d) => { const o = s.biz[d.id]; const val = Math.round(d.cost * (0.6 + 0.25 * o.lv)); upd(n => { n.cash += val; delete n.biz[d.id] }); say(` ${d.name} becha: ${fmt(val)}`) }
-  const upgradeBiz = (d) => { const o = s.biz[d.id]; const cost = Math.round(d.cost * 0.55 * o.lv); if (o.lv >= 10) return say(' Max level 10!'); if (s.cash < cost) return say(' Cash kam hai'); upd(n => { n.cash -= cost; n.biz[d.id].lv += 1; n.xp += 10 }); say(` ${d.name} ab Level ${o.lv + 1}`, true) }
+  const upgradeBiz = (d) => { const o = s.biz[d.id]; const cost = Math.round(d.cost * 0.55 * o.lv); if (o.lv >= MAX_LV) return say(` Max level ${MAX_LV}!`); if (s.cash < cost) return say(' Cash kam hai'); upd(n => { n.cash -= cost; n.biz[d.id].lv += 1; n.xp += 10 }); say(` ${d.name} ab Level ${o.lv + 1}`, true) }
   const restock = (d) => { const o = s.biz[d.id]; const miss = 100 - o.stock; const cost = Math.round(d.rev * d.cogs * miss / 100 * 0.9) + 10; if (s.cash < cost) return say(' Restock ke paise nahi'); upd(n => { n.cash -= cost; n.biz[d.id].stock = 100 }); say(` ${d.name} full restock (${fmt(cost)})`) }
   // Pass 3.5: Home alerts ke liye branch-key se restock + idle-cash deposit (one-tap actions)
   const restockKey = (key) => { const d = bizDef(key); const o = s.biz[key]; if (!d || !o) return; const miss = 100 - o.stock; const cost = Math.round(d.rev * d.cogs * miss / 100 * 0.9) + 10; if (s.cash < cost) return say(' Restock ke paise nahi'); upd(n => { n.cash -= cost; n.biz[key].stock = 100; n.tut = { ...(n.tut || {}), restock: 1 } }); say(` ${d.name} full restock (${fmt(cost)})`) }
@@ -372,9 +394,19 @@ export default function App() {
               </div>
               {CATEGORIES.filter(c => catFilter === 'All' || catFilter === c).map(cat => (
                 <Section key={cat} id={'cat_' + cat} icon="shop" title={tx('cat_' + cat) || CAT_LABEL[cat]} right={Object.keys(s.biz).filter(k => { const dd = bizDef(k); return dd && dd.cat === cat }).length + ' ' + tx('branches')}>
-                  {BUSINESSES.filter(b => b.cat === cat).map((d, i) => { const locId = buyLoc || HOME_CITY; const key = branchKey(d.id, locId); const here = s.biz[key]; const branches = Object.keys(s.biz).filter(k => bizIdOf(k) === d.id); const isBranchBuy = branches.length > 0 && !here; const price = isBranchBuy ? Math.round(d.cost * 0.5) : d.cost; return (
+                  {BUSINESSES.filter(b => b.cat === cat).map((d, i) => { const locId = buyLoc || 'india_delhi'; const key = branchKey(d.id, locId); const here = s.biz[key]; const branches = Object.keys(s.biz).filter(k => bizIdOf(k) === d.id); const isBranchBuy = branches.length > 0 && !here; const price = isBranchBuy ? Math.round(d.cost * 0.5) : d.cost; return (
                     <motion.div key={d.id} className="biz-card" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(i * 0.04, 0.3) }}>
+                      {(() => { const sceneLv = here ? here.lv : (branches.length ? Math.max(...branches.map(k => s.biz[k].lv)) : 1); return (
+                        <div className="scene-band">
+                          <BizScene cat={d.cat} lv={sceneLv} height={64} dim={!here && !branches.length} />
+                          {(here || branches.length) > 0 && <span className={'scene-tier t' + tierOf(sceneLv)}>{tx(tierKeyOf(sceneLv))}</span>}
+                          {here && <span className="scene-city"><Icon name="pin" size={12} /> {cityNameOf(locId)}</span>}
+                        </div>) })()}
                       <div className="row" style={{ border: 'none', padding: 0 }}><b><CatIcon cat={d.cat} /> {d.name}</b>{branches.length ? <span className="gold">{branches.length} {tx('branches')}</span> : <b>{fmt(d.cost)}</b>}</div>
+                      {here && <>
+                        <div className="phase-mini" aria-hidden="true">{[0, 1, 2, 3].map(pi => <i key={pi} className={pi < s.phase ? 'done' : pi === s.phase ? 'now' : ''} />)}</div>
+                        <div className="evo-row"><span>{tx(tierKeyOf(here.lv))} • Lv {here.lv}</span><span className="evo-bar"><i style={{ width: (evoProgress(here.lv) * 100) + '%' }} /></span>{nextTierAt(here.lv) ? <b>{tx('evoNext').replace('{lv}', nextTierAt(here.lv))}</b> : <b>{tx('evoMax')}</b>}</div>
+                      </>}
                       <div className="muted">{d.tagline}</div>
                       <div className="muted">Base bikri {fmt(d.rev)}/din • COGS {Math.round(d.cogs * 100)}% • Staff {d.staff} • Rent {fmt(d.rent)}/din</div>
                       {here ? <button className="btn ghost" style={{ width: '100%', marginTop: 8 }} onClick={() => setTab('hq')}>{tx('manageInHq')}</button>
@@ -385,7 +417,7 @@ export default function App() {
               ))}
             </>}
 
-            {tab === 'hq' && <Suspense fallback={<PanelFallback />}><HqPanel s={s} upd={upd} say={say} /></Suspense>}
+            {tab === 'hq' && <Suspense fallback={<PanelFallback />}><HqPanel s={s} upd={upd} say={say} tx={tx} /></Suspense>}
 
             {tab === 'stats' && <Suspense fallback={<PanelFallback />}><StatsPanel s={s} /></Suspense>}
 
@@ -503,7 +535,7 @@ export default function App() {
                 <textarea rows={3} style={{ marginTop: 8 }} placeholder="Export code yaha aayega / Import ke liye code paste karo" value={importTxt} onChange={e => setImportTxt(e.target.value)} />
                 <button className="btn red" style={{ width: '100%', marginTop: 8 }} onClick={() => { if (confirm('Pakka? Pura game reset ho jayega!')) { localStorage.removeItem(SAVE_KEY); setS(initialState()) } }}> Reset Game</button>
               </Section>
-              <Suspense fallback={<PanelFallback />}><AtlasPanel s={s} nw={nw} upd={upd} say={say} /></Suspense>
+              <Suspense fallback={<PanelFallback />}><AtlasPanel s={s} nw={nw} upd={upd} say={say} tx={tx} /></Suspense>
               <Suspense fallback={<PanelFallback />}><ManagersPanel s={s} upd={upd} say={say} /></Suspense>
               <Suspense fallback={<PanelFallback />}><ImportPanel s={s} upd={upd} say={say} /></Suspense>
               <Suspense fallback={<PanelFallback />}><BazaarPanel s={s} upd={upd} say={say} /></Suspense>
@@ -553,6 +585,22 @@ export default function App() {
                 <button className="sheet-btn danger" onClick={() => { setSheet(null); prestige() }}><Icon name="crown" size={19} /> Ha, Prestige karo</button>
                 <button className="sheet-btn" onClick={() => setSheet(null)}><Icon name="x" size={19} /> Nahi, rehne do</button>
               </>}
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {evo && (
+          <div className="sheet-wrap" role="dialog" aria-modal="true" aria-label={tx('evoTitle')}>
+            <motion.div className="sheet-bg" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setEvo(null)} />
+            <motion.div className="sheet evo" initial={{ y: 340 }} animate={{ y: 0 }} exit={{ y: 340 }} transition={{ type: 'spring', damping: 28, stiffness: 300 }}>
+              <div className="grab" />
+              <div className="evo-sheet-crown"><Icon name="crown" size={38} /></div>
+              <h3>{tx('evoTitle')}</h3>
+              <div className="evo-sub">{tx('evoSub').replace('{name}', evo.name).replace('{tier}', tx('evoT' + (evo.tier + 1)))}</div>
+              <div className="scene-band"><BizScene cat={evo.cat} lv={evo.lv} height={104} /></div>
+              <p className="small" style={{ textAlign: 'center', marginBottom: 12 }}>{tx('evoPerk')}</p>
+              <button className="sheet-btn" onClick={() => setEvo(null)}><Icon name="check" size={19} /> {tx('dismiss')}</button>
             </motion.div>
           </div>
         )}

@@ -6,9 +6,12 @@ import { bizIdOf, branchKey, cityOfKey } from '../game/businesses/index.js'
 import { cityOf, cityNameOf } from '../game/atlas/cityIndex.js'
 import { ROLE_DEFS, roleName, rolesForCat, staffCapacityFor, candidatesForBranch, newEmployee } from '../game/staffSystem.js'
 import { ProcurementPanel } from './ProcurementPanel.jsx'
+import { BizScene } from './BizScene.jsx'
+import { tierOf, tierKeyOf, nextTierAt, evoProgress, MAX_LV } from '../game/evolution.js'
 
 // ============ MY EMPIRE HQ — sirf chal rahe businesses/branches, click par pura management ============
-export function HqPanel({ s, upd, say }) {
+export function HqPanel({ s, upd, say, tx }) {
+  const tr = tx || ((k) => k)
   const [openKey, setOpenKey] = useState(null)
   const [hireRole, setHireRole] = useState({})
   const entries = useMemo(() => Object.entries(s.biz || {}).map(([key, o]) => ({ key, o, d: bizDef(key) })).filter((x) => x.d), [s.biz])
@@ -50,7 +53,7 @@ export function HqPanel({ s, upd, say }) {
             {branches.map(({ key, o }) => (
               <button key={key} className="btn ghost" style={{ width: '100%', marginTop: 6, textAlign: 'left' }} onClick={() => setOpenKey(openKey === key ? null : key)}>
                 <span style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-                  <span><Icon name="pin" size={14} /> {cityNameOf(o.loc || cityOfKey(key))} • Lv {o.lv} • Rating {o.rating.toFixed(1)}</span>
+                  <span><Icon name="pin" size={14} /> {cityNameOf(o.loc || cityOfKey(key))} • Lv {o.lv} • {tr(tierKeyOf(o.lv))} • Rating {o.rating.toFixed(1)}</span>
                   <span className={o.profitTotal >= 0 ? 'pos' : 'neg'}>{fmt(o.profitTotal)}</span>
                 </span>
                 <span className="muted">Stock {Math.round(o.stock)}% • Staff {(o.staff || 0) + (o.employees || []).length} • Aaj {fmt(o.profitToday)}</span>
@@ -63,6 +66,14 @@ export function HqPanel({ s, upd, say }) {
       {open && (() => { const { key, o, d } = open; const cap = staffCapacityFor(o, d); const emps = o.employees || []; const role = hireRole[key] || rolesForCat(d.cat)[0]; const cands = candidatesForBranch(s, key, d.cat, role, 4); const rules = o.stockRules || { target: 30, maxPrice: 0, pref: 'cheapest', allowImport: false, on: true }; const hasOfficer = emps.some((e) => e.role === 'stockofficer')
         return (
           <Section id="hqdetail" title={`${d.name} — ${cityNameOf(o.loc || cityOfKey(key))}`} icon="building" right={`Lv ${o.lv}`}>
+            <div className="hq-hero">
+              <BizScene cat={d.cat} lv={o.lv} height={118} />
+              <div className="hq-hero-meta">
+                <div><div className="nm">{d.name}</div><div className="ct"><Icon name="pin" size={13} /> {cityNameOf(o.loc || cityOfKey(key))}</div></div>
+                <span className={'scene-tier t' + tierOf(o.lv)} style={{ position: 'static' }}>{tr(tierKeyOf(o.lv))} • Lv {o.lv}</span>
+              </div>
+            </div>
+            <div className="evo-row" style={{ marginTop: 0, marginBottom: 8 }}><span>{tr('evoPerk')}</span><span className="evo-bar"><i style={{ width: (evoProgress(o.lv) * 100) + '%' }} /></span>{nextTierAt(o.lv) ? <b>{tr('evoNext').replace('{lv}', nextTierAt(o.lv))}</b> : <b>{tr('evoMax')}</b>}</div>
             <div className="row"><span>Jagah (rent asar)</span><b>{cityNameOf(o.loc || cityOfKey(key))} (rent {cityOf(o.loc || cityOfKey(key)).rent}x, demand {cityOf(o.loc || cityOfKey(key)).dem}x)</b></div>
             <div className="row"><span>Kul Munafa (P&amp;L)</span><b className={o.profitTotal >= 0 ? 'pos' : 'neg'}>{fmt(o.profitTotal)}</b></div>
             <div className="row"><span>Aaj ka Munafa</span><b className={o.profitToday >= 0 ? 'pos' : 'neg'}>{fmt(o.profitToday)}</b></div>
@@ -72,7 +83,7 @@ export function HqPanel({ s, upd, say }) {
             <input type="range" min="0.8" max="1.5" step="0.05" value={o.price} onChange={(e) => act(key, (n, oo) => { oo.price = parseFloat(e.target.value) })} />
             <div className="grid2">
               <button className="btn small ghost" onClick={() => { const miss = 100 - o.stock; const cost = Math.round(d.rev * d.cogs * miss / 100 * 0.9) + 10; if (s.cash < cost) return say('Restock ke paise nahi'); act(key, (n, oo) => { n.cash -= cost; oo.stock = 100 }, `Restock ho gaya (${fmt(cost)})`) }}>Restock</button>
-              <button className="btn small ghost" onClick={() => { const cost = Math.round(d.cost * 0.55 * o.lv); if (o.lv >= 10) return say('Max level 10'); if (s.cash < cost) return say('Cash kam hai'); act(key, (n, oo) => { n.cash -= cost; oo.lv += 1 }, `Level ${o.lv + 1} ho gaya`, true) }}>Upgrade {o.lv < 10 ? fmt(d.cost * 0.55 * o.lv) : 'MAX'}</button>
+              <button className="btn small ghost" onClick={() => { const cost = Math.round(d.cost * 0.55 * o.lv); if (o.lv >= MAX_LV) return say(`Max level ${MAX_LV}`); if (s.cash < cost) return say('Cash kam hai'); act(key, (n, oo) => { n.cash -= cost; oo.lv += 1 }, `Level ${o.lv + 1} ho gaya`, true) }}>Upgrade {o.lv < MAX_LV ? fmt(Math.round(d.cost * 0.55 * o.lv)) : 'MAX'}</button>
               <button className="btn small ghost" onClick={() => { const cost = Math.round(d.rev * 1.2); if (s.cash < cost) return say('Cash kam hai'); act(key, (n, oo) => { n.cash -= cost; oo.mktDays = 3 }, 'Marketing chalu — 3 din demand +30%') }}>Marketing {fmt(d.rev * 1.2)}</button>
               <button className="btn small red" onClick={() => { const val = Math.round(d.cost * (0.6 + 0.25 * o.lv)); act(key, (n) => { n.cash += val; delete n.biz[key] }); setOpenKey(null); say(`Branch bechi: ${fmt(val)}`) }}>Branch Becho</button>
             </div>

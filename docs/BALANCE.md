@@ -32,3 +32,11 @@ Playtest method: `scripts/sim-strategies.mjs` — 4 bot strategies × 150 days (
 - **Managers:** monthly salary via Treasury at month-end; if cash+bank can't pay, the first manager leaves. HR appraisal +1% efficiency on day 30.
 - **Rivals (3.5 reactive):** growth = g × rnd(0.4–1.6) × compAggro × reaction — reaction ×1.45 when the player is ahead of that rival (chase), ×0.8 when the player is below 25% of the rival (relax). Rank changes generate Sheher Times news.
 - **Prestige:** needs NW ≥ ₹1 Cr; resets to ₹25K; permanent multiplier +0.25 per prestige.
+
+## Pass 3.6 — Evolution model
+
+- **Tiers (visual + perk):** Lv 1–4 Shuruaat · 5–9 Jamti Dukaan · 10–19 Brand · 20–34 Sheher ka Seth · 35+ Samrajya (`src/game/evolution.js`).
+- **Level cap:** 10 → **50** (Samrajya reachable; upgrade cost formula unchanged: cost × 0.55 × lv per level, so Lv 35 costs ≈ 327× base cost cumulatively — a true long-term sink, not a shortcut).
+- **Perk:** demand ×(1 + 0.01 × tierIndex), max **+4%** at Samrajya. Source: `evoDemandF()` in the phase revenue chain.
+- **Spot-check (150-day, 4 strategies, after the change):** single-stall life profit ₹1.93L · franchise-spam ₹11.44L (18 branches — still top, same as 3.5, no new dominant strategy) · import-heavy ₹6.74L · manager-heavy ₹9.75L. Zero errors, zero negative-cash days. Engine tick 1.02 ms/phase (54 branches/216 staff).
+- **NW note:** sell/NW value formula (0.6 + 0.25×lv) unchanged — at Lv 50 it values a business at 13.1× base cost vs ≈ 674× cumulative upgrade spend, so upgrade-to-sell arbitrage is impossible.

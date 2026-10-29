@@ -10,7 +10,8 @@ const atlasFiles = import.meta.glob('../game/atlas/india/*.js')
 const worldFiles = import.meta.glob('../game/atlas/world/*.js')
 
 const PAGE = 40
-export function AtlasPanel({ s, nw, upd, say }) {
+export function AtlasPanel({ s, nw, upd, say, tx }) {
+  const tr = tx || ((k) => k)
   const [shown, setShown] = useState({})
   const [geo, setGeo] = useState(null)
   const [q, setQ] = useState('')
@@ -72,6 +73,15 @@ export function AtlasPanel({ s, nw, upd, say }) {
   return (
     <>
       <Section id="atlas" title="World Atlas — Duniya ka Map" right={`${unlocked.length} sheher / ${[...new Set(myCities.map((c) => c.country))].length} desh`}>
+        {/* Pass 3.6: district ladder — tum kaha khade ho, agla mukaam kya hai */}
+        <div className="muted" style={{ fontSize: 11, fontWeight: 700, letterSpacing: '.4px', textTransform: 'uppercase' }}>{tr('ladderTitle')}</div>
+        <div className="ladder" role="img" aria-label={tr('ladderTitle')}>
+          {[{ label: 'Delhi', at: 0, tier: null }, { label: 'T1', at: 75000, tier: 1 }, { label: 'T2', at: 200000, tier: 2 }, { label: 'T3', at: 750000, tier: 3 }, { label: 'T4', at: 2500000, tier: 4 }, { label: 'T5', at: 7500000, tier: 5 }].map((r, i, arr) => {
+            const on = r.tier === null ? true : (nw >= r.at || myCities.some((c) => c.tier === r.tier))
+            const isNext = !on && arr.slice(0, i).every((p) => p.tier === null || nw >= p.at || myCities.some((c) => c.tier === p.tier))
+            return <div key={r.label} className={'rung' + (on ? ' on' : isNext ? ' next' : '')}>{r.label}{r.at ? <><br />{fmt(r.at)}</> : <><br />Home</>}</div>
+          })}
+        </div>
         <div className="atlas-hero">
           <div className="atlas-globe"></div>
           <div>

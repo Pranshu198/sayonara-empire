@@ -100,5 +100,16 @@ export default {
  "quickActions": "クイックアクション",
  "whyTitle": "利益はなぜ動いた？",
  "topCost": "最大のコスト",
- "festBoost": "お祭りの需要ブーストが有効です"
+ "festBoost": "お祭りの需要ブーストが有効です",
+ "evoT1": "スタート",
+ "evoT2": "成長中の店",
+ "evoT3": "ブランド",
+ "evoT4": "街の帝王",
+ "evoT5": "帝国",
+ "evoNext": "次の進化はLv {lv}",
+ "evoTitle": "進化!",
+ "evoSub": "{name} は {tier} になりました",
+ "evoPerk": "段階ごとに需要+1%(最大+4%)",
+ "ladderTitle": "帝国の階段",
+ "evoMax": "最高の進化 — 帝国",
 }

@@ -100,5 +100,16 @@ export default {
  "quickActions": "Quick Actions",
  "whyTitle": "Munafa kyun hila?",
  "topCost": "Sabse bada kharcha",
- "festBoost": "Tyohar ki demand boost chalu hai"
+ "festBoost": "Tyohar ki demand boost chalu hai",
+ "evoT1": "Shuruaat",
+ "evoT2": "Jamti Dukaan",
+ "evoT3": "Brand",
+ "evoT4": "Sheher ka Seth",
+ "evoT5": "Samrajya",
+ "evoNext": "Agla evolution Lv {lv} par",
+ "evoTitle": "Evolution ho gaya!",
+ "evoSub": "{name} ab {tier} hai",
+ "evoPerk": "Har tier par +1% demand (max +4%)",
+ "ladderTitle": "Samrajya ki seedhi",
+ "evoMax": "Sabse bada evolution — Samrajya",
 }

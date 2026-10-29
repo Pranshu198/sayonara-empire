@@ -100,5 +100,16 @@ export default {
  "quickActions": "Ações rápidas",
  "whyTitle": "Por que o lucro se moveu?",
  "topCost": "Maior custo",
- "festBoost": "O impulso de demanda do festival está ativo"
+ "festBoost": "O impulso de demanda do festival está ativo",
+ "evoT1": "Começo",
+ "evoT2": "Loja em crescimento",
+ "evoT3": "Marca",
+ "evoT4": "Rei da cidade",
+ "evoT5": "Império",
+ "evoNext": "Próxima evolução no Nv {lv}",
+ "evoTitle": "Evolução!",
+ "evoSub": "{name} agora é {tier}",
+ "evoPerk": "+1% de demanda por nível (máx. +4%)",
+ "ladderTitle": "Escada do império",
+ "evoMax": "Evolução máxima — Império",
 }

@@ -100,5 +100,16 @@ export default {
  "quickActions": "快捷操作",
  "whyTitle": "利润为什么变动？",
  "topCost": "最大成本",
- "festBoost": "节日需求加成已激活"
+ "festBoost": "节日需求加成已激活",
+ "evoT1": "起步",
+ "evoT2": "成长店铺",
+ "evoT3": "品牌",
+ "evoT4": "城市大亨",
+ "evoT5": "帝国",
+ "evoNext": "下次进化在 {lv} 级",
+ "evoTitle": "进化!",
+ "evoSub": "{name} 现在是 {tier}",
+ "evoPerk": "每级 +1% 需求(最高 +4%)",
+ "ladderTitle": "帝国阶梯",
+ "evoMax": "最高进化 — 帝国",
 }

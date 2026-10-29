@@ -100,5 +100,16 @@ export default {
  "quickActions": "Quick actions",
  "whyTitle": "Why did profit move?",
  "topCost": "Biggest cost",
- "festBoost": "Festival demand boost is active"
+ "festBoost": "Festival demand boost is active",
+ "evoT1": "Beginning",
+ "evoT2": "Growing Shop",
+ "evoT3": "Brand",
+ "evoT4": "City Seth",
+ "evoT5": "Empire",
+ "evoNext": "Next evolution at Lv {lv}",
+ "evoTitle": "Evolution!",
+ "evoSub": "{name} is now {tier}",
+ "evoPerk": "+1% demand per tier (up to +4%)",
+ "ladderTitle": "Empire ladder",
+ "evoMax": "Max evolution — Samrajya",
 }

@@ -11,6 +11,7 @@ import { auctionPhaseTick, ensureAuction } from './auctionEngine.js'
 import { cityOf, demandOf } from './atlas/cityIndex.js'
 import { festMultFor, festStaffLeave } from './festivals/index.js'
 import { phaseDemand, seasonBoostFor } from './engines/demand.js'
+import { evoDemandF } from './evolution.js'
 import { ceilingPenalty } from './engines/elasticity.js'
 import { supplierDrift, contractCogsMult } from './engines/supply.js'
 import { fixedDailyCost, staffLeaveFactor } from './engines/labour.js'
@@ -132,7 +133,7 @@ export function phaseTick(prev) {
     const empWagePhase = empList.reduce((a, e) => a + (e.salary || 0), 0) / 120
     const empAvgQ = empList.length ? empList.reduce((a, e) => a + ((e.skillPct || 50) + (e.effPct || 50)) / 2, 0) / empList.length / 100 : 0
     const empF = (empList.length ? Math.min(1.3, 1 + 0.28 * empAvgQ) : 1) * (s.hrMorale || 1)
-    const fullRev = d.rev * w * lvMult * o.price * elasticity * ratingF * mktF * eventF * stockF * locF * festF * leaveF * ceilF * impF * empF * s.seasonBoost * rnd(0.9, 1.1) * s.prestigeMult * difficultyFactor(s.settings)
+    const fullRev = d.rev * w * lvMult * o.price * elasticity * ratingF * mktF * eventF * stockF * locF * festF * leaveF * ceilF * impF * empF * evoDemandF(o.lv) * s.seasonBoost * rnd(0.9, 1.1) * s.prestigeMult * difficultyFactor(s.settings) // Pass 3.6: evoDemandF = evolution tier perk (+1%/tier)
     const cogs = fullRev * d.cogs * s.supplier * contractCogsMult(contract)
     const fixed = fixedDailyCost(d, o, city) * 0.25
     const wastage = fullRev * wastageRateFor(contract)

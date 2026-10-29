@@ -100,5 +100,16 @@ export default {
  "quickActions": "Schnellaktionen",
  "whyTitle": "Warum bewegte sich der Gewinn?",
  "topCost": "Größter Kostenpunkt",
- "festBoost": "Festival-Nachfrage-Boost ist aktiv"
+ "festBoost": "Festival-Nachfrage-Boost ist aktiv",
+ "evoT1": "Anfang",
+ "evoT2": "Wachsender Laden",
+ "evoT3": "Marke",
+ "evoT4": "Stadtlegende",
+ "evoT5": "Imperium",
+ "evoNext": "Nächste Evolution bei Lv {lv}",
+ "evoTitle": "Evolution!",
+ "evoSub": "{name} ist jetzt {tier}",
+ "evoPerk": "+1 % Nachfrage pro Stufe (max. +4 %)",
+ "ladderTitle": "Imperiums-Leiter",
+ "evoMax": "Max. Evolution — Imperium",
 }

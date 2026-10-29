@@ -100,5 +100,16 @@ export default {
  "quickActions": "빠른 작업",
  "whyTitle": "이익이 왜 움직였나요?",
  "topCost": "가장 큰 비용",
- "festBoost": "축제 수요 부스트가 활성화되어 있습니다"
+ "festBoost": "축제 수요 부스트가 활성화되어 있습니다",
+ "evoT1": "시작",
+ "evoT2": "성장하는 가게",
+ "evoT3": "브랜드",
+ "evoT4": "도시의 제왕",
+ "evoT5": "제국",
+ "evoNext": "다음 진화는 Lv {lv}",
+ "evoTitle": "진화!",
+ "evoSub": "{name}이(가) 이제 {tier}입니다",
+ "evoPerk": "단계마다 수요 +1% (최대 +4%)",
+ "ladderTitle": "제국의 사다리",
+ "evoMax": "최고 진화 — 제국",
 }
