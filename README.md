@@ -86,7 +86,7 @@ Demand · Price Elasticity · Procurement/Supply · Import/Logistics · Labour/H
 
 ## Performance, honestly
 
-475k lines would be a brick without code-splitting. The build splits into **143 chunks**: vendor separately, all heavy panels (Wealth, Bazaar, Auction, Atlas, Managers, Imports, Procurement…) as `React.lazy` chunks, the entire World Atlas geography as per-region lazy modules, and 84 deep-content files streaming in behind the splash. Entry chunk: **482,901 → 419,297 bytes gzip (−13%)** versus the 104k-line Pass 2 build — smaller *and* 4.5× the content.
+475k lines would be a brick without code-splitting. The build splits into **143 chunks**: vendor separately, all heavy panels (Wealth, Bazaar, Auction, Atlas, Managers, Imports, Procurement…) as `React.lazy` chunks, the entire World Atlas geography as per-region lazy modules, and 84 deep-content files streaming in behind the splash. Entry chunk: **482,901 → 419,299 bytes gzip (−13%)** versus the 104k-line Pass 2 build — smaller *and* 4.5× the content.
 
 ## Architecture
 
