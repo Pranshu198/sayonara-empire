@@ -6,9 +6,14 @@ export function fxOf(country, day) {
   const wave = Math.sin(h + day / 9) * 0.5 + Math.sin(h * 2 + day / 23) * 0.5
   return +(1 + wave * 0.09).toFixed(3) // ±9% tak hil sakta hai
 }
+// Pass 3.5 BALANCE FIX: catalogue basePrice asal duniya ki per-unit keemat hai, par game ka stock
+// ek abstract 0-100 meter hai — bina scale ke import har haal me ghata tha (sim: control ₹9.8L NW vs import ₹1.15L).
+// ECON_SCALE game-economy ka conversion hai: import ab premium restock jaisa kharcha karega
+// (aas-paas 3-4x aam restock, badle me full stock + 14 din 'Imported' demand tag). docs/BALANCE.md dekho.
+export const IMPORT_ECON_SCALE = 0.05
 export function landedCost(listing, qty, day) {
   const fx = fxOf(listing.country, day)
-  const base = listing.basePrice * fx * qty
+  const base = listing.basePrice * fx * qty * IMPORT_ECON_SCALE
   const shipping = base * 0.08
   const duty = (base + shipping) * (listing.dutyPct || 0)
   const bulk = qty >= (listing.containerMinQty || 1000)

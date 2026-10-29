@@ -22,7 +22,7 @@ export function ImportPanel({ s, upd, say }) {
     const { arriveDay, delayed } = arrivalDayFor(L, s.day, Math.random)
     upd((n) => {
       const fromCash = Math.min(n.cash, lc.total); n.cash -= fromCash; n.bank -= (lc.total - fromCash)
-      n.pendingDeliveries = [...(n.pendingDeliveries || []), { bizId: target.id, qty: Math.min(100, Math.round(qty / 10)), arriveTP: arriveDay * 4, kind: 'import', item: L.item, country: L.country, cost: lc.total, payOnDelivery: false, rel: Math.round((1 - L.delayRisk) * 100) }]
+      n.pendingDeliveries = [...(n.pendingDeliveries || []), { bizId: target.id, qty: Math.min(100, Math.round(qty / 2)), arriveTP: arriveDay * 4, kind: 'import', item: L.item, country: L.country, cost: lc.total, payOnDelivery: false, rel: Math.round((1 - L.delayRisk) * 100) }]
       n.story = [`Day ${n.day}:  ${L.country} se ${L.item} import order — ${fmt(lc.total)}`, ...n.story].slice(0, 20)
     })
     say(` Import order: ${L.item} (${L.country}) • Landed ${fmt(lc.total)} • Pohchega Day ${arriveDay}${delayed ? '  port par der ke sanket' : ''}`, true)
