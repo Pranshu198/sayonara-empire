@@ -1,0 +1,76 @@
+// World Atlas — India: Tripura (rajya profile, sheher aur unke zile)
+export const STATE = {
+ "name": "Tripura",
+ "capital": "Agartala",
+ "language": "Bengali",
+ "primeFestival": "Garia Puja",
+ "knownFor": "Tripura apni Bengali sanskriti, khana aur Garia Puja ke liye mashhoor hai. Vyapaar ke liye yaha ke bazaar har season me rang badalte hain.",
+ "cities": [
+  {
+   "name": "Agartala",
+   "tier": 3,
+   "pop": "Zila mukhyalaya",
+   "income": "madhyam-unch",
+   "rentIndex": 1.05,
+   "climate": "pahadi thand",
+   "festival": "Garia Puja",
+   "language": "Bengali",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Energy",
+    "Industry"
+   ],
+   "districts": [
+    "Agartala Sadar Bazaar",
+    "Agartala Nai Basti",
+    "Agartala Purana Sheher",
+    "Agartala Station Road",
+    "Agartala Civil Lines"
+   ]
+  },
+  {
+   "name": "Udaipur (Tripura)",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.27,
+   "climate": "khushk",
+   "festival": "Garia Puja",
+   "language": "Bengali",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Service",
+    "Health"
+   ],
+   "districts": [
+    "Udaipur (Tripura) Sadar Bazaar",
+    "Udaipur (Tripura) Nai Basti",
+    "Udaipur (Tripura) Purana Sheher",
+    "Udaipur (Tripura) Station Road",
+    "Udaipur (Tripura) Civil Lines"
+   ]
+  },
+  {
+   "name": "Dharmanagar",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.02,
+   "climate": "garm-num",
+   "festival": "Garia Puja",
+   "language": "Bengali",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Industry",
+    "Edu"
+   ],
+   "districts": [
+    "Dharmanagar Sadar Bazaar",
+    "Dharmanagar Nai Basti",
+    "Dharmanagar Purana Sheher",
+    "Dharmanagar Station Road",
+    "Dharmanagar Civil Lines"
+   ]
+  }
+ ]
+}

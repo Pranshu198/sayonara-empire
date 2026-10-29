@@ -1,0 +1,2343 @@
+// Product catalog (deep) — Service part 2: vistrit variants, festival editions ke saath
+export const PRODUCTS_DEEP = [
+  {
+   "id": "pr2_se_2_1",
+   "cat": "Service",
+   "name": "Laundry 5kg Pack — Deluxe Trial Pack",
+   "price": 72775,
+   "costPct": 0.31,
+   "pop": 10,
+   "desc": "Laundry 5kg Pack — Deluxe Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_2",
+   "cat": "Service",
+   "name": "Packers Mini Move — Special Value Pack",
+   "price": 55725,
+   "costPct": 0.41,
+   "pop": 6,
+   "desc": "Packers Mini Move — Special Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_3",
+   "cat": "Service",
+   "name": "Sofa Shampoo — Limited Refill",
+   "price": 57850,
+   "costPct": 0.59,
+   "pop": 10,
+   "desc": "Sofa Shampoo — Limited Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_4",
+   "cat": "Service",
+   "name": "RO Service — Eco Pack of 2",
+   "price": 1925,
+   "costPct": 0.52,
+   "pop": 4,
+   "desc": "RO Service — Eco Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_5",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Jumbo Standard",
+   "price": 92250,
+   "costPct": 0.43,
+   "pop": 8,
+   "desc": "Physiotherapy Visit — Jumbo Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_6",
+   "cat": "Service",
+   "name": "Plumbing Visit — Jumbo Refill",
+   "price": 78700,
+   "costPct": 0.54,
+   "pop": 8,
+   "desc": "Plumbing Visit — Jumbo Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_7",
+   "cat": "Service",
+   "name": "AC Deep Service — Combo Pack Large",
+   "price": 29375,
+   "costPct": 0.48,
+   "pop": 8,
+   "desc": "AC Deep Service — Combo Pack Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_8",
+   "cat": "Service",
+   "name": "Painting One Room — Festival Edition Single",
+   "price": 40175,
+   "costPct": 0.59,
+   "pop": 7,
+   "desc": "Painting One Room — Festival Edition Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_9",
+   "cat": "Service",
+   "name": "Plumbing Visit — Limited Standard",
+   "price": 15675,
+   "costPct": 0.55,
+   "pop": 10,
+   "desc": "Plumbing Visit — Limited Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_10",
+   "cat": "Service",
+   "name": "Curtain Stitching — Special Standard",
+   "price": 38100,
+   "costPct": 0.58,
+   "pop": 7,
+   "desc": "Curtain Stitching — Special Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_11",
+   "cat": "Service",
+   "name": "Car Wash Deluxe — Eco Pack of 2",
+   "price": 19425,
+   "costPct": 0.36,
+   "pop": 4,
+   "desc": "Car Wash Deluxe — Eco Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_12",
+   "cat": "Service",
+   "name": "False Ceiling Work — Classic Value Pack",
+   "price": 93575,
+   "costPct": 0.43,
+   "pop": 8,
+   "desc": "False Ceiling Work — Classic Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_13",
+   "cat": "Service",
+   "name": "Tiles Polish — Bestseller Gift Pack",
+   "price": 17050,
+   "costPct": 0.4,
+   "pop": 9,
+   "desc": "Tiles Polish — Bestseller Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_14",
+   "cat": "Service",
+   "name": "Packers Mini Move — Family Pack Large",
+   "price": 31125,
+   "costPct": 0.62,
+   "pop": 6,
+   "desc": "Packers Mini Move — Family Pack Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_15",
+   "cat": "Service",
+   "name": "Painting One Room — Jumbo Duo Combo",
+   "price": 47825,
+   "costPct": 0.57,
+   "pop": 3,
+   "desc": "Painting One Room — Jumbo Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_16",
+   "cat": "Service",
+   "name": "CCTV Fitting — Special Value Pack",
+   "price": 93875,
+   "costPct": 0.36,
+   "pop": 10,
+   "desc": "CCTV Fitting — Special Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_17",
+   "cat": "Service",
+   "name": "Sofa Shampoo — Family Pack Gift Pack",
+   "price": 56225,
+   "costPct": 0.55,
+   "pop": 4,
+   "desc": "Sofa Shampoo — Family Pack Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_18",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Eco Standard",
+   "price": 82000,
+   "costPct": 0.56,
+   "pop": 2,
+   "desc": "Dry Clean Suit — Eco Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_19",
+   "cat": "Service",
+   "name": "Packers Mini Move — Bestseller Duo Combo",
+   "price": 29575,
+   "costPct": 0.55,
+   "pop": 10,
+   "desc": "Packers Mini Move — Bestseller Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_20",
+   "cat": "Service",
+   "name": "Tailoring Suit Stitch — Festival Edition Value Pack",
+   "price": 10650,
+   "costPct": 0.38,
+   "pop": 7,
+   "desc": "Tailoring Suit Stitch — Festival Edition Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_21",
+   "cat": "Service",
+   "name": "CCTV Fitting — Mini Standard",
+   "price": 84825,
+   "costPct": 0.6,
+   "pop": 4,
+   "desc": "CCTV Fitting — Mini Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_22",
+   "cat": "Service",
+   "name": "Fridge Gas Refill — Classic Set of 4",
+   "price": 90650,
+   "costPct": 0.5,
+   "pop": 8,
+   "desc": "Fridge Gas Refill — Classic Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_23",
+   "cat": "Service",
+   "name": "Sofa Shampoo — Gold Refill",
+   "price": 96025,
+   "costPct": 0.38,
+   "pop": 9,
+   "desc": "Sofa Shampoo — Gold Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_24",
+   "cat": "Service",
+   "name": "Bike Service Full — Mini Single",
+   "price": 77225,
+   "costPct": 0.36,
+   "pop": 10,
+   "desc": "Bike Service Full — Mini Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_25",
+   "cat": "Service",
+   "name": "Painting One Room — Limited Value Pack",
+   "price": 82375,
+   "costPct": 0.36,
+   "pop": 4,
+   "desc": "Painting One Room — Limited Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_26",
+   "cat": "Service",
+   "name": "Beauty Parlour Glow — Festival Edition Pack of 2",
+   "price": 25875,
+   "costPct": 0.35,
+   "pop": 7,
+   "desc": "Beauty Parlour Glow — Festival Edition Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_27",
+   "cat": "Service",
+   "name": "Key Making Set — Family Pack Standard",
+   "price": 89875,
+   "costPct": 0.53,
+   "pop": 5,
+   "desc": "Key Making Set — Family Pack Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_28",
+   "cat": "Service",
+   "name": "Haircut Premium — Family Pack Duo Combo",
+   "price": 35200,
+   "costPct": 0.38,
+   "pop": 6,
+   "desc": "Haircut Premium — Family Pack Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_29",
+   "cat": "Service",
+   "name": "Laundry 5kg Pack — Special Large",
+   "price": 63275,
+   "costPct": 0.34,
+   "pop": 8,
+   "desc": "Laundry 5kg Pack — Special Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_30",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Family Pack Pack of 2",
+   "price": 26800,
+   "costPct": 0.55,
+   "pop": 9,
+   "desc": "Mehendi Full Hand — Family Pack Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_31",
+   "cat": "Service",
+   "name": "Tailoring Suit Stitch — Special Trial Pack",
+   "price": 20000,
+   "costPct": 0.39,
+   "pop": 7,
+   "desc": "Tailoring Suit Stitch — Special Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_32",
+   "cat": "Service",
+   "name": "Painting One Room — Family Pack Single",
+   "price": 1575,
+   "costPct": 0.36,
+   "pop": 6,
+   "desc": "Painting One Room — Family Pack Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_33",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Mini Value Pack",
+   "price": 67150,
+   "costPct": 0.38,
+   "pop": 6,
+   "desc": "Physiotherapy Visit — Mini Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_34",
+   "cat": "Service",
+   "name": "Packers Mini Move — Premium Trial Pack",
+   "price": 75975,
+   "costPct": 0.47,
+   "pop": 5,
+   "desc": "Packers Mini Move — Premium Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_35",
+   "cat": "Service",
+   "name": "Beauty Parlour Glow — Deluxe Duo Combo",
+   "price": 62025,
+   "costPct": 0.49,
+   "pop": 4,
+   "desc": "Beauty Parlour Glow — Deluxe Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_36",
+   "cat": "Service",
+   "name": "Bike Service Full — Mini Duo Combo",
+   "price": 61100,
+   "costPct": 0.49,
+   "pop": 10,
+   "desc": "Bike Service Full — Mini Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_37",
+   "cat": "Service",
+   "name": "Bike Service Full — Bestseller Set of 4",
+   "price": 93400,
+   "costPct": 0.51,
+   "pop": 10,
+   "desc": "Bike Service Full — Bestseller Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_38",
+   "cat": "Service",
+   "name": "False Ceiling Work — Combo Pack Set of 4",
+   "price": 65400,
+   "costPct": 0.58,
+   "pop": 3,
+   "desc": "False Ceiling Work — Combo Pack Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_39",
+   "cat": "Service",
+   "name": "Key Making Set — Special Single",
+   "price": 6775,
+   "costPct": 0.45,
+   "pop": 3,
+   "desc": "Key Making Set — Special Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_40",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Family Pack Large",
+   "price": 22925,
+   "costPct": 0.34,
+   "pop": 9,
+   "desc": "Dry Clean Suit — Family Pack Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_41",
+   "cat": "Service",
+   "name": "Electrician Visit — Festival Edition Refill",
+   "price": 4725,
+   "costPct": 0.52,
+   "pop": 6,
+   "desc": "Electrician Visit — Festival Edition Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_42",
+   "cat": "Service",
+   "name": "Massage Therapy 60m — Festival Edition Standard",
+   "price": 56500,
+   "costPct": 0.32,
+   "pop": 3,
+   "desc": "Massage Therapy 60m — Festival Edition Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_43",
+   "cat": "Service",
+   "name": "Car Wash Deluxe — Jumbo Gift Pack",
+   "price": 10225,
+   "costPct": 0.54,
+   "pop": 7,
+   "desc": "Car Wash Deluxe — Jumbo Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_44",
+   "cat": "Service",
+   "name": "Sofa Shampoo — Gold Duo Combo",
+   "price": 65625,
+   "costPct": 0.35,
+   "pop": 2,
+   "desc": "Sofa Shampoo — Gold Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_45",
+   "cat": "Service",
+   "name": "Curtain Stitching — New Launch Set of 4",
+   "price": 17750,
+   "costPct": 0.46,
+   "pop": 6,
+   "desc": "Curtain Stitching — New Launch Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_46",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Pro Pack of 2",
+   "price": 80375,
+   "costPct": 0.5,
+   "pop": 7,
+   "desc": "Dry Clean Suit — Pro Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_47",
+   "cat": "Service",
+   "name": "Plumbing Visit — Premium Refill",
+   "price": 59425,
+   "costPct": 0.47,
+   "pop": 9,
+   "desc": "Plumbing Visit — Premium Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_48",
+   "cat": "Service",
+   "name": "False Ceiling Work — Deluxe Trial Pack",
+   "price": 70400,
+   "costPct": 0.56,
+   "pop": 8,
+   "desc": "False Ceiling Work — Deluxe Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_49",
+   "cat": "Service",
+   "name": "Pest Control Home — Jumbo Refill",
+   "price": 2950,
+   "costPct": 0.42,
+   "pop": 3,
+   "desc": "Pest Control Home — Jumbo Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_50",
+   "cat": "Service",
+   "name": "House Shifting Local — Pro Gift Pack",
+   "price": 16950,
+   "costPct": 0.41,
+   "pop": 2,
+   "desc": "House Shifting Local — Pro Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_51",
+   "cat": "Service",
+   "name": "Home Deep Cleaning — Mini Gift Pack",
+   "price": 37100,
+   "costPct": 0.52,
+   "pop": 2,
+   "desc": "Home Deep Cleaning — Mini Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_52",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Mini Standard",
+   "price": 60250,
+   "costPct": 0.48,
+   "pop": 6,
+   "desc": "Physiotherapy Visit — Mini Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_53",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Special Pack of 2",
+   "price": 85075,
+   "costPct": 0.56,
+   "pop": 6,
+   "desc": "Mehendi Full Hand — Special Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_54",
+   "cat": "Service",
+   "name": "Massage Therapy 60m — Family Pack Refill",
+   "price": 11050,
+   "costPct": 0.34,
+   "pop": 2,
+   "desc": "Massage Therapy 60m — Family Pack Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_55",
+   "cat": "Service",
+   "name": "Pest Control Home — Eco Gift Pack",
+   "price": 10975,
+   "costPct": 0.57,
+   "pop": 7,
+   "desc": "Pest Control Home — Eco Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_56",
+   "cat": "Service",
+   "name": "House Shifting Local — Family Pack Large",
+   "price": 34975,
+   "costPct": 0.54,
+   "pop": 3,
+   "desc": "House Shifting Local — Family Pack Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_57",
+   "cat": "Service",
+   "name": "Tailoring Suit Stitch — Limited Gift Pack",
+   "price": 1625,
+   "costPct": 0.37,
+   "pop": 5,
+   "desc": "Tailoring Suit Stitch — Limited Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_58",
+   "cat": "Service",
+   "name": "Bike Service Full — Festival Edition Standard",
+   "price": 10050,
+   "costPct": 0.32,
+   "pop": 3,
+   "desc": "Bike Service Full — Festival Edition Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_59",
+   "cat": "Service",
+   "name": "Washing Machine Repair — Classic Value Pack",
+   "price": 88325,
+   "costPct": 0.39,
+   "pop": 6,
+   "desc": "Washing Machine Repair — Classic Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_60",
+   "cat": "Service",
+   "name": "Packers Mini Move — Festival Edition Set of 4",
+   "price": 48850,
+   "costPct": 0.6,
+   "pop": 6,
+   "desc": "Packers Mini Move — Festival Edition Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_61",
+   "cat": "Service",
+   "name": "Laundry 5kg Pack — Mini Trial Pack",
+   "price": 19300,
+   "costPct": 0.58,
+   "pop": 4,
+   "desc": "Laundry 5kg Pack — Mini Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_62",
+   "cat": "Service",
+   "name": "Laundry 5kg Pack — Bestseller Pack of 2",
+   "price": 86475,
+   "costPct": 0.43,
+   "pop": 8,
+   "desc": "Laundry 5kg Pack — Bestseller Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_63",
+   "cat": "Service",
+   "name": "Fridge Gas Refill — Special Gift Pack",
+   "price": 77450,
+   "costPct": 0.38,
+   "pop": 4,
+   "desc": "Fridge Gas Refill — Special Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_64",
+   "cat": "Service",
+   "name": "AC Deep Service — Deluxe Single",
+   "price": 5525,
+   "costPct": 0.6,
+   "pop": 7,
+   "desc": "AC Deep Service — Deluxe Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_65",
+   "cat": "Service",
+   "name": "Electrician Visit — Eco Gift Pack",
+   "price": 7175,
+   "costPct": 0.41,
+   "pop": 4,
+   "desc": "Electrician Visit — Eco Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_66",
+   "cat": "Service",
+   "name": "Pet Grooming — Eco Pack of 2",
+   "price": 22575,
+   "costPct": 0.53,
+   "pop": 5,
+   "desc": "Pet Grooming — Eco Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_67",
+   "cat": "Service",
+   "name": "Key Making Set — Limited Trial Pack",
+   "price": 77925,
+   "costPct": 0.52,
+   "pop": 2,
+   "desc": "Key Making Set — Limited Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_68",
+   "cat": "Service",
+   "name": "Painting One Room — Gold Trial Pack",
+   "price": 66575,
+   "costPct": 0.36,
+   "pop": 8,
+   "desc": "Painting One Room — Gold Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_69",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Classic Duo Combo",
+   "price": 86275,
+   "costPct": 0.54,
+   "pop": 10,
+   "desc": "Mehendi Full Hand — Classic Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_70",
+   "cat": "Service",
+   "name": "Home Deep Cleaning — Special Single",
+   "price": 60025,
+   "costPct": 0.36,
+   "pop": 9,
+   "desc": "Home Deep Cleaning — Special Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_71",
+   "cat": "Service",
+   "name": "RO Service — Jumbo Pack of 2",
+   "price": 17950,
+   "costPct": 0.4,
+   "pop": 4,
+   "desc": "RO Service — Jumbo Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_72",
+   "cat": "Service",
+   "name": "Curtain Stitching — Gold Value Pack",
+   "price": 4450,
+   "costPct": 0.41,
+   "pop": 7,
+   "desc": "Curtain Stitching — Gold Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_73",
+   "cat": "Service",
+   "name": "AC Deep Service — Combo Pack Pack of 2",
+   "price": 14825,
+   "costPct": 0.55,
+   "pop": 9,
+   "desc": "AC Deep Service — Combo Pack Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_74",
+   "cat": "Service",
+   "name": "Painting One Room — Jumbo Gift Pack",
+   "price": 54250,
+   "costPct": 0.41,
+   "pop": 2,
+   "desc": "Painting One Room — Jumbo Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_75",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Eco Large",
+   "price": 73075,
+   "costPct": 0.6,
+   "pop": 8,
+   "desc": "Physiotherapy Visit — Eco Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_76",
+   "cat": "Service",
+   "name": "Beauty Parlour Glow — Family Pack Set of 4",
+   "price": 65425,
+   "costPct": 0.4,
+   "pop": 6,
+   "desc": "Beauty Parlour Glow — Family Pack Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_77",
+   "cat": "Service",
+   "name": "Curtain Stitching — Eco Value Pack",
+   "price": 53875,
+   "costPct": 0.51,
+   "pop": 6,
+   "desc": "Curtain Stitching — Eco Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_78",
+   "cat": "Service",
+   "name": "Home Deep Cleaning — Limited Pack of 2",
+   "price": 5400,
+   "costPct": 0.32,
+   "pop": 10,
+   "desc": "Home Deep Cleaning — Limited Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_79",
+   "cat": "Service",
+   "name": "Bike Service Full — Pro Single",
+   "price": 37875,
+   "costPct": 0.37,
+   "pop": 3,
+   "desc": "Bike Service Full — Pro Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_80",
+   "cat": "Service",
+   "name": "Water Tank Cleaning — Festival Edition Refill",
+   "price": 52350,
+   "costPct": 0.31,
+   "pop": 7,
+   "desc": "Water Tank Cleaning — Festival Edition Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_81",
+   "cat": "Service",
+   "name": "Plumbing Visit — Combo Pack Set of 4",
+   "price": 6250,
+   "costPct": 0.44,
+   "pop": 7,
+   "desc": "Plumbing Visit — Combo Pack Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_82",
+   "cat": "Service",
+   "name": "False Ceiling Work — Bestseller Pack of 2",
+   "price": 75850,
+   "costPct": 0.41,
+   "pop": 2,
+   "desc": "False Ceiling Work — Bestseller Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_83",
+   "cat": "Service",
+   "name": "Water Tank Cleaning — Combo Pack Trial Pack",
+   "price": 75325,
+   "costPct": 0.51,
+   "pop": 6,
+   "desc": "Water Tank Cleaning — Combo Pack Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_84",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Bestseller Value Pack",
+   "price": 44650,
+   "costPct": 0.55,
+   "pop": 7,
+   "desc": "Mehendi Full Hand — Bestseller Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_85",
+   "cat": "Service",
+   "name": "Water Tank Cleaning — Bestseller Gift Pack",
+   "price": 90225,
+   "costPct": 0.62,
+   "pop": 2,
+   "desc": "Water Tank Cleaning — Bestseller Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_86",
+   "cat": "Service",
+   "name": "Pet Grooming — Limited Large",
+   "price": 93250,
+   "costPct": 0.46,
+   "pop": 7,
+   "desc": "Pet Grooming — Limited Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_87",
+   "cat": "Service",
+   "name": "Tiles Polish — Special Value Pack",
+   "price": 89925,
+   "costPct": 0.4,
+   "pop": 6,
+   "desc": "Tiles Polish — Special Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_88",
+   "cat": "Service",
+   "name": "Plumbing Visit — Mini Refill",
+   "price": 22400,
+   "costPct": 0.45,
+   "pop": 8,
+   "desc": "Plumbing Visit — Mini Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_89",
+   "cat": "Service",
+   "name": "Plumbing Visit — Classic Trial Pack",
+   "price": 96775,
+   "costPct": 0.47,
+   "pop": 10,
+   "desc": "Plumbing Visit — Classic Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_90",
+   "cat": "Service",
+   "name": "Massage Therapy 60m — Eco Pack of 2",
+   "price": 30500,
+   "costPct": 0.32,
+   "pop": 5,
+   "desc": "Massage Therapy 60m — Eco Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_91",
+   "cat": "Service",
+   "name": "Electrician Visit — Gold Trial Pack",
+   "price": 16200,
+   "costPct": 0.61,
+   "pop": 5,
+   "desc": "Electrician Visit — Gold Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_92",
+   "cat": "Service",
+   "name": "Plumbing Visit — Limited Refill",
+   "price": 64525,
+   "costPct": 0.32,
+   "pop": 4,
+   "desc": "Plumbing Visit — Limited Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_93",
+   "cat": "Service",
+   "name": "Tailoring Suit Stitch — Bestseller Pack of 2",
+   "price": 13475,
+   "costPct": 0.43,
+   "pop": 6,
+   "desc": "Tailoring Suit Stitch — Bestseller Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_94",
+   "cat": "Service",
+   "name": "Painting One Room — Special Set of 4",
+   "price": 33450,
+   "costPct": 0.36,
+   "pop": 5,
+   "desc": "Painting One Room — Special Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_95",
+   "cat": "Service",
+   "name": "Tailoring Suit Stitch — Jumbo Duo Combo",
+   "price": 31875,
+   "costPct": 0.42,
+   "pop": 9,
+   "desc": "Tailoring Suit Stitch — Jumbo Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_96",
+   "cat": "Service",
+   "name": "CCTV Fitting — Jumbo Large",
+   "price": 36825,
+   "costPct": 0.48,
+   "pop": 7,
+   "desc": "CCTV Fitting — Jumbo Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_97",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Jumbo Value Pack",
+   "price": 91450,
+   "costPct": 0.52,
+   "pop": 5,
+   "desc": "Dry Clean Suit — Jumbo Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_98",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Combo Pack Pack of 2",
+   "price": 95600,
+   "costPct": 0.53,
+   "pop": 9,
+   "desc": "Mehendi Full Hand — Combo Pack Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_99",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Premium Gift Pack",
+   "price": 73375,
+   "costPct": 0.54,
+   "pop": 10,
+   "desc": "Physiotherapy Visit — Premium Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_100",
+   "cat": "Service",
+   "name": "Plumbing Visit — Deluxe Large",
+   "price": 11550,
+   "costPct": 0.49,
+   "pop": 9,
+   "desc": "Plumbing Visit — Deluxe Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_101",
+   "cat": "Service",
+   "name": "Pet Grooming — Jumbo Value Pack",
+   "price": 71075,
+   "costPct": 0.47,
+   "pop": 3,
+   "desc": "Pet Grooming — Jumbo Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_102",
+   "cat": "Service",
+   "name": "Key Making Set — Eco Pack of 2",
+   "price": 60250,
+   "costPct": 0.46,
+   "pop": 3,
+   "desc": "Key Making Set — Eco Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_103",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — New Launch Set of 4",
+   "price": 95225,
+   "costPct": 0.34,
+   "pop": 2,
+   "desc": "Physiotherapy Visit — New Launch Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_104",
+   "cat": "Service",
+   "name": "Bike Service Full — Festival Edition Gift Pack",
+   "price": 27050,
+   "costPct": 0.36,
+   "pop": 5,
+   "desc": "Bike Service Full — Festival Edition Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_105",
+   "cat": "Service",
+   "name": "Plumbing Visit — Classic Value Pack",
+   "price": 15900,
+   "costPct": 0.32,
+   "pop": 3,
+   "desc": "Plumbing Visit — Classic Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_106",
+   "cat": "Service",
+   "name": "Haircut Premium — Jumbo Standard",
+   "price": 42125,
+   "costPct": 0.43,
+   "pop": 4,
+   "desc": "Haircut Premium — Jumbo Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_107",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Special Set of 4",
+   "price": 1700,
+   "costPct": 0.37,
+   "pop": 5,
+   "desc": "Physiotherapy Visit — Special Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_108",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Special Standard",
+   "price": 94850,
+   "costPct": 0.61,
+   "pop": 7,
+   "desc": "Dry Clean Suit — Special Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_109",
+   "cat": "Service",
+   "name": "Fridge Gas Refill — Festival Edition Single",
+   "price": 44550,
+   "costPct": 0.52,
+   "pop": 10,
+   "desc": "Fridge Gas Refill — Festival Edition Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_110",
+   "cat": "Service",
+   "name": "Car Wash Deluxe — Family Pack Standard",
+   "price": 15525,
+   "costPct": 0.3,
+   "pop": 10,
+   "desc": "Car Wash Deluxe — Family Pack Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_111",
+   "cat": "Service",
+   "name": "False Ceiling Work — Jumbo Single",
+   "price": 17200,
+   "costPct": 0.43,
+   "pop": 7,
+   "desc": "False Ceiling Work — Jumbo Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_112",
+   "cat": "Service",
+   "name": "House Shifting Local — Limited Set of 4",
+   "price": 8925,
+   "costPct": 0.57,
+   "pop": 10,
+   "desc": "House Shifting Local — Limited Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_113",
+   "cat": "Service",
+   "name": "Key Making Set — Bestseller Large",
+   "price": 31950,
+   "costPct": 0.58,
+   "pop": 6,
+   "desc": "Key Making Set — Bestseller Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_114",
+   "cat": "Service",
+   "name": "Tailoring Suit Stitch — Mini Pack of 2",
+   "price": 26250,
+   "costPct": 0.49,
+   "pop": 9,
+   "desc": "Tailoring Suit Stitch — Mini Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_115",
+   "cat": "Service",
+   "name": "Painting One Room — Limited Gift Pack",
+   "price": 99575,
+   "costPct": 0.62,
+   "pop": 8,
+   "desc": "Painting One Room — Limited Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_116",
+   "cat": "Service",
+   "name": "Haircut Premium — Pro Pack of 2",
+   "price": 70775,
+   "costPct": 0.4,
+   "pop": 5,
+   "desc": "Haircut Premium — Pro Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_117",
+   "cat": "Service",
+   "name": "Home Deep Cleaning — Premium Refill",
+   "price": 84325,
+   "costPct": 0.46,
+   "pop": 5,
+   "desc": "Home Deep Cleaning — Premium Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_118",
+   "cat": "Service",
+   "name": "Tiles Polish — Eco Duo Combo",
+   "price": 10975,
+   "costPct": 0.59,
+   "pop": 4,
+   "desc": "Tiles Polish — Eco Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_119",
+   "cat": "Service",
+   "name": "Haircut Premium — Classic Set of 4",
+   "price": 35075,
+   "costPct": 0.42,
+   "pop": 4,
+   "desc": "Haircut Premium — Classic Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_120",
+   "cat": "Service",
+   "name": "Massage Therapy 60m — Classic Value Pack",
+   "price": 34350,
+   "costPct": 0.46,
+   "pop": 2,
+   "desc": "Massage Therapy 60m — Classic Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_121",
+   "cat": "Service",
+   "name": "Plumbing Visit — Gold Pack of 2",
+   "price": 40875,
+   "costPct": 0.42,
+   "pop": 9,
+   "desc": "Plumbing Visit — Gold Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_122",
+   "cat": "Service",
+   "name": "Laundry 5kg Pack — Limited Standard",
+   "price": 37550,
+   "costPct": 0.48,
+   "pop": 9,
+   "desc": "Laundry 5kg Pack — Limited Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_123",
+   "cat": "Service",
+   "name": "Beauty Parlour Glow — Deluxe Set of 4",
+   "price": 24900,
+   "costPct": 0.39,
+   "pop": 8,
+   "desc": "Beauty Parlour Glow — Deluxe Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_124",
+   "cat": "Service",
+   "name": "Laundry 5kg Pack — Mini Set of 4",
+   "price": 83100,
+   "costPct": 0.54,
+   "pop": 5,
+   "desc": "Laundry 5kg Pack — Mini Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_125",
+   "cat": "Service",
+   "name": "Massage Therapy 60m — Combo Pack Set of 4",
+   "price": 20300,
+   "costPct": 0.59,
+   "pop": 9,
+   "desc": "Massage Therapy 60m — Combo Pack Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_126",
+   "cat": "Service",
+   "name": "AC Deep Service — Deluxe Duo Combo",
+   "price": 95175,
+   "costPct": 0.59,
+   "pop": 7,
+   "desc": "AC Deep Service — Deluxe Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_127",
+   "cat": "Service",
+   "name": "Car Wash Deluxe — Jumbo Set of 4",
+   "price": 99300,
+   "costPct": 0.36,
+   "pop": 8,
+   "desc": "Car Wash Deluxe — Jumbo Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_128",
+   "cat": "Service",
+   "name": "Geyser Repair — Mini Refill",
+   "price": 40050,
+   "costPct": 0.37,
+   "pop": 10,
+   "desc": "Geyser Repair — Mini Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_129",
+   "cat": "Service",
+   "name": "Packers Mini Move — Limited Duo Combo",
+   "price": 59950,
+   "costPct": 0.33,
+   "pop": 8,
+   "desc": "Packers Mini Move — Limited Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_130",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Eco Set of 4",
+   "price": 64775,
+   "costPct": 0.36,
+   "pop": 5,
+   "desc": "Physiotherapy Visit — Eco Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_131",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Combo Pack Value Pack",
+   "price": 86000,
+   "costPct": 0.59,
+   "pop": 4,
+   "desc": "Physiotherapy Visit — Combo Pack Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_132",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Premium Duo Combo",
+   "price": 15600,
+   "costPct": 0.47,
+   "pop": 3,
+   "desc": "Dry Clean Suit — Premium Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_133",
+   "cat": "Service",
+   "name": "Dry Clean Suit — New Launch Standard",
+   "price": 39250,
+   "costPct": 0.4,
+   "pop": 9,
+   "desc": "Dry Clean Suit — New Launch Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_134",
+   "cat": "Service",
+   "name": "Laundry 5kg Pack — Gold Refill",
+   "price": 4600,
+   "costPct": 0.52,
+   "pop": 7,
+   "desc": "Laundry 5kg Pack — Gold Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_135",
+   "cat": "Service",
+   "name": "House Shifting Local — Premium Refill",
+   "price": 12500,
+   "costPct": 0.59,
+   "pop": 8,
+   "desc": "House Shifting Local — Premium Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_136",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Festival Edition Large",
+   "price": 52900,
+   "costPct": 0.4,
+   "pop": 9,
+   "desc": "Dry Clean Suit — Festival Edition Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_137",
+   "cat": "Service",
+   "name": "Home Deep Cleaning — Combo Pack Value Pack",
+   "price": 27050,
+   "costPct": 0.51,
+   "pop": 5,
+   "desc": "Home Deep Cleaning — Combo Pack Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_138",
+   "cat": "Service",
+   "name": "Packers Mini Move — Mini Set of 4",
+   "price": 92550,
+   "costPct": 0.48,
+   "pop": 5,
+   "desc": "Packers Mini Move — Mini Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_139",
+   "cat": "Service",
+   "name": "Curtain Stitching — Classic Pack of 2",
+   "price": 38050,
+   "costPct": 0.61,
+   "pop": 4,
+   "desc": "Curtain Stitching — Classic Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_140",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Special Large",
+   "price": 8900,
+   "costPct": 0.52,
+   "pop": 5,
+   "desc": "Dry Clean Suit — Special Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_141",
+   "cat": "Service",
+   "name": "Bike Service Full — Festival Edition Large",
+   "price": 20550,
+   "costPct": 0.32,
+   "pop": 4,
+   "desc": "Bike Service Full — Festival Edition Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_142",
+   "cat": "Service",
+   "name": "House Shifting Local — Bestseller Single",
+   "price": 15475,
+   "costPct": 0.42,
+   "pop": 7,
+   "desc": "House Shifting Local — Bestseller Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_143",
+   "cat": "Service",
+   "name": "Pest Control Home — Special Standard",
+   "price": 56400,
+   "costPct": 0.54,
+   "pop": 7,
+   "desc": "Pest Control Home — Special Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_144",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Family Pack Gift Pack",
+   "price": 37250,
+   "costPct": 0.33,
+   "pop": 4,
+   "desc": "Physiotherapy Visit — Family Pack Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_145",
+   "cat": "Service",
+   "name": "Key Making Set — New Launch Value Pack",
+   "price": 45950,
+   "costPct": 0.38,
+   "pop": 4,
+   "desc": "Key Making Set — New Launch Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_146",
+   "cat": "Service",
+   "name": "House Shifting Local — Gold Standard",
+   "price": 80875,
+   "costPct": 0.57,
+   "pop": 8,
+   "desc": "House Shifting Local — Gold Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_147",
+   "cat": "Service",
+   "name": "Pet Grooming — Family Pack Value Pack",
+   "price": 74700,
+   "costPct": 0.61,
+   "pop": 5,
+   "desc": "Pet Grooming — Family Pack Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_148",
+   "cat": "Service",
+   "name": "Pet Grooming — Mini Large",
+   "price": 21600,
+   "costPct": 0.39,
+   "pop": 10,
+   "desc": "Pet Grooming — Mini Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_149",
+   "cat": "Service",
+   "name": "Bike Service Full — New Launch Gift Pack",
+   "price": 79450,
+   "costPct": 0.6,
+   "pop": 9,
+   "desc": "Bike Service Full — New Launch Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_150",
+   "cat": "Service",
+   "name": "Pest Control Home — Pro Gift Pack",
+   "price": 63675,
+   "costPct": 0.4,
+   "pop": 5,
+   "desc": "Pest Control Home — Pro Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_151",
+   "cat": "Service",
+   "name": "Fridge Gas Refill — Combo Pack Pack of 2",
+   "price": 1300,
+   "costPct": 0.39,
+   "pop": 2,
+   "desc": "Fridge Gas Refill — Combo Pack Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_152",
+   "cat": "Service",
+   "name": "Curtain Stitching — New Launch Refill",
+   "price": 28275,
+   "costPct": 0.51,
+   "pop": 8,
+   "desc": "Curtain Stitching — New Launch Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_153",
+   "cat": "Service",
+   "name": "Pet Grooming — New Launch Value Pack",
+   "price": 12775,
+   "costPct": 0.54,
+   "pop": 9,
+   "desc": "Pet Grooming — New Launch Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_154",
+   "cat": "Service",
+   "name": "Fridge Gas Refill — Combo Pack Single",
+   "price": 23500,
+   "costPct": 0.39,
+   "pop": 7,
+   "desc": "Fridge Gas Refill — Combo Pack Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_155",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Special Standard",
+   "price": 40550,
+   "costPct": 0.41,
+   "pop": 10,
+   "desc": "Mehendi Full Hand — Special Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_156",
+   "cat": "Service",
+   "name": "Painting One Room — Bestseller Set of 4",
+   "price": 23125,
+   "costPct": 0.39,
+   "pop": 6,
+   "desc": "Painting One Room — Bestseller Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_157",
+   "cat": "Service",
+   "name": "Water Tank Cleaning — Pro Value Pack",
+   "price": 12650,
+   "costPct": 0.58,
+   "pop": 4,
+   "desc": "Water Tank Cleaning — Pro Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_158",
+   "cat": "Service",
+   "name": "Pet Grooming — Special Standard",
+   "price": 16225,
+   "costPct": 0.43,
+   "pop": 5,
+   "desc": "Pet Grooming — Special Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_159",
+   "cat": "Service",
+   "name": "Haircut Premium — Gold Gift Pack",
+   "price": 80550,
+   "costPct": 0.45,
+   "pop": 7,
+   "desc": "Haircut Premium — Gold Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_160",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Deluxe Set of 4",
+   "price": 39200,
+   "costPct": 0.52,
+   "pop": 2,
+   "desc": "Mehendi Full Hand — Deluxe Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_161",
+   "cat": "Service",
+   "name": "RO Service — Classic Duo Combo",
+   "price": 89900,
+   "costPct": 0.61,
+   "pop": 5,
+   "desc": "RO Service — Classic Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_162",
+   "cat": "Service",
+   "name": "Home Deep Cleaning — Bestseller Large",
+   "price": 46400,
+   "costPct": 0.6,
+   "pop": 10,
+   "desc": "Home Deep Cleaning — Bestseller Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_163",
+   "cat": "Service",
+   "name": "Curtain Stitching — Deluxe Value Pack",
+   "price": 21925,
+   "costPct": 0.34,
+   "pop": 5,
+   "desc": "Curtain Stitching — Deluxe Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_164",
+   "cat": "Service",
+   "name": "Painting One Room — Premium Trial Pack",
+   "price": 39500,
+   "costPct": 0.5,
+   "pop": 7,
+   "desc": "Painting One Room — Premium Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_165",
+   "cat": "Service",
+   "name": "Electrician Visit — Eco Duo Combo",
+   "price": 95225,
+   "costPct": 0.38,
+   "pop": 5,
+   "desc": "Electrician Visit — Eco Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_166",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Mini Standard",
+   "price": 79825,
+   "costPct": 0.6,
+   "pop": 5,
+   "desc": "Mehendi Full Hand — Mini Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_167",
+   "cat": "Service",
+   "name": "Washing Machine Repair — Gold Trial Pack",
+   "price": 53225,
+   "costPct": 0.48,
+   "pop": 4,
+   "desc": "Washing Machine Repair — Gold Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_168",
+   "cat": "Service",
+   "name": "Pest Control Home — Festival Edition Value Pack",
+   "price": 21525,
+   "costPct": 0.34,
+   "pop": 10,
+   "desc": "Pest Control Home — Festival Edition Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_169",
+   "cat": "Service",
+   "name": "Electrician Visit — Gold Value Pack",
+   "price": 52125,
+   "costPct": 0.36,
+   "pop": 6,
+   "desc": "Electrician Visit — Gold Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_170",
+   "cat": "Service",
+   "name": "Geyser Repair — Premium Duo Combo",
+   "price": 50400,
+   "costPct": 0.3,
+   "pop": 4,
+   "desc": "Geyser Repair — Premium Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_171",
+   "cat": "Service",
+   "name": "Haircut Premium — Limited Trial Pack",
+   "price": 45950,
+   "costPct": 0.61,
+   "pop": 3,
+   "desc": "Haircut Premium — Limited Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_172",
+   "cat": "Service",
+   "name": "Tailoring Suit Stitch — New Launch Trial Pack",
+   "price": 925,
+   "costPct": 0.42,
+   "pop": 10,
+   "desc": "Tailoring Suit Stitch — New Launch Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_173",
+   "cat": "Service",
+   "name": "Water Tank Cleaning — Festival Edition Gift Pack",
+   "price": 3075,
+   "costPct": 0.62,
+   "pop": 8,
+   "desc": "Water Tank Cleaning — Festival Edition Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_174",
+   "cat": "Service",
+   "name": "Beauty Parlour Glow — Combo Pack Trial Pack",
+   "price": 9975,
+   "costPct": 0.49,
+   "pop": 7,
+   "desc": "Beauty Parlour Glow — Combo Pack Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_175",
+   "cat": "Service",
+   "name": "Packers Mini Move — Combo Pack Gift Pack",
+   "price": 55750,
+   "costPct": 0.57,
+   "pop": 2,
+   "desc": "Packers Mini Move — Combo Pack Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_176",
+   "cat": "Service",
+   "name": "Haircut Premium — Gold Single",
+   "price": 63600,
+   "costPct": 0.49,
+   "pop": 8,
+   "desc": "Haircut Premium — Gold Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_177",
+   "cat": "Service",
+   "name": "Pet Grooming — Jumbo Duo Combo",
+   "price": 96375,
+   "costPct": 0.55,
+   "pop": 8,
+   "desc": "Pet Grooming — Jumbo Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_178",
+   "cat": "Service",
+   "name": "Pest Control Home — Special Duo Combo",
+   "price": 90850,
+   "costPct": 0.57,
+   "pop": 9,
+   "desc": "Pest Control Home — Special Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_179",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Festival Edition Refill",
+   "price": 81000,
+   "costPct": 0.44,
+   "pop": 3,
+   "desc": "Mehendi Full Hand — Festival Edition Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_180",
+   "cat": "Service",
+   "name": "Plumbing Visit — Deluxe Pack of 2",
+   "price": 18725,
+   "costPct": 0.46,
+   "pop": 6,
+   "desc": "Plumbing Visit — Deluxe Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_181",
+   "cat": "Service",
+   "name": "Key Making Set — Eco Single",
+   "price": 79200,
+   "costPct": 0.51,
+   "pop": 7,
+   "desc": "Key Making Set — Eco Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_182",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Bestseller Standard",
+   "price": 29925,
+   "costPct": 0.48,
+   "pop": 7,
+   "desc": "Dry Clean Suit — Bestseller Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_183",
+   "cat": "Service",
+   "name": "Fridge Gas Refill — Premium Set of 4",
+   "price": 29500,
+   "costPct": 0.44,
+   "pop": 5,
+   "desc": "Fridge Gas Refill — Premium Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_184",
+   "cat": "Service",
+   "name": "Washing Machine Repair — Mini Duo Combo",
+   "price": 34100,
+   "costPct": 0.42,
+   "pop": 3,
+   "desc": "Washing Machine Repair — Mini Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_185",
+   "cat": "Service",
+   "name": "Laundry 5kg Pack — Limited Set of 4",
+   "price": 12500,
+   "costPct": 0.51,
+   "pop": 9,
+   "desc": "Laundry 5kg Pack — Limited Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_186",
+   "cat": "Service",
+   "name": "Sofa Shampoo — Eco Refill",
+   "price": 30575,
+   "costPct": 0.59,
+   "pop": 2,
+   "desc": "Sofa Shampoo — Eco Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_187",
+   "cat": "Service",
+   "name": "Washing Machine Repair — Combo Pack Standard",
+   "price": 5400,
+   "costPct": 0.49,
+   "pop": 10,
+   "desc": "Washing Machine Repair — Combo Pack Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_188",
+   "cat": "Service",
+   "name": "Key Making Set — Festival Edition Pack of 2",
+   "price": 31600,
+   "costPct": 0.54,
+   "pop": 2,
+   "desc": "Key Making Set — Festival Edition Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_189",
+   "cat": "Service",
+   "name": "Geyser Repair — Premium Large",
+   "price": 2775,
+   "costPct": 0.47,
+   "pop": 7,
+   "desc": "Geyser Repair — Premium Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_190",
+   "cat": "Service",
+   "name": "Key Making Set — Mini Gift Pack",
+   "price": 71325,
+   "costPct": 0.56,
+   "pop": 4,
+   "desc": "Key Making Set — Mini Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_191",
+   "cat": "Service",
+   "name": "Tailoring Suit Stitch — Limited Single",
+   "price": 41525,
+   "costPct": 0.51,
+   "pop": 5,
+   "desc": "Tailoring Suit Stitch — Limited Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_192",
+   "cat": "Service",
+   "name": "False Ceiling Work — New Launch Value Pack",
+   "price": 87025,
+   "costPct": 0.51,
+   "pop": 7,
+   "desc": "False Ceiling Work — New Launch Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_193",
+   "cat": "Service",
+   "name": "Laundry 5kg Pack — Pro Gift Pack",
+   "price": 28625,
+   "costPct": 0.44,
+   "pop": 5,
+   "desc": "Laundry 5kg Pack — Pro Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_194",
+   "cat": "Service",
+   "name": "Haircut Premium — Gold Standard",
+   "price": 51350,
+   "costPct": 0.5,
+   "pop": 4,
+   "desc": "Haircut Premium — Gold Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_195",
+   "cat": "Service",
+   "name": "Key Making Set — Jumbo Trial Pack",
+   "price": 53325,
+   "costPct": 0.38,
+   "pop": 3,
+   "desc": "Key Making Set — Jumbo Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_196",
+   "cat": "Service",
+   "name": "Beauty Parlour Glow — Mini Single",
+   "price": 28825,
+   "costPct": 0.49,
+   "pop": 2,
+   "desc": "Beauty Parlour Glow — Mini Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_197",
+   "cat": "Service",
+   "name": "False Ceiling Work — Classic Trial Pack",
+   "price": 93025,
+   "costPct": 0.35,
+   "pop": 8,
+   "desc": "False Ceiling Work — Classic Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_198",
+   "cat": "Service",
+   "name": "Plumbing Visit — Classic Refill",
+   "price": 50125,
+   "costPct": 0.62,
+   "pop": 6,
+   "desc": "Plumbing Visit — Classic Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_199",
+   "cat": "Service",
+   "name": "Painting One Room — Gold Standard",
+   "price": 2825,
+   "costPct": 0.43,
+   "pop": 5,
+   "desc": "Painting One Room — Gold Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_200",
+   "cat": "Service",
+   "name": "Sofa Shampoo — Gold Value Pack",
+   "price": 23150,
+   "costPct": 0.37,
+   "pop": 3,
+   "desc": "Sofa Shampoo — Gold Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_201",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Jumbo Duo Combo",
+   "price": 63750,
+   "costPct": 0.59,
+   "pop": 8,
+   "desc": "Dry Clean Suit — Jumbo Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_202",
+   "cat": "Service",
+   "name": "Massage Therapy 60m — Gold Pack of 2",
+   "price": 52225,
+   "costPct": 0.4,
+   "pop": 4,
+   "desc": "Massage Therapy 60m — Gold Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_203",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Family Pack Trial Pack",
+   "price": 85075,
+   "costPct": 0.52,
+   "pop": 3,
+   "desc": "Physiotherapy Visit — Family Pack Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_204",
+   "cat": "Service",
+   "name": "Painting One Room — Mini Refill",
+   "price": 83850,
+   "costPct": 0.33,
+   "pop": 3,
+   "desc": "Painting One Room — Mini Refill — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_205",
+   "cat": "Service",
+   "name": "AC Deep Service — Premium Gift Pack",
+   "price": 74825,
+   "costPct": 0.61,
+   "pop": 7,
+   "desc": "AC Deep Service — Premium Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_206",
+   "cat": "Service",
+   "name": "Dry Clean Suit — Family Pack Single",
+   "price": 61375,
+   "costPct": 0.54,
+   "pop": 5,
+   "desc": "Dry Clean Suit — Family Pack Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_207",
+   "cat": "Service",
+   "name": "Pet Grooming — Combo Pack Single",
+   "price": 43675,
+   "costPct": 0.51,
+   "pop": 7,
+   "desc": "Pet Grooming — Combo Pack Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_208",
+   "cat": "Service",
+   "name": "Key Making Set — Festival Edition Gift Pack",
+   "price": 38575,
+   "costPct": 0.41,
+   "pop": 2,
+   "desc": "Key Making Set — Festival Edition Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_209",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Family Pack Trial Pack",
+   "price": 7950,
+   "costPct": 0.34,
+   "pop": 9,
+   "desc": "Mehendi Full Hand — Family Pack Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_210",
+   "cat": "Service",
+   "name": "RO Service — Family Pack Pack of 2",
+   "price": 40700,
+   "costPct": 0.54,
+   "pop": 8,
+   "desc": "RO Service — Family Pack Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_211",
+   "cat": "Service",
+   "name": "Physiotherapy Visit — Premium Single",
+   "price": 77400,
+   "costPct": 0.54,
+   "pop": 9,
+   "desc": "Physiotherapy Visit — Premium Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_212",
+   "cat": "Service",
+   "name": "Water Tank Cleaning — Combo Pack Pack of 2",
+   "price": 76950,
+   "costPct": 0.47,
+   "pop": 6,
+   "desc": "Water Tank Cleaning — Combo Pack Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_213",
+   "cat": "Service",
+   "name": "Water Tank Cleaning — Pro Trial Pack",
+   "price": 6375,
+   "costPct": 0.54,
+   "pop": 10,
+   "desc": "Water Tank Cleaning — Pro Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_214",
+   "cat": "Service",
+   "name": "Haircut Premium — Premium Duo Combo",
+   "price": 5525,
+   "costPct": 0.31,
+   "pop": 9,
+   "desc": "Haircut Premium — Premium Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_215",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Classic Trial Pack",
+   "price": 99825,
+   "costPct": 0.44,
+   "pop": 5,
+   "desc": "Mehendi Full Hand — Classic Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_216",
+   "cat": "Service",
+   "name": "False Ceiling Work — Classic Gift Pack",
+   "price": 12100,
+   "costPct": 0.52,
+   "pop": 3,
+   "desc": "False Ceiling Work — Classic Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_217",
+   "cat": "Service",
+   "name": "Home Deep Cleaning — Special Large",
+   "price": 29900,
+   "costPct": 0.34,
+   "pop": 3,
+   "desc": "Home Deep Cleaning — Special Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_218",
+   "cat": "Service",
+   "name": "Sofa Shampoo — Premium Set of 4",
+   "price": 4225,
+   "costPct": 0.61,
+   "pop": 3,
+   "desc": "Sofa Shampoo — Premium Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_219",
+   "cat": "Service",
+   "name": "RO Service — Gold Gift Pack",
+   "price": 11950,
+   "costPct": 0.31,
+   "pop": 9,
+   "desc": "RO Service — Gold Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_220",
+   "cat": "Service",
+   "name": "Haircut Premium — Gold Large",
+   "price": 5350,
+   "costPct": 0.4,
+   "pop": 5,
+   "desc": "Haircut Premium — Gold Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_221",
+   "cat": "Service",
+   "name": "AC Deep Service — Mini Value Pack",
+   "price": 83950,
+   "costPct": 0.6,
+   "pop": 7,
+   "desc": "AC Deep Service — Mini Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_222",
+   "cat": "Service",
+   "name": "Washing Machine Repair — Deluxe Value Pack",
+   "price": 13500,
+   "costPct": 0.43,
+   "pop": 2,
+   "desc": "Washing Machine Repair — Deluxe Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_223",
+   "cat": "Service",
+   "name": "False Ceiling Work — Festival Edition Gift Pack",
+   "price": 53350,
+   "costPct": 0.32,
+   "pop": 2,
+   "desc": "False Ceiling Work — Festival Edition Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_224",
+   "cat": "Service",
+   "name": "Home Deep Cleaning — Eco Set of 4",
+   "price": 25925,
+   "costPct": 0.34,
+   "pop": 9,
+   "desc": "Home Deep Cleaning — Eco Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_225",
+   "cat": "Service",
+   "name": "Key Making Set — Festival Edition Large",
+   "price": 26375,
+   "costPct": 0.37,
+   "pop": 4,
+   "desc": "Key Making Set — Festival Edition Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_226",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Gold Trial Pack",
+   "price": 81700,
+   "costPct": 0.33,
+   "pop": 3,
+   "desc": "Mehendi Full Hand — Gold Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_227",
+   "cat": "Service",
+   "name": "Beauty Parlour Glow — Jumbo Single",
+   "price": 23775,
+   "costPct": 0.47,
+   "pop": 5,
+   "desc": "Beauty Parlour Glow — Jumbo Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_228",
+   "cat": "Service",
+   "name": "Sofa Shampoo — Premium Trial Pack",
+   "price": 40600,
+   "costPct": 0.53,
+   "pop": 6,
+   "desc": "Sofa Shampoo — Premium Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_229",
+   "cat": "Service",
+   "name": "AC Deep Service — Limited Trial Pack",
+   "price": 12400,
+   "costPct": 0.52,
+   "pop": 9,
+   "desc": "AC Deep Service — Limited Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_230",
+   "cat": "Service",
+   "name": "Curtain Stitching — Limited Set of 4",
+   "price": 61650,
+   "costPct": 0.39,
+   "pop": 4,
+   "desc": "Curtain Stitching — Limited Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_231",
+   "cat": "Service",
+   "name": "Tailoring Suit Stitch — Special Value Pack",
+   "price": 42950,
+   "costPct": 0.5,
+   "pop": 5,
+   "desc": "Tailoring Suit Stitch — Special Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_232",
+   "cat": "Service",
+   "name": "Electrician Visit — Jumbo Gift Pack",
+   "price": 47675,
+   "costPct": 0.31,
+   "pop": 10,
+   "desc": "Electrician Visit — Jumbo Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_233",
+   "cat": "Service",
+   "name": "Tiles Polish — Festival Edition Single",
+   "price": 69025,
+   "costPct": 0.43,
+   "pop": 6,
+   "desc": "Tiles Polish — Festival Edition Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_234",
+   "cat": "Service",
+   "name": "Painting One Room — Mini Trial Pack",
+   "price": 31625,
+   "costPct": 0.53,
+   "pop": 10,
+   "desc": "Painting One Room — Mini Trial Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_235",
+   "cat": "Service",
+   "name": "Key Making Set — Deluxe Standard",
+   "price": 86175,
+   "costPct": 0.38,
+   "pop": 7,
+   "desc": "Key Making Set — Deluxe Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_236",
+   "cat": "Service",
+   "name": "House Shifting Local — Premium Large",
+   "price": 95075,
+   "costPct": 0.41,
+   "pop": 9,
+   "desc": "House Shifting Local — Premium Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_237",
+   "cat": "Service",
+   "name": "Massage Therapy 60m — Combo Pack Duo Combo",
+   "price": 25425,
+   "costPct": 0.42,
+   "pop": 4,
+   "desc": "Massage Therapy 60m — Combo Pack Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_238",
+   "cat": "Service",
+   "name": "CCTV Fitting — Limited Pack of 2",
+   "price": 32625,
+   "costPct": 0.52,
+   "pop": 7,
+   "desc": "CCTV Fitting — Limited Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_239",
+   "cat": "Service",
+   "name": "Electrician Visit — Eco Standard",
+   "price": 200,
+   "costPct": 0.31,
+   "pop": 10,
+   "desc": "Electrician Visit — Eco Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_240",
+   "cat": "Service",
+   "name": "Washing Machine Repair — Limited Large",
+   "price": 19600,
+   "costPct": 0.34,
+   "pop": 10,
+   "desc": "Washing Machine Repair — Limited Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_241",
+   "cat": "Service",
+   "name": "Packers Mini Move — Combo Pack Standard",
+   "price": 14450,
+   "costPct": 0.62,
+   "pop": 5,
+   "desc": "Packers Mini Move — Combo Pack Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_242",
+   "cat": "Service",
+   "name": "Sofa Shampoo — Bestseller Value Pack",
+   "price": 87950,
+   "costPct": 0.48,
+   "pop": 10,
+   "desc": "Sofa Shampoo — Bestseller Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_243",
+   "cat": "Service",
+   "name": "Geyser Repair — Classic Gift Pack",
+   "price": 77475,
+   "costPct": 0.54,
+   "pop": 3,
+   "desc": "Geyser Repair — Classic Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_244",
+   "cat": "Service",
+   "name": "Haircut Premium — Pro Large",
+   "price": 71850,
+   "costPct": 0.44,
+   "pop": 10,
+   "desc": "Haircut Premium — Pro Large — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_245",
+   "cat": "Service",
+   "name": "Electrician Visit — New Launch Gift Pack",
+   "price": 80675,
+   "costPct": 0.39,
+   "pop": 9,
+   "desc": "Electrician Visit — New Launch Gift Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_246",
+   "cat": "Service",
+   "name": "Electrician Visit — Jumbo Pack of 2",
+   "price": 62775,
+   "costPct": 0.54,
+   "pop": 10,
+   "desc": "Electrician Visit — Jumbo Pack of 2 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_247",
+   "cat": "Service",
+   "name": "Beauty Parlour Glow — Jumbo Set of 4",
+   "price": 91175,
+   "costPct": 0.57,
+   "pop": 5,
+   "desc": "Beauty Parlour Glow — Jumbo Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_248",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Jumbo Standard",
+   "price": 27975,
+   "costPct": 0.62,
+   "pop": 4,
+   "desc": "Mehendi Full Hand — Jumbo Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_249",
+   "cat": "Service",
+   "name": "CCTV Fitting — Eco Single",
+   "price": 12175,
+   "costPct": 0.45,
+   "pop": 4,
+   "desc": "CCTV Fitting — Eco Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_250",
+   "cat": "Service",
+   "name": "Plumbing Visit — Classic Set of 4",
+   "price": 50050,
+   "costPct": 0.39,
+   "pop": 4,
+   "desc": "Plumbing Visit — Classic Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_251",
+   "cat": "Service",
+   "name": "Packers Mini Move — Premium Set of 4",
+   "price": 23775,
+   "costPct": 0.34,
+   "pop": 6,
+   "desc": "Packers Mini Move — Premium Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_252",
+   "cat": "Service",
+   "name": "Electrician Visit — Premium Value Pack",
+   "price": 53875,
+   "costPct": 0.62,
+   "pop": 4,
+   "desc": "Electrician Visit — Premium Value Pack — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_253",
+   "cat": "Service",
+   "name": "False Ceiling Work — Limited Single",
+   "price": 88750,
+   "costPct": 0.44,
+   "pop": 4,
+   "desc": "False Ceiling Work — Limited Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_254",
+   "cat": "Service",
+   "name": "Tailoring Suit Stitch — Jumbo Single",
+   "price": 29950,
+   "costPct": 0.4,
+   "pop": 10,
+   "desc": "Tailoring Suit Stitch — Jumbo Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_255",
+   "cat": "Service",
+   "name": "Massage Therapy 60m — Jumbo Set of 4",
+   "price": 86975,
+   "costPct": 0.36,
+   "pop": 2,
+   "desc": "Massage Therapy 60m — Jumbo Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_256",
+   "cat": "Service",
+   "name": "False Ceiling Work — New Launch Set of 4",
+   "price": 94350,
+   "costPct": 0.3,
+   "pop": 5,
+   "desc": "False Ceiling Work — New Launch Set of 4 — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_257",
+   "cat": "Service",
+   "name": "Electrician Visit — Bestseller Standard",
+   "price": 54750,
+   "costPct": 0.58,
+   "pop": 3,
+   "desc": "Electrician Visit — Bestseller Standard — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_258",
+   "cat": "Service",
+   "name": "Mehendi Full Hand — Mini Duo Combo",
+   "price": 7975,
+   "costPct": 0.47,
+   "pop": 3,
+   "desc": "Mehendi Full Hand — Mini Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_259",
+   "cat": "Service",
+   "name": "Tiles Polish — Jumbo Single",
+   "price": 81225,
+   "costPct": 0.55,
+   "pop": 5,
+   "desc": "Tiles Polish — Jumbo Single — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_se_2_260",
+   "cat": "Service",
+   "name": "RO Service — New Launch Duo Combo",
+   "price": 92450,
+   "costPct": 0.54,
+   "pop": 3,
+   "desc": "RO Service — New Launch Duo Combo — Service category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+]

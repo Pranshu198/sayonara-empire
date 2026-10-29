@@ -1,0 +1,3153 @@
+// Mission pool (deep) — part 2: roz ke lakshya, zor badhta jaata hai
+export const MISSIONS_2 = [
+  {
+   "id": "ms2_1_1",
+   "kind": "earn",
+   "target": 199000,
+   "text": "Aaj ₹1,99,000 kamao (revenue)",
+   "reward": 35820
+  },
+  {
+   "id": "ms2_1_2",
+   "kind": "bank",
+   "target": 175000,
+   "text": "Bank balance ₹1,75,000 rakho",
+   "reward": 31500
+  },
+  {
+   "id": "ms2_1_3",
+   "kind": "hold",
+   "target": 270,
+   "text": "Market me kul 270 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_4",
+   "kind": "own",
+   "target": 2,
+   "text": "Kam se kam 2 business own karo",
+   "reward": 600
+  },
+  {
+   "id": "ms2_1_5",
+   "kind": "earn",
+   "target": 91000,
+   "text": "Aaj ₹91,000 kamao (revenue)",
+   "reward": 16380
+  },
+  {
+   "id": "ms2_1_6",
+   "kind": "bank",
+   "target": 68000,
+   "text": "Bank balance ₹68,000 rakho",
+   "reward": 12240
+  },
+  {
+   "id": "ms2_1_7",
+   "kind": "hold",
+   "target": 85,
+   "text": "Market me kul 85 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_8",
+   "kind": "own",
+   "target": 20,
+   "text": "Kam se kam 20 business own karo",
+   "reward": 6000
+  },
+  {
+   "id": "ms2_1_9",
+   "kind": "earn",
+   "target": 70000,
+   "text": "Aaj ₹70,000 kamao (revenue)",
+   "reward": 12600
+  },
+  {
+   "id": "ms2_1_10",
+   "kind": "bank",
+   "target": 284000,
+   "text": "Bank balance ₹2,84,000 rakho",
+   "reward": 51120
+  },
+  {
+   "id": "ms2_1_11",
+   "kind": "hold",
+   "target": 30,
+   "text": "Market me kul 30 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_12",
+   "kind": "own",
+   "target": 22,
+   "text": "Kam se kam 22 business own karo",
+   "reward": 6600
+  },
+  {
+   "id": "ms2_1_13",
+   "kind": "earn",
+   "target": 38500,
+   "text": "Aaj ₹38,500 kamao (revenue)",
+   "reward": 6930
+  },
+  {
+   "id": "ms2_1_14",
+   "kind": "bank",
+   "target": 216000,
+   "text": "Bank balance ₹2,16,000 rakho",
+   "reward": 38880
+  },
+  {
+   "id": "ms2_1_15",
+   "kind": "hold",
+   "target": 95,
+   "text": "Market me kul 95 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_16",
+   "kind": "own",
+   "target": 17,
+   "text": "Kam se kam 17 business own karo",
+   "reward": 5100
+  },
+  {
+   "id": "ms2_1_17",
+   "kind": "earn",
+   "target": 103500,
+   "text": "Aaj ₹1,03,500 kamao (revenue)",
+   "reward": 18630
+  },
+  {
+   "id": "ms2_1_18",
+   "kind": "bank",
+   "target": 141000,
+   "text": "Bank balance ₹1,41,000 rakho",
+   "reward": 25380
+  },
+  {
+   "id": "ms2_1_19",
+   "kind": "hold",
+   "target": 50,
+   "text": "Market me kul 50 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_20",
+   "kind": "own",
+   "target": 6,
+   "text": "Kam se kam 6 business own karo",
+   "reward": 1800
+  },
+  {
+   "id": "ms2_1_21",
+   "kind": "earn",
+   "target": 172000,
+   "text": "Aaj ₹1,72,000 kamao (revenue)",
+   "reward": 30960
+  },
+  {
+   "id": "ms2_1_22",
+   "kind": "bank",
+   "target": 98000,
+   "text": "Bank balance ₹98,000 rakho",
+   "reward": 17640
+  },
+  {
+   "id": "ms2_1_23",
+   "kind": "hold",
+   "target": 190,
+   "text": "Market me kul 190 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_24",
+   "kind": "own",
+   "target": 19,
+   "text": "Kam se kam 19 business own karo",
+   "reward": 5700
+  },
+  {
+   "id": "ms2_1_25",
+   "kind": "earn",
+   "target": 183000,
+   "text": "Aaj ₹1,83,000 kamao (revenue)",
+   "reward": 32940
+  },
+  {
+   "id": "ms2_1_26",
+   "kind": "bank",
+   "target": 101000,
+   "text": "Bank balance ₹1,01,000 rakho",
+   "reward": 18180
+  },
+  {
+   "id": "ms2_1_27",
+   "kind": "hold",
+   "target": 10,
+   "text": "Market me kul 10 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_28",
+   "kind": "own",
+   "target": 22,
+   "text": "Kam se kam 22 business own karo",
+   "reward": 6600
+  },
+  {
+   "id": "ms2_1_29",
+   "kind": "earn",
+   "target": 122500,
+   "text": "Aaj ₹1,22,500 kamao (revenue)",
+   "reward": 22050
+  },
+  {
+   "id": "ms2_1_30",
+   "kind": "bank",
+   "target": 210000,
+   "text": "Bank balance ₹2,10,000 rakho",
+   "reward": 37800
+  },
+  {
+   "id": "ms2_1_31",
+   "kind": "hold",
+   "target": 140,
+   "text": "Market me kul 140 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_32",
+   "kind": "own",
+   "target": 24,
+   "text": "Kam se kam 24 business own karo",
+   "reward": 7200
+  },
+  {
+   "id": "ms2_1_33",
+   "kind": "earn",
+   "target": 131500,
+   "text": "Aaj ₹1,31,500 kamao (revenue)",
+   "reward": 23670
+  },
+  {
+   "id": "ms2_1_34",
+   "kind": "bank",
+   "target": 222000,
+   "text": "Bank balance ₹2,22,000 rakho",
+   "reward": 39960
+  },
+  {
+   "id": "ms2_1_35",
+   "kind": "hold",
+   "target": 165,
+   "text": "Market me kul 165 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_36",
+   "kind": "own",
+   "target": 3,
+   "text": "Kam se kam 3 business own karo",
+   "reward": 900
+  },
+  {
+   "id": "ms2_1_37",
+   "kind": "earn",
+   "target": 109000,
+   "text": "Aaj ₹1,09,000 kamao (revenue)",
+   "reward": 19620
+  },
+  {
+   "id": "ms2_1_38",
+   "kind": "bank",
+   "target": 26000,
+   "text": "Bank balance ₹26,000 rakho",
+   "reward": 4680
+  },
+  {
+   "id": "ms2_1_39",
+   "kind": "hold",
+   "target": 45,
+   "text": "Market me kul 45 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_40",
+   "kind": "own",
+   "target": 24,
+   "text": "Kam se kam 24 business own karo",
+   "reward": 7200
+  },
+  {
+   "id": "ms2_1_41",
+   "kind": "earn",
+   "target": 134000,
+   "text": "Aaj ₹1,34,000 kamao (revenue)",
+   "reward": 24120
+  },
+  {
+   "id": "ms2_1_42",
+   "kind": "bank",
+   "target": 83000,
+   "text": "Bank balance ₹83,000 rakho",
+   "reward": 14940
+  },
+  {
+   "id": "ms2_1_43",
+   "kind": "hold",
+   "target": 155,
+   "text": "Market me kul 155 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_44",
+   "kind": "own",
+   "target": 3,
+   "text": "Kam se kam 3 business own karo",
+   "reward": 900
+  },
+  {
+   "id": "ms2_1_45",
+   "kind": "earn",
+   "target": 144000,
+   "text": "Aaj ₹1,44,000 kamao (revenue)",
+   "reward": 25920
+  },
+  {
+   "id": "ms2_1_46",
+   "kind": "bank",
+   "target": 58000,
+   "text": "Bank balance ₹58,000 rakho",
+   "reward": 10440
+  },
+  {
+   "id": "ms2_1_47",
+   "kind": "hold",
+   "target": 195,
+   "text": "Market me kul 195 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_48",
+   "kind": "own",
+   "target": 7,
+   "text": "Kam se kam 7 business own karo",
+   "reward": 2100
+  },
+  {
+   "id": "ms2_1_49",
+   "kind": "earn",
+   "target": 135000,
+   "text": "Aaj ₹1,35,000 kamao (revenue)",
+   "reward": 24300
+  },
+  {
+   "id": "ms2_1_50",
+   "kind": "bank",
+   "target": 165000,
+   "text": "Bank balance ₹1,65,000 rakho",
+   "reward": 29700
+  },
+  {
+   "id": "ms2_1_51",
+   "kind": "hold",
+   "target": 145,
+   "text": "Market me kul 145 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_52",
+   "kind": "own",
+   "target": 23,
+   "text": "Kam se kam 23 business own karo",
+   "reward": 6900
+  },
+  {
+   "id": "ms2_1_53",
+   "kind": "earn",
+   "target": 85000,
+   "text": "Aaj ₹85,000 kamao (revenue)",
+   "reward": 15300
+  },
+  {
+   "id": "ms2_1_54",
+   "kind": "bank",
+   "target": 115000,
+   "text": "Bank balance ₹1,15,000 rakho",
+   "reward": 20700
+  },
+  {
+   "id": "ms2_1_55",
+   "kind": "hold",
+   "target": 25,
+   "text": "Market me kul 25 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_56",
+   "kind": "own",
+   "target": 8,
+   "text": "Kam se kam 8 business own karo",
+   "reward": 2400
+  },
+  {
+   "id": "ms2_1_57",
+   "kind": "earn",
+   "target": 116000,
+   "text": "Aaj ₹1,16,000 kamao (revenue)",
+   "reward": 20880
+  },
+  {
+   "id": "ms2_1_58",
+   "kind": "bank",
+   "target": 283000,
+   "text": "Bank balance ₹2,83,000 rakho",
+   "reward": 50940
+  },
+  {
+   "id": "ms2_1_59",
+   "kind": "hold",
+   "target": 70,
+   "text": "Market me kul 70 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_60",
+   "kind": "own",
+   "target": 12,
+   "text": "Kam se kam 12 business own karo",
+   "reward": 3600
+  },
+  {
+   "id": "ms2_1_61",
+   "kind": "earn",
+   "target": 52000,
+   "text": "Aaj ₹52,000 kamao (revenue)",
+   "reward": 9360
+  },
+  {
+   "id": "ms2_1_62",
+   "kind": "bank",
+   "target": 69000,
+   "text": "Bank balance ₹69,000 rakho",
+   "reward": 12420
+  },
+  {
+   "id": "ms2_1_63",
+   "kind": "hold",
+   "target": 220,
+   "text": "Market me kul 220 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_64",
+   "kind": "own",
+   "target": 19,
+   "text": "Kam se kam 19 business own karo",
+   "reward": 5700
+  },
+  {
+   "id": "ms2_1_65",
+   "kind": "earn",
+   "target": 182000,
+   "text": "Aaj ₹1,82,000 kamao (revenue)",
+   "reward": 32760
+  },
+  {
+   "id": "ms2_1_66",
+   "kind": "bank",
+   "target": 150000,
+   "text": "Bank balance ₹1,50,000 rakho",
+   "reward": 27000
+  },
+  {
+   "id": "ms2_1_67",
+   "kind": "hold",
+   "target": 70,
+   "text": "Market me kul 70 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_68",
+   "kind": "own",
+   "target": 10,
+   "text": "Kam se kam 10 business own karo",
+   "reward": 3000
+  },
+  {
+   "id": "ms2_1_69",
+   "kind": "earn",
+   "target": 61000,
+   "text": "Aaj ₹61,000 kamao (revenue)",
+   "reward": 10980
+  },
+  {
+   "id": "ms2_1_70",
+   "kind": "bank",
+   "target": 3000,
+   "text": "Bank balance ₹3,000 rakho",
+   "reward": 540
+  },
+  {
+   "id": "ms2_1_71",
+   "kind": "hold",
+   "target": 140,
+   "text": "Market me kul 140 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_72",
+   "kind": "own",
+   "target": 6,
+   "text": "Kam se kam 6 business own karo",
+   "reward": 1800
+  },
+  {
+   "id": "ms2_1_73",
+   "kind": "earn",
+   "target": 88000,
+   "text": "Aaj ₹88,000 kamao (revenue)",
+   "reward": 15840
+  },
+  {
+   "id": "ms2_1_74",
+   "kind": "bank",
+   "target": 8000,
+   "text": "Bank balance ₹8,000 rakho",
+   "reward": 1440
+  },
+  {
+   "id": "ms2_1_75",
+   "kind": "hold",
+   "target": 95,
+   "text": "Market me kul 95 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_76",
+   "kind": "own",
+   "target": 22,
+   "text": "Kam se kam 22 business own karo",
+   "reward": 6600
+  },
+  {
+   "id": "ms2_1_77",
+   "kind": "earn",
+   "target": 45000,
+   "text": "Aaj ₹45,000 kamao (revenue)",
+   "reward": 8100
+  },
+  {
+   "id": "ms2_1_78",
+   "kind": "bank",
+   "target": 157000,
+   "text": "Bank balance ₹1,57,000 rakho",
+   "reward": 28260
+  },
+  {
+   "id": "ms2_1_79",
+   "kind": "hold",
+   "target": 225,
+   "text": "Market me kul 225 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_80",
+   "kind": "own",
+   "target": 6,
+   "text": "Kam se kam 6 business own karo",
+   "reward": 1800
+  },
+  {
+   "id": "ms2_1_81",
+   "kind": "earn",
+   "target": 85000,
+   "text": "Aaj ₹85,000 kamao (revenue)",
+   "reward": 15300
+  },
+  {
+   "id": "ms2_1_82",
+   "kind": "bank",
+   "target": 225000,
+   "text": "Bank balance ₹2,25,000 rakho",
+   "reward": 40500
+  },
+  {
+   "id": "ms2_1_83",
+   "kind": "hold",
+   "target": 175,
+   "text": "Market me kul 175 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_84",
+   "kind": "own",
+   "target": 14,
+   "text": "Kam se kam 14 business own karo",
+   "reward": 4200
+  },
+  {
+   "id": "ms2_1_85",
+   "kind": "earn",
+   "target": 107000,
+   "text": "Aaj ₹1,07,000 kamao (revenue)",
+   "reward": 19260
+  },
+  {
+   "id": "ms2_1_86",
+   "kind": "bank",
+   "target": 146000,
+   "text": "Bank balance ₹1,46,000 rakho",
+   "reward": 26280
+  },
+  {
+   "id": "ms2_1_87",
+   "kind": "hold",
+   "target": 135,
+   "text": "Market me kul 135 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_88",
+   "kind": "own",
+   "target": 2,
+   "text": "Kam se kam 2 business own karo",
+   "reward": 600
+  },
+  {
+   "id": "ms2_1_89",
+   "kind": "earn",
+   "target": 182500,
+   "text": "Aaj ₹1,82,500 kamao (revenue)",
+   "reward": 32850
+  },
+  {
+   "id": "ms2_1_90",
+   "kind": "bank",
+   "target": 223000,
+   "text": "Bank balance ₹2,23,000 rakho",
+   "reward": 40140
+  },
+  {
+   "id": "ms2_1_91",
+   "kind": "hold",
+   "target": 230,
+   "text": "Market me kul 230 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_92",
+   "kind": "own",
+   "target": 19,
+   "text": "Kam se kam 19 business own karo",
+   "reward": 5700
+  },
+  {
+   "id": "ms2_1_93",
+   "kind": "earn",
+   "target": 114000,
+   "text": "Aaj ₹1,14,000 kamao (revenue)",
+   "reward": 20520
+  },
+  {
+   "id": "ms2_1_94",
+   "kind": "bank",
+   "target": 286000,
+   "text": "Bank balance ₹2,86,000 rakho",
+   "reward": 51480
+  },
+  {
+   "id": "ms2_1_95",
+   "kind": "hold",
+   "target": 90,
+   "text": "Market me kul 90 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_96",
+   "kind": "own",
+   "target": 3,
+   "text": "Kam se kam 3 business own karo",
+   "reward": 900
+  },
+  {
+   "id": "ms2_1_97",
+   "kind": "earn",
+   "target": 10500,
+   "text": "Aaj ₹10,500 kamao (revenue)",
+   "reward": 1890
+  },
+  {
+   "id": "ms2_1_98",
+   "kind": "bank",
+   "target": 178000,
+   "text": "Bank balance ₹1,78,000 rakho",
+   "reward": 32040
+  },
+  {
+   "id": "ms2_1_99",
+   "kind": "hold",
+   "target": 160,
+   "text": "Market me kul 160 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_100",
+   "kind": "own",
+   "target": 22,
+   "text": "Kam se kam 22 business own karo",
+   "reward": 6600
+  },
+  {
+   "id": "ms2_1_101",
+   "kind": "earn",
+   "target": 89500,
+   "text": "Aaj ₹89,500 kamao (revenue)",
+   "reward": 16110
+  },
+  {
+   "id": "ms2_1_102",
+   "kind": "bank",
+   "target": 143000,
+   "text": "Bank balance ₹1,43,000 rakho",
+   "reward": 25740
+  },
+  {
+   "id": "ms2_1_103",
+   "kind": "hold",
+   "target": 85,
+   "text": "Market me kul 85 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_104",
+   "kind": "own",
+   "target": 6,
+   "text": "Kam se kam 6 business own karo",
+   "reward": 1800
+  },
+  {
+   "id": "ms2_1_105",
+   "kind": "earn",
+   "target": 159500,
+   "text": "Aaj ₹1,59,500 kamao (revenue)",
+   "reward": 28710
+  },
+  {
+   "id": "ms2_1_106",
+   "kind": "bank",
+   "target": 132000,
+   "text": "Bank balance ₹1,32,000 rakho",
+   "reward": 23760
+  },
+  {
+   "id": "ms2_1_107",
+   "kind": "hold",
+   "target": 125,
+   "text": "Market me kul 125 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_108",
+   "kind": "own",
+   "target": 13,
+   "text": "Kam se kam 13 business own karo",
+   "reward": 3900
+  },
+  {
+   "id": "ms2_1_109",
+   "kind": "earn",
+   "target": 115500,
+   "text": "Aaj ₹1,15,500 kamao (revenue)",
+   "reward": 20790
+  },
+  {
+   "id": "ms2_1_110",
+   "kind": "bank",
+   "target": 204000,
+   "text": "Bank balance ₹2,04,000 rakho",
+   "reward": 36720
+  },
+  {
+   "id": "ms2_1_111",
+   "kind": "hold",
+   "target": 255,
+   "text": "Market me kul 255 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_112",
+   "kind": "own",
+   "target": 17,
+   "text": "Kam se kam 17 business own karo",
+   "reward": 5100
+  },
+  {
+   "id": "ms2_1_113",
+   "kind": "earn",
+   "target": 129500,
+   "text": "Aaj ₹1,29,500 kamao (revenue)",
+   "reward": 23310
+  },
+  {
+   "id": "ms2_1_114",
+   "kind": "bank",
+   "target": 112000,
+   "text": "Bank balance ₹1,12,000 rakho",
+   "reward": 20160
+  },
+  {
+   "id": "ms2_1_115",
+   "kind": "hold",
+   "target": 300,
+   "text": "Market me kul 300 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_116",
+   "kind": "own",
+   "target": 23,
+   "text": "Kam se kam 23 business own karo",
+   "reward": 6900
+  },
+  {
+   "id": "ms2_1_117",
+   "kind": "earn",
+   "target": 36000,
+   "text": "Aaj ₹36,000 kamao (revenue)",
+   "reward": 6480
+  },
+  {
+   "id": "ms2_1_118",
+   "kind": "bank",
+   "target": 143000,
+   "text": "Bank balance ₹1,43,000 rakho",
+   "reward": 25740
+  },
+  {
+   "id": "ms2_1_119",
+   "kind": "hold",
+   "target": 15,
+   "text": "Market me kul 15 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_120",
+   "kind": "own",
+   "target": 5,
+   "text": "Kam se kam 5 business own karo",
+   "reward": 1500
+  },
+  {
+   "id": "ms2_1_121",
+   "kind": "earn",
+   "target": 77500,
+   "text": "Aaj ₹77,500 kamao (revenue)",
+   "reward": 13950
+  },
+  {
+   "id": "ms2_1_122",
+   "kind": "bank",
+   "target": 94000,
+   "text": "Bank balance ₹94,000 rakho",
+   "reward": 16920
+  },
+  {
+   "id": "ms2_1_123",
+   "kind": "hold",
+   "target": 260,
+   "text": "Market me kul 260 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_124",
+   "kind": "own",
+   "target": 4,
+   "text": "Kam se kam 4 business own karo",
+   "reward": 1200
+  },
+  {
+   "id": "ms2_1_125",
+   "kind": "earn",
+   "target": 167000,
+   "text": "Aaj ₹1,67,000 kamao (revenue)",
+   "reward": 30060
+  },
+  {
+   "id": "ms2_1_126",
+   "kind": "bank",
+   "target": 81000,
+   "text": "Bank balance ₹81,000 rakho",
+   "reward": 14580
+  },
+  {
+   "id": "ms2_1_127",
+   "kind": "hold",
+   "target": 35,
+   "text": "Market me kul 35 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_128",
+   "kind": "own",
+   "target": 14,
+   "text": "Kam se kam 14 business own karo",
+   "reward": 4200
+  },
+  {
+   "id": "ms2_1_129",
+   "kind": "earn",
+   "target": 160500,
+   "text": "Aaj ₹1,60,500 kamao (revenue)",
+   "reward": 28890
+  },
+  {
+   "id": "ms2_1_130",
+   "kind": "bank",
+   "target": 180000,
+   "text": "Bank balance ₹1,80,000 rakho",
+   "reward": 32400
+  },
+  {
+   "id": "ms2_1_131",
+   "kind": "hold",
+   "target": 300,
+   "text": "Market me kul 300 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_132",
+   "kind": "own",
+   "target": 9,
+   "text": "Kam se kam 9 business own karo",
+   "reward": 2700
+  },
+  {
+   "id": "ms2_1_133",
+   "kind": "earn",
+   "target": 181500,
+   "text": "Aaj ₹1,81,500 kamao (revenue)",
+   "reward": 32670
+  },
+  {
+   "id": "ms2_1_134",
+   "kind": "bank",
+   "target": 264000,
+   "text": "Bank balance ₹2,64,000 rakho",
+   "reward": 47520
+  },
+  {
+   "id": "ms2_1_135",
+   "kind": "hold",
+   "target": 125,
+   "text": "Market me kul 125 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_136",
+   "kind": "own",
+   "target": 21,
+   "text": "Kam se kam 21 business own karo",
+   "reward": 6300
+  },
+  {
+   "id": "ms2_1_137",
+   "kind": "earn",
+   "target": 188500,
+   "text": "Aaj ₹1,88,500 kamao (revenue)",
+   "reward": 33930
+  },
+  {
+   "id": "ms2_1_138",
+   "kind": "bank",
+   "target": 228000,
+   "text": "Bank balance ₹2,28,000 rakho",
+   "reward": 41040
+  },
+  {
+   "id": "ms2_1_139",
+   "kind": "hold",
+   "target": 190,
+   "text": "Market me kul 190 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_140",
+   "kind": "own",
+   "target": 24,
+   "text": "Kam se kam 24 business own karo",
+   "reward": 7200
+  },
+  {
+   "id": "ms2_1_141",
+   "kind": "earn",
+   "target": 128000,
+   "text": "Aaj ₹1,28,000 kamao (revenue)",
+   "reward": 23040
+  },
+  {
+   "id": "ms2_1_142",
+   "kind": "bank",
+   "target": 165000,
+   "text": "Bank balance ₹1,65,000 rakho",
+   "reward": 29700
+  },
+  {
+   "id": "ms2_1_143",
+   "kind": "hold",
+   "target": 135,
+   "text": "Market me kul 135 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_144",
+   "kind": "own",
+   "target": 6,
+   "text": "Kam se kam 6 business own karo",
+   "reward": 1800
+  },
+  {
+   "id": "ms2_1_145",
+   "kind": "earn",
+   "target": 30500,
+   "text": "Aaj ₹30,500 kamao (revenue)",
+   "reward": 5490
+  },
+  {
+   "id": "ms2_1_146",
+   "kind": "bank",
+   "target": 129000,
+   "text": "Bank balance ₹1,29,000 rakho",
+   "reward": 23220
+  },
+  {
+   "id": "ms2_1_147",
+   "kind": "hold",
+   "target": 150,
+   "text": "Market me kul 150 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_148",
+   "kind": "own",
+   "target": 16,
+   "text": "Kam se kam 16 business own karo",
+   "reward": 4800
+  },
+  {
+   "id": "ms2_1_149",
+   "kind": "earn",
+   "target": 78000,
+   "text": "Aaj ₹78,000 kamao (revenue)",
+   "reward": 14040
+  },
+  {
+   "id": "ms2_1_150",
+   "kind": "bank",
+   "target": 212000,
+   "text": "Bank balance ₹2,12,000 rakho",
+   "reward": 38160
+  },
+  {
+   "id": "ms2_1_151",
+   "kind": "hold",
+   "target": 70,
+   "text": "Market me kul 70 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_152",
+   "kind": "own",
+   "target": 6,
+   "text": "Kam se kam 6 business own karo",
+   "reward": 1800
+  },
+  {
+   "id": "ms2_1_153",
+   "kind": "earn",
+   "target": 52000,
+   "text": "Aaj ₹52,000 kamao (revenue)",
+   "reward": 9360
+  },
+  {
+   "id": "ms2_1_154",
+   "kind": "bank",
+   "target": 243000,
+   "text": "Bank balance ₹2,43,000 rakho",
+   "reward": 43740
+  },
+  {
+   "id": "ms2_1_155",
+   "kind": "hold",
+   "target": 195,
+   "text": "Market me kul 195 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_156",
+   "kind": "own",
+   "target": 1,
+   "text": "Kam se kam 1 business own karo",
+   "reward": 300
+  },
+  {
+   "id": "ms2_1_157",
+   "kind": "earn",
+   "target": 192500,
+   "text": "Aaj ₹1,92,500 kamao (revenue)",
+   "reward": 34650
+  },
+  {
+   "id": "ms2_1_158",
+   "kind": "bank",
+   "target": 259000,
+   "text": "Bank balance ₹2,59,000 rakho",
+   "reward": 46620
+  },
+  {
+   "id": "ms2_1_159",
+   "kind": "hold",
+   "target": 115,
+   "text": "Market me kul 115 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_160",
+   "kind": "own",
+   "target": 5,
+   "text": "Kam se kam 5 business own karo",
+   "reward": 1500
+  },
+  {
+   "id": "ms2_1_161",
+   "kind": "earn",
+   "target": 107000,
+   "text": "Aaj ₹1,07,000 kamao (revenue)",
+   "reward": 19260
+  },
+  {
+   "id": "ms2_1_162",
+   "kind": "bank",
+   "target": 98000,
+   "text": "Bank balance ₹98,000 rakho",
+   "reward": 17640
+  },
+  {
+   "id": "ms2_1_163",
+   "kind": "hold",
+   "target": 270,
+   "text": "Market me kul 270 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_164",
+   "kind": "own",
+   "target": 20,
+   "text": "Kam se kam 20 business own karo",
+   "reward": 6000
+  },
+  {
+   "id": "ms2_1_165",
+   "kind": "earn",
+   "target": 70000,
+   "text": "Aaj ₹70,000 kamao (revenue)",
+   "reward": 12600
+  },
+  {
+   "id": "ms2_1_166",
+   "kind": "bank",
+   "target": 96000,
+   "text": "Bank balance ₹96,000 rakho",
+   "reward": 17280
+  },
+  {
+   "id": "ms2_1_167",
+   "kind": "hold",
+   "target": 260,
+   "text": "Market me kul 260 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_168",
+   "kind": "own",
+   "target": 10,
+   "text": "Kam se kam 10 business own karo",
+   "reward": 3000
+  },
+  {
+   "id": "ms2_1_169",
+   "kind": "earn",
+   "target": 109500,
+   "text": "Aaj ₹1,09,500 kamao (revenue)",
+   "reward": 19710
+  },
+  {
+   "id": "ms2_1_170",
+   "kind": "bank",
+   "target": 118000,
+   "text": "Bank balance ₹1,18,000 rakho",
+   "reward": 21240
+  },
+  {
+   "id": "ms2_1_171",
+   "kind": "hold",
+   "target": 50,
+   "text": "Market me kul 50 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_172",
+   "kind": "own",
+   "target": 20,
+   "text": "Kam se kam 20 business own karo",
+   "reward": 6000
+  },
+  {
+   "id": "ms2_1_173",
+   "kind": "earn",
+   "target": 65000,
+   "text": "Aaj ₹65,000 kamao (revenue)",
+   "reward": 11700
+  },
+  {
+   "id": "ms2_1_174",
+   "kind": "bank",
+   "target": 3000,
+   "text": "Bank balance ₹3,000 rakho",
+   "reward": 540
+  },
+  {
+   "id": "ms2_1_175",
+   "kind": "hold",
+   "target": 70,
+   "text": "Market me kul 70 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_176",
+   "kind": "own",
+   "target": 17,
+   "text": "Kam se kam 17 business own karo",
+   "reward": 5100
+  },
+  {
+   "id": "ms2_1_177",
+   "kind": "earn",
+   "target": 139500,
+   "text": "Aaj ₹1,39,500 kamao (revenue)",
+   "reward": 25110
+  },
+  {
+   "id": "ms2_1_178",
+   "kind": "bank",
+   "target": 37000,
+   "text": "Bank balance ₹37,000 rakho",
+   "reward": 6660
+  },
+  {
+   "id": "ms2_1_179",
+   "kind": "hold",
+   "target": 45,
+   "text": "Market me kul 45 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_180",
+   "kind": "own",
+   "target": 19,
+   "text": "Kam se kam 19 business own karo",
+   "reward": 5700
+  },
+  {
+   "id": "ms2_1_181",
+   "kind": "earn",
+   "target": 169000,
+   "text": "Aaj ₹1,69,000 kamao (revenue)",
+   "reward": 30420
+  },
+  {
+   "id": "ms2_1_182",
+   "kind": "bank",
+   "target": 15000,
+   "text": "Bank balance ₹15,000 rakho",
+   "reward": 2700
+  },
+  {
+   "id": "ms2_1_183",
+   "kind": "hold",
+   "target": 195,
+   "text": "Market me kul 195 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_184",
+   "kind": "own",
+   "target": 15,
+   "text": "Kam se kam 15 business own karo",
+   "reward": 4500
+  },
+  {
+   "id": "ms2_1_185",
+   "kind": "earn",
+   "target": 48500,
+   "text": "Aaj ₹48,500 kamao (revenue)",
+   "reward": 8730
+  },
+  {
+   "id": "ms2_1_186",
+   "kind": "bank",
+   "target": 199000,
+   "text": "Bank balance ₹1,99,000 rakho",
+   "reward": 35820
+  },
+  {
+   "id": "ms2_1_187",
+   "kind": "hold",
+   "target": 190,
+   "text": "Market me kul 190 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_188",
+   "kind": "own",
+   "target": 23,
+   "text": "Kam se kam 23 business own karo",
+   "reward": 6900
+  },
+  {
+   "id": "ms2_1_189",
+   "kind": "earn",
+   "target": 129000,
+   "text": "Aaj ₹1,29,000 kamao (revenue)",
+   "reward": 23220
+  },
+  {
+   "id": "ms2_1_190",
+   "kind": "bank",
+   "target": 269000,
+   "text": "Bank balance ₹2,69,000 rakho",
+   "reward": 48420
+  },
+  {
+   "id": "ms2_1_191",
+   "kind": "hold",
+   "target": 205,
+   "text": "Market me kul 205 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_192",
+   "kind": "own",
+   "target": 7,
+   "text": "Kam se kam 7 business own karo",
+   "reward": 2100
+  },
+  {
+   "id": "ms2_1_193",
+   "kind": "earn",
+   "target": 101500,
+   "text": "Aaj ₹1,01,500 kamao (revenue)",
+   "reward": 18270
+  },
+  {
+   "id": "ms2_1_194",
+   "kind": "bank",
+   "target": 280000,
+   "text": "Bank balance ₹2,80,000 rakho",
+   "reward": 50400
+  },
+  {
+   "id": "ms2_1_195",
+   "kind": "hold",
+   "target": 285,
+   "text": "Market me kul 285 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_196",
+   "kind": "own",
+   "target": 4,
+   "text": "Kam se kam 4 business own karo",
+   "reward": 1200
+  },
+  {
+   "id": "ms2_1_197",
+   "kind": "earn",
+   "target": 109500,
+   "text": "Aaj ₹1,09,500 kamao (revenue)",
+   "reward": 19710
+  },
+  {
+   "id": "ms2_1_198",
+   "kind": "bank",
+   "target": 206000,
+   "text": "Bank balance ₹2,06,000 rakho",
+   "reward": 37080
+  },
+  {
+   "id": "ms2_1_199",
+   "kind": "hold",
+   "target": 140,
+   "text": "Market me kul 140 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_200",
+   "kind": "own",
+   "target": 3,
+   "text": "Kam se kam 3 business own karo",
+   "reward": 900
+  },
+  {
+   "id": "ms2_1_201",
+   "kind": "earn",
+   "target": 52500,
+   "text": "Aaj ₹52,500 kamao (revenue)",
+   "reward": 9450
+  },
+  {
+   "id": "ms2_1_202",
+   "kind": "bank",
+   "target": 111000,
+   "text": "Bank balance ₹1,11,000 rakho",
+   "reward": 19980
+  },
+  {
+   "id": "ms2_1_203",
+   "kind": "hold",
+   "target": 220,
+   "text": "Market me kul 220 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_204",
+   "kind": "own",
+   "target": 16,
+   "text": "Kam se kam 16 business own karo",
+   "reward": 4800
+  },
+  {
+   "id": "ms2_1_205",
+   "kind": "earn",
+   "target": 135000,
+   "text": "Aaj ₹1,35,000 kamao (revenue)",
+   "reward": 24300
+  },
+  {
+   "id": "ms2_1_206",
+   "kind": "bank",
+   "target": 57000,
+   "text": "Bank balance ₹57,000 rakho",
+   "reward": 10260
+  },
+  {
+   "id": "ms2_1_207",
+   "kind": "hold",
+   "target": 75,
+   "text": "Market me kul 75 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_208",
+   "kind": "own",
+   "target": 5,
+   "text": "Kam se kam 5 business own karo",
+   "reward": 1500
+  },
+  {
+   "id": "ms2_1_209",
+   "kind": "earn",
+   "target": 186000,
+   "text": "Aaj ₹1,86,000 kamao (revenue)",
+   "reward": 33480
+  },
+  {
+   "id": "ms2_1_210",
+   "kind": "bank",
+   "target": 192000,
+   "text": "Bank balance ₹1,92,000 rakho",
+   "reward": 34560
+  },
+  {
+   "id": "ms2_1_211",
+   "kind": "hold",
+   "target": 165,
+   "text": "Market me kul 165 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_212",
+   "kind": "own",
+   "target": 17,
+   "text": "Kam se kam 17 business own karo",
+   "reward": 5100
+  },
+  {
+   "id": "ms2_1_213",
+   "kind": "earn",
+   "target": 151500,
+   "text": "Aaj ₹1,51,500 kamao (revenue)",
+   "reward": 27270
+  },
+  {
+   "id": "ms2_1_214",
+   "kind": "bank",
+   "target": 36000,
+   "text": "Bank balance ₹36,000 rakho",
+   "reward": 6480
+  },
+  {
+   "id": "ms2_1_215",
+   "kind": "hold",
+   "target": 285,
+   "text": "Market me kul 285 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_216",
+   "kind": "own",
+   "target": 18,
+   "text": "Kam se kam 18 business own karo",
+   "reward": 5400
+  },
+  {
+   "id": "ms2_1_217",
+   "kind": "earn",
+   "target": 184000,
+   "text": "Aaj ₹1,84,000 kamao (revenue)",
+   "reward": 33120
+  },
+  {
+   "id": "ms2_1_218",
+   "kind": "bank",
+   "target": 133000,
+   "text": "Bank balance ₹1,33,000 rakho",
+   "reward": 23940
+  },
+  {
+   "id": "ms2_1_219",
+   "kind": "hold",
+   "target": 195,
+   "text": "Market me kul 195 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_220",
+   "kind": "own",
+   "target": 5,
+   "text": "Kam se kam 5 business own karo",
+   "reward": 1500
+  },
+  {
+   "id": "ms2_1_221",
+   "kind": "earn",
+   "target": 100500,
+   "text": "Aaj ₹1,00,500 kamao (revenue)",
+   "reward": 18090
+  },
+  {
+   "id": "ms2_1_222",
+   "kind": "bank",
+   "target": 163000,
+   "text": "Bank balance ₹1,63,000 rakho",
+   "reward": 29340
+  },
+  {
+   "id": "ms2_1_223",
+   "kind": "hold",
+   "target": 130,
+   "text": "Market me kul 130 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_224",
+   "kind": "own",
+   "target": 15,
+   "text": "Kam se kam 15 business own karo",
+   "reward": 4500
+  },
+  {
+   "id": "ms2_1_225",
+   "kind": "earn",
+   "target": 87500,
+   "text": "Aaj ₹87,500 kamao (revenue)",
+   "reward": 15750
+  },
+  {
+   "id": "ms2_1_226",
+   "kind": "bank",
+   "target": 17000,
+   "text": "Bank balance ₹17,000 rakho",
+   "reward": 3060
+  },
+  {
+   "id": "ms2_1_227",
+   "kind": "hold",
+   "target": 200,
+   "text": "Market me kul 200 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_228",
+   "kind": "own",
+   "target": 18,
+   "text": "Kam se kam 18 business own karo",
+   "reward": 5400
+  },
+  {
+   "id": "ms2_1_229",
+   "kind": "earn",
+   "target": 2000,
+   "text": "Aaj ₹2,000 kamao (revenue)",
+   "reward": 360
+  },
+  {
+   "id": "ms2_1_230",
+   "kind": "bank",
+   "target": 81000,
+   "text": "Bank balance ₹81,000 rakho",
+   "reward": 14580
+  },
+  {
+   "id": "ms2_1_231",
+   "kind": "hold",
+   "target": 70,
+   "text": "Market me kul 70 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_232",
+   "kind": "own",
+   "target": 12,
+   "text": "Kam se kam 12 business own karo",
+   "reward": 3600
+  },
+  {
+   "id": "ms2_1_233",
+   "kind": "earn",
+   "target": 18500,
+   "text": "Aaj ₹18,500 kamao (revenue)",
+   "reward": 3330
+  },
+  {
+   "id": "ms2_1_234",
+   "kind": "bank",
+   "target": 66000,
+   "text": "Bank balance ₹66,000 rakho",
+   "reward": 11880
+  },
+  {
+   "id": "ms2_1_235",
+   "kind": "hold",
+   "target": 75,
+   "text": "Market me kul 75 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_236",
+   "kind": "own",
+   "target": 21,
+   "text": "Kam se kam 21 business own karo",
+   "reward": 6300
+  },
+  {
+   "id": "ms2_1_237",
+   "kind": "earn",
+   "target": 52000,
+   "text": "Aaj ₹52,000 kamao (revenue)",
+   "reward": 9360
+  },
+  {
+   "id": "ms2_1_238",
+   "kind": "bank",
+   "target": 106000,
+   "text": "Bank balance ₹1,06,000 rakho",
+   "reward": 19080
+  },
+  {
+   "id": "ms2_1_239",
+   "kind": "hold",
+   "target": 75,
+   "text": "Market me kul 75 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_240",
+   "kind": "own",
+   "target": 9,
+   "text": "Kam se kam 9 business own karo",
+   "reward": 2700
+  },
+  {
+   "id": "ms2_1_241",
+   "kind": "earn",
+   "target": 11000,
+   "text": "Aaj ₹11,000 kamao (revenue)",
+   "reward": 1980
+  },
+  {
+   "id": "ms2_1_242",
+   "kind": "bank",
+   "target": 140000,
+   "text": "Bank balance ₹1,40,000 rakho",
+   "reward": 25200
+  },
+  {
+   "id": "ms2_1_243",
+   "kind": "hold",
+   "target": 80,
+   "text": "Market me kul 80 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_244",
+   "kind": "own",
+   "target": 5,
+   "text": "Kam se kam 5 business own karo",
+   "reward": 1500
+  },
+  {
+   "id": "ms2_1_245",
+   "kind": "earn",
+   "target": 160500,
+   "text": "Aaj ₹1,60,500 kamao (revenue)",
+   "reward": 28890
+  },
+  {
+   "id": "ms2_1_246",
+   "kind": "bank",
+   "target": 50000,
+   "text": "Bank balance ₹50,000 rakho",
+   "reward": 9000
+  },
+  {
+   "id": "ms2_1_247",
+   "kind": "hold",
+   "target": 265,
+   "text": "Market me kul 265 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_248",
+   "kind": "own",
+   "target": 20,
+   "text": "Kam se kam 20 business own karo",
+   "reward": 6000
+  },
+  {
+   "id": "ms2_1_249",
+   "kind": "earn",
+   "target": 105500,
+   "text": "Aaj ₹1,05,500 kamao (revenue)",
+   "reward": 18990
+  },
+  {
+   "id": "ms2_1_250",
+   "kind": "bank",
+   "target": 26000,
+   "text": "Bank balance ₹26,000 rakho",
+   "reward": 4680
+  },
+  {
+   "id": "ms2_1_251",
+   "kind": "hold",
+   "target": 125,
+   "text": "Market me kul 125 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_252",
+   "kind": "own",
+   "target": 15,
+   "text": "Kam se kam 15 business own karo",
+   "reward": 4500
+  },
+  {
+   "id": "ms2_1_253",
+   "kind": "earn",
+   "target": 119000,
+   "text": "Aaj ₹1,19,000 kamao (revenue)",
+   "reward": 21420
+  },
+  {
+   "id": "ms2_1_254",
+   "kind": "bank",
+   "target": 254000,
+   "text": "Bank balance ₹2,54,000 rakho",
+   "reward": 45720
+  },
+  {
+   "id": "ms2_1_255",
+   "kind": "hold",
+   "target": 285,
+   "text": "Market me kul 285 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_256",
+   "kind": "own",
+   "target": 13,
+   "text": "Kam se kam 13 business own karo",
+   "reward": 3900
+  },
+  {
+   "id": "ms2_1_257",
+   "kind": "earn",
+   "target": 62000,
+   "text": "Aaj ₹62,000 kamao (revenue)",
+   "reward": 11160
+  },
+  {
+   "id": "ms2_1_258",
+   "kind": "bank",
+   "target": 18000,
+   "text": "Bank balance ₹18,000 rakho",
+   "reward": 3240
+  },
+  {
+   "id": "ms2_1_259",
+   "kind": "hold",
+   "target": 265,
+   "text": "Market me kul 265 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_260",
+   "kind": "own",
+   "target": 14,
+   "text": "Kam se kam 14 business own karo",
+   "reward": 4200
+  },
+  {
+   "id": "ms2_1_261",
+   "kind": "earn",
+   "target": 103000,
+   "text": "Aaj ₹1,03,000 kamao (revenue)",
+   "reward": 18540
+  },
+  {
+   "id": "ms2_1_262",
+   "kind": "bank",
+   "target": 184000,
+   "text": "Bank balance ₹1,84,000 rakho",
+   "reward": 33120
+  },
+  {
+   "id": "ms2_1_263",
+   "kind": "hold",
+   "target": 165,
+   "text": "Market me kul 165 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_264",
+   "kind": "own",
+   "target": 21,
+   "text": "Kam se kam 21 business own karo",
+   "reward": 6300
+  },
+  {
+   "id": "ms2_1_265",
+   "kind": "earn",
+   "target": 181500,
+   "text": "Aaj ₹1,81,500 kamao (revenue)",
+   "reward": 32670
+  },
+  {
+   "id": "ms2_1_266",
+   "kind": "bank",
+   "target": 248000,
+   "text": "Bank balance ₹2,48,000 rakho",
+   "reward": 44640
+  },
+  {
+   "id": "ms2_1_267",
+   "kind": "hold",
+   "target": 170,
+   "text": "Market me kul 170 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_268",
+   "kind": "own",
+   "target": 18,
+   "text": "Kam se kam 18 business own karo",
+   "reward": 5400
+  },
+  {
+   "id": "ms2_1_269",
+   "kind": "earn",
+   "target": 161500,
+   "text": "Aaj ₹1,61,500 kamao (revenue)",
+   "reward": 29070
+  },
+  {
+   "id": "ms2_1_270",
+   "kind": "bank",
+   "target": 110000,
+   "text": "Bank balance ₹1,10,000 rakho",
+   "reward": 19800
+  },
+  {
+   "id": "ms2_1_271",
+   "kind": "hold",
+   "target": 165,
+   "text": "Market me kul 165 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_272",
+   "kind": "own",
+   "target": 24,
+   "text": "Kam se kam 24 business own karo",
+   "reward": 7200
+  },
+  {
+   "id": "ms2_1_273",
+   "kind": "earn",
+   "target": 20000,
+   "text": "Aaj ₹20,000 kamao (revenue)",
+   "reward": 3600
+  },
+  {
+   "id": "ms2_1_274",
+   "kind": "bank",
+   "target": 271000,
+   "text": "Bank balance ₹2,71,000 rakho",
+   "reward": 48780
+  },
+  {
+   "id": "ms2_1_275",
+   "kind": "hold",
+   "target": 295,
+   "text": "Market me kul 295 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_276",
+   "kind": "own",
+   "target": 21,
+   "text": "Kam se kam 21 business own karo",
+   "reward": 6300
+  },
+  {
+   "id": "ms2_1_277",
+   "kind": "earn",
+   "target": 124000,
+   "text": "Aaj ₹1,24,000 kamao (revenue)",
+   "reward": 22320
+  },
+  {
+   "id": "ms2_1_278",
+   "kind": "bank",
+   "target": 22000,
+   "text": "Bank balance ₹22,000 rakho",
+   "reward": 3960
+  },
+  {
+   "id": "ms2_1_279",
+   "kind": "hold",
+   "target": 205,
+   "text": "Market me kul 205 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_280",
+   "kind": "own",
+   "target": 18,
+   "text": "Kam se kam 18 business own karo",
+   "reward": 5400
+  },
+  {
+   "id": "ms2_1_281",
+   "kind": "earn",
+   "target": 126000,
+   "text": "Aaj ₹1,26,000 kamao (revenue)",
+   "reward": 22680
+  },
+  {
+   "id": "ms2_1_282",
+   "kind": "bank",
+   "target": 23000,
+   "text": "Bank balance ₹23,000 rakho",
+   "reward": 4140
+  },
+  {
+   "id": "ms2_1_283",
+   "kind": "hold",
+   "target": 105,
+   "text": "Market me kul 105 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_284",
+   "kind": "own",
+   "target": 11,
+   "text": "Kam se kam 11 business own karo",
+   "reward": 3300
+  },
+  {
+   "id": "ms2_1_285",
+   "kind": "earn",
+   "target": 181000,
+   "text": "Aaj ₹1,81,000 kamao (revenue)",
+   "reward": 32580
+  },
+  {
+   "id": "ms2_1_286",
+   "kind": "bank",
+   "target": 68000,
+   "text": "Bank balance ₹68,000 rakho",
+   "reward": 12240
+  },
+  {
+   "id": "ms2_1_287",
+   "kind": "hold",
+   "target": 155,
+   "text": "Market me kul 155 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_288",
+   "kind": "own",
+   "target": 22,
+   "text": "Kam se kam 22 business own karo",
+   "reward": 6600
+  },
+  {
+   "id": "ms2_1_289",
+   "kind": "earn",
+   "target": 117500,
+   "text": "Aaj ₹1,17,500 kamao (revenue)",
+   "reward": 21150
+  },
+  {
+   "id": "ms2_1_290",
+   "kind": "bank",
+   "target": 39000,
+   "text": "Bank balance ₹39,000 rakho",
+   "reward": 7020
+  },
+  {
+   "id": "ms2_1_291",
+   "kind": "hold",
+   "target": 150,
+   "text": "Market me kul 150 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_292",
+   "kind": "own",
+   "target": 5,
+   "text": "Kam se kam 5 business own karo",
+   "reward": 1500
+  },
+  {
+   "id": "ms2_1_293",
+   "kind": "earn",
+   "target": 136000,
+   "text": "Aaj ₹1,36,000 kamao (revenue)",
+   "reward": 24480
+  },
+  {
+   "id": "ms2_1_294",
+   "kind": "bank",
+   "target": 250000,
+   "text": "Bank balance ₹2,50,000 rakho",
+   "reward": 45000
+  },
+  {
+   "id": "ms2_1_295",
+   "kind": "hold",
+   "target": 210,
+   "text": "Market me kul 210 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_296",
+   "kind": "own",
+   "target": 4,
+   "text": "Kam se kam 4 business own karo",
+   "reward": 1200
+  },
+  {
+   "id": "ms2_1_297",
+   "kind": "earn",
+   "target": 193500,
+   "text": "Aaj ₹1,93,500 kamao (revenue)",
+   "reward": 34830
+  },
+  {
+   "id": "ms2_1_298",
+   "kind": "bank",
+   "target": 4000,
+   "text": "Bank balance ₹4,000 rakho",
+   "reward": 720
+  },
+  {
+   "id": "ms2_1_299",
+   "kind": "hold",
+   "target": 240,
+   "text": "Market me kul 240 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_300",
+   "kind": "own",
+   "target": 20,
+   "text": "Kam se kam 20 business own karo",
+   "reward": 6000
+  },
+  {
+   "id": "ms2_1_301",
+   "kind": "earn",
+   "target": 96000,
+   "text": "Aaj ₹96,000 kamao (revenue)",
+   "reward": 17280
+  },
+  {
+   "id": "ms2_1_302",
+   "kind": "bank",
+   "target": 197000,
+   "text": "Bank balance ₹1,97,000 rakho",
+   "reward": 35460
+  },
+  {
+   "id": "ms2_1_303",
+   "kind": "hold",
+   "target": 130,
+   "text": "Market me kul 130 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_304",
+   "kind": "own",
+   "target": 7,
+   "text": "Kam se kam 7 business own karo",
+   "reward": 2100
+  },
+  {
+   "id": "ms2_1_305",
+   "kind": "earn",
+   "target": 98000,
+   "text": "Aaj ₹98,000 kamao (revenue)",
+   "reward": 17640
+  },
+  {
+   "id": "ms2_1_306",
+   "kind": "bank",
+   "target": 63000,
+   "text": "Bank balance ₹63,000 rakho",
+   "reward": 11340
+  },
+  {
+   "id": "ms2_1_307",
+   "kind": "hold",
+   "target": 270,
+   "text": "Market me kul 270 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_308",
+   "kind": "own",
+   "target": 19,
+   "text": "Kam se kam 19 business own karo",
+   "reward": 5700
+  },
+  {
+   "id": "ms2_1_309",
+   "kind": "earn",
+   "target": 136000,
+   "text": "Aaj ₹1,36,000 kamao (revenue)",
+   "reward": 24480
+  },
+  {
+   "id": "ms2_1_310",
+   "kind": "bank",
+   "target": 13000,
+   "text": "Bank balance ₹13,000 rakho",
+   "reward": 2340
+  },
+  {
+   "id": "ms2_1_311",
+   "kind": "hold",
+   "target": 55,
+   "text": "Market me kul 55 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_312",
+   "kind": "own",
+   "target": 15,
+   "text": "Kam se kam 15 business own karo",
+   "reward": 4500
+  },
+  {
+   "id": "ms2_1_313",
+   "kind": "earn",
+   "target": 17500,
+   "text": "Aaj ₹17,500 kamao (revenue)",
+   "reward": 3150
+  },
+  {
+   "id": "ms2_1_314",
+   "kind": "bank",
+   "target": 131000,
+   "text": "Bank balance ₹1,31,000 rakho",
+   "reward": 23580
+  },
+  {
+   "id": "ms2_1_315",
+   "kind": "hold",
+   "target": 25,
+   "text": "Market me kul 25 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_316",
+   "kind": "own",
+   "target": 2,
+   "text": "Kam se kam 2 business own karo",
+   "reward": 600
+  },
+  {
+   "id": "ms2_1_317",
+   "kind": "earn",
+   "target": 18000,
+   "text": "Aaj ₹18,000 kamao (revenue)",
+   "reward": 3240
+  },
+  {
+   "id": "ms2_1_318",
+   "kind": "bank",
+   "target": 100000,
+   "text": "Bank balance ₹1,00,000 rakho",
+   "reward": 18000
+  },
+  {
+   "id": "ms2_1_319",
+   "kind": "hold",
+   "target": 80,
+   "text": "Market me kul 80 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_320",
+   "kind": "own",
+   "target": 10,
+   "text": "Kam se kam 10 business own karo",
+   "reward": 3000
+  },
+  {
+   "id": "ms2_1_321",
+   "kind": "earn",
+   "target": 145000,
+   "text": "Aaj ₹1,45,000 kamao (revenue)",
+   "reward": 26100
+  },
+  {
+   "id": "ms2_1_322",
+   "kind": "bank",
+   "target": 63000,
+   "text": "Bank balance ₹63,000 rakho",
+   "reward": 11340
+  },
+  {
+   "id": "ms2_1_323",
+   "kind": "hold",
+   "target": 295,
+   "text": "Market me kul 295 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_324",
+   "kind": "own",
+   "target": 5,
+   "text": "Kam se kam 5 business own karo",
+   "reward": 1500
+  },
+  {
+   "id": "ms2_1_325",
+   "kind": "earn",
+   "target": 21000,
+   "text": "Aaj ₹21,000 kamao (revenue)",
+   "reward": 3780
+  },
+  {
+   "id": "ms2_1_326",
+   "kind": "bank",
+   "target": 211000,
+   "text": "Bank balance ₹2,11,000 rakho",
+   "reward": 37980
+  },
+  {
+   "id": "ms2_1_327",
+   "kind": "hold",
+   "target": 135,
+   "text": "Market me kul 135 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_328",
+   "kind": "own",
+   "target": 13,
+   "text": "Kam se kam 13 business own karo",
+   "reward": 3900
+  },
+  {
+   "id": "ms2_1_329",
+   "kind": "earn",
+   "target": 186500,
+   "text": "Aaj ₹1,86,500 kamao (revenue)",
+   "reward": 33570
+  },
+  {
+   "id": "ms2_1_330",
+   "kind": "bank",
+   "target": 261000,
+   "text": "Bank balance ₹2,61,000 rakho",
+   "reward": 46980
+  },
+  {
+   "id": "ms2_1_331",
+   "kind": "hold",
+   "target": 250,
+   "text": "Market me kul 250 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_332",
+   "kind": "own",
+   "target": 14,
+   "text": "Kam se kam 14 business own karo",
+   "reward": 4200
+  },
+  {
+   "id": "ms2_1_333",
+   "kind": "earn",
+   "target": 193000,
+   "text": "Aaj ₹1,93,000 kamao (revenue)",
+   "reward": 34740
+  },
+  {
+   "id": "ms2_1_334",
+   "kind": "bank",
+   "target": 148000,
+   "text": "Bank balance ₹1,48,000 rakho",
+   "reward": 26640
+  },
+  {
+   "id": "ms2_1_335",
+   "kind": "hold",
+   "target": 270,
+   "text": "Market me kul 270 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_336",
+   "kind": "own",
+   "target": 20,
+   "text": "Kam se kam 20 business own karo",
+   "reward": 6000
+  },
+  {
+   "id": "ms2_1_337",
+   "kind": "earn",
+   "target": 166000,
+   "text": "Aaj ₹1,66,000 kamao (revenue)",
+   "reward": 29880
+  },
+  {
+   "id": "ms2_1_338",
+   "kind": "bank",
+   "target": 181000,
+   "text": "Bank balance ₹1,81,000 rakho",
+   "reward": 32580
+  },
+  {
+   "id": "ms2_1_339",
+   "kind": "hold",
+   "target": 235,
+   "text": "Market me kul 235 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_340",
+   "kind": "own",
+   "target": 12,
+   "text": "Kam se kam 12 business own karo",
+   "reward": 3600
+  },
+  {
+   "id": "ms2_1_341",
+   "kind": "earn",
+   "target": 109500,
+   "text": "Aaj ₹1,09,500 kamao (revenue)",
+   "reward": 19710
+  },
+  {
+   "id": "ms2_1_342",
+   "kind": "bank",
+   "target": 145000,
+   "text": "Bank balance ₹1,45,000 rakho",
+   "reward": 26100
+  },
+  {
+   "id": "ms2_1_343",
+   "kind": "hold",
+   "target": 195,
+   "text": "Market me kul 195 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_344",
+   "kind": "own",
+   "target": 22,
+   "text": "Kam se kam 22 business own karo",
+   "reward": 6600
+  },
+  {
+   "id": "ms2_1_345",
+   "kind": "earn",
+   "target": 133000,
+   "text": "Aaj ₹1,33,000 kamao (revenue)",
+   "reward": 23940
+  },
+  {
+   "id": "ms2_1_346",
+   "kind": "bank",
+   "target": 68000,
+   "text": "Bank balance ₹68,000 rakho",
+   "reward": 12240
+  },
+  {
+   "id": "ms2_1_347",
+   "kind": "hold",
+   "target": 200,
+   "text": "Market me kul 200 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_348",
+   "kind": "own",
+   "target": 14,
+   "text": "Kam se kam 14 business own karo",
+   "reward": 4200
+  },
+  {
+   "id": "ms2_1_349",
+   "kind": "earn",
+   "target": 89500,
+   "text": "Aaj ₹89,500 kamao (revenue)",
+   "reward": 16110
+  },
+  {
+   "id": "ms2_1_350",
+   "kind": "bank",
+   "target": 86000,
+   "text": "Bank balance ₹86,000 rakho",
+   "reward": 15480
+  },
+  {
+   "id": "ms2_1_351",
+   "kind": "hold",
+   "target": 280,
+   "text": "Market me kul 280 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_352",
+   "kind": "own",
+   "target": 11,
+   "text": "Kam se kam 11 business own karo",
+   "reward": 3300
+  },
+  {
+   "id": "ms2_1_353",
+   "kind": "earn",
+   "target": 118500,
+   "text": "Aaj ₹1,18,500 kamao (revenue)",
+   "reward": 21330
+  },
+  {
+   "id": "ms2_1_354",
+   "kind": "bank",
+   "target": 149000,
+   "text": "Bank balance ₹1,49,000 rakho",
+   "reward": 26820
+  },
+  {
+   "id": "ms2_1_355",
+   "kind": "hold",
+   "target": 60,
+   "text": "Market me kul 60 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_356",
+   "kind": "own",
+   "target": 12,
+   "text": "Kam se kam 12 business own karo",
+   "reward": 3600
+  },
+  {
+   "id": "ms2_1_357",
+   "kind": "earn",
+   "target": 192500,
+   "text": "Aaj ₹1,92,500 kamao (revenue)",
+   "reward": 34650
+  },
+  {
+   "id": "ms2_1_358",
+   "kind": "bank",
+   "target": 168000,
+   "text": "Bank balance ₹1,68,000 rakho",
+   "reward": 30240
+  },
+  {
+   "id": "ms2_1_359",
+   "kind": "hold",
+   "target": 250,
+   "text": "Market me kul 250 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_360",
+   "kind": "own",
+   "target": 1,
+   "text": "Kam se kam 1 business own karo",
+   "reward": 300
+  },
+  {
+   "id": "ms2_1_361",
+   "kind": "earn",
+   "target": 89500,
+   "text": "Aaj ₹89,500 kamao (revenue)",
+   "reward": 16110
+  },
+  {
+   "id": "ms2_1_362",
+   "kind": "bank",
+   "target": 167000,
+   "text": "Bank balance ₹1,67,000 rakho",
+   "reward": 30060
+  },
+  {
+   "id": "ms2_1_363",
+   "kind": "hold",
+   "target": 100,
+   "text": "Market me kul 100 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_364",
+   "kind": "own",
+   "target": 1,
+   "text": "Kam se kam 1 business own karo",
+   "reward": 300
+  },
+  {
+   "id": "ms2_1_365",
+   "kind": "earn",
+   "target": 121000,
+   "text": "Aaj ₹1,21,000 kamao (revenue)",
+   "reward": 21780
+  },
+  {
+   "id": "ms2_1_366",
+   "kind": "bank",
+   "target": 35000,
+   "text": "Bank balance ₹35,000 rakho",
+   "reward": 6300
+  },
+  {
+   "id": "ms2_1_367",
+   "kind": "hold",
+   "target": 200,
+   "text": "Market me kul 200 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_368",
+   "kind": "own",
+   "target": 19,
+   "text": "Kam se kam 19 business own karo",
+   "reward": 5700
+  },
+  {
+   "id": "ms2_1_369",
+   "kind": "earn",
+   "target": 123000,
+   "text": "Aaj ₹1,23,000 kamao (revenue)",
+   "reward": 22140
+  },
+  {
+   "id": "ms2_1_370",
+   "kind": "bank",
+   "target": 31000,
+   "text": "Bank balance ₹31,000 rakho",
+   "reward": 5580
+  },
+  {
+   "id": "ms2_1_371",
+   "kind": "hold",
+   "target": 30,
+   "text": "Market me kul 30 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_372",
+   "kind": "own",
+   "target": 22,
+   "text": "Kam se kam 22 business own karo",
+   "reward": 6600
+  },
+  {
+   "id": "ms2_1_373",
+   "kind": "earn",
+   "target": 177000,
+   "text": "Aaj ₹1,77,000 kamao (revenue)",
+   "reward": 31860
+  },
+  {
+   "id": "ms2_1_374",
+   "kind": "bank",
+   "target": 53000,
+   "text": "Bank balance ₹53,000 rakho",
+   "reward": 9540
+  },
+  {
+   "id": "ms2_1_375",
+   "kind": "hold",
+   "target": 225,
+   "text": "Market me kul 225 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_376",
+   "kind": "own",
+   "target": 3,
+   "text": "Kam se kam 3 business own karo",
+   "reward": 900
+  },
+  {
+   "id": "ms2_1_377",
+   "kind": "earn",
+   "target": 76500,
+   "text": "Aaj ₹76,500 kamao (revenue)",
+   "reward": 13770
+  },
+  {
+   "id": "ms2_1_378",
+   "kind": "bank",
+   "target": 154000,
+   "text": "Bank balance ₹1,54,000 rakho",
+   "reward": 27720
+  },
+  {
+   "id": "ms2_1_379",
+   "kind": "hold",
+   "target": 180,
+   "text": "Market me kul 180 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_380",
+   "kind": "own",
+   "target": 7,
+   "text": "Kam se kam 7 business own karo",
+   "reward": 2100
+  },
+  {
+   "id": "ms2_1_381",
+   "kind": "earn",
+   "target": 48500,
+   "text": "Aaj ₹48,500 kamao (revenue)",
+   "reward": 8730
+  },
+  {
+   "id": "ms2_1_382",
+   "kind": "bank",
+   "target": 17000,
+   "text": "Bank balance ₹17,000 rakho",
+   "reward": 3060
+  },
+  {
+   "id": "ms2_1_383",
+   "kind": "hold",
+   "target": 200,
+   "text": "Market me kul 200 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_384",
+   "kind": "own",
+   "target": 7,
+   "text": "Kam se kam 7 business own karo",
+   "reward": 2100
+  },
+  {
+   "id": "ms2_1_385",
+   "kind": "earn",
+   "target": 163500,
+   "text": "Aaj ₹1,63,500 kamao (revenue)",
+   "reward": 29430
+  },
+  {
+   "id": "ms2_1_386",
+   "kind": "bank",
+   "target": 254000,
+   "text": "Bank balance ₹2,54,000 rakho",
+   "reward": 45720
+  },
+  {
+   "id": "ms2_1_387",
+   "kind": "hold",
+   "target": 90,
+   "text": "Market me kul 90 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_388",
+   "kind": "own",
+   "target": 1,
+   "text": "Kam se kam 1 business own karo",
+   "reward": 300
+  },
+  {
+   "id": "ms2_1_389",
+   "kind": "earn",
+   "target": 75000,
+   "text": "Aaj ₹75,000 kamao (revenue)",
+   "reward": 13500
+  },
+  {
+   "id": "ms2_1_390",
+   "kind": "bank",
+   "target": 64000,
+   "text": "Bank balance ₹64,000 rakho",
+   "reward": 11520
+  },
+  {
+   "id": "ms2_1_391",
+   "kind": "hold",
+   "target": 250,
+   "text": "Market me kul 250 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_392",
+   "kind": "own",
+   "target": 19,
+   "text": "Kam se kam 19 business own karo",
+   "reward": 5700
+  },
+  {
+   "id": "ms2_1_393",
+   "kind": "earn",
+   "target": 118500,
+   "text": "Aaj ₹1,18,500 kamao (revenue)",
+   "reward": 21330
+  },
+  {
+   "id": "ms2_1_394",
+   "kind": "bank",
+   "target": 207000,
+   "text": "Bank balance ₹2,07,000 rakho",
+   "reward": 37260
+  },
+  {
+   "id": "ms2_1_395",
+   "kind": "hold",
+   "target": 245,
+   "text": "Market me kul 245 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_396",
+   "kind": "own",
+   "target": 8,
+   "text": "Kam se kam 8 business own karo",
+   "reward": 2400
+  },
+  {
+   "id": "ms2_1_397",
+   "kind": "earn",
+   "target": 8000,
+   "text": "Aaj ₹8,000 kamao (revenue)",
+   "reward": 1440
+  },
+  {
+   "id": "ms2_1_398",
+   "kind": "bank",
+   "target": 93000,
+   "text": "Bank balance ₹93,000 rakho",
+   "reward": 16740
+  },
+  {
+   "id": "ms2_1_399",
+   "kind": "hold",
+   "target": 110,
+   "text": "Market me kul 110 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_400",
+   "kind": "own",
+   "target": 22,
+   "text": "Kam se kam 22 business own karo",
+   "reward": 6600
+  },
+  {
+   "id": "ms2_1_401",
+   "kind": "earn",
+   "target": 31000,
+   "text": "Aaj ₹31,000 kamao (revenue)",
+   "reward": 5580
+  },
+  {
+   "id": "ms2_1_402",
+   "kind": "bank",
+   "target": 145000,
+   "text": "Bank balance ₹1,45,000 rakho",
+   "reward": 26100
+  },
+  {
+   "id": "ms2_1_403",
+   "kind": "hold",
+   "target": 40,
+   "text": "Market me kul 40 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_404",
+   "kind": "own",
+   "target": 11,
+   "text": "Kam se kam 11 business own karo",
+   "reward": 3300
+  },
+  {
+   "id": "ms2_1_405",
+   "kind": "earn",
+   "target": 155500,
+   "text": "Aaj ₹1,55,500 kamao (revenue)",
+   "reward": 27990
+  },
+  {
+   "id": "ms2_1_406",
+   "kind": "bank",
+   "target": 277000,
+   "text": "Bank balance ₹2,77,000 rakho",
+   "reward": 49860
+  },
+  {
+   "id": "ms2_1_407",
+   "kind": "hold",
+   "target": 220,
+   "text": "Market me kul 220 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_408",
+   "kind": "own",
+   "target": 13,
+   "text": "Kam se kam 13 business own karo",
+   "reward": 3900
+  },
+  {
+   "id": "ms2_1_409",
+   "kind": "earn",
+   "target": 75000,
+   "text": "Aaj ₹75,000 kamao (revenue)",
+   "reward": 13500
+  },
+  {
+   "id": "ms2_1_410",
+   "kind": "bank",
+   "target": 259000,
+   "text": "Bank balance ₹2,59,000 rakho",
+   "reward": 46620
+  },
+  {
+   "id": "ms2_1_411",
+   "kind": "hold",
+   "target": 165,
+   "text": "Market me kul 165 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_412",
+   "kind": "own",
+   "target": 11,
+   "text": "Kam se kam 11 business own karo",
+   "reward": 3300
+  },
+  {
+   "id": "ms2_1_413",
+   "kind": "earn",
+   "target": 144000,
+   "text": "Aaj ₹1,44,000 kamao (revenue)",
+   "reward": 25920
+  },
+  {
+   "id": "ms2_1_414",
+   "kind": "bank",
+   "target": 47000,
+   "text": "Bank balance ₹47,000 rakho",
+   "reward": 8460
+  },
+  {
+   "id": "ms2_1_415",
+   "kind": "hold",
+   "target": 290,
+   "text": "Market me kul 290 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_416",
+   "kind": "own",
+   "target": 8,
+   "text": "Kam se kam 8 business own karo",
+   "reward": 2400
+  },
+  {
+   "id": "ms2_1_417",
+   "kind": "earn",
+   "target": 115500,
+   "text": "Aaj ₹1,15,500 kamao (revenue)",
+   "reward": 20790
+  },
+  {
+   "id": "ms2_1_418",
+   "kind": "bank",
+   "target": 81000,
+   "text": "Bank balance ₹81,000 rakho",
+   "reward": 14580
+  },
+  {
+   "id": "ms2_1_419",
+   "kind": "hold",
+   "target": 75,
+   "text": "Market me kul 75 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_420",
+   "kind": "own",
+   "target": 2,
+   "text": "Kam se kam 2 business own karo",
+   "reward": 600
+  },
+  {
+   "id": "ms2_1_421",
+   "kind": "earn",
+   "target": 2000,
+   "text": "Aaj ₹2,000 kamao (revenue)",
+   "reward": 360
+  },
+  {
+   "id": "ms2_1_422",
+   "kind": "bank",
+   "target": 292000,
+   "text": "Bank balance ₹2,92,000 rakho",
+   "reward": 52560
+  },
+  {
+   "id": "ms2_1_423",
+   "kind": "hold",
+   "target": 215,
+   "text": "Market me kul 215 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_424",
+   "kind": "own",
+   "target": 12,
+   "text": "Kam se kam 12 business own karo",
+   "reward": 3600
+  },
+  {
+   "id": "ms2_1_425",
+   "kind": "earn",
+   "target": 22000,
+   "text": "Aaj ₹22,000 kamao (revenue)",
+   "reward": 3960
+  },
+  {
+   "id": "ms2_1_426",
+   "kind": "bank",
+   "target": 60000,
+   "text": "Bank balance ₹60,000 rakho",
+   "reward": 10800
+  },
+  {
+   "id": "ms2_1_427",
+   "kind": "hold",
+   "target": 265,
+   "text": "Market me kul 265 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_428",
+   "kind": "own",
+   "target": 10,
+   "text": "Kam se kam 10 business own karo",
+   "reward": 3000
+  },
+  {
+   "id": "ms2_1_429",
+   "kind": "earn",
+   "target": 24000,
+   "text": "Aaj ₹24,000 kamao (revenue)",
+   "reward": 4320
+  },
+  {
+   "id": "ms2_1_430",
+   "kind": "bank",
+   "target": 208000,
+   "text": "Bank balance ₹2,08,000 rakho",
+   "reward": 37440
+  },
+  {
+   "id": "ms2_1_431",
+   "kind": "hold",
+   "target": 45,
+   "text": "Market me kul 45 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_432",
+   "kind": "own",
+   "target": 10,
+   "text": "Kam se kam 10 business own karo",
+   "reward": 3000
+  },
+  {
+   "id": "ms2_1_433",
+   "kind": "earn",
+   "target": 51000,
+   "text": "Aaj ₹51,000 kamao (revenue)",
+   "reward": 9180
+  },
+  {
+   "id": "ms2_1_434",
+   "kind": "bank",
+   "target": 77000,
+   "text": "Bank balance ₹77,000 rakho",
+   "reward": 13860
+  },
+  {
+   "id": "ms2_1_435",
+   "kind": "hold",
+   "target": 295,
+   "text": "Market me kul 295 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_436",
+   "kind": "own",
+   "target": 9,
+   "text": "Kam se kam 9 business own karo",
+   "reward": 2700
+  },
+  {
+   "id": "ms2_1_437",
+   "kind": "earn",
+   "target": 74000,
+   "text": "Aaj ₹74,000 kamao (revenue)",
+   "reward": 13320
+  },
+  {
+   "id": "ms2_1_438",
+   "kind": "bank",
+   "target": 69000,
+   "text": "Bank balance ₹69,000 rakho",
+   "reward": 12420
+  },
+  {
+   "id": "ms2_1_439",
+   "kind": "hold",
+   "target": 130,
+   "text": "Market me kul 130 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_440",
+   "kind": "own",
+   "target": 21,
+   "text": "Kam se kam 21 business own karo",
+   "reward": 6300
+  },
+  {
+   "id": "ms2_1_441",
+   "kind": "earn",
+   "target": 103500,
+   "text": "Aaj ₹1,03,500 kamao (revenue)",
+   "reward": 18630
+  },
+  {
+   "id": "ms2_1_442",
+   "kind": "bank",
+   "target": 201000,
+   "text": "Bank balance ₹2,01,000 rakho",
+   "reward": 36180
+  },
+  {
+   "id": "ms2_1_443",
+   "kind": "hold",
+   "target": 280,
+   "text": "Market me kul 280 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_444",
+   "kind": "own",
+   "target": 10,
+   "text": "Kam se kam 10 business own karo",
+   "reward": 3000
+  },
+  {
+   "id": "ms2_1_445",
+   "kind": "earn",
+   "target": 89000,
+   "text": "Aaj ₹89,000 kamao (revenue)",
+   "reward": 16020
+  },
+  {
+   "id": "ms2_1_446",
+   "kind": "bank",
+   "target": 222000,
+   "text": "Bank balance ₹2,22,000 rakho",
+   "reward": 39960
+  },
+  {
+   "id": "ms2_1_447",
+   "kind": "hold",
+   "target": 60,
+   "text": "Market me kul 60 shares/units rakho",
+   "reward": 150
+  },
+  {
+   "id": "ms2_1_448",
+   "kind": "own",
+   "target": 15,
+   "text": "Kam se kam 15 business own karo",
+   "reward": 4500
+  },
+  {
+   "id": "ms2_1_449",
+   "kind": "earn",
+   "target": 51000,
+   "text": "Aaj ₹51,000 kamao (revenue)",
+   "reward": 9180
+  },
+  {
+   "id": "ms2_1_450",
+   "kind": "bank",
+   "target": 200000,
+   "text": "Bank balance ₹2,00,000 rakho",
+   "reward": 36000
+  },
+]

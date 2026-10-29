@@ -1,0 +1,4053 @@
+// Customer stories & reviews (deep) — part 18: naam wale graahak, unki asal ray
+export const CUSTOMERS_18 = [
+  {
+   "id": "cu2_10_1",
+   "name": "Julie Sinha",
+   "age": 28,
+   "job": "rickshaw puller",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Ek-do baar der hui, par kaam pakka hua. Pure mohalle ko bata diya hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_2",
+   "name": "Pankaj Shetty",
+   "age": 61,
+   "job": "book seller",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Paanch sitaare se kam banta hi nahi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_3",
+   "name": "Alisha Bansal",
+   "age": 41,
+   "job": "fruit seller",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Purana samaan badal kar naya de diya, bina jhanjhat. Dil se shukriya — aise hi chalao. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_4",
+   "name": "Kinjal Kumar",
+   "age": 38,
+   "job": "barber",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Bheed zyada thi par number sahi aaya. Rating kam dene ka man hi nahi karta. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_5",
+   "name": "Navdeep Mishra",
+   "age": 75,
+   "job": "delivery partner",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ghar walo ko bhi yahi jagah pasand aayi. Pure mohalle ko bata diya hai. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_6",
+   "name": "Naveen Pillai",
+   "age": 73,
+   "job": "book seller",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Quality me koi samjhota nahi dikha. Sheher me isse behtar mushkil hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_7",
+   "name": "Simran Bansal",
+   "age": 20,
+   "job": "mobile repair wala",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Har baar ek jaisi quality — yahi bharosa hai. Peek hours me bheed sambhalni padegi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_8",
+   "name": "Shalini Raman",
+   "age": 29,
+   "job": "graphic designer",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Bheed zyada thi par number sahi aaya. Parking ki dikkat hai, baaki sab badhiya. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_9",
+   "name": "Jaspreet Mishra",
+   "age": 32,
+   "job": "yoga instructor",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Report time par aur sahi mili. Har mahine ka pakka kharcha yahi bandh gaya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_10",
+   "name": "Harleen Raju",
+   "age": 24,
+   "job": "social media manager",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Quality me koi samjhota nahi dikha. Pure mohalle ko bata diya hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_11",
+   "name": "Meera Khan",
+   "age": 40,
+   "job": "video editor",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Daam bazaar ke hisaab se sahi hai. Agli baar pariwar ko bhi launga. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_12",
+   "name": "Geeta Venkatesh",
+   "age": 49,
+   "job": "sweet shop owner",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Purana samaan badal kar naya de diya, bina jhanjhat. Pure mohalle ko bata diya hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_13",
+   "name": "Nisha Balaji",
+   "age": 67,
+   "job": "physiotherapist",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Har baar ek jaisi quality — yahi bharosa hai. Ek baar galti hui, turant sudhaar bhi diya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_14",
+   "name": "Yusuf Singh",
+   "age": 22,
+   "job": "sales executive",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ghar walo ko bhi yahi jagah pasand aayi. Dil se shukriya — aise hi chalao. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_15",
+   "name": "Mohit Chandra",
+   "age": 64,
+   "job": "journalist",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Bilkul waisa mila jaisa bataya gaya tha. Rating kam dene ka man hi nahi karta. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_16",
+   "name": "Danish Kulkarni",
+   "age": 53,
+   "job": "data entry operator",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Kaam samay par aur saaf-suthra hua. Thoda intezaar zyada ho gaya, par kaam acha hua. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_17",
+   "name": "Vandana Prasad",
+   "age": 71,
+   "job": "rickshaw puller",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Kaam samay par aur saaf-suthra hua. Jo paisa diya, vasool ho gaya. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_18",
+   "name": "Shalini Banerjee",
+   "age": 40,
+   "job": "dhaba owner",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Daam bazaar ke hisaab se sahi hai. Thoda intezaar zyada ho gaya, par kaam acha hua. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_19",
+   "name": "Salman Shukla",
+   "age": 32,
+   "job": "video editor",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bilkul waisa mila jaisa bataya gaya tha. Agli baar pariwar ko bhi launga. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_20",
+   "name": "Ira Verma",
+   "age": 50,
+   "job": "content writer",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Kaam samay par aur saaf-suthra hua. Agli baar pariwar ko bhi launga. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_21",
+   "name": "Geeta Mukherjee",
+   "age": 18,
+   "job": "metro guard",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Har baar ek jaisi quality — yahi bharosa hai. Sheher me isse behtar mushkil hai. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_22",
+   "name": "Rubina Kumar",
+   "age": 23,
+   "job": "peon",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Daam bazaar ke hisaab se sahi hai. Peek hours me bheed sambhalni padegi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_23",
+   "name": "Mamta Qureshi",
+   "age": 64,
+   "job": "watchman",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Bheed zyada thi par number sahi aaya. Rating kam dene ka man hi nahi karta. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_24",
+   "name": "Hardik Gupta",
+   "age": 36,
+   "job": "college student",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Bheed zyada thi par number sahi aaya. Pure mohalle ko bata diya hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_25",
+   "name": "Nilesh Fernandes",
+   "age": 63,
+   "job": "stationery owner",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Quality me koi samjhota nahi dikha. Jo paisa diya, vasool ho gaya. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_26",
+   "name": "Arman Bose",
+   "age": 41,
+   "job": "carpenter",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Purana samaan badal kar naya de diya, bina jhanjhat. Dil se shukriya — aise hi chalao. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_27",
+   "name": "Kavita Rajput",
+   "age": 78,
+   "job": "bus conductor",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Purana samaan badal kar naya de diya, bina jhanjhat. Daam halka sa zyada laga, par quality ne mana liya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_28",
+   "name": "Ravi Fernandes",
+   "age": 23,
+   "job": "gym trainer",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Report time par aur sahi mili. Ab to yahi apni permanent jagah hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_29",
+   "name": "Shanti Pawar",
+   "age": 73,
+   "job": "dhaba owner",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Bheed zyada thi par number sahi aaya. Har mahine ka pakka kharcha yahi bandh gaya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_30",
+   "name": "Zoya Chatterjee",
+   "age": 29,
+   "job": "mobile repair wala",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Ghar walo ko bhi yahi jagah pasand aayi. Ab to yahi apni permanent jagah hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_31",
+   "name": "Kinjal Mathew",
+   "age": 52,
+   "job": "rickshaw puller",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Bheed zyada thi par number sahi aaya. Paanch sitaare se kam banta hi nahi. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_32",
+   "name": "Kiran Kulkarni",
+   "age": 38,
+   "job": "kirana owner",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Quality me koi samjhota nahi dikha. Har mahine ka pakka kharcha yahi bandh gaya. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_33",
+   "name": "Kinjal Iyer",
+   "age": 65,
+   "job": "mobile repair wala",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ek-do baar der hui, par kaam pakka hua. Sheher me isse behtar mushkil hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_34",
+   "name": "Aditya Khan",
+   "age": 66,
+   "job": "barber",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Daam bazaar ke hisaab se sahi hai. Agli baar pariwar ko bhi launga. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_35",
+   "name": "Pooja Mathew",
+   "age": 53,
+   "job": "tuition wala",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Bheed zyada thi par number sahi aaya. Parking ki dikkat hai, baaki sab badhiya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_36",
+   "name": "Jyoti Mukherjee",
+   "age": 18,
+   "job": "pandit ji",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Purana samaan badal kar naya de diya, bina jhanjhat. Ab to yahi apni permanent jagah hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_37",
+   "name": "Jitendra Das",
+   "age": 25,
+   "job": "police constable",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Purana samaan badal kar naya de diya, bina jhanjhat. Agli baar pariwar ko bhi launga. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_38",
+   "name": "Harleen Chowdary",
+   "age": 40,
+   "job": "school teacher",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Purana samaan badal kar naya de diya, bina jhanjhat. Agli baar pariwar ko bhi launga. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_39",
+   "name": "Gaurav Das",
+   "age": 20,
+   "job": "delivery partner",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Daam bazaar ke hisaab se sahi hai. Pure mohalle ko bata diya hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_40",
+   "name": "Jaspreet Prasad",
+   "age": 49,
+   "job": "metro guard",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Daam bazaar ke hisaab se sahi hai. Thoda intezaar zyada ho gaya, par kaam acha hua. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_41",
+   "name": "Rakesh Dutta",
+   "age": 77,
+   "job": "bank clerk",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Bheed zyada thi par number sahi aaya. Paanch sitaare se kam banta hi nahi. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_42",
+   "name": "David Khanna",
+   "age": 71,
+   "job": "book seller",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Kaam samay par aur saaf-suthra hua. Pehle din se bachat dikhne lagi. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_43",
+   "name": "Farah Patil",
+   "age": 30,
+   "job": "rickshaw puller",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Quality me koi samjhota nahi dikha. Thoda intezaar zyada ho gaya, par kaam acha hua. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_44",
+   "name": "Mohit Krishnan",
+   "age": 42,
+   "job": "CA student",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Quality me koi samjhota nahi dikha. Agli baar pariwar ko bhi launga. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_45",
+   "name": "Sanjay Ghosh",
+   "age": 24,
+   "job": "cab driver",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Kaam samay par aur saaf-suthra hua. Har mahine ka pakka kharcha yahi bandh gaya. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_46",
+   "name": "Ritu Varma",
+   "age": 64,
+   "job": "waiter",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ghar walo ko bhi yahi jagah pasand aayi. Har mahine ka pakka kharcha yahi bandh gaya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_47",
+   "name": "Vikram Hegde",
+   "age": 46,
+   "job": "travel agent",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bheed zyada thi par number sahi aaya. Jo paisa diya, vasool ho gaya. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_48",
+   "name": "Lily Rajput",
+   "age": 37,
+   "job": "chef",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Daam bazaar ke hisaab se sahi hai. Pure mohalle ko bata diya hai. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_49",
+   "name": "Suresh Sethi",
+   "age": 65,
+   "job": "journalist",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bheed zyada thi par number sahi aaya. Sheher me isse behtar mushkil hai. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_50",
+   "name": "Faizan Qureshi",
+   "age": 42,
+   "job": "stock trader",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Daam bazaar ke hisaab se sahi hai. Parking ki dikkat hai, baaki sab badhiya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_51",
+   "name": "Pushpa Venkatesh",
+   "age": 18,
+   "job": "bus conductor",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Bheed zyada thi par number sahi aaya. Jo paisa diya, vasool ho gaya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_52",
+   "name": "Archana Patil",
+   "age": 39,
+   "job": "rickshaw puller",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Kaam samay par aur saaf-suthra hua. Pehle din se bachat dikhne lagi. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_53",
+   "name": "Aadhya Joshi",
+   "age": 20,
+   "job": "hotel manager",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Har baar ek jaisi quality — yahi bharosa hai. Agli baar pariwar ko bhi launga. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_54",
+   "name": "Faizan Rani",
+   "age": 54,
+   "job": "pharmacist",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Purana samaan badal kar naya de diya, bina jhanjhat. Paanch sitaare se kam banta hi nahi. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_55",
+   "name": "Jitendra Mehta",
+   "age": 45,
+   "job": "physiotherapist",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Pure mohalle ko bata diya hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_56",
+   "name": "Mohit George",
+   "age": 41,
+   "job": "florist",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Ek-do baar der hui, par kaam pakka hua. Peek hours me bheed sambhalni padegi. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_57",
+   "name": "Pankaj Rajput",
+   "age": 22,
+   "job": "postman",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Ek-do baar der hui, par kaam pakka hua. Ek baar galti hui, turant sudhaar bhi diya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_58",
+   "name": "Avni Khan",
+   "age": 67,
+   "job": "milkman",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Ghar walo ko bhi yahi jagah pasand aayi. Sheher me isse behtar mushkil hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_59",
+   "name": "Danish Kumari",
+   "age": 65,
+   "job": "sweeper supervisor",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Ek-do baar der hui, par kaam pakka hua. Daam halka sa zyada laga, par quality ne mana liya. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_60",
+   "name": "Vaishali George",
+   "age": 35,
+   "job": "college student",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Bilkul waisa mila jaisa bataya gaya tha. Agli baar pariwar ko bhi launga. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_61",
+   "name": "Sunita Chawla",
+   "age": 28,
+   "job": "delivery partner",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Ek-do baar der hui, par kaam pakka hua. Jo paisa diya, vasool ho gaya. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_62",
+   "name": "Yogesh Rao",
+   "age": 68,
+   "job": "insurance advisor",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Bilkul waisa mila jaisa bataya gaya tha. Paanch sitaare se kam banta hi nahi. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_63",
+   "name": "Jignesh Chowdary",
+   "age": 49,
+   "job": "stationery owner",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Bheed zyada thi par number sahi aaya. Sheher me isse behtar mushkil hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_64",
+   "name": "Nilesh Sandhu",
+   "age": 69,
+   "job": "tour guide",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Ghar walo ko bhi yahi jagah pasand aayi. Rating kam dene ka man hi nahi karta. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_65",
+   "name": "Vivaan Mukherjee",
+   "age": 77,
+   "job": "waiter",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Purana samaan badal kar naya de diya, bina jhanjhat. Rating kam dene ka man hi nahi karta. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_66",
+   "name": "Hardik Ansari",
+   "age": 72,
+   "job": "yoga instructor",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ghar walo ko bhi yahi jagah pasand aayi. Har mahine ka pakka kharcha yahi bandh gaya. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_67",
+   "name": "Pankaj Jain",
+   "age": 56,
+   "job": "bus conductor",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bheed zyada thi par number sahi aaya. Pure mohalle ko bata diya hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_68",
+   "name": "Ashok Bhatia",
+   "age": 47,
+   "job": "yoga instructor",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Daam bazaar ke hisaab se sahi hai. Agli baar pariwar ko bhi launga. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_69",
+   "name": "Tarun Khanna",
+   "age": 37,
+   "job": "milkman",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Ghar walo ko bhi yahi jagah pasand aayi. Pehle din se bachat dikhne lagi. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_70",
+   "name": "Manpreet Pawar",
+   "age": 70,
+   "job": "nurse",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Peek hours me bheed sambhalni padegi. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_71",
+   "name": "Ravi Kaur",
+   "age": 78,
+   "job": "kirana owner",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ek-do baar der hui, par kaam pakka hua. Sheher me isse behtar mushkil hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_72",
+   "name": "Ira Singh",
+   "age": 41,
+   "job": "barber",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Bheed zyada thi par number sahi aaya. Sheher me isse behtar mushkil hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_73",
+   "name": "Kinjal Khan",
+   "age": 33,
+   "job": "florist",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Har baar ek jaisi quality — yahi bharosa hai. Ab to yahi apni permanent jagah hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_74",
+   "name": "Sneha Gupta",
+   "age": 31,
+   "job": "dhaba owner",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Quality me koi samjhota nahi dikha. Jo paisa diya, vasool ho gaya. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_75",
+   "name": "George Prakash",
+   "age": 27,
+   "job": "dhaba owner",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Daam bazaar ke hisaab se sahi hai. Pehle din se bachat dikhne lagi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_76",
+   "name": "Aadhya Agarwal",
+   "age": 37,
+   "job": "florist",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Bilkul waisa mila jaisa bataya gaya tha. Dil se shukriya — aise hi chalao. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_77",
+   "name": "Peter Rao",
+   "age": 30,
+   "job": "photographer",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Ghar walo ko bhi yahi jagah pasand aayi. Har mahine ka pakka kharcha yahi bandh gaya. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_78",
+   "name": "Yusuf Thomas",
+   "age": 73,
+   "job": "housewife",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Quality me koi samjhota nahi dikha. Jo paisa diya, vasool ho gaya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_79",
+   "name": "Vivaan Venkatesh",
+   "age": 60,
+   "job": "professor",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Peek hours me bheed sambhalni padegi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_80",
+   "name": "Kuldeep Sen",
+   "age": 50,
+   "job": "waiter",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Daam bazaar ke hisaab se sahi hai. Jo paisa diya, vasool ho gaya. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_81",
+   "name": "Ira Chawla",
+   "age": 34,
+   "job": "pharmacist",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Ek-do baar der hui, par kaam pakka hua. Daam halka sa zyada laga, par quality ne mana liya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_82",
+   "name": "Peter Joshi",
+   "age": 73,
+   "job": "truck driver",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Bheed zyada thi par number sahi aaya. Sheher me isse behtar mushkil hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_83",
+   "name": "Amit Kumari",
+   "age": 24,
+   "job": "watchman",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Ek-do baar der hui, par kaam pakka hua. Sheher me isse behtar mushkil hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_84",
+   "name": "Rohan Dubey",
+   "age": 25,
+   "job": "plumber",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Har baar ek jaisi quality — yahi bharosa hai. Sheher me isse behtar mushkil hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_85",
+   "name": "Nikhil Jadhav",
+   "age": 57,
+   "job": "waiter",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Har baar ek jaisi quality — yahi bharosa hai. Jo paisa diya, vasool ho gaya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_86",
+   "name": "Babita Mehta",
+   "age": 67,
+   "job": "airport staff",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Jo paisa diya, vasool ho gaya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_87",
+   "name": "Hardik Sethi",
+   "age": 45,
+   "job": "printing press wala",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Bheed zyada thi par number sahi aaya. Daam halka sa zyada laga, par quality ne mana liya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_88",
+   "name": "Divya Gill",
+   "age": 24,
+   "job": "housewife",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ek-do baar der hui, par kaam pakka hua. Agli baar pariwar ko bhi launga. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_89",
+   "name": "Hardik Sandhu",
+   "age": 39,
+   "job": "data entry operator",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Quality me koi samjhota nahi dikha. Pehle din se bachat dikhne lagi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_90",
+   "name": "Rajdeep Shah",
+   "age": 33,
+   "job": "florist",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Bheed zyada thi par number sahi aaya. Pure mohalle ko bata diya hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_91",
+   "name": "Hardik Nair",
+   "age": 45,
+   "job": "peon",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Sheher me isse behtar mushkil hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_92",
+   "name": "Kiran Verma",
+   "age": 28,
+   "job": "cyber cafe owner",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bilkul waisa mila jaisa bataya gaya tha. Sheher me isse behtar mushkil hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_93",
+   "name": "Kabir Varma",
+   "age": 39,
+   "job": "auto driver",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Daam bazaar ke hisaab se sahi hai. Pure mohalle ko bata diya hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_94",
+   "name": "Salman Venkatesh",
+   "age": 68,
+   "job": "chef",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Quality me koi samjhota nahi dikha. Har mahine ka pakka kharcha yahi bandh gaya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_95",
+   "name": "Kamlesh Arora",
+   "age": 39,
+   "job": "sweeper supervisor",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Bheed zyada thi par number sahi aaya. Sheher me isse behtar mushkil hai. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_96",
+   "name": "Shalini Deshmukh",
+   "age": 70,
+   "job": "IT engineer",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Jo paisa diya, vasool ho gaya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_97",
+   "name": "Ishaan Venkatesh",
+   "age": 42,
+   "job": "principal",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Kaam samay par aur saaf-suthra hua. Rating kam dene ka man hi nahi karta. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_98",
+   "name": "Vikram Naidu",
+   "age": 48,
+   "job": "software tester",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Kaam samay par aur saaf-suthra hua. Pure mohalle ko bata diya hai. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_99",
+   "name": "Rose Hegde",
+   "age": 75,
+   "job": "clerk",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Daam bazaar ke hisaab se sahi hai. Ab to yahi apni permanent jagah hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_100",
+   "name": "Suresh Tiwari",
+   "age": 47,
+   "job": "AC technician",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Ek-do baar der hui, par kaam pakka hua. Agli baar pariwar ko bhi launga. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_101",
+   "name": "Salman Dsouza",
+   "age": 72,
+   "job": "bus conductor",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Har baar ek jaisi quality — yahi bharosa hai. Rating kam dene ka man hi nahi karta. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_102",
+   "name": "Aarav Bansal",
+   "age": 36,
+   "job": "sales executive",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Purana samaan badal kar naya de diya, bina jhanjhat. Parking ki dikkat hai, baaki sab badhiya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_103",
+   "name": "Nilesh Pillai",
+   "age": 26,
+   "job": "florist",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Bilkul waisa mila jaisa bataya gaya tha. Pure mohalle ko bata diya hai. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_104",
+   "name": "Manpreet Aggarwal",
+   "age": 69,
+   "job": "call centre executive",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Bheed zyada thi par number sahi aaya. Har mahine ka pakka kharcha yahi bandh gaya. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_105",
+   "name": "Geeta Sheikh",
+   "age": 27,
+   "job": "carpenter",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Paanch sitaare se kam banta hi nahi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_106",
+   "name": "Shanti Pereira",
+   "age": 26,
+   "job": "dentist",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Purana samaan badal kar naya de diya, bina jhanjhat. Pehle din se bachat dikhne lagi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_107",
+   "name": "Aadhya Philip",
+   "age": 50,
+   "job": "waiter",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Bilkul waisa mila jaisa bataya gaya tha. Peek hours me bheed sambhalni padegi. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_108",
+   "name": "Kinjal Chandra",
+   "age": 53,
+   "job": "bank clerk",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Report time par aur sahi mili. Daam halka sa zyada laga, par quality ne mana liya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_109",
+   "name": "Arjun Pai",
+   "age": 47,
+   "job": "lab technician",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Har baar ek jaisi quality — yahi bharosa hai. Pure mohalle ko bata diya hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_110",
+   "name": "David Kapoor",
+   "age": 48,
+   "job": "peon",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Ek-do baar der hui, par kaam pakka hua. Pehle din se bachat dikhne lagi. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_111",
+   "name": "Rose Khan",
+   "age": 74,
+   "job": "metro guard",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Daam bazaar ke hisaab se sahi hai. Sheher me isse behtar mushkil hai. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_112",
+   "name": "Rakesh Kapoor",
+   "age": 44,
+   "job": "stationery owner",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Report time par aur sahi mili. Thoda intezaar zyada ho gaya, par kaam acha hua. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_113",
+   "name": "Dinesh Yadav",
+   "age": 44,
+   "job": "insurance advisor",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Daam bazaar ke hisaab se sahi hai. Parking ki dikkat hai, baaki sab badhiya. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_114",
+   "name": "Thomas Gupta",
+   "age": 58,
+   "job": "lawyer",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Bilkul waisa mila jaisa bataya gaya tha. Sheher me isse behtar mushkil hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_115",
+   "name": "Meera Agarwal",
+   "age": 34,
+   "job": "peon",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Ghar walo ko bhi yahi jagah pasand aayi. Paanch sitaare se kam banta hi nahi. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_116",
+   "name": "Rose Dsouza",
+   "age": 70,
+   "job": "stock trader",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Har baar ek jaisi quality — yahi bharosa hai. Parking ki dikkat hai, baaki sab badhiya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_117",
+   "name": "Rajdeep Shah",
+   "age": 70,
+   "job": "lab technician",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Ek-do baar der hui, par kaam pakka hua. Har mahine ka pakka kharcha yahi bandh gaya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_118",
+   "name": "Zoya Balaji",
+   "age": 42,
+   "job": "graphic designer",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Kaam samay par aur saaf-suthra hua. Dil se shukriya — aise hi chalao. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_119",
+   "name": "Shreya Khan",
+   "age": 59,
+   "job": "fruit seller",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Daam bazaar ke hisaab se sahi hai. Har mahine ka pakka kharcha yahi bandh gaya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_120",
+   "name": "Arman Raju",
+   "age": 76,
+   "job": "software tester",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Report time par aur sahi mili. Agli baar pariwar ko bhi launga. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_121",
+   "name": "Mamta Chandra",
+   "age": 29,
+   "job": "sales executive",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Quality me koi samjhota nahi dikha. Daam halka sa zyada laga, par quality ne mana liya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_122",
+   "name": "Rekha Pereira",
+   "age": 40,
+   "job": "book seller",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Daam bazaar ke hisaab se sahi hai. Parking ki dikkat hai, baaki sab badhiya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_123",
+   "name": "Rose Rao",
+   "age": 78,
+   "job": "tailor",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Ek baar galti hui, turant sudhaar bhi diya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_124",
+   "name": "Aditya Thomas",
+   "age": 32,
+   "job": "lab technician",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Daam bazaar ke hisaab se sahi hai. Paanch sitaare se kam banta hi nahi. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_125",
+   "name": "Vaishali Prakash",
+   "age": 48,
+   "job": "pharmacist",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Bheed zyada thi par number sahi aaya. Jo paisa diya, vasool ho gaya. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_126",
+   "name": "Seema Thakur",
+   "age": 29,
+   "job": "security supervisor",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Bheed zyada thi par number sahi aaya. Pehle din se bachat dikhne lagi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_127",
+   "name": "Geeta Chandra",
+   "age": 47,
+   "job": "milkman",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Ek-do baar der hui, par kaam pakka hua. Peek hours me bheed sambhalni padegi. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_128",
+   "name": "Yusuf Kapoor",
+   "age": 52,
+   "job": "call centre executive",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Kaam samay par aur saaf-suthra hua. Thoda intezaar zyada ho gaya, par kaam acha hua. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_129",
+   "name": "Preeti Prakash",
+   "age": 45,
+   "job": "pandit ji",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Daam bazaar ke hisaab se sahi hai. Sheher me isse behtar mushkil hai. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_130",
+   "name": "Heena Fernandes",
+   "age": 32,
+   "job": "photographer",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Bilkul waisa mila jaisa bataya gaya tha. Ab to yahi apni permanent jagah hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_131",
+   "name": "Divya Bhatia",
+   "age": 56,
+   "job": "professor",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Har mahine ka pakka kharcha yahi bandh gaya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_132",
+   "name": "Julie George",
+   "age": 19,
+   "job": "housewife",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Daam bazaar ke hisaab se sahi hai. Har mahine ka pakka kharcha yahi bandh gaya. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_133",
+   "name": "Nikhil Devi",
+   "age": 18,
+   "job": "plumber",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Bilkul waisa mila jaisa bataya gaya tha. Pure mohalle ko bata diya hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_134",
+   "name": "Simran Pillai",
+   "age": 52,
+   "job": "printing press wala",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Daam bazaar ke hisaab se sahi hai. Thoda intezaar zyada ho gaya, par kaam acha hua. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_135",
+   "name": "Swati Bansal",
+   "age": 75,
+   "job": "plumber",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Quality me koi samjhota nahi dikha. Agli baar pariwar ko bhi launga. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_136",
+   "name": "Archana Deshmukh",
+   "age": 26,
+   "job": "tour guide",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Daam bazaar ke hisaab se sahi hai. Har mahine ka pakka kharcha yahi bandh gaya. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_137",
+   "name": "Ravi Raju",
+   "age": 38,
+   "job": "sabzi wala",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Bheed zyada thi par number sahi aaya. Ab to yahi apni permanent jagah hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_138",
+   "name": "Nisha Sharma",
+   "age": 24,
+   "job": "real estate agent",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Parking ki dikkat hai, baaki sab badhiya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_139",
+   "name": "Varun Joshi",
+   "age": 48,
+   "job": "real estate agent",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bilkul waisa mila jaisa bataya gaya tha. Thoda intezaar zyada ho gaya, par kaam acha hua. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_140",
+   "name": "Arshdeep Pawar",
+   "age": 38,
+   "job": "tour guide",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Kaam samay par aur saaf-suthra hua. Jo paisa diya, vasool ho gaya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_141",
+   "name": "Jaspreet Raman",
+   "age": 77,
+   "job": "professor",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Daam bazaar ke hisaab se sahi hai. Paanch sitaare se kam banta hi nahi. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_142",
+   "name": "Archana Mukherjee",
+   "age": 29,
+   "job": "paan shop owner",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Daam bazaar ke hisaab se sahi hai. Rating kam dene ka man hi nahi karta. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_143",
+   "name": "Krishna Rani",
+   "age": 77,
+   "job": "postman",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Ek-do baar der hui, par kaam pakka hua. Pure mohalle ko bata diya hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_144",
+   "name": "Amit Patil",
+   "age": 53,
+   "job": "IT engineer",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Ek-do baar der hui, par kaam pakka hua. Daam halka sa zyada laga, par quality ne mana liya. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_145",
+   "name": "Zoya Kamat",
+   "age": 29,
+   "job": "barber",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Report time par aur sahi mili. Agli baar pariwar ko bhi launga. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_146",
+   "name": "Lily Arora",
+   "age": 22,
+   "job": "chef",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Peek hours me bheed sambhalni padegi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_147",
+   "name": "Vikram Arora",
+   "age": 19,
+   "job": "sales executive",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Purana samaan badal kar naya de diya, bina jhanjhat. Pure mohalle ko bata diya hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_148",
+   "name": "Seema Shukla",
+   "age": 57,
+   "job": "auto driver",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Quality me koi samjhota nahi dikha. Pure mohalle ko bata diya hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_149",
+   "name": "Sameer Narayan",
+   "age": 63,
+   "job": "content writer",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Bheed zyada thi par number sahi aaya. Peek hours me bheed sambhalni padegi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_150",
+   "name": "Sneha Sharma",
+   "age": 35,
+   "job": "IT engineer",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Kaam samay par aur saaf-suthra hua. Thoda intezaar zyada ho gaya, par kaam acha hua. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_151",
+   "name": "Gaurav Mittal",
+   "age": 71,
+   "job": "real estate agent",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Quality me koi samjhota nahi dikha. Parking ki dikkat hai, baaki sab badhiya. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_152",
+   "name": "Imran Joshi",
+   "age": 62,
+   "job": "plumber",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Report time par aur sahi mili. Pehle din se bachat dikhne lagi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_153",
+   "name": "Indira Sen",
+   "age": 41,
+   "job": "software tester",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Report time par aur sahi mili. Dil se shukriya — aise hi chalao. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_154",
+   "name": "Nilesh Hegde",
+   "age": 50,
+   "job": "police constable",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Bheed zyada thi par number sahi aaya. Rating kam dene ka man hi nahi karta. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_155",
+   "name": "Sai Jain",
+   "age": 21,
+   "job": "clerk",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Ghar walo ko bhi yahi jagah pasand aayi. Sheher me isse behtar mushkil hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_156",
+   "name": "Shreya Sethi",
+   "age": 71,
+   "job": "pharmacist",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Kaam samay par aur saaf-suthra hua. Agli baar pariwar ko bhi launga. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_157",
+   "name": "Swati Jain",
+   "age": 17,
+   "job": "sweeper supervisor",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Ek-do baar der hui, par kaam pakka hua. Peek hours me bheed sambhalni padegi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_158",
+   "name": "Varun Mehta",
+   "age": 69,
+   "job": "librarian",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Daam bazaar ke hisaab se sahi hai. Pure mohalle ko bata diya hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_159",
+   "name": "Vikram Gupta",
+   "age": 50,
+   "job": "plumber",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Ek-do baar der hui, par kaam pakka hua. Peek hours me bheed sambhalni padegi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_160",
+   "name": "Alisha Reddy",
+   "age": 50,
+   "job": "sales executive",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Kaam samay par aur saaf-suthra hua. Paanch sitaare se kam banta hi nahi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_161",
+   "name": "Lily Chauhan",
+   "age": 17,
+   "job": "watchman",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Daam bazaar ke hisaab se sahi hai. Ek baar galti hui, turant sudhaar bhi diya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_162",
+   "name": "Rajdeep Kamat",
+   "age": 68,
+   "job": "carpenter",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Har baar ek jaisi quality — yahi bharosa hai. Pehle din se bachat dikhne lagi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_163",
+   "name": "Sandeep Kumar",
+   "age": 38,
+   "job": "college student",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Daam bazaar ke hisaab se sahi hai. Peek hours me bheed sambhalni padegi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_164",
+   "name": "Priya Pandey",
+   "age": 32,
+   "job": "stationery owner",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Quality me koi samjhota nahi dikha. Paanch sitaare se kam banta hi nahi. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_165",
+   "name": "Joseph Banerjee",
+   "age": 75,
+   "job": "hotel manager",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bheed zyada thi par number sahi aaya. Paanch sitaare se kam banta hi nahi. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_166",
+   "name": "Nilesh Shetty",
+   "age": 35,
+   "job": "dhaba owner",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Purana samaan badal kar naya de diya, bina jhanjhat. Paanch sitaare se kam banta hi nahi. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_167",
+   "name": "Sandeep Mishra",
+   "age": 23,
+   "job": "bus conductor",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Har baar ek jaisi quality — yahi bharosa hai. Jo paisa diya, vasool ho gaya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_168",
+   "name": "Kabir Sinha",
+   "age": 25,
+   "job": "mobile repair wala",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Ghar walo ko bhi yahi jagah pasand aayi. Thoda intezaar zyada ho gaya, par kaam acha hua. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_169",
+   "name": "Manish Varma",
+   "age": 42,
+   "job": "tuition wala",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Purana samaan badal kar naya de diya, bina jhanjhat. Ab to yahi apni permanent jagah hai. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_170",
+   "name": "Rose Chauhan",
+   "age": 64,
+   "job": "security supervisor",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Daam bazaar ke hisaab se sahi hai. Rating kam dene ka man hi nahi karta. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_171",
+   "name": "George Mehta",
+   "age": 23,
+   "job": "security supervisor",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Bilkul waisa mila jaisa bataya gaya tha. Ab to yahi apni permanent jagah hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_172",
+   "name": "Krishna Kaur",
+   "age": 47,
+   "job": "sweet shop owner",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Har baar ek jaisi quality — yahi bharosa hai. Ab to yahi apni permanent jagah hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_173",
+   "name": "Vikram Fernandes",
+   "age": 57,
+   "job": "railway employee",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Report time par aur sahi mili. Paanch sitaare se kam banta hi nahi. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_174",
+   "name": "Peter Chawla",
+   "age": 44,
+   "job": "barber",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Bheed zyada thi par number sahi aaya. Dil se shukriya — aise hi chalao. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_175",
+   "name": "Tarun Chauhan",
+   "age": 43,
+   "job": "AC technician",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Har baar ek jaisi quality — yahi bharosa hai. Har mahine ka pakka kharcha yahi bandh gaya. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_176",
+   "name": "Vijay Thakur",
+   "age": 33,
+   "job": "content writer",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Daam bazaar ke hisaab se sahi hai. Thoda intezaar zyada ho gaya, par kaam acha hua. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_177",
+   "name": "Neha Varma",
+   "age": 51,
+   "job": "railway employee",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bilkul waisa mila jaisa bataya gaya tha. Thoda intezaar zyada ho gaya, par kaam acha hua. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_178",
+   "name": "Indira Goyal",
+   "age": 60,
+   "job": "truck driver",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Ek-do baar der hui, par kaam pakka hua. Pure mohalle ko bata diya hai. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_179",
+   "name": "Myra Ansari",
+   "age": 25,
+   "job": "pandit ji",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Quality me koi samjhota nahi dikha. Rating kam dene ka man hi nahi karta. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_180",
+   "name": "Gurpreet Chatterjee",
+   "age": 77,
+   "job": "postman",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Purana samaan badal kar naya de diya, bina jhanjhat. Peek hours me bheed sambhalni padegi. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_181",
+   "name": "Riya Malhotra",
+   "age": 32,
+   "job": "lawyer",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Purana samaan badal kar naya de diya, bina jhanjhat. Pure mohalle ko bata diya hai. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_182",
+   "name": "Manpreet Kumari",
+   "age": 62,
+   "job": "security supervisor",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bheed zyada thi par number sahi aaya. Rating kam dene ka man hi nahi karta. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_183",
+   "name": "Meera Ghosh",
+   "age": 52,
+   "job": "printing press wala",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Ek-do baar der hui, par kaam pakka hua. Ab to yahi apni permanent jagah hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_184",
+   "name": "Harleen Banerjee",
+   "age": 50,
+   "job": "tuition wala",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Purana samaan badal kar naya de diya, bina jhanjhat. Parking ki dikkat hai, baaki sab badhiya. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_185",
+   "name": "Yogesh Subramanian",
+   "age": 51,
+   "job": "dhaba owner",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Bilkul waisa mila jaisa bataya gaya tha. Daam halka sa zyada laga, par quality ne mana liya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_186",
+   "name": "Rekha George",
+   "age": 46,
+   "job": "sabzi wala",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Report time par aur sahi mili. Paanch sitaare se kam banta hi nahi. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_187",
+   "name": "Rajesh Sen",
+   "age": 71,
+   "job": "waiter",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Kaam samay par aur saaf-suthra hua. Daam halka sa zyada laga, par quality ne mana liya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_188",
+   "name": "Hemant Mehta",
+   "age": 25,
+   "job": "plumber",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bheed zyada thi par number sahi aaya. Rating kam dene ka man hi nahi karta. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_189",
+   "name": "Kamlesh Venkatesh",
+   "age": 37,
+   "job": "florist",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Kaam samay par aur saaf-suthra hua. Sheher me isse behtar mushkil hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_190",
+   "name": "Asha Kumari",
+   "age": 24,
+   "job": "kirana owner",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Har baar ek jaisi quality — yahi bharosa hai. Rating kam dene ka man hi nahi karta. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_191",
+   "name": "Kinjal Reddy",
+   "age": 30,
+   "job": "content writer",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Purana samaan badal kar naya de diya, bina jhanjhat. Thoda intezaar zyada ho gaya, par kaam acha hua. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_192",
+   "name": "Sunita Patel",
+   "age": 30,
+   "job": "barber",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Bheed zyada thi par number sahi aaya. Parking ki dikkat hai, baaki sab badhiya. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_193",
+   "name": "David Chowdary",
+   "age": 20,
+   "job": "lab technician",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Bheed zyada thi par number sahi aaya. Pure mohalle ko bata diya hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_194",
+   "name": "Vijay Kulkarni",
+   "age": 19,
+   "job": "barber",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Kaam samay par aur saaf-suthra hua. Sheher me isse behtar mushkil hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_195",
+   "name": "Gurpreet Murthy",
+   "age": 43,
+   "job": "yoga instructor",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Har baar ek jaisi quality — yahi bharosa hai. Dil se shukriya — aise hi chalao. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_196",
+   "name": "Amit Subramanian",
+   "age": 61,
+   "job": "bus conductor",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Har baar ek jaisi quality — yahi bharosa hai. Dil se shukriya — aise hi chalao. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_197",
+   "name": "Anjali Shetty",
+   "age": 23,
+   "job": "social media manager",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Bilkul waisa mila jaisa bataya gaya tha. Thoda intezaar zyada ho gaya, par kaam acha hua. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_198",
+   "name": "Heena Pandey",
+   "age": 31,
+   "job": "professor",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Kaam samay par aur saaf-suthra hua. Ek baar galti hui, turant sudhaar bhi diya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_199",
+   "name": "Rohan Prasad",
+   "age": 78,
+   "job": "pandit ji",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Bheed zyada thi par number sahi aaya. Rating kam dene ka man hi nahi karta. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_200",
+   "name": "Rohan Jain",
+   "age": 64,
+   "job": "video editor",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Ghar walo ko bhi yahi jagah pasand aayi. Parking ki dikkat hai, baaki sab badhiya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_201",
+   "name": "Kusum Dsouza",
+   "age": 24,
+   "job": "florist",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Har baar ek jaisi quality — yahi bharosa hai. Thoda intezaar zyada ho gaya, par kaam acha hua. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_202",
+   "name": "Vijay Nair",
+   "age": 50,
+   "job": "coaching teacher",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Quality me koi samjhota nahi dikha. Rating kam dene ka man hi nahi karta. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_203",
+   "name": "Usha Kapoor",
+   "age": 73,
+   "job": "lawyer",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Har baar ek jaisi quality — yahi bharosa hai. Dil se shukriya — aise hi chalao. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_204",
+   "name": "Divya Devi",
+   "age": 72,
+   "job": "AC technician",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Purana samaan badal kar naya de diya, bina jhanjhat. Parking ki dikkat hai, baaki sab badhiya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_205",
+   "name": "Dinesh Khan",
+   "age": 40,
+   "job": "police constable",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Quality me koi samjhota nahi dikha. Paanch sitaare se kam banta hi nahi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_206",
+   "name": "Sai Chatterjee",
+   "age": 65,
+   "job": "security supervisor",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Quality me koi samjhota nahi dikha. Pure mohalle ko bata diya hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_207",
+   "name": "Yogesh Hegde",
+   "age": 37,
+   "job": "video editor",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ek-do baar der hui, par kaam pakka hua. Paanch sitaare se kam banta hi nahi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_208",
+   "name": "Nisha Mishra",
+   "age": 62,
+   "job": "photographer",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bilkul waisa mila jaisa bataya gaya tha. Daam halka sa zyada laga, par quality ne mana liya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_209",
+   "name": "Sneha Murthy",
+   "age": 33,
+   "job": "truck driver",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Daam bazaar ke hisaab se sahi hai. Peek hours me bheed sambhalni padegi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_210",
+   "name": "Geeta Chawla",
+   "age": 18,
+   "job": "maulvi sahab",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Quality me koi samjhota nahi dikha. Daam halka sa zyada laga, par quality ne mana liya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_211",
+   "name": "Rose Sheikh",
+   "age": 42,
+   "job": "plumber",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Purana samaan badal kar naya de diya, bina jhanjhat. Peek hours me bheed sambhalni padegi. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_212",
+   "name": "Yusuf Philip",
+   "age": 49,
+   "job": "truck driver",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Ghar walo ko bhi yahi jagah pasand aayi. Paanch sitaare se kam banta hi nahi. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_213",
+   "name": "Dinesh Patil",
+   "age": 64,
+   "job": "postman",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Ghar walo ko bhi yahi jagah pasand aayi. Ek baar galti hui, turant sudhaar bhi diya. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_214",
+   "name": "Ramesh Thakur",
+   "age": 17,
+   "job": "security supervisor",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Kaam samay par aur saaf-suthra hua. Har mahine ka pakka kharcha yahi bandh gaya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_215",
+   "name": "Thomas Kulkarni",
+   "age": 46,
+   "job": "rickshaw puller",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Quality me koi samjhota nahi dikha. Daam halka sa zyada laga, par quality ne mana liya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_216",
+   "name": "Suresh Thakur",
+   "age": 65,
+   "job": "rickshaw puller",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Ghar walo ko bhi yahi jagah pasand aayi. Agli baar pariwar ko bhi launga. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_217",
+   "name": "Shalini Pillai",
+   "age": 73,
+   "job": "tailor",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Ghar walo ko bhi yahi jagah pasand aayi. Dil se shukriya — aise hi chalao. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_218",
+   "name": "Anjali Rao",
+   "age": 35,
+   "job": "rickshaw puller",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Quality me koi samjhota nahi dikha. Jo paisa diya, vasool ho gaya. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_219",
+   "name": "Ananya Chauhan",
+   "age": 53,
+   "job": "sweet shop owner",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Purana samaan badal kar naya de diya, bina jhanjhat. Paanch sitaare se kam banta hi nahi. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_220",
+   "name": "Sunita Pandey",
+   "age": 75,
+   "job": "social media manager",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Report time par aur sahi mili. Pehle din se bachat dikhne lagi. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_221",
+   "name": "Baljeet Mishra",
+   "age": 19,
+   "job": "sweet shop owner",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ghar walo ko bhi yahi jagah pasand aayi. Rating kam dene ka man hi nahi karta. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_222",
+   "name": "Pushpa Tiwari",
+   "age": 37,
+   "job": "bus conductor",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Kaam samay par aur saaf-suthra hua. Ek baar galti hui, turant sudhaar bhi diya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_223",
+   "name": "Hetal Subramanian",
+   "age": 30,
+   "job": "librarian",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bilkul waisa mila jaisa bataya gaya tha. Paanch sitaare se kam banta hi nahi. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_224",
+   "name": "Alok Chandra",
+   "age": 28,
+   "job": "college student",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Ek-do baar der hui, par kaam pakka hua. Pehle din se bachat dikhne lagi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_225",
+   "name": "Rekha Kaur",
+   "age": 49,
+   "job": "ayurvedic vaidya",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Quality me koi samjhota nahi dikha. Daam halka sa zyada laga, par quality ne mana liya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_226",
+   "name": "Kusum Prasad",
+   "age": 27,
+   "job": "sweeper supervisor",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Purana samaan badal kar naya de diya, bina jhanjhat. Ek baar galti hui, turant sudhaar bhi diya. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_227",
+   "name": "Tarun Pawar",
+   "age": 19,
+   "job": "electrician",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Ghar walo ko bhi yahi jagah pasand aayi. Ab to yahi apni permanent jagah hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_228",
+   "name": "Rahul Gupta",
+   "age": 24,
+   "job": "housewife",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Har baar ek jaisi quality — yahi bharosa hai. Thoda intezaar zyada ho gaya, par kaam acha hua. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_229",
+   "name": "Krishna Sen",
+   "age": 75,
+   "job": "paan shop owner",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Quality me koi samjhota nahi dikha. Parking ki dikkat hai, baaki sab badhiya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_230",
+   "name": "Preeti Shah",
+   "age": 59,
+   "job": "tuition wala",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Ek-do baar der hui, par kaam pakka hua. Pehle din se bachat dikhne lagi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_231",
+   "name": "Seema Das",
+   "age": 38,
+   "job": "retired fauji",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Quality me koi samjhota nahi dikha. Ab to yahi apni permanent jagah hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_232",
+   "name": "Aadhya Shetty",
+   "age": 50,
+   "job": "police constable",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Har baar ek jaisi quality — yahi bharosa hai. Agli baar pariwar ko bhi launga. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_233",
+   "name": "Sunita Sinha",
+   "age": 22,
+   "job": "bank clerk",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Daam bazaar ke hisaab se sahi hai. Ab to yahi apni permanent jagah hai. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_234",
+   "name": "Kinjal Subramanian",
+   "age": 46,
+   "job": "cab driver",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Purana samaan badal kar naya de diya, bina jhanjhat. Har mahine ka pakka kharcha yahi bandh gaya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_235",
+   "name": "Lily Rao",
+   "age": 49,
+   "job": "lawyer",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Quality me koi samjhota nahi dikha. Pehle din se bachat dikhne lagi. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_236",
+   "name": "Salman Shah",
+   "age": 31,
+   "job": "airport staff",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Har baar ek jaisi quality — yahi bharosa hai. Ab to yahi apni permanent jagah hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_237",
+   "name": "Reyansh Thakur",
+   "age": 52,
+   "job": "airport staff",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Bilkul waisa mila jaisa bataya gaya tha. Jo paisa diya, vasool ho gaya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_238",
+   "name": "Pankaj Shah",
+   "age": 29,
+   "job": "travel agent",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Report time par aur sahi mili. Rating kam dene ka man hi nahi karta. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_239",
+   "name": "Kavita Gupta",
+   "age": 73,
+   "job": "sweeper supervisor",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Kaam samay par aur saaf-suthra hua. Daam halka sa zyada laga, par quality ne mana liya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_240",
+   "name": "Joseph Nair",
+   "age": 70,
+   "job": "gym trainer",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Bilkul waisa mila jaisa bataya gaya tha. Parking ki dikkat hai, baaki sab badhiya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_241",
+   "name": "Naveen Sharma",
+   "age": 25,
+   "job": "sweet shop owner",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Daam bazaar ke hisaab se sahi hai. Dil se shukriya — aise hi chalao. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_242",
+   "name": "Nilesh Bhatia",
+   "age": 26,
+   "job": "physiotherapist",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Report time par aur sahi mili. Dil se shukriya — aise hi chalao. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_243",
+   "name": "Naveen Kapoor",
+   "age": 44,
+   "job": "doctor",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Kaam samay par aur saaf-suthra hua. Ab to yahi apni permanent jagah hai. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_244",
+   "name": "Joseph Bose",
+   "age": 65,
+   "job": "AC technician",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Kaam samay par aur saaf-suthra hua. Paanch sitaare se kam banta hi nahi. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_245",
+   "name": "Thomas Hegde",
+   "age": 53,
+   "job": "mechanic",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Bilkul waisa mila jaisa bataya gaya tha. Peek hours me bheed sambhalni padegi. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_246",
+   "name": "Aditya Narayan",
+   "age": 58,
+   "job": "stock trader",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Har baar ek jaisi quality — yahi bharosa hai. Thoda intezaar zyada ho gaya, par kaam acha hua. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_247",
+   "name": "Lily Rajput",
+   "age": 38,
+   "job": "tuition wala",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Peek hours me bheed sambhalni padegi. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_248",
+   "name": "Sameer Patil",
+   "age": 41,
+   "job": "CA student",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Quality me koi samjhota nahi dikha. Har mahine ka pakka kharcha yahi bandh gaya. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_249",
+   "name": "Priya Rajput",
+   "age": 56,
+   "job": "AC technician",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Ghar walo ko bhi yahi jagah pasand aayi. Har mahine ka pakka kharcha yahi bandh gaya. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_250",
+   "name": "Riya Joshi",
+   "age": 68,
+   "job": "security supervisor",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Daam bazaar ke hisaab se sahi hai. Daam halka sa zyada laga, par quality ne mana liya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_251",
+   "name": "Diya Naidu",
+   "age": 58,
+   "job": "college student",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Daam bazaar ke hisaab se sahi hai. Parking ki dikkat hai, baaki sab badhiya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_252",
+   "name": "Navdeep Joshi",
+   "age": 36,
+   "job": "data entry operator",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Har baar ek jaisi quality — yahi bharosa hai. Daam halka sa zyada laga, par quality ne mana liya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_253",
+   "name": "Avni Krishnan",
+   "age": 30,
+   "job": "postman",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Daam bazaar ke hisaab se sahi hai. Paanch sitaare se kam banta hi nahi. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_254",
+   "name": "Gaurav Rajput",
+   "age": 45,
+   "job": "mobile repair wala",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ghar walo ko bhi yahi jagah pasand aayi. Peek hours me bheed sambhalni padegi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_255",
+   "name": "Kuldeep Mittal",
+   "age": 35,
+   "job": "rickshaw puller",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Ghar walo ko bhi yahi jagah pasand aayi. Daam halka sa zyada laga, par quality ne mana liya. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_256",
+   "name": "Pooja Pereira",
+   "age": 66,
+   "job": "hotel manager",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Quality me koi samjhota nahi dikha. Ab to yahi apni permanent jagah hai. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_257",
+   "name": "Sara Pereira",
+   "age": 61,
+   "job": "kirana owner",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Quality me koi samjhota nahi dikha. Agli baar pariwar ko bhi launga. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_258",
+   "name": "Gaurav Khan",
+   "age": 24,
+   "job": "printing press wala",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Ek-do baar der hui, par kaam pakka hua. Thoda intezaar zyada ho gaya, par kaam acha hua. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_259",
+   "name": "Priya Qureshi",
+   "age": 75,
+   "job": "police constable",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Har baar ek jaisi quality — yahi bharosa hai. Sheher me isse behtar mushkil hai. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_260",
+   "name": "Ramesh Sheikh",
+   "age": 72,
+   "job": "lab technician",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Bheed zyada thi par number sahi aaya. Rating kam dene ka man hi nahi karta. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_261",
+   "name": "Dinesh Pandey",
+   "age": 28,
+   "job": "watchman",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Daam bazaar ke hisaab se sahi hai. Pure mohalle ko bata diya hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_262",
+   "name": "Diya Menon",
+   "age": 49,
+   "job": "chef",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Bilkul waisa mila jaisa bataya gaya tha. Peek hours me bheed sambhalni padegi. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_263",
+   "name": "Varun Deshmukh",
+   "age": 51,
+   "job": "insurance advisor",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Ghar walo ko bhi yahi jagah pasand aayi. Pehle din se bachat dikhne lagi. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_264",
+   "name": "Aarav Chopra",
+   "age": 60,
+   "job": "waiter",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Agli baar pariwar ko bhi launga. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_265",
+   "name": "Avni Yadav",
+   "age": 43,
+   "job": "content writer",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Har baar ek jaisi quality — yahi bharosa hai. Agli baar pariwar ko bhi launga. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_266",
+   "name": "Zoya Kapoor",
+   "age": 31,
+   "job": "AC technician",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Ghar walo ko bhi yahi jagah pasand aayi. Jo paisa diya, vasool ho gaya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_267",
+   "name": "Rubina George",
+   "age": 30,
+   "job": "professor",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Daam bazaar ke hisaab se sahi hai. Agli baar pariwar ko bhi launga. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_268",
+   "name": "Kinjal Das",
+   "age": 33,
+   "job": "hotel manager",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Daam bazaar ke hisaab se sahi hai. Jo paisa diya, vasool ho gaya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_269",
+   "name": "Bhavesh Khanna",
+   "age": 75,
+   "job": "sweeper supervisor",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Purana samaan badal kar naya de diya, bina jhanjhat. Ek baar galti hui, turant sudhaar bhi diya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_270",
+   "name": "Mamta Das",
+   "age": 23,
+   "job": "call centre executive",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Har baar ek jaisi quality — yahi bharosa hai. Paanch sitaare se kam banta hi nahi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_271",
+   "name": "Seema Ansari",
+   "age": 76,
+   "job": "stationery owner",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Ghar walo ko bhi yahi jagah pasand aayi. Pehle din se bachat dikhne lagi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_272",
+   "name": "Vivaan Chandra",
+   "age": 65,
+   "job": "railway employee",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Har baar ek jaisi quality — yahi bharosa hai. Paanch sitaare se kam banta hi nahi. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_273",
+   "name": "Farah Raman",
+   "age": 17,
+   "job": "railway employee",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Daam bazaar ke hisaab se sahi hai. Ab to yahi apni permanent jagah hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_274",
+   "name": "Danish Pereira",
+   "age": 74,
+   "job": "electrician",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Kaam samay par aur saaf-suthra hua. Ab to yahi apni permanent jagah hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_275",
+   "name": "Mohit Agarwal",
+   "age": 59,
+   "job": "lab technician",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Bheed zyada thi par number sahi aaya. Thoda intezaar zyada ho gaya, par kaam acha hua. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_276",
+   "name": "Myra Chowdary",
+   "age": 59,
+   "job": "sweet shop owner",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Ek-do baar der hui, par kaam pakka hua. Dil se shukriya — aise hi chalao. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_277",
+   "name": "Ramesh Kulkarni",
+   "age": 27,
+   "job": "nurse",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Ek-do baar der hui, par kaam pakka hua. Dil se shukriya — aise hi chalao. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_278",
+   "name": "Pankaj Chandra",
+   "age": 47,
+   "job": "electrician",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Report time par aur sahi mili. Har mahine ka pakka kharcha yahi bandh gaya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_279",
+   "name": "Sai Qureshi",
+   "age": 68,
+   "job": "printing press wala",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Har baar ek jaisi quality — yahi bharosa hai. Daam halka sa zyada laga, par quality ne mana liya. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_280",
+   "name": "Vandana Thomas",
+   "age": 60,
+   "job": "railway employee",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Ek-do baar der hui, par kaam pakka hua. Peek hours me bheed sambhalni padegi. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_281",
+   "name": "Yusuf Goyal",
+   "age": 31,
+   "job": "graphic designer",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bheed zyada thi par number sahi aaya. Ab to yahi apni permanent jagah hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_282",
+   "name": "Farah Khanna",
+   "age": 23,
+   "job": "retired fauji",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Ek-do baar der hui, par kaam pakka hua. Pure mohalle ko bata diya hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_283",
+   "name": "Salman Venkatesh",
+   "age": 30,
+   "job": "electrician",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Kaam samay par aur saaf-suthra hua. Paanch sitaare se kam banta hi nahi. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_284",
+   "name": "Sunita Pai",
+   "age": 57,
+   "job": "librarian",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Quality me koi samjhota nahi dikha. Pehle din se bachat dikhne lagi. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_285",
+   "name": "Nisha Raju",
+   "age": 55,
+   "job": "waiter",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Bilkul waisa mila jaisa bataya gaya tha. Agli baar pariwar ko bhi launga. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_286",
+   "name": "Arjun Reddy",
+   "age": 75,
+   "job": "airport staff",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Ek baar galti hui, turant sudhaar bhi diya. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_287",
+   "name": "Simran Chowdary",
+   "age": 68,
+   "job": "librarian",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bheed zyada thi par number sahi aaya. Thoda intezaar zyada ho gaya, par kaam acha hua. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_288",
+   "name": "Danish Chowdary",
+   "age": 47,
+   "job": "real estate agent",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ghar walo ko bhi yahi jagah pasand aayi. Daam halka sa zyada laga, par quality ne mana liya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_289",
+   "name": "Pushpa Dubey",
+   "age": 60,
+   "job": "sweet shop owner",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bilkul waisa mila jaisa bataya gaya tha. Agli baar pariwar ko bhi launga. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_290",
+   "name": "Pooja Sethi",
+   "age": 63,
+   "job": "journalist",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Report time par aur sahi mili. Agli baar pariwar ko bhi launga. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_291",
+   "name": "Shreya Yadav",
+   "age": 49,
+   "job": "dhaba owner",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Har baar ek jaisi quality — yahi bharosa hai. Jo paisa diya, vasool ho gaya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_292",
+   "name": "Manpreet Varma",
+   "age": 21,
+   "job": "sales executive",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Quality me koi samjhota nahi dikha. Sheher me isse behtar mushkil hai. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_293",
+   "name": "Tarun Rajput",
+   "age": 39,
+   "job": "principal",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Report time par aur sahi mili. Sheher me isse behtar mushkil hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_294",
+   "name": "Aarav Chawla",
+   "age": 47,
+   "job": "dentist",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Daam bazaar ke hisaab se sahi hai. Parking ki dikkat hai, baaki sab badhiya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_295",
+   "name": "Avni Fernandes",
+   "age": 34,
+   "job": "book seller",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Har baar ek jaisi quality — yahi bharosa hai. Paanch sitaare se kam banta hi nahi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_296",
+   "name": "Heena Shetty",
+   "age": 39,
+   "job": "kirana owner",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Report time par aur sahi mili. Jo paisa diya, vasool ho gaya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_297",
+   "name": "Babita Narayan",
+   "age": 45,
+   "job": "content writer",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Har baar ek jaisi quality — yahi bharosa hai. Daam halka sa zyada laga, par quality ne mana liya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_298",
+   "name": "Pankaj Patel",
+   "age": 57,
+   "job": "nurse",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Rating kam dene ka man hi nahi karta. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_299",
+   "name": "Kusum Narayan",
+   "age": 20,
+   "job": "airport staff",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bilkul waisa mila jaisa bataya gaya tha. Jo paisa diya, vasool ho gaya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_300",
+   "name": "Farah Malhotra",
+   "age": 21,
+   "job": "journalist",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Purana samaan badal kar naya de diya, bina jhanjhat. Rating kam dene ka man hi nahi karta. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_301",
+   "name": "Rose Varma",
+   "age": 41,
+   "job": "IT engineer",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Har baar ek jaisi quality — yahi bharosa hai. Paanch sitaare se kam banta hi nahi. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_302",
+   "name": "Ishaan Rajput",
+   "age": 20,
+   "job": "lab technician",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Har baar ek jaisi quality — yahi bharosa hai. Rating kam dene ka man hi nahi karta. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_303",
+   "name": "Sunita Sheikh",
+   "age": 70,
+   "job": "railway employee",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Har baar ek jaisi quality — yahi bharosa hai. Har mahine ka pakka kharcha yahi bandh gaya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_304",
+   "name": "Asha Chatterjee",
+   "age": 71,
+   "job": "chef",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Report time par aur sahi mili. Parking ki dikkat hai, baaki sab badhiya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_305",
+   "name": "Baljeet Patel",
+   "age": 24,
+   "job": "printing press wala",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Bheed zyada thi par number sahi aaya. Ab to yahi apni permanent jagah hai. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_306",
+   "name": "Shreya Narayan",
+   "age": 72,
+   "job": "stock trader",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Report time par aur sahi mili. Daam halka sa zyada laga, par quality ne mana liya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_307",
+   "name": "Mamta Chowdary",
+   "age": 56,
+   "job": "insurance advisor",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Har baar ek jaisi quality — yahi bharosa hai. Peek hours me bheed sambhalni padegi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_308",
+   "name": "Ananya Jadhav",
+   "age": 53,
+   "job": "peon",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Kaam samay par aur saaf-suthra hua. Ab to yahi apni permanent jagah hai. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_309",
+   "name": "Rubina Raju",
+   "age": 56,
+   "job": "cyber cafe owner",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Quality me koi samjhota nahi dikha. Pure mohalle ko bata diya hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_310",
+   "name": "Rubina Goyal",
+   "age": 54,
+   "job": "homeopath",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Report time par aur sahi mili. Pehle din se bachat dikhne lagi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_311",
+   "name": "Rose Shukla",
+   "age": 56,
+   "job": "mobile repair wala",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Kaam samay par aur saaf-suthra hua. Daam halka sa zyada laga, par quality ne mana liya. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_312",
+   "name": "Rohan Rao",
+   "age": 69,
+   "job": "dhaba owner",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Kaam samay par aur saaf-suthra hua. Ek baar galti hui, turant sudhaar bhi diya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_313",
+   "name": "Hardik Verma",
+   "age": 39,
+   "job": "photographer",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Agli baar pariwar ko bhi launga. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_314",
+   "name": "Riya Shah",
+   "age": 26,
+   "job": "video editor",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Ghar walo ko bhi yahi jagah pasand aayi. Paanch sitaare se kam banta hi nahi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_315",
+   "name": "George Khan",
+   "age": 24,
+   "job": "cyber cafe owner",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Jo paisa diya, vasool ho gaya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_316",
+   "name": "Gaurav Qureshi",
+   "age": 28,
+   "job": "doctor",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Purana samaan badal kar naya de diya, bina jhanjhat. Ek baar galti hui, turant sudhaar bhi diya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_317",
+   "name": "Navdeep Prasad",
+   "age": 68,
+   "job": "content writer",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Kaam samay par aur saaf-suthra hua. Ek baar galti hui, turant sudhaar bhi diya. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_318",
+   "name": "Rose Pereira",
+   "age": 24,
+   "job": "sweet shop owner",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Daam bazaar ke hisaab se sahi hai. Rating kam dene ka man hi nahi karta. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_319",
+   "name": "Rakesh Gill",
+   "age": 20,
+   "job": "printing press wala",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Bheed zyada thi par number sahi aaya. Har mahine ka pakka kharcha yahi bandh gaya. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_320",
+   "name": "Nikhil Shah",
+   "age": 51,
+   "job": "carpenter",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Har baar ek jaisi quality — yahi bharosa hai. Thoda intezaar zyada ho gaya, par kaam acha hua. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_321",
+   "name": "Pankaj Kapoor",
+   "age": 65,
+   "job": "tailor",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Quality me koi samjhota nahi dikha. Parking ki dikkat hai, baaki sab badhiya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_322",
+   "name": "Gurpreet Singh",
+   "age": 19,
+   "job": "CA student",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Kaam samay par aur saaf-suthra hua. Jo paisa diya, vasool ho gaya. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_323",
+   "name": "Thomas Mehta",
+   "age": 69,
+   "job": "bus conductor",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Daam bazaar ke hisaab se sahi hai. Jo paisa diya, vasool ho gaya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_324",
+   "name": "Avni Ansari",
+   "age": 44,
+   "job": "gym trainer",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Bheed zyada thi par number sahi aaya. Daam halka sa zyada laga, par quality ne mana liya. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_325",
+   "name": "Navya Khanna",
+   "age": 70,
+   "job": "sweeper supervisor",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Har baar ek jaisi quality — yahi bharosa hai. Paanch sitaare se kam banta hi nahi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_326",
+   "name": "Manoj Pillai",
+   "age": 49,
+   "job": "college student",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Bilkul waisa mila jaisa bataya gaya tha. Pure mohalle ko bata diya hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_327",
+   "name": "Mary Joshi",
+   "age": 26,
+   "job": "IT engineer",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Har baar ek jaisi quality — yahi bharosa hai. Paanch sitaare se kam banta hi nahi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_328",
+   "name": "Ravi Mittal",
+   "age": 35,
+   "job": "doctor",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Kaam samay par aur saaf-suthra hua. Thoda intezaar zyada ho gaya, par kaam acha hua. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_329",
+   "name": "Gaurav Kulkarni",
+   "age": 54,
+   "job": "lawyer",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Ghar walo ko bhi yahi jagah pasand aayi. Jo paisa diya, vasool ho gaya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_330",
+   "name": "Rajesh Menon",
+   "age": 50,
+   "job": "retired fauji",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Ghar walo ko bhi yahi jagah pasand aayi. Rating kam dene ka man hi nahi karta. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_331",
+   "name": "Pari Gupta",
+   "age": 59,
+   "job": "IT engineer",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Quality me koi samjhota nahi dikha. Agli baar pariwar ko bhi launga. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_332",
+   "name": "Dhara Pillai",
+   "age": 74,
+   "job": "mobile repair wala",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Ek-do baar der hui, par kaam pakka hua. Dil se shukriya — aise hi chalao. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_333",
+   "name": "Jyoti Pai",
+   "age": 42,
+   "job": "real estate agent",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Daam bazaar ke hisaab se sahi hai. Paanch sitaare se kam banta hi nahi. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_334",
+   "name": "Aditya Bansal",
+   "age": 66,
+   "job": "fruit seller",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Sheher me isse behtar mushkil hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_335",
+   "name": "Diya Patil",
+   "age": 63,
+   "job": "content writer",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Bilkul waisa mila jaisa bataya gaya tha. Sheher me isse behtar mushkil hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_336",
+   "name": "Pushpa Arora",
+   "age": 62,
+   "job": "carpenter",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Kaam samay par aur saaf-suthra hua. Ab to yahi apni permanent jagah hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_337",
+   "name": "Mamta Goyal",
+   "age": 39,
+   "job": "travel agent",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Kaam samay par aur saaf-suthra hua. Ab to yahi apni permanent jagah hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_338",
+   "name": "Vivaan Kulkarni",
+   "age": 47,
+   "job": "CA student",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ghar walo ko bhi yahi jagah pasand aayi. Thoda intezaar zyada ho gaya, par kaam acha hua. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_339",
+   "name": "Nagma Agarwal",
+   "age": 57,
+   "job": "kirana owner",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Quality me koi samjhota nahi dikha. Pure mohalle ko bata diya hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_340",
+   "name": "Vivaan Dsouza",
+   "age": 57,
+   "job": "electrician",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Rating kam dene ka man hi nahi karta. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_341",
+   "name": "Shalini Joshi",
+   "age": 30,
+   "job": "sabzi wala",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Har baar ek jaisi quality — yahi bharosa hai. Ab to yahi apni permanent jagah hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_342",
+   "name": "Kinjal Chopra",
+   "age": 73,
+   "job": "nurse",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Ek-do baar der hui, par kaam pakka hua. Rating kam dene ka man hi nahi karta. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_343",
+   "name": "Asha Mathew",
+   "age": 36,
+   "job": "IT engineer",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bilkul waisa mila jaisa bataya gaya tha. Jo paisa diya, vasool ho gaya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_344",
+   "name": "Sameer Philip",
+   "age": 77,
+   "job": "airport staff",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Kaam samay par aur saaf-suthra hua. Pehle din se bachat dikhne lagi. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_345",
+   "name": "Sai Banerjee",
+   "age": 23,
+   "job": "housewife",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bilkul waisa mila jaisa bataya gaya tha. Ab to yahi apni permanent jagah hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_346",
+   "name": "Varun Narayan",
+   "age": 71,
+   "job": "sales executive",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Ek-do baar der hui, par kaam pakka hua. Agli baar pariwar ko bhi launga. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_347",
+   "name": "Swati Varma",
+   "age": 70,
+   "job": "IT engineer",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Quality me koi samjhota nahi dikha. Jo paisa diya, vasool ho gaya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_348",
+   "name": "Nikhil Naidu",
+   "age": 19,
+   "job": "delivery partner",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Ghar walo ko bhi yahi jagah pasand aayi. Thoda intezaar zyada ho gaya, par kaam acha hua. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_349",
+   "name": "Peter Joshi",
+   "age": 54,
+   "job": "principal",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Ghar walo ko bhi yahi jagah pasand aayi. Parking ki dikkat hai, baaki sab badhiya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_350",
+   "name": "Vijay Shah",
+   "age": 55,
+   "job": "graphic designer",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Ek-do baar der hui, par kaam pakka hua. Pehle din se bachat dikhne lagi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_351",
+   "name": "Usha Kulkarni",
+   "age": 48,
+   "job": "CA student",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Ek-do baar der hui, par kaam pakka hua. Sheher me isse behtar mushkil hai. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_352",
+   "name": "Gurpreet Krishnan",
+   "age": 37,
+   "job": "bus conductor",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Daam bazaar ke hisaab se sahi hai. Rating kam dene ka man hi nahi karta. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_353",
+   "name": "Rose Khanna",
+   "age": 77,
+   "job": "school teacher",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Report time par aur sahi mili. Paanch sitaare se kam banta hi nahi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_354",
+   "name": "Kamlesh Pai",
+   "age": 25,
+   "job": "retired fauji",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Har baar ek jaisi quality — yahi bharosa hai. Peek hours me bheed sambhalni padegi. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_355",
+   "name": "Babita Goyal",
+   "age": 78,
+   "job": "insurance advisor",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Report time par aur sahi mili. Sheher me isse behtar mushkil hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_356",
+   "name": "Vaishali Prakash",
+   "age": 50,
+   "job": "plumber",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Har baar ek jaisi quality — yahi bharosa hai. Rating kam dene ka man hi nahi karta. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_357",
+   "name": "Mamta Prasad",
+   "age": 28,
+   "job": "homeopath",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Quality me koi samjhota nahi dikha. Agli baar pariwar ko bhi launga. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_358",
+   "name": "Vivaan Sinha",
+   "age": 24,
+   "job": "principal",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Daam bazaar ke hisaab se sahi hai. Sheher me isse behtar mushkil hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_359",
+   "name": "Sai Mishra",
+   "age": 28,
+   "job": "school teacher",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Daam bazaar ke hisaab se sahi hai. Daam halka sa zyada laga, par quality ne mana liya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_360",
+   "name": "Divya Jadhav",
+   "age": 42,
+   "job": "professor",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Ghar walo ko bhi yahi jagah pasand aayi. Ek baar galti hui, turant sudhaar bhi diya. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_361",
+   "name": "Anil Fernandes",
+   "age": 64,
+   "job": "delivery partner",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Ghar walo ko bhi yahi jagah pasand aayi. Agli baar pariwar ko bhi launga. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_362",
+   "name": "Jaspreet Raman",
+   "age": 36,
+   "job": "stationery owner",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Report time par aur sahi mili. Dil se shukriya — aise hi chalao. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_363",
+   "name": "Baljeet Mukherjee",
+   "age": 59,
+   "job": "nurse",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Quality me koi samjhota nahi dikha. Thoda intezaar zyada ho gaya, par kaam acha hua. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_364",
+   "name": "Divya Sandhu",
+   "age": 71,
+   "job": "clerk",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Report time par aur sahi mili. Har mahine ka pakka kharcha yahi bandh gaya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_365",
+   "name": "Mohit Chauhan",
+   "age": 64,
+   "job": "sweet shop owner",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ghar walo ko bhi yahi jagah pasand aayi. Rating kam dene ka man hi nahi karta. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_366",
+   "name": "Rohan Pereira",
+   "age": 60,
+   "job": "physiotherapist",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Har baar ek jaisi quality — yahi bharosa hai. Rating kam dene ka man hi nahi karta. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_367",
+   "name": "Gurpreet Menon",
+   "age": 67,
+   "job": "delivery partner",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Kaam samay par aur saaf-suthra hua. Ab to yahi apni permanent jagah hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_368",
+   "name": "Baljeet Chauhan",
+   "age": 55,
+   "job": "graphic designer",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Kaam samay par aur saaf-suthra hua. Thoda intezaar zyada ho gaya, par kaam acha hua. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_369",
+   "name": "Anil Nair",
+   "age": 42,
+   "job": "sabzi wala",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Daam bazaar ke hisaab se sahi hai. Sheher me isse behtar mushkil hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_370",
+   "name": "Pooja Ansari",
+   "age": 74,
+   "job": "sweet shop owner",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Sheher me isse behtar mushkil hai. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_371",
+   "name": "Amit Balaji",
+   "age": 53,
+   "job": "pharmacist",
+   "cat": "Industry",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Kaam samay par aur saaf-suthra hua. Sheher me isse behtar mushkil hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_372",
+   "name": "Navdeep Pandey",
+   "age": 54,
+   "job": "doctor",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bheed zyada thi par number sahi aaya. Pure mohalle ko bata diya hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_373",
+   "name": "Lily Venkatesh",
+   "age": 35,
+   "job": "homeopath",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Report time par aur sahi mili. Rating kam dene ka man hi nahi karta. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_374",
+   "name": "Varun Chawla",
+   "age": 38,
+   "job": "security supervisor",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Bheed zyada thi par number sahi aaya. Peek hours me bheed sambhalni padegi. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_375",
+   "name": "Sara Patel",
+   "age": 37,
+   "job": "security supervisor",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Bilkul waisa mila jaisa bataya gaya tha. Agli baar pariwar ko bhi launga. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_376",
+   "name": "Jaspreet Bose",
+   "age": 75,
+   "job": "airport staff",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Ek-do baar der hui, par kaam pakka hua. Rating kam dene ka man hi nahi karta. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_377",
+   "name": "Sameer Aggarwal",
+   "age": 25,
+   "job": "mechanic",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Bheed zyada thi par number sahi aaya. Ab to yahi apni permanent jagah hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_378",
+   "name": "Riya Yadav",
+   "age": 74,
+   "job": "ayurvedic vaidya",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Purana samaan badal kar naya de diya, bina jhanjhat. Ab to yahi apni permanent jagah hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_379",
+   "name": "Reyansh Goyal",
+   "age": 57,
+   "job": "barber",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Ek-do baar der hui, par kaam pakka hua. Har mahine ka pakka kharcha yahi bandh gaya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_380",
+   "name": "Neha Pawar",
+   "age": 52,
+   "job": "metro guard",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Bheed zyada thi par number sahi aaya. Pehle din se bachat dikhne lagi. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_381",
+   "name": "Arman Joshi",
+   "age": 20,
+   "job": "lawyer",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Thoda intezaar zyada ho gaya, par kaam acha hua. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_382",
+   "name": "Harleen Chandra",
+   "age": 41,
+   "job": "sweeper supervisor",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Kaam samay par aur saaf-suthra hua. Dil se shukriya — aise hi chalao. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_383",
+   "name": "Hemant Hegde",
+   "age": 33,
+   "job": "bank clerk",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Daam bazaar ke hisaab se sahi hai. Paanch sitaare se kam banta hi nahi. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_384",
+   "name": "Yogesh Rao",
+   "age": 34,
+   "job": "book seller",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Daam bazaar ke hisaab se sahi hai. Agli baar pariwar ko bhi launga. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_385",
+   "name": "Alok Bansal",
+   "age": 74,
+   "job": "doctor",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Har baar ek jaisi quality — yahi bharosa hai. Parking ki dikkat hai, baaki sab badhiya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_386",
+   "name": "Ira Patil",
+   "age": 63,
+   "job": "railway employee",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Report time par aur sahi mili. Thoda intezaar zyada ho gaya, par kaam acha hua. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_387",
+   "name": "Suresh Gill",
+   "age": 51,
+   "job": "professor",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Purana samaan badal kar naya de diya, bina jhanjhat. Dil se shukriya — aise hi chalao. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_388",
+   "name": "Kiran Raman",
+   "age": 18,
+   "job": "auto driver",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Report time par aur sahi mili. Pehle din se bachat dikhne lagi. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_389",
+   "name": "Vaishali Murthy",
+   "age": 31,
+   "job": "physiotherapist",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Quality me koi samjhota nahi dikha. Pehle din se bachat dikhne lagi. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_390",
+   "name": "Falguni George",
+   "age": 76,
+   "job": "rickshaw puller",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Ek-do baar der hui, par kaam pakka hua. Daam halka sa zyada laga, par quality ne mana liya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_391",
+   "name": "Manish Devi",
+   "age": 42,
+   "job": "tuition wala",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Ghar walo ko bhi yahi jagah pasand aayi. Parking ki dikkat hai, baaki sab badhiya. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_392",
+   "name": "Vaishali Devi",
+   "age": 38,
+   "job": "pharmacist",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Har baar ek jaisi quality — yahi bharosa hai. Peek hours me bheed sambhalni padegi. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_393",
+   "name": "Nagma Kumari",
+   "age": 55,
+   "job": "housewife",
+   "cat": "Tech",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Ghar walo ko bhi yahi jagah pasand aayi. Daam halka sa zyada laga, par quality ne mana liya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_394",
+   "name": "Asha Agarwal",
+   "age": 73,
+   "job": "data entry operator",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Purana samaan badal kar naya de diya, bina jhanjhat. Daam halka sa zyada laga, par quality ne mana liya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_395",
+   "name": "Aadhya Chawla",
+   "age": 24,
+   "job": "maulvi sahab",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Purana samaan badal kar naya de diya, bina jhanjhat. Ab to yahi apni permanent jagah hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_396",
+   "name": "Ashok Aggarwal",
+   "age": 74,
+   "job": "insurance advisor",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Bheed zyada thi par number sahi aaya. Sheher me isse behtar mushkil hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_397",
+   "name": "Pradeep Chatterjee",
+   "age": 29,
+   "job": "professor",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Bilkul waisa mila jaisa bataya gaya tha. Pure mohalle ko bata diya hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_398",
+   "name": "Myra Agarwal",
+   "age": 35,
+   "job": "AC technician",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bilkul waisa mila jaisa bataya gaya tha. Rating kam dene ka man hi nahi karta. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_399",
+   "name": "Rubina Kulkarni",
+   "age": 19,
+   "job": "call centre executive",
+   "cat": "Health",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Ghar walo ko bhi yahi jagah pasand aayi. Agli baar pariwar ko bhi launga. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_400",
+   "name": "Manpreet Verma",
+   "age": 60,
+   "job": "rickshaw puller",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Report time par aur sahi mili. Ab to yahi apni permanent jagah hai. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_401",
+   "name": "Dhara Narayan",
+   "age": 41,
+   "job": "security supervisor",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Bheed zyada thi par number sahi aaya. Ek baar galti hui, turant sudhaar bhi diya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_402",
+   "name": "Swati Prakash",
+   "age": 19,
+   "job": "gym trainer",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Har baar ek jaisi quality — yahi bharosa hai. Jo paisa diya, vasool ho gaya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_403",
+   "name": "Nagma Balaji",
+   "age": 53,
+   "job": "chef",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Report time par aur sahi mili. Sheher me isse behtar mushkil hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_404",
+   "name": "Rose Arora",
+   "age": 22,
+   "job": "fruit seller",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bheed zyada thi par number sahi aaya. Agli baar pariwar ko bhi launga. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_405",
+   "name": "Rajesh Verma",
+   "age": 55,
+   "job": "stationery owner",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Ek-do baar der hui, par kaam pakka hua. Paanch sitaare se kam banta hi nahi. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_406",
+   "name": "Suresh Sen",
+   "age": 52,
+   "job": "waiter",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Purana samaan badal kar naya de diya, bina jhanjhat. Paanch sitaare se kam banta hi nahi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_407",
+   "name": "Manpreet Rajput",
+   "age": 76,
+   "job": "milkman",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Bheed zyada thi par number sahi aaya. Parking ki dikkat hai, baaki sab badhiya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_408",
+   "name": "Neha Menon",
+   "age": 70,
+   "job": "call centre executive",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Har baar ek jaisi quality — yahi bharosa hai. Paanch sitaare se kam banta hi nahi. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_409",
+   "name": "Nisha Chopra",
+   "age": 17,
+   "job": "mechanic",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Quality me koi samjhota nahi dikha. Daam halka sa zyada laga, par quality ne mana liya. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_410",
+   "name": "Mohit Sharma",
+   "age": 66,
+   "job": "metro guard",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Ek-do baar der hui, par kaam pakka hua. Parking ki dikkat hai, baaki sab badhiya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_411",
+   "name": "Kiran Venkatesh",
+   "age": 17,
+   "job": "stock trader",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Google par photo dekh kar aaya tha. Report time par aur sahi mili. Daam halka sa zyada laga, par quality ne mana liya. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_412",
+   "name": "Preeti Thakur",
+   "age": 72,
+   "job": "railway employee",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Daam bazaar ke hisaab se sahi hai. Peek hours me bheed sambhalni padegi. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_413",
+   "name": "Shreya Murthy",
+   "age": 62,
+   "job": "data entry operator",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Daam bazaar ke hisaab se sahi hai. Sheher me isse behtar mushkil hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_414",
+   "name": "Simran Mittal",
+   "age": 31,
+   "job": "data entry operator",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Har baar ek jaisi quality — yahi bharosa hai. Peek hours me bheed sambhalni padegi. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_415",
+   "name": "Babita Rao",
+   "age": 56,
+   "job": "postman",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Daam bazaar ke hisaab se sahi hai. Pure mohalle ko bata diya hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_416",
+   "name": "Divya Iyer",
+   "age": 67,
+   "job": "electrician",
+   "cat": "Food",
+   "stars": 3,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Har baar ek jaisi quality — yahi bharosa hai. Peek hours me bheed sambhalni padegi. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_417",
+   "name": "Sunita Pillai",
+   "age": 20,
+   "job": "mobile repair wala",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Report time par aur sahi mili. Sheher me isse behtar mushkil hai. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_418",
+   "name": "Simran Khanna",
+   "age": 75,
+   "job": "tour guide",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Report time par aur sahi mili. Pehle din se bachat dikhne lagi. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_419",
+   "name": "Kusum Jain",
+   "age": 45,
+   "job": "mechanic",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Quality me koi samjhota nahi dikha. Agli baar pariwar ko bhi launga. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_420",
+   "name": "Yogesh Varma",
+   "age": 56,
+   "job": "airport staff",
+   "cat": "Energy",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Ek-do baar der hui, par kaam pakka hua. Parking ki dikkat hai, baaki sab badhiya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_421",
+   "name": "Ira Mathew",
+   "age": 28,
+   "job": "tailor",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Ghar walo ko bhi yahi jagah pasand aayi. Pure mohalle ko bata diya hai. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_422",
+   "name": "Diya Ghosh",
+   "age": 30,
+   "job": "professor",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Kaam samay par aur saaf-suthra hua. Rating kam dene ka man hi nahi karta. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_423",
+   "name": "Aditya Patil",
+   "age": 39,
+   "job": "paan shop owner",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Ghar walo ko bhi yahi jagah pasand aayi. Dil se shukriya — aise hi chalao. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_424",
+   "name": "Dhara Murthy",
+   "age": 27,
+   "job": "IT engineer",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Daam bazaar ke hisaab se sahi hai. Agli baar pariwar ko bhi launga. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_425",
+   "name": "Riya Prakash",
+   "age": 58,
+   "job": "police constable",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Daam bazaar ke hisaab se sahi hai. Rating kam dene ka man hi nahi karta. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_426",
+   "name": "Meera Arora",
+   "age": 67,
+   "job": "bus conductor",
+   "cat": "Retail",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Ek-do baar der hui, par kaam pakka hua. Peek hours me bheed sambhalni padegi. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_427",
+   "name": "Jignesh Chawla",
+   "age": 33,
+   "job": "sales executive",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Staff ki tameez hi asal pehchaan hai yaha ki. Report time par aur sahi mili. Thoda intezaar zyada ho gaya, par kaam acha hua. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_428",
+   "name": "Baljeet Patel",
+   "age": 37,
+   "job": "paan shop owner",
+   "cat": "Edu",
+   "stars": 4,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Kaam samay par aur saaf-suthra hua. Sheher me isse behtar mushkil hai. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_429",
+   "name": "Rose Khanna",
+   "age": 62,
+   "job": "printing press wala",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bilkul waisa mila jaisa bataya gaya tha. Paanch sitaare se kam banta hi nahi. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_430",
+   "name": "Mohit Joshi",
+   "age": 40,
+   "job": "librarian",
+   "cat": "Service",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Bilkul waisa mila jaisa bataya gaya tha. Ab to yahi apni permanent jagah hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_431",
+   "name": "Bhavesh Bansal",
+   "age": 30,
+   "job": "cyber cafe owner",
+   "cat": "Energy",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Report time par aur sahi mili. Har mahine ka pakka kharcha yahi bandh gaya. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_432",
+   "name": "Heena Ansari",
+   "age": 26,
+   "job": "railway employee",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Bilkul waisa mila jaisa bataya gaya tha. Rating kam dene ka man hi nahi karta. Sheher me isse behtar mushkil hai."
+  },
+  {
+   "id": "cu2_10_433",
+   "name": "Thomas Shah",
+   "age": 57,
+   "job": "content writer",
+   "cat": "Health",
+   "stars": 5,
+   "text": "Google par photo dekh kar aaya tha. Ghar walo ko bhi yahi jagah pasand aayi. Paanch sitaare se kam banta hi nahi. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_434",
+   "name": "Alok Reddy",
+   "age": 48,
+   "job": "book seller",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Quality me koi samjhota nahi dikha. Ab to yahi apni permanent jagah hai. Dil se shukriya — aise hi chalao."
+  },
+  {
+   "id": "cu2_10_435",
+   "name": "Dhara Mukherjee",
+   "age": 18,
+   "job": "CA student",
+   "cat": "Retail",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Har baar ek jaisi quality — yahi bharosa hai. Ab to yahi apni permanent jagah hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_436",
+   "name": "Aadhya Narayan",
+   "age": 21,
+   "job": "CA student",
+   "cat": "Service",
+   "stars": 4,
+   "text": "Ghar ke paas hona sabse badi suvidha hai. Kaam samay par aur saaf-suthra hua. Dil se shukriya — aise hi chalao. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_437",
+   "name": "Chirag Philip",
+   "age": 26,
+   "job": "truck driver",
+   "cat": "Tech",
+   "stars": 4,
+   "text": "Google par photo dekh kar aaya tha. Quality me koi samjhota nahi dikha. Pehle din se bachat dikhne lagi. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_438",
+   "name": "Anita Raju",
+   "age": 50,
+   "job": "sabzi wala",
+   "cat": "Retail",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ek-do baar der hui, par kaam pakka hua. Har mahine ka pakka kharcha yahi bandh gaya. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_439",
+   "name": "Suresh Chauhan",
+   "age": 17,
+   "job": "florist",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Quality me koi samjhota nahi dikha. Ab to yahi apni permanent jagah hai. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_440",
+   "name": "Aadhya Chopra",
+   "age": 25,
+   "job": "stationery owner",
+   "cat": "Industry",
+   "stars": 5,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Bilkul waisa mila jaisa bataya gaya tha. Ab to yahi apni permanent jagah hai. Pure mohalle ko bata diya hai."
+  },
+  {
+   "id": "cu2_10_441",
+   "name": "Thomas Chandra",
+   "age": 56,
+   "job": "tailor",
+   "cat": "Food",
+   "stars": 4,
+   "text": "Mohalle walo ne bheja tha, ab mai sabko bhejta hu. Purana samaan badal kar naya de diya, bina jhanjhat. Sheher me isse behtar mushkil hai. Agli baar pariwar ko bhi launga."
+  },
+  {
+   "id": "cu2_10_442",
+   "name": "Bhavesh Banerjee",
+   "age": 70,
+   "job": "AC technician",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Har baar ek jaisi quality — yahi bharosa hai. Agli baar pariwar ko bhi launga. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_443",
+   "name": "Nisha Krishnan",
+   "age": 44,
+   "job": "principal",
+   "cat": "Health",
+   "stars": 3,
+   "text": "Dost ki dukaan band thi, yaha aaya — ab yahi pakka. Ghar walo ko bhi yahi jagah pasand aayi. Peek hours me bheed sambhalni padegi. Jo paisa diya, vasool ho gaya."
+  },
+  {
+   "id": "cu2_10_444",
+   "name": "Kiran Dsouza",
+   "age": 24,
+   "job": "pharmacist",
+   "cat": "Service",
+   "stars": 3,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Ek-do baar der hui, par kaam pakka hua. Thoda intezaar zyada ho gaya, par kaam acha hua. Pehle din se bachat dikhne lagi."
+  },
+  {
+   "id": "cu2_10_445",
+   "name": "Rajesh Prakash",
+   "age": 31,
+   "job": "dhaba owner",
+   "cat": "Tech",
+   "stars": 5,
+   "text": "Bijli jaane par bhi kaam nahi ruka, ye baat dil ko lagi. Ek-do baar der hui, par kaam pakka hua. Agli baar pariwar ko bhi launga. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_446",
+   "name": "Nilesh Pereira",
+   "age": 24,
+   "job": "pandit ji",
+   "cat": "Food",
+   "stars": 5,
+   "text": "Saaf-suthri jagah dekh kar hi bharosa ban gaya. Ghar walo ko bhi yahi jagah pasand aayi. Pure mohalle ko bata diya hai. Ab to yahi apni permanent jagah hai."
+  },
+  {
+   "id": "cu2_10_447",
+   "name": "Jignesh Kapoor",
+   "age": 40,
+   "job": "carpenter",
+   "cat": "Industry",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Daam bazaar ke hisaab se sahi hai. Ek baar galti hui, turant sudhaar bhi diya. Paanch sitaare se kam banta hi nahi."
+  },
+  {
+   "id": "cu2_10_448",
+   "name": "Diya Shukla",
+   "age": 56,
+   "job": "kirana owner",
+   "cat": "Edu",
+   "stars": 5,
+   "text": "Rate sun kar aaya tha, quality dekh kar ruk gaya. Kaam samay par aur saaf-suthra hua. Pehle din se bachat dikhne lagi. Rating kam dene ka man hi nahi karta."
+  },
+  {
+   "id": "cu2_10_449",
+   "name": "Yogesh Chopra",
+   "age": 28,
+   "job": "sweet shop owner",
+   "cat": "Edu",
+   "stars": 3,
+   "text": "Pehli baar aazmaya tha, aadat ban gayi. Bheed zyada thi par number sahi aaya. Daam halka sa zyada laga, par quality ne mana liya. Har mahine ka pakka kharcha yahi bandh gaya."
+  },
+  {
+   "id": "cu2_10_450",
+   "name": "Rubina Rajput",
+   "age": 27,
+   "job": "security supervisor",
+   "cat": "Energy",
+   "stars": 4,
+   "text": "Udhaar ki suvidha ne pehle din hi dil jeet liya. Purana samaan badal kar naya de diya, bina jhanjhat. Sheher me isse behtar mushkil hai. Sheher me isse behtar mushkil hai."
+  },
+]

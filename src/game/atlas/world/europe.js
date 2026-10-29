@@ -1,0 +1,1497 @@
+// World Atlas — Europe: desh, rajdhani, sheher profiles (top-up sheher ke saath)
+export const COUNTRIES = [
+ {
+  "name": "United Kingdom",
+  "capital": "London",
+  "language": "English",
+  "currency": "£ GBP (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "London",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.65,
+    "climate": "thandi sardiyan",
+    "festival": "New Year",
+    "language": "English",
+    "currency": "£ GBP",
+    "demandTop": [
+     "Industry",
+     "Service"
+    ],
+    "districts": [
+     "London Old Town",
+     "London City Centre",
+     "London Business District",
+     "London University Area",
+     "London Portside"
+    ]
+   },
+   {
+    "name": "Manchester",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.24,
+    "climate": "baarish wala",
+    "festival": "New Year",
+    "language": "English",
+    "currency": "£ GBP",
+    "demandTop": [
+     "Food",
+     "Energy"
+    ],
+    "districts": [
+     "Manchester Old Town",
+     "Manchester City Centre",
+     "Manchester Business District",
+     "Manchester University Area",
+     "Manchester Portside"
+    ]
+   },
+   {
+    "name": "Birmingham",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.27,
+    "climate": "baarish wala",
+    "festival": "New Year",
+    "language": "English",
+    "currency": "£ GBP",
+    "demandTop": [
+     "Edu",
+     "Service"
+    ],
+    "districts": [
+     "Birmingham Old Town",
+     "Birmingham City Centre",
+     "Birmingham Business District",
+     "Birmingham University Area",
+     "Birmingham Portside"
+    ]
+   },
+   {
+    "name": "Edinburgh",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.22,
+    "climate": "thandi sardiyan",
+    "festival": "New Year",
+    "language": "English",
+    "currency": "£ GBP",
+    "demandTop": [
+     "Food",
+     "Energy"
+    ],
+    "districts": [
+     "Edinburgh Old Town",
+     "Edinburgh City Centre",
+     "Edinburgh Business District",
+     "Edinburgh University Area",
+     "Edinburgh Portside"
+    ]
+   },
+   {
+    "name": "Liverpool",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.33,
+    "climate": "baarish wala",
+    "festival": "New Year",
+    "language": "English",
+    "currency": "£ GBP",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Liverpool Old Town",
+     "Liverpool City Centre",
+     "Liverpool Business District",
+     "Liverpool University Area",
+     "Liverpool Portside"
+    ]
+   },
+   {
+    "name": "Leeds",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.34,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "English",
+    "currency": "£ GBP",
+    "demandTop": [
+     "Food",
+     "Retail"
+    ],
+    "districts": [
+     "Leeds Old Town",
+     "Leeds City Centre",
+     "Leeds Business District",
+     "Leeds University Area",
+     "Leeds Portside"
+    ]
+   },
+   {
+    "name": "Glasgow",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.32,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "English",
+    "currency": "£ GBP (flavour — hisaab ₹ me hi hota hai)",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Glasgow Old Town",
+     "Glasgow City Centre",
+     "Glasgow Business District"
+    ]
+   },
+   {
+    "name": "Bristol",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.27,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "English",
+    "currency": "£ GBP (flavour — hisaab ₹ me hi hota hai)",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Bristol Old Town",
+     "Bristol City Centre",
+     "Bristol Business District"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Ireland",
+  "capital": "Dublin",
+  "language": "English/Irish",
+  "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Dublin",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.49,
+    "climate": "baarish wala",
+    "festival": "New Year",
+    "language": "English/Irish",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Health",
+     "Retail"
+    ],
+    "districts": [
+     "Dublin Old Town",
+     "Dublin City Centre",
+     "Dublin Business District",
+     "Dublin University Area",
+     "Dublin Portside"
+    ]
+   },
+   {
+    "name": "Cork",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.39,
+    "climate": "tateeya garmi",
+    "festival": "New Year",
+    "language": "English/Irish",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Tech",
+     "Health"
+    ],
+    "districts": [
+     "Cork Old Town",
+     "Cork City Centre",
+     "Cork Business District",
+     "Cork University Area",
+     "Cork Portside"
+    ]
+   },
+   {
+    "name": "Galway",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.32,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "English/Irish",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Edu",
+     "Energy"
+    ],
+    "districts": [
+     "Galway Old Town",
+     "Galway City Centre",
+     "Galway Business District",
+     "Galway University Area",
+     "Galway Portside"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "France",
+  "capital": "Paris",
+  "language": "French",
+  "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Paris",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.64,
+    "climate": "khushk",
+    "festival": "New Year",
+    "language": "French",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Tech",
+     "Energy"
+    ],
+    "districts": [
+     "Paris Old Town",
+     "Paris City Centre",
+     "Paris Business District",
+     "Paris University Area",
+     "Paris Portside"
+    ]
+   },
+   {
+    "name": "Lyon",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.39,
+    "climate": "tateeya garmi",
+    "festival": "New Year",
+    "language": "French",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Retail",
+     "Health"
+    ],
+    "districts": [
+     "Lyon Old Town",
+     "Lyon City Centre",
+     "Lyon Business District",
+     "Lyon University Area",
+     "Lyon Portside"
+    ]
+   },
+   {
+    "name": "Marseille",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.21,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "French",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Edu",
+     "Industry"
+    ],
+    "districts": [
+     "Marseille Old Town",
+     "Marseille City Centre",
+     "Marseille Business District",
+     "Marseille University Area",
+     "Marseille Portside"
+    ]
+   },
+   {
+    "name": "Nice",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.5,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "French",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Tech",
+     "Energy"
+    ],
+    "districts": [
+     "Nice Old Town",
+     "Nice City Centre",
+     "Nice Business District",
+     "Nice University Area",
+     "Nice Portside"
+    ]
+   },
+   {
+    "name": "Bordeaux",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.48,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "French",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Health",
+     "Edu"
+    ],
+    "districts": [
+     "Bordeaux Old Town",
+     "Bordeaux City Centre",
+     "Bordeaux Business District",
+     "Bordeaux University Area",
+     "Bordeaux Portside"
+    ]
+   },
+   {
+    "name": "Toulouse",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.21,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "French",
+    "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Toulouse Old Town",
+     "Toulouse City Centre",
+     "Toulouse Business District"
+    ]
+   },
+   {
+    "name": "Lille",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.48,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "French",
+    "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Lille Old Town",
+     "Lille City Centre",
+     "Lille Business District"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Germany",
+  "capital": "Berlin",
+  "language": "German",
+  "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Berlin",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.5,
+    "climate": "pahadi thand",
+    "festival": "New Year",
+    "language": "German",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Tech",
+     "Food"
+    ],
+    "districts": [
+     "Berlin Old Town",
+     "Berlin City Centre",
+     "Berlin Business District",
+     "Berlin University Area",
+     "Berlin Portside"
+    ]
+   },
+   {
+    "name": "Munich",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.34,
+    "climate": "thandi sardiyan",
+    "festival": "New Year",
+    "language": "German",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Health",
+     "Energy"
+    ],
+    "districts": [
+     "Munich Old Town",
+     "Munich City Centre",
+     "Munich Business District",
+     "Munich University Area",
+     "Munich Portside"
+    ]
+   },
+   {
+    "name": "Hamburg",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.32,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "German",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Energy",
+     "Industry"
+    ],
+    "districts": [
+     "Hamburg Old Town",
+     "Hamburg City Centre",
+     "Hamburg Business District",
+     "Hamburg University Area",
+     "Hamburg Portside"
+    ]
+   },
+   {
+    "name": "Frankfurt",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.28,
+    "climate": "khushk",
+    "festival": "New Year",
+    "language": "German",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Retail",
+     "Tech"
+    ],
+    "districts": [
+     "Frankfurt Old Town",
+     "Frankfurt City Centre",
+     "Frankfurt Business District",
+     "Frankfurt University Area",
+     "Frankfurt Portside"
+    ]
+   },
+   {
+    "name": "Cologne",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.37,
+    "climate": "pahadi thand",
+    "festival": "New Year",
+    "language": "German",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Food",
+     "Industry"
+    ],
+    "districts": [
+     "Cologne Old Town",
+     "Cologne City Centre",
+     "Cologne Business District",
+     "Cologne University Area",
+     "Cologne Portside"
+    ]
+   },
+   {
+    "name": "Dortmund",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.45,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "German",
+    "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Dortmund Old Town",
+     "Dortmund City Centre",
+     "Dortmund Business District"
+    ]
+   },
+   {
+    "name": "Leipzig",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.25,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "German",
+    "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Leipzig Old Town",
+     "Leipzig City Centre",
+     "Leipzig Business District"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Spain",
+  "capital": "Madrid",
+  "language": "Spanish",
+  "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Madrid",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.5,
+    "climate": "baarish wala",
+    "festival": "New Year",
+    "language": "Spanish",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Energy",
+     "Health"
+    ],
+    "districts": [
+     "Madrid Old Town",
+     "Madrid City Centre",
+     "Madrid Business District",
+     "Madrid University Area",
+     "Madrid Portside"
+    ]
+   },
+   {
+    "name": "Barcelona",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.25,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "Spanish",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Retail",
+     "Industry"
+    ],
+    "districts": [
+     "Barcelona Old Town",
+     "Barcelona City Centre",
+     "Barcelona Business District",
+     "Barcelona University Area",
+     "Barcelona Portside"
+    ]
+   },
+   {
+    "name": "Valencia",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.47,
+    "climate": "thandi sardiyan",
+    "festival": "New Year",
+    "language": "Spanish",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Industry",
+     "Health"
+    ],
+    "districts": [
+     "Valencia Old Town",
+     "Valencia City Centre",
+     "Valencia Business District",
+     "Valencia University Area",
+     "Valencia Portside"
+    ]
+   },
+   {
+    "name": "Seville",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.37,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "Spanish",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Service",
+     "Retail"
+    ],
+    "districts": [
+     "Seville Old Town",
+     "Seville City Centre",
+     "Seville Business District",
+     "Seville University Area",
+     "Seville Portside"
+    ]
+   },
+   {
+    "name": "Bilbao",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.42,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "Spanish",
+    "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Bilbao Old Town",
+     "Bilbao City Centre",
+     "Bilbao Business District"
+    ]
+   },
+   {
+    "name": "Granada",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.24,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "Spanish",
+    "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Granada Old Town",
+     "Granada City Centre",
+     "Granada Business District"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Italy",
+  "capital": "Rome",
+  "language": "Italian",
+  "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Rome",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.54,
+    "climate": "pahadi thand",
+    "festival": "New Year",
+    "language": "Italian",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Energy",
+     "Industry"
+    ],
+    "districts": [
+     "Rome Old Town",
+     "Rome City Centre",
+     "Rome Business District",
+     "Rome University Area",
+     "Rome Portside"
+    ]
+   },
+   {
+    "name": "Milan",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.49,
+    "climate": "khushk",
+    "festival": "New Year",
+    "language": "Italian",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Industry",
+     "Tech"
+    ],
+    "districts": [
+     "Milan Old Town",
+     "Milan City Centre",
+     "Milan Business District",
+     "Milan University Area",
+     "Milan Portside"
+    ]
+   },
+   {
+    "name": "Naples",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.44,
+    "climate": "pahadi thand",
+    "festival": "New Year",
+    "language": "Italian",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Industry",
+     "Food"
+    ],
+    "districts": [
+     "Naples Old Town",
+     "Naples City Centre",
+     "Naples Business District",
+     "Naples University Area",
+     "Naples Portside"
+    ]
+   },
+   {
+    "name": "Venice",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.45,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "Italian",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Food",
+     "Tech"
+    ],
+    "districts": [
+     "Venice Old Town",
+     "Venice City Centre",
+     "Venice Business District",
+     "Venice University Area",
+     "Venice Portside"
+    ]
+   },
+   {
+    "name": "Florence",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.51,
+    "climate": "baarish wala",
+    "festival": "New Year",
+    "language": "Italian",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Health",
+     "Edu"
+    ],
+    "districts": [
+     "Florence Old Town",
+     "Florence City Centre",
+     "Florence Business District",
+     "Florence University Area",
+     "Florence Portside"
+    ]
+   },
+   {
+    "name": "Turin",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.23,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "Italian",
+    "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Turin Old Town",
+     "Turin City Centre",
+     "Turin Business District"
+    ]
+   },
+   {
+    "name": "Bologna",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.46,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "Italian",
+    "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Bologna Old Town",
+     "Bologna City Centre",
+     "Bologna Business District"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Netherlands",
+  "capital": "Amsterdam",
+  "language": "Dutch",
+  "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Amsterdam",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.5,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "Dutch",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Service",
+     "Edu"
+    ],
+    "districts": [
+     "Amsterdam Old Town",
+     "Amsterdam City Centre",
+     "Amsterdam Business District",
+     "Amsterdam University Area",
+     "Amsterdam Portside"
+    ]
+   },
+   {
+    "name": "Rotterdam",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.32,
+    "climate": "baarish wala",
+    "festival": "New Year",
+    "language": "Dutch",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Food",
+     "Industry"
+    ],
+    "districts": [
+     "Rotterdam Old Town",
+     "Rotterdam City Centre",
+     "Rotterdam Business District",
+     "Rotterdam University Area",
+     "Rotterdam Portside"
+    ]
+   },
+   {
+    "name": "The Hague",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.42,
+    "climate": "khushk",
+    "festival": "New Year",
+    "language": "Dutch",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Industry",
+     "Tech"
+    ],
+    "districts": [
+     "The Hague Old Town",
+     "The Hague City Centre",
+     "The Hague Business District",
+     "The Hague University Area",
+     "The Hague Portside"
+    ]
+   },
+   {
+    "name": "Utrecht",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.47,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "Dutch",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Edu",
+     "Industry"
+    ],
+    "districts": [
+     "Utrecht Old Town",
+     "Utrecht City Centre",
+     "Utrecht Business District",
+     "Utrecht University Area",
+     "Utrecht Portside"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Switzerland",
+  "capital": "Bern",
+  "language": "German/French",
+  "currency": "CHF CHF (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Zurich",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.29,
+    "climate": "pahadi thand",
+    "festival": "New Year",
+    "language": "German/French",
+    "currency": "CHF CHF",
+    "demandTop": [
+     "Energy",
+     "Edu"
+    ],
+    "districts": [
+     "Zurich Old Town",
+     "Zurich City Centre",
+     "Zurich Business District",
+     "Zurich University Area",
+     "Zurich Portside"
+    ]
+   },
+   {
+    "name": "Geneva",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.37,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "German/French",
+    "currency": "CHF CHF",
+    "demandTop": [
+     "Tech",
+     "Energy"
+    ],
+    "districts": [
+     "Geneva Old Town",
+     "Geneva City Centre",
+     "Geneva Business District",
+     "Geneva University Area",
+     "Geneva Portside"
+    ]
+   },
+   {
+    "name": "Basel",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.46,
+    "climate": "thandi sardiyan",
+    "festival": "New Year",
+    "language": "German/French",
+    "currency": "CHF CHF",
+    "demandTop": [
+     "Industry",
+     "Food"
+    ],
+    "districts": [
+     "Basel Old Town",
+     "Basel City Centre",
+     "Basel Business District",
+     "Basel University Area",
+     "Basel Portside"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Austria",
+  "capital": "Vienna",
+  "language": "German",
+  "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Vienna",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.66,
+    "climate": "baarish wala",
+    "festival": "New Year",
+    "language": "German",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Tech",
+     "Edu"
+    ],
+    "districts": [
+     "Vienna Old Town",
+     "Vienna City Centre",
+     "Vienna Business District",
+     "Vienna University Area",
+     "Vienna Portside"
+    ]
+   },
+   {
+    "name": "Salzburg",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.5,
+    "climate": "tateeya garmi",
+    "festival": "New Year",
+    "language": "German",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Health",
+     "Food"
+    ],
+    "districts": [
+     "Salzburg Old Town",
+     "Salzburg City Centre",
+     "Salzburg Business District",
+     "Salzburg University Area",
+     "Salzburg Portside"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Portugal",
+  "capital": "Lisbon",
+  "language": "Portuguese",
+  "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Lisbon",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.67,
+    "climate": "thandi sardiyan",
+    "festival": "New Year",
+    "language": "Portuguese",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Energy",
+     "Service"
+    ],
+    "districts": [
+     "Lisbon Old Town",
+     "Lisbon City Centre",
+     "Lisbon Business District",
+     "Lisbon University Area",
+     "Lisbon Portside"
+    ]
+   },
+   {
+    "name": "Porto",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.24,
+    "climate": "tateeya garmi",
+    "festival": "New Year",
+    "language": "Portuguese",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Food",
+     "Energy"
+    ],
+    "districts": [
+     "Porto Old Town",
+     "Porto City Centre",
+     "Porto Business District",
+     "Porto University Area",
+     "Porto Portside"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Greece",
+  "capital": "Athens",
+  "language": "Greek",
+  "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Athens",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.5,
+    "climate": "thandi sardiyan",
+    "festival": "New Year",
+    "language": "Greek",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Industry",
+     "Food"
+    ],
+    "districts": [
+     "Athens Old Town",
+     "Athens City Centre",
+     "Athens Business District",
+     "Athens University Area",
+     "Athens Portside"
+    ]
+   },
+   {
+    "name": "Thessaloniki",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.3,
+    "climate": "pahadi thand",
+    "festival": "New Year",
+    "language": "Greek",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Energy",
+     "Service"
+    ],
+    "districts": [
+     "Thessaloniki Old Town",
+     "Thessaloniki City Centre",
+     "Thessaloniki Business District",
+     "Thessaloniki University Area",
+     "Thessaloniki Portside"
+    ]
+   },
+   {
+    "name": "Santorini",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.29,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "Greek",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Food",
+     "Tech"
+    ],
+    "districts": [
+     "Santorini Old Town",
+     "Santorini City Centre",
+     "Santorini Business District",
+     "Santorini University Area",
+     "Santorini Portside"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Poland",
+  "capital": "Warsaw",
+  "language": "Polish",
+  "currency": "zł PLN (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Warsaw",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.51,
+    "climate": "tateeya garmi",
+    "festival": "New Year",
+    "language": "Polish",
+    "currency": "zł PLN",
+    "demandTop": [
+     "Energy",
+     "Industry"
+    ],
+    "districts": [
+     "Warsaw Old Town",
+     "Warsaw City Centre",
+     "Warsaw Business District",
+     "Warsaw University Area",
+     "Warsaw Portside"
+    ]
+   },
+   {
+    "name": "Krakow",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.37,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "Polish",
+    "currency": "zł PLN",
+    "demandTop": [
+     "Service",
+     "Health"
+    ],
+    "districts": [
+     "Krakow Old Town",
+     "Krakow City Centre",
+     "Krakow Business District",
+     "Krakow University Area",
+     "Krakow Portside"
+    ]
+   },
+   {
+    "name": "Gdansk",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.25,
+    "climate": "pahadi thand",
+    "festival": "New Year",
+    "language": "Polish",
+    "currency": "zł PLN",
+    "demandTop": [
+     "Retail",
+     "Food"
+    ],
+    "districts": [
+     "Gdansk Old Town",
+     "Gdansk City Centre",
+     "Gdansk Business District",
+     "Gdansk University Area",
+     "Gdansk Portside"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Sweden",
+  "capital": "Stockholm",
+  "language": "Swedish",
+  "currency": "kr SEK (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Stockholm",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.53,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "Swedish",
+    "currency": "kr SEK",
+    "demandTop": [
+     "Industry",
+     "Retail"
+    ],
+    "districts": [
+     "Stockholm Old Town",
+     "Stockholm City Centre",
+     "Stockholm Business District",
+     "Stockholm University Area",
+     "Stockholm Portside"
+    ]
+   },
+   {
+    "name": "Gothenburg",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.37,
+    "climate": "baarish wala",
+    "festival": "New Year",
+    "language": "Swedish",
+    "currency": "kr SEK",
+    "demandTop": [
+     "Tech",
+     "Service"
+    ],
+    "districts": [
+     "Gothenburg Old Town",
+     "Gothenburg City Centre",
+     "Gothenburg Business District",
+     "Gothenburg University Area",
+     "Gothenburg Portside"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Norway",
+  "capital": "Oslo",
+  "language": "Norwegian",
+  "currency": "kr NOK (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Oslo",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.64,
+    "climate": "baarish wala",
+    "festival": "New Year",
+    "language": "Norwegian",
+    "currency": "kr NOK",
+    "demandTop": [
+     "Food",
+     "Service"
+    ],
+    "districts": [
+     "Oslo Old Town",
+     "Oslo City Centre",
+     "Oslo Business District",
+     "Oslo University Area",
+     "Oslo Portside"
+    ]
+   },
+   {
+    "name": "Bergen",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.22,
+    "climate": "samshitoshna",
+    "festival": "New Year",
+    "language": "Norwegian",
+    "currency": "kr NOK",
+    "demandTop": [
+     "Tech",
+     "Food"
+    ],
+    "districts": [
+     "Bergen Old Town",
+     "Bergen City Centre",
+     "Bergen Business District",
+     "Bergen University Area",
+     "Bergen Portside"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Denmark",
+  "capital": "Copenhagen",
+  "language": "Danish",
+  "currency": "kr DKK (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Copenhagen",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.57,
+    "climate": "garm-num",
+    "festival": "New Year",
+    "language": "Danish",
+    "currency": "kr DKK",
+    "demandTop": [
+     "Health",
+     "Food"
+    ],
+    "districts": [
+     "Copenhagen Old Town",
+     "Copenhagen City Centre",
+     "Copenhagen Business District",
+     "Copenhagen University Area",
+     "Copenhagen Portside"
+    ]
+   },
+   {
+    "name": "Aarhus",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.35,
+    "climate": "khushk",
+    "festival": "New Year",
+    "language": "Danish",
+    "currency": "kr DKK",
+    "demandTop": [
+     "Industry",
+     "Retail"
+    ],
+    "districts": [
+     "Aarhus Old Town",
+     "Aarhus City Centre",
+     "Aarhus Business District",
+     "Aarhus University Area",
+     "Aarhus Portside"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Finland",
+  "capital": "Helsinki",
+  "language": "Finnish",
+  "currency": "€ EUR (flavour — hisaab ₹ me hi hota hai)",
+  "cities": [
+   {
+    "name": "Helsinki",
+    "tier": 4,
+    "pop": "Rajdhani sheher",
+    "income": "unch",
+    "rentIndex": 1.71,
+    "climate": "pahadi thand",
+    "festival": "New Year",
+    "language": "Finnish",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Food",
+     "Retail"
+    ],
+    "districts": [
+     "Helsinki Old Town",
+     "Helsinki City Centre",
+     "Helsinki Business District",
+     "Helsinki University Area",
+     "Helsinki Portside"
+    ]
+   },
+   {
+    "name": "Tampere",
+    "tier": 3,
+    "pop": "Bada sheher",
+    "income": "unch",
+    "rentIndex": 1.45,
+    "climate": "thandi sardiyan",
+    "festival": "New Year",
+    "language": "Finnish",
+    "currency": "€ EUR",
+    "demandTop": [
+     "Industry",
+     "Edu"
+    ],
+    "districts": [
+     "Tampere Old Town",
+     "Tampere City Centre",
+     "Tampere Business District",
+     "Tampere University Area",
+     "Tampere Portside"
+    ]
+   }
+  ]
+ }
+]

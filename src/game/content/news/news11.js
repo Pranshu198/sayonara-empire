@@ -1,0 +1,3203 @@
+// Sheher Times headline templates (deep) — part 11: {player}, {rival}, {biz}, {stock}, {fest} bhar kar akhbaar banta hai
+export const NEWS_11 = [
+  {
+   "id": "nw2_5_1",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_2",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_3",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_4",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_5",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_6",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_7",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_8",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_9",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_10",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_11",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_12",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_13",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_14",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_15",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_16",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_17",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_18",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_19",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_20",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_21",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_22",
+   "kind": "festival",
+   "tpl": "{fest} par yatra ki bheed: hotel, khana aur tohfe sab full.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_23",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_24",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_25",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_26",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_27",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_28",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_29",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_30",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_31",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_32",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_33",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_34",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_35",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_36",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_37",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_38",
+   "kind": "festival",
+   "tpl": "{fest} se pehle {place} me kharidari ka record tootne ke aasaar.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_39",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_40",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_41",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_42",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_43",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_44",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_45",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_46",
+   "kind": "festival",
+   "tpl": "{fest} par yatra ki bheed: hotel, khana aur tohfe sab full.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_47",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_48",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_49",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_50",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_51",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_52",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_53",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_54",
+   "kind": "market",
+   "tpl": "Bazaar me {stock} ki charcha — report achhi aane ki ummeed.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_55",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_56",
+   "kind": "economy",
+   "tpl": "UPI len-den ne {place} ke nakad bazaar ko peeche chhoda.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_57",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_58",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_59",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_60",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_61",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_62",
+   "kind": "festival",
+   "tpl": "{fest} se pehle {place} me kharidari ka record tootne ke aasaar.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_63",
+   "kind": "city",
+   "tpl": "{place} ke park me subah ki sair par buzurgon ki bheed badhi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_64",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_65",
+   "kind": "player",
+   "tpl": "{player} ne {biz} ke daam ghataye, graahako me khushi ki lahar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_66",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_67",
+   "kind": "player",
+   "tpl": "{player} ki nayi bharti — {place} ke naujawano ko rozgaar mila.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_68",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_69",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_70",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_71",
+   "kind": "player",
+   "tpl": "{player} ki nayi bharti — {place} ke naujawano ko rozgaar mila.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_72",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_73",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_74",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_75",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_76",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_77",
+   "kind": "player",
+   "tpl": "{player} ne {biz} ke daam ghataye, graahako me khushi ki lahar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_78",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_79",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_80",
+   "kind": "market",
+   "tpl": "Bazaar me {stock} ki charcha — report achhi aane ki ummeed.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_81",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_82",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_83",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_84",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_85",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_86",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_87",
+   "kind": "festival",
+   "tpl": "{fest} se pehle {place} me kharidari ka record tootne ke aasaar.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_88",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_89",
+   "kind": "economy",
+   "tpl": "UPI len-den ne {place} ke nakad bazaar ko peeche chhoda.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_90",
+   "kind": "city",
+   "tpl": "{place} ke park me subah ki sair par buzurgon ki bheed badhi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_91",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_92",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_93",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_94",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_95",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_96",
+   "kind": "festival",
+   "tpl": "{fest} par yatra ki bheed: hotel, khana aur tohfe sab full.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_97",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_98",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_99",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_100",
+   "kind": "festival",
+   "tpl": "{fest} se pehle {place} me kharidari ka record tootne ke aasaar.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_101",
+   "kind": "player",
+   "tpl": "{player} ne {biz} ke daam ghataye, graahako me khushi ki lahar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_102",
+   "kind": "festival",
+   "tpl": "{fest} par yatra ki bheed: hotel, khana aur tohfe sab full.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_103",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_104",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_105",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_106",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_107",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_108",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_109",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_110",
+   "kind": "market",
+   "tpl": "Bazaar me {stock} ki charcha — report achhi aane ki ummeed.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_111",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_112",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_113",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_114",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_115",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_116",
+   "kind": "market",
+   "tpl": "Visheshagya salah: {stock} par lambi nazar rakho.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_117",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_118",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_119",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_120",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_121",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_122",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_123",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_124",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_125",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_126",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_127",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_128",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_129",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_130",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_131",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_132",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_133",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_134",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_135",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_136",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_137",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_138",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_139",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_140",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_141",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_142",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_143",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_144",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_145",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_146",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_147",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_148",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_149",
+   "kind": "market",
+   "tpl": "Bazaar me {stock} ki charcha — report achhi aane ki ummeed.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_150",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_151",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_152",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_153",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_154",
+   "kind": "economy",
+   "tpl": "UPI len-den ne {place} ke nakad bazaar ko peeche chhoda.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_155",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_156",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_157",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_158",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_159",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_160",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_161",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_162",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_163",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_164",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_165",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_166",
+   "kind": "city",
+   "tpl": "{place} ke park me subah ki sair par buzurgon ki bheed badhi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_167",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_168",
+   "kind": "player",
+   "tpl": "{player} ki nayi bharti — {place} ke naujawano ko rozgaar mila.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_169",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_170",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_171",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_172",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_173",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_174",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_175",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_176",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_177",
+   "kind": "player",
+   "tpl": "{player} ki nayi bharti — {place} ke naujawano ko rozgaar mila.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_178",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_179",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_180",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_181",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_182",
+   "kind": "market",
+   "tpl": "Visheshagya salah: {stock} par lambi nazar rakho.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_183",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_184",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_185",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_186",
+   "kind": "economy",
+   "tpl": "UPI len-den ne {place} ke nakad bazaar ko peeche chhoda.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_187",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_188",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_189",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_190",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_191",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_192",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_193",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_194",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_195",
+   "kind": "player",
+   "tpl": "{player} ki nayi bharti — {place} ke naujawano ko rozgaar mila.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_196",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_197",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_198",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_199",
+   "kind": "market",
+   "tpl": "Visheshagya salah: {stock} par lambi nazar rakho.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_200",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_201",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_202",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_203",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_204",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_205",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_206",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_207",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_208",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_209",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_210",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_211",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_212",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_213",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_214",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_215",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_216",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_217",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_218",
+   "kind": "market",
+   "tpl": "Visheshagya salah: {stock} par lambi nazar rakho.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_219",
+   "kind": "economy",
+   "tpl": "UPI len-den ne {place} ke nakad bazaar ko peeche chhoda.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_220",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_221",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_222",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_223",
+   "kind": "player",
+   "tpl": "{player} ne {biz} ke daam ghataye, graahako me khushi ki lahar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_224",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_225",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_226",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_227",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_228",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_229",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_230",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_231",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_232",
+   "kind": "festival",
+   "tpl": "{fest} se pehle {place} me kharidari ka record tootne ke aasaar.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_233",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_234",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_235",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_236",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_237",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_238",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_239",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_240",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_241",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_242",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_243",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_244",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_245",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_246",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_247",
+   "kind": "player",
+   "tpl": "{player} ne {biz} ke daam ghataye, graahako me khushi ki lahar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_248",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_249",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_250",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_251",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_252",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_253",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_254",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_255",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_256",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_257",
+   "kind": "city",
+   "tpl": "{place} ke park me subah ki sair par buzurgon ki bheed badhi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_258",
+   "kind": "economy",
+   "tpl": "UPI len-den ne {place} ke nakad bazaar ko peeche chhoda.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_259",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_260",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_261",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_262",
+   "kind": "market",
+   "tpl": "Bazaar me {stock} ki charcha — report achhi aane ki ummeed.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_263",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_264",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_265",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_266",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_267",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_268",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_269",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_270",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_271",
+   "kind": "festival",
+   "tpl": "{fest} par yatra ki bheed: hotel, khana aur tohfe sab full.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_272",
+   "kind": "economy",
+   "tpl": "UPI len-den ne {place} ke nakad bazaar ko peeche chhoda.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_273",
+   "kind": "player",
+   "tpl": "{player} ki nayi bharti — {place} ke naujawano ko rozgaar mila.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_274",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_275",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_276",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_277",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_278",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_279",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_280",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_281",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_282",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_283",
+   "kind": "market",
+   "tpl": "Visheshagya salah: {stock} par lambi nazar rakho.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_284",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_285",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_286",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_287",
+   "kind": "market",
+   "tpl": "Visheshagya salah: {stock} par lambi nazar rakho.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_288",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_289",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_290",
+   "kind": "market",
+   "tpl": "Bazaar me {stock} ki charcha — report achhi aane ki ummeed.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_291",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_292",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_293",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_294",
+   "kind": "economy",
+   "tpl": "RBI ki nayi report: {place} ke bazaaro me kharidari ka mahaul garam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_295",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_296",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_297",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_298",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_299",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_300",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_301",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_302",
+   "kind": "city",
+   "tpl": "{place} ke park me subah ki sair par buzurgon ki bheed badhi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_303",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_304",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_305",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_306",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_307",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_308",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_309",
+   "kind": "player",
+   "tpl": "{player} ki nayi bharti — {place} ke naujawano ko rozgaar mila.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_310",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_311",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_312",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_313",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_314",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_315",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_316",
+   "kind": "market",
+   "tpl": "Bazaar me {stock} ki charcha — report achhi aane ki ummeed.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_317",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_318",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_319",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_320",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_321",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_322",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_323",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_324",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_325",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_326",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_327",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_328",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_329",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_330",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_331",
+   "kind": "economy",
+   "tpl": "UPI len-den ne {place} ke nakad bazaar ko peeche chhoda.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_332",
+   "kind": "market",
+   "tpl": "Visheshagya salah: {stock} par lambi nazar rakho.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_333",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_334",
+   "kind": "city",
+   "tpl": "{place} ke park me subah ki sair par buzurgon ki bheed badhi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_335",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_336",
+   "kind": "festival",
+   "tpl": "{fest} se pehle {place} me kharidari ka record tootne ke aasaar.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_337",
+   "kind": "festival",
+   "tpl": "{fest} se pehle {place} me kharidari ka record tootne ke aasaar.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_338",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_339",
+   "kind": "city",
+   "tpl": "{place} ke park me subah ki sair par buzurgon ki bheed badhi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_340",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_341",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_342",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_343",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_344",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_345",
+   "kind": "player",
+   "tpl": "Sheher bhar me charcha — {player} ke {biz} ke saamne linein lambi.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_346",
+   "kind": "city",
+   "tpl": "{place} me paani ki nayi pipeline — garmiyon ki chinta kam.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_347",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_348",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_349",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_350",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_351",
+   "kind": "player",
+   "tpl": "{player} ki nayi bharti — {place} ke naujawano ko rozgaar mila.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_352",
+   "kind": "festival",
+   "tpl": "{fest} se pehle {place} me kharidari ka record tootne ke aasaar.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_353",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_354",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_355",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_356",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_357",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_358",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_359",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_360",
+   "kind": "market",
+   "tpl": "Visheshagya salah: {stock} par lambi nazar rakho.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_361",
+   "kind": "player",
+   "tpl": "{biz} ka naya record: ek din me sabse zyada bikri, {player} ka jadoo.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_362",
+   "kind": "rival",
+   "tpl": "{rival} ki nayi chaal: {place} me badi dukaan ki taiyari.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_363",
+   "kind": "player",
+   "tpl": "{player} ki chaal: {biz} ne {place} me naya daur shuru kiya.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_364",
+   "kind": "festival",
+   "tpl": "{fest} par yatra ki bheed: hotel, khana aur tohfe sab full.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_365",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_366",
+   "kind": "player",
+   "tpl": "{player} ne {biz} ke daam ghataye, graahako me khushi ki lahar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_367",
+   "kind": "festival",
+   "tpl": "{fest} ki taiyariyaan: {place} ke bazaar sajne lage.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_368",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_369",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_370",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_371",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_372",
+   "kind": "economy",
+   "tpl": "Sona {stock} ki tarah chamak raha hai — sarafa bazaar me ronak.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_373",
+   "kind": "economy",
+   "tpl": "UPI len-den ne {place} ke nakad bazaar ko peeche chhoda.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_374",
+   "kind": "player",
+   "tpl": "{player} ne {biz} ke daam ghataye, graahako me khushi ki lahar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_375",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_376",
+   "kind": "festival",
+   "tpl": "{fest} se pehle {place} me kharidari ka record tootne ke aasaar.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_377",
+   "kind": "economy",
+   "tpl": "Mehengai dar me halki girawat — {place} ke vyapariyon ne rahat ki saans li.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_378",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_379",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_380",
+   "kind": "market",
+   "tpl": "{stock} ne nayi factory ka elaan kiya — share aasmaan par.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_381",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_382",
+   "kind": "market",
+   "tpl": "Visheshagya salah: {stock} par lambi nazar rakho.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_383",
+   "kind": "economy",
+   "tpl": "GST collection ka naya record — sheher ki arthavyavastha mazboot kadam par.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_384",
+   "kind": "player",
+   "tpl": "{player} ki nayi bharti — {place} ke naujawano ko rozgaar mila.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+  {
+   "id": "nw2_5_385",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_386",
+   "kind": "festival",
+   "tpl": "{fest} ke liye companyon ne bonus ghoshit kiya — bazaar garam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_387",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_388",
+   "kind": "player",
+   "tpl": "{player} ne {biz} ke daam ghataye, graahako me khushi ki lahar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_389",
+   "kind": "market",
+   "tpl": "{stock} ke share me girawat, samajhdar niveshak mauke ki taal me.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_390",
+   "kind": "city",
+   "tpl": "{place} ki sadko par smart light — raat ka bazaar aur surakshit.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_391",
+   "kind": "economy",
+   "tpl": "UPI len-den ne {place} ke nakad bazaar ko peeche chhoda.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "sardi"
+  },
+  {
+   "id": "nw2_5_392",
+   "kind": "city",
+   "tpl": "Nagar nigam ka elaan: {place} me haftai bazaar ki nayi vyavastha.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_393",
+   "kind": "rival",
+   "tpl": "{rival} ka naya vigyapan sheher bhar me charcha ka vishay.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_394",
+   "kind": "rival",
+   "tpl": "{rival} ki dukaan par graahako ki shikayaton ki baarish.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_395",
+   "kind": "market",
+   "tpl": "{stock} me achanak uchhal — niveshako ke chehre khile.",
+   "needsFest": false,
+   "needsStock": true,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_396",
+   "kind": "festival",
+   "tpl": "{fest} special: {biz} par bheed, mithaas aur roshni ka sangam.",
+   "needsFest": true,
+   "needsStock": false,
+   "season": "all"
+  },
+  {
+   "id": "nw2_5_397",
+   "kind": "economy",
+   "tpl": "Chhote udyogon ke liye sasta karz yojana — {place} me aavedan ki bheed.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_398",
+   "kind": "rival",
+   "tpl": "{rival} ne daam yuddh chheda — {biz} walo ko sambhalna hoga.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "tyohar"
+  },
+  {
+   "id": "nw2_5_399",
+   "kind": "rival",
+   "tpl": "Sune hai {rival} {place} me zameen dekh raha hai — vistaar ke sanket.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "barsaat"
+  },
+  {
+   "id": "nw2_5_400",
+   "kind": "city",
+   "tpl": "{place} me metro vistaar ka naksha taiyaar — zameeno ke daam badhne ke aasaar.",
+   "needsFest": false,
+   "needsStock": false,
+   "season": "garmi"
+  },
+]

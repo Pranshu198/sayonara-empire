@@ -1,0 +1,3576 @@
+// Events library (deep) — part 17: sheher ki roz-marra ki halchal, engine roz inme se chunta hai
+export const EVENTS_17 = [
+  {
+   "id": "ev2_9_1",
+   "text": "Bawana me metro ki nayi line ka trial shuru — bache ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Energy",
+    "Retail"
+   ],
+   "mag": 0.86,
+   "place": "Bawana"
+  },
+  {
+   "id": "ev2_9_2",
+   "text": "Sardi ki shuruaat ki taiyari zoron par hai — Janakpuri ke bazaaro me vyapari ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Service"
+   ],
+   "mag": 1.01,
+   "place": "Sardi"
+  },
+  {
+   "id": "ev2_9_3",
+   "text": "Jasola me naya mall khulne ki khabar — ghar ki mahilayein me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Health",
+    "Retail"
+   ],
+   "mag": 0.93,
+   "place": "Jasola"
+  },
+  {
+   "id": "ev2_9_4",
+   "text": "Tyohar bazaar ke chalte Anand Vihar ke school-college band — bache ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Edu",
+    "Food"
+   ],
+   "mag": 1.1,
+   "place": "Tyohar"
+  },
+  {
+   "id": "ev2_9_5",
+   "text": "Shaadi season ki wajah se Anand Vihar me hotel aur khana dono full — bache sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Food"
+   ],
+   "mag": 1.28,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_6",
+   "text": "Gurgaon Cyber City me metro ki nayi line ka trial shuru — pariwar ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Industry"
+   ],
+   "mag": 1.4,
+   "place": "Gurgaon"
+  },
+  {
+   "id": "ev2_9_7",
+   "text": "Garmi ki chhuttiyaan ke chalte Khan Market ke school-college band — pravasi mazdoor ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Tech"
+   ],
+   "mag": 1.29,
+   "place": "Garmi"
+  },
+  {
+   "id": "ev2_9_8",
+   "text": "Rohini me bijli-paani ki dikkat se vidyarthi pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Retail"
+   ],
+   "mag": 1.43,
+   "place": "Rohini"
+  },
+  {
+   "id": "ev2_9_9",
+   "text": "Uttam Nagar me bijli-paani ki dikkat se naujawan jode pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Edu"
+   ],
+   "mag": 1.23,
+   "place": "Uttam"
+  },
+  {
+   "id": "ev2_9_10",
+   "text": "Cricket match ki jeet ka jashn Mahipalpur ki sadkon par — naujawan jode raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Tech",
+    "Edu"
+   ],
+   "mag": 0.93,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_11",
+   "text": "Badarpur me safai abhiyan aur saundaryikaran — sailani ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Retail"
+   ],
+   "mag": 1.35,
+   "place": "Badarpur"
+  },
+  {
+   "id": "ev2_9_12",
+   "text": "Vikaspuri me naya mall khulne ki khabar — naujawan jode me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Retail",
+    "Energy"
+   ],
+   "mag": 1.31,
+   "place": "Vikaspuri"
+  },
+  {
+   "id": "ev2_9_13",
+   "text": "Punjabi Bagh me naya mall khulne ki khabar — bache me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Tech"
+   ],
+   "mag": 1.27,
+   "place": "Punjabi"
+  },
+  {
+   "id": "ev2_9_14",
+   "text": "Karol Bagh me property ke daam uchhle — kirayedaar buzurg log dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Edu",
+    "Retail"
+   ],
+   "mag": 0.95,
+   "place": "Karol"
+  },
+  {
+   "id": "ev2_9_15",
+   "text": "Sheher ki badi company ne Subhash Nagar me bonus ghoshit kiya — ghar ki mahilayein ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Edu"
+   ],
+   "mag": 1.02,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_16",
+   "text": "Weekend mela ke chalte Anand Vihar ke school-college band — ghar ki mahilayein ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Industry"
+   ],
+   "mag": 1.3,
+   "place": "Weekend"
+  },
+  {
+   "id": "ev2_9_17",
+   "text": "Mahipalpur me bijli-paani ki dikkat se bache pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Tech"
+   ],
+   "mag": 1.32,
+   "place": "Mahipalpur"
+  },
+  {
+   "id": "ev2_9_18",
+   "text": "Sardi ki shuruaat ki wajah se Narela me hotel aur khana dono full — ghar ki mahilayein sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Health",
+    "Energy"
+   ],
+   "mag": 1.21,
+   "place": "Sardi"
+  },
+  {
+   "id": "ev2_9_19",
+   "text": "Nehru Place me bijli-paani ki dikkat se bache pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 1.07,
+   "place": "Nehru"
+  },
+  {
+   "id": "ev2_9_20",
+   "text": "Cricket match ki jeet ka jashn Anand Vihar ki sadkon par — ghar ki mahilayein raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Tech"
+   ],
+   "mag": 1.16,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_21",
+   "text": "Rakhi ki taiyari zoron par hai — Shahdara ke bazaaro me pravasi mazdoor ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Tech"
+   ],
+   "mag": 1.09,
+   "place": "Rakhi"
+  },
+  {
+   "id": "ev2_9_22",
+   "text": "Ashok Vihar me naya mall khulne ki khabar — vidyarthi me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Retail"
+   ],
+   "mag": 1.12,
+   "place": "Ashok"
+  },
+  {
+   "id": "ev2_9_23",
+   "text": "Film festival ki taiyari zoron par hai — Rajouri Garden ke bazaaro me pariwar ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Service",
+    "Tech"
+   ],
+   "mag": 1.01,
+   "place": "Film"
+  },
+  {
+   "id": "ev2_9_24",
+   "text": "Palam me metro ki nayi line ka trial shuru — office jaane wale ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Food"
+   ],
+   "mag": 1.29,
+   "place": "Palam"
+  },
+  {
+   "id": "ev2_9_25",
+   "text": "Saal ka aakhir ki taiyari zoron par hai — Vasant Kunj ke bazaaro me office jaane wale ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Retail"
+   ],
+   "mag": 1.42,
+   "place": "Saal"
+  },
+  {
+   "id": "ev2_9_26",
+   "text": "Greater Kailash me bijli-paani ki dikkat se naujawan jode pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Service",
+    "Industry"
+   ],
+   "mag": 1.17,
+   "place": "Greater"
+  },
+  {
+   "id": "ev2_9_27",
+   "text": "Weekend mela ki wajah se Badarpur me hotel aur khana dono full — bache sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Edu",
+    "Health"
+   ],
+   "mag": 1.39,
+   "place": "Weekend"
+  },
+  {
+   "id": "ev2_9_28",
+   "text": "Laxmi Nagar me metro ki nayi line ka trial shuru — office jaane wale ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Edu"
+   ],
+   "mag": 1.18,
+   "place": "Laxmi"
+  },
+  {
+   "id": "ev2_9_29",
+   "text": "Garmi ki chhuttiyaan ke chalte Laxmi Nagar ke school-college band — pariwar ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Food",
+    "Industry"
+   ],
+   "mag": 1.44,
+   "place": "Garmi"
+  },
+  {
+   "id": "ev2_9_30",
+   "text": "Tyohar bazaar ki wajah se Palam me hotel aur khana dono full — pariwar sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Health",
+    "Industry"
+   ],
+   "mag": 0.88,
+   "place": "Tyohar"
+  },
+  {
+   "id": "ev2_9_31",
+   "text": "Mausam vibhag ki chetaavni: Munirka me tez baarish ke aasaar. bache ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Retail",
+    "Food"
+   ],
+   "mag": 1.23,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_32",
+   "text": "Anand Vihar me metro ki nayi line ka trial shuru — vidyarthi ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Retail"
+   ],
+   "mag": 1.19,
+   "place": "Anand"
+  },
+  {
+   "id": "ev2_9_33",
+   "text": "Rakhi ki wajah se Okhla me hotel aur khana dono full — office jaane wale sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 0.97,
+   "place": "Rakhi"
+  },
+  {
+   "id": "ev2_9_34",
+   "text": "Shahdara me naya mall khulne ki khabar — vyapari me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Tech"
+   ],
+   "mag": 1.44,
+   "place": "Shahdara"
+  },
+  {
+   "id": "ev2_9_35",
+   "text": "Saal ka aakhir ke chalte Noida Sector 18 ke school-college band — pravasi mazdoor ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Edu"
+   ],
+   "mag": 1.4,
+   "place": "Saal"
+  },
+  {
+   "id": "ev2_9_36",
+   "text": "Petrol ke daam ka asar Anand Vihar tak — ghar ki mahilayein ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Retail"
+   ],
+   "mag": 1.02,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_37",
+   "text": "Sarkari ghoshna: Rohini ke chhote vyapariyon ke liye rahat package. ghar ki mahilayein me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Energy",
+    "Service"
+   ],
+   "mag": 0.86,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_38",
+   "text": "Shaadi season ki taiyari zoron par hai — Laxmi Nagar ke bazaaro me buzurg log ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Energy"
+   ],
+   "mag": 1.33,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_39",
+   "text": "Petrol ke daam ka asar Bawana tak — naujawan jode ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Tech"
+   ],
+   "mag": 1,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_40",
+   "text": "Sarkari ghoshna: Aerocity ke chhote vyapariyon ke liye rahat package. bache me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Industry"
+   ],
+   "mag": 0.94,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_41",
+   "text": "Social media par Janakpuri ki ek dukaan viral — naujawan jode line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Retail"
+   ],
+   "mag": 1.3,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_42",
+   "text": "Rakhi ki taiyari zoron par hai — Kalkaji ke bazaaro me buzurg log ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Health",
+    "Industry"
+   ],
+   "mag": 1.39,
+   "place": "Rakhi"
+  },
+  {
+   "id": "ev2_9_43",
+   "text": "Shahdara me safai abhiyan aur saundaryikaran — vyapari ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Edu",
+    "Energy"
+   ],
+   "mag": 1.32,
+   "place": "Shahdara"
+  },
+  {
+   "id": "ev2_9_44",
+   "text": "Social media par Narela ki ek dukaan viral — naujawan jode line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Health"
+   ],
+   "mag": 1.33,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_45",
+   "text": "Bawana me safai abhiyan aur saundaryikaran — ghar ki mahilayein ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Food",
+    "Health"
+   ],
+   "mag": 1.25,
+   "place": "Bawana"
+  },
+  {
+   "id": "ev2_9_46",
+   "text": "Mahipalpur me safai abhiyan aur saundaryikaran — pravasi mazdoor ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Service"
+   ],
+   "mag": 1.01,
+   "place": "Mahipalpur"
+  },
+  {
+   "id": "ev2_9_47",
+   "text": "Naya saal ke chalte Paharganj ke school-college band — buzurg log ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Energy",
+    "Health"
+   ],
+   "mag": 1.35,
+   "place": "Naya"
+  },
+  {
+   "id": "ev2_9_48",
+   "text": "Naya saal ki wajah se Lajpat Nagar me hotel aur khana dono full — buzurg log sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Tech"
+   ],
+   "mag": 1.41,
+   "place": "Naya"
+  },
+  {
+   "id": "ev2_9_49",
+   "text": "Sardi ki shuruaat ki wajah se Burari me hotel aur khana dono full — vyapari sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Food",
+    "Industry"
+   ],
+   "mag": 1.18,
+   "place": "Sardi"
+  },
+  {
+   "id": "ev2_9_50",
+   "text": "Chandni Chowk me bijli-paani ki dikkat se bache pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Retail",
+    "Tech"
+   ],
+   "mag": 1.24,
+   "place": "Chandni"
+  },
+  {
+   "id": "ev2_9_51",
+   "text": "Social media par Vikaspuri ki ek dukaan viral — vyapari line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Edu"
+   ],
+   "mag": 1.15,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_52",
+   "text": "Model Town me naya mall khulne ki khabar — buzurg log me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Industry"
+   ],
+   "mag": 1.11,
+   "place": "Model"
+  },
+  {
+   "id": "ev2_9_53",
+   "text": "Garmi ki chhuttiyaan ki wajah se Shahdara me hotel aur khana dono full — vyapari sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Industry",
+    "Service"
+   ],
+   "mag": 1.39,
+   "place": "Garmi"
+  },
+  {
+   "id": "ev2_9_54",
+   "text": "Mahipalpur me safai abhiyan aur saundaryikaran — naujawan jode ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Service"
+   ],
+   "mag": 1.05,
+   "place": "Mahipalpur"
+  },
+  {
+   "id": "ev2_9_55",
+   "text": "Petrol ke daam ka asar Najafgarh tak — buzurg log ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Tech",
+    "Food"
+   ],
+   "mag": 1.07,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_56",
+   "text": "Petrol ke daam ka asar Govindpuri tak — buzurg log ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Health"
+   ],
+   "mag": 0.97,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_57",
+   "text": "Petrol ke daam ka asar IP Extension tak — buzurg log ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Retail"
+   ],
+   "mag": 1.22,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_58",
+   "text": "Monsoon sale ke chalte Bawana ke school-college band — pariwar ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 1.19,
+   "place": "Monsoon"
+  },
+  {
+   "id": "ev2_9_59",
+   "text": "Social media par Gurgaon Cyber City ki ek dukaan viral — office jaane wale line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Energy"
+   ],
+   "mag": 0.88,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_60",
+   "text": "Hauz Khas me property ke daam uchhle — kirayedaar buzurg log dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Tech"
+   ],
+   "mag": 0.96,
+   "place": "Hauz"
+  },
+  {
+   "id": "ev2_9_61",
+   "text": "Admission season ki wajah se Faridabad me hotel aur khana dono full — vidyarthi sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Retail",
+    "Edu"
+   ],
+   "mag": 1.28,
+   "place": "Admission"
+  },
+  {
+   "id": "ev2_9_62",
+   "text": "Narela me bijli-paani ki dikkat se sailani pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 1.38,
+   "place": "Narela"
+  },
+  {
+   "id": "ev2_9_63",
+   "text": "Paschim Vihar me safai abhiyan aur saundaryikaran — sailani ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Retail"
+   ],
+   "mag": 0.91,
+   "place": "Paschim"
+  },
+  {
+   "id": "ev2_9_64",
+   "text": "Food festival ki taiyari zoron par hai — Narela ke bazaaro me sailani ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Service"
+   ],
+   "mag": 1.2,
+   "place": "Food"
+  },
+  {
+   "id": "ev2_9_65",
+   "text": "Faridabad me bijli-paani ki dikkat se office jaane wale pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Health"
+   ],
+   "mag": 1.26,
+   "place": "Faridabad"
+  },
+  {
+   "id": "ev2_9_66",
+   "text": "Sardi ki shuruaat ki wajah se Bawana me hotel aur khana dono full — vidyarthi sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Edu",
+    "Energy"
+   ],
+   "mag": 1.27,
+   "place": "Sardi"
+  },
+  {
+   "id": "ev2_9_67",
+   "text": "Nehru Place me metro ki nayi line ka trial shuru — naujawan jode ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Industry"
+   ],
+   "mag": 1.41,
+   "place": "Nehru"
+  },
+  {
+   "id": "ev2_9_68",
+   "text": "Saket me bijli-paani ki dikkat se bache pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Service",
+    "Food"
+   ],
+   "mag": 0.86,
+   "place": "Saket"
+  },
+  {
+   "id": "ev2_9_69",
+   "text": "Malviya Nagar me safai abhiyan aur saundaryikaran — bache ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 1.07,
+   "place": "Malviya"
+  },
+  {
+   "id": "ev2_9_70",
+   "text": "Admission season ki taiyari zoron par hai — Punjabi Bagh ke bazaaro me office jaane wale ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Tech",
+    "Retail"
+   ],
+   "mag": 1.33,
+   "place": "Admission"
+  },
+  {
+   "id": "ev2_9_71",
+   "text": "Petrol ke daam ka asar Ashok Vihar tak — ghar ki mahilayein ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Industry",
+    "Tech"
+   ],
+   "mag": 0.98,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_72",
+   "text": "Najafgarh me safai abhiyan aur saundaryikaran — sailani ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Health",
+    "Retail"
+   ],
+   "mag": 1.24,
+   "place": "Najafgarh"
+  },
+  {
+   "id": "ev2_9_73",
+   "text": "Sheher ki badi company ne Lajpat Nagar me bonus ghoshit kiya — buzurg log ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Edu",
+    "Tech"
+   ],
+   "mag": 1.21,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_74",
+   "text": "Paharganj me property ke daam uchhle — kirayedaar office jaane wale dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Health",
+    "Service"
+   ],
+   "mag": 0.96,
+   "place": "Paharganj"
+  },
+  {
+   "id": "ev2_9_75",
+   "text": "Shaadi season ke chalte Malviya Nagar ke school-college band — bache ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Health",
+    "Energy"
+   ],
+   "mag": 0.89,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_76",
+   "text": "Mausam vibhag ki chetaavni: Hauz Khas me tez baarish ke aasaar. naujawan jode ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Health"
+   ],
+   "mag": 1.21,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_77",
+   "text": "Karol Bagh me naya mall khulne ki khabar — buzurg log me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Retail"
+   ],
+   "mag": 1.09,
+   "place": "Karol"
+  },
+  {
+   "id": "ev2_9_78",
+   "text": "Sheher ki badi company ne Vaishali me bonus ghoshit kiya — vidyarthi ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Service"
+   ],
+   "mag": 1.09,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_79",
+   "text": "Lajpat Nagar me safai abhiyan aur saundaryikaran — bache ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Food"
+   ],
+   "mag": 1.4,
+   "place": "Lajpat"
+  },
+  {
+   "id": "ev2_9_80",
+   "text": "Petrol ke daam ka asar Badarpur tak — bache ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Service",
+    "Industry"
+   ],
+   "mag": 1.06,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_81",
+   "text": "Board pariksha ki taiyari zoron par hai — Ashok Vihar ke bazaaro me naujawan jode ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Industry",
+    "Food"
+   ],
+   "mag": 1.39,
+   "place": "Board"
+  },
+  {
+   "id": "ev2_9_82",
+   "text": "Film festival ki wajah se Malviya Nagar me hotel aur khana dono full — vyapari sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Food"
+   ],
+   "mag": 1.15,
+   "place": "Film"
+  },
+  {
+   "id": "ev2_9_83",
+   "text": "Paschim Vihar me naya mall khulne ki khabar — bache me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Service",
+    "Industry"
+   ],
+   "mag": 0.96,
+   "place": "Paschim"
+  },
+  {
+   "id": "ev2_9_84",
+   "text": "Cricket match ki jeet ka jashn Shahdara ki sadkon par — naujawan jode raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Tech",
+    "Edu"
+   ],
+   "mag": 1.01,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_85",
+   "text": "Cricket match ki jeet ka jashn Govindpuri ki sadkon par — bache raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Service",
+    "Health"
+   ],
+   "mag": 1.32,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_86",
+   "text": "Garmi ki chhuttiyaan ke chalte Civil Lines ke school-college band — bache ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Food"
+   ],
+   "mag": 1.14,
+   "place": "Garmi"
+  },
+  {
+   "id": "ev2_9_87",
+   "text": "Karol Bagh me property ke daam uchhle — kirayedaar vidyarthi dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 1.43,
+   "place": "Karol"
+  },
+  {
+   "id": "ev2_9_88",
+   "text": "Monsoon sale ki taiyari zoron par hai — Hauz Khas ke bazaaro me buzurg log ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Retail"
+   ],
+   "mag": 1.05,
+   "place": "Monsoon"
+  },
+  {
+   "id": "ev2_9_89",
+   "text": "Model Town me metro ki nayi line ka trial shuru — office jaane wale ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Health"
+   ],
+   "mag": 1.2,
+   "place": "Model"
+  },
+  {
+   "id": "ev2_9_90",
+   "text": "Film festival ke chalte Subhash Nagar ke school-college band — pravasi mazdoor ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Edu",
+    "Food"
+   ],
+   "mag": 1.39,
+   "place": "Film"
+  },
+  {
+   "id": "ev2_9_91",
+   "text": "Social media par Paharganj ki ek dukaan viral — vyapari line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Health"
+   ],
+   "mag": 1.25,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_92",
+   "text": "Sheher ki badi company ne Pitampura me bonus ghoshit kiya — pravasi mazdoor ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Service",
+    "Tech"
+   ],
+   "mag": 1.14,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_93",
+   "text": "Monsoon sale ke chalte Civil Lines ke school-college band — sailani ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Industry"
+   ],
+   "mag": 0.97,
+   "place": "Monsoon"
+  },
+  {
+   "id": "ev2_9_94",
+   "text": "Shaadi season ki wajah se Burari me hotel aur khana dono full — naujawan jode sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Retail"
+   ],
+   "mag": 1.11,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_95",
+   "text": "Local chunav ki wajah se Aerocity me hotel aur khana dono full — vyapari sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Service",
+    "Food"
+   ],
+   "mag": 0.88,
+   "place": "Local"
+  },
+  {
+   "id": "ev2_9_96",
+   "text": "Mausam vibhag ki chetaavni: Ashok Vihar me tez baarish ke aasaar. sailani ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Tech",
+    "Edu"
+   ],
+   "mag": 1.12,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_97",
+   "text": "Monsoon sale ke chalte Indirapuram ke school-college band — pariwar ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Health"
+   ],
+   "mag": 1.18,
+   "place": "Monsoon"
+  },
+  {
+   "id": "ev2_9_98",
+   "text": "Naya saal ki wajah se Nangloi me hotel aur khana dono full — naujawan jode sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Industry"
+   ],
+   "mag": 1.11,
+   "place": "Naya"
+  },
+  {
+   "id": "ev2_9_99",
+   "text": "Shaadi season ki wajah se Malviya Nagar me hotel aur khana dono full — office jaane wale sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Tech",
+    "Energy"
+   ],
+   "mag": 1.01,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_100",
+   "text": "Petrol ke daam ka asar Ashok Vihar tak — sailani ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Industry",
+    "Service"
+   ],
+   "mag": 0.9,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_101",
+   "text": "Malviya Nagar me property ke daam uchhle — kirayedaar sailani dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Tech"
+   ],
+   "mag": 1.05,
+   "place": "Malviya"
+  },
+  {
+   "id": "ev2_9_102",
+   "text": "Sheher ki badi company ne Preet Vihar me bonus ghoshit kiya — bache ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Food"
+   ],
+   "mag": 1.42,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_103",
+   "text": "INA me bijli-paani ki dikkat se ghar ki mahilayein pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Food",
+    "Energy"
+   ],
+   "mag": 1.1,
+   "place": "INA"
+  },
+  {
+   "id": "ev2_9_104",
+   "text": "Cricket match ki jeet ka jashn Dilshad Garden ki sadkon par — office jaane wale raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Industry",
+    "Food"
+   ],
+   "mag": 0.9,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_105",
+   "text": "Burari me property ke daam uchhle — kirayedaar pravasi mazdoor dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Energy"
+   ],
+   "mag": 1.41,
+   "place": "Burari"
+  },
+  {
+   "id": "ev2_9_106",
+   "text": "Mausam vibhag ki chetaavni: Ghaziabad me tez baarish ke aasaar. vyapari ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Tech",
+    "Edu"
+   ],
+   "mag": 1.18,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_107",
+   "text": "Petrol ke daam ka asar Chandni Chowk tak — naujawan jode ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Tech"
+   ],
+   "mag": 1.42,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_108",
+   "text": "Sarkari ghoshna: Shahdara ke chhote vyapariyon ke liye rahat package. pariwar me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Food"
+   ],
+   "mag": 1.17,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_109",
+   "text": "Sarkari ghoshna: Civil Lines ke chhote vyapariyon ke liye rahat package. sailani me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Retail",
+    "Energy"
+   ],
+   "mag": 1.21,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_110",
+   "text": "Board pariksha ke chalte Sarojini Nagar ke school-college band — naujawan jode ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Edu"
+   ],
+   "mag": 1.27,
+   "place": "Board"
+  },
+  {
+   "id": "ev2_9_111",
+   "text": "Burari me safai abhiyan aur saundaryikaran — sailani ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 1.01,
+   "place": "Burari"
+  },
+  {
+   "id": "ev2_9_112",
+   "text": "Sheher ki badi company ne Khan Market me bonus ghoshit kiya — sailani ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Industry"
+   ],
+   "mag": 1.27,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_113",
+   "text": "Sarkari ghoshna: Connaught Place ke chhote vyapariyon ke liye rahat package. vyapari me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Retail"
+   ],
+   "mag": 1.07,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_114",
+   "text": "Social media par Ashok Vihar ki ek dukaan viral — pariwar line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Service",
+    "Tech"
+   ],
+   "mag": 0.91,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_115",
+   "text": "Tyohar bazaar ke chalte Aerocity ke school-college band — bache ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Energy",
+    "Service"
+   ],
+   "mag": 1.19,
+   "place": "Tyohar"
+  },
+  {
+   "id": "ev2_9_116",
+   "text": "Uttam Nagar me naya mall khulne ki khabar — vyapari me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Edu"
+   ],
+   "mag": 1.4,
+   "place": "Uttam"
+  },
+  {
+   "id": "ev2_9_117",
+   "text": "Garmi ki chhuttiyaan ki taiyari zoron par hai — Dwarka ke bazaaro me pravasi mazdoor ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Food"
+   ],
+   "mag": 1.34,
+   "place": "Garmi"
+  },
+  {
+   "id": "ev2_9_118",
+   "text": "Gurgaon Cyber City me naya mall khulne ki khabar — ghar ki mahilayein me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Food"
+   ],
+   "mag": 1.2,
+   "place": "Gurgaon"
+  },
+  {
+   "id": "ev2_9_119",
+   "text": "Faridabad me property ke daam uchhle — kirayedaar office jaane wale dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Edu"
+   ],
+   "mag": 0.95,
+   "place": "Faridabad"
+  },
+  {
+   "id": "ev2_9_120",
+   "text": "Cricket match ki jeet ka jashn Preet Vihar ki sadkon par — pravasi mazdoor raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Industry",
+    "Health"
+   ],
+   "mag": 1.09,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_121",
+   "text": "Connaught Place me safai abhiyan aur saundaryikaran — naujawan jode ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Energy"
+   ],
+   "mag": 1.24,
+   "place": "Connaught"
+  },
+  {
+   "id": "ev2_9_122",
+   "text": "Noida Sector 18 me metro ki nayi line ka trial shuru — naujawan jode ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Energy"
+   ],
+   "mag": 1.2,
+   "place": "Noida"
+  },
+  {
+   "id": "ev2_9_123",
+   "text": "Monsoon sale ki taiyari zoron par hai — Okhla ke bazaaro me pariwar ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Energy",
+    "Retail"
+   ],
+   "mag": 1.23,
+   "place": "Monsoon"
+  },
+  {
+   "id": "ev2_9_124",
+   "text": "Cricket match ki jeet ka jashn Noida Sector 18 ki sadkon par — buzurg log raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Retail"
+   ],
+   "mag": 1.07,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_125",
+   "text": "Subhash Nagar me metro ki nayi line ka trial shuru — pariwar ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Retail",
+    "Industry"
+   ],
+   "mag": 1.42,
+   "place": "Subhash"
+  },
+  {
+   "id": "ev2_9_126",
+   "text": "Vikaspuri me bijli-paani ki dikkat se office jaane wale pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Energy",
+    "Industry"
+   ],
+   "mag": 0.95,
+   "place": "Vikaspuri"
+  },
+  {
+   "id": "ev2_9_127",
+   "text": "Sarkari ghoshna: Greater Kailash ke chhote vyapariyon ke liye rahat package. buzurg log me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Edu",
+    "Health"
+   ],
+   "mag": 0.95,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_128",
+   "text": "Subhash Nagar me property ke daam uchhle — kirayedaar pravasi mazdoor dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Service",
+    "Retail"
+   ],
+   "mag": 1.01,
+   "place": "Subhash"
+  },
+  {
+   "id": "ev2_9_129",
+   "text": "Local chunav ke chalte Nehru Place ke school-college band — ghar ki mahilayein ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Food",
+    "Industry"
+   ],
+   "mag": 0.99,
+   "place": "Local"
+  },
+  {
+   "id": "ev2_9_130",
+   "text": "Palam me naya mall khulne ki khabar — pravasi mazdoor me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Industry"
+   ],
+   "mag": 1.39,
+   "place": "Palam"
+  },
+  {
+   "id": "ev2_9_131",
+   "text": "Shaadi season ke chalte Nangloi ke school-college band — vidyarthi ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Retail",
+    "Edu"
+   ],
+   "mag": 0.88,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_132",
+   "text": "Preet Vihar me safai abhiyan aur saundaryikaran — vyapari ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Tech",
+    "Health"
+   ],
+   "mag": 1.09,
+   "place": "Preet"
+  },
+  {
+   "id": "ev2_9_133",
+   "text": "Sarkari ghoshna: Saket ke chhote vyapariyon ke liye rahat package. sailani me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Retail"
+   ],
+   "mag": 1.09,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_134",
+   "text": "Sheher ki badi company ne Gurgaon Cyber City me bonus ghoshit kiya — pravasi mazdoor ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Energy",
+    "Retail"
+   ],
+   "mag": 1.22,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_135",
+   "text": "Board pariksha ke chalte Laxmi Nagar ke school-college band — pravasi mazdoor ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Tech"
+   ],
+   "mag": 1.27,
+   "place": "Board"
+  },
+  {
+   "id": "ev2_9_136",
+   "text": "Mausam vibhag ki chetaavni: Greater Kailash me tez baarish ke aasaar. vyapari ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Industry"
+   ],
+   "mag": 1.27,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_137",
+   "text": "Cricket match ki jeet ka jashn Sadar Bazaar ki sadkon par — pariwar raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Industry",
+    "Retail"
+   ],
+   "mag": 1.18,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_138",
+   "text": "Gurgaon Cyber City me metro ki nayi line ka trial shuru — buzurg log ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Energy"
+   ],
+   "mag": 0.99,
+   "place": "Gurgaon"
+  },
+  {
+   "id": "ev2_9_139",
+   "text": "Sarkari ghoshna: Rajouri Garden ke chhote vyapariyon ke liye rahat package. vyapari me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Industry",
+    "Food"
+   ],
+   "mag": 1.04,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_140",
+   "text": "Hauz Khas me metro ki nayi line ka trial shuru — naujawan jode ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Industry",
+    "Food"
+   ],
+   "mag": 1.22,
+   "place": "Hauz"
+  },
+  {
+   "id": "ev2_9_141",
+   "text": "Nehru Place me metro ki nayi line ka trial shuru — vyapari ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Service"
+   ],
+   "mag": 1.29,
+   "place": "Nehru"
+  },
+  {
+   "id": "ev2_9_142",
+   "text": "INA me naya mall khulne ki khabar — pravasi mazdoor me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Food"
+   ],
+   "mag": 1.07,
+   "place": "INA"
+  },
+  {
+   "id": "ev2_9_143",
+   "text": "Sardi ki shuruaat ki wajah se Khan Market me hotel aur khana dono full — buzurg log sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Health",
+    "Service"
+   ],
+   "mag": 1.07,
+   "place": "Sardi"
+  },
+  {
+   "id": "ev2_9_144",
+   "text": "Mausam vibhag ki chetaavni: Rajouri Garden me tez baarish ke aasaar. vidyarthi ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Industry",
+    "Tech"
+   ],
+   "mag": 1.42,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_145",
+   "text": "Social media par Chandni Chowk ki ek dukaan viral — office jaane wale line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Service",
+    "Edu"
+   ],
+   "mag": 0.96,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_146",
+   "text": "Sheher ki badi company ne Janakpuri me bonus ghoshit kiya — vidyarthi ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Industry"
+   ],
+   "mag": 0.85,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_147",
+   "text": "Admission season ki taiyari zoron par hai — Rajouri Garden ke bazaaro me vyapari ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Industry"
+   ],
+   "mag": 0.91,
+   "place": "Admission"
+  },
+  {
+   "id": "ev2_9_148",
+   "text": "Rakhi ki wajah se Paschim Vihar me hotel aur khana dono full — buzurg log sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Edu"
+   ],
+   "mag": 1.27,
+   "place": "Rakhi"
+  },
+  {
+   "id": "ev2_9_149",
+   "text": "Dilshad Garden me bijli-paani ki dikkat se naujawan jode pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Health"
+   ],
+   "mag": 1.32,
+   "place": "Dilshad"
+  },
+  {
+   "id": "ev2_9_150",
+   "text": "Mausam vibhag ki chetaavni: Okhla me tez baarish ke aasaar. sailani ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Health",
+    "Service"
+   ],
+   "mag": 1.14,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_151",
+   "text": "Sheher ki badi company ne Sadar Bazaar me bonus ghoshit kiya — naujawan jode ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Food"
+   ],
+   "mag": 1.28,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_152",
+   "text": "Rakhi ki taiyari zoron par hai — Badarpur ke bazaaro me office jaane wale ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Tech"
+   ],
+   "mag": 1.36,
+   "place": "Rakhi"
+  },
+  {
+   "id": "ev2_9_153",
+   "text": "Janakpuri me metro ki nayi line ka trial shuru — naujawan jode ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Retail"
+   ],
+   "mag": 1.37,
+   "place": "Janakpuri"
+  },
+  {
+   "id": "ev2_9_154",
+   "text": "Rajouri Garden me bijli-paani ki dikkat se bache pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Edu"
+   ],
+   "mag": 0.9,
+   "place": "Rajouri"
+  },
+  {
+   "id": "ev2_9_155",
+   "text": "Laxmi Nagar me naya mall khulne ki khabar — office jaane wale me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Health",
+    "Edu"
+   ],
+   "mag": 1.4,
+   "place": "Laxmi"
+  },
+  {
+   "id": "ev2_9_156",
+   "text": "Dilshad Garden me property ke daam uchhle — kirayedaar naujawan jode dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Energy",
+    "Tech"
+   ],
+   "mag": 1.02,
+   "place": "Dilshad"
+  },
+  {
+   "id": "ev2_9_157",
+   "text": "Petrol ke daam ka asar Mahipalpur tak — pariwar ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Food"
+   ],
+   "mag": 1.4,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_158",
+   "text": "Local chunav ki wajah se Narela me hotel aur khana dono full — sailani sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Food"
+   ],
+   "mag": 0.93,
+   "place": "Local"
+  },
+  {
+   "id": "ev2_9_159",
+   "text": "Mausam vibhag ki chetaavni: Hauz Khas me tez baarish ke aasaar. bache ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Retail"
+   ],
+   "mag": 0.99,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_160",
+   "text": "Sheher ki badi company ne Janakpuri me bonus ghoshit kiya — vyapari ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Industry"
+   ],
+   "mag": 1.38,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_161",
+   "text": "Tyohar bazaar ke chalte Vaishali ke school-college band — office jaane wale ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Food",
+    "Edu"
+   ],
+   "mag": 1.31,
+   "place": "Tyohar"
+  },
+  {
+   "id": "ev2_9_162",
+   "text": "Rakhi ki wajah se Hauz Khas me hotel aur khana dono full — office jaane wale sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Edu"
+   ],
+   "mag": 0.92,
+   "place": "Rakhi"
+  },
+  {
+   "id": "ev2_9_163",
+   "text": "Film festival ki wajah se Badarpur me hotel aur khana dono full — pravasi mazdoor sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Industry"
+   ],
+   "mag": 1.2,
+   "place": "Film"
+  },
+  {
+   "id": "ev2_9_164",
+   "text": "Social media par Najafgarh ki ek dukaan viral — vidyarthi line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Industry"
+   ],
+   "mag": 1.31,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_165",
+   "text": "Ashok Vihar me bijli-paani ki dikkat se buzurg log pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Edu"
+   ],
+   "mag": 0.95,
+   "place": "Ashok"
+  },
+  {
+   "id": "ev2_9_166",
+   "text": "Dwarka me naya mall khulne ki khabar — pariwar me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Service",
+    "Energy"
+   ],
+   "mag": 1.33,
+   "place": "Dwarka"
+  },
+  {
+   "id": "ev2_9_167",
+   "text": "Cricket match ki jeet ka jashn Tilak Nagar ki sadkon par — sailani raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Retail",
+    "Energy"
+   ],
+   "mag": 1.25,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_168",
+   "text": "Shaadi season ki taiyari zoron par hai — Malviya Nagar ke bazaaro me bache ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Service"
+   ],
+   "mag": 1.22,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_169",
+   "text": "IP Extension me bijli-paani ki dikkat se pravasi mazdoor pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Industry"
+   ],
+   "mag": 1.37,
+   "place": "IP"
+  },
+  {
+   "id": "ev2_9_170",
+   "text": "Weekend mela ki taiyari zoron par hai — Mahipalpur ke bazaaro me vidyarthi ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Industry"
+   ],
+   "mag": 1.3,
+   "place": "Weekend"
+  },
+  {
+   "id": "ev2_9_171",
+   "text": "Burari me bijli-paani ki dikkat se ghar ki mahilayein pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Energy",
+    "Industry"
+   ],
+   "mag": 1.23,
+   "place": "Burari"
+  },
+  {
+   "id": "ev2_9_172",
+   "text": "Board pariksha ki wajah se Munirka me hotel aur khana dono full — ghar ki mahilayein sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Energy"
+   ],
+   "mag": 1.23,
+   "place": "Board"
+  },
+  {
+   "id": "ev2_9_173",
+   "text": "Social media par Gurgaon Cyber City ki ek dukaan viral — ghar ki mahilayein line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Service"
+   ],
+   "mag": 1.03,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_174",
+   "text": "Monsoon sale ke chalte Palam ke school-college band — vyapari ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Edu",
+    "Retail"
+   ],
+   "mag": 0.88,
+   "place": "Monsoon"
+  },
+  {
+   "id": "ev2_9_175",
+   "text": "Saal ka aakhir ki wajah se Vasant Kunj me hotel aur khana dono full — buzurg log sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Energy",
+    "Retail"
+   ],
+   "mag": 0.88,
+   "place": "Saal"
+  },
+  {
+   "id": "ev2_9_176",
+   "text": "Admission season ki wajah se Sadar Bazaar me hotel aur khana dono full — vidyarthi sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Tech"
+   ],
+   "mag": 1.24,
+   "place": "Admission"
+  },
+  {
+   "id": "ev2_9_177",
+   "text": "Paschim Vihar me naya mall khulne ki khabar — naujawan jode me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 1.41,
+   "place": "Paschim"
+  },
+  {
+   "id": "ev2_9_178",
+   "text": "Punjabi Bagh me naya mall khulne ki khabar — buzurg log me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Health"
+   ],
+   "mag": 1.34,
+   "place": "Punjabi"
+  },
+  {
+   "id": "ev2_9_179",
+   "text": "Sardi ki shuruaat ki wajah se Bawana me hotel aur khana dono full — sailani sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Industry"
+   ],
+   "mag": 0.89,
+   "place": "Sardi"
+  },
+  {
+   "id": "ev2_9_180",
+   "text": "Mausam vibhag ki chetaavni: Vikaspuri me tez baarish ke aasaar. sailani ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Energy",
+    "Tech"
+   ],
+   "mag": 1.1,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_181",
+   "text": "Narela me property ke daam uchhle — kirayedaar pariwar dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Energy"
+   ],
+   "mag": 1.06,
+   "place": "Narela"
+  },
+  {
+   "id": "ev2_9_182",
+   "text": "Sheher ki badi company ne Narela me bonus ghoshit kiya — buzurg log ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Food",
+    "Industry"
+   ],
+   "mag": 1.32,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_183",
+   "text": "Vasant Kunj me bijli-paani ki dikkat se naujawan jode pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Edu"
+   ],
+   "mag": 1.37,
+   "place": "Vasant"
+  },
+  {
+   "id": "ev2_9_184",
+   "text": "Admission season ki wajah se Dilshad Garden me hotel aur khana dono full — office jaane wale sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Edu"
+   ],
+   "mag": 1.44,
+   "place": "Admission"
+  },
+  {
+   "id": "ev2_9_185",
+   "text": "Shaadi season ke chalte Karol Bagh ke school-college band — buzurg log ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Industry",
+    "Service"
+   ],
+   "mag": 1.43,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_186",
+   "text": "Social media par Mahipalpur ki ek dukaan viral — pravasi mazdoor line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Edu"
+   ],
+   "mag": 1.03,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_187",
+   "text": "Weekend mela ke chalte Vasant Kunj ke school-college band — vyapari ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Health"
+   ],
+   "mag": 1.27,
+   "place": "Weekend"
+  },
+  {
+   "id": "ev2_9_188",
+   "text": "Garmi ki chhuttiyaan ki wajah se Malviya Nagar me hotel aur khana dono full — sailani sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Tech"
+   ],
+   "mag": 1.38,
+   "place": "Garmi"
+  },
+  {
+   "id": "ev2_9_189",
+   "text": "Petrol ke daam ka asar Paschim Vihar tak — naujawan jode ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Food",
+    "Energy"
+   ],
+   "mag": 1.16,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_190",
+   "text": "Lajpat Nagar me property ke daam uchhle — kirayedaar ghar ki mahilayein dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Service"
+   ],
+   "mag": 1.16,
+   "place": "Lajpat"
+  },
+  {
+   "id": "ev2_9_191",
+   "text": "Mausam vibhag ki chetaavni: Preet Vihar me tez baarish ke aasaar. office jaane wale ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Retail"
+   ],
+   "mag": 1.12,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_192",
+   "text": "Sarkari ghoshna: Indirapuram ke chhote vyapariyon ke liye rahat package. office jaane wale me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Service"
+   ],
+   "mag": 1.42,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_193",
+   "text": "Social media par Burari ki ek dukaan viral — sailani line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Food"
+   ],
+   "mag": 1.32,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_194",
+   "text": "Mausam vibhag ki chetaavni: Noida Sector 18 me tez baarish ke aasaar. bache ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Tech",
+    "Industry"
+   ],
+   "mag": 1.26,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_195",
+   "text": "Mausam vibhag ki chetaavni: Palam me tez baarish ke aasaar. office jaane wale ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Health"
+   ],
+   "mag": 1.42,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_196",
+   "text": "Nangloi me bijli-paani ki dikkat se vyapari pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Health",
+    "Industry"
+   ],
+   "mag": 0.89,
+   "place": "Nangloi"
+  },
+  {
+   "id": "ev2_9_197",
+   "text": "Okhla me property ke daam uchhle — kirayedaar pariwar dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Retail",
+    "Tech"
+   ],
+   "mag": 1.01,
+   "place": "Okhla"
+  },
+  {
+   "id": "ev2_9_198",
+   "text": "Naya saal ki wajah se Indirapuram me hotel aur khana dono full — pravasi mazdoor sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 0.99,
+   "place": "Naya"
+  },
+  {
+   "id": "ev2_9_199",
+   "text": "Sarojini Nagar me safai abhiyan aur saundaryikaran — office jaane wale ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Energy"
+   ],
+   "mag": 0.89,
+   "place": "Sarojini"
+  },
+  {
+   "id": "ev2_9_200",
+   "text": "Weekend mela ke chalte Burari ke school-college band — sailani ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Edu",
+    "Food"
+   ],
+   "mag": 1.12,
+   "place": "Weekend"
+  },
+  {
+   "id": "ev2_9_201",
+   "text": "Sarkari ghoshna: Paschim Vihar ke chhote vyapariyon ke liye rahat package. ghar ki mahilayein me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Energy"
+   ],
+   "mag": 1.39,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_202",
+   "text": "Social media par Nehru Place ki ek dukaan viral — pravasi mazdoor line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Industry"
+   ],
+   "mag": 1.28,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_203",
+   "text": "Pitampura me bijli-paani ki dikkat se buzurg log pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Health"
+   ],
+   "mag": 1.04,
+   "place": "Pitampura"
+  },
+  {
+   "id": "ev2_9_204",
+   "text": "Sardi ki shuruaat ke chalte Govindpuri ke school-college band — pravasi mazdoor ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Service"
+   ],
+   "mag": 1.22,
+   "place": "Sardi"
+  },
+  {
+   "id": "ev2_9_205",
+   "text": "Saket me property ke daam uchhle — kirayedaar vidyarthi dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Health",
+    "Industry"
+   ],
+   "mag": 1.22,
+   "place": "Saket"
+  },
+  {
+   "id": "ev2_9_206",
+   "text": "Mausam vibhag ki chetaavni: Model Town me tez baarish ke aasaar. office jaane wale ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Tech",
+    "Edu"
+   ],
+   "mag": 0.92,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_207",
+   "text": "Laxmi Nagar me bijli-paani ki dikkat se vyapari pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Edu",
+    "Food"
+   ],
+   "mag": 1.2,
+   "place": "Laxmi"
+  },
+  {
+   "id": "ev2_9_208",
+   "text": "Sheher ki badi company ne Model Town me bonus ghoshit kiya — vidyarthi ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Retail",
+    "Tech"
+   ],
+   "mag": 1.26,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_209",
+   "text": "Sarkari ghoshna: Tilak Nagar ke chhote vyapariyon ke liye rahat package. bache me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 0.89,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_210",
+   "text": "Admission season ke chalte Mayur Vihar ke school-college band — pariwar ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Health"
+   ],
+   "mag": 0.92,
+   "place": "Admission"
+  },
+  {
+   "id": "ev2_9_211",
+   "text": "Sarkari ghoshna: INA ke chhote vyapariyon ke liye rahat package. pariwar me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Service",
+    "Food"
+   ],
+   "mag": 1.33,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_212",
+   "text": "Social media par Hauz Khas ki ek dukaan viral — naujawan jode line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Service"
+   ],
+   "mag": 1.4,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_213",
+   "text": "Mausam vibhag ki chetaavni: Bawana me tez baarish ke aasaar. pravasi mazdoor ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Service"
+   ],
+   "mag": 0.96,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_214",
+   "text": "Film festival ki taiyari zoron par hai — Model Town ke bazaaro me bache ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 0.91,
+   "place": "Film"
+  },
+  {
+   "id": "ev2_9_215",
+   "text": "Sarkari ghoshna: Dwarka ke chhote vyapariyon ke liye rahat package. sailani me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Health",
+    "Industry"
+   ],
+   "mag": 1.08,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_216",
+   "text": "Punjabi Bagh me bijli-paani ki dikkat se pariwar pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Service"
+   ],
+   "mag": 1.33,
+   "place": "Punjabi"
+  },
+  {
+   "id": "ev2_9_217",
+   "text": "Gurgaon Cyber City me bijli-paani ki dikkat se vidyarthi pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Service",
+    "Tech"
+   ],
+   "mag": 0.9,
+   "place": "Gurgaon"
+  },
+  {
+   "id": "ev2_9_218",
+   "text": "Bawana me property ke daam uchhle — kirayedaar vyapari dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Industry"
+   ],
+   "mag": 0.9,
+   "place": "Bawana"
+  },
+  {
+   "id": "ev2_9_219",
+   "text": "Preet Vihar me bijli-paani ki dikkat se vyapari pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Tech",
+    "Energy"
+   ],
+   "mag": 0.92,
+   "place": "Preet"
+  },
+  {
+   "id": "ev2_9_220",
+   "text": "Karol Bagh me safai abhiyan aur saundaryikaran — bache ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Energy",
+    "Retail"
+   ],
+   "mag": 1.27,
+   "place": "Karol"
+  },
+  {
+   "id": "ev2_9_221",
+   "text": "Admission season ke chalte Laxmi Nagar ke school-college band — naujawan jode ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Service"
+   ],
+   "mag": 1.31,
+   "place": "Admission"
+  },
+  {
+   "id": "ev2_9_222",
+   "text": "Social media par Jasola ki ek dukaan viral — vidyarthi line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Tech",
+    "Industry"
+   ],
+   "mag": 1.32,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_223",
+   "text": "Ghaziabad me bijli-paani ki dikkat se pariwar pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Industry"
+   ],
+   "mag": 0.9,
+   "place": "Ghaziabad"
+  },
+  {
+   "id": "ev2_9_224",
+   "text": "Monsoon sale ki wajah se Dwarka me hotel aur khana dono full — office jaane wale sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Energy"
+   ],
+   "mag": 0.98,
+   "place": "Monsoon"
+  },
+  {
+   "id": "ev2_9_225",
+   "text": "Malviya Nagar me safai abhiyan aur saundaryikaran — vidyarthi ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Tech"
+   ],
+   "mag": 1.21,
+   "place": "Malviya"
+  },
+  {
+   "id": "ev2_9_226",
+   "text": "Sheher ki badi company ne Okhla me bonus ghoshit kiya — ghar ki mahilayein ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Service"
+   ],
+   "mag": 1.12,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_227",
+   "text": "Mausam vibhag ki chetaavni: Nangloi me tez baarish ke aasaar. buzurg log ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Retail"
+   ],
+   "mag": 1.21,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_228",
+   "text": "Local chunav ki taiyari zoron par hai — Faridabad ke bazaaro me pariwar ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Service",
+    "Energy"
+   ],
+   "mag": 0.94,
+   "place": "Local"
+  },
+  {
+   "id": "ev2_9_229",
+   "text": "Vasant Kunj me metro ki nayi line ka trial shuru — ghar ki mahilayein ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Edu",
+    "Energy"
+   ],
+   "mag": 1.02,
+   "place": "Vasant"
+  },
+  {
+   "id": "ev2_9_230",
+   "text": "Najafgarh me metro ki nayi line ka trial shuru — office jaane wale ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Health",
+    "Industry"
+   ],
+   "mag": 1.06,
+   "place": "Najafgarh"
+  },
+  {
+   "id": "ev2_9_231",
+   "text": "Okhla me naya mall khulne ki khabar — buzurg log me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Retail"
+   ],
+   "mag": 1.19,
+   "place": "Okhla"
+  },
+  {
+   "id": "ev2_9_232",
+   "text": "Weekend mela ki wajah se Govindpuri me hotel aur khana dono full — office jaane wale sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Edu"
+   ],
+   "mag": 1.22,
+   "place": "Weekend"
+  },
+  {
+   "id": "ev2_9_233",
+   "text": "Shaadi season ke chalte Munirka ke school-college band — office jaane wale ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Industry"
+   ],
+   "mag": 1.33,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_234",
+   "text": "Model Town me property ke daam uchhle — kirayedaar office jaane wale dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Food"
+   ],
+   "mag": 1.26,
+   "place": "Model"
+  },
+  {
+   "id": "ev2_9_235",
+   "text": "Film festival ki wajah se Pitampura me hotel aur khana dono full — bache sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Industry",
+    "Food"
+   ],
+   "mag": 0.86,
+   "place": "Film"
+  },
+  {
+   "id": "ev2_9_236",
+   "text": "Cricket match ki jeet ka jashn Model Town ki sadkon par — sailani raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Energy"
+   ],
+   "mag": 1.17,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_237",
+   "text": "Burari me property ke daam uchhle — kirayedaar ghar ki mahilayein dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Food"
+   ],
+   "mag": 0.86,
+   "place": "Burari"
+  },
+  {
+   "id": "ev2_9_238",
+   "text": "Malviya Nagar me metro ki nayi line ka trial shuru — pravasi mazdoor ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Retail",
+    "Industry"
+   ],
+   "mag": 1,
+   "place": "Malviya"
+  },
+  {
+   "id": "ev2_9_239",
+   "text": "Sheher ki badi company ne Paharganj me bonus ghoshit kiya — sailani ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Food"
+   ],
+   "mag": 0.95,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_240",
+   "text": "Kalkaji me property ke daam uchhle — kirayedaar buzurg log dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Tech"
+   ],
+   "mag": 1.35,
+   "place": "Kalkaji"
+  },
+  {
+   "id": "ev2_9_241",
+   "text": "Sarkari ghoshna: Dilshad Garden ke chhote vyapariyon ke liye rahat package. buzurg log me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Food",
+    "Service"
+   ],
+   "mag": 0.92,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_242",
+   "text": "Sardi ki shuruaat ki wajah se Shahdara me hotel aur khana dono full — pariwar sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Health"
+   ],
+   "mag": 1.06,
+   "place": "Sardi"
+  },
+  {
+   "id": "ev2_9_243",
+   "text": "IP Extension me bijli-paani ki dikkat se buzurg log pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Food"
+   ],
+   "mag": 0.87,
+   "place": "IP"
+  },
+  {
+   "id": "ev2_9_244",
+   "text": "Petrol ke daam ka asar Rajouri Garden tak — bache ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Food"
+   ],
+   "mag": 0.94,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_245",
+   "text": "Ghaziabad me naya mall khulne ki khabar — buzurg log me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Health"
+   ],
+   "mag": 1.1,
+   "place": "Ghaziabad"
+  },
+  {
+   "id": "ev2_9_246",
+   "text": "Mausam vibhag ki chetaavni: Khan Market me tez baarish ke aasaar. bache ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Retail",
+    "Service"
+   ],
+   "mag": 1.44,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_247",
+   "text": "Petrol ke daam ka asar Burari tak — pariwar ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Energy",
+    "Edu"
+   ],
+   "mag": 0.91,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_248",
+   "text": "Garmi ki chhuttiyaan ki taiyari zoron par hai — Paharganj ke bazaaro me buzurg log ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Health",
+    "Service"
+   ],
+   "mag": 0.98,
+   "place": "Garmi"
+  },
+  {
+   "id": "ev2_9_249",
+   "text": "Shaadi season ki wajah se Janakpuri me hotel aur khana dono full — vidyarthi sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Energy",
+    "Food"
+   ],
+   "mag": 0.91,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_250",
+   "text": "Petrol ke daam ka asar Janakpuri tak — pravasi mazdoor ki aamad par bojh. Sasti dukaanon ki taraf bheed badhne ke aasaar hain.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Energy",
+    "Retail"
+   ],
+   "mag": 1.08,
+   "place": "Petrol"
+  },
+  {
+   "id": "ev2_9_251",
+   "text": "Social media par Nangloi ki ek dukaan viral — naujawan jode line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Retail"
+   ],
+   "mag": 1.21,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_252",
+   "text": "Saal ka aakhir ke chalte Govindpuri ke school-college band — pravasi mazdoor ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Tech"
+   ],
+   "mag": 1.26,
+   "place": "Saal"
+  },
+  {
+   "id": "ev2_9_253",
+   "text": "Shaadi season ki wajah se Munirka me hotel aur khana dono full — sailani sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Health",
+    "Food"
+   ],
+   "mag": 1.38,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_254",
+   "text": "Najafgarh me metro ki nayi line ka trial shuru — bache ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Edu",
+    "Industry"
+   ],
+   "mag": 1.08,
+   "place": "Najafgarh"
+  },
+  {
+   "id": "ev2_9_255",
+   "text": "Social media par Okhla ki ek dukaan viral — naujawan jode line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Energy"
+   ],
+   "mag": 1.36,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_256",
+   "text": "Cricket match ki jeet ka jashn Pitampura ki sadkon par — buzurg log raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Retail",
+    "Service"
+   ],
+   "mag": 1.28,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_257",
+   "text": "Local chunav ke chalte Okhla ke school-college band — vyapari ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Edu",
+    "Health"
+   ],
+   "mag": 1.09,
+   "place": "Local"
+  },
+  {
+   "id": "ev2_9_258",
+   "text": "Mausam vibhag ki chetaavni: Khan Market me tez baarish ke aasaar. vyapari ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Service",
+    "Food"
+   ],
+   "mag": 0.94,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_259",
+   "text": "Vikaspuri me property ke daam uchhle — kirayedaar ghar ki mahilayein dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Industry"
+   ],
+   "mag": 0.86,
+   "place": "Vikaspuri"
+  },
+  {
+   "id": "ev2_9_260",
+   "text": "Model Town me bijli-paani ki dikkat se vidyarthi pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Industry"
+   ],
+   "mag": 0.92,
+   "place": "Model"
+  },
+  {
+   "id": "ev2_9_261",
+   "text": "Badarpur me property ke daam uchhle — kirayedaar office jaane wale dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Edu"
+   ],
+   "mag": 1.33,
+   "place": "Badarpur"
+  },
+  {
+   "id": "ev2_9_262",
+   "text": "Social media par Nangloi ki ek dukaan viral — sailani line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Retail",
+    "Industry"
+   ],
+   "mag": 1.07,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_263",
+   "text": "Saal ka aakhir ki taiyari zoron par hai — Sadar Bazaar ke bazaaro me ghar ki mahilayein ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Retail"
+   ],
+   "mag": 1.41,
+   "place": "Saal"
+  },
+  {
+   "id": "ev2_9_264",
+   "text": "Admission season ke chalte Greater Kailash ke school-college band — pariwar ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Health",
+    "Service"
+   ],
+   "mag": 1.19,
+   "place": "Admission"
+  },
+  {
+   "id": "ev2_9_265",
+   "text": "Shaadi season ke chalte Indirapuram ke school-college band — pravasi mazdoor ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Energy"
+   ],
+   "mag": 0.92,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_266",
+   "text": "Shahdara me naya mall khulne ki khabar — sailani me utsukta hai. Purani dukaanon ko apni pehchaan aur mazboot karni hogi.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Retail",
+    "Edu"
+   ],
+   "mag": 1.36,
+   "place": "Shahdara"
+  },
+  {
+   "id": "ev2_9_267",
+   "text": "Social media par Ashok Vihar ki ek dukaan viral — bache line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Health"
+   ],
+   "mag": 0.92,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_268",
+   "text": "Sheher ki badi company ne Preet Vihar me bonus ghoshit kiya — vyapari ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Health"
+   ],
+   "mag": 1.04,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_269",
+   "text": "Cricket match ki jeet ka jashn Saket ki sadkon par — vyapari raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Retail",
+    "Tech"
+   ],
+   "mag": 1.17,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_270",
+   "text": "Sheher ki badi company ne Indirapuram me bonus ghoshit kiya — buzurg log ke haath me paisa aaya. Mahine ke aakhir tak kharidari garam rahegi.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Service"
+   ],
+   "mag": 0.93,
+   "place": "Sheher"
+  },
+  {
+   "id": "ev2_9_271",
+   "text": "Cricket match ki jeet ka jashn Uttam Nagar ki sadkon par — bache raat bhar jage. Khana, mithaas aur party samaan ki mang aasmaan par.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Edu",
+    "Tech"
+   ],
+   "mag": 1.42,
+   "place": "Cricket"
+  },
+  {
+   "id": "ev2_9_272",
+   "text": "Naya saal ke chalte Noida Sector 18 ke school-college band — sailani ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Industry",
+    "Energy"
+   ],
+   "mag": 0.85,
+   "place": "Naya"
+  },
+  {
+   "id": "ev2_9_273",
+   "text": "IP Extension me property ke daam uchhle — kirayedaar sailani dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "calm",
+   "mood": "neutral",
+   "cats": [
+    "Tech",
+    "Retail"
+   ],
+   "mag": 1.29,
+   "place": "IP"
+  },
+  {
+   "id": "ev2_9_274",
+   "text": "Shaadi season ke chalte Bawana ke school-college band — sailani ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Health",
+    "Tech"
+   ],
+   "mag": 1.14,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_275",
+   "text": "Dilshad Garden me safai abhiyan aur saundaryikaran — vidyarthi ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Energy",
+    "Tech"
+   ],
+   "mag": 1.22,
+   "place": "Dilshad"
+  },
+  {
+   "id": "ev2_9_276",
+   "text": "Rakhi ki taiyari zoron par hai — Vikaspuri ke bazaaro me pariwar ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Health"
+   ],
+   "mag": 1.33,
+   "place": "Rakhi"
+  },
+  {
+   "id": "ev2_9_277",
+   "text": "Dwarka me safai abhiyan aur saundaryikaran — buzurg log ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Edu"
+   ],
+   "mag": 1.16,
+   "place": "Dwarka"
+  },
+  {
+   "id": "ev2_9_278",
+   "text": "Sarkari ghoshna: Chandni Chowk ke chhote vyapariyon ke liye rahat package. ghar ki mahilayein me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Retail"
+   ],
+   "mag": 0.9,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_279",
+   "text": "Bawana me safai abhiyan aur saundaryikaran — vidyarthi ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Health"
+   ],
+   "mag": 1.27,
+   "place": "Bawana"
+  },
+  {
+   "id": "ev2_9_280",
+   "text": "Shaadi season ki taiyari zoron par hai — Tilak Nagar ke bazaaro me naujawan jode ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Industry"
+   ],
+   "mag": 1.05,
+   "place": "Shaadi"
+  },
+  {
+   "id": "ev2_9_281",
+   "text": "Hauz Khas me metro ki nayi line ka trial shuru — vidyarthi ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Industry",
+    "Food"
+   ],
+   "mag": 0.87,
+   "place": "Hauz"
+  },
+  {
+   "id": "ev2_9_282",
+   "text": "Sarojini Nagar me bijli-paani ki dikkat se bache pareshaan — dukaanon ko generator aur stock ka kharcha jodna padega.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Energy",
+    "Service"
+   ],
+   "mag": 1.01,
+   "place": "Sarojini"
+  },
+  {
+   "id": "ev2_9_283",
+   "text": "Local chunav ke chalte Tilak Nagar ke school-college band — buzurg log ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Food",
+    "Retail"
+   ],
+   "mag": 1.18,
+   "place": "Local"
+  },
+  {
+   "id": "ev2_9_284",
+   "text": "Tyohar bazaar ki wajah se Faridabad me hotel aur khana dono full — ghar ki mahilayein sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Retail",
+    "Industry"
+   ],
+   "mag": 1.36,
+   "place": "Tyohar"
+  },
+  {
+   "id": "ev2_9_285",
+   "text": "Mausam vibhag ki chetaavni: Dilshad Garden me tez baarish ke aasaar. naujawan jode ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Service"
+   ],
+   "mag": 1.16,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_286",
+   "text": "Board pariksha ki taiyari zoron par hai — Mayur Vihar ke bazaaro me vyapari ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Tech",
+    "Energy"
+   ],
+   "mag": 0.89,
+   "place": "Board"
+  },
+  {
+   "id": "ev2_9_287",
+   "text": "Dwarka me metro ki nayi line ka trial shuru — pariwar ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Service",
+    "Industry"
+   ],
+   "mag": 1.26,
+   "place": "Dwarka"
+  },
+  {
+   "id": "ev2_9_288",
+   "text": "Naya saal ke chalte Gurgaon Cyber City ke school-college band — buzurg log ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Health"
+   ],
+   "mag": 1.2,
+   "place": "Naya"
+  },
+  {
+   "id": "ev2_9_289",
+   "text": "Board pariksha ke chalte Burari ke school-college band — office jaane wale ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "viral",
+   "mood": "positive",
+   "cats": [
+    "Service",
+    "Industry"
+   ],
+   "mag": 1.11,
+   "place": "Board"
+  },
+  {
+   "id": "ev2_9_290",
+   "text": "Local chunav ki taiyari zoron par hai — Tilak Nagar ke bazaaro me bache ki bheed umad padi hai. Dukaano par rush ka fayda uthane wale hi aage rahenge.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Edu"
+   ],
+   "mag": 0.92,
+   "place": "Local"
+  },
+  {
+   "id": "ev2_9_291",
+   "text": "Sarkari ghoshna: Khan Market ke chhote vyapariyon ke liye rahat package. sailani me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Industry",
+    "Energy"
+   ],
+   "mag": 1.43,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_292",
+   "text": "Mausam vibhag ki chetaavni: Govindpuri me tez baarish ke aasaar. sailani ghar baithe mangayenge — delivery wali dukaanon ki chaandi hai.",
+   "eff": "boom",
+   "mood": "positive",
+   "cats": [
+    "Food",
+    "Retail"
+   ],
+   "mag": 0.92,
+   "place": "Mausam"
+  },
+  {
+   "id": "ev2_9_293",
+   "text": "Saal ka aakhir ki wajah se Nehru Place me hotel aur khana dono full — ghar ki mahilayein sheher bhar me ghum rahe hain. Daam sahi rakho, kamaai pakki.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Energy",
+    "Retail"
+   ],
+   "mag": 0.94,
+   "place": "Saal"
+  },
+  {
+   "id": "ev2_9_294",
+   "text": "Social media par Faridabad ki ek dukaan viral — naujawan jode line lagaye khade hain. Ek din ki shoharat ko roz ki kamaai me badlo.",
+   "eff": "rain",
+   "mood": "mixed",
+   "cats": [
+    "Edu",
+    "Health"
+   ],
+   "mag": 1.02,
+   "place": "Social"
+  },
+  {
+   "id": "ev2_9_295",
+   "text": "Rohini me property ke daam uchhle — kirayedaar vyapari dukaanon ke kiraye par nazar rakh rahe hain. Malikon ke liye sunahra daur.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Health",
+    "Food"
+   ],
+   "mag": 0.99,
+   "place": "Rohini"
+  },
+  {
+   "id": "ev2_9_296",
+   "text": "Sarkari ghoshna: Vaishali ke chhote vyapariyon ke liye rahat package. pariwar me ummeed jagi — par kagazi jhanjhat bhi badhega.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Health",
+    "Tech"
+   ],
+   "mag": 1.06,
+   "place": "Sarkari"
+  },
+  {
+   "id": "ev2_9_297",
+   "text": "Bawana me metro ki nayi line ka trial shuru — vidyarthi ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "crash",
+   "mood": "negative",
+   "cats": [
+    "Industry"
+   ],
+   "mag": 1.12,
+   "place": "Bawana"
+  },
+  {
+   "id": "ev2_9_298",
+   "text": "Anand Vihar me safai abhiyan aur saundaryikaran — pariwar ko badla hua mahaul pasand aa raha hai. Saaf dukaan = zyada graahak, saaf sauda.",
+   "eff": "match",
+   "mood": "positive",
+   "cats": [
+    "Tech",
+    "Energy"
+   ],
+   "mag": 1.37,
+   "place": "Anand"
+  },
+  {
+   "id": "ev2_9_299",
+   "text": "Anand Vihar me metro ki nayi line ka trial shuru — bache ka aana-jaana badh gaya. Aas-paas ki dukaanon ki footfall me saaf izaafa dikh raha hai.",
+   "eff": "salary",
+   "mood": "positive",
+   "cats": [
+    "Energy",
+    "Health"
+   ],
+   "mag": 1.28,
+   "place": "Anand"
+  },
+  {
+   "id": "ev2_9_300",
+   "text": "Weekend mela ke chalte Mayur Vihar ke school-college band — vidyarthi ki bheed bazaar ki taraf mud gayi. Khana-peena aur shopping dono tez.",
+   "eff": "costly",
+   "mood": "negative",
+   "cats": [
+    "Service",
+    "Edu"
+   ],
+   "mag": 1.04,
+   "place": "Weekend"
+  },
+]

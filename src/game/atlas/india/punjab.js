@@ -1,0 +1,142 @@
+// World Atlas — India: Punjab (rajya profile, sheher aur unke zile)
+export const STATE = {
+ "name": "Punjab",
+ "capital": "Chandigarh",
+ "language": "Punjabi",
+ "primeFestival": "Lohri",
+ "knownFor": "Punjab apni Punjabi sanskriti, khana aur Lohri ke liye mashhoor hai. Vyapaar ke liye yaha ke bazaar har season me rang badalte hain.",
+ "cities": [
+  {
+   "name": "Ludhiana",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.07,
+   "climate": "thandi sardiyan",
+   "festival": "Lohri",
+   "language": "Punjabi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Edu",
+    "Service"
+   ],
+   "districts": [
+    "Ludhiana Sadar Bazaar",
+    "Ludhiana Nai Basti",
+    "Ludhiana Purana Sheher",
+    "Ludhiana Station Road",
+    "Ludhiana Civil Lines"
+   ]
+  },
+  {
+   "name": "Amritsar",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.2,
+   "climate": "pahadi thand",
+   "festival": "Lohri",
+   "language": "Punjabi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Food",
+    "Retail"
+   ],
+   "districts": [
+    "Amritsar Sadar Bazaar",
+    "Amritsar Nai Basti",
+    "Amritsar Purana Sheher",
+    "Amritsar Station Road",
+    "Amritsar Civil Lines"
+   ]
+  },
+  {
+   "name": "Jalandhar",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.04,
+   "climate": "tateeya garmi",
+   "festival": "Lohri",
+   "language": "Punjabi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Energy",
+    "Food"
+   ],
+   "districts": [
+    "Jalandhar Sadar Bazaar",
+    "Jalandhar Nai Basti",
+    "Jalandhar Purana Sheher",
+    "Jalandhar Station Road",
+    "Jalandhar Civil Lines"
+   ]
+  },
+  {
+   "name": "Patiala",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.28,
+   "climate": "garm-num",
+   "festival": "Lohri",
+   "language": "Punjabi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Edu",
+    "Service"
+   ],
+   "districts": [
+    "Patiala Sadar Bazaar",
+    "Patiala Nai Basti",
+    "Patiala Purana Sheher",
+    "Patiala Station Road",
+    "Patiala Civil Lines"
+   ]
+  },
+  {
+   "name": "Bathinda",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.11,
+   "climate": "baarish wala",
+   "festival": "Lohri",
+   "language": "Punjabi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Edu",
+    "Food"
+   ],
+   "districts": [
+    "Bathinda Sadar Bazaar",
+    "Bathinda Nai Basti",
+    "Bathinda Purana Sheher",
+    "Bathinda Station Road",
+    "Bathinda Civil Lines"
+   ]
+  },
+  {
+   "name": "Mohali",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.12,
+   "climate": "baarish wala",
+   "festival": "Lohri",
+   "language": "Punjabi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Tech",
+    "Edu"
+   ],
+   "districts": [
+    "Mohali Sadar Bazaar",
+    "Mohali Nai Basti",
+    "Mohali Purana Sheher",
+    "Mohali Station Road",
+    "Mohali Civil Lines"
+   ]
+  }
+ ]
+}

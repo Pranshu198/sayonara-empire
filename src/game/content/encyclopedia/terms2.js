@@ -1,0 +1,1403 @@
+// Arth-Gyaan Kosh (deep) — part 2: har shabd, chaar nazariyo se
+export const ENCYCLOPEDIA_2 = [
+  {
+   "id": "en2_1",
+   "term": "Working Capital — Samajh",
+   "def": "Roz ke kharch chalane ke liye rakha paisa.",
+   "example": "Chai ki dukaan ho ya bada showroom, working capital ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: working capital har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_2",
+   "term": "Working Capital — Udaaharan",
+   "def": "Udaaharan se samjho: roz ke kharch chalane ke liye rakha paisa",
+   "example": "Chai ki dukaan ho ya bada showroom, working capital ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_3",
+   "term": "Working Capital — Aam Galti",
+   "def": "Galti jo sab karte hain: roz ke kharch chalane ke liye rakha paisa — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, working capital ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_4",
+   "term": "Working Capital — Master Tip",
+   "def": "Roz ke kharch chalane ke liye rakha paisa — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, working capital ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_5",
+   "term": "Gross Margin — Samajh",
+   "def": "Bikri me se maal ki lagat nikalne ke baad bacha hissa.",
+   "example": "Chai ki dukaan ho ya bada showroom, gross margin ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: gross margin har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_6",
+   "term": "Gross Margin — Udaaharan",
+   "def": "Udaaharan se samjho: bikri me se maal ki lagat nikalne ke baad bacha hissa",
+   "example": "Chai ki dukaan ho ya bada showroom, gross margin ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_7",
+   "term": "Gross Margin — Aam Galti",
+   "def": "Galti jo sab karte hain: bikri me se maal ki lagat nikalne ke baad bacha hissa — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, gross margin ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_8",
+   "term": "Gross Margin — Master Tip",
+   "def": "Bikri me se maal ki lagat nikalne ke baad bacha hissa — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, gross margin ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_9",
+   "term": "Net Profit — Samajh",
+   "def": "Saare kharche nikalne ke baad asal kamaai.",
+   "example": "Chai ki dukaan ho ya bada showroom, net profit ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: net profit har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_10",
+   "term": "Net Profit — Udaaharan",
+   "def": "Udaaharan se samjho: saare kharche nikalne ke baad asal kamaai",
+   "example": "Chai ki dukaan ho ya bada showroom, net profit ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_11",
+   "term": "Net Profit — Aam Galti",
+   "def": "Galti jo sab karte hain: saare kharche nikalne ke baad asal kamaai — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, net profit ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_12",
+   "term": "Net Profit — Master Tip",
+   "def": "Saare kharche nikalne ke baad asal kamaai — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, net profit ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_13",
+   "term": "Cashflow — Samajh",
+   "def": "Paisa aane-jaane ka asal behao, kagaz ke munafe se alag.",
+   "example": "Chai ki dukaan ho ya bada showroom, cashflow ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: cashflow har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_14",
+   "term": "Cashflow — Udaaharan",
+   "def": "Udaaharan se samjho: paisa aane-jaane ka asal behao, kagaz ke munafe se alag",
+   "example": "Chai ki dukaan ho ya bada showroom, cashflow ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_15",
+   "term": "Cashflow — Aam Galti",
+   "def": "Galti jo sab karte hain: paisa aane-jaane ka asal behao, kagaz ke munafe se alag — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, cashflow ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_16",
+   "term": "Cashflow — Master Tip",
+   "def": "Paisa aane-jaane ka asal behao, kagaz ke munafe se alag — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, cashflow ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_17",
+   "term": "Depreciation — Samajh",
+   "def": "Machine/samaan ki keemat ka samay ke saath ghisna.",
+   "example": "Chai ki dukaan ho ya bada showroom, depreciation ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: depreciation har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_18",
+   "term": "Depreciation — Udaaharan",
+   "def": "Udaaharan se samjho: machine/samaan ki keemat ka samay ke saath ghisna",
+   "example": "Chai ki dukaan ho ya bada showroom, depreciation ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_19",
+   "term": "Depreciation — Aam Galti",
+   "def": "Galti jo sab karte hain: machine/samaan ki keemat ka samay ke saath ghisna — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, depreciation ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_20",
+   "term": "Depreciation — Master Tip",
+   "def": "Machine/samaan ki keemat ka samay ke saath ghisna — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, depreciation ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_21",
+   "term": "Inventory Turnover — Samajh",
+   "def": "Stock kitni tez bikti aur badalti hai.",
+   "example": "Chai ki dukaan ho ya bada showroom, inventory turnover ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: inventory turnover har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_22",
+   "term": "Inventory Turnover — Udaaharan",
+   "def": "Udaaharan se samjho: stock kitni tez bikti aur badalti hai",
+   "example": "Chai ki dukaan ho ya bada showroom, inventory turnover ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_23",
+   "term": "Inventory Turnover — Aam Galti",
+   "def": "Galti jo sab karte hain: stock kitni tez bikti aur badalti hai — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, inventory turnover ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_24",
+   "term": "Inventory Turnover — Master Tip",
+   "def": "Stock kitni tez bikti aur badalti hai — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, inventory turnover ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_25",
+   "term": "Break-even — Samajh",
+   "def": "Wo bikri jaha na munafa na nuksan.",
+   "example": "Chai ki dukaan ho ya bada showroom, break-even ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: break-even har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_26",
+   "term": "Break-even — Udaaharan",
+   "def": "Udaaharan se samjho: wo bikri jaha na munafa na nuksan",
+   "example": "Chai ki dukaan ho ya bada showroom, break-even ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_27",
+   "term": "Break-even — Aam Galti",
+   "def": "Galti jo sab karte hain: wo bikri jaha na munafa na nuksan — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, break-even ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_28",
+   "term": "Break-even — Master Tip",
+   "def": "Wo bikri jaha na munafa na nuksan — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, break-even ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_29",
+   "term": "Opportunity Cost — Samajh",
+   "def": "Ek chunav se dusre ka khoya fayda.",
+   "example": "Chai ki dukaan ho ya bada showroom, opportunity cost ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: opportunity cost har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_30",
+   "term": "Opportunity Cost — Udaaharan",
+   "def": "Udaaharan se samjho: ek chunav se dusre ka khoya fayda",
+   "example": "Chai ki dukaan ho ya bada showroom, opportunity cost ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_31",
+   "term": "Opportunity Cost — Aam Galti",
+   "def": "Galti jo sab karte hain: ek chunav se dusre ka khoya fayda — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, opportunity cost ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_32",
+   "term": "Opportunity Cost — Master Tip",
+   "def": "Ek chunav se dusre ka khoya fayda — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, opportunity cost ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_33",
+   "term": "Liquidity — Samajh",
+   "def": "Sampaati ko turant nakad me badalne ki aasani.",
+   "example": "Chai ki dukaan ho ya bada showroom, liquidity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: liquidity har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_34",
+   "term": "Liquidity — Udaaharan",
+   "def": "Udaaharan se samjho: sampaati ko turant nakad me badalne ki aasani",
+   "example": "Chai ki dukaan ho ya bada showroom, liquidity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_35",
+   "term": "Liquidity — Aam Galti",
+   "def": "Galti jo sab karte hain: sampaati ko turant nakad me badalne ki aasani — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, liquidity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_36",
+   "term": "Liquidity — Master Tip",
+   "def": "Sampaati ko turant nakad me badalne ki aasani — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, liquidity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_37",
+   "term": "Leverage — Samajh",
+   "def": "Udhaar ke paiso se bada khel khelna.",
+   "example": "Chai ki dukaan ho ya bada showroom, leverage ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: leverage har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_38",
+   "term": "Leverage — Udaaharan",
+   "def": "Udaaharan se samjho: udhaar ke paiso se bada khel khelna",
+   "example": "Chai ki dukaan ho ya bada showroom, leverage ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_39",
+   "term": "Leverage — Aam Galti",
+   "def": "Galti jo sab karte hain: udhaar ke paiso se bada khel khelna — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, leverage ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_40",
+   "term": "Leverage — Master Tip",
+   "def": "Udhaar ke paiso se bada khel khelna — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, leverage ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_41",
+   "term": "Dividend — Samajh",
+   "def": "Company ke munafe ka hissa shareholders ko.",
+   "example": "Chai ki dukaan ho ya bada showroom, dividend ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: dividend har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_42",
+   "term": "Dividend — Udaaharan",
+   "def": "Udaaharan se samjho: company ke munafe ka hissa shareholders ko",
+   "example": "Chai ki dukaan ho ya bada showroom, dividend ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_43",
+   "term": "Dividend — Aam Galti",
+   "def": "Galti jo sab karte hain: company ke munafe ka hissa shareholders ko — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, dividend ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_44",
+   "term": "Dividend — Master Tip",
+   "def": "Company ke munafe ka hissa shareholders ko — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, dividend ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_45",
+   "term": "Inflation — Samajh",
+   "def": "Mehengai — paise ki keemat ghatna.",
+   "example": "Chai ki dukaan ho ya bada showroom, inflation ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: inflation har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_46",
+   "term": "Inflation — Udaaharan",
+   "def": "Udaaharan se samjho: mehengai — paise ki keemat ghatna",
+   "example": "Chai ki dukaan ho ya bada showroom, inflation ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_47",
+   "term": "Inflation — Aam Galti",
+   "def": "Galti jo sab karte hain: mehengai — paise ki keemat ghatna — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, inflation ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_48",
+   "term": "Inflation — Master Tip",
+   "def": "Mehengai — paise ki keemat ghatna — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, inflation ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_49",
+   "term": "Interest Rate — Samajh",
+   "def": "Udhaar ki keemat, pratishat me.",
+   "example": "Chai ki dukaan ho ya bada showroom, interest rate ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: interest rate har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_50",
+   "term": "Interest Rate — Udaaharan",
+   "def": "Udaaharan se samjho: udhaar ki keemat, pratishat me",
+   "example": "Chai ki dukaan ho ya bada showroom, interest rate ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_51",
+   "term": "Interest Rate — Aam Galti",
+   "def": "Galti jo sab karte hain: udhaar ki keemat, pratishat me — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, interest rate ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_52",
+   "term": "Interest Rate — Master Tip",
+   "def": "Udhaar ki keemat, pratishat me — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, interest rate ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_53",
+   "term": "Credit Score — Samajh",
+   "def": "Udhaar chukane ki vishwasniyata ka number.",
+   "example": "Chai ki dukaan ho ya bada showroom, credit score ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: credit score har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_54",
+   "term": "Credit Score — Udaaharan",
+   "def": "Udaaharan se samjho: udhaar chukane ki vishwasniyata ka number",
+   "example": "Chai ki dukaan ho ya bada showroom, credit score ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_55",
+   "term": "Credit Score — Aam Galti",
+   "def": "Galti jo sab karte hain: udhaar chukane ki vishwasniyata ka number — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, credit score ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_56",
+   "term": "Credit Score — Master Tip",
+   "def": "Udhaar chukane ki vishwasniyata ka number — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, credit score ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_57",
+   "term": "EMI — Samajh",
+   "def": "Har mahine ki barabar kisht.",
+   "example": "Chai ki dukaan ho ya bada showroom, emi ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: emi har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_58",
+   "term": "EMI — Udaaharan",
+   "def": "Udaaharan se samjho: har mahine ki barabar kisht",
+   "example": "Chai ki dukaan ho ya bada showroom, emi ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_59",
+   "term": "EMI — Aam Galti",
+   "def": "Galti jo sab karte hain: har mahine ki barabar kisht — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, emi ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_60",
+   "term": "EMI — Master Tip",
+   "def": "Har mahine ki barabar kisht — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, emi ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_61",
+   "term": "FD (Fixed Deposit) — Samajh",
+   "def": "Tay samay ke liye bank me band paisa, tay byaaj.",
+   "example": "Chai ki dukaan ho ya bada showroom, fd (fixed deposit) ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: fd (fixed deposit) har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_62",
+   "term": "FD (Fixed Deposit) — Udaaharan",
+   "def": "Udaaharan se samjho: tay samay ke liye bank me band paisa, tay byaaj",
+   "example": "Chai ki dukaan ho ya bada showroom, fd (fixed deposit) ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_63",
+   "term": "FD (Fixed Deposit) — Aam Galti",
+   "def": "Galti jo sab karte hain: tay samay ke liye bank me band paisa, tay byaaj — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, fd (fixed deposit) ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_64",
+   "term": "FD (Fixed Deposit) — Master Tip",
+   "def": "Tay samay ke liye bank me band paisa, tay byaaj — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, fd (fixed deposit) ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_65",
+   "term": "Mutual Fund — Samajh",
+   "def": "Kai logo ka paisa ek saath kai jagah laga.",
+   "example": "Chai ki dukaan ho ya bada showroom, mutual fund ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: mutual fund har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_66",
+   "term": "Mutual Fund — Udaaharan",
+   "def": "Udaaharan se samjho: kai logo ka paisa ek saath kai jagah laga",
+   "example": "Chai ki dukaan ho ya bada showroom, mutual fund ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_67",
+   "term": "Mutual Fund — Aam Galti",
+   "def": "Galti jo sab karte hain: kai logo ka paisa ek saath kai jagah laga — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, mutual fund ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_68",
+   "term": "Mutual Fund — Master Tip",
+   "def": "Kai logo ka paisa ek saath kai jagah laga — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, mutual fund ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_69",
+   "term": "SIP — Samajh",
+   "def": "Har mahine chhoti rakam ka niyamit nivesh.",
+   "example": "Chai ki dukaan ho ya bada showroom, sip ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: sip har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_70",
+   "term": "SIP — Udaaharan",
+   "def": "Udaaharan se samjho: har mahine chhoti rakam ka niyamit nivesh",
+   "example": "Chai ki dukaan ho ya bada showroom, sip ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_71",
+   "term": "SIP — Aam Galti",
+   "def": "Galti jo sab karte hain: har mahine chhoti rakam ka niyamit nivesh — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, sip ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_72",
+   "term": "SIP — Master Tip",
+   "def": "Har mahine chhoti rakam ka niyamit nivesh — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, sip ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_73",
+   "term": "Bond — Samajh",
+   "def": "Sarkar/company ko diya karz, tay byaaj ke saath.",
+   "example": "Chai ki dukaan ho ya bada showroom, bond ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: bond har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_74",
+   "term": "Bond — Udaaharan",
+   "def": "Udaaharan se samjho: sarkar/company ko diya karz, tay byaaj ke saath",
+   "example": "Chai ki dukaan ho ya bada showroom, bond ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_75",
+   "term": "Bond — Aam Galti",
+   "def": "Galti jo sab karte hain: sarkar/company ko diya karz, tay byaaj ke saath — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, bond ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_76",
+   "term": "Bond — Master Tip",
+   "def": "Sarkar/company ko diya karz, tay byaaj ke saath — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, bond ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_77",
+   "term": "Equity — Samajh",
+   "def": "Company me hissedari.",
+   "example": "Chai ki dukaan ho ya bada showroom, equity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: equity har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_78",
+   "term": "Equity — Udaaharan",
+   "def": "Udaaharan se samjho: company me hissedari",
+   "example": "Chai ki dukaan ho ya bada showroom, equity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_79",
+   "term": "Equity — Aam Galti",
+   "def": "Galti jo sab karte hain: company me hissedari — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, equity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_80",
+   "term": "Equity — Master Tip",
+   "def": "Company me hissedari — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, equity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_81",
+   "term": "Market Cap — Samajh",
+   "def": "Company ki kul bazaar keemat.",
+   "example": "Chai ki dukaan ho ya bada showroom, market cap ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: market cap har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_82",
+   "term": "Market Cap — Udaaharan",
+   "def": "Udaaharan se samjho: company ki kul bazaar keemat",
+   "example": "Chai ki dukaan ho ya bada showroom, market cap ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_83",
+   "term": "Market Cap — Aam Galti",
+   "def": "Galti jo sab karte hain: company ki kul bazaar keemat — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, market cap ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_84",
+   "term": "Market Cap — Master Tip",
+   "def": "Company ki kul bazaar keemat — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, market cap ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_85",
+   "term": "Bull Market — Samajh",
+   "def": "Daam badhne ka daur.",
+   "example": "Chai ki dukaan ho ya bada showroom, bull market ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: bull market har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_86",
+   "term": "Bull Market — Udaaharan",
+   "def": "Udaaharan se samjho: daam badhne ka daur",
+   "example": "Chai ki dukaan ho ya bada showroom, bull market ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_87",
+   "term": "Bull Market — Aam Galti",
+   "def": "Galti jo sab karte hain: daam badhne ka daur — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, bull market ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_88",
+   "term": "Bull Market — Master Tip",
+   "def": "Daam badhne ka daur — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, bull market ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_89",
+   "term": "Bear Market — Samajh",
+   "def": "Daam girne ka daur.",
+   "example": "Chai ki dukaan ho ya bada showroom, bear market ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: bear market har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_90",
+   "term": "Bear Market — Udaaharan",
+   "def": "Udaaharan se samjho: daam girne ka daur",
+   "example": "Chai ki dukaan ho ya bada showroom, bear market ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_91",
+   "term": "Bear Market — Aam Galti",
+   "def": "Galti jo sab karte hain: daam girne ka daur — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, bear market ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_92",
+   "term": "Bear Market — Master Tip",
+   "def": "Daam girne ka daur — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, bear market ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_93",
+   "term": "Volatility — Samajh",
+   "def": "Daamo me utaar-chadhaav ki tez raftaar.",
+   "example": "Chai ki dukaan ho ya bada showroom, volatility ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: volatility har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_94",
+   "term": "Volatility — Udaaharan",
+   "def": "Udaaharan se samjho: daamo me utaar-chadhaav ki tez raftaar",
+   "example": "Chai ki dukaan ho ya bada showroom, volatility ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_95",
+   "term": "Volatility — Aam Galti",
+   "def": "Galti jo sab karte hain: daamo me utaar-chadhaav ki tez raftaar — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, volatility ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_96",
+   "term": "Volatility — Master Tip",
+   "def": "Daamo me utaar-chadhaav ki tez raftaar — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, volatility ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_97",
+   "term": "Diversification — Samajh",
+   "def": "Paisa kai jagah baant kar jokhim kam karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, diversification ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: diversification har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_98",
+   "term": "Diversification — Udaaharan",
+   "def": "Udaaharan se samjho: paisa kai jagah baant kar jokhim kam karna",
+   "example": "Chai ki dukaan ho ya bada showroom, diversification ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_99",
+   "term": "Diversification — Aam Galti",
+   "def": "Galti jo sab karte hain: paisa kai jagah baant kar jokhim kam karna — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, diversification ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_100",
+   "term": "Diversification — Master Tip",
+   "def": "Paisa kai jagah baant kar jokhim kam karna — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, diversification ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_101",
+   "term": "Asset — Samajh",
+   "def": "Jo cheez keemat rakhti hai ya kamaai deti hai.",
+   "example": "Chai ki dukaan ho ya bada showroom, asset ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: asset har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_102",
+   "term": "Asset — Udaaharan",
+   "def": "Udaaharan se samjho: jo cheez keemat rakhti hai ya kamaai deti hai",
+   "example": "Chai ki dukaan ho ya bada showroom, asset ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_103",
+   "term": "Asset — Aam Galti",
+   "def": "Galti jo sab karte hain: jo cheez keemat rakhti hai ya kamaai deti hai — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, asset ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_104",
+   "term": "Asset — Master Tip",
+   "def": "Jo cheez keemat rakhti hai ya kamaai deti hai — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, asset ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_105",
+   "term": "Liability — Samajh",
+   "def": "Jo dena hai — karz aur zimmedari.",
+   "example": "Chai ki dukaan ho ya bada showroom, liability ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: liability har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_106",
+   "term": "Liability — Udaaharan",
+   "def": "Udaaharan se samjho: jo dena hai — karz aur zimmedari",
+   "example": "Chai ki dukaan ho ya bada showroom, liability ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_107",
+   "term": "Liability — Aam Galti",
+   "def": "Galti jo sab karte hain: jo dena hai — karz aur zimmedari — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, liability ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_108",
+   "term": "Liability — Master Tip",
+   "def": "Jo dena hai — karz aur zimmedari — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, liability ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_109",
+   "term": "Balance Sheet — Samajh",
+   "def": "Sampaatti aur denadari ka ek nazar me hisaab.",
+   "example": "Chai ki dukaan ho ya bada showroom, balance sheet ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: balance sheet har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_110",
+   "term": "Balance Sheet — Udaaharan",
+   "def": "Udaaharan se samjho: sampaatti aur denadari ka ek nazar me hisaab",
+   "example": "Chai ki dukaan ho ya bada showroom, balance sheet ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_111",
+   "term": "Balance Sheet — Aam Galti",
+   "def": "Galti jo sab karte hain: sampaatti aur denadari ka ek nazar me hisaab — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, balance sheet ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_112",
+   "term": "Balance Sheet — Master Tip",
+   "def": "Sampaatti aur denadari ka ek nazar me hisaab — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, balance sheet ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_113",
+   "term": "GST — Samajh",
+   "def": "Maal-seva par lagne wala ekikrit kar.",
+   "example": "Chai ki dukaan ho ya bada showroom, gst ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: gst har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_114",
+   "term": "GST — Udaaharan",
+   "def": "Udaaharan se samjho: maal-seva par lagne wala ekikrit kar",
+   "example": "Chai ki dukaan ho ya bada showroom, gst ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_115",
+   "term": "GST — Aam Galti",
+   "def": "Galti jo sab karte hain: maal-seva par lagne wala ekikrit kar — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, gst ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_116",
+   "term": "GST — Master Tip",
+   "def": "Maal-seva par lagne wala ekikrit kar — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, gst ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_117",
+   "term": "TDS — Samajh",
+   "def": "Aay se pehle hi kata kar.",
+   "example": "Chai ki dukaan ho ya bada showroom, tds ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: tds har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_118",
+   "term": "TDS — Udaaharan",
+   "def": "Udaaharan se samjho: aay se pehle hi kata kar",
+   "example": "Chai ki dukaan ho ya bada showroom, tds ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_119",
+   "term": "TDS — Aam Galti",
+   "def": "Galti jo sab karte hain: aay se pehle hi kata kar — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, tds ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_120",
+   "term": "TDS — Master Tip",
+   "def": "Aay se pehle hi kata kar — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, tds ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_121",
+   "term": "Rent Agreement — Samajh",
+   "def": "Kiraye ki sharton ka kagazi sauda.",
+   "example": "Chai ki dukaan ho ya bada showroom, rent agreement ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: rent agreement har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_122",
+   "term": "Rent Agreement — Udaaharan",
+   "def": "Udaaharan se samjho: kiraye ki sharton ka kagazi sauda",
+   "example": "Chai ki dukaan ho ya bada showroom, rent agreement ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_123",
+   "term": "Rent Agreement — Aam Galti",
+   "def": "Galti jo sab karte hain: kiraye ki sharton ka kagazi sauda — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, rent agreement ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_124",
+   "term": "Rent Agreement — Master Tip",
+   "def": "Kiraye ki sharton ka kagazi sauda — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, rent agreement ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_125",
+   "term": "Goodwill — Samajh",
+   "def": "Naam aur bharose ki keemat.",
+   "example": "Chai ki dukaan ho ya bada showroom, goodwill ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: goodwill har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_126",
+   "term": "Goodwill — Udaaharan",
+   "def": "Udaaharan se samjho: naam aur bharose ki keemat",
+   "example": "Chai ki dukaan ho ya bada showroom, goodwill ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_127",
+   "term": "Goodwill — Aam Galti",
+   "def": "Galti jo sab karte hain: naam aur bharose ki keemat — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, goodwill ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_128",
+   "term": "Goodwill — Master Tip",
+   "def": "Naam aur bharose ki keemat — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, goodwill ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_129",
+   "term": "Brand Equity — Samajh",
+   "def": "Brand ke naam se milne wala zyada daam.",
+   "example": "Chai ki dukaan ho ya bada showroom, brand equity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: brand equity har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_130",
+   "term": "Brand Equity — Udaaharan",
+   "def": "Udaaharan se samjho: brand ke naam se milne wala zyada daam",
+   "example": "Chai ki dukaan ho ya bada showroom, brand equity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_131",
+   "term": "Brand Equity — Aam Galti",
+   "def": "Galti jo sab karte hain: brand ke naam se milne wala zyada daam — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, brand equity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_132",
+   "term": "Brand Equity — Master Tip",
+   "def": "Brand ke naam se milne wala zyada daam — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, brand equity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_133",
+   "term": "Franchise — Samajh",
+   "def": "Dusre ke brand/model ko chalane ka haq.",
+   "example": "Chai ki dukaan ho ya bada showroom, franchise ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: franchise har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_134",
+   "term": "Franchise — Udaaharan",
+   "def": "Udaaharan se samjho: dusre ke brand/model ko chalane ka haq",
+   "example": "Chai ki dukaan ho ya bada showroom, franchise ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_135",
+   "term": "Franchise — Aam Galti",
+   "def": "Galti jo sab karte hain: dusre ke brand/model ko chalane ka haq — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, franchise ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_136",
+   "term": "Franchise — Master Tip",
+   "def": "Dusre ke brand/model ko chalane ka haq — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, franchise ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_137",
+   "term": "Monopoly — Samajh",
+   "def": "Ek hi vikreta ka bazaar par qabza.",
+   "example": "Chai ki dukaan ho ya bada showroom, monopoly ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: monopoly har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_138",
+   "term": "Monopoly — Udaaharan",
+   "def": "Udaaharan se samjho: ek hi vikreta ka bazaar par qabza",
+   "example": "Chai ki dukaan ho ya bada showroom, monopoly ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_139",
+   "term": "Monopoly — Aam Galti",
+   "def": "Galti jo sab karte hain: ek hi vikreta ka bazaar par qabza — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, monopoly ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_140",
+   "term": "Monopoly — Master Tip",
+   "def": "Ek hi vikreta ka bazaar par qabza — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, monopoly ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_141",
+   "term": "Demand — Samajh",
+   "def": "Graahako ki kharidne ki ichha aur taakat.",
+   "example": "Chai ki dukaan ho ya bada showroom, demand ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: demand har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_142",
+   "term": "Demand — Udaaharan",
+   "def": "Udaaharan se samjho: graahako ki kharidne ki ichha aur taakat",
+   "example": "Chai ki dukaan ho ya bada showroom, demand ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_143",
+   "term": "Demand — Aam Galti",
+   "def": "Galti jo sab karte hain: graahako ki kharidne ki ichha aur taakat — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, demand ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_144",
+   "term": "Demand — Master Tip",
+   "def": "Graahako ki kharidne ki ichha aur taakat — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, demand ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_145",
+   "term": "Supply — Samajh",
+   "def": "Bazaar me uplabdh maal ki matra.",
+   "example": "Chai ki dukaan ho ya bada showroom, supply ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: supply har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_146",
+   "term": "Supply — Udaaharan",
+   "def": "Udaaharan se samjho: bazaar me uplabdh maal ki matra",
+   "example": "Chai ki dukaan ho ya bada showroom, supply ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_147",
+   "term": "Supply — Aam Galti",
+   "def": "Galti jo sab karte hain: bazaar me uplabdh maal ki matra — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, supply ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_148",
+   "term": "Supply — Master Tip",
+   "def": "Bazaar me uplabdh maal ki matra — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, supply ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_149",
+   "term": "Elasticity — Samajh",
+   "def": "Daam badalne par mang ka badalna.",
+   "example": "Chai ki dukaan ho ya bada showroom, elasticity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: elasticity har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_150",
+   "term": "Elasticity — Udaaharan",
+   "def": "Udaaharan se samjho: daam badalne par mang ka badalna",
+   "example": "Chai ki dukaan ho ya bada showroom, elasticity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_151",
+   "term": "Elasticity — Aam Galti",
+   "def": "Galti jo sab karte hain: daam badalne par mang ka badalna — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, elasticity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_152",
+   "term": "Elasticity — Master Tip",
+   "def": "Daam badalne par mang ka badalna — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, elasticity ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_153",
+   "term": "Footfall — Samajh",
+   "def": "Dukaan tak aane wale logo ki sankhya.",
+   "example": "Chai ki dukaan ho ya bada showroom, footfall ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: footfall har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_154",
+   "term": "Footfall — Udaaharan",
+   "def": "Udaaharan se samjho: dukaan tak aane wale logo ki sankhya",
+   "example": "Chai ki dukaan ho ya bada showroom, footfall ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_155",
+   "term": "Footfall — Aam Galti",
+   "def": "Galti jo sab karte hain: dukaan tak aane wale logo ki sankhya — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, footfall ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_156",
+   "term": "Footfall — Master Tip",
+   "def": "Dukaan tak aane wale logo ki sankhya — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, footfall ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_157",
+   "term": "Conversion — Samajh",
+   "def": "Aane walo me se kharidne walo ka anupaat.",
+   "example": "Chai ki dukaan ho ya bada showroom, conversion ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: conversion har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_158",
+   "term": "Conversion — Udaaharan",
+   "def": "Udaaharan se samjho: aane walo me se kharidne walo ka anupaat",
+   "example": "Chai ki dukaan ho ya bada showroom, conversion ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_159",
+   "term": "Conversion — Aam Galti",
+   "def": "Galti jo sab karte hain: aane walo me se kharidne walo ka anupaat — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, conversion ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_160",
+   "term": "Conversion — Master Tip",
+   "def": "Aane walo me se kharidne walo ka anupaat — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, conversion ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_161",
+   "term": "ARPU — Samajh",
+   "def": "Har graahak se ausat kamaai.",
+   "example": "Chai ki dukaan ho ya bada showroom, arpu ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: arpu har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_162",
+   "term": "ARPU — Udaaharan",
+   "def": "Udaaharan se samjho: har graahak se ausat kamaai",
+   "example": "Chai ki dukaan ho ya bada showroom, arpu ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_163",
+   "term": "ARPU — Aam Galti",
+   "def": "Galti jo sab karte hain: har graahak se ausat kamaai — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, arpu ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_164",
+   "term": "ARPU — Master Tip",
+   "def": "Har graahak se ausat kamaai — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, arpu ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_165",
+   "term": "Churn — Samajh",
+   "def": "Graahako ka chhod kar jaana.",
+   "example": "Chai ki dukaan ho ya bada showroom, churn ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: churn har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_166",
+   "term": "Churn — Udaaharan",
+   "def": "Udaaharan se samjho: graahako ka chhod kar jaana",
+   "example": "Chai ki dukaan ho ya bada showroom, churn ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_167",
+   "term": "Churn — Aam Galti",
+   "def": "Galti jo sab karte hain: graahako ka chhod kar jaana — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, churn ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_168",
+   "term": "Churn — Master Tip",
+   "def": "Graahako ka chhod kar jaana — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, churn ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_169",
+   "term": "Retention — Samajh",
+   "def": "Graahako ko rok kar rakhna.",
+   "example": "Chai ki dukaan ho ya bada showroom, retention ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: retention har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_170",
+   "term": "Retention — Udaaharan",
+   "def": "Udaaharan se samjho: graahako ko rok kar rakhna",
+   "example": "Chai ki dukaan ho ya bada showroom, retention ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_171",
+   "term": "Retention — Aam Galti",
+   "def": "Galti jo sab karte hain: graahako ko rok kar rakhna — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, retention ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_172",
+   "term": "Retention — Master Tip",
+   "def": "Graahako ko rok kar rakhna — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, retention ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_173",
+   "term": "Upsell — Samajh",
+   "def": "Graahak ko badi/behtar cheez bechna.",
+   "example": "Chai ki dukaan ho ya bada showroom, upsell ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: upsell har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_174",
+   "term": "Upsell — Udaaharan",
+   "def": "Udaaharan se samjho: graahak ko badi/behtar cheez bechna",
+   "example": "Chai ki dukaan ho ya bada showroom, upsell ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_175",
+   "term": "Upsell — Aam Galti",
+   "def": "Galti jo sab karte hain: graahak ko badi/behtar cheez bechna — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, upsell ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_176",
+   "term": "Upsell — Master Tip",
+   "def": "Graahak ko badi/behtar cheez bechna — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, upsell ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_177",
+   "term": "Working Capital Cycle — Samajh",
+   "def": "Maal kharid se paisa wapas aane ka samay.",
+   "example": "Chai ki dukaan ho ya bada showroom, working capital cycle ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: working capital cycle har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_178",
+   "term": "Working Capital Cycle — Udaaharan",
+   "def": "Udaaharan se samjho: maal kharid se paisa wapas aane ka samay",
+   "example": "Chai ki dukaan ho ya bada showroom, working capital cycle ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_179",
+   "term": "Working Capital Cycle — Aam Galti",
+   "def": "Galti jo sab karte hain: maal kharid se paisa wapas aane ka samay — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, working capital cycle ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_180",
+   "term": "Working Capital Cycle — Master Tip",
+   "def": "Maal kharid se paisa wapas aane ka samay — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, working capital cycle ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_181",
+   "term": "Receivables — Samajh",
+   "def": "Udhaar di hui bikri ka bakaaya paisa.",
+   "example": "Chai ki dukaan ho ya bada showroom, receivables ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: receivables har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_182",
+   "term": "Receivables — Udaaharan",
+   "def": "Udaaharan se samjho: udhaar di hui bikri ka bakaaya paisa",
+   "example": "Chai ki dukaan ho ya bada showroom, receivables ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_183",
+   "term": "Receivables — Aam Galti",
+   "def": "Galti jo sab karte hain: udhaar di hui bikri ka bakaaya paisa — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, receivables ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_184",
+   "term": "Receivables — Master Tip",
+   "def": "Udhaar di hui bikri ka bakaaya paisa — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, receivables ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_185",
+   "term": "Payables — Samajh",
+   "def": "Dena bakaaya — supplier ka paisa.",
+   "example": "Chai ki dukaan ho ya bada showroom, payables ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: payables har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_186",
+   "term": "Payables — Udaaharan",
+   "def": "Udaaharan se samjho: dena bakaaya — supplier ka paisa",
+   "example": "Chai ki dukaan ho ya bada showroom, payables ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_187",
+   "term": "Payables — Aam Galti",
+   "def": "Galti jo sab karte hain: dena bakaaya — supplier ka paisa — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, payables ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_188",
+   "term": "Payables — Master Tip",
+   "def": "Dena bakaaya — supplier ka paisa — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, payables ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_189",
+   "term": "Overheads — Samajh",
+   "def": "Seedhe maal se alag roz ke kharche.",
+   "example": "Chai ki dukaan ho ya bada showroom, overheads ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: overheads har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_190",
+   "term": "Overheads — Udaaharan",
+   "def": "Udaaharan se samjho: seedhe maal se alag roz ke kharche",
+   "example": "Chai ki dukaan ho ya bada showroom, overheads ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_191",
+   "term": "Overheads — Aam Galti",
+   "def": "Galti jo sab karte hain: seedhe maal se alag roz ke kharche — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, overheads ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_192",
+   "term": "Overheads — Master Tip",
+   "def": "Seedhe maal se alag roz ke kharche — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, overheads ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_193",
+   "term": "Sunk Cost — Samajh",
+   "def": "Jo kharcha ho gaya, wapas nahi aata.",
+   "example": "Chai ki dukaan ho ya bada showroom, sunk cost ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: sunk cost har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_194",
+   "term": "Sunk Cost — Udaaharan",
+   "def": "Udaaharan se samjho: jo kharcha ho gaya, wapas nahi aata",
+   "example": "Chai ki dukaan ho ya bada showroom, sunk cost ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_195",
+   "term": "Sunk Cost — Aam Galti",
+   "def": "Galti jo sab karte hain: jo kharcha ho gaya, wapas nahi aata — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, sunk cost ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_196",
+   "term": "Sunk Cost — Master Tip",
+   "def": "Jo kharcha ho gaya, wapas nahi aata — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, sunk cost ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+  {
+   "id": "en2_197",
+   "term": "ROI — Samajh",
+   "def": "Nivesh par kitna laabh, pratishat me.",
+   "example": "Chai ki dukaan ho ya bada showroom, roi ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Roz ki zindagi me: roi har dukaan ke hisaab me dikhta hai."
+  },
+  {
+   "id": "en2_198",
+   "term": "ROI — Udaaharan",
+   "def": "Udaaharan se samjho: nivesh par kitna laabh, pratishat me",
+   "example": "Chai ki dukaan ho ya bada showroom, roi ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Ek chhoti dukaan bhi yehi niyam jeeti hai."
+  },
+  {
+   "id": "en2_199",
+   "term": "ROI — Aam Galti",
+   "def": "Galti jo sab karte hain: nivesh par kitna laabh, pratishat me — ise nazarandaaz karna.",
+   "example": "Chai ki dukaan ho ya bada showroom, roi ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Is galti se bacho, aadhi jung wahi jeet jaoge."
+  },
+  {
+   "id": "en2_200",
+   "term": "ROI — Master Tip",
+   "def": "Nivesh par kitna laabh, pratishat me — ustaad ispar pehle nazar rakhte hain.",
+   "example": "Chai ki dukaan ho ya bada showroom, roi ka khel har jagah ek jaisa chalta hai.",
+   "tip": "Game me: is par dhyan dene wala khiladi aage rehta hai."
+  },
+]

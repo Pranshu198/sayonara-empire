@@ -95,3 +95,8 @@ select{background:var(--surface2);color:var(--text);border:1px solid var(--line)
 .app.amoled-soft{--surface:#0d0d0f;--surface2:#16161a}
 .spark i.neg-bar{background:var(--red)!important}
 @media (prefers-reduced-motion: reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Pass 3: World Atlas hero */
+.atlas-hero{display:flex;gap:12px;align-items:center;background:radial-gradient(120% 160% at 15% 0%,#2b1055 0%,#12081f 55%,#000 100%);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:10px}
+.atlas-globe{font-size:34px;animation:atlasSpin 14s linear infinite}
+@keyframes atlasSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}

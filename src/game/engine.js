@@ -8,6 +8,20 @@ import { DEFAULT_SETTINGS, withDefaults, difficultyFactor, taxRateOf } from './s
 import { wealthDayTick, wealthDailyIncome, wealthValue } from './wealthEngine.js'
 import { bazaarDayTick, ensureBazaar } from './bazaarEngine.js'
 import { auctionPhaseTick, ensureAuction } from './auctionEngine.js'
+import { cityOf, demandOf } from './atlas/cityIndex.js'
+import { festMultFor, festStaffLeave } from './festivals/index.js'
+import { phaseDemand, seasonBoostFor } from './engines/demand.js'
+import { ceilingPenalty } from './engines/elasticity.js'
+import { supplierDrift, contractCogsMult } from './engines/supply.js'
+import { fixedDailyCost, staffLeaveFactor } from './engines/labour.js'
+import { walkMarket } from './engines/market.js'
+import { dailyRent } from './engines/property.js'
+import { growRivals, topRival } from './engines/rival.js'
+import { ratingDrift, complaintHit } from './engines/reputation.js'
+import { wastageRateFor, complaintChance } from './engines/risk.js'
+import { monthEnd } from './engines/treasury.js'
+import { runManagerPhase, runManagerDay, processDeliveries } from './engines/automation.js'
+import { corporateOrder } from './engines/festival.js'
 
 export const fmt = (n) => {
   n = Math.round(n || 0)
@@ -62,6 +76,9 @@ export function initialState(savedElapsedSec = 0) {
     cityProjects: [], happinessBonus: 0, oppDay: 0, predictions: [], treasuresActive: [],
     ach2: [], legacyBank: 0,
     story: ['Day 1: Empire ki neev rakhi gayi — ₹50K cash ke saath.'],
+    unlockedCities: ['india_delhi'],
+    contracts: {}, pendingDeliveries: [], importedBoost: {},
+    managers: {}, managerLog: [], managerStats: {}, mgrState: {}, holdAvg: {},
     nwHist: [50000],
     totalEarned: 0,
   }
@@ -81,29 +98,33 @@ export function missionProgress(s, m) {
 // ---- one phase tick (Morning/Afternoon/Evening/Night) ----
 export function phaseTick(prev) {
   const s = structuredClone(prev)
+  processDeliveries(s, fmt)
   const phaseW = s.phase
   let phaseRev = 0, phaseCost = 0
   for (const [id, o] of Object.entries(s.biz)) {
     const d = bizDef(id)
     const w = PHASE_W[d.cat][phaseW]
     const lvMult = 1 + 0.18 * (o.lv - 1)
-    const elasticity = Math.max(0.35, 1 - (o.price - 1) * 1.15) // price up -> demand down
-    const ratingF = 0.8 + (o.rating - 3) * 0.12
-    const mktF = o.mktDays > 0 ? 1.3 : 1
-    const eventF = s.eventEff === 'boom' && (d.cat === 'Food' || d.cat === 'Retail') ? 1.3 : s.eventEff === 'salary' && d.cat === 'Retail' ? 1.2 : s.eventEff === 'rain' ? 0.9 : s.eventEff === 'match' && phaseW === 2 ? 1.25 : 1
-    const stockF = o.stock <= 0 ? 0.45 : o.stock < 20 ? 0.8 : 1
-    const fullRev = d.rev * w * lvMult * o.price * elasticity * ratingF * mktF * eventF * stockF * s.seasonBoost * rnd(0.9, 1.1) * s.prestigeMult * difficultyFactor(s.settings)
-    const cogs = fullRev * d.cogs * s.supplier
-    const fixedDaily = o.staff * d.wage + d.rent + d.util + d.cost * 0.0003
-    const fixed = fixedDaily * 0.25
-    const wastage = fullRev * 0.02
+    const { elasticity, ratingF, mktF, eventF, stockF } = phaseDemand(d, o, s, phaseW)
+    const city = cityOf(o.loc)
+    const locF = demandOf(city, d.cat)
+    const festF = festMultFor(s.day, city, d.cat)
+    const leaveF = staffLeaveFactor(festStaffLeave(s.day, city))
+    const contract = (s.contracts || {})[id]
+    const ceilF = ceilingPenalty(o.price, contract)
+    const impF = (s.importedBoost || {})[id] > 0 ? 1.15 : 1
+    const fullRev = d.rev * w * lvMult * o.price * elasticity * ratingF * mktF * eventF * stockF * locF * festF * leaveF * ceilF * impF * s.seasonBoost * rnd(0.9, 1.1) * s.prestigeMult * difficultyFactor(s.settings)
+    const cogs = fullRev * d.cogs * s.supplier * contractCogsMult(contract)
+    const fixed = fixedDailyCost(d, o, city) * 0.25
+    const wastage = fullRev * wastageRateFor(contract)
     const costs = cogs + fixed + wastage
+    if (contract && Math.random() < complaintChance(contract)) complaintHit(o)
     const profit = fullRev - costs
     // cashflow: 85% abhi, 15% udhaar (receivables, kal settle)
     s.cash += fullRev * 0.85 - costs
     s.receivables += fullRev * 0.15
     o.stock = Math.max(0, o.stock - w * 26)
-    o.rating = Math.max(3, Math.min(5, o.rating + rnd(-0.02, 0.025) - (o.price > 1.25 ? 0.02 * ((s.settings && s.settings.custStrict) || 1) : -0.01)))
+    o.rating = ratingDrift(o, s, rnd)
     if (o.mktDays > 0) o.mktDays -= 0.25
     o.profitToday += profit; o.profitTotal += profit
     phaseRev += fullRev; phaseCost += costs
@@ -116,6 +137,7 @@ export function phaseTick(prev) {
   s.dayRevenue += phaseRev; s.dayCosts += phaseCost
   s.totalEarned += Math.max(0, phaseRev - phaseCost)
   s.xp += 2
+  runManagerPhase(s, bizDef, fmt)
   if (s.phase === 3) endDay(s); else s.phase += 1
   return s
 }
@@ -127,26 +149,22 @@ function endDay(s) {
   // wealth assets ki roz ki aamdani (kiraya jaisi)
   const wInc = wealthDailyIncome(s)
   if (wInc > 0) s.cash += wInc
-  // property rent (daily share)
-  let rent = 0; for (const pid of s.props) { const p = PROPERTIES.find(x => x.id === pid); rent += (p.rent || 0) / 30 }
+  // property rent (daily share) — Property Engine
+  const rent = dailyRent(s, PROPERTIES)
   s.cash += rent
   // FD interest + SIP growth (daily tiny accrual)
   s.fds.forEach(f => { f.amt *= 1 + 0.07 / 365 })
   s.sip *= 1 + 0.11 / 365; s.bonds *= 1 + 0.075 / 365
-  // stock random walk + sentiment
-  const mVol = (s.settings && s.settings.marketVol) || 1
-  const walk = (arr, vol) => arr.forEach(st => { const ch = rnd(-vol, vol) * mVol + s.sentiment * 0.004; st.price = Math.max(1, st.price * (1 + ch)); st.hist = [...st.hist.slice(-29), Math.round(st.price)] })
-  walk(s.stocks, 0.03); walk(s.commodities, 0.018)
-  s.commodities.find(c => c.sym === 'BTC').price *= 1 + rnd(-0.02, 0.02)
-  // supplier drift + economy
+  // stock random walk + sentiment — Market Engine
+  walkMarket(s, rnd)
+  // supplier drift + economy — Supply Engine
   const volF = (s.settings && s.settings.volatility) || 1
   const infF = (s.settings && s.settings.inflation) || 1
-  s.supplier = Math.max(0.88, Math.min(1.18, s.supplier + rnd(-0.015, 0.015) * volF + 0.002 * infF))
+  s.supplier = supplierDrift(s, rnd, volF, infF)
   s.sentiment = Math.max(-3, Math.min(3, s.sentiment + rnd(-0.7, 0.7) * volF))
-  s.seasonBoost = [1, 1.05, 0.95, 1.15][Math.floor(s.day / 90) % 4]
-  // rivals grow
-  const aggF = (s.settings && s.settings.compAggro) || 1
-  s.rivals.forEach(r => { r.nw *= 1 + r.g * rnd(0.4, 1.6) * aggF })
+  s.seasonBoost = seasonBoostFor(s.day)
+  // rivals grow — Rival AI Engine
+  growRivals(s, rnd)
   // random event — 2400 wali badi library se, frequency setting ke hisaab se
   if (Math.random() < 0.3 * ((s.settings && s.settings.eventFreq) || 1)) {
     const ev = randomEvent()
@@ -157,7 +175,7 @@ function endDay(s) {
     s.news = [{ day: s.day + 1, text: ev.t }, ...s.news].slice(0, 12)
   } else s.eventEff = 'calm'
   if (Math.random() < 0.2) {
-    const top = [...s.rivals].sort((a, b) => b.nw - a.nw)[0]
+    const top = topRival(s)
     s.news = [{ day: s.day + 1, text: `📰 Sheher Times: ${top.name} abhi aage (${fmt(top.nw)}) — ${top.pers} style se badh raha hai.` }, ...s.news].slice(0, 12)
   }
   // day report + history
@@ -167,32 +185,23 @@ function endDay(s) {
   s.dayRevenue = 0; s.dayCosts = 0
   s.day += 1
   s.missions = genMissions(s.day)
-  // ---- MONTH END: guarded, tax ONLY on this month's accumulated profit (Day-30 freeze fix by design) ----
-  if (s.day % 30 === 0 && s.lastTaxDay !== s.day) {
-    s.lastTaxDay = s.day
-    if (s.monthProfit > 0) {
-      const tax = s.monthProfit * taxRateOf(s.settings)
-      s.cash -= tax
-      s.news = [{ day: s.day, text: `🧾 Month-end: Is mahine ke profit par tax ${fmt(tax)} kata. (Sirf is mahine ka profit ginna gaya)` }, ...s.news].slice(0, 12)
-    }
-    // dividends 1.5% of stock holdings value
-    let div = 0; for (const [sym, q] of Object.entries(s.holdings)) { const st = s.stocks.find(x => x.sym === sym); if (st) div += st.price * q * 0.015 }
-    if (div > 0) { s.cash += div; s.news = [{ day: s.day, text: `💰 Dividend mila: ${fmt(div)}` }, ...s.news].slice(0, 12) }
-    // SIP monthly invest from bank/cash
-    if (s.sipMonthly > 0 && s.cash >= s.sipMonthly) { s.cash -= s.sipMonthly; s.sip += s.sipMonthly }
-    // loan EMI monthly
-    if (s.loan.amount > 0) {
-      s.cash -= s.loan.emi; s.loan.amount = Math.max(0, s.loan.amount - (s.loan.emi - s.loan.amount * 0.01)); s.loan.months -= 1
-      if (s.loan.months <= 0 || s.loan.amount <= 0) { s.loan = { amount: 0, emi: 0, months: 0 }; s.credit = Math.min(900, s.credit + 25) }
-    }
-    s.monthProfit = 0
-  }
+  // ---- MONTH END: Treasury Engine — guarded, tax ONLY on this month's accumulated profit (Day-30 fix) ----
+  monthEnd(s, fmt)
   // ---- naye systems: wealth, bazaar, reviews, decision, headlines ----
   const wNews = wealthDayTick(s)
   if (wNews.length) s.news = [...wNews, ...s.news].slice(0, 12)
   ensureBazaar(s)
   const bzNews = bazaarDayTick(s)
   if (bzNews.length) s.news = [...bzNews, ...s.news].slice(0, 12)
+  // Festival Engine: bade tyohar par corporate hamper order (Food/Retail maliko ko)
+  const ownedCats2 = [...new Set(Object.keys(s.biz).map((id) => bizDef(id).cat))]
+  const myCities = (s.unlockedCities || ['india_delhi']).map((cid) => cityOf(cid))
+  const co = corporateOrder(s, myCities, ownedCats2.includes('Food') || ownedCats2.includes('Retail'), Math.random)
+  if (co) { const bonus = Math.round(25000 * (0.8 + Math.random() * 0.7)); s.cash += bonus; s.news = [{ day: s.day + 1, text: `🎁 ${co.f.name} (${co.city.name}): Corporate hamper order mila — ${fmt(bonus)} ki ek saath kamaai! Taiyari ka fayda.` }, ...s.news].slice(0, 12) }
+  // Imported tag ki miyaad ghatao
+  if (s.importedBoost) for (const k of Object.keys(s.importedBoost)) { s.importedBoost[k] -= 1; if (s.importedBoost[k] <= 0) delete s.importedBoost[k] }
+  // AI Managers ke din-bhar ke kaam (finance/trading/hr/expansion)
+  runManagerDay(s, bizDef, fmt, netWorth)
   // Sheher Times ki taazi headline (badi library se)
   if (Math.random() < 0.5) {
     const topBiz = Object.keys(s.biz)[0] ? bizDef(Object.keys(s.biz)[0]).name : 'nayi dukaan'

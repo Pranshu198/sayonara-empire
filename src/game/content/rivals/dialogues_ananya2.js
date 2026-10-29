@@ -1,0 +1,843 @@
+// Ananya (Property Tycoon) ki baatein (deep): har mulakat par nayi chaal
+export const DIALOGUES_DEEP = [
+  {
+   "id": "rd2_ananya_1",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Phone par baatcheet me, naye khiladiyon par: \"Supplier ne nakhre badha diye hain.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_2",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Akhbaar ke interview me, sheher ke bhavishya par: \"Ek din tum bade banoge, agar ruke nahi.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_3",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_4",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Sheher ke vyapari sangh me, naye khiladiyon par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_5",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Akhbaar ke interview me, naye khiladiyon par: \"Bazaar mera hai, tum mehmaan ho.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_6",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, apni agli chaal par: \"Mere saamne tikna aasan nahi.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_7",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, apni kamyabi ke raaz par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_8",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, apni agli chaal par: \"Mere saamne tikna aasan nahi.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_9",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Is baar bazaar thanda hai, sambhal ke.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_10",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Bazaar mera hai, tum mehmaan ho.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_11",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, aane wale season par: \"Is baar bazaar thanda hai, sambhal ke.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_12",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, sheher ke bhavishya par: \"Sheher ka har graahak mera hoga.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_13",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, sheher ke bhavishya par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_14",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Kiraya kha gaya is mahine.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_15",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Supplier ne nakhre badha diye hain.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_16",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_17",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, sheher ke bhavishya par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_18",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, aane wale season par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_19",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_20",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Tumhari chaal maine pehle hi padh li hai.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_21",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Sheher ke vyapari sangh me, sheher ke bhavishya par: \"Bazaar mera hai, tum mehmaan ho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_22",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Bazaar mera hai, tum mehmaan ho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_23",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Akhbaar ke interview me, aane wale season par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_24",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Akhbaar ke interview me, apni agli chaal par: \"Ek din tum bade banoge, agar ruke nahi.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_25",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Bazaar mera hai, tum mehmaan ho.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_26",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Akhbaar ke interview me, naye khiladiyon par: \"Bazaar mera hai, tum mehmaan ho.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_27",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Mere saamne tikna aasan nahi.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_28",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, naye khiladiyon par: \"Ek mauka hai — pehle main loongi.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_29",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Mandi ki chai par, sheher ke bhavishya par: \"Tumse seekhne ko mila, sach.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_30",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, naye khiladiyon par: \"Sheher ka har graahak mera hoga.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_31",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Ek din tum bade banoge, agar ruke nahi.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_32",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, daamo ki jung par: \"Tumse seekhne ko mila, sach.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_33",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Tumhari chaal maine pehle hi padh li hai.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_34",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Ek saajha karyakram me, apni kamyabi ke raaz par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_35",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Supplier ne nakhre badha diye hain.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_36",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_37",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Ek saajha karyakram me, sheher ke bhavishya par: \"Ek mauka hai — pehle main loongi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_38",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Is baar bazaar thanda hai, sambhal ke.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_39",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Akhbaar ke interview me, daamo ki jung par: \"Sheher ka har graahak mera hoga.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_40",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Mere saamne tikna aasan nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_41",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Tumhari chaal maine pehle hi padh li hai.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_42",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Tumhari chaal maine pehle hi padh li hai.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_43",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, daamo ki jung par: \"Sheher ka har graahak mera hoga.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_44",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Bazaar mera hai, tum mehmaan ho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_45",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Ek shaadi me takraane par, apni agli chaal par: \"Ek mauka hai — pehle main loongi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_46",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Ek saajha karyakram me, daamo ki jung par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_47",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, sheher ke bhavishya par: \"Bazaar mera hai, tum mehmaan ho.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_48",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Mandi ki chai par, aane wale season par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_49",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek shaadi me takraane par, apni kamyabi ke raaz par: \"Sheher ka har graahak mera hoga.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_50",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Bazaar mera hai, tum mehmaan ho.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_51",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, sheher ke bhavishya par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_52",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek shaadi me takraane par, apni agli chaal par: \"Mere saamne tikna aasan nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_53",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Ek saajha karyakram me, daamo ki jung par: \"Tumse seekhne ko mila, sach.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_54",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, sheher ke bhavishya par: \"Supplier ne nakhre badha diye hain.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_55",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Tumse seekhne ko mila, sach.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_56",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, aane wale season par: \"Kiraya kha gaya is mahine.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_57",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Akhbaar ke interview me, naye khiladiyon par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_58",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_59",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Sheher ka har graahak mera hoga.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_60",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Akhbaar ke interview me, daamo ki jung par: \"Ek mauka hai — pehle main loongi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_61",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Phone par baatcheet me, daamo ki jung par: \"Sheher ka har graahak mera hoga.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_62",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_63",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Tumse seekhne ko mila, sach.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_64",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Phone par baatcheet me, sheher ke bhavishya par: \"Tumhari chaal maine pehle hi padh li hai.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_65",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Tumhari chaal maine pehle hi padh li hai.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_66",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Akhbaar ke interview me, naye khiladiyon par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_67",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, apni agli chaal par: \"Sheher ka har graahak mera hoga.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_68",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Is baar bazaar thanda hai, sambhal ke.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_69",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Phone par baatcheet me, sheher ke bhavishya par: \"Is baar bazaar thanda hai, sambhal ke.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_70",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_71",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, apni kamyabi ke raaz par: \"Bazaar mera hai, tum mehmaan ho.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_72",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Is baar bazaar thanda hai, sambhal ke.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_73",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_74",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, naye khiladiyon par: \"Tumse seekhne ko mila, sach.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_75",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Ek saajha karyakram me, apni agli chaal par: \"Ek din tum bade banoge, agar ruke nahi.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_76",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Kiraya kha gaya is mahine.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_77",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_78",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Kiraya kha gaya is mahine.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_79",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Ek shaadi me takraane par, sheher ke bhavishya par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_80",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Ek saajha karyakram me, sheher ke bhavishya par: \"Ek mauka hai — pehle main loongi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_81",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_82",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek shaadi me takraane par, naye khiladiyon par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_83",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_84",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_85",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, aane wale season par: \"Ek din tum bade banoge, agar ruke nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_86",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Phone par baatcheet me, daamo ki jung par: \"Supplier ne nakhre badha diye hain.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_87",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Phone par baatcheet me, daamo ki jung par: \"Tumhari chaal maine pehle hi padh li hai.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_88",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Mere saamne tikna aasan nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_89",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Phone par baatcheet me, sheher ke bhavishya par: \"Sheher ka har graahak mera hoga.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_90",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek shaadi me takraane par, apni kamyabi ke raaz par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_91",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Bazaar mera hai, tum mehmaan ho.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_92",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Supplier ne nakhre badha diye hain.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_93",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, apni agli chaal par: \"Tumhari chaal maine pehle hi padh li hai.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_94",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Ek mauka hai — pehle main loongi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_95",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Akhbaar ke interview me, apni agli chaal par: \"Is baar bazaar thanda hai, sambhal ke.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_96",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Akhbaar ke interview me, naye khiladiyon par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_97",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Akhbaar ke interview me, sheher ke bhavishya par: \"Sheher ka har graahak mera hoga.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_98",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Bazaar mera hai, tum mehmaan ho.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_99",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_100",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_101",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Ek saajha karyakram me, daamo ki jung par: \"Kiraya kha gaya is mahine.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_102",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Tumse seekhne ko mila, sach.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_103",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Mandi ki chai par, apni kamyabi ke raaz par: \"Tumhari chaal maine pehle hi padh li hai.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_104",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, apni kamyabi ke raaz par: \"Tumhari chaal maine pehle hi padh li hai.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_105",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, apni kamyabi ke raaz par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_106",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, sheher ke bhavishya par: \"Bazaar mera hai, tum mehmaan ho.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_107",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_108",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Phone par baatcheet me, naye khiladiyon par: \"Mere saamne tikna aasan nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_109",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Phone par baatcheet me, aane wale season par: \"Ek mauka hai — pehle main loongi.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_110",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Tumhari chaal maine pehle hi padh li hai.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_111",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, daamo ki jung par: \"Tumse seekhne ko mila, sach.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_112",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Ek shaadi me takraane par, apni agli chaal par: \"Kiraya kha gaya is mahine.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_113",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Akhbaar ke interview me, aane wale season par: \"Mere saamne tikna aasan nahi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_114",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, naye khiladiyon par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_115",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek shaadi me takraane par, sheher ke bhavishya par: \"Sheher ka har graahak mera hoga.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_116",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_117",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_118",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Mandi ki chai par, apni kamyabi ke raaz par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_119",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_120",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_121",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Ek shaadi me takraane par, daamo ki jung par: \"Supplier ne nakhre badha diye hain.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_122",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Ek saajha karyakram me, daamo ki jung par: \"Ek mauka hai — pehle main loongi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_123",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_124",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Sheher ka har graahak mera hoga.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_125",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_126",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, aane wale season par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_127",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Phone par baatcheet me, sheher ke bhavishya par: \"Bazaar mera hai, tum mehmaan ho.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_128",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Supplier ne nakhre badha diye hain.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_129",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek shaadi me takraane par, naye khiladiyon par: \"Mere saamne tikna aasan nahi.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_130",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, apni kamyabi ke raaz par: \"Bazaar mera hai, tum mehmaan ho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_131",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, apni kamyabi ke raaz par: \"Tumhari chaal maine pehle hi padh li hai.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_132",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Ek shaadi me takraane par, naye khiladiyon par: \"Ek din tum bade banoge, agar ruke nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_133",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Bazaar mera hai, tum mehmaan ho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_134",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "offer",
+   "text": "Ek shaadi me takraane par, apni agli chaal par: \"Ek mauka hai — pehle main loongi.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_ananya_135",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Supplier ne nakhre badha diye hain.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_ananya_136",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Tumse seekhne ko mila, sach.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_137",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, apni kamyabi ke raaz par: \"Mere saamne tikna aasan nahi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_ananya_138",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, naye khiladiyon par: \"Ek din tum bade banoge, agar ruke nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_ananya_139",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "worry",
+   "text": "Ek shaadi me takraane par, apni agli chaal par: \"Is baar bazaar thanda hai, sambhal ke.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_ananya_140",
+   "rival": "Ananya (Property Tycoon)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, daamo ki jung par: \"Ek din tum bade banoge, agar ruke nahi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+]

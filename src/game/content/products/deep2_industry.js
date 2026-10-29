@@ -1,0 +1,2343 @@
+// Product catalog (deep) — Industry part 2: vistrit variants, festival editions ke saath
+export const PRODUCTS_DEEP = [
+  {
+   "id": "pr2_in_2_1",
+   "cat": "Industry",
+   "name": "Forklift Rental Day — Classic Pack of 2",
+   "price": 82275,
+   "costPct": 0.38,
+   "pop": 2,
+   "desc": "Forklift Rental Day — Classic Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_2",
+   "cat": "Industry",
+   "name": "Lathe Machine Part — Mini Value Pack",
+   "price": 70350,
+   "costPct": 0.43,
+   "pop": 8,
+   "desc": "Lathe Machine Part — Mini Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_3",
+   "cat": "Industry",
+   "name": "Weighing Scale Heavy — Special Pack of 2",
+   "price": 45575,
+   "costPct": 0.4,
+   "pop": 8,
+   "desc": "Weighing Scale Heavy — Special Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_4",
+   "cat": "Industry",
+   "name": "Packaging Machine — Festival Edition Set of 4",
+   "price": 3575,
+   "costPct": 0.36,
+   "pop": 8,
+   "desc": "Packaging Machine — Festival Edition Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_5",
+   "cat": "Industry",
+   "name": "PVC Pipe Bundle — Gold Trial Pack",
+   "price": 9550,
+   "costPct": 0.48,
+   "pop": 8,
+   "desc": "PVC Pipe Bundle — Gold Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_6",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Festival Edition Pack of 2",
+   "price": 41025,
+   "costPct": 0.48,
+   "pop": 5,
+   "desc": "Hydraulic Jack — Festival Edition Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_7",
+   "cat": "Industry",
+   "name": "Battery Bank — Classic Set of 4",
+   "price": 81300,
+   "costPct": 0.35,
+   "pop": 5,
+   "desc": "Battery Bank — Classic Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_8",
+   "cat": "Industry",
+   "name": "Solar Panel Lot — Special Refill",
+   "price": 69900,
+   "costPct": 0.37,
+   "pop": 7,
+   "desc": "Solar Panel Lot — Special Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_9",
+   "cat": "Industry",
+   "name": "Steel Rod Bundle — Classic Duo Combo",
+   "price": 86475,
+   "costPct": 0.47,
+   "pop": 5,
+   "desc": "Steel Rod Bundle — Classic Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_10",
+   "cat": "Industry",
+   "name": "Plywood Sheet Pack — New Launch Refill",
+   "price": 96000,
+   "costPct": 0.31,
+   "pop": 6,
+   "desc": "Plywood Sheet Pack — New Launch Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_11",
+   "cat": "Industry",
+   "name": "Wire Coil — Premium Large",
+   "price": 96075,
+   "costPct": 0.52,
+   "pop": 6,
+   "desc": "Wire Coil — Premium Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_12",
+   "cat": "Industry",
+   "name": "Steel Rod Bundle — Classic Trial Pack",
+   "price": 73925,
+   "costPct": 0.37,
+   "pop": 7,
+   "desc": "Steel Rod Bundle — Classic Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_13",
+   "cat": "Industry",
+   "name": "Packaging Machine — Special Standard",
+   "price": 22075,
+   "costPct": 0.35,
+   "pop": 6,
+   "desc": "Packaging Machine — Special Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_14",
+   "cat": "Industry",
+   "name": "Gear Box Unit — Pro Pack of 2",
+   "price": 65325,
+   "costPct": 0.5,
+   "pop": 6,
+   "desc": "Gear Box Unit — Pro Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_15",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Festival Edition Refill",
+   "price": 74950,
+   "costPct": 0.57,
+   "pop": 5,
+   "desc": "Hydraulic Jack — Festival Edition Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_16",
+   "cat": "Industry",
+   "name": "Motor Pump — Festival Edition Trial Pack",
+   "price": 19475,
+   "costPct": 0.32,
+   "pop": 7,
+   "desc": "Motor Pump — Festival Edition Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_17",
+   "cat": "Industry",
+   "name": "Forklift Rental Day — Pro Trial Pack",
+   "price": 81250,
+   "costPct": 0.36,
+   "pop": 7,
+   "desc": "Forklift Rental Day — Pro Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_18",
+   "cat": "Industry",
+   "name": "Exhaust System — Premium Large",
+   "price": 62450,
+   "costPct": 0.33,
+   "pop": 4,
+   "desc": "Exhaust System — Premium Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_19",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Festival Edition Refill",
+   "price": 56500,
+   "costPct": 0.52,
+   "pop": 7,
+   "desc": "Tool Kit Industrial — Festival Edition Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_20",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Limited Pack of 2",
+   "price": 84475,
+   "costPct": 0.59,
+   "pop": 3,
+   "desc": "Drill Machine Pro — Limited Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_21",
+   "cat": "Industry",
+   "name": "Sealing Machine — Eco Duo Combo",
+   "price": 77350,
+   "costPct": 0.44,
+   "pop": 5,
+   "desc": "Sealing Machine — Eco Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_22",
+   "cat": "Industry",
+   "name": "Lathe Machine Part — Jumbo Refill",
+   "price": 3425,
+   "costPct": 0.56,
+   "pop": 6,
+   "desc": "Lathe Machine Part — Jumbo Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_23",
+   "cat": "Industry",
+   "name": "CNC Bit Set — Gold Trial Pack",
+   "price": 61775,
+   "costPct": 0.39,
+   "pop": 6,
+   "desc": "CNC Bit Set — Gold Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_24",
+   "cat": "Industry",
+   "name": "Welding Machine — Jumbo Set of 4",
+   "price": 92950,
+   "costPct": 0.4,
+   "pop": 2,
+   "desc": "Welding Machine — Jumbo Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_25",
+   "cat": "Industry",
+   "name": "Steel Rod Bundle — Combo Pack Trial Pack",
+   "price": 89900,
+   "costPct": 0.61,
+   "pop": 5,
+   "desc": "Steel Rod Bundle — Combo Pack Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_26",
+   "cat": "Industry",
+   "name": "Steel Rod Bundle — Bestseller Large",
+   "price": 48825,
+   "costPct": 0.31,
+   "pop": 10,
+   "desc": "Steel Rod Bundle — Bestseller Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_27",
+   "cat": "Industry",
+   "name": "Motor Pump — Limited Standard",
+   "price": 24725,
+   "costPct": 0.52,
+   "pop": 9,
+   "desc": "Motor Pump — Limited Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_28",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Combo Pack Standard",
+   "price": 84225,
+   "costPct": 0.3,
+   "pop": 9,
+   "desc": "Tool Kit Industrial — Combo Pack Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_29",
+   "cat": "Industry",
+   "name": "Brick Kiln Lot — Special Large",
+   "price": 67725,
+   "costPct": 0.61,
+   "pop": 3,
+   "desc": "Brick Kiln Lot — Special Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_30",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Classic Value Pack",
+   "price": 75225,
+   "costPct": 0.41,
+   "pop": 3,
+   "desc": "Tool Kit Industrial — Classic Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_31",
+   "cat": "Industry",
+   "name": "Lathe Machine Part — Bestseller Trial Pack",
+   "price": 29050,
+   "costPct": 0.55,
+   "pop": 10,
+   "desc": "Lathe Machine Part — Bestseller Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_32",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Gold Single",
+   "price": 72175,
+   "costPct": 0.38,
+   "pop": 5,
+   "desc": "Tool Kit Industrial — Gold Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_33",
+   "cat": "Industry",
+   "name": "Cement Bag Lot — Limited Value Pack",
+   "price": 53200,
+   "costPct": 0.51,
+   "pop": 10,
+   "desc": "Cement Bag Lot — Limited Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_34",
+   "cat": "Industry",
+   "name": "Conveyor Belt Roll — Special Refill",
+   "price": 56200,
+   "costPct": 0.42,
+   "pop": 7,
+   "desc": "Conveyor Belt Roll — Special Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_35",
+   "cat": "Industry",
+   "name": "Transformer Unit — Mini Standard",
+   "price": 24675,
+   "costPct": 0.49,
+   "pop": 3,
+   "desc": "Transformer Unit — Mini Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_36",
+   "cat": "Industry",
+   "name": "Motor Pump — Premium Trial Pack",
+   "price": 35800,
+   "costPct": 0.47,
+   "pop": 9,
+   "desc": "Motor Pump — Premium Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_37",
+   "cat": "Industry",
+   "name": "Welding Machine — Festival Edition Value Pack",
+   "price": 84075,
+   "costPct": 0.53,
+   "pop": 3,
+   "desc": "Welding Machine — Festival Edition Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_38",
+   "cat": "Industry",
+   "name": "Paint Drum — Special Single",
+   "price": 53900,
+   "costPct": 0.47,
+   "pop": 6,
+   "desc": "Paint Drum — Special Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_39",
+   "cat": "Industry",
+   "name": "Exhaust System — Bestseller Trial Pack",
+   "price": 76625,
+   "costPct": 0.49,
+   "pop": 7,
+   "desc": "Exhaust System — Bestseller Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_40",
+   "cat": "Industry",
+   "name": "Weighing Scale Heavy — New Launch Set of 4",
+   "price": 55425,
+   "costPct": 0.62,
+   "pop": 9,
+   "desc": "Weighing Scale Heavy — New Launch Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_41",
+   "cat": "Industry",
+   "name": "Compressor Unit — Festival Edition Duo Combo",
+   "price": 17200,
+   "costPct": 0.36,
+   "pop": 9,
+   "desc": "Compressor Unit — Festival Edition Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_42",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Limited Gift Pack",
+   "price": 56200,
+   "costPct": 0.37,
+   "pop": 6,
+   "desc": "Hydraulic Jack — Limited Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_43",
+   "cat": "Industry",
+   "name": "Solar Panel Lot — Festival Edition Value Pack",
+   "price": 41500,
+   "costPct": 0.39,
+   "pop": 8,
+   "desc": "Solar Panel Lot — Festival Edition Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_44",
+   "cat": "Industry",
+   "name": "Gear Box Unit — New Launch Standard",
+   "price": 37200,
+   "costPct": 0.54,
+   "pop": 9,
+   "desc": "Gear Box Unit — New Launch Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_45",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Special Single",
+   "price": 59525,
+   "costPct": 0.43,
+   "pop": 7,
+   "desc": "Tool Kit Industrial — Special Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_46",
+   "cat": "Industry",
+   "name": "Lathe Machine Part — New Launch Standard",
+   "price": 85250,
+   "costPct": 0.36,
+   "pop": 6,
+   "desc": "Lathe Machine Part — New Launch Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_47",
+   "cat": "Industry",
+   "name": "Steel Rod Bundle — Combo Pack Pack of 2",
+   "price": 22600,
+   "costPct": 0.47,
+   "pop": 9,
+   "desc": "Steel Rod Bundle — Combo Pack Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_48",
+   "cat": "Industry",
+   "name": "Wire Coil — Festival Edition Trial Pack",
+   "price": 25625,
+   "costPct": 0.53,
+   "pop": 9,
+   "desc": "Wire Coil — Festival Edition Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_49",
+   "cat": "Industry",
+   "name": "Transformer Unit — Bestseller Duo Combo",
+   "price": 5025,
+   "costPct": 0.54,
+   "pop": 6,
+   "desc": "Transformer Unit — Bestseller Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_50",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Pro Gift Pack",
+   "price": 11575,
+   "costPct": 0.47,
+   "pop": 10,
+   "desc": "Tool Kit Industrial — Pro Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_51",
+   "cat": "Industry",
+   "name": "Conveyor Belt Roll — Special Value Pack",
+   "price": 21900,
+   "costPct": 0.4,
+   "pop": 9,
+   "desc": "Conveyor Belt Roll — Special Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_52",
+   "cat": "Industry",
+   "name": "CNC Bit Set — Premium Duo Combo",
+   "price": 79625,
+   "costPct": 0.57,
+   "pop": 6,
+   "desc": "CNC Bit Set — Premium Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_53",
+   "cat": "Industry",
+   "name": "Generator 5kVA — Special Value Pack",
+   "price": 46725,
+   "costPct": 0.55,
+   "pop": 5,
+   "desc": "Generator 5kVA — Special Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_54",
+   "cat": "Industry",
+   "name": "Sealing Machine — Special Set of 4",
+   "price": 42925,
+   "costPct": 0.35,
+   "pop": 6,
+   "desc": "Sealing Machine — Special Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_55",
+   "cat": "Industry",
+   "name": "Motor Pump — Festival Edition Duo Combo",
+   "price": 23375,
+   "costPct": 0.35,
+   "pop": 4,
+   "desc": "Motor Pump — Festival Edition Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_56",
+   "cat": "Industry",
+   "name": "Wire Coil — Gold Pack of 2",
+   "price": 91750,
+   "costPct": 0.34,
+   "pop": 9,
+   "desc": "Wire Coil — Gold Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_57",
+   "cat": "Industry",
+   "name": "Industrial Fan — Combo Pack Single",
+   "price": 44900,
+   "costPct": 0.44,
+   "pop": 6,
+   "desc": "Industrial Fan — Combo Pack Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_58",
+   "cat": "Industry",
+   "name": "Cement Bag Lot — Pro Large",
+   "price": 65375,
+   "costPct": 0.45,
+   "pop": 10,
+   "desc": "Cement Bag Lot — Pro Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_59",
+   "cat": "Industry",
+   "name": "Motor Pump — Special Duo Combo",
+   "price": 64075,
+   "costPct": 0.6,
+   "pop": 5,
+   "desc": "Motor Pump — Special Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_60",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Premium Refill",
+   "price": 76125,
+   "costPct": 0.35,
+   "pop": 9,
+   "desc": "Tool Kit Industrial — Premium Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_61",
+   "cat": "Industry",
+   "name": "Sealing Machine — Family Pack Gift Pack",
+   "price": 43400,
+   "costPct": 0.37,
+   "pop": 2,
+   "desc": "Sealing Machine — Family Pack Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_62",
+   "cat": "Industry",
+   "name": "Conveyor Belt Roll — Special Single",
+   "price": 28550,
+   "costPct": 0.46,
+   "pop": 10,
+   "desc": "Conveyor Belt Roll — Special Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_63",
+   "cat": "Industry",
+   "name": "Solar Panel Lot — Deluxe Large",
+   "price": 22225,
+   "costPct": 0.46,
+   "pop": 2,
+   "desc": "Solar Panel Lot — Deluxe Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_64",
+   "cat": "Industry",
+   "name": "Transformer Unit — Classic Set of 4",
+   "price": 85250,
+   "costPct": 0.5,
+   "pop": 4,
+   "desc": "Transformer Unit — Classic Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_65",
+   "cat": "Industry",
+   "name": "Transformer Unit — Festival Edition Large",
+   "price": 55300,
+   "costPct": 0.48,
+   "pop": 8,
+   "desc": "Transformer Unit — Festival Edition Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_66",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Family Pack Standard",
+   "price": 61300,
+   "costPct": 0.3,
+   "pop": 8,
+   "desc": "Drill Machine Pro — Family Pack Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_67",
+   "cat": "Industry",
+   "name": "Bearing Set — Jumbo Value Pack",
+   "price": 3875,
+   "costPct": 0.57,
+   "pop": 3,
+   "desc": "Bearing Set — Jumbo Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_68",
+   "cat": "Industry",
+   "name": "Lathe Machine Part — Pro Large",
+   "price": 97750,
+   "costPct": 0.55,
+   "pop": 6,
+   "desc": "Lathe Machine Part — Pro Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_69",
+   "cat": "Industry",
+   "name": "Cement Bag Lot — Classic Trial Pack",
+   "price": 77650,
+   "costPct": 0.34,
+   "pop": 6,
+   "desc": "Cement Bag Lot — Classic Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_70",
+   "cat": "Industry",
+   "name": "Generator 5kVA — Limited Gift Pack",
+   "price": 85100,
+   "costPct": 0.44,
+   "pop": 3,
+   "desc": "Generator 5kVA — Limited Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_71",
+   "cat": "Industry",
+   "name": "CNC Bit Set — Premium Refill",
+   "price": 72750,
+   "costPct": 0.62,
+   "pop": 8,
+   "desc": "CNC Bit Set — Premium Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_72",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Deluxe Standard",
+   "price": 60100,
+   "costPct": 0.42,
+   "pop": 4,
+   "desc": "Drill Machine Pro — Deluxe Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_73",
+   "cat": "Industry",
+   "name": "Gear Box Unit — Jumbo Refill",
+   "price": 9850,
+   "costPct": 0.34,
+   "pop": 8,
+   "desc": "Gear Box Unit — Jumbo Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_74",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Special Pack of 2",
+   "price": 89925,
+   "costPct": 0.55,
+   "pop": 8,
+   "desc": "Hydraulic Jack — Special Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_75",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Classic Standard",
+   "price": 64725,
+   "costPct": 0.33,
+   "pop": 8,
+   "desc": "Drill Machine Pro — Classic Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_76",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Gold Value Pack",
+   "price": 69525,
+   "costPct": 0.59,
+   "pop": 10,
+   "desc": "Tool Kit Industrial — Gold Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_77",
+   "cat": "Industry",
+   "name": "Chain Pulley — Special Trial Pack",
+   "price": 47125,
+   "costPct": 0.61,
+   "pop": 7,
+   "desc": "Chain Pulley — Special Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_78",
+   "cat": "Industry",
+   "name": "Compressor Unit — Premium Set of 4",
+   "price": 17000,
+   "costPct": 0.4,
+   "pop": 4,
+   "desc": "Compressor Unit — Premium Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_79",
+   "cat": "Industry",
+   "name": "Cement Bag Lot — New Launch Duo Combo",
+   "price": 78900,
+   "costPct": 0.56,
+   "pop": 10,
+   "desc": "Cement Bag Lot — New Launch Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_80",
+   "cat": "Industry",
+   "name": "Wire Coil — Limited Refill",
+   "price": 32525,
+   "costPct": 0.33,
+   "pop": 5,
+   "desc": "Wire Coil — Limited Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_81",
+   "cat": "Industry",
+   "name": "Conveyor Belt Roll — Eco Gift Pack",
+   "price": 66725,
+   "costPct": 0.54,
+   "pop": 4,
+   "desc": "Conveyor Belt Roll — Eco Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_82",
+   "cat": "Industry",
+   "name": "Bearing Set — Mini Gift Pack",
+   "price": 93100,
+   "costPct": 0.54,
+   "pop": 5,
+   "desc": "Bearing Set — Mini Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_83",
+   "cat": "Industry",
+   "name": "CNC Bit Set — Special Value Pack",
+   "price": 12700,
+   "costPct": 0.57,
+   "pop": 2,
+   "desc": "CNC Bit Set — Special Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_84",
+   "cat": "Industry",
+   "name": "Safety Gear Set — Festival Edition Large",
+   "price": 41250,
+   "costPct": 0.42,
+   "pop": 6,
+   "desc": "Safety Gear Set — Festival Edition Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_85",
+   "cat": "Industry",
+   "name": "Sealing Machine — Family Pack Duo Combo",
+   "price": 36700,
+   "costPct": 0.48,
+   "pop": 10,
+   "desc": "Sealing Machine — Family Pack Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_86",
+   "cat": "Industry",
+   "name": "Exhaust System — Premium Standard",
+   "price": 72525,
+   "costPct": 0.38,
+   "pop": 4,
+   "desc": "Exhaust System — Premium Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_87",
+   "cat": "Industry",
+   "name": "Packaging Machine — Jumbo Trial Pack",
+   "price": 43475,
+   "costPct": 0.57,
+   "pop": 9,
+   "desc": "Packaging Machine — Jumbo Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_88",
+   "cat": "Industry",
+   "name": "Wire Coil — Festival Edition Refill",
+   "price": 56375,
+   "costPct": 0.45,
+   "pop": 10,
+   "desc": "Wire Coil — Festival Edition Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_89",
+   "cat": "Industry",
+   "name": "Compressor Unit — Jumbo Pack of 2",
+   "price": 99950,
+   "costPct": 0.39,
+   "pop": 3,
+   "desc": "Compressor Unit — Jumbo Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_90",
+   "cat": "Industry",
+   "name": "Packaging Machine — Pro Trial Pack",
+   "price": 87225,
+   "costPct": 0.43,
+   "pop": 9,
+   "desc": "Packaging Machine — Pro Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_91",
+   "cat": "Industry",
+   "name": "Cement Bag Lot — Classic Duo Combo",
+   "price": 89050,
+   "costPct": 0.6,
+   "pop": 7,
+   "desc": "Cement Bag Lot — Classic Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_92",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Premium Pack of 2",
+   "price": 11650,
+   "costPct": 0.41,
+   "pop": 2,
+   "desc": "Hydraulic Jack — Premium Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_93",
+   "cat": "Industry",
+   "name": "Generator 5kVA — Bestseller Duo Combo",
+   "price": 76125,
+   "costPct": 0.4,
+   "pop": 3,
+   "desc": "Generator 5kVA — Bestseller Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_94",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Festival Edition Set of 4",
+   "price": 3700,
+   "costPct": 0.57,
+   "pop": 3,
+   "desc": "Tool Kit Industrial — Festival Edition Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_95",
+   "cat": "Industry",
+   "name": "Exhaust System — Pro Gift Pack",
+   "price": 61275,
+   "costPct": 0.52,
+   "pop": 3,
+   "desc": "Exhaust System — Pro Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_96",
+   "cat": "Industry",
+   "name": "Brick Kiln Lot — Premium Trial Pack",
+   "price": 89900,
+   "costPct": 0.48,
+   "pop": 4,
+   "desc": "Brick Kiln Lot — Premium Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_97",
+   "cat": "Industry",
+   "name": "Brick Kiln Lot — Limited Duo Combo",
+   "price": 71525,
+   "costPct": 0.57,
+   "pop": 10,
+   "desc": "Brick Kiln Lot — Limited Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_98",
+   "cat": "Industry",
+   "name": "Battery Bank — Deluxe Gift Pack",
+   "price": 77125,
+   "costPct": 0.49,
+   "pop": 7,
+   "desc": "Battery Bank — Deluxe Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_99",
+   "cat": "Industry",
+   "name": "Sealing Machine — Gold Trial Pack",
+   "price": 1550,
+   "costPct": 0.52,
+   "pop": 3,
+   "desc": "Sealing Machine — Gold Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_100",
+   "cat": "Industry",
+   "name": "Motor Pump — Family Pack Duo Combo",
+   "price": 7750,
+   "costPct": 0.34,
+   "pop": 10,
+   "desc": "Motor Pump — Family Pack Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_101",
+   "cat": "Industry",
+   "name": "Sealing Machine — Gold Value Pack",
+   "price": 64500,
+   "costPct": 0.41,
+   "pop": 2,
+   "desc": "Sealing Machine — Gold Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_102",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Eco Gift Pack",
+   "price": 42175,
+   "costPct": 0.41,
+   "pop": 9,
+   "desc": "Hydraulic Jack — Eco Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_103",
+   "cat": "Industry",
+   "name": "Wire Coil — New Launch Pack of 2",
+   "price": 67150,
+   "costPct": 0.31,
+   "pop": 4,
+   "desc": "Wire Coil — New Launch Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_104",
+   "cat": "Industry",
+   "name": "Sealing Machine — Jumbo Value Pack",
+   "price": 31925,
+   "costPct": 0.56,
+   "pop": 7,
+   "desc": "Sealing Machine — Jumbo Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_105",
+   "cat": "Industry",
+   "name": "Generator 5kVA — Limited Value Pack",
+   "price": 40775,
+   "costPct": 0.58,
+   "pop": 2,
+   "desc": "Generator 5kVA — Limited Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_106",
+   "cat": "Industry",
+   "name": "Chain Pulley — Combo Pack Value Pack",
+   "price": 24100,
+   "costPct": 0.38,
+   "pop": 6,
+   "desc": "Chain Pulley — Combo Pack Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_107",
+   "cat": "Industry",
+   "name": "Transformer Unit — Pro Standard",
+   "price": 59775,
+   "costPct": 0.32,
+   "pop": 2,
+   "desc": "Transformer Unit — Pro Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_108",
+   "cat": "Industry",
+   "name": "Bearing Set — Festival Edition Pack of 2",
+   "price": 78550,
+   "costPct": 0.53,
+   "pop": 10,
+   "desc": "Bearing Set — Festival Edition Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_109",
+   "cat": "Industry",
+   "name": "Wire Coil — Mini Standard",
+   "price": 16550,
+   "costPct": 0.37,
+   "pop": 7,
+   "desc": "Wire Coil — Mini Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_110",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Festival Edition Duo Combo",
+   "price": 53700,
+   "costPct": 0.6,
+   "pop": 9,
+   "desc": "Drill Machine Pro — Festival Edition Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_111",
+   "cat": "Industry",
+   "name": "Sealing Machine — New Launch Gift Pack",
+   "price": 46625,
+   "costPct": 0.57,
+   "pop": 2,
+   "desc": "Sealing Machine — New Launch Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_112",
+   "cat": "Industry",
+   "name": "Battery Bank — Pro Refill",
+   "price": 90600,
+   "costPct": 0.57,
+   "pop": 2,
+   "desc": "Battery Bank — Pro Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_113",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Premium Duo Combo",
+   "price": 64775,
+   "costPct": 0.44,
+   "pop": 7,
+   "desc": "Hydraulic Jack — Premium Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_114",
+   "cat": "Industry",
+   "name": "Chain Pulley — Premium Duo Combo",
+   "price": 10825,
+   "costPct": 0.54,
+   "pop": 5,
+   "desc": "Chain Pulley — Premium Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_115",
+   "cat": "Industry",
+   "name": "Gear Box Unit — Deluxe Refill",
+   "price": 96925,
+   "costPct": 0.36,
+   "pop": 3,
+   "desc": "Gear Box Unit — Deluxe Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_116",
+   "cat": "Industry",
+   "name": "Compressor Unit — Special Single",
+   "price": 36925,
+   "costPct": 0.52,
+   "pop": 3,
+   "desc": "Compressor Unit — Special Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_117",
+   "cat": "Industry",
+   "name": "Chain Pulley — New Launch Pack of 2",
+   "price": 36450,
+   "costPct": 0.43,
+   "pop": 2,
+   "desc": "Chain Pulley — New Launch Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_118",
+   "cat": "Industry",
+   "name": "Solar Panel Lot — Pro Refill",
+   "price": 24550,
+   "costPct": 0.47,
+   "pop": 2,
+   "desc": "Solar Panel Lot — Pro Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_119",
+   "cat": "Industry",
+   "name": "Motor Pump — Gold Standard",
+   "price": 16400,
+   "costPct": 0.56,
+   "pop": 9,
+   "desc": "Motor Pump — Gold Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_120",
+   "cat": "Industry",
+   "name": "Forklift Rental Day — Classic Standard",
+   "price": 32025,
+   "costPct": 0.32,
+   "pop": 2,
+   "desc": "Forklift Rental Day — Classic Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_121",
+   "cat": "Industry",
+   "name": "Transformer Unit — Classic Large",
+   "price": 13950,
+   "costPct": 0.36,
+   "pop": 2,
+   "desc": "Transformer Unit — Classic Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_122",
+   "cat": "Industry",
+   "name": "Battery Bank — Jumbo Duo Combo",
+   "price": 2300,
+   "costPct": 0.55,
+   "pop": 10,
+   "desc": "Battery Bank — Jumbo Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_123",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Deluxe Gift Pack",
+   "price": 59100,
+   "costPct": 0.32,
+   "pop": 8,
+   "desc": "Drill Machine Pro — Deluxe Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_124",
+   "cat": "Industry",
+   "name": "Transformer Unit — Jumbo Trial Pack",
+   "price": 96625,
+   "costPct": 0.46,
+   "pop": 6,
+   "desc": "Transformer Unit — Jumbo Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_125",
+   "cat": "Industry",
+   "name": "Safety Gear Set — Combo Pack Value Pack",
+   "price": 70900,
+   "costPct": 0.58,
+   "pop": 3,
+   "desc": "Safety Gear Set — Combo Pack Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_126",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Festival Edition Trial Pack",
+   "price": 43575,
+   "costPct": 0.55,
+   "pop": 4,
+   "desc": "Hydraulic Jack — Festival Edition Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_127",
+   "cat": "Industry",
+   "name": "Compressor Unit — Eco Standard",
+   "price": 31025,
+   "costPct": 0.39,
+   "pop": 10,
+   "desc": "Compressor Unit — Eco Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_128",
+   "cat": "Industry",
+   "name": "Welding Machine — Jumbo Trial Pack",
+   "price": 21050,
+   "costPct": 0.47,
+   "pop": 9,
+   "desc": "Welding Machine — Jumbo Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_129",
+   "cat": "Industry",
+   "name": "Transformer Unit — Combo Pack Pack of 2",
+   "price": 94500,
+   "costPct": 0.42,
+   "pop": 2,
+   "desc": "Transformer Unit — Combo Pack Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_130",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Premium Single",
+   "price": 30750,
+   "costPct": 0.34,
+   "pop": 2,
+   "desc": "Tool Kit Industrial — Premium Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_131",
+   "cat": "Industry",
+   "name": "Cement Bag Lot — Premium Duo Combo",
+   "price": 43700,
+   "costPct": 0.6,
+   "pop": 2,
+   "desc": "Cement Bag Lot — Premium Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_132",
+   "cat": "Industry",
+   "name": "Packaging Machine — Eco Set of 4",
+   "price": 62400,
+   "costPct": 0.61,
+   "pop": 8,
+   "desc": "Packaging Machine — Eco Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_133",
+   "cat": "Industry",
+   "name": "Transformer Unit — Combo Pack Set of 4",
+   "price": 85900,
+   "costPct": 0.53,
+   "pop": 10,
+   "desc": "Transformer Unit — Combo Pack Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_134",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Pro Large",
+   "price": 54800,
+   "costPct": 0.62,
+   "pop": 9,
+   "desc": "Drill Machine Pro — Pro Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_135",
+   "cat": "Industry",
+   "name": "Compressor Unit — Bestseller Set of 4",
+   "price": 17700,
+   "costPct": 0.49,
+   "pop": 10,
+   "desc": "Compressor Unit — Bestseller Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_136",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Premium Single",
+   "price": 63550,
+   "costPct": 0.53,
+   "pop": 2,
+   "desc": "Drill Machine Pro — Premium Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_137",
+   "cat": "Industry",
+   "name": "Transformer Unit — Mini Large",
+   "price": 96325,
+   "costPct": 0.4,
+   "pop": 8,
+   "desc": "Transformer Unit — Mini Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_138",
+   "cat": "Industry",
+   "name": "Exhaust System — New Launch Refill",
+   "price": 44525,
+   "costPct": 0.42,
+   "pop": 2,
+   "desc": "Exhaust System — New Launch Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_139",
+   "cat": "Industry",
+   "name": "Battery Bank — Limited Pack of 2",
+   "price": 66325,
+   "costPct": 0.42,
+   "pop": 7,
+   "desc": "Battery Bank — Limited Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_140",
+   "cat": "Industry",
+   "name": "Motor Pump — Eco Duo Combo",
+   "price": 9850,
+   "costPct": 0.51,
+   "pop": 4,
+   "desc": "Motor Pump — Eco Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_141",
+   "cat": "Industry",
+   "name": "Compressor Unit — Deluxe Large",
+   "price": 81075,
+   "costPct": 0.38,
+   "pop": 10,
+   "desc": "Compressor Unit — Deluxe Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_142",
+   "cat": "Industry",
+   "name": "Industrial Fan — Pro Gift Pack",
+   "price": 71475,
+   "costPct": 0.4,
+   "pop": 4,
+   "desc": "Industrial Fan — Pro Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_143",
+   "cat": "Industry",
+   "name": "Generator 5kVA — Family Pack Refill",
+   "price": 99275,
+   "costPct": 0.52,
+   "pop": 7,
+   "desc": "Generator 5kVA — Family Pack Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_144",
+   "cat": "Industry",
+   "name": "Industrial Fan — Bestseller Value Pack",
+   "price": 20025,
+   "costPct": 0.42,
+   "pop": 5,
+   "desc": "Industrial Fan — Bestseller Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_145",
+   "cat": "Industry",
+   "name": "Packaging Machine — Limited Duo Combo",
+   "price": 62900,
+   "costPct": 0.44,
+   "pop": 9,
+   "desc": "Packaging Machine — Limited Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_146",
+   "cat": "Industry",
+   "name": "Forklift Rental Day — Classic Refill",
+   "price": 19175,
+   "costPct": 0.49,
+   "pop": 5,
+   "desc": "Forklift Rental Day — Classic Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_147",
+   "cat": "Industry",
+   "name": "Battery Bank — Gold Trial Pack",
+   "price": 17100,
+   "costPct": 0.46,
+   "pop": 10,
+   "desc": "Battery Bank — Gold Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_148",
+   "cat": "Industry",
+   "name": "Motor Pump — Special Value Pack",
+   "price": 55775,
+   "costPct": 0.44,
+   "pop": 7,
+   "desc": "Motor Pump — Special Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_149",
+   "cat": "Industry",
+   "name": "Motor Pump — Bestseller Value Pack",
+   "price": 7475,
+   "costPct": 0.36,
+   "pop": 7,
+   "desc": "Motor Pump — Bestseller Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_150",
+   "cat": "Industry",
+   "name": "Bearing Set — Mini Single",
+   "price": 87500,
+   "costPct": 0.49,
+   "pop": 10,
+   "desc": "Bearing Set — Mini Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_151",
+   "cat": "Industry",
+   "name": "CNC Bit Set — New Launch Pack of 2",
+   "price": 8850,
+   "costPct": 0.61,
+   "pop": 2,
+   "desc": "CNC Bit Set — New Launch Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_152",
+   "cat": "Industry",
+   "name": "Lathe Machine Part — Combo Pack Standard",
+   "price": 62175,
+   "costPct": 0.32,
+   "pop": 5,
+   "desc": "Lathe Machine Part — Combo Pack Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_153",
+   "cat": "Industry",
+   "name": "Welding Machine — Pro Set of 4",
+   "price": 52300,
+   "costPct": 0.39,
+   "pop": 9,
+   "desc": "Welding Machine — Pro Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_154",
+   "cat": "Industry",
+   "name": "PVC Pipe Bundle — Pro Gift Pack",
+   "price": 19525,
+   "costPct": 0.48,
+   "pop": 8,
+   "desc": "PVC Pipe Bundle — Pro Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_155",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Gold Set of 4",
+   "price": 28975,
+   "costPct": 0.51,
+   "pop": 8,
+   "desc": "Hydraulic Jack — Gold Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_156",
+   "cat": "Industry",
+   "name": "Steel Rod Bundle — Special Single",
+   "price": 7800,
+   "costPct": 0.59,
+   "pop": 5,
+   "desc": "Steel Rod Bundle — Special Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_157",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Mini Refill",
+   "price": 81675,
+   "costPct": 0.57,
+   "pop": 6,
+   "desc": "Tool Kit Industrial — Mini Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_158",
+   "cat": "Industry",
+   "name": "Compressor Unit — New Launch Refill",
+   "price": 18925,
+   "costPct": 0.47,
+   "pop": 7,
+   "desc": "Compressor Unit — New Launch Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_159",
+   "cat": "Industry",
+   "name": "PVC Pipe Bundle — Bestseller Value Pack",
+   "price": 84100,
+   "costPct": 0.6,
+   "pop": 4,
+   "desc": "PVC Pipe Bundle — Bestseller Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_160",
+   "cat": "Industry",
+   "name": "Safety Gear Set — New Launch Refill",
+   "price": 81225,
+   "costPct": 0.48,
+   "pop": 5,
+   "desc": "Safety Gear Set — New Launch Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_161",
+   "cat": "Industry",
+   "name": "Safety Gear Set — Limited Large",
+   "price": 25725,
+   "costPct": 0.5,
+   "pop": 8,
+   "desc": "Safety Gear Set — Limited Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_162",
+   "cat": "Industry",
+   "name": "Plywood Sheet Pack — Eco Gift Pack",
+   "price": 68400,
+   "costPct": 0.62,
+   "pop": 4,
+   "desc": "Plywood Sheet Pack — Eco Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_163",
+   "cat": "Industry",
+   "name": "Brick Kiln Lot — Classic Gift Pack",
+   "price": 30950,
+   "costPct": 0.42,
+   "pop": 6,
+   "desc": "Brick Kiln Lot — Classic Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_164",
+   "cat": "Industry",
+   "name": "CNC Bit Set — Festival Edition Gift Pack",
+   "price": 95700,
+   "costPct": 0.58,
+   "pop": 8,
+   "desc": "CNC Bit Set — Festival Edition Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_165",
+   "cat": "Industry",
+   "name": "Transformer Unit — Bestseller Large",
+   "price": 35550,
+   "costPct": 0.52,
+   "pop": 2,
+   "desc": "Transformer Unit — Bestseller Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_166",
+   "cat": "Industry",
+   "name": "Motor Pump — Mini Pack of 2",
+   "price": 48825,
+   "costPct": 0.52,
+   "pop": 7,
+   "desc": "Motor Pump — Mini Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_167",
+   "cat": "Industry",
+   "name": "Cement Bag Lot — Bestseller Single",
+   "price": 79725,
+   "costPct": 0.56,
+   "pop": 5,
+   "desc": "Cement Bag Lot — Bestseller Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_168",
+   "cat": "Industry",
+   "name": "Conveyor Belt Roll — Gold Gift Pack",
+   "price": 81475,
+   "costPct": 0.6,
+   "pop": 7,
+   "desc": "Conveyor Belt Roll — Gold Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_169",
+   "cat": "Industry",
+   "name": "Gear Box Unit — Special Gift Pack",
+   "price": 30975,
+   "costPct": 0.5,
+   "pop": 9,
+   "desc": "Gear Box Unit — Special Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_170",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Pro Pack of 2",
+   "price": 91225,
+   "costPct": 0.43,
+   "pop": 2,
+   "desc": "Drill Machine Pro — Pro Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_171",
+   "cat": "Industry",
+   "name": "Steel Rod Bundle — Pro Gift Pack",
+   "price": 22600,
+   "costPct": 0.42,
+   "pop": 2,
+   "desc": "Steel Rod Bundle — Pro Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_172",
+   "cat": "Industry",
+   "name": "Sealing Machine — Classic Pack of 2",
+   "price": 92075,
+   "costPct": 0.51,
+   "pop": 8,
+   "desc": "Sealing Machine — Classic Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_173",
+   "cat": "Industry",
+   "name": "Weighing Scale Heavy — Deluxe Standard",
+   "price": 10700,
+   "costPct": 0.6,
+   "pop": 9,
+   "desc": "Weighing Scale Heavy — Deluxe Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_174",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Classic Pack of 2",
+   "price": 67175,
+   "costPct": 0.37,
+   "pop": 3,
+   "desc": "Drill Machine Pro — Classic Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_175",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Limited Large",
+   "price": 64700,
+   "costPct": 0.42,
+   "pop": 9,
+   "desc": "Drill Machine Pro — Limited Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_176",
+   "cat": "Industry",
+   "name": "Packaging Machine — Festival Edition Gift Pack",
+   "price": 24575,
+   "costPct": 0.41,
+   "pop": 6,
+   "desc": "Packaging Machine — Festival Edition Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_177",
+   "cat": "Industry",
+   "name": "Industrial Fan — Limited Single",
+   "price": 8450,
+   "costPct": 0.58,
+   "pop": 6,
+   "desc": "Industrial Fan — Limited Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_178",
+   "cat": "Industry",
+   "name": "Generator 5kVA — Eco Standard",
+   "price": 39425,
+   "costPct": 0.52,
+   "pop": 6,
+   "desc": "Generator 5kVA — Eco Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_179",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Limited Refill",
+   "price": 31250,
+   "costPct": 0.44,
+   "pop": 8,
+   "desc": "Drill Machine Pro — Limited Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_180",
+   "cat": "Industry",
+   "name": "Safety Gear Set — Classic Large",
+   "price": 87475,
+   "costPct": 0.46,
+   "pop": 3,
+   "desc": "Safety Gear Set — Classic Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_181",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Eco Trial Pack",
+   "price": 22675,
+   "costPct": 0.48,
+   "pop": 4,
+   "desc": "Tool Kit Industrial — Eco Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_182",
+   "cat": "Industry",
+   "name": "Compressor Unit — Deluxe Single",
+   "price": 1050,
+   "costPct": 0.43,
+   "pop": 8,
+   "desc": "Compressor Unit — Deluxe Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_183",
+   "cat": "Industry",
+   "name": "Chain Pulley — Special Value Pack",
+   "price": 64350,
+   "costPct": 0.33,
+   "pop": 9,
+   "desc": "Chain Pulley — Special Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_184",
+   "cat": "Industry",
+   "name": "Steel Rod Bundle — Classic Set of 4",
+   "price": 28500,
+   "costPct": 0.57,
+   "pop": 5,
+   "desc": "Steel Rod Bundle — Classic Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_185",
+   "cat": "Industry",
+   "name": "Plywood Sheet Pack — Special Refill",
+   "price": 3075,
+   "costPct": 0.43,
+   "pop": 3,
+   "desc": "Plywood Sheet Pack — Special Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_186",
+   "cat": "Industry",
+   "name": "Gear Box Unit — New Launch Large",
+   "price": 71375,
+   "costPct": 0.54,
+   "pop": 10,
+   "desc": "Gear Box Unit — New Launch Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_187",
+   "cat": "Industry",
+   "name": "Lathe Machine Part — Bestseller Value Pack",
+   "price": 48275,
+   "costPct": 0.36,
+   "pop": 3,
+   "desc": "Lathe Machine Part — Bestseller Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_188",
+   "cat": "Industry",
+   "name": "Forklift Rental Day — Eco Large",
+   "price": 41000,
+   "costPct": 0.35,
+   "pop": 6,
+   "desc": "Forklift Rental Day — Eco Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_189",
+   "cat": "Industry",
+   "name": "Motor Pump — New Launch Standard",
+   "price": 900,
+   "costPct": 0.43,
+   "pop": 10,
+   "desc": "Motor Pump — New Launch Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_190",
+   "cat": "Industry",
+   "name": "Battery Bank — Mini Duo Combo",
+   "price": 9700,
+   "costPct": 0.6,
+   "pop": 6,
+   "desc": "Battery Bank — Mini Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_191",
+   "cat": "Industry",
+   "name": "CNC Bit Set — Eco Set of 4",
+   "price": 68750,
+   "costPct": 0.45,
+   "pop": 5,
+   "desc": "CNC Bit Set — Eco Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_192",
+   "cat": "Industry",
+   "name": "Conveyor Belt Roll — Jumbo Standard",
+   "price": 87025,
+   "costPct": 0.35,
+   "pop": 2,
+   "desc": "Conveyor Belt Roll — Jumbo Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_193",
+   "cat": "Industry",
+   "name": "Transformer Unit — Classic Single",
+   "price": 46275,
+   "costPct": 0.57,
+   "pop": 7,
+   "desc": "Transformer Unit — Classic Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_194",
+   "cat": "Industry",
+   "name": "Cement Bag Lot — Bestseller Set of 4",
+   "price": 61250,
+   "costPct": 0.37,
+   "pop": 5,
+   "desc": "Cement Bag Lot — Bestseller Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_195",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Bestseller Trial Pack",
+   "price": 4800,
+   "costPct": 0.53,
+   "pop": 2,
+   "desc": "Hydraulic Jack — Bestseller Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_196",
+   "cat": "Industry",
+   "name": "Lathe Machine Part — Deluxe Refill",
+   "price": 66600,
+   "costPct": 0.38,
+   "pop": 10,
+   "desc": "Lathe Machine Part — Deluxe Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_197",
+   "cat": "Industry",
+   "name": "Industrial Fan — Premium Duo Combo",
+   "price": 72625,
+   "costPct": 0.54,
+   "pop": 6,
+   "desc": "Industrial Fan — Premium Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_198",
+   "cat": "Industry",
+   "name": "Bearing Set — Pro Gift Pack",
+   "price": 42950,
+   "costPct": 0.36,
+   "pop": 3,
+   "desc": "Bearing Set — Pro Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_199",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Deluxe Single",
+   "price": 31475,
+   "costPct": 0.58,
+   "pop": 4,
+   "desc": "Drill Machine Pro — Deluxe Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_200",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — New Launch Value Pack",
+   "price": 54300,
+   "costPct": 0.53,
+   "pop": 4,
+   "desc": "Tool Kit Industrial — New Launch Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_201",
+   "cat": "Industry",
+   "name": "Paint Drum — Gold Trial Pack",
+   "price": 74450,
+   "costPct": 0.56,
+   "pop": 2,
+   "desc": "Paint Drum — Gold Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_202",
+   "cat": "Industry",
+   "name": "Motor Pump — Limited Gift Pack",
+   "price": 47550,
+   "costPct": 0.61,
+   "pop": 4,
+   "desc": "Motor Pump — Limited Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_203",
+   "cat": "Industry",
+   "name": "Industrial Fan — Gold Gift Pack",
+   "price": 69425,
+   "costPct": 0.32,
+   "pop": 8,
+   "desc": "Industrial Fan — Gold Gift Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_204",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Classic Set of 4",
+   "price": 97700,
+   "costPct": 0.41,
+   "pop": 10,
+   "desc": "Hydraulic Jack — Classic Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_205",
+   "cat": "Industry",
+   "name": "Chain Pulley — Jumbo Large",
+   "price": 33550,
+   "costPct": 0.39,
+   "pop": 6,
+   "desc": "Chain Pulley — Jumbo Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_206",
+   "cat": "Industry",
+   "name": "Exhaust System — Mini Pack of 2",
+   "price": 67500,
+   "costPct": 0.38,
+   "pop": 8,
+   "desc": "Exhaust System — Mini Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_207",
+   "cat": "Industry",
+   "name": "Bearing Set — Classic Large",
+   "price": 42275,
+   "costPct": 0.43,
+   "pop": 5,
+   "desc": "Bearing Set — Classic Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_208",
+   "cat": "Industry",
+   "name": "Steel Rod Bundle — Mini Set of 4",
+   "price": 31150,
+   "costPct": 0.49,
+   "pop": 9,
+   "desc": "Steel Rod Bundle — Mini Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_209",
+   "cat": "Industry",
+   "name": "Compressor Unit — Combo Pack Value Pack",
+   "price": 21300,
+   "costPct": 0.51,
+   "pop": 10,
+   "desc": "Compressor Unit — Combo Pack Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_210",
+   "cat": "Industry",
+   "name": "Steel Rod Bundle — Deluxe Pack of 2",
+   "price": 70050,
+   "costPct": 0.31,
+   "pop": 2,
+   "desc": "Steel Rod Bundle — Deluxe Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_211",
+   "cat": "Industry",
+   "name": "Welding Machine — Jumbo Single",
+   "price": 89850,
+   "costPct": 0.47,
+   "pop": 10,
+   "desc": "Welding Machine — Jumbo Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_212",
+   "cat": "Industry",
+   "name": "Packaging Machine — Family Pack Refill",
+   "price": 46150,
+   "costPct": 0.37,
+   "pop": 4,
+   "desc": "Packaging Machine — Family Pack Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_213",
+   "cat": "Industry",
+   "name": "Motor Pump — Gold Set of 4",
+   "price": 73850,
+   "costPct": 0.58,
+   "pop": 4,
+   "desc": "Motor Pump — Gold Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_214",
+   "cat": "Industry",
+   "name": "PVC Pipe Bundle — Eco Pack of 2",
+   "price": 88825,
+   "costPct": 0.34,
+   "pop": 3,
+   "desc": "PVC Pipe Bundle — Eco Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_215",
+   "cat": "Industry",
+   "name": "Generator 5kVA — Gold Value Pack",
+   "price": 37450,
+   "costPct": 0.46,
+   "pop": 2,
+   "desc": "Generator 5kVA — Gold Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_216",
+   "cat": "Industry",
+   "name": "Lathe Machine Part — Eco Refill",
+   "price": 36175,
+   "costPct": 0.45,
+   "pop": 10,
+   "desc": "Lathe Machine Part — Eco Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_217",
+   "cat": "Industry",
+   "name": "Generator 5kVA — Pro Duo Combo",
+   "price": 65025,
+   "costPct": 0.34,
+   "pop": 7,
+   "desc": "Generator 5kVA — Pro Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_218",
+   "cat": "Industry",
+   "name": "Welding Machine — Mini Value Pack",
+   "price": 74575,
+   "costPct": 0.5,
+   "pop": 10,
+   "desc": "Welding Machine — Mini Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_219",
+   "cat": "Industry",
+   "name": "Generator 5kVA — Combo Pack Duo Combo",
+   "price": 80850,
+   "costPct": 0.5,
+   "pop": 3,
+   "desc": "Generator 5kVA — Combo Pack Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_220",
+   "cat": "Industry",
+   "name": "Gear Box Unit — Deluxe Large",
+   "price": 51775,
+   "costPct": 0.54,
+   "pop": 5,
+   "desc": "Gear Box Unit — Deluxe Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_221",
+   "cat": "Industry",
+   "name": "Transformer Unit — New Launch Refill",
+   "price": 89100,
+   "costPct": 0.36,
+   "pop": 3,
+   "desc": "Transformer Unit — New Launch Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_222",
+   "cat": "Industry",
+   "name": "Hydraulic Jack — Combo Pack Duo Combo",
+   "price": 94600,
+   "costPct": 0.6,
+   "pop": 5,
+   "desc": "Hydraulic Jack — Combo Pack Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_223",
+   "cat": "Industry",
+   "name": "Wire Coil — Combo Pack Value Pack",
+   "price": 42825,
+   "costPct": 0.48,
+   "pop": 9,
+   "desc": "Wire Coil — Combo Pack Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_224",
+   "cat": "Industry",
+   "name": "Transformer Unit — Festival Edition Value Pack",
+   "price": 31025,
+   "costPct": 0.32,
+   "pop": 7,
+   "desc": "Transformer Unit — Festival Edition Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_225",
+   "cat": "Industry",
+   "name": "Weighing Scale Heavy — Family Pack Pack of 2",
+   "price": 86625,
+   "costPct": 0.38,
+   "pop": 8,
+   "desc": "Weighing Scale Heavy — Family Pack Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_226",
+   "cat": "Industry",
+   "name": "Chain Pulley — Family Pack Trial Pack",
+   "price": 36650,
+   "costPct": 0.6,
+   "pop": 3,
+   "desc": "Chain Pulley — Family Pack Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_227",
+   "cat": "Industry",
+   "name": "Solar Panel Lot — Bestseller Large",
+   "price": 52900,
+   "costPct": 0.35,
+   "pop": 5,
+   "desc": "Solar Panel Lot — Bestseller Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_228",
+   "cat": "Industry",
+   "name": "Bearing Set — Festival Edition Single",
+   "price": 53300,
+   "costPct": 0.6,
+   "pop": 10,
+   "desc": "Bearing Set — Festival Edition Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_229",
+   "cat": "Industry",
+   "name": "Cement Bag Lot — Mini Single",
+   "price": 35750,
+   "costPct": 0.55,
+   "pop": 6,
+   "desc": "Cement Bag Lot — Mini Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_230",
+   "cat": "Industry",
+   "name": "Brick Kiln Lot — Gold Set of 4",
+   "price": 16050,
+   "costPct": 0.31,
+   "pop": 5,
+   "desc": "Brick Kiln Lot — Gold Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_231",
+   "cat": "Industry",
+   "name": "Forklift Rental Day — Deluxe Standard",
+   "price": 76950,
+   "costPct": 0.58,
+   "pop": 3,
+   "desc": "Forklift Rental Day — Deluxe Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_232",
+   "cat": "Industry",
+   "name": "Forklift Rental Day — Bestseller Large",
+   "price": 81900,
+   "costPct": 0.47,
+   "pop": 10,
+   "desc": "Forklift Rental Day — Bestseller Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_233",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — New Launch Pack of 2",
+   "price": 68750,
+   "costPct": 0.43,
+   "pop": 9,
+   "desc": "Drill Machine Pro — New Launch Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_234",
+   "cat": "Industry",
+   "name": "Generator 5kVA — Classic Duo Combo",
+   "price": 1825,
+   "costPct": 0.57,
+   "pop": 9,
+   "desc": "Generator 5kVA — Classic Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_235",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Classic Refill",
+   "price": 99275,
+   "costPct": 0.57,
+   "pop": 3,
+   "desc": "Tool Kit Industrial — Classic Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_236",
+   "cat": "Industry",
+   "name": "PVC Pipe Bundle — Jumbo Single",
+   "price": 8375,
+   "costPct": 0.43,
+   "pop": 7,
+   "desc": "PVC Pipe Bundle — Jumbo Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_237",
+   "cat": "Industry",
+   "name": "Forklift Rental Day — Mini Trial Pack",
+   "price": 66975,
+   "costPct": 0.51,
+   "pop": 3,
+   "desc": "Forklift Rental Day — Mini Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_238",
+   "cat": "Industry",
+   "name": "Weighing Scale Heavy — Gold Pack of 2",
+   "price": 15250,
+   "costPct": 0.55,
+   "pop": 5,
+   "desc": "Weighing Scale Heavy — Gold Pack of 2 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_239",
+   "cat": "Industry",
+   "name": "Motor Pump — Eco Refill",
+   "price": 88025,
+   "costPct": 0.3,
+   "pop": 8,
+   "desc": "Motor Pump — Eco Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_240",
+   "cat": "Industry",
+   "name": "Weighing Scale Heavy — Festival Edition Single",
+   "price": 65225,
+   "costPct": 0.46,
+   "pop": 5,
+   "desc": "Weighing Scale Heavy — Festival Edition Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_241",
+   "cat": "Industry",
+   "name": "Battery Bank — Classic Large",
+   "price": 70025,
+   "costPct": 0.41,
+   "pop": 3,
+   "desc": "Battery Bank — Classic Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_242",
+   "cat": "Industry",
+   "name": "Brick Kiln Lot — Special Refill",
+   "price": 82925,
+   "costPct": 0.33,
+   "pop": 7,
+   "desc": "Brick Kiln Lot — Special Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_243",
+   "cat": "Industry",
+   "name": "Compressor Unit — Combo Pack Large",
+   "price": 39025,
+   "costPct": 0.47,
+   "pop": 10,
+   "desc": "Compressor Unit — Combo Pack Large — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_244",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Special Standard",
+   "price": 14600,
+   "costPct": 0.38,
+   "pop": 7,
+   "desc": "Tool Kit Industrial — Special Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_245",
+   "cat": "Industry",
+   "name": "Drill Machine Pro — Eco Standard",
+   "price": 68050,
+   "costPct": 0.42,
+   "pop": 8,
+   "desc": "Drill Machine Pro — Eco Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_246",
+   "cat": "Industry",
+   "name": "Brick Kiln Lot — Jumbo Duo Combo",
+   "price": 66700,
+   "costPct": 0.46,
+   "pop": 7,
+   "desc": "Brick Kiln Lot — Jumbo Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_247",
+   "cat": "Industry",
+   "name": "Industrial Fan — Family Pack Refill",
+   "price": 48550,
+   "costPct": 0.31,
+   "pop": 3,
+   "desc": "Industrial Fan — Family Pack Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_248",
+   "cat": "Industry",
+   "name": "Weighing Scale Heavy — Premium Value Pack",
+   "price": 23350,
+   "costPct": 0.55,
+   "pop": 7,
+   "desc": "Weighing Scale Heavy — Premium Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_249",
+   "cat": "Industry",
+   "name": "Weighing Scale Heavy — Limited Standard",
+   "price": 55225,
+   "costPct": 0.59,
+   "pop": 2,
+   "desc": "Weighing Scale Heavy — Limited Standard — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_250",
+   "cat": "Industry",
+   "name": "Compressor Unit — Pro Refill",
+   "price": 44000,
+   "costPct": 0.36,
+   "pop": 6,
+   "desc": "Compressor Unit — Pro Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_251",
+   "cat": "Industry",
+   "name": "Exhaust System — Eco Value Pack",
+   "price": 49700,
+   "costPct": 0.37,
+   "pop": 6,
+   "desc": "Exhaust System — Eco Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_252",
+   "cat": "Industry",
+   "name": "Bearing Set — Limited Refill",
+   "price": 30500,
+   "costPct": 0.35,
+   "pop": 5,
+   "desc": "Bearing Set — Limited Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_253",
+   "cat": "Industry",
+   "name": "Tool Kit Industrial — Gold Set of 4",
+   "price": 48225,
+   "costPct": 0.51,
+   "pop": 4,
+   "desc": "Tool Kit Industrial — Gold Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_254",
+   "cat": "Industry",
+   "name": "Gear Box Unit — New Launch Single",
+   "price": 56800,
+   "costPct": 0.62,
+   "pop": 3,
+   "desc": "Gear Box Unit — New Launch Single — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_255",
+   "cat": "Industry",
+   "name": "Cement Bag Lot — New Launch Value Pack",
+   "price": 71400,
+   "costPct": 0.33,
+   "pop": 7,
+   "desc": "Cement Bag Lot — New Launch Value Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_256",
+   "cat": "Industry",
+   "name": "Conveyor Belt Roll — New Launch Trial Pack",
+   "price": 77525,
+   "costPct": 0.59,
+   "pop": 6,
+   "desc": "Conveyor Belt Roll — New Launch Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_257",
+   "cat": "Industry",
+   "name": "Industrial Fan — Limited Set of 4",
+   "price": 46775,
+   "costPct": 0.34,
+   "pop": 3,
+   "desc": "Industrial Fan — Limited Set of 4 — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_258",
+   "cat": "Industry",
+   "name": "Chain Pulley — Eco Refill",
+   "price": 52550,
+   "costPct": 0.56,
+   "pop": 5,
+   "desc": "Chain Pulley — Eco Refill — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_259",
+   "cat": "Industry",
+   "name": "Conveyor Belt Roll — Pro Duo Combo",
+   "price": 75475,
+   "costPct": 0.54,
+   "pop": 7,
+   "desc": "Conveyor Belt Roll — Pro Duo Combo — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_in_2_260",
+   "cat": "Industry",
+   "name": "Packaging Machine — Combo Pack Trial Pack",
+   "price": 6950,
+   "costPct": 0.42,
+   "pop": 9,
+   "desc": "Packaging Machine — Combo Pack Trial Pack — Industry category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+]

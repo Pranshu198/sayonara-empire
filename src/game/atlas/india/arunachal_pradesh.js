@@ -1,0 +1,98 @@
+// World Atlas — India: Arunachal Pradesh (rajya profile, sheher aur unke zile)
+export const STATE = {
+ "name": "Arunachal Pradesh",
+ "capital": "Itanagar",
+ "language": "Hindi/English",
+ "primeFestival": "Losar",
+ "knownFor": "Arunachal Pradesh apni Hindi/English sanskriti, khana aur Losar ke liye mashhoor hai. Vyapaar ke liye yaha ke bazaar har season me rang badalte hain.",
+ "cities": [
+  {
+   "name": "Itanagar",
+   "tier": 3,
+   "pop": "Zila mukhyalaya",
+   "income": "madhyam-unch",
+   "rentIndex": 1.16,
+   "climate": "thandi sardiyan",
+   "festival": "Losar",
+   "language": "Hindi/English",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Food",
+    "Retail"
+   ],
+   "districts": [
+    "Itanagar Sadar Bazaar",
+    "Itanagar Nai Basti",
+    "Itanagar Purana Sheher",
+    "Itanagar Station Road",
+    "Itanagar Civil Lines"
+   ]
+  },
+  {
+   "name": "Naharlagun",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.25,
+   "climate": "baarish wala",
+   "festival": "Losar",
+   "language": "Hindi/English",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Food",
+    "Retail"
+   ],
+   "districts": [
+    "Naharlagun Sadar Bazaar",
+    "Naharlagun Nai Basti",
+    "Naharlagun Purana Sheher",
+    "Naharlagun Station Road",
+    "Naharlagun Civil Lines"
+   ]
+  },
+  {
+   "name": "Pasighat",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.19,
+   "climate": "baarish wala",
+   "festival": "Losar",
+   "language": "Hindi/English",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Food",
+    "Retail"
+   ],
+   "districts": [
+    "Pasighat Sadar Bazaar",
+    "Pasighat Nai Basti",
+    "Pasighat Purana Sheher",
+    "Pasighat Station Road",
+    "Pasighat Civil Lines"
+   ]
+  },
+  {
+   "name": "Tawang",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.07,
+   "climate": "thandi sardiyan",
+   "festival": "Losar",
+   "language": "Hindi/English",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Service",
+    "Health"
+   ],
+   "districts": [
+    "Tawang Sadar Bazaar",
+    "Tawang Nai Basti",
+    "Tawang Purana Sheher",
+    "Tawang Station Road",
+    "Tawang Civil Lines"
+   ]
+  }
+ ]
+}

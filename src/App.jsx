@@ -1,20 +1,30 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { Suspense, lazy, useEffect, useMemo, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { BUSINESSES, CATEGORIES, CAT_LABEL, PHASES, PROPERTIES, DISTRICTS, ACHIEVEMENTS, levelOf, ownedCount } from './game/data.js'
 import { fmt, initialState, phaseTick, netWorth, bizDef, missionProgress } from './game/engine.js'
 import { Section, AnimatedNumber, Burst, Toast } from './components/ui.jsx'
 import { Splash } from './components/Splash.jsx'
 import { PhaseArc } from './components/PhaseArc.jsx'
-import { SettingsPanel } from './components/SettingsPanel.jsx'
-import { WealthPanel } from './components/WealthPanel.jsx'
-import { BazaarPanel } from './components/BazaarPanel.jsx'
-import { AuctionPanel } from './components/AuctionPanel.jsx'
-import { ReviewsPanel } from './components/ReviewsPanel.jsx'
-import { DecisionPanel } from './components/DecisionPanel.jsx'
-import { EncyclopediaPanel } from './components/EncyclopediaPanel.jsx'
-import { BulkAchievements } from './components/BulkAchievements.jsx'
 import { FpsMeter } from './components/FpsMeter.jsx'
 import { ProductStaffLine } from './components/ProductStaffLine.jsx'
+import { cityOf, cityNameOf, HOME_CITY } from './game/atlas/cityIndex.js'
+import { activeFestivals, seasonOf } from './game/festivals/index.js'
+import { stockNewsOf } from './game/stocknews/index.js'
+// Bhaari panels lazy chunks me — pehli load tez, tab khulne par aate hain
+const lazyNamed = (p, name) => lazy(() => p.then((m) => ({ default: m[name] })))
+const SettingsPanel = lazyNamed(import('./components/SettingsPanel.jsx'), 'SettingsPanel')
+const WealthPanel = lazyNamed(import('./components/WealthPanel.jsx'), 'WealthPanel')
+const BazaarPanel = lazyNamed(import('./components/BazaarPanel.jsx'), 'BazaarPanel')
+const AuctionPanel = lazyNamed(import('./components/AuctionPanel.jsx'), 'AuctionPanel')
+const ReviewsPanel = lazyNamed(import('./components/ReviewsPanel.jsx'), 'ReviewsPanel')
+const DecisionPanel = lazyNamed(import('./components/DecisionPanel.jsx'), 'DecisionPanel')
+const EncyclopediaPanel = lazyNamed(import('./components/EncyclopediaPanel.jsx'), 'EncyclopediaPanel')
+const BulkAchievements = lazyNamed(import('./components/BulkAchievements.jsx'), 'BulkAchievements')
+const AtlasPanel = lazyNamed(import('./components/AtlasPanel.jsx'), 'AtlasPanel')
+const ManagersPanel = lazyNamed(import('./components/ManagersPanel.jsx'), 'ManagersPanel')
+const ImportPanel = lazyNamed(import('./components/ImportPanel.jsx'), 'ImportPanel')
+const ProcurementPanel = lazyNamed(import('./components/ProcurementPanel.jsx'), 'ProcurementPanel')
+const PanelFallback = () => <div className="panel"><p className="muted">⏳ Panel load ho raha hai…</p></div>
 import { withDefaults, chromeText } from './game/settings.js'
 import { playSound } from './utils/sound.js'
 import { profileOf } from './game/content/stocks/index.js'
@@ -46,13 +56,15 @@ export default function App() {
     }
     return initialState()
   })
-  const [tab, setTab] = useState('home')
+  const urlTab = new URLSearchParams(window.location.search).get('tab')
+  const [tab, setTab] = useState(['home', 'biz', 'market', 'prop', 'wealth', 'bank', 'more'].includes(urlTab) ? urlTab : 'home')
+  const [buyLoc, setBuyLoc] = useState(null)
   const [toast, setToast] = useState('')
   const [burst, setBurst] = useState(0)
   const [catFilter, setCatFilter] = useState('All')
   const [importTxt, setImportTxt] = useState('')
   const [spinDeg, setSpinDeg] = useState(0)
-  const [showSplash, setShowSplash] = useState(true)
+  const [showSplash, setShowSplash] = useState(!urlTab)
   useEffect(() => {
     const st = s.settings || {}
     if (st.animLevel === 'off' || st.reducedMotion) { setShowSplash(false); return }
@@ -80,7 +92,8 @@ export default function App() {
   const nextPhase = () => setS(p => phaseTick(p))
 
   // ---------- business actions ----------
-  const buyBiz = (d) => { if (s.cash < d.cost) return say('❌ Cash kam hai!'); upd(n => { n.cash -= d.cost; n.biz[d.id] = { lv: 1, price: 1, stock: 100, staff: d.staff, profitToday: 0, profitTotal: 0, rating: 4.0, mktDays: 0 }; n.xp += 20; n.story = [`Day ${n.day}: ${d.name} kharida ${fmt(d.cost)} me`, ...n.story].slice(0, 20) }); say(`🎉 ${d.name} tumhara hua!`, true) }
+  const buyBiz = (d) => { if (s.cash < d.cost) return say('❌ Cash kam hai!'); const locId = buyLoc || HOME_CITY; upd(n => { n.cash -= d.cost; n.biz[d.id] = { lv: 1, price: 1, stock: 100, staff: d.staff, profitToday: 0, profitTotal: 0, rating: 4.0, mktDays: 0, loc: locId }; n.xp += 20; n.story = [`Day ${n.day}: ${d.name} kharida ${fmt(d.cost)} me — 📍 ${cityNameOf(locId)}`, ...n.story].slice(0, 20) }); say(`🎉 ${d.name} tumhara hua — 📍 ${cityNameOf(locId)}!`, true) }
+  const relocate = (d, cityId) => { const fee = 5000; if (s.cash < fee) return say('❌ Relocation fee ke paise nahi'); upd(n => { n.cash -= fee; n.biz[d.id].loc = cityId; n.story = [`Day ${n.day}: 🚚 ${d.name} ab ${cityNameOf(cityId)} me shift`, ...n.story].slice(0, 20) }); say(`🚚 ${d.name} ab 📍 ${cityNameOf(cityId)} me — waha ke rent/demand lagenge`) }
   const sellBiz = (d) => { const o = s.biz[d.id]; const val = Math.round(d.cost * (0.6 + 0.25 * o.lv)); upd(n => { n.cash += val; delete n.biz[d.id] }); say(`💸 ${d.name} becha: ${fmt(val)}`) }
   const upgradeBiz = (d) => { const o = s.biz[d.id]; const cost = Math.round(d.cost * 0.55 * o.lv); if (o.lv >= 10) return say('⭐ Max level 10!'); if (s.cash < cost) return say('❌ Cash kam hai'); upd(n => { n.cash -= cost; n.biz[d.id].lv += 1; n.xp += 10 }); say(`⬆️ ${d.name} ab Level ${o.lv + 1}`, true) }
   const restock = (d) => { const o = s.biz[d.id]; const miss = 100 - o.stock; const cost = Math.round(d.rev * d.cogs * miss / 100 * 0.9) + 10; if (s.cash < cost) return say('❌ Restock ke paise nahi'); upd(n => { n.cash -= cost; n.biz[d.id].stock = 100 }); say(`📦 ${d.name} full restock (${fmt(cost)})`) }
@@ -89,7 +102,7 @@ export default function App() {
   const setStaff = (d, delta) => upd(n => { const o = n.biz[d.id]; o.staff = Math.max(0, Math.min(d.staff * 3, o.staff + delta)) })
 
   // ---------- markets ----------
-  const buyAsset = (arrName, sym, qty) => { const a = s[arrName].find(x => x.sym === sym); const cost = a.price * qty; const fromBank = s.bank >= cost; if (!fromBank && s.cash < cost) return say('❌ Paise kam hai'); upd(n => { if (n.bank >= cost) n.bank -= cost; else n.cash -= cost; n.holdings[sym] = (n.holdings[sym] || 0) + qty; n.xp += 3 }); say(`✅ ${qty} × ${sym} kharide @ ${fmt(a.price)}`) }
+  const buyAsset = (arrName, sym, qty) => { const a = s[arrName].find(x => x.sym === sym); const cost = a.price * qty; const fromBank = s.bank >= cost; if (!fromBank && s.cash < cost) return say('❌ Paise kam hai'); upd(n => { if (n.bank >= cost) n.bank -= cost; else n.cash -= cost; const oldQ = n.holdings[sym] || 0; n.holdAvg = { ...(n.holdAvg || {}), [sym]: oldQ > 0 ? ((n.holdAvg[sym] || a.price) * oldQ + a.price * qty) / (oldQ + qty) : a.price }; n.holdings[sym] = oldQ + qty; n.xp += 3 }); say(`✅ ${qty} × ${sym} kharide @ ${fmt(a.price)}`) }
   const sellAsset = (arrName, sym, qty) => { const a = s[arrName].find(x => x.sym === sym); if ((s.holdings[sym] || 0) < qty) return say('❌ Itne holdings nahi'); upd(n => { n.holdings[sym] -= qty; n.cash += a.price * qty }); say(`💸 ${qty} × ${sym} beche @ ${fmt(a.price)}`) }
 
   // ---------- bank / property ----------
@@ -120,7 +133,7 @@ export default function App() {
       {s.settings && s.settings.showFps && <FpsMeter />}
       <Burst burstKey={burst} />
       <header className="hud">
-        <div className="brand"><h1>SAYONARA <span>EMPIRE</span></h1><div className="dayline">Day {s.day} • {PHASES[s.phase]} • Lv {xpLv}</div></div>
+        <div className="brand"><h1>SAYONARA <span>EMPIRE</span></h1><div className="dayline">Day {s.day} • {PHASES[s.phase]} • Lv {xpLv} • {seasonOf(s.day).icon} {seasonOf(s.day).name}{(() => { const af = activeFestivals(s.day, cityOf(HOME_CITY)); return af.length ? ` • 🎉 ${af[0].name}` : '' })()}</div></div>
         <div className="money-row">
           <div className="money-box"><div className="lbl">{chrome.cash}</div><div className="val green"><AnimatedNumber value={s.cash} format={fmtN} /></div></div>
           <div className="money-box"><div className="lbl">{chrome.bank}</div><div className="val"><AnimatedNumber value={s.bank} format={fmtN} /></div></div>
@@ -160,7 +173,7 @@ export default function App() {
                 <div className="row"><span>Market Sentiment</span><b>{s.sentiment > 0.5 ? '📈 Bullish' : s.sentiment < -0.5 ? '📉 Bearish' : '➡️ Sideways'}</b></div>
               </Section>
 
-              <DecisionPanel s={s} upd={upd} say={say} />
+              <Suspense fallback={null}><DecisionPanel s={s} upd={upd} say={say} /></Suspense>
 
               <Section id="missions" title="🎯 Daily Missions">
                 {s.missions.map(m => { const pr = missionProgress(s, m); const done = pr >= m.target; const claimed = s.missionsDone.includes(m.id + '_' + s.day); return (
@@ -172,7 +185,7 @@ export default function App() {
                 {DISTRICTS.map(d => { const lore = loreOf(d.name); return <div className="row" key={d.name}><div><b>{d.name}</b> {nw < d.unlock && <span className="muted">🔒 {fmt(d.unlock)}</span>}<div className="muted">{d.mood} • Rent trend {d.rentTrend}</div>{lore && <div className="muted">📖 {lore.history} Nishaniyan: {lore.landmarks.slice(0, 3).join(', ')}</div>}</div></div> })}
               </Section>
 
-              <ReviewsPanel s={s} />
+              <Suspense fallback={null}><ReviewsPanel s={s} /></Suspense>
 
               <Section id="news" title="📰 Sheher Times" defaultOpen={false}>
                 {s.news.map((n, i) => <div className="news-item" key={i}><span className="muted">Day {n.day} • </span>{n.text}</div>)}
@@ -180,6 +193,12 @@ export default function App() {
             </>}
 
             {tab === 'biz' && <>
+              <div style={{ marginBottom: 8 }}>
+                <div className="muted" style={{ marginBottom: 6 }}>📍 Naya business kaha kholein? (uska rent/demand usi sheher ka lagega — sheher kholna Atlas se)</div>
+                <div className="time-ctrl" style={{ flexWrap: 'wrap' }}>
+                  {(s.unlockedCities || ['india_delhi']).map((cid) => <button key={cid} className={'chip' + ((buyLoc || 'india_delhi') === cid ? ' on' : '')} onClick={() => setBuyLoc(cid)}>📍 {cityNameOf(cid)}</button>)}
+                </div>
+              </div>
               <div className="time-ctrl" style={{ marginBottom: 10 }}>
                 {['All', ...CATEGORIES].map(c => <button key={c} className={'chip' + (catFilter === c ? ' on' : '')} onClick={() => setCatFilter(c)}>{c}</button>)}
               </div>
@@ -192,6 +211,8 @@ export default function App() {
                       <div className="muted">Base bikri {fmt(d.rev)}/din • COGS {Math.round(d.cogs * 100)}% • Staff {d.staff} • Rent {fmt(d.rent)}/din</div>
                       {!o && <button className="btn" style={{ width: '100%', marginTop: 8 }} onClick={() => buyBiz(d)}>🛒 Kharido — {fmt(d.cost)}</button>}
                       {o && <>
+                        <div className="row"><span>📍 Jagah</span><b>{cityNameOf(o.loc || 'india_delhi')} <span className="muted">(rent {cityOf(o.loc || 'india_delhi').rent}x)</span></b></div>
+                        {(s.unlockedCities || []).length > 1 && <select value={o.loc || 'india_delhi'} onChange={e => relocate(d, e.target.value)} style={{ width: '100%', marginBottom: 6 }}><option value={o.loc || 'india_delhi'}>Sheher badlo (₹5,000 shifting)…</option>{(s.unlockedCities || []).filter(cid => cid !== (o.loc || 'india_delhi')).map(cid => <option key={cid} value={cid}>🚚 {cityNameOf(cid)} me shift</option>)}</select>}
                         <div className="row"><span>Stock</span><b className={o.stock < 20 ? 'neg' : ''}>{Math.round(o.stock)}%</b></div>
                         <div className="bar"><i style={{ width: o.stock + '%' }} /></div>
                         <div className="row"><span>Total Profit</span><b className={o.profitTotal >= 0 ? 'pos' : 'neg'}>{fmt(o.profitTotal)}</b></div>
@@ -206,6 +227,7 @@ export default function App() {
                           <button className="btn small red" onClick={() => sellBiz(d)}>💸 Becho</button>
                         </div>
                         <ProductStaffLine bizId={d.id} cat={d.cat} staffCount={o.staff} fmt={fmt} />
+                        <Suspense fallback={null}><ProcurementPanel s={s} upd={upd} say={say} bizId={d.id} cat={d.cat} d={d} /></Suspense>
                         <p className="muted">P&L samajh: Bikri = Footfall × Conversion × Price × Rating × Season. Kharcha = maal (supplier rate {s.supplier.toFixed(2)}x) + wages + rent + bijli + 2% wastage + depreciation. 15% bikri udhaar me — kal cash aata hai, isliye Profit ≠ Cashflow.</p>
                       </>}
                     </motion.div>) })}
@@ -219,6 +241,7 @@ export default function App() {
                   <div className="row" style={{ border: 'none', padding: 0 }}><b>{st.sym}</b><b>{fmt(st.price)}</b></div>
                   <div className="muted">{st.name} • Tumhare paas: {s.holdings[st.sym] || 0}</div>
                   <div className="muted">{profileOf(st.sym) ? '🏢 ' + profileOf(st.sym).sector + ' — ' + profileOf(st.sym).about : ''}</div>
+                  <div className="muted">📰 {stockNewsOf(st.sym, s.day)}</div>
                   <div className="spark">{st.hist.map((h, i) => <i key={i} style={{ height: Math.max(8, h / Math.max(...st.hist) * 34) + 'px' }} />)}</div>
                   <div style={{ display: 'flex', gap: 7, marginTop: 8 }}>
                     <button className="btn small green" onClick={() => buyAsset('stocks', st.sym, 1)}>Buy 1</button>
@@ -260,7 +283,7 @@ export default function App() {
                 </motion.div>) })}
             </Section>}
 
-            {tab === 'wealth' && <WealthPanel s={s} nw={nw} upd={upd} say={say} />}
+            {tab === 'wealth' && <Suspense fallback={<PanelFallback />}><WealthPanel s={s} nw={nw} upd={upd} say={say} /></Suspense>}
 
             {tab === 'bank' && <>
               <Section id="bankmain" title="🏦 Bank" right={`Credit Score: ${s.credit}`}>
@@ -302,7 +325,7 @@ export default function App() {
                 <button className="btn" style={{ width: '100%' }} disabled={s.lastSpin === s.day} onClick={spin}>{s.lastSpin === s.day ? 'Aaj ka spin ho gaya' : '🎡 Ghumao (roz 1 baar)'}</button>
               </Section>
               <Section id="rich" title="🏆 Rich List — Rivals" defaultOpen={false}>
-                {[...s.rivals].sort((a, b) => b.nw - a.nw).map((r, i) => <div className="row" key={r.name}><span>#{i + 1} {['🏬', '🚀', '👑', '🦈', '☕', '🏪'][i % 6]} <b>{r.name}</b><div className="muted">{r.pers} • Focus: {r.focus}</div></span><b className="gold">{fmt(r.nw)}</b></div>)}
+                {[...s.rivals].sort((a, b) => b.nw - a.nw).map((r, i) => <div className="row" key={r.name}><span>#{i + 1} {['🏬', '🚀', '👑', '🦈', '☕', '🏪'][i % 6]} <b>{r.name}</b><div className="muted">{r.pers} • Focus: {r.focus} • 📍 Ghar: {({ Simran: 'Mumbai', Vikram: 'Bengaluru', Ananya: 'Gurgaon', Rohit: 'Mumbai', Priya: 'Pune', 'Sharma Ji': 'Delhi' })[r.name] || 'Delhi'}</div></span><b className="gold">{fmt(r.nw)}</b></div>)}
                 <div className="row"><span>⭐ <b>TUM (Sayonara Empire)</b></span><b className="pos">{fmt(nw)}</b></div>
                 {[...s.rivals].sort((a, b) => b.nw - a.nw).slice(0, 2).map((r) => { const dg = dialogueOf(r.name); return dg ? <div className="news-item" key={r.name}>💬 <b>{r.name}:</b> {dg.text}</div> : null })}
               </Section>
@@ -326,11 +349,14 @@ export default function App() {
                 <textarea rows={3} style={{ marginTop: 8 }} placeholder="Export code yaha aayega / Import ke liye code paste karo" value={importTxt} onChange={e => setImportTxt(e.target.value)} />
                 <button className="btn red" style={{ width: '100%', marginTop: 8 }} onClick={() => { if (confirm('Pakka? Pura game reset ho jayega!')) { localStorage.removeItem(SAVE_KEY); setS(initialState()) } }}>🗑️ Reset Game</button>
               </Section>
-              <BazaarPanel s={s} upd={upd} say={say} />
-              <AuctionPanel s={s} upd={upd} say={say} />
-              <BulkAchievements s={s} nw={nw} upd={upd} say={say} />
-              <EncyclopediaPanel />
-              <SettingsPanel s={s} upd={upd} say={say} onExport={doExport} onImport={(data) => { if (data) doImportData(data); else doImportBox() }} importTxt={importTxt} setImportTxt={setImportTxt} onReset={doReset} />
+              <Suspense fallback={<PanelFallback />}><AtlasPanel s={s} nw={nw} upd={upd} say={say} /></Suspense>
+              <Suspense fallback={<PanelFallback />}><ManagersPanel s={s} upd={upd} say={say} /></Suspense>
+              <Suspense fallback={<PanelFallback />}><ImportPanel s={s} upd={upd} say={say} /></Suspense>
+              <Suspense fallback={<PanelFallback />}><BazaarPanel s={s} upd={upd} say={say} /></Suspense>
+              <Suspense fallback={<PanelFallback />}><AuctionPanel s={s} upd={upd} say={say} /></Suspense>
+              <Suspense fallback={<PanelFallback />}><BulkAchievements s={s} nw={nw} upd={upd} say={say} /></Suspense>
+              <Suspense fallback={<PanelFallback />}><EncyclopediaPanel /></Suspense>
+              <Suspense fallback={<PanelFallback />}><SettingsPanel s={s} upd={upd} say={say} onExport={doExport} onImport={(data) => { if (data) doImportData(data); else doImportBox() }} importTxt={importTxt} setImportTxt={setImportTxt} onReset={doReset} /></Suspense>
 
               <Section id="help" title="❓ Kaise Khele — Simple Bhasha Me" defaultOpen={false}>
                 <p className="small">1) Business kharido → har phase (subah/dopahar/shaam/raat) bikri hogi.<br />2) Price zyada = zyada margin par kam customers; sahi balance rakho.<br />3) Stock khatm hone se pehle Restock karo, Marketing se 3 din demand badegi.<br />4) Munafa bank me rakho, FD/SIP se badhao; shares me paisa lagao par risk samjho.<br />5) Property se roz rent, loan se tezi — par EMI time par.<br />6) Manual mode = time tumhare haath me; Auto mode = din khud chalega.<br />7) Tax har 30 din me sirf us mahine ke profit par lagta hai — Day 30 par game rukta NAHI hai.</p>

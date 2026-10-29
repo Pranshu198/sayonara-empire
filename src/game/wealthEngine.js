@@ -6,6 +6,7 @@ import { startupById } from './content/startups/index.js'
 import { movieById } from './content/movies/index.js'
 import { lifestyleById } from './content/lifestyle/index.js'
 import { rnd, chance } from '../utils/random.js'
+import { countriesOfCities } from './atlas/cityIndex.js'
 
 export function investPrice(s, item) {
   const p = s.investPrices && s.investPrices[item.id]
@@ -166,7 +167,9 @@ export function legacyScore(s, nw) {
   const cityPart = (s.cityProjects || []).length * 5
   const wealthPart = Math.floor(Math.log10(Math.max(10, nw)) * 10)
   const dayPart = Math.floor((s.day || 1) / 10)
-  return wealthPart + charityPart + lifePart + cityPart + dayPart + (s.prestige || 0) * 25
+  // World Atlas: har naya sheher +4, har naya desh +10 — duniya jeetna Legacy me dikhta hai
+  const geoPart = Math.max(0, (s.unlockedCities || []).length - 1) * 4 + Math.max(0, countriesOfCities(s.unlockedCities || []).length - 1) * 10
+  return wealthPart + charityPart + lifePart + cityPart + dayPart + geoPart + (s.prestige || 0) * 25
 }
 export function legacyTitle(score) {
   if (score >= 220) return '👑 Legend'

@@ -1,0 +1,843 @@
+// Vikram (Startup Bhai) ki baatein (deep): har mulakat par nayi chaal
+export const DIALOGUES_DEEP = [
+  {
+   "id": "rd2_vikram_1",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Phone par baatcheet me, naye khiladiyon par: \"Supplier ne nakhre badha diye hain.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_2",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Akhbaar ke interview me, sheher ke bhavishya par: \"Ek din tum bade banoge, agar ruke nahi.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_3",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_4",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Sheher ke vyapari sangh me, naye khiladiyon par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_5",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Akhbaar ke interview me, naye khiladiyon par: \"Bazaar mera hai, tum mehmaan ho.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_6",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, apni agli chaal par: \"Mere saamne tikna aasan nahi.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_7",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, apni kamyabi ke raaz par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_8",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, apni agli chaal par: \"Mere saamne tikna aasan nahi.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_9",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Is baar bazaar thanda hai, sambhal ke.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_10",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Bazaar mera hai, tum mehmaan ho.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_11",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, aane wale season par: \"Is baar bazaar thanda hai, sambhal ke.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_12",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, sheher ke bhavishya par: \"Sheher ka har graahak mera hoga.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_13",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, sheher ke bhavishya par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_14",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Kiraya kha gaya is mahine.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_15",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Supplier ne nakhre badha diye hain.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_16",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_17",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, sheher ke bhavishya par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_18",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, aane wale season par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_19",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_20",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Tumhari chaal maine pehle hi padh li hai.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_21",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Sheher ke vyapari sangh me, sheher ke bhavishya par: \"Bazaar mera hai, tum mehmaan ho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_22",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Bazaar mera hai, tum mehmaan ho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_23",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Akhbaar ke interview me, aane wale season par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_24",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Akhbaar ke interview me, apni agli chaal par: \"Ek din tum bade banoge, agar ruke nahi.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_25",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Bazaar mera hai, tum mehmaan ho.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_26",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Akhbaar ke interview me, naye khiladiyon par: \"Bazaar mera hai, tum mehmaan ho.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_27",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Mere saamne tikna aasan nahi.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_28",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, naye khiladiyon par: \"Ek mauka hai — pehle main loongi.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_29",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Mandi ki chai par, sheher ke bhavishya par: \"Tumse seekhne ko mila, sach.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_30",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, naye khiladiyon par: \"Sheher ka har graahak mera hoga.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_31",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Ek din tum bade banoge, agar ruke nahi.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_32",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, daamo ki jung par: \"Tumse seekhne ko mila, sach.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_33",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Tumhari chaal maine pehle hi padh li hai.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_34",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Ek saajha karyakram me, apni kamyabi ke raaz par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_35",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Supplier ne nakhre badha diye hain.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_36",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_37",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Ek saajha karyakram me, sheher ke bhavishya par: \"Ek mauka hai — pehle main loongi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_38",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Is baar bazaar thanda hai, sambhal ke.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_39",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Akhbaar ke interview me, daamo ki jung par: \"Sheher ka har graahak mera hoga.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_40",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Mere saamne tikna aasan nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_41",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Tumhari chaal maine pehle hi padh li hai.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_42",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Tumhari chaal maine pehle hi padh li hai.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_43",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, daamo ki jung par: \"Sheher ka har graahak mera hoga.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_44",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Bazaar mera hai, tum mehmaan ho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_45",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Ek shaadi me takraane par, apni agli chaal par: \"Ek mauka hai — pehle main loongi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_46",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Ek saajha karyakram me, daamo ki jung par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_47",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, sheher ke bhavishya par: \"Bazaar mera hai, tum mehmaan ho.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_48",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Mandi ki chai par, aane wale season par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_49",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek shaadi me takraane par, apni kamyabi ke raaz par: \"Sheher ka har graahak mera hoga.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_50",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Bazaar mera hai, tum mehmaan ho.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_51",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, sheher ke bhavishya par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_52",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek shaadi me takraane par, apni agli chaal par: \"Mere saamne tikna aasan nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_53",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Ek saajha karyakram me, daamo ki jung par: \"Tumse seekhne ko mila, sach.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_54",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, sheher ke bhavishya par: \"Supplier ne nakhre badha diye hain.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_55",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Tumse seekhne ko mila, sach.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_56",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, aane wale season par: \"Kiraya kha gaya is mahine.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_57",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Akhbaar ke interview me, naye khiladiyon par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_58",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_59",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Sheher ka har graahak mera hoga.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_60",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Akhbaar ke interview me, daamo ki jung par: \"Ek mauka hai — pehle main loongi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_61",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Phone par baatcheet me, daamo ki jung par: \"Sheher ka har graahak mera hoga.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_62",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_63",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Tumse seekhne ko mila, sach.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_64",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Phone par baatcheet me, sheher ke bhavishya par: \"Tumhari chaal maine pehle hi padh li hai.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_65",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Tumhari chaal maine pehle hi padh li hai.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_66",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Akhbaar ke interview me, naye khiladiyon par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_67",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, apni agli chaal par: \"Sheher ka har graahak mera hoga.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_68",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Is baar bazaar thanda hai, sambhal ke.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_69",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Phone par baatcheet me, sheher ke bhavishya par: \"Is baar bazaar thanda hai, sambhal ke.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_70",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_71",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, apni kamyabi ke raaz par: \"Bazaar mera hai, tum mehmaan ho.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_72",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Is baar bazaar thanda hai, sambhal ke.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_73",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_74",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, naye khiladiyon par: \"Tumse seekhne ko mila, sach.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_75",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Ek saajha karyakram me, apni agli chaal par: \"Ek din tum bade banoge, agar ruke nahi.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_76",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Kiraya kha gaya is mahine.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_77",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_78",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Kiraya kha gaya is mahine.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_79",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Ek shaadi me takraane par, sheher ke bhavishya par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_80",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Ek saajha karyakram me, sheher ke bhavishya par: \"Ek mauka hai — pehle main loongi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_81",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_82",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek shaadi me takraane par, naye khiladiyon par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_83",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Chhoti dukaan, bade sapne — dekhte hain kab tak.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_84",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_85",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, aane wale season par: \"Ek din tum bade banoge, agar ruke nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_86",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Phone par baatcheet me, daamo ki jung par: \"Supplier ne nakhre badha diye hain.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_87",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Phone par baatcheet me, daamo ki jung par: \"Tumhari chaal maine pehle hi padh li hai.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_88",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Sheher ke vyapari sangh me, aane wale season par: \"Mere saamne tikna aasan nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_89",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Phone par baatcheet me, sheher ke bhavishya par: \"Sheher ka har graahak mera hoga.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_90",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek shaadi me takraane par, apni kamyabi ke raaz par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_91",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Bazaar mera hai, tum mehmaan ho.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_92",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Supplier ne nakhre badha diye hain.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_93",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, apni agli chaal par: \"Tumhari chaal maine pehle hi padh li hai.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_94",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Ek mauka hai — pehle main loongi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_95",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Akhbaar ke interview me, apni agli chaal par: \"Is baar bazaar thanda hai, sambhal ke.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_96",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Akhbaar ke interview me, naye khiladiyon par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_97",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Akhbaar ke interview me, sheher ke bhavishya par: \"Sheher ka har graahak mera hoga.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_98",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Bazaar mera hai, tum mehmaan ho.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_99",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_100",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_101",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Ek saajha karyakram me, daamo ki jung par: \"Kiraya kha gaya is mahine.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_102",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Tumse seekhne ko mila, sach.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_103",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Mandi ki chai par, apni kamyabi ke raaz par: \"Tumhari chaal maine pehle hi padh li hai.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_104",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, apni kamyabi ke raaz par: \"Tumhari chaal maine pehle hi padh li hai.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_105",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, apni kamyabi ke raaz par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_106",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, sheher ke bhavishya par: \"Bazaar mera hai, tum mehmaan ho.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_107",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_108",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Phone par baatcheet me, naye khiladiyon par: \"Mere saamne tikna aasan nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_109",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Phone par baatcheet me, aane wale season par: \"Ek mauka hai — pehle main loongi.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_110",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Tumhari chaal maine pehle hi padh li hai.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_111",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Phone par baatcheet me, daamo ki jung par: \"Tumse seekhne ko mila, sach.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_112",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Ek shaadi me takraane par, apni agli chaal par: \"Kiraya kha gaya is mahine.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_113",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Akhbaar ke interview me, aane wale season par: \"Mere saamne tikna aasan nahi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_114",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, naye khiladiyon par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_115",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek shaadi me takraane par, sheher ke bhavishya par: \"Sheher ka har graahak mera hoga.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_116",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Phone par baatcheet me, apni kamyabi ke raaz par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_117",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_118",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Mandi ki chai par, apni kamyabi ke raaz par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_119",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Kimaton ki jung me main kabhi peeche nahi hatti.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_120",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Ek saajha karyakram me, naye khiladiyon par: \"Meri har dukaan par bheed hai, wajah jaanna chahoge?\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_121",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Ek shaadi me takraane par, daamo ki jung par: \"Supplier ne nakhre badha diye hain.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_122",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Ek saajha karyakram me, daamo ki jung par: \"Ek mauka hai — pehle main loongi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_123",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_124",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Akhbaar ke interview me, apni kamyabi ke raaz par: \"Sheher ka har graahak mera hoga.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_125",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Ek shaadi me takraane par, aane wale season par: \"Tumhari mehnat dikhai deti hai — izzat.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_126",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Mandi ki chai par, aane wale season par: \"Offer chal raha hai — tum bhi kuch seekho.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_127",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Phone par baatcheet me, sheher ke bhavishya par: \"Bazaar mera hai, tum mehmaan ho.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_128",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Mandi ki chai par, apni agli chaal par: \"Supplier ne nakhre badha diye hain.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_129",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek shaadi me takraane par, naye khiladiyon par: \"Mere saamne tikna aasan nahi.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_130",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, apni kamyabi ke raaz par: \"Bazaar mera hai, tum mehmaan ho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_131",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "warning",
+   "text": "Ek saajha karyakram me, apni kamyabi ke raaz par: \"Tumhari chaal maine pehle hi padh li hai.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_132",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Ek shaadi me takraane par, naye khiladiyon par: \"Ek din tum bade banoge, agar ruke nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_133",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Ek saajha karyakram me, aane wale season par: \"Bazaar mera hai, tum mehmaan ho.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_134",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "offer",
+   "text": "Ek shaadi me takraane par, apni agli chaal par: \"Ek mauka hai — pehle main loongi.\" — Bheed me baat aag ki tarah faili."
+  },
+  {
+   "id": "rd2_vikram_135",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Sheher ke vyapari sangh me, apni agli chaal par: \"Supplier ne nakhre badha diye hain.\" — Uske shabd bazaar me ghum gaye."
+  },
+  {
+   "id": "rd2_vikram_136",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Mandi ki chai par, daamo ki jung par: \"Tumse seekhne ko mila, sach.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_137",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "taunt",
+   "text": "Mandi ki chai par, apni kamyabi ke raaz par: \"Mere saamne tikna aasan nahi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+  {
+   "id": "rd2_vikram_138",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, naye khiladiyon par: \"Ek din tum bade banoge, agar ruke nahi.\" — Aas-paas ke vyapari sunte reh gaye."
+  },
+  {
+   "id": "rd2_vikram_139",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "worry",
+   "text": "Ek shaadi me takraane par, apni agli chaal par: \"Is baar bazaar thanda hai, sambhal ke.\" — Mahol garam ho gaya."
+  },
+  {
+   "id": "rd2_vikram_140",
+   "rival": "Vikram (Startup Bhai)",
+   "mood": "praise",
+   "text": "Sheher ke vyapari sangh me, daamo ki jung par: \"Ek din tum bade banoge, agar ruke nahi.\" — Ye baat akhbaar tak pahunch gayi."
+  },
+]

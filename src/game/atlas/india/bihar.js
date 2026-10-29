@@ -1,0 +1,142 @@
+// World Atlas — India: Bihar (rajya profile, sheher aur unke zile)
+export const STATE = {
+ "name": "Bihar",
+ "capital": "Patna",
+ "language": "Hindi",
+ "primeFestival": "Chhath",
+ "knownFor": "Bihar apni Hindi sanskriti, khana aur Chhath ke liye mashhoor hai. Vyapaar ke liye yaha ke bazaar har season me rang badalte hain.",
+ "cities": [
+  {
+   "name": "Patna",
+   "tier": 3,
+   "pop": "Zila mukhyalaya",
+   "income": "madhyam-unch",
+   "rentIndex": 1.12,
+   "climate": "baarish wala",
+   "festival": "Chhath",
+   "language": "Hindi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Food",
+    "Retail"
+   ],
+   "districts": [
+    "Patna Sadar Bazaar",
+    "Patna Nai Basti",
+    "Patna Purana Sheher",
+    "Patna Station Road",
+    "Patna Civil Lines"
+   ]
+  },
+  {
+   "name": "Gaya",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.18,
+   "climate": "tateeya garmi",
+   "festival": "Chhath",
+   "language": "Hindi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Industry",
+    "Tech"
+   ],
+   "districts": [
+    "Gaya Sadar Bazaar",
+    "Gaya Nai Basti",
+    "Gaya Purana Sheher",
+    "Gaya Station Road",
+    "Gaya Civil Lines"
+   ]
+  },
+  {
+   "name": "Muzaffarpur",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.19,
+   "climate": "khushk",
+   "festival": "Chhath",
+   "language": "Hindi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Food",
+    "Retail"
+   ],
+   "districts": [
+    "Muzaffarpur Sadar Bazaar",
+    "Muzaffarpur Nai Basti",
+    "Muzaffarpur Purana Sheher",
+    "Muzaffarpur Station Road",
+    "Muzaffarpur Civil Lines"
+   ]
+  },
+  {
+   "name": "Bhagalpur",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.29,
+   "climate": "baarish wala",
+   "festival": "Chhath",
+   "language": "Hindi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Food",
+    "Industry"
+   ],
+   "districts": [
+    "Bhagalpur Sadar Bazaar",
+    "Bhagalpur Nai Basti",
+    "Bhagalpur Purana Sheher",
+    "Bhagalpur Station Road",
+    "Bhagalpur Civil Lines"
+   ]
+  },
+  {
+   "name": "Darbhanga",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.04,
+   "climate": "tateeya garmi",
+   "festival": "Chhath",
+   "language": "Hindi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Energy",
+    "Industry"
+   ],
+   "districts": [
+    "Darbhanga Sadar Bazaar",
+    "Darbhanga Nai Basti",
+    "Darbhanga Purana Sheher",
+    "Darbhanga Station Road",
+    "Darbhanga Civil Lines"
+   ]
+  },
+  {
+   "name": "Purnia",
+   "tier": 2,
+   "pop": "Badhta sheher",
+   "income": "madhyam",
+   "rentIndex": 1.13,
+   "climate": "thandi sardiyan",
+   "festival": "Chhath",
+   "language": "Hindi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Food",
+    "Retail"
+   ],
+   "districts": [
+    "Purnia Sadar Bazaar",
+    "Purnia Nai Basti",
+    "Purnia Purana Sheher",
+    "Purnia Station Road",
+    "Purnia Civil Lines"
+   ]
+  }
+ ]
+}

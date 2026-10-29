@@ -1,0 +1,2343 @@
+// Product catalog (deep) — Edu part 1: vistrit variants, festival editions ke saath
+export const PRODUCTS_DEEP = [
+  {
+   "id": "pr2_ed_1_1",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Mini Trial Pack",
+   "price": 92675,
+   "costPct": 0.36,
+   "pop": 6,
+   "desc": "Abacus Level Course — Mini Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_2",
+   "cat": "Edu",
+   "name": "Interview Skills Course — New Launch Single",
+   "price": 10050,
+   "costPct": 0.45,
+   "pop": 4,
+   "desc": "Interview Skills Course — New Launch Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_3",
+   "cat": "Edu",
+   "name": "Handwriting Improvement — Eco Pack of 2",
+   "price": 95200,
+   "costPct": 0.41,
+   "pop": 2,
+   "desc": "Handwriting Improvement — Eco Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_4",
+   "cat": "Edu",
+   "name": "NEET Crash — Family Pack Duo Combo",
+   "price": 11600,
+   "costPct": 0.55,
+   "pop": 6,
+   "desc": "NEET Crash — Family Pack Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_5",
+   "cat": "Edu",
+   "name": "Cooking Class Pack — Limited Large",
+   "price": 94875,
+   "costPct": 0.3,
+   "pop": 6,
+   "desc": "Cooking Class Pack — Limited Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_6",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Gold Refill",
+   "price": 50575,
+   "costPct": 0.58,
+   "pop": 3,
+   "desc": "Abacus Level Course — Gold Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_7",
+   "cat": "Edu",
+   "name": "Video Editing Course — Mini Set of 4",
+   "price": 39825,
+   "costPct": 0.46,
+   "pop": 3,
+   "desc": "Video Editing Course — Mini Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_8",
+   "cat": "Edu",
+   "name": "Chess Coaching — Bestseller Trial Pack",
+   "price": 8250,
+   "costPct": 0.31,
+   "pop": 2,
+   "desc": "Chess Coaching — Bestseller Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_9",
+   "cat": "Edu",
+   "name": "Vedic Maths Course — Gold Value Pack",
+   "price": 53300,
+   "costPct": 0.46,
+   "pop": 9,
+   "desc": "Vedic Maths Course — Gold Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_10",
+   "cat": "Edu",
+   "name": "Abacus Level Course — New Launch Refill",
+   "price": 24950,
+   "costPct": 0.41,
+   "pop": 2,
+   "desc": "Abacus Level Course — New Launch Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_11",
+   "cat": "Edu",
+   "name": "Excel Pro Course — New Launch Value Pack",
+   "price": 35650,
+   "costPct": 0.38,
+   "pop": 10,
+   "desc": "Excel Pro Course — New Launch Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_12",
+   "cat": "Edu",
+   "name": "Stock Market Basics — Pro Gift Pack",
+   "price": 53050,
+   "costPct": 0.5,
+   "pop": 4,
+   "desc": "Stock Market Basics — Pro Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_13",
+   "cat": "Edu",
+   "name": "English Speaking Course — New Launch Standard",
+   "price": 1175,
+   "costPct": 0.53,
+   "pop": 2,
+   "desc": "English Speaking Course — New Launch Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_14",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Premium Single",
+   "price": 60175,
+   "costPct": 0.42,
+   "pop": 8,
+   "desc": "Drawing Class Pack — Premium Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_15",
+   "cat": "Edu",
+   "name": "Astrology Basics — Pro Single",
+   "price": 93675,
+   "costPct": 0.37,
+   "pop": 9,
+   "desc": "Astrology Basics — Pro Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_16",
+   "cat": "Edu",
+   "name": "Coding Bootcamp Kids — New Launch Duo Combo",
+   "price": 175,
+   "costPct": 0.52,
+   "pop": 3,
+   "desc": "Coding Bootcamp Kids — New Launch Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_17",
+   "cat": "Edu",
+   "name": "Yoga Morning Batch — Jumbo Pack of 2",
+   "price": 68050,
+   "costPct": 0.45,
+   "pop": 6,
+   "desc": "Yoga Morning Batch — Jumbo Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_18",
+   "cat": "Edu",
+   "name": "UPSC Foundation — New Launch Duo Combo",
+   "price": 90075,
+   "costPct": 0.5,
+   "pop": 6,
+   "desc": "UPSC Foundation — New Launch Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_19",
+   "cat": "Edu",
+   "name": "JEE Advanced Batch — Family Pack Trial Pack",
+   "price": 62100,
+   "costPct": 0.35,
+   "pop": 2,
+   "desc": "JEE Advanced Batch — Family Pack Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_20",
+   "cat": "Edu",
+   "name": "Astrology Basics — Special Duo Combo",
+   "price": 14300,
+   "costPct": 0.56,
+   "pop": 3,
+   "desc": "Astrology Basics — Special Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_21",
+   "cat": "Edu",
+   "name": "Vedic Maths Course — Special Duo Combo",
+   "price": 81025,
+   "costPct": 0.51,
+   "pop": 7,
+   "desc": "Vedic Maths Course — Special Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_22",
+   "cat": "Edu",
+   "name": "English Speaking Course — New Launch Gift Pack",
+   "price": 34225,
+   "costPct": 0.54,
+   "pop": 2,
+   "desc": "English Speaking Course — New Launch Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_23",
+   "cat": "Edu",
+   "name": "Science Crash Course — Special Large",
+   "price": 56075,
+   "costPct": 0.49,
+   "pop": 9,
+   "desc": "Science Crash Course — Special Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_24",
+   "cat": "Edu",
+   "name": "Coding Bootcamp Kids — New Launch Standard",
+   "price": 7550,
+   "costPct": 0.51,
+   "pop": 8,
+   "desc": "Coding Bootcamp Kids — New Launch Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_25",
+   "cat": "Edu",
+   "name": "UPSC Foundation — Family Pack Standard",
+   "price": 81750,
+   "costPct": 0.54,
+   "pop": 2,
+   "desc": "UPSC Foundation — Family Pack Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_26",
+   "cat": "Edu",
+   "name": "Photography Course — Gold Gift Pack",
+   "price": 4875,
+   "costPct": 0.48,
+   "pop": 3,
+   "desc": "Photography Course — Gold Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_27",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — Gold Gift Pack",
+   "price": 85025,
+   "costPct": 0.51,
+   "pop": 8,
+   "desc": "Dance Class Monthly — Gold Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_28",
+   "cat": "Edu",
+   "name": "Music Class Monthly — Bestseller Duo Combo",
+   "price": 65475,
+   "costPct": 0.57,
+   "pop": 5,
+   "desc": "Music Class Monthly — Bestseller Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_29",
+   "cat": "Edu",
+   "name": "Python Basics Course — Family Pack Refill",
+   "price": 70350,
+   "costPct": 0.37,
+   "pop": 7,
+   "desc": "Python Basics Course — Family Pack Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_30",
+   "cat": "Edu",
+   "name": "Handwriting Improvement — Mini Standard",
+   "price": 29000,
+   "costPct": 0.56,
+   "pop": 10,
+   "desc": "Handwriting Improvement — Mini Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_31",
+   "cat": "Edu",
+   "name": "JEE Advanced Batch — Pro Standard",
+   "price": 39575,
+   "costPct": 0.4,
+   "pop": 5,
+   "desc": "JEE Advanced Batch — Pro Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_32",
+   "cat": "Edu",
+   "name": "NEET Crash — Bestseller Standard",
+   "price": 61625,
+   "costPct": 0.36,
+   "pop": 8,
+   "desc": "NEET Crash — Bestseller Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_33",
+   "cat": "Edu",
+   "name": "Interview Skills Course — Family Pack Standard",
+   "price": 8075,
+   "costPct": 0.41,
+   "pop": 5,
+   "desc": "Interview Skills Course — Family Pack Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_34",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Deluxe Refill",
+   "price": 43700,
+   "costPct": 0.44,
+   "pop": 9,
+   "desc": "Abacus Level Course — Deluxe Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_35",
+   "cat": "Edu",
+   "name": "Yoga Morning Batch — Jumbo Standard",
+   "price": 74950,
+   "costPct": 0.61,
+   "pop": 3,
+   "desc": "Yoga Morning Batch — Jumbo Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_36",
+   "cat": "Edu",
+   "name": "Video Editing Course — Classic Gift Pack",
+   "price": 99550,
+   "costPct": 0.48,
+   "pop": 3,
+   "desc": "Video Editing Course — Classic Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_37",
+   "cat": "Edu",
+   "name": "Yoga Morning Batch — Limited Value Pack",
+   "price": 90700,
+   "costPct": 0.6,
+   "pop": 8,
+   "desc": "Yoga Morning Batch — Limited Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_38",
+   "cat": "Edu",
+   "name": "Photography Course — Eco Duo Combo",
+   "price": 7300,
+   "costPct": 0.32,
+   "pop": 2,
+   "desc": "Photography Course — Eco Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_39",
+   "cat": "Edu",
+   "name": "Bank Exam Batch — Family Pack Set of 4",
+   "price": 16000,
+   "costPct": 0.43,
+   "pop": 9,
+   "desc": "Bank Exam Batch — Family Pack Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_40",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Family Pack Value Pack",
+   "price": 88700,
+   "costPct": 0.33,
+   "pop": 3,
+   "desc": "Drawing Class Pack — Family Pack Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_41",
+   "cat": "Edu",
+   "name": "Python Basics Course — Mini Refill",
+   "price": 79775,
+   "costPct": 0.51,
+   "pop": 4,
+   "desc": "Python Basics Course — Mini Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_42",
+   "cat": "Edu",
+   "name": "Bank Exam Batch — Festival Edition Single",
+   "price": 62350,
+   "costPct": 0.5,
+   "pop": 3,
+   "desc": "Bank Exam Batch — Festival Edition Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_43",
+   "cat": "Edu",
+   "name": "Vedic Maths Course — Special Standard",
+   "price": 89300,
+   "costPct": 0.41,
+   "pop": 7,
+   "desc": "Vedic Maths Course — Special Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_44",
+   "cat": "Edu",
+   "name": "Photography Course — Combo Pack Set of 4",
+   "price": 32750,
+   "costPct": 0.51,
+   "pop": 8,
+   "desc": "Photography Course — Combo Pack Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_45",
+   "cat": "Edu",
+   "name": "Digital Marketing Course — Gold Standard",
+   "price": 42325,
+   "costPct": 0.46,
+   "pop": 9,
+   "desc": "Digital Marketing Course — Gold Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_46",
+   "cat": "Edu",
+   "name": "Chess Coaching — Pro Gift Pack",
+   "price": 58750,
+   "costPct": 0.46,
+   "pop": 3,
+   "desc": "Chess Coaching — Pro Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_47",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Premium Standard",
+   "price": 85950,
+   "costPct": 0.61,
+   "pop": 2,
+   "desc": "Drawing Class Pack — Premium Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_48",
+   "cat": "Edu",
+   "name": "Stock Market Basics — Deluxe Set of 4",
+   "price": 26100,
+   "costPct": 0.6,
+   "pop": 3,
+   "desc": "Stock Market Basics — Deluxe Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_49",
+   "cat": "Edu",
+   "name": "Maths Foundation Course — Classic Single",
+   "price": 13775,
+   "costPct": 0.46,
+   "pop": 3,
+   "desc": "Maths Foundation Course — Classic Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_50",
+   "cat": "Edu",
+   "name": "Yoga Morning Batch — Gold Single",
+   "price": 11650,
+   "costPct": 0.5,
+   "pop": 5,
+   "desc": "Yoga Morning Batch — Gold Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_51",
+   "cat": "Edu",
+   "name": "English Speaking Course — Bestseller Trial Pack",
+   "price": 55450,
+   "costPct": 0.51,
+   "pop": 3,
+   "desc": "English Speaking Course — Bestseller Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_52",
+   "cat": "Edu",
+   "name": "JEE Advanced Batch — Festival Edition Single",
+   "price": 69950,
+   "costPct": 0.59,
+   "pop": 6,
+   "desc": "JEE Advanced Batch — Festival Edition Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_53",
+   "cat": "Edu",
+   "name": "Excel Pro Course — Deluxe Single",
+   "price": 66725,
+   "costPct": 0.49,
+   "pop": 9,
+   "desc": "Excel Pro Course — Deluxe Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_54",
+   "cat": "Edu",
+   "name": "Bank Exam Batch — Family Pack Standard",
+   "price": 4050,
+   "costPct": 0.56,
+   "pop": 3,
+   "desc": "Bank Exam Batch — Family Pack Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_55",
+   "cat": "Edu",
+   "name": "SSC Prep Batch — Deluxe Trial Pack",
+   "price": 35425,
+   "costPct": 0.34,
+   "pop": 3,
+   "desc": "SSC Prep Batch — Deluxe Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_56",
+   "cat": "Edu",
+   "name": "English Speaking Course — Limited Value Pack",
+   "price": 36500,
+   "costPct": 0.38,
+   "pop": 3,
+   "desc": "English Speaking Course — Limited Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_57",
+   "cat": "Edu",
+   "name": "JEE Advanced Batch — Special Refill",
+   "price": 34050,
+   "costPct": 0.58,
+   "pop": 3,
+   "desc": "JEE Advanced Batch — Special Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_58",
+   "cat": "Edu",
+   "name": "Stock Market Basics — Classic Duo Combo",
+   "price": 20950,
+   "costPct": 0.54,
+   "pop": 4,
+   "desc": "Stock Market Basics — Classic Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_59",
+   "cat": "Edu",
+   "name": "Chess Coaching — Family Pack Standard",
+   "price": 78425,
+   "costPct": 0.48,
+   "pop": 4,
+   "desc": "Chess Coaching — Family Pack Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_60",
+   "cat": "Edu",
+   "name": "Vedic Maths Course — Mini Trial Pack",
+   "price": 74625,
+   "costPct": 0.55,
+   "pop": 6,
+   "desc": "Vedic Maths Course — Mini Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_61",
+   "cat": "Edu",
+   "name": "Handwriting Improvement — Premium Single",
+   "price": 67225,
+   "costPct": 0.43,
+   "pop": 4,
+   "desc": "Handwriting Improvement — Premium Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_62",
+   "cat": "Edu",
+   "name": "Science Crash Course — Bestseller Refill",
+   "price": 72500,
+   "costPct": 0.38,
+   "pop": 5,
+   "desc": "Science Crash Course — Bestseller Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_63",
+   "cat": "Edu",
+   "name": "Music Class Monthly — Limited Refill",
+   "price": 29775,
+   "costPct": 0.46,
+   "pop": 8,
+   "desc": "Music Class Monthly — Limited Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_64",
+   "cat": "Edu",
+   "name": "Python Basics Course — New Launch Value Pack",
+   "price": 50625,
+   "costPct": 0.52,
+   "pop": 7,
+   "desc": "Python Basics Course — New Launch Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_65",
+   "cat": "Edu",
+   "name": "Video Editing Course — Premium Trial Pack",
+   "price": 94775,
+   "costPct": 0.6,
+   "pop": 9,
+   "desc": "Video Editing Course — Premium Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_66",
+   "cat": "Edu",
+   "name": "Photography Course — Special Trial Pack",
+   "price": 30675,
+   "costPct": 0.43,
+   "pop": 9,
+   "desc": "Photography Course — Special Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_67",
+   "cat": "Edu",
+   "name": "Python Basics Course — Limited Trial Pack",
+   "price": 51725,
+   "costPct": 0.58,
+   "pop": 8,
+   "desc": "Python Basics Course — Limited Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_68",
+   "cat": "Edu",
+   "name": "Video Editing Course — Deluxe Large",
+   "price": 57100,
+   "costPct": 0.33,
+   "pop": 7,
+   "desc": "Video Editing Course — Deluxe Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_69",
+   "cat": "Edu",
+   "name": "Python Basics Course — Gold Set of 4",
+   "price": 15675,
+   "costPct": 0.35,
+   "pop": 9,
+   "desc": "Python Basics Course — Gold Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_70",
+   "cat": "Edu",
+   "name": "Excel Pro Course — Special Large",
+   "price": 75000,
+   "costPct": 0.56,
+   "pop": 3,
+   "desc": "Excel Pro Course — Special Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_71",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Limited Large",
+   "price": 65075,
+   "costPct": 0.48,
+   "pop": 3,
+   "desc": "Abacus Level Course — Limited Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_72",
+   "cat": "Edu",
+   "name": "Tally GST Course — Family Pack Trial Pack",
+   "price": 45225,
+   "costPct": 0.33,
+   "pop": 9,
+   "desc": "Tally GST Course — Family Pack Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_73",
+   "cat": "Edu",
+   "name": "Digital Marketing Course — Limited Single",
+   "price": 3725,
+   "costPct": 0.32,
+   "pop": 5,
+   "desc": "Digital Marketing Course — Limited Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_74",
+   "cat": "Edu",
+   "name": "Python Basics Course — Limited Set of 4",
+   "price": 56875,
+   "costPct": 0.51,
+   "pop": 4,
+   "desc": "Python Basics Course — Limited Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_75",
+   "cat": "Edu",
+   "name": "English Speaking Course — Mini Gift Pack",
+   "price": 23925,
+   "costPct": 0.42,
+   "pop": 7,
+   "desc": "English Speaking Course — Mini Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_76",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — Mini Gift Pack",
+   "price": 58625,
+   "costPct": 0.6,
+   "pop": 7,
+   "desc": "Spoken Hindi Course — Mini Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_77",
+   "cat": "Edu",
+   "name": "SSC Prep Batch — Combo Pack Pack of 2",
+   "price": 39775,
+   "costPct": 0.5,
+   "pop": 2,
+   "desc": "SSC Prep Batch — Combo Pack Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_78",
+   "cat": "Edu",
+   "name": "UPSC Foundation — Bestseller Pack of 2",
+   "price": 21875,
+   "costPct": 0.35,
+   "pop": 5,
+   "desc": "UPSC Foundation — Bestseller Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_79",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — Classic Pack of 2",
+   "price": 2250,
+   "costPct": 0.6,
+   "pop": 3,
+   "desc": "Spoken Hindi Course — Classic Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_80",
+   "cat": "Edu",
+   "name": "Stock Market Basics — Festival Edition Single",
+   "price": 51600,
+   "costPct": 0.58,
+   "pop": 10,
+   "desc": "Stock Market Basics — Festival Edition Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_81",
+   "cat": "Edu",
+   "name": "Stock Market Basics — Premium Standard",
+   "price": 46600,
+   "costPct": 0.44,
+   "pop": 4,
+   "desc": "Stock Market Basics — Premium Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_82",
+   "cat": "Edu",
+   "name": "Python Basics Course — Deluxe Standard",
+   "price": 78400,
+   "costPct": 0.45,
+   "pop": 4,
+   "desc": "Python Basics Course — Deluxe Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_83",
+   "cat": "Edu",
+   "name": "Astrology Basics — Deluxe Trial Pack",
+   "price": 52425,
+   "costPct": 0.48,
+   "pop": 10,
+   "desc": "Astrology Basics — Deluxe Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_84",
+   "cat": "Edu",
+   "name": "Astrology Basics — Gold Set of 4",
+   "price": 7950,
+   "costPct": 0.61,
+   "pop": 4,
+   "desc": "Astrology Basics — Gold Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_85",
+   "cat": "Edu",
+   "name": "UPSC Foundation — Mini Gift Pack",
+   "price": 58950,
+   "costPct": 0.43,
+   "pop": 2,
+   "desc": "UPSC Foundation — Mini Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_86",
+   "cat": "Edu",
+   "name": "Vedic Maths Course — New Launch Single",
+   "price": 93200,
+   "costPct": 0.57,
+   "pop": 8,
+   "desc": "Vedic Maths Course — New Launch Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_87",
+   "cat": "Edu",
+   "name": "Astrology Basics — Premium Gift Pack",
+   "price": 19375,
+   "costPct": 0.46,
+   "pop": 10,
+   "desc": "Astrology Basics — Premium Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_88",
+   "cat": "Edu",
+   "name": "Video Editing Course — Festival Edition Set of 4",
+   "price": 58300,
+   "costPct": 0.48,
+   "pop": 3,
+   "desc": "Video Editing Course — Festival Edition Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_89",
+   "cat": "Edu",
+   "name": "Photography Course — Limited Trial Pack",
+   "price": 81075,
+   "costPct": 0.47,
+   "pop": 5,
+   "desc": "Photography Course — Limited Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_90",
+   "cat": "Edu",
+   "name": "Video Editing Course — Classic Single",
+   "price": 83375,
+   "costPct": 0.54,
+   "pop": 5,
+   "desc": "Video Editing Course — Classic Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_91",
+   "cat": "Edu",
+   "name": "Yoga Morning Batch — Gold Pack of 2",
+   "price": 39600,
+   "costPct": 0.32,
+   "pop": 5,
+   "desc": "Yoga Morning Batch — Gold Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_92",
+   "cat": "Edu",
+   "name": "Coding Bootcamp Kids — Special Value Pack",
+   "price": 98975,
+   "costPct": 0.6,
+   "pop": 3,
+   "desc": "Coding Bootcamp Kids — Special Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_93",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — Special Trial Pack",
+   "price": 69775,
+   "costPct": 0.58,
+   "pop": 10,
+   "desc": "Spoken Hindi Course — Special Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_94",
+   "cat": "Edu",
+   "name": "Maths Foundation Course — Classic Duo Combo",
+   "price": 98025,
+   "costPct": 0.6,
+   "pop": 9,
+   "desc": "Maths Foundation Course — Classic Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_95",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Mini Trial Pack",
+   "price": 21475,
+   "costPct": 0.33,
+   "pop": 10,
+   "desc": "Drawing Class Pack — Mini Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_96",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — Premium Duo Combo",
+   "price": 79775,
+   "costPct": 0.56,
+   "pop": 10,
+   "desc": "Dance Class Monthly — Premium Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_97",
+   "cat": "Edu",
+   "name": "Science Crash Course — Festival Edition Refill",
+   "price": 94900,
+   "costPct": 0.33,
+   "pop": 10,
+   "desc": "Science Crash Course — Festival Edition Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_98",
+   "cat": "Edu",
+   "name": "Bank Exam Batch — Classic Duo Combo",
+   "price": 22300,
+   "costPct": 0.37,
+   "pop": 5,
+   "desc": "Bank Exam Batch — Classic Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_99",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — New Launch Set of 4",
+   "price": 51025,
+   "costPct": 0.6,
+   "pop": 9,
+   "desc": "Spoken Hindi Course — New Launch Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_100",
+   "cat": "Edu",
+   "name": "UPSC Foundation — Jumbo Pack of 2",
+   "price": 16675,
+   "costPct": 0.4,
+   "pop": 4,
+   "desc": "UPSC Foundation — Jumbo Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_101",
+   "cat": "Edu",
+   "name": "Python Basics Course — Festival Edition Set of 4",
+   "price": 37400,
+   "costPct": 0.44,
+   "pop": 4,
+   "desc": "Python Basics Course — Festival Edition Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_102",
+   "cat": "Edu",
+   "name": "Yoga Morning Batch — Premium Trial Pack",
+   "price": 23650,
+   "costPct": 0.38,
+   "pop": 4,
+   "desc": "Yoga Morning Batch — Premium Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_103",
+   "cat": "Edu",
+   "name": "Tally GST Course — Classic Duo Combo",
+   "price": 63225,
+   "costPct": 0.39,
+   "pop": 3,
+   "desc": "Tally GST Course — Classic Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_104",
+   "cat": "Edu",
+   "name": "Interview Skills Course — Jumbo Value Pack",
+   "price": 79000,
+   "costPct": 0.4,
+   "pop": 4,
+   "desc": "Interview Skills Course — Jumbo Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_105",
+   "cat": "Edu",
+   "name": "Excel Pro Course — Pro Duo Combo",
+   "price": 26125,
+   "costPct": 0.51,
+   "pop": 2,
+   "desc": "Excel Pro Course — Pro Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_106",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Eco Pack of 2",
+   "price": 82000,
+   "costPct": 0.47,
+   "pop": 2,
+   "desc": "Abacus Level Course — Eco Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_107",
+   "cat": "Edu",
+   "name": "Video Editing Course — Mini Duo Combo",
+   "price": 92025,
+   "costPct": 0.34,
+   "pop": 10,
+   "desc": "Video Editing Course — Mini Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_108",
+   "cat": "Edu",
+   "name": "Digital Marketing Course — Eco Gift Pack",
+   "price": 71550,
+   "costPct": 0.34,
+   "pop": 9,
+   "desc": "Digital Marketing Course — Eco Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_109",
+   "cat": "Edu",
+   "name": "Music Class Monthly — Premium Single",
+   "price": 20725,
+   "costPct": 0.49,
+   "pop": 8,
+   "desc": "Music Class Monthly — Premium Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_110",
+   "cat": "Edu",
+   "name": "Excel Pro Course — Special Trial Pack",
+   "price": 53400,
+   "costPct": 0.31,
+   "pop": 9,
+   "desc": "Excel Pro Course — Special Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_111",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — Eco Pack of 2",
+   "price": 19850,
+   "costPct": 0.47,
+   "pop": 3,
+   "desc": "Spoken Hindi Course — Eco Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_112",
+   "cat": "Edu",
+   "name": "Photography Course — Bestseller Standard",
+   "price": 5200,
+   "costPct": 0.33,
+   "pop": 7,
+   "desc": "Photography Course — Bestseller Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_113",
+   "cat": "Edu",
+   "name": "Excel Pro Course — Special Pack of 2",
+   "price": 35200,
+   "costPct": 0.38,
+   "pop": 5,
+   "desc": "Excel Pro Course — Special Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_114",
+   "cat": "Edu",
+   "name": "Music Class Monthly — Combo Pack Duo Combo",
+   "price": 10575,
+   "costPct": 0.37,
+   "pop": 7,
+   "desc": "Music Class Monthly — Combo Pack Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_115",
+   "cat": "Edu",
+   "name": "Digital Marketing Course — Limited Value Pack",
+   "price": 60800,
+   "costPct": 0.33,
+   "pop": 4,
+   "desc": "Digital Marketing Course — Limited Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_116",
+   "cat": "Edu",
+   "name": "Cooking Class Pack — Gold Pack of 2",
+   "price": 42525,
+   "costPct": 0.42,
+   "pop": 5,
+   "desc": "Cooking Class Pack — Gold Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_117",
+   "cat": "Edu",
+   "name": "Resume Building Pro — Family Pack Refill",
+   "price": 21250,
+   "costPct": 0.55,
+   "pop": 5,
+   "desc": "Resume Building Pro — Family Pack Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_118",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Jumbo Trial Pack",
+   "price": 71525,
+   "costPct": 0.44,
+   "pop": 10,
+   "desc": "Abacus Level Course — Jumbo Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_119",
+   "cat": "Edu",
+   "name": "JEE Advanced Batch — Combo Pack Value Pack",
+   "price": 49275,
+   "costPct": 0.33,
+   "pop": 2,
+   "desc": "JEE Advanced Batch — Combo Pack Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_120",
+   "cat": "Edu",
+   "name": "NEET Crash — Mini Pack of 2",
+   "price": 39275,
+   "costPct": 0.34,
+   "pop": 3,
+   "desc": "NEET Crash — Mini Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_121",
+   "cat": "Edu",
+   "name": "JEE Advanced Batch — Special Set of 4",
+   "price": 24250,
+   "costPct": 0.4,
+   "pop": 10,
+   "desc": "JEE Advanced Batch — Special Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_122",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Gold Duo Combo",
+   "price": 51550,
+   "costPct": 0.32,
+   "pop": 10,
+   "desc": "Drawing Class Pack — Gold Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_123",
+   "cat": "Edu",
+   "name": "Bank Exam Batch — New Launch Duo Combo",
+   "price": 9175,
+   "costPct": 0.42,
+   "pop": 5,
+   "desc": "Bank Exam Batch — New Launch Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_124",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — Premium Large",
+   "price": 16250,
+   "costPct": 0.4,
+   "pop": 5,
+   "desc": "Dance Class Monthly — Premium Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_125",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — Combo Pack Single",
+   "price": 93775,
+   "costPct": 0.34,
+   "pop": 7,
+   "desc": "Spoken Hindi Course — Combo Pack Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_126",
+   "cat": "Edu",
+   "name": "English Speaking Course — Jumbo Large",
+   "price": 14225,
+   "costPct": 0.5,
+   "pop": 5,
+   "desc": "English Speaking Course — Jumbo Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_127",
+   "cat": "Edu",
+   "name": "Maths Foundation Course — Jumbo Set of 4",
+   "price": 30500,
+   "costPct": 0.47,
+   "pop": 6,
+   "desc": "Maths Foundation Course — Jumbo Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_128",
+   "cat": "Edu",
+   "name": "UPSC Foundation — Limited Single",
+   "price": 5500,
+   "costPct": 0.56,
+   "pop": 5,
+   "desc": "UPSC Foundation — Limited Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_129",
+   "cat": "Edu",
+   "name": "Robotics Kit Course — Premium Gift Pack",
+   "price": 94525,
+   "costPct": 0.44,
+   "pop": 8,
+   "desc": "Robotics Kit Course — Premium Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_130",
+   "cat": "Edu",
+   "name": "Tally GST Course — Deluxe Single",
+   "price": 81600,
+   "costPct": 0.39,
+   "pop": 9,
+   "desc": "Tally GST Course — Deluxe Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_131",
+   "cat": "Edu",
+   "name": "Cooking Class Pack — Combo Pack Trial Pack",
+   "price": 52575,
+   "costPct": 0.46,
+   "pop": 10,
+   "desc": "Cooking Class Pack — Combo Pack Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_132",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Gold Standard",
+   "price": 99400,
+   "costPct": 0.31,
+   "pop": 3,
+   "desc": "Abacus Level Course — Gold Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_133",
+   "cat": "Edu",
+   "name": "UPSC Foundation — Mini Refill",
+   "price": 575,
+   "costPct": 0.59,
+   "pop": 4,
+   "desc": "UPSC Foundation — Mini Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_134",
+   "cat": "Edu",
+   "name": "Excel Pro Course — Jumbo Duo Combo",
+   "price": 9300,
+   "costPct": 0.38,
+   "pop": 9,
+   "desc": "Excel Pro Course — Jumbo Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_135",
+   "cat": "Edu",
+   "name": "Science Crash Course — Family Pack Single",
+   "price": 19950,
+   "costPct": 0.53,
+   "pop": 10,
+   "desc": "Science Crash Course — Family Pack Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_136",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Premium Pack of 2",
+   "price": 93575,
+   "costPct": 0.41,
+   "pop": 6,
+   "desc": "Abacus Level Course — Premium Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_137",
+   "cat": "Edu",
+   "name": "Interview Skills Course — Gold Set of 4",
+   "price": 38000,
+   "costPct": 0.36,
+   "pop": 3,
+   "desc": "Interview Skills Course — Gold Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_138",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Jumbo Trial Pack",
+   "price": 86325,
+   "costPct": 0.34,
+   "pop": 6,
+   "desc": "Drawing Class Pack — Jumbo Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_139",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Gold Value Pack",
+   "price": 27975,
+   "costPct": 0.4,
+   "pop": 6,
+   "desc": "Abacus Level Course — Gold Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_140",
+   "cat": "Edu",
+   "name": "SSC Prep Batch — Premium Standard",
+   "price": 81525,
+   "costPct": 0.38,
+   "pop": 6,
+   "desc": "SSC Prep Batch — Premium Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_141",
+   "cat": "Edu",
+   "name": "Yoga Morning Batch — New Launch Pack of 2",
+   "price": 28500,
+   "costPct": 0.32,
+   "pop": 5,
+   "desc": "Yoga Morning Batch — New Launch Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_142",
+   "cat": "Edu",
+   "name": "Cooking Class Pack — Festival Edition Trial Pack",
+   "price": 27500,
+   "costPct": 0.39,
+   "pop": 6,
+   "desc": "Cooking Class Pack — Festival Edition Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_143",
+   "cat": "Edu",
+   "name": "Science Crash Course — Bestseller Single",
+   "price": 99775,
+   "costPct": 0.48,
+   "pop": 9,
+   "desc": "Science Crash Course — Bestseller Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_144",
+   "cat": "Edu",
+   "name": "Cooking Class Pack — Pro Gift Pack",
+   "price": 27800,
+   "costPct": 0.58,
+   "pop": 8,
+   "desc": "Cooking Class Pack — Pro Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_145",
+   "cat": "Edu",
+   "name": "Tally GST Course — Deluxe Large",
+   "price": 47750,
+   "costPct": 0.59,
+   "pop": 8,
+   "desc": "Tally GST Course — Deluxe Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_146",
+   "cat": "Edu",
+   "name": "Vedic Maths Course — Jumbo Large",
+   "price": 89650,
+   "costPct": 0.41,
+   "pop": 10,
+   "desc": "Vedic Maths Course — Jumbo Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_147",
+   "cat": "Edu",
+   "name": "Handwriting Improvement — Jumbo Single",
+   "price": 52375,
+   "costPct": 0.4,
+   "pop": 4,
+   "desc": "Handwriting Improvement — Jumbo Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_148",
+   "cat": "Edu",
+   "name": "Science Crash Course — Special Single",
+   "price": 6650,
+   "costPct": 0.42,
+   "pop": 4,
+   "desc": "Science Crash Course — Special Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_149",
+   "cat": "Edu",
+   "name": "JEE Advanced Batch — Bestseller Pack of 2",
+   "price": 25275,
+   "costPct": 0.31,
+   "pop": 4,
+   "desc": "JEE Advanced Batch — Bestseller Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_150",
+   "cat": "Edu",
+   "name": "Stock Market Basics — Pro Pack of 2",
+   "price": 27550,
+   "costPct": 0.49,
+   "pop": 5,
+   "desc": "Stock Market Basics — Pro Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_151",
+   "cat": "Edu",
+   "name": "Astrology Basics — Special Gift Pack",
+   "price": 71300,
+   "costPct": 0.45,
+   "pop": 9,
+   "desc": "Astrology Basics — Special Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_152",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Festival Edition Pack of 2",
+   "price": 84300,
+   "costPct": 0.38,
+   "pop": 4,
+   "desc": "Abacus Level Course — Festival Edition Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_153",
+   "cat": "Edu",
+   "name": "Bank Exam Batch — New Launch Value Pack",
+   "price": 50575,
+   "costPct": 0.42,
+   "pop": 4,
+   "desc": "Bank Exam Batch — New Launch Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_154",
+   "cat": "Edu",
+   "name": "Python Basics Course — Deluxe Refill",
+   "price": 18250,
+   "costPct": 0.4,
+   "pop": 8,
+   "desc": "Python Basics Course — Deluxe Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_155",
+   "cat": "Edu",
+   "name": "Tally GST Course — Bestseller Standard",
+   "price": 49425,
+   "costPct": 0.47,
+   "pop": 7,
+   "desc": "Tally GST Course — Bestseller Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_156",
+   "cat": "Edu",
+   "name": "Robotics Kit Course — Festival Edition Refill",
+   "price": 6425,
+   "costPct": 0.53,
+   "pop": 5,
+   "desc": "Robotics Kit Course — Festival Edition Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_157",
+   "cat": "Edu",
+   "name": "Coding Bootcamp Kids — New Launch Set of 4",
+   "price": 56275,
+   "costPct": 0.46,
+   "pop": 10,
+   "desc": "Coding Bootcamp Kids — New Launch Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_158",
+   "cat": "Edu",
+   "name": "Coding Bootcamp Kids — Deluxe Standard",
+   "price": 69800,
+   "costPct": 0.5,
+   "pop": 6,
+   "desc": "Coding Bootcamp Kids — Deluxe Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_159",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Gold Trial Pack",
+   "price": 64900,
+   "costPct": 0.32,
+   "pop": 7,
+   "desc": "Drawing Class Pack — Gold Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_160",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — Pro Refill",
+   "price": 17550,
+   "costPct": 0.57,
+   "pop": 6,
+   "desc": "Dance Class Monthly — Pro Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_161",
+   "cat": "Edu",
+   "name": "Music Class Monthly — Classic Standard",
+   "price": 32525,
+   "costPct": 0.58,
+   "pop": 8,
+   "desc": "Music Class Monthly — Classic Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_162",
+   "cat": "Edu",
+   "name": "Music Class Monthly — Deluxe Gift Pack",
+   "price": 70725,
+   "costPct": 0.56,
+   "pop": 10,
+   "desc": "Music Class Monthly — Deluxe Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_163",
+   "cat": "Edu",
+   "name": "Excel Pro Course — Classic Set of 4",
+   "price": 31075,
+   "costPct": 0.37,
+   "pop": 4,
+   "desc": "Excel Pro Course — Classic Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_164",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — New Launch Pack of 2",
+   "price": 97775,
+   "costPct": 0.31,
+   "pop": 2,
+   "desc": "Drawing Class Pack — New Launch Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_165",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — Bestseller Standard",
+   "price": 71850,
+   "costPct": 0.35,
+   "pop": 3,
+   "desc": "Dance Class Monthly — Bestseller Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_166",
+   "cat": "Edu",
+   "name": "Excel Pro Course — Pro Trial Pack",
+   "price": 34750,
+   "costPct": 0.49,
+   "pop": 5,
+   "desc": "Excel Pro Course — Pro Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_167",
+   "cat": "Edu",
+   "name": "Vedic Maths Course — Limited Standard",
+   "price": 66800,
+   "costPct": 0.58,
+   "pop": 9,
+   "desc": "Vedic Maths Course — Limited Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_168",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — Eco Large",
+   "price": 53500,
+   "costPct": 0.43,
+   "pop": 9,
+   "desc": "Dance Class Monthly — Eco Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_169",
+   "cat": "Edu",
+   "name": "Yoga Morning Batch — Eco Single",
+   "price": 27800,
+   "costPct": 0.36,
+   "pop": 9,
+   "desc": "Yoga Morning Batch — Eco Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_170",
+   "cat": "Edu",
+   "name": "Photography Course — Special Value Pack",
+   "price": 41450,
+   "costPct": 0.4,
+   "pop": 2,
+   "desc": "Photography Course — Special Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_171",
+   "cat": "Edu",
+   "name": "Astrology Basics — Deluxe Single",
+   "price": 70475,
+   "costPct": 0.38,
+   "pop": 7,
+   "desc": "Astrology Basics — Deluxe Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_172",
+   "cat": "Edu",
+   "name": "Bank Exam Batch — Combo Pack Refill",
+   "price": 1375,
+   "costPct": 0.46,
+   "pop": 7,
+   "desc": "Bank Exam Batch — Combo Pack Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_173",
+   "cat": "Edu",
+   "name": "Maths Foundation Course — Eco Value Pack",
+   "price": 88700,
+   "costPct": 0.46,
+   "pop": 5,
+   "desc": "Maths Foundation Course — Eco Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_174",
+   "cat": "Edu",
+   "name": "Maths Foundation Course — Mini Refill",
+   "price": 55150,
+   "costPct": 0.59,
+   "pop": 7,
+   "desc": "Maths Foundation Course — Mini Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_175",
+   "cat": "Edu",
+   "name": "Astrology Basics — Deluxe Gift Pack",
+   "price": 7750,
+   "costPct": 0.4,
+   "pop": 7,
+   "desc": "Astrology Basics — Deluxe Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_176",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Eco Gift Pack",
+   "price": 26975,
+   "costPct": 0.47,
+   "pop": 6,
+   "desc": "Drawing Class Pack — Eco Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_177",
+   "cat": "Edu",
+   "name": "UPSC Foundation — Deluxe Set of 4",
+   "price": 31450,
+   "costPct": 0.61,
+   "pop": 2,
+   "desc": "UPSC Foundation — Deluxe Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_178",
+   "cat": "Edu",
+   "name": "Interview Skills Course — Classic Duo Combo",
+   "price": 80575,
+   "costPct": 0.41,
+   "pop": 5,
+   "desc": "Interview Skills Course — Classic Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_179",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — Deluxe Standard",
+   "price": 29500,
+   "costPct": 0.34,
+   "pop": 10,
+   "desc": "Spoken Hindi Course — Deluxe Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_180",
+   "cat": "Edu",
+   "name": "Science Crash Course — Eco Trial Pack",
+   "price": 30225,
+   "costPct": 0.47,
+   "pop": 9,
+   "desc": "Science Crash Course — Eco Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_181",
+   "cat": "Edu",
+   "name": "Resume Building Pro — Bestseller Duo Combo",
+   "price": 89450,
+   "costPct": 0.39,
+   "pop": 9,
+   "desc": "Resume Building Pro — Bestseller Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_182",
+   "cat": "Edu",
+   "name": "Tally GST Course — Gold Trial Pack",
+   "price": 14250,
+   "costPct": 0.61,
+   "pop": 2,
+   "desc": "Tally GST Course — Gold Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_183",
+   "cat": "Edu",
+   "name": "Python Basics Course — Bestseller Set of 4",
+   "price": 17950,
+   "costPct": 0.45,
+   "pop": 9,
+   "desc": "Python Basics Course — Bestseller Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_184",
+   "cat": "Edu",
+   "name": "Vedic Maths Course — Premium Gift Pack",
+   "price": 69475,
+   "costPct": 0.4,
+   "pop": 8,
+   "desc": "Vedic Maths Course — Premium Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_185",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — Mini Duo Combo",
+   "price": 75075,
+   "costPct": 0.45,
+   "pop": 3,
+   "desc": "Spoken Hindi Course — Mini Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_186",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — Limited Trial Pack",
+   "price": 2200,
+   "costPct": 0.41,
+   "pop": 7,
+   "desc": "Spoken Hindi Course — Limited Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_187",
+   "cat": "Edu",
+   "name": "Stock Market Basics — Special Large",
+   "price": 76800,
+   "costPct": 0.38,
+   "pop": 6,
+   "desc": "Stock Market Basics — Special Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_188",
+   "cat": "Edu",
+   "name": "Photography Course — Deluxe Standard",
+   "price": 47775,
+   "costPct": 0.58,
+   "pop": 6,
+   "desc": "Photography Course — Deluxe Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_189",
+   "cat": "Edu",
+   "name": "NEET Crash — Gold Refill",
+   "price": 3100,
+   "costPct": 0.38,
+   "pop": 9,
+   "desc": "NEET Crash — Gold Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_190",
+   "cat": "Edu",
+   "name": "Astrology Basics — Classic Trial Pack",
+   "price": 90825,
+   "costPct": 0.57,
+   "pop": 2,
+   "desc": "Astrology Basics — Classic Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_191",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — Mini Standard",
+   "price": 5225,
+   "costPct": 0.37,
+   "pop": 7,
+   "desc": "Spoken Hindi Course — Mini Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_192",
+   "cat": "Edu",
+   "name": "Video Editing Course — Special Refill",
+   "price": 62975,
+   "costPct": 0.38,
+   "pop": 3,
+   "desc": "Video Editing Course — Special Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_193",
+   "cat": "Edu",
+   "name": "UPSC Foundation — Pro Value Pack",
+   "price": 81900,
+   "costPct": 0.48,
+   "pop": 6,
+   "desc": "UPSC Foundation — Pro Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_194",
+   "cat": "Edu",
+   "name": "Photography Course — Classic Large",
+   "price": 12925,
+   "costPct": 0.55,
+   "pop": 4,
+   "desc": "Photography Course — Classic Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_195",
+   "cat": "Edu",
+   "name": "Tally GST Course — Classic Trial Pack",
+   "price": 44225,
+   "costPct": 0.33,
+   "pop": 6,
+   "desc": "Tally GST Course — Classic Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_196",
+   "cat": "Edu",
+   "name": "Robotics Kit Course — Special Pack of 2",
+   "price": 72000,
+   "costPct": 0.36,
+   "pop": 8,
+   "desc": "Robotics Kit Course — Special Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_197",
+   "cat": "Edu",
+   "name": "SSC Prep Batch — Gold Trial Pack",
+   "price": 8975,
+   "costPct": 0.45,
+   "pop": 7,
+   "desc": "SSC Prep Batch — Gold Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_198",
+   "cat": "Edu",
+   "name": "Handwriting Improvement — Classic Standard",
+   "price": 13850,
+   "costPct": 0.4,
+   "pop": 2,
+   "desc": "Handwriting Improvement — Classic Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_199",
+   "cat": "Edu",
+   "name": "SSC Prep Batch — Festival Edition Duo Combo",
+   "price": 88275,
+   "costPct": 0.58,
+   "pop": 2,
+   "desc": "SSC Prep Batch — Festival Edition Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_200",
+   "cat": "Edu",
+   "name": "Video Editing Course — Special Standard",
+   "price": 77925,
+   "costPct": 0.61,
+   "pop": 7,
+   "desc": "Video Editing Course — Special Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_201",
+   "cat": "Edu",
+   "name": "JEE Advanced Batch — Limited Refill",
+   "price": 56525,
+   "costPct": 0.36,
+   "pop": 8,
+   "desc": "JEE Advanced Batch — Limited Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_202",
+   "cat": "Edu",
+   "name": "SSC Prep Batch — Jumbo Value Pack",
+   "price": 83200,
+   "costPct": 0.54,
+   "pop": 2,
+   "desc": "SSC Prep Batch — Jumbo Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_203",
+   "cat": "Edu",
+   "name": "Music Class Monthly — Premium Set of 4",
+   "price": 10950,
+   "costPct": 0.31,
+   "pop": 6,
+   "desc": "Music Class Monthly — Premium Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_204",
+   "cat": "Edu",
+   "name": "Video Editing Course — Mini Refill",
+   "price": 12900,
+   "costPct": 0.56,
+   "pop": 9,
+   "desc": "Video Editing Course — Mini Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_205",
+   "cat": "Edu",
+   "name": "Bank Exam Batch — Jumbo Single",
+   "price": 47125,
+   "costPct": 0.53,
+   "pop": 9,
+   "desc": "Bank Exam Batch — Jumbo Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_206",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — Combo Pack Pack of 2",
+   "price": 72850,
+   "costPct": 0.31,
+   "pop": 5,
+   "desc": "Dance Class Monthly — Combo Pack Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_207",
+   "cat": "Edu",
+   "name": "Music Class Monthly — Gold Set of 4",
+   "price": 62925,
+   "costPct": 0.39,
+   "pop": 7,
+   "desc": "Music Class Monthly — Gold Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_208",
+   "cat": "Edu",
+   "name": "Tally GST Course — Eco Gift Pack",
+   "price": 74275,
+   "costPct": 0.61,
+   "pop": 5,
+   "desc": "Tally GST Course — Eco Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_209",
+   "cat": "Edu",
+   "name": "Photography Course — Gold Pack of 2",
+   "price": 38400,
+   "costPct": 0.57,
+   "pop": 9,
+   "desc": "Photography Course — Gold Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_210",
+   "cat": "Edu",
+   "name": "Music Class Monthly — Premium Large",
+   "price": 90900,
+   "costPct": 0.52,
+   "pop": 2,
+   "desc": "Music Class Monthly — Premium Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_211",
+   "cat": "Edu",
+   "name": "Interview Skills Course — Gold Value Pack",
+   "price": 57500,
+   "costPct": 0.57,
+   "pop": 3,
+   "desc": "Interview Skills Course — Gold Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_212",
+   "cat": "Edu",
+   "name": "Video Editing Course — Jumbo Trial Pack",
+   "price": 85425,
+   "costPct": 0.42,
+   "pop": 6,
+   "desc": "Video Editing Course — Jumbo Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_213",
+   "cat": "Edu",
+   "name": "Cooking Class Pack — Premium Gift Pack",
+   "price": 1800,
+   "costPct": 0.41,
+   "pop": 2,
+   "desc": "Cooking Class Pack — Premium Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_214",
+   "cat": "Edu",
+   "name": "Python Basics Course — Special Duo Combo",
+   "price": 60200,
+   "costPct": 0.51,
+   "pop": 9,
+   "desc": "Python Basics Course — Special Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_215",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — Special Refill",
+   "price": 65425,
+   "costPct": 0.48,
+   "pop": 6,
+   "desc": "Dance Class Monthly — Special Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_216",
+   "cat": "Edu",
+   "name": "Tally GST Course — Bestseller Trial Pack",
+   "price": 36000,
+   "costPct": 0.59,
+   "pop": 6,
+   "desc": "Tally GST Course — Bestseller Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_217",
+   "cat": "Edu",
+   "name": "Vedic Maths Course — Limited Set of 4",
+   "price": 20225,
+   "costPct": 0.31,
+   "pop": 2,
+   "desc": "Vedic Maths Course — Limited Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_218",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Combo Pack Refill",
+   "price": 78900,
+   "costPct": 0.59,
+   "pop": 6,
+   "desc": "Abacus Level Course — Combo Pack Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_219",
+   "cat": "Edu",
+   "name": "Chess Coaching — Deluxe Large",
+   "price": 13350,
+   "costPct": 0.58,
+   "pop": 8,
+   "desc": "Chess Coaching — Deluxe Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_220",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — Pro Set of 4",
+   "price": 60575,
+   "costPct": 0.48,
+   "pop": 6,
+   "desc": "Dance Class Monthly — Pro Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_221",
+   "cat": "Edu",
+   "name": "JEE Advanced Batch — Pro Value Pack",
+   "price": 21075,
+   "costPct": 0.47,
+   "pop": 6,
+   "desc": "JEE Advanced Batch — Pro Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_222",
+   "cat": "Edu",
+   "name": "Astrology Basics — New Launch Set of 4",
+   "price": 38000,
+   "costPct": 0.48,
+   "pop": 4,
+   "desc": "Astrology Basics — New Launch Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_223",
+   "cat": "Edu",
+   "name": "Python Basics Course — Premium Trial Pack",
+   "price": 96125,
+   "costPct": 0.35,
+   "pop": 10,
+   "desc": "Python Basics Course — Premium Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_224",
+   "cat": "Edu",
+   "name": "Video Editing Course — Festival Edition Standard",
+   "price": 66325,
+   "costPct": 0.57,
+   "pop": 3,
+   "desc": "Video Editing Course — Festival Edition Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_225",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Bestseller Set of 4",
+   "price": 20400,
+   "costPct": 0.59,
+   "pop": 9,
+   "desc": "Drawing Class Pack — Bestseller Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_226",
+   "cat": "Edu",
+   "name": "Coding Bootcamp Kids — Family Pack Trial Pack",
+   "price": 30575,
+   "costPct": 0.58,
+   "pop": 9,
+   "desc": "Coding Bootcamp Kids — Family Pack Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_227",
+   "cat": "Edu",
+   "name": "Music Class Monthly — Combo Pack Trial Pack",
+   "price": 79250,
+   "costPct": 0.38,
+   "pop": 10,
+   "desc": "Music Class Monthly — Combo Pack Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_228",
+   "cat": "Edu",
+   "name": "Astrology Basics — Classic Refill",
+   "price": 69200,
+   "costPct": 0.51,
+   "pop": 6,
+   "desc": "Astrology Basics — Classic Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_229",
+   "cat": "Edu",
+   "name": "Video Editing Course — Eco Standard",
+   "price": 79675,
+   "costPct": 0.57,
+   "pop": 3,
+   "desc": "Video Editing Course — Eco Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_230",
+   "cat": "Edu",
+   "name": "Tally GST Course — Festival Edition Trial Pack",
+   "price": 71625,
+   "costPct": 0.52,
+   "pop": 6,
+   "desc": "Tally GST Course — Festival Edition Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_231",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Bestseller Large",
+   "price": 38375,
+   "costPct": 0.53,
+   "pop": 3,
+   "desc": "Drawing Class Pack — Bestseller Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_232",
+   "cat": "Edu",
+   "name": "Stock Market Basics — Jumbo Pack of 2",
+   "price": 70300,
+   "costPct": 0.45,
+   "pop": 2,
+   "desc": "Stock Market Basics — Jumbo Pack of 2 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_233",
+   "cat": "Edu",
+   "name": "Stock Market Basics — Family Pack Gift Pack",
+   "price": 39900,
+   "costPct": 0.61,
+   "pop": 5,
+   "desc": "Stock Market Basics — Family Pack Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_234",
+   "cat": "Edu",
+   "name": "Resume Building Pro — New Launch Large",
+   "price": 70425,
+   "costPct": 0.42,
+   "pop": 7,
+   "desc": "Resume Building Pro — New Launch Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_235",
+   "cat": "Edu",
+   "name": "SSC Prep Batch — Classic Single",
+   "price": 49950,
+   "costPct": 0.43,
+   "pop": 4,
+   "desc": "SSC Prep Batch — Classic Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_236",
+   "cat": "Edu",
+   "name": "Drawing Class Pack — Eco Single",
+   "price": 87275,
+   "costPct": 0.61,
+   "pop": 7,
+   "desc": "Drawing Class Pack — Eco Single — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_237",
+   "cat": "Edu",
+   "name": "Digital Marketing Course — Jumbo Trial Pack",
+   "price": 67250,
+   "costPct": 0.62,
+   "pop": 6,
+   "desc": "Digital Marketing Course — Jumbo Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_238",
+   "cat": "Edu",
+   "name": "Chess Coaching — Special Value Pack",
+   "price": 9825,
+   "costPct": 0.33,
+   "pop": 6,
+   "desc": "Chess Coaching — Special Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_239",
+   "cat": "Edu",
+   "name": "English Speaking Course — Mini Refill",
+   "price": 65650,
+   "costPct": 0.52,
+   "pop": 2,
+   "desc": "English Speaking Course — Mini Refill — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_240",
+   "cat": "Edu",
+   "name": "Robotics Kit Course — Classic Gift Pack",
+   "price": 39750,
+   "costPct": 0.53,
+   "pop": 7,
+   "desc": "Robotics Kit Course — Classic Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_241",
+   "cat": "Edu",
+   "name": "Digital Marketing Course — Limited Set of 4",
+   "price": 78525,
+   "costPct": 0.38,
+   "pop": 7,
+   "desc": "Digital Marketing Course — Limited Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_242",
+   "cat": "Edu",
+   "name": "Abacus Level Course — Limited Set of 4",
+   "price": 43100,
+   "costPct": 0.3,
+   "pop": 5,
+   "desc": "Abacus Level Course — Limited Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_243",
+   "cat": "Edu",
+   "name": "Spoken Hindi Course — Eco Value Pack",
+   "price": 71275,
+   "costPct": 0.58,
+   "pop": 5,
+   "desc": "Spoken Hindi Course — Eco Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_244",
+   "cat": "Edu",
+   "name": "Bank Exam Batch — Bestseller Large",
+   "price": 93475,
+   "costPct": 0.58,
+   "pop": 10,
+   "desc": "Bank Exam Batch — Bestseller Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_245",
+   "cat": "Edu",
+   "name": "Maths Foundation Course — Classic Standard",
+   "price": 46025,
+   "costPct": 0.52,
+   "pop": 3,
+   "desc": "Maths Foundation Course — Classic Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_246",
+   "cat": "Edu",
+   "name": "Coding Bootcamp Kids — Premium Set of 4",
+   "price": 4650,
+   "costPct": 0.37,
+   "pop": 7,
+   "desc": "Coding Bootcamp Kids — Premium Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_247",
+   "cat": "Edu",
+   "name": "UPSC Foundation — Limited Trial Pack",
+   "price": 73100,
+   "costPct": 0.36,
+   "pop": 3,
+   "desc": "UPSC Foundation — Limited Trial Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_248",
+   "cat": "Edu",
+   "name": "Python Basics Course — Special Value Pack",
+   "price": 79775,
+   "costPct": 0.46,
+   "pop": 3,
+   "desc": "Python Basics Course — Special Value Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_249",
+   "cat": "Edu",
+   "name": "Robotics Kit Course — Jumbo Duo Combo",
+   "price": 54500,
+   "costPct": 0.51,
+   "pop": 4,
+   "desc": "Robotics Kit Course — Jumbo Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_250",
+   "cat": "Edu",
+   "name": "Coding Bootcamp Kids — Family Pack Duo Combo",
+   "price": 87675,
+   "costPct": 0.53,
+   "pop": 9,
+   "desc": "Coding Bootcamp Kids — Family Pack Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_251",
+   "cat": "Edu",
+   "name": "NEET Crash — Pro Gift Pack",
+   "price": 27125,
+   "costPct": 0.52,
+   "pop": 9,
+   "desc": "NEET Crash — Pro Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_252",
+   "cat": "Edu",
+   "name": "Resume Building Pro — Special Large",
+   "price": 61975,
+   "costPct": 0.44,
+   "pop": 4,
+   "desc": "Resume Building Pro — Special Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_253",
+   "cat": "Edu",
+   "name": "Science Crash Course — Mini Large",
+   "price": 27275,
+   "costPct": 0.35,
+   "pop": 2,
+   "desc": "Science Crash Course — Mini Large — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_254",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — Limited Gift Pack",
+   "price": 65825,
+   "costPct": 0.58,
+   "pop": 5,
+   "desc": "Dance Class Monthly — Limited Gift Pack — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_255",
+   "cat": "Edu",
+   "name": "Astrology Basics — Mini Duo Combo",
+   "price": 85050,
+   "costPct": 0.48,
+   "pop": 8,
+   "desc": "Astrology Basics — Mini Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_256",
+   "cat": "Edu",
+   "name": "Robotics Kit Course — Bestseller Duo Combo",
+   "price": 40575,
+   "costPct": 0.51,
+   "pop": 3,
+   "desc": "Robotics Kit Course — Bestseller Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_257",
+   "cat": "Edu",
+   "name": "JEE Advanced Batch — Classic Set of 4",
+   "price": 99450,
+   "costPct": 0.33,
+   "pop": 3,
+   "desc": "JEE Advanced Batch — Classic Set of 4 — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_258",
+   "cat": "Edu",
+   "name": "Yoga Morning Batch — Special Standard",
+   "price": 38525,
+   "costPct": 0.45,
+   "pop": 9,
+   "desc": "Yoga Morning Batch — Special Standard — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_259",
+   "cat": "Edu",
+   "name": "Dance Class Monthly — New Launch Duo Combo",
+   "price": 26850,
+   "costPct": 0.44,
+   "pop": 9,
+   "desc": "Dance Class Monthly — New Launch Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+  {
+   "id": "pr2_ed_1_260",
+   "cat": "Edu",
+   "name": "Yoga Morning Batch — Premium Duo Combo",
+   "price": 90125,
+   "costPct": 0.55,
+   "pop": 4,
+   "desc": "Yoga Morning Batch — Premium Duo Combo — Edu category ka gehra catalog product. Daam, lagat aur lokpriyata ka santulan hi iski pehchan hai; season aur festival par iski mang badal jaati hai."
+  },
+]

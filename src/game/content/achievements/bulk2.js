@@ -1,0 +1,3203 @@
+// Bulk achievements (deep) — part 2: lambe lakshya, Legacy ki seedhi
+export const BULK_ACH_2 = [
+  {
+   "id": "ba2_1",
+   "name": "Net Worth Seedhi — Part 1",
+   "desc": "Net Worth ₹25,000 tak pahunchao",
+   "metric": "nw",
+   "target": 25000,
+   "reward": 500
+  },
+  {
+   "id": "ba2_3",
+   "name": "Net Worth Seedhi — Part 3",
+   "desc": "Net Worth ₹1,00,000 tak pahunchao",
+   "metric": "nw",
+   "target": 100000,
+   "reward": 2000
+  },
+  {
+   "id": "ba2_5",
+   "name": "Net Worth Seedhi — Part 5",
+   "desc": "Net Worth ₹5,00,000 tak pahunchao",
+   "metric": "nw",
+   "target": 500000,
+   "reward": 10000
+  },
+  {
+   "id": "ba2_7",
+   "name": "Net Worth Seedhi — Part 7",
+   "desc": "Net Worth ₹25,00,000 tak pahunchao",
+   "metric": "nw",
+   "target": 2500000,
+   "reward": 50000
+  },
+  {
+   "id": "ba2_9",
+   "name": "Net Worth Seedhi — Part 9",
+   "desc": "Net Worth ₹1,00,00,000 tak pahunchao",
+   "metric": "nw",
+   "target": 10000000,
+   "reward": 200000
+  },
+  {
+   "id": "ba2_11",
+   "name": "Net Worth Seedhi — Part 11",
+   "desc": "Net Worth ₹5,00,00,000 tak pahunchao",
+   "metric": "nw",
+   "target": 50000000,
+   "reward": 1000000
+  },
+  {
+   "id": "ba2_13",
+   "name": "Net Worth Seedhi — Part 13",
+   "desc": "Net Worth ₹25,00,00,000 tak pahunchao",
+   "metric": "nw",
+   "target": 250000000,
+   "reward": 5000000
+  },
+  {
+   "id": "ba2_15",
+   "name": "Net Worth Seedhi — Part 15",
+   "desc": "Net Worth ₹1,00,00,00,000 tak pahunchao",
+   "metric": "nw",
+   "target": 1000000000,
+   "reward": 20000000
+  },
+  {
+   "id": "ba2_17",
+   "name": "Net Worth Seedhi — Part 17",
+   "desc": "Net Worth ₹5,00,00,00,000 tak pahunchao",
+   "metric": "nw",
+   "target": 5000000000,
+   "reward": 100000000
+  },
+  {
+   "id": "ba2_19",
+   "name": "Net Worth Seedhi — Part 19",
+   "desc": "Net Worth ₹25,00,00,00,000 tak pahunchao",
+   "metric": "nw",
+   "target": 25000000000,
+   "reward": 500000000
+  },
+  {
+   "id": "ba2_21",
+   "name": "Dinon ki Race — Part 1",
+   "desc": "Day 10 tak khelo",
+   "metric": "day",
+   "target": 10,
+   "reward": 400
+  },
+  {
+   "id": "ba2_23",
+   "name": "Dinon ki Race — Part 3",
+   "desc": "Day 50 tak khelo",
+   "metric": "day",
+   "target": 50,
+   "reward": 2000
+  },
+  {
+   "id": "ba2_25",
+   "name": "Dinon ki Race — Part 5",
+   "desc": "Day 100 tak khelo",
+   "metric": "day",
+   "target": 100,
+   "reward": 4000
+  },
+  {
+   "id": "ba2_27",
+   "name": "Dinon ki Race — Part 7",
+   "desc": "Day 200 tak khelo",
+   "metric": "day",
+   "target": 200,
+   "reward": 8000
+  },
+  {
+   "id": "ba2_29",
+   "name": "Dinon ki Race — Part 9",
+   "desc": "Day 400 tak khelo",
+   "metric": "day",
+   "target": 400,
+   "reward": 16000
+  },
+  {
+   "id": "ba2_31",
+   "name": "Dinon ki Race — Part 11",
+   "desc": "Day 650 tak khelo",
+   "metric": "day",
+   "target": 650,
+   "reward": 26000
+  },
+  {
+   "id": "ba2_33",
+   "name": "Dinon ki Race — Part 13",
+   "desc": "Day 1000 tak khelo",
+   "metric": "day",
+   "target": 1000,
+   "reward": 40000
+  },
+  {
+   "id": "ba2_35",
+   "name": "Dinon ki Race — Part 15",
+   "desc": "Day 1500 tak khelo",
+   "metric": "day",
+   "target": 1500,
+   "reward": 60000
+  },
+  {
+   "id": "ba2_37",
+   "name": "Dinon ki Race — Part 17",
+   "desc": "Day 2500 tak khelo",
+   "metric": "day",
+   "target": 2500,
+   "reward": 100000
+  },
+  {
+   "id": "ba2_39",
+   "name": "Dinon ki Race — Part 19",
+   "desc": "Day 4000 tak khelo",
+   "metric": "day",
+   "target": 4000,
+   "reward": 160000
+  },
+  {
+   "id": "ba2_41",
+   "name": "Dukaano ka Samrajya — Part 1",
+   "desc": "1 businesses own karo",
+   "metric": "own",
+   "target": 1,
+   "reward": 800
+  },
+  {
+   "id": "ba2_43",
+   "name": "Dukaano ka Samrajya — Part 3",
+   "desc": "3 businesses own karo",
+   "metric": "own",
+   "target": 3,
+   "reward": 2400
+  },
+  {
+   "id": "ba2_45",
+   "name": "Dukaano ka Samrajya — Part 5",
+   "desc": "7 businesses own karo",
+   "metric": "own",
+   "target": 7,
+   "reward": 5600
+  },
+  {
+   "id": "ba2_47",
+   "name": "Dukaano ka Samrajya — Part 7",
+   "desc": "13 businesses own karo",
+   "metric": "own",
+   "target": 13,
+   "reward": 10400
+  },
+  {
+   "id": "ba2_49",
+   "name": "Dukaano ka Samrajya — Part 9",
+   "desc": "20 businesses own karo",
+   "metric": "own",
+   "target": 20,
+   "reward": 16000
+  },
+  {
+   "id": "ba2_51",
+   "name": "Dukaano ka Samrajya — Part 11",
+   "desc": "28 businesses own karo",
+   "metric": "own",
+   "target": 28,
+   "reward": 22400
+  },
+  {
+   "id": "ba2_53",
+   "name": "Dukaano ka Samrajya — Part 13",
+   "desc": "36 businesses own karo",
+   "metric": "own",
+   "target": 36,
+   "reward": 28800
+  },
+  {
+   "id": "ba2_55",
+   "name": "Dukaano ka Samrajya — Part 15",
+   "desc": "45 businesses own karo",
+   "metric": "own",
+   "target": 45,
+   "reward": 36000
+  },
+  {
+   "id": "ba2_57",
+   "name": "Dukaano ka Samrajya — Part 17",
+   "desc": "55 businesses own karo",
+   "metric": "own",
+   "target": 55,
+   "reward": 44000
+  },
+  {
+   "id": "ba2_59",
+   "name": "Dukaano ka Samrajya — Part 19",
+   "desc": "66 businesses own karo",
+   "metric": "own",
+   "target": 66,
+   "reward": 52800
+  },
+  {
+   "id": "ba2_61",
+   "name": "Level ka Junoon — Part 1",
+   "desc": "Player Level 2 bano",
+   "metric": "level",
+   "target": 2,
+   "reward": 3000
+  },
+  {
+   "id": "ba2_63",
+   "name": "Level ka Junoon — Part 3",
+   "desc": "Player Level 4 bano",
+   "metric": "level",
+   "target": 4,
+   "reward": 6000
+  },
+  {
+   "id": "ba2_65",
+   "name": "Level ka Junoon — Part 5",
+   "desc": "Player Level 6 bano",
+   "metric": "level",
+   "target": 6,
+   "reward": 9000
+  },
+  {
+   "id": "ba2_67",
+   "name": "Level ka Junoon — Part 7",
+   "desc": "Player Level 8 bano",
+   "metric": "level",
+   "target": 8,
+   "reward": 12000
+  },
+  {
+   "id": "ba2_69",
+   "name": "Level ka Junoon — Part 9",
+   "desc": "Player Level 10 bano",
+   "metric": "level",
+   "target": 10,
+   "reward": 15000
+  },
+  {
+   "id": "ba2_71",
+   "name": "Level ka Junoon — Part 11",
+   "desc": "Player Level 14 bano",
+   "metric": "level",
+   "target": 14,
+   "reward": 21000
+  },
+  {
+   "id": "ba2_73",
+   "name": "Level ka Junoon — Part 13",
+   "desc": "Player Level 18 bano",
+   "metric": "level",
+   "target": 18,
+   "reward": 27000
+  },
+  {
+   "id": "ba2_75",
+   "name": "Level ka Junoon — Part 15",
+   "desc": "Player Level 23 bano",
+   "metric": "level",
+   "target": 23,
+   "reward": 34500
+  },
+  {
+   "id": "ba2_77",
+   "name": "Level ka Junoon — Part 17",
+   "desc": "Player Level 30 bano",
+   "metric": "level",
+   "target": 30,
+   "reward": 45000
+  },
+  {
+   "id": "ba2_79",
+   "name": "Level ka Junoon — Part 19",
+   "desc": "Player Level 40 bano",
+   "metric": "level",
+   "target": 40,
+   "reward": 60000
+  },
+  {
+   "id": "ba3_1",
+   "name": "Seth ji Series — Vol 1",
+   "desc": "Day 30 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 30,
+   "reward": 525
+  },
+  {
+   "id": "ba3_2",
+   "name": "Mehnat ka Fal — Vol 2",
+   "desc": "4 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 4,
+   "reward": 550
+  },
+  {
+   "id": "ba3_3",
+   "name": "Hunar ka Khel — Vol 3",
+   "desc": "Level 5 ki unchai chhuo",
+   "metric": "level",
+   "target": 5,
+   "reward": 575
+  },
+  {
+   "id": "ba3_4",
+   "name": "Waqt ka Badshah — Vol 4",
+   "desc": "Net Worth ₹4,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 400000,
+   "reward": 600
+  },
+  {
+   "id": "ba3_5",
+   "name": "Paisa Ped — Vol 5",
+   "desc": "Day 150 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 150,
+   "reward": 625
+  },
+  {
+   "id": "ba3_6",
+   "name": "Sona Chandi — Vol 6",
+   "desc": "8 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 8,
+   "reward": 650
+  },
+  {
+   "id": "ba3_7",
+   "name": "Bazaar ka Raja — Vol 7",
+   "desc": "Level 9 ki unchai chhuo",
+   "metric": "level",
+   "target": 9,
+   "reward": 675
+  },
+  {
+   "id": "ba3_8",
+   "name": "Sheher ka Naam — Vol 8",
+   "desc": "Net Worth ₹8,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 800000,
+   "reward": 700
+  },
+  {
+   "id": "ba3_9",
+   "name": "Seth ji Series — Vol 9",
+   "desc": "Day 270 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 270,
+   "reward": 725
+  },
+  {
+   "id": "ba3_10",
+   "name": "Mehnat ka Fal — Vol 10",
+   "desc": "12 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 12,
+   "reward": 750
+  },
+  {
+   "id": "ba3_11",
+   "name": "Hunar ka Khel — Vol 11",
+   "desc": "Level 13 ki unchai chhuo",
+   "metric": "level",
+   "target": 13,
+   "reward": 775
+  },
+  {
+   "id": "ba3_12",
+   "name": "Waqt ka Badshah — Vol 12",
+   "desc": "Net Worth ₹12,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 1200000,
+   "reward": 800
+  },
+  {
+   "id": "ba3_13",
+   "name": "Paisa Ped — Vol 13",
+   "desc": "Day 390 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 390,
+   "reward": 825
+  },
+  {
+   "id": "ba3_14",
+   "name": "Sona Chandi — Vol 14",
+   "desc": "16 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 16,
+   "reward": 850
+  },
+  {
+   "id": "ba3_15",
+   "name": "Bazaar ka Raja — Vol 15",
+   "desc": "Level 17 ki unchai chhuo",
+   "metric": "level",
+   "target": 17,
+   "reward": 875
+  },
+  {
+   "id": "ba3_16",
+   "name": "Sheher ka Naam — Vol 16",
+   "desc": "Net Worth ₹16,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 1600000,
+   "reward": 900
+  },
+  {
+   "id": "ba3_17",
+   "name": "Seth ji Series — Vol 17",
+   "desc": "Day 510 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 510,
+   "reward": 925
+  },
+  {
+   "id": "ba3_18",
+   "name": "Mehnat ka Fal — Vol 18",
+   "desc": "20 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 20,
+   "reward": 950
+  },
+  {
+   "id": "ba3_19",
+   "name": "Hunar ka Khel — Vol 19",
+   "desc": "Level 21 ki unchai chhuo",
+   "metric": "level",
+   "target": 21,
+   "reward": 975
+  },
+  {
+   "id": "ba3_20",
+   "name": "Waqt ka Badshah — Vol 20",
+   "desc": "Net Worth ₹20,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 2000000,
+   "reward": 1000
+  },
+  {
+   "id": "ba3_21",
+   "name": "Paisa Ped — Vol 21",
+   "desc": "Day 630 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 630,
+   "reward": 1025
+  },
+  {
+   "id": "ba3_22",
+   "name": "Sona Chandi — Vol 22",
+   "desc": "24 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 24,
+   "reward": 1050
+  },
+  {
+   "id": "ba3_23",
+   "name": "Bazaar ka Raja — Vol 23",
+   "desc": "Level 25 ki unchai chhuo",
+   "metric": "level",
+   "target": 25,
+   "reward": 1075
+  },
+  {
+   "id": "ba3_24",
+   "name": "Sheher ka Naam — Vol 24",
+   "desc": "Net Worth ₹24,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 2400000,
+   "reward": 1100
+  },
+  {
+   "id": "ba3_25",
+   "name": "Seth ji Series — Vol 25",
+   "desc": "Day 750 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 750,
+   "reward": 1125
+  },
+  {
+   "id": "ba3_26",
+   "name": "Mehnat ka Fal — Vol 26",
+   "desc": "28 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 28,
+   "reward": 1150
+  },
+  {
+   "id": "ba3_27",
+   "name": "Hunar ka Khel — Vol 27",
+   "desc": "Level 29 ki unchai chhuo",
+   "metric": "level",
+   "target": 29,
+   "reward": 1175
+  },
+  {
+   "id": "ba3_28",
+   "name": "Waqt ka Badshah — Vol 28",
+   "desc": "Net Worth ₹28,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 2800000,
+   "reward": 1200
+  },
+  {
+   "id": "ba3_29",
+   "name": "Paisa Ped — Vol 29",
+   "desc": "Day 870 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 870,
+   "reward": 1225
+  },
+  {
+   "id": "ba3_30",
+   "name": "Sona Chandi — Vol 30",
+   "desc": "32 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 32,
+   "reward": 1250
+  },
+  {
+   "id": "ba3_31",
+   "name": "Bazaar ka Raja — Vol 31",
+   "desc": "Level 33 ki unchai chhuo",
+   "metric": "level",
+   "target": 33,
+   "reward": 1275
+  },
+  {
+   "id": "ba3_32",
+   "name": "Sheher ka Naam — Vol 32",
+   "desc": "Net Worth ₹32,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 3200000,
+   "reward": 1300
+  },
+  {
+   "id": "ba3_33",
+   "name": "Seth ji Series — Vol 33",
+   "desc": "Day 990 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 990,
+   "reward": 1325
+  },
+  {
+   "id": "ba3_34",
+   "name": "Mehnat ka Fal — Vol 34",
+   "desc": "36 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 36,
+   "reward": 1350
+  },
+  {
+   "id": "ba3_35",
+   "name": "Hunar ka Khel — Vol 35",
+   "desc": "Level 37 ki unchai chhuo",
+   "metric": "level",
+   "target": 37,
+   "reward": 1375
+  },
+  {
+   "id": "ba3_36",
+   "name": "Waqt ka Badshah — Vol 36",
+   "desc": "Net Worth ₹36,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 3600000,
+   "reward": 1400
+  },
+  {
+   "id": "ba3_37",
+   "name": "Paisa Ped — Vol 37",
+   "desc": "Day 1110 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 1110,
+   "reward": 1425
+  },
+  {
+   "id": "ba3_38",
+   "name": "Sona Chandi — Vol 38",
+   "desc": "40 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 40,
+   "reward": 1450
+  },
+  {
+   "id": "ba3_39",
+   "name": "Bazaar ka Raja — Vol 39",
+   "desc": "Level 41 ki unchai chhuo",
+   "metric": "level",
+   "target": 41,
+   "reward": 1475
+  },
+  {
+   "id": "ba3_40",
+   "name": "Sheher ka Naam — Vol 40",
+   "desc": "Net Worth ₹40,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 4000000,
+   "reward": 1500
+  },
+  {
+   "id": "ba3_41",
+   "name": "Seth ji Series — Vol 41",
+   "desc": "Day 1230 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 1230,
+   "reward": 1525
+  },
+  {
+   "id": "ba3_42",
+   "name": "Mehnat ka Fal — Vol 42",
+   "desc": "44 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 44,
+   "reward": 1550
+  },
+  {
+   "id": "ba3_43",
+   "name": "Hunar ka Khel — Vol 43",
+   "desc": "Level 45 ki unchai chhuo",
+   "metric": "level",
+   "target": 45,
+   "reward": 1575
+  },
+  {
+   "id": "ba3_44",
+   "name": "Waqt ka Badshah — Vol 44",
+   "desc": "Net Worth ₹44,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 4400000,
+   "reward": 1600
+  },
+  {
+   "id": "ba3_45",
+   "name": "Paisa Ped — Vol 45",
+   "desc": "Day 1350 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 1350,
+   "reward": 1625
+  },
+  {
+   "id": "ba3_46",
+   "name": "Sona Chandi — Vol 46",
+   "desc": "48 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 48,
+   "reward": 1650
+  },
+  {
+   "id": "ba3_47",
+   "name": "Bazaar ka Raja — Vol 47",
+   "desc": "Level 49 ki unchai chhuo",
+   "metric": "level",
+   "target": 49,
+   "reward": 1675
+  },
+  {
+   "id": "ba3_48",
+   "name": "Sheher ka Naam — Vol 48",
+   "desc": "Net Worth ₹48,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 4800000,
+   "reward": 1700
+  },
+  {
+   "id": "ba3_49",
+   "name": "Seth ji Series — Vol 49",
+   "desc": "Day 1470 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 1470,
+   "reward": 1725
+  },
+  {
+   "id": "ba3_50",
+   "name": "Mehnat ka Fal — Vol 50",
+   "desc": "52 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 52,
+   "reward": 1750
+  },
+  {
+   "id": "ba3_51",
+   "name": "Hunar ka Khel — Vol 51",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 1775
+  },
+  {
+   "id": "ba3_52",
+   "name": "Waqt ka Badshah — Vol 52",
+   "desc": "Net Worth ₹52,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 5200000,
+   "reward": 1800
+  },
+  {
+   "id": "ba3_53",
+   "name": "Paisa Ped — Vol 53",
+   "desc": "Day 1590 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 1590,
+   "reward": 1825
+  },
+  {
+   "id": "ba3_54",
+   "name": "Sona Chandi — Vol 54",
+   "desc": "56 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 56,
+   "reward": 1850
+  },
+  {
+   "id": "ba3_55",
+   "name": "Bazaar ka Raja — Vol 55",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 1875
+  },
+  {
+   "id": "ba3_56",
+   "name": "Sheher ka Naam — Vol 56",
+   "desc": "Net Worth ₹56,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 5600000,
+   "reward": 1900
+  },
+  {
+   "id": "ba3_57",
+   "name": "Seth ji Series — Vol 57",
+   "desc": "Day 1710 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 1710,
+   "reward": 1925
+  },
+  {
+   "id": "ba3_58",
+   "name": "Mehnat ka Fal — Vol 58",
+   "desc": "60 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 60,
+   "reward": 1950
+  },
+  {
+   "id": "ba3_59",
+   "name": "Hunar ka Khel — Vol 59",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 1975
+  },
+  {
+   "id": "ba3_60",
+   "name": "Waqt ka Badshah — Vol 60",
+   "desc": "Net Worth ₹60,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 6000000,
+   "reward": 2000
+  },
+  {
+   "id": "ba3_61",
+   "name": "Paisa Ped — Vol 61",
+   "desc": "Day 1830 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 1830,
+   "reward": 2025
+  },
+  {
+   "id": "ba3_62",
+   "name": "Sona Chandi — Vol 62",
+   "desc": "64 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 64,
+   "reward": 2050
+  },
+  {
+   "id": "ba3_63",
+   "name": "Bazaar ka Raja — Vol 63",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 2075
+  },
+  {
+   "id": "ba3_64",
+   "name": "Sheher ka Naam — Vol 64",
+   "desc": "Net Worth ₹64,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 6400000,
+   "reward": 2100
+  },
+  {
+   "id": "ba3_65",
+   "name": "Seth ji Series — Vol 65",
+   "desc": "Day 1950 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 1950,
+   "reward": 2125
+  },
+  {
+   "id": "ba3_66",
+   "name": "Mehnat ka Fal — Vol 66",
+   "desc": "68 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 68,
+   "reward": 2150
+  },
+  {
+   "id": "ba3_67",
+   "name": "Hunar ka Khel — Vol 67",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 2175
+  },
+  {
+   "id": "ba3_68",
+   "name": "Waqt ka Badshah — Vol 68",
+   "desc": "Net Worth ₹68,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 6800000,
+   "reward": 2200
+  },
+  {
+   "id": "ba3_69",
+   "name": "Paisa Ped — Vol 69",
+   "desc": "Day 2070 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 2070,
+   "reward": 2225
+  },
+  {
+   "id": "ba3_70",
+   "name": "Sona Chandi — Vol 70",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 2250
+  },
+  {
+   "id": "ba3_71",
+   "name": "Bazaar ka Raja — Vol 71",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 2275
+  },
+  {
+   "id": "ba3_72",
+   "name": "Sheher ka Naam — Vol 72",
+   "desc": "Net Worth ₹72,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 7200000,
+   "reward": 2300
+  },
+  {
+   "id": "ba3_73",
+   "name": "Seth ji Series — Vol 73",
+   "desc": "Day 2190 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 2190,
+   "reward": 2325
+  },
+  {
+   "id": "ba3_74",
+   "name": "Mehnat ka Fal — Vol 74",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 2350
+  },
+  {
+   "id": "ba3_75",
+   "name": "Hunar ka Khel — Vol 75",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 2375
+  },
+  {
+   "id": "ba3_76",
+   "name": "Waqt ka Badshah — Vol 76",
+   "desc": "Net Worth ₹76,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 7600000,
+   "reward": 2400
+  },
+  {
+   "id": "ba3_77",
+   "name": "Paisa Ped — Vol 77",
+   "desc": "Day 2310 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 2310,
+   "reward": 2425
+  },
+  {
+   "id": "ba3_78",
+   "name": "Sona Chandi — Vol 78",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 2450
+  },
+  {
+   "id": "ba3_79",
+   "name": "Bazaar ka Raja — Vol 79",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 2475
+  },
+  {
+   "id": "ba3_80",
+   "name": "Sheher ka Naam — Vol 80",
+   "desc": "Net Worth ₹80,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 8000000,
+   "reward": 2500
+  },
+  {
+   "id": "ba3_81",
+   "name": "Seth ji Series — Vol 81",
+   "desc": "Day 2430 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 2430,
+   "reward": 2525
+  },
+  {
+   "id": "ba3_82",
+   "name": "Mehnat ka Fal — Vol 82",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 2550
+  },
+  {
+   "id": "ba3_83",
+   "name": "Hunar ka Khel — Vol 83",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 2575
+  },
+  {
+   "id": "ba3_84",
+   "name": "Waqt ka Badshah — Vol 84",
+   "desc": "Net Worth ₹84,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 8400000,
+   "reward": 2600
+  },
+  {
+   "id": "ba3_85",
+   "name": "Paisa Ped — Vol 85",
+   "desc": "Day 2550 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 2550,
+   "reward": 2625
+  },
+  {
+   "id": "ba3_86",
+   "name": "Sona Chandi — Vol 86",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 2650
+  },
+  {
+   "id": "ba3_87",
+   "name": "Bazaar ka Raja — Vol 87",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 2675
+  },
+  {
+   "id": "ba3_88",
+   "name": "Sheher ka Naam — Vol 88",
+   "desc": "Net Worth ₹88,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 8800000,
+   "reward": 2700
+  },
+  {
+   "id": "ba3_89",
+   "name": "Seth ji Series — Vol 89",
+   "desc": "Day 2670 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 2670,
+   "reward": 2725
+  },
+  {
+   "id": "ba3_90",
+   "name": "Mehnat ka Fal — Vol 90",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 2750
+  },
+  {
+   "id": "ba3_91",
+   "name": "Hunar ka Khel — Vol 91",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 2775
+  },
+  {
+   "id": "ba3_92",
+   "name": "Waqt ka Badshah — Vol 92",
+   "desc": "Net Worth ₹92,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 9200000,
+   "reward": 2800
+  },
+  {
+   "id": "ba3_93",
+   "name": "Paisa Ped — Vol 93",
+   "desc": "Day 2790 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 2790,
+   "reward": 2825
+  },
+  {
+   "id": "ba3_94",
+   "name": "Sona Chandi — Vol 94",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 2850
+  },
+  {
+   "id": "ba3_95",
+   "name": "Bazaar ka Raja — Vol 95",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 2875
+  },
+  {
+   "id": "ba3_96",
+   "name": "Sheher ka Naam — Vol 96",
+   "desc": "Net Worth ₹96,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 9600000,
+   "reward": 2900
+  },
+  {
+   "id": "ba3_97",
+   "name": "Seth ji Series — Vol 97",
+   "desc": "Day 2910 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 2910,
+   "reward": 2925
+  },
+  {
+   "id": "ba3_98",
+   "name": "Mehnat ka Fal — Vol 98",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 2950
+  },
+  {
+   "id": "ba3_99",
+   "name": "Hunar ka Khel — Vol 99",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 2975
+  },
+  {
+   "id": "ba3_100",
+   "name": "Waqt ka Badshah — Vol 100",
+   "desc": "Net Worth ₹1,00,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 10000000,
+   "reward": 3000
+  },
+  {
+   "id": "ba3_101",
+   "name": "Paisa Ped — Vol 101",
+   "desc": "Day 3030 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 3030,
+   "reward": 3025
+  },
+  {
+   "id": "ba3_102",
+   "name": "Sona Chandi — Vol 102",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 3050
+  },
+  {
+   "id": "ba3_103",
+   "name": "Bazaar ka Raja — Vol 103",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 3075
+  },
+  {
+   "id": "ba3_104",
+   "name": "Sheher ka Naam — Vol 104",
+   "desc": "Net Worth ₹1,04,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 10400000,
+   "reward": 3100
+  },
+  {
+   "id": "ba3_105",
+   "name": "Seth ji Series — Vol 105",
+   "desc": "Day 3150 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 3150,
+   "reward": 3125
+  },
+  {
+   "id": "ba3_106",
+   "name": "Mehnat ka Fal — Vol 106",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 3150
+  },
+  {
+   "id": "ba3_107",
+   "name": "Hunar ka Khel — Vol 107",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 3175
+  },
+  {
+   "id": "ba3_108",
+   "name": "Waqt ka Badshah — Vol 108",
+   "desc": "Net Worth ₹1,08,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 10800000,
+   "reward": 3200
+  },
+  {
+   "id": "ba3_109",
+   "name": "Paisa Ped — Vol 109",
+   "desc": "Day 3270 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 3270,
+   "reward": 3225
+  },
+  {
+   "id": "ba3_110",
+   "name": "Sona Chandi — Vol 110",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 3250
+  },
+  {
+   "id": "ba3_111",
+   "name": "Bazaar ka Raja — Vol 111",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 3275
+  },
+  {
+   "id": "ba3_112",
+   "name": "Sheher ka Naam — Vol 112",
+   "desc": "Net Worth ₹1,12,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 11200000,
+   "reward": 3300
+  },
+  {
+   "id": "ba3_113",
+   "name": "Seth ji Series — Vol 113",
+   "desc": "Day 3390 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 3390,
+   "reward": 3325
+  },
+  {
+   "id": "ba3_114",
+   "name": "Mehnat ka Fal — Vol 114",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 3350
+  },
+  {
+   "id": "ba3_115",
+   "name": "Hunar ka Khel — Vol 115",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 3375
+  },
+  {
+   "id": "ba3_116",
+   "name": "Waqt ka Badshah — Vol 116",
+   "desc": "Net Worth ₹1,16,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 11600000,
+   "reward": 3400
+  },
+  {
+   "id": "ba3_117",
+   "name": "Paisa Ped — Vol 117",
+   "desc": "Day 3510 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 3510,
+   "reward": 3425
+  },
+  {
+   "id": "ba3_118",
+   "name": "Sona Chandi — Vol 118",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 3450
+  },
+  {
+   "id": "ba3_119",
+   "name": "Bazaar ka Raja — Vol 119",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 3475
+  },
+  {
+   "id": "ba3_120",
+   "name": "Sheher ka Naam — Vol 120",
+   "desc": "Net Worth ₹1,20,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 12000000,
+   "reward": 3500
+  },
+  {
+   "id": "ba3_121",
+   "name": "Seth ji Series — Vol 121",
+   "desc": "Day 3630 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 3630,
+   "reward": 3525
+  },
+  {
+   "id": "ba3_122",
+   "name": "Mehnat ka Fal — Vol 122",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 3550
+  },
+  {
+   "id": "ba3_123",
+   "name": "Hunar ka Khel — Vol 123",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 3575
+  },
+  {
+   "id": "ba3_124",
+   "name": "Waqt ka Badshah — Vol 124",
+   "desc": "Net Worth ₹1,24,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 12400000,
+   "reward": 3600
+  },
+  {
+   "id": "ba3_125",
+   "name": "Paisa Ped — Vol 125",
+   "desc": "Day 3750 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 3750,
+   "reward": 3625
+  },
+  {
+   "id": "ba3_126",
+   "name": "Sona Chandi — Vol 126",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 3650
+  },
+  {
+   "id": "ba3_127",
+   "name": "Bazaar ka Raja — Vol 127",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 3675
+  },
+  {
+   "id": "ba3_128",
+   "name": "Sheher ka Naam — Vol 128",
+   "desc": "Net Worth ₹1,28,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 12800000,
+   "reward": 3700
+  },
+  {
+   "id": "ba3_129",
+   "name": "Seth ji Series — Vol 129",
+   "desc": "Day 3870 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 3870,
+   "reward": 3725
+  },
+  {
+   "id": "ba3_130",
+   "name": "Mehnat ka Fal — Vol 130",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 3750
+  },
+  {
+   "id": "ba3_131",
+   "name": "Hunar ka Khel — Vol 131",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 3775
+  },
+  {
+   "id": "ba3_132",
+   "name": "Waqt ka Badshah — Vol 132",
+   "desc": "Net Worth ₹1,32,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 13200000,
+   "reward": 3800
+  },
+  {
+   "id": "ba3_133",
+   "name": "Paisa Ped — Vol 133",
+   "desc": "Day 3990 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 3990,
+   "reward": 3825
+  },
+  {
+   "id": "ba3_134",
+   "name": "Sona Chandi — Vol 134",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 3850
+  },
+  {
+   "id": "ba3_135",
+   "name": "Bazaar ka Raja — Vol 135",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 3875
+  },
+  {
+   "id": "ba3_136",
+   "name": "Sheher ka Naam — Vol 136",
+   "desc": "Net Worth ₹1,36,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 13600000,
+   "reward": 3900
+  },
+  {
+   "id": "ba3_137",
+   "name": "Seth ji Series — Vol 137",
+   "desc": "Day 4110 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 4110,
+   "reward": 3925
+  },
+  {
+   "id": "ba3_138",
+   "name": "Mehnat ka Fal — Vol 138",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 3950
+  },
+  {
+   "id": "ba3_139",
+   "name": "Hunar ka Khel — Vol 139",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 3975
+  },
+  {
+   "id": "ba3_140",
+   "name": "Waqt ka Badshah — Vol 140",
+   "desc": "Net Worth ₹1,40,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 14000000,
+   "reward": 4000
+  },
+  {
+   "id": "ba3_141",
+   "name": "Paisa Ped — Vol 141",
+   "desc": "Day 4230 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 4230,
+   "reward": 4025
+  },
+  {
+   "id": "ba3_142",
+   "name": "Sona Chandi — Vol 142",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 4050
+  },
+  {
+   "id": "ba3_143",
+   "name": "Bazaar ka Raja — Vol 143",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 4075
+  },
+  {
+   "id": "ba3_144",
+   "name": "Sheher ka Naam — Vol 144",
+   "desc": "Net Worth ₹1,44,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 14400000,
+   "reward": 4100
+  },
+  {
+   "id": "ba3_145",
+   "name": "Seth ji Series — Vol 145",
+   "desc": "Day 4350 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 4350,
+   "reward": 4125
+  },
+  {
+   "id": "ba3_146",
+   "name": "Mehnat ka Fal — Vol 146",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 4150
+  },
+  {
+   "id": "ba3_147",
+   "name": "Hunar ka Khel — Vol 147",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 4175
+  },
+  {
+   "id": "ba3_148",
+   "name": "Waqt ka Badshah — Vol 148",
+   "desc": "Net Worth ₹1,48,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 14800000,
+   "reward": 4200
+  },
+  {
+   "id": "ba3_149",
+   "name": "Paisa Ped — Vol 149",
+   "desc": "Day 4470 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 4470,
+   "reward": 4225
+  },
+  {
+   "id": "ba3_150",
+   "name": "Sona Chandi — Vol 150",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 4250
+  },
+  {
+   "id": "ba3_151",
+   "name": "Bazaar ka Raja — Vol 151",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 4275
+  },
+  {
+   "id": "ba3_152",
+   "name": "Sheher ka Naam — Vol 152",
+   "desc": "Net Worth ₹1,52,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 15200000,
+   "reward": 4300
+  },
+  {
+   "id": "ba3_153",
+   "name": "Seth ji Series — Vol 153",
+   "desc": "Day 4590 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 4590,
+   "reward": 4325
+  },
+  {
+   "id": "ba3_154",
+   "name": "Mehnat ka Fal — Vol 154",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 4350
+  },
+  {
+   "id": "ba3_155",
+   "name": "Hunar ka Khel — Vol 155",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 4375
+  },
+  {
+   "id": "ba3_156",
+   "name": "Waqt ka Badshah — Vol 156",
+   "desc": "Net Worth ₹1,56,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 15600000,
+   "reward": 4400
+  },
+  {
+   "id": "ba3_157",
+   "name": "Paisa Ped — Vol 157",
+   "desc": "Day 4710 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 4710,
+   "reward": 4425
+  },
+  {
+   "id": "ba3_158",
+   "name": "Sona Chandi — Vol 158",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 4450
+  },
+  {
+   "id": "ba3_159",
+   "name": "Bazaar ka Raja — Vol 159",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 4475
+  },
+  {
+   "id": "ba3_160",
+   "name": "Sheher ka Naam — Vol 160",
+   "desc": "Net Worth ₹1,60,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 16000000,
+   "reward": 4500
+  },
+  {
+   "id": "ba3_161",
+   "name": "Seth ji Series — Vol 161",
+   "desc": "Day 4830 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 4830,
+   "reward": 4525
+  },
+  {
+   "id": "ba3_162",
+   "name": "Mehnat ka Fal — Vol 162",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 4550
+  },
+  {
+   "id": "ba3_163",
+   "name": "Hunar ka Khel — Vol 163",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 4575
+  },
+  {
+   "id": "ba3_164",
+   "name": "Waqt ka Badshah — Vol 164",
+   "desc": "Net Worth ₹1,64,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 16400000,
+   "reward": 4600
+  },
+  {
+   "id": "ba3_165",
+   "name": "Paisa Ped — Vol 165",
+   "desc": "Day 4950 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 4950,
+   "reward": 4625
+  },
+  {
+   "id": "ba3_166",
+   "name": "Sona Chandi — Vol 166",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 4650
+  },
+  {
+   "id": "ba3_167",
+   "name": "Bazaar ka Raja — Vol 167",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 4675
+  },
+  {
+   "id": "ba3_168",
+   "name": "Sheher ka Naam — Vol 168",
+   "desc": "Net Worth ₹1,68,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 16800000,
+   "reward": 4700
+  },
+  {
+   "id": "ba3_169",
+   "name": "Seth ji Series — Vol 169",
+   "desc": "Day 5070 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 5070,
+   "reward": 4725
+  },
+  {
+   "id": "ba3_170",
+   "name": "Mehnat ka Fal — Vol 170",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 4750
+  },
+  {
+   "id": "ba3_171",
+   "name": "Hunar ka Khel — Vol 171",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 4775
+  },
+  {
+   "id": "ba3_172",
+   "name": "Waqt ka Badshah — Vol 172",
+   "desc": "Net Worth ₹1,72,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 17200000,
+   "reward": 4800
+  },
+  {
+   "id": "ba3_173",
+   "name": "Paisa Ped — Vol 173",
+   "desc": "Day 5190 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 5190,
+   "reward": 4825
+  },
+  {
+   "id": "ba3_174",
+   "name": "Sona Chandi — Vol 174",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 4850
+  },
+  {
+   "id": "ba3_175",
+   "name": "Bazaar ka Raja — Vol 175",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 4875
+  },
+  {
+   "id": "ba3_176",
+   "name": "Sheher ka Naam — Vol 176",
+   "desc": "Net Worth ₹1,76,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 17600000,
+   "reward": 4900
+  },
+  {
+   "id": "ba3_177",
+   "name": "Seth ji Series — Vol 177",
+   "desc": "Day 5310 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 5310,
+   "reward": 4925
+  },
+  {
+   "id": "ba3_178",
+   "name": "Mehnat ka Fal — Vol 178",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 4950
+  },
+  {
+   "id": "ba3_179",
+   "name": "Hunar ka Khel — Vol 179",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 4975
+  },
+  {
+   "id": "ba3_180",
+   "name": "Waqt ka Badshah — Vol 180",
+   "desc": "Net Worth ₹1,80,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 18000000,
+   "reward": 5000
+  },
+  {
+   "id": "ba3_181",
+   "name": "Paisa Ped — Vol 181",
+   "desc": "Day 5430 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 5430,
+   "reward": 5025
+  },
+  {
+   "id": "ba3_182",
+   "name": "Sona Chandi — Vol 182",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 5050
+  },
+  {
+   "id": "ba3_183",
+   "name": "Bazaar ka Raja — Vol 183",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 5075
+  },
+  {
+   "id": "ba3_184",
+   "name": "Sheher ka Naam — Vol 184",
+   "desc": "Net Worth ₹1,84,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 18400000,
+   "reward": 5100
+  },
+  {
+   "id": "ba3_185",
+   "name": "Seth ji Series — Vol 185",
+   "desc": "Day 5550 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 5550,
+   "reward": 5125
+  },
+  {
+   "id": "ba3_186",
+   "name": "Mehnat ka Fal — Vol 186",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 5150
+  },
+  {
+   "id": "ba3_187",
+   "name": "Hunar ka Khel — Vol 187",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 5175
+  },
+  {
+   "id": "ba3_188",
+   "name": "Waqt ka Badshah — Vol 188",
+   "desc": "Net Worth ₹1,88,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 18800000,
+   "reward": 5200
+  },
+  {
+   "id": "ba3_189",
+   "name": "Paisa Ped — Vol 189",
+   "desc": "Day 5670 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 5670,
+   "reward": 5225
+  },
+  {
+   "id": "ba3_190",
+   "name": "Sona Chandi — Vol 190",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 5250
+  },
+  {
+   "id": "ba3_191",
+   "name": "Bazaar ka Raja — Vol 191",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 5275
+  },
+  {
+   "id": "ba3_192",
+   "name": "Sheher ka Naam — Vol 192",
+   "desc": "Net Worth ₹1,92,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 19200000,
+   "reward": 5300
+  },
+  {
+   "id": "ba3_193",
+   "name": "Seth ji Series — Vol 193",
+   "desc": "Day 5790 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 5790,
+   "reward": 5325
+  },
+  {
+   "id": "ba3_194",
+   "name": "Mehnat ka Fal — Vol 194",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 5350
+  },
+  {
+   "id": "ba3_195",
+   "name": "Hunar ka Khel — Vol 195",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 5375
+  },
+  {
+   "id": "ba3_196",
+   "name": "Waqt ka Badshah — Vol 196",
+   "desc": "Net Worth ₹1,96,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 19600000,
+   "reward": 5400
+  },
+  {
+   "id": "ba3_197",
+   "name": "Paisa Ped — Vol 197",
+   "desc": "Day 5910 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 5910,
+   "reward": 5425
+  },
+  {
+   "id": "ba3_198",
+   "name": "Sona Chandi — Vol 198",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 5450
+  },
+  {
+   "id": "ba3_199",
+   "name": "Bazaar ka Raja — Vol 199",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 5475
+  },
+  {
+   "id": "ba3_200",
+   "name": "Sheher ka Naam — Vol 200",
+   "desc": "Net Worth ₹2,00,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 20000000,
+   "reward": 5500
+  },
+  {
+   "id": "ba3_201",
+   "name": "Seth ji Series — Vol 201",
+   "desc": "Day 6030 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 6030,
+   "reward": 5525
+  },
+  {
+   "id": "ba3_202",
+   "name": "Mehnat ka Fal — Vol 202",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 5550
+  },
+  {
+   "id": "ba3_203",
+   "name": "Hunar ka Khel — Vol 203",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 5575
+  },
+  {
+   "id": "ba3_204",
+   "name": "Waqt ka Badshah — Vol 204",
+   "desc": "Net Worth ₹2,04,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 20400000,
+   "reward": 5600
+  },
+  {
+   "id": "ba3_205",
+   "name": "Paisa Ped — Vol 205",
+   "desc": "Day 6150 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 6150,
+   "reward": 5625
+  },
+  {
+   "id": "ba3_206",
+   "name": "Sona Chandi — Vol 206",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 5650
+  },
+  {
+   "id": "ba3_207",
+   "name": "Bazaar ka Raja — Vol 207",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 5675
+  },
+  {
+   "id": "ba3_208",
+   "name": "Sheher ka Naam — Vol 208",
+   "desc": "Net Worth ₹2,08,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 20800000,
+   "reward": 5700
+  },
+  {
+   "id": "ba3_209",
+   "name": "Seth ji Series — Vol 209",
+   "desc": "Day 6270 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 6270,
+   "reward": 5725
+  },
+  {
+   "id": "ba3_210",
+   "name": "Mehnat ka Fal — Vol 210",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 5750
+  },
+  {
+   "id": "ba3_211",
+   "name": "Hunar ka Khel — Vol 211",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 5775
+  },
+  {
+   "id": "ba3_212",
+   "name": "Waqt ka Badshah — Vol 212",
+   "desc": "Net Worth ₹2,12,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 21200000,
+   "reward": 5800
+  },
+  {
+   "id": "ba3_213",
+   "name": "Paisa Ped — Vol 213",
+   "desc": "Day 6390 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 6390,
+   "reward": 5825
+  },
+  {
+   "id": "ba3_214",
+   "name": "Sona Chandi — Vol 214",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 5850
+  },
+  {
+   "id": "ba3_215",
+   "name": "Bazaar ka Raja — Vol 215",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 5875
+  },
+  {
+   "id": "ba3_216",
+   "name": "Sheher ka Naam — Vol 216",
+   "desc": "Net Worth ₹2,16,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 21600000,
+   "reward": 5900
+  },
+  {
+   "id": "ba3_217",
+   "name": "Seth ji Series — Vol 217",
+   "desc": "Day 6510 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 6510,
+   "reward": 5925
+  },
+  {
+   "id": "ba3_218",
+   "name": "Mehnat ka Fal — Vol 218",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 5950
+  },
+  {
+   "id": "ba3_219",
+   "name": "Hunar ka Khel — Vol 219",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 5975
+  },
+  {
+   "id": "ba3_220",
+   "name": "Waqt ka Badshah — Vol 220",
+   "desc": "Net Worth ₹2,20,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 22000000,
+   "reward": 6000
+  },
+  {
+   "id": "ba3_221",
+   "name": "Paisa Ped — Vol 221",
+   "desc": "Day 6630 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 6630,
+   "reward": 6025
+  },
+  {
+   "id": "ba3_222",
+   "name": "Sona Chandi — Vol 222",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 6050
+  },
+  {
+   "id": "ba3_223",
+   "name": "Bazaar ka Raja — Vol 223",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 6075
+  },
+  {
+   "id": "ba3_224",
+   "name": "Sheher ka Naam — Vol 224",
+   "desc": "Net Worth ₹2,24,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 22400000,
+   "reward": 6100
+  },
+  {
+   "id": "ba3_225",
+   "name": "Seth ji Series — Vol 225",
+   "desc": "Day 6750 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 6750,
+   "reward": 6125
+  },
+  {
+   "id": "ba3_226",
+   "name": "Mehnat ka Fal — Vol 226",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 6150
+  },
+  {
+   "id": "ba3_227",
+   "name": "Hunar ka Khel — Vol 227",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 6175
+  },
+  {
+   "id": "ba3_228",
+   "name": "Waqt ka Badshah — Vol 228",
+   "desc": "Net Worth ₹2,28,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 22800000,
+   "reward": 6200
+  },
+  {
+   "id": "ba3_229",
+   "name": "Paisa Ped — Vol 229",
+   "desc": "Day 6870 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 6870,
+   "reward": 6225
+  },
+  {
+   "id": "ba3_230",
+   "name": "Sona Chandi — Vol 230",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 6250
+  },
+  {
+   "id": "ba3_231",
+   "name": "Bazaar ka Raja — Vol 231",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 6275
+  },
+  {
+   "id": "ba3_232",
+   "name": "Sheher ka Naam — Vol 232",
+   "desc": "Net Worth ₹2,32,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 23200000,
+   "reward": 6300
+  },
+  {
+   "id": "ba3_233",
+   "name": "Seth ji Series — Vol 233",
+   "desc": "Day 6990 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 6990,
+   "reward": 6325
+  },
+  {
+   "id": "ba3_234",
+   "name": "Mehnat ka Fal — Vol 234",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 6350
+  },
+  {
+   "id": "ba3_235",
+   "name": "Hunar ka Khel — Vol 235",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 6375
+  },
+  {
+   "id": "ba3_236",
+   "name": "Waqt ka Badshah — Vol 236",
+   "desc": "Net Worth ₹2,36,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 23600000,
+   "reward": 6400
+  },
+  {
+   "id": "ba3_237",
+   "name": "Paisa Ped — Vol 237",
+   "desc": "Day 7110 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 7110,
+   "reward": 6425
+  },
+  {
+   "id": "ba3_238",
+   "name": "Sona Chandi — Vol 238",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 6450
+  },
+  {
+   "id": "ba3_239",
+   "name": "Bazaar ka Raja — Vol 239",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 6475
+  },
+  {
+   "id": "ba3_240",
+   "name": "Sheher ka Naam — Vol 240",
+   "desc": "Net Worth ₹2,40,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 24000000,
+   "reward": 6500
+  },
+  {
+   "id": "ba3_241",
+   "name": "Seth ji Series — Vol 241",
+   "desc": "Day 7230 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 7230,
+   "reward": 6525
+  },
+  {
+   "id": "ba3_242",
+   "name": "Mehnat ka Fal — Vol 242",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 6550
+  },
+  {
+   "id": "ba3_243",
+   "name": "Hunar ka Khel — Vol 243",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 6575
+  },
+  {
+   "id": "ba3_244",
+   "name": "Waqt ka Badshah — Vol 244",
+   "desc": "Net Worth ₹2,44,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 24400000,
+   "reward": 6600
+  },
+  {
+   "id": "ba3_245",
+   "name": "Paisa Ped — Vol 245",
+   "desc": "Day 7350 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 7350,
+   "reward": 6625
+  },
+  {
+   "id": "ba3_246",
+   "name": "Sona Chandi — Vol 246",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 6650
+  },
+  {
+   "id": "ba3_247",
+   "name": "Bazaar ka Raja — Vol 247",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 6675
+  },
+  {
+   "id": "ba3_248",
+   "name": "Sheher ka Naam — Vol 248",
+   "desc": "Net Worth ₹2,48,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 24800000,
+   "reward": 6700
+  },
+  {
+   "id": "ba3_249",
+   "name": "Seth ji Series — Vol 249",
+   "desc": "Day 7470 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 7470,
+   "reward": 6725
+  },
+  {
+   "id": "ba3_250",
+   "name": "Mehnat ka Fal — Vol 250",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 6750
+  },
+  {
+   "id": "ba3_251",
+   "name": "Hunar ka Khel — Vol 251",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 6775
+  },
+  {
+   "id": "ba3_252",
+   "name": "Waqt ka Badshah — Vol 252",
+   "desc": "Net Worth ₹2,52,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 25200000,
+   "reward": 6800
+  },
+  {
+   "id": "ba3_253",
+   "name": "Paisa Ped — Vol 253",
+   "desc": "Day 7590 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 7590,
+   "reward": 6825
+  },
+  {
+   "id": "ba3_254",
+   "name": "Sona Chandi — Vol 254",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 6850
+  },
+  {
+   "id": "ba3_255",
+   "name": "Bazaar ka Raja — Vol 255",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 6875
+  },
+  {
+   "id": "ba3_256",
+   "name": "Sheher ka Naam — Vol 256",
+   "desc": "Net Worth ₹2,56,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 25600000,
+   "reward": 6900
+  },
+  {
+   "id": "ba3_257",
+   "name": "Seth ji Series — Vol 257",
+   "desc": "Day 7710 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 7710,
+   "reward": 6925
+  },
+  {
+   "id": "ba3_258",
+   "name": "Mehnat ka Fal — Vol 258",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 6950
+  },
+  {
+   "id": "ba3_259",
+   "name": "Hunar ka Khel — Vol 259",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 6975
+  },
+  {
+   "id": "ba3_260",
+   "name": "Waqt ka Badshah — Vol 260",
+   "desc": "Net Worth ₹2,60,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 26000000,
+   "reward": 7000
+  },
+  {
+   "id": "ba3_261",
+   "name": "Paisa Ped — Vol 261",
+   "desc": "Day 7830 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 7830,
+   "reward": 7025
+  },
+  {
+   "id": "ba3_262",
+   "name": "Sona Chandi — Vol 262",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 7050
+  },
+  {
+   "id": "ba3_263",
+   "name": "Bazaar ka Raja — Vol 263",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 7075
+  },
+  {
+   "id": "ba3_264",
+   "name": "Sheher ka Naam — Vol 264",
+   "desc": "Net Worth ₹2,64,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 26400000,
+   "reward": 7100
+  },
+  {
+   "id": "ba3_265",
+   "name": "Seth ji Series — Vol 265",
+   "desc": "Day 7950 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 7950,
+   "reward": 7125
+  },
+  {
+   "id": "ba3_266",
+   "name": "Mehnat ka Fal — Vol 266",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 7150
+  },
+  {
+   "id": "ba3_267",
+   "name": "Hunar ka Khel — Vol 267",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 7175
+  },
+  {
+   "id": "ba3_268",
+   "name": "Waqt ka Badshah — Vol 268",
+   "desc": "Net Worth ₹2,68,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 26800000,
+   "reward": 7200
+  },
+  {
+   "id": "ba3_269",
+   "name": "Paisa Ped — Vol 269",
+   "desc": "Day 8070 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 8070,
+   "reward": 7225
+  },
+  {
+   "id": "ba3_270",
+   "name": "Sona Chandi — Vol 270",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 7250
+  },
+  {
+   "id": "ba3_271",
+   "name": "Bazaar ka Raja — Vol 271",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 7275
+  },
+  {
+   "id": "ba3_272",
+   "name": "Sheher ka Naam — Vol 272",
+   "desc": "Net Worth ₹2,72,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 27200000,
+   "reward": 7300
+  },
+  {
+   "id": "ba3_273",
+   "name": "Seth ji Series — Vol 273",
+   "desc": "Day 8190 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 8190,
+   "reward": 7325
+  },
+  {
+   "id": "ba3_274",
+   "name": "Mehnat ka Fal — Vol 274",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 7350
+  },
+  {
+   "id": "ba3_275",
+   "name": "Hunar ka Khel — Vol 275",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 7375
+  },
+  {
+   "id": "ba3_276",
+   "name": "Waqt ka Badshah — Vol 276",
+   "desc": "Net Worth ₹2,76,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 27600000,
+   "reward": 7400
+  },
+  {
+   "id": "ba3_277",
+   "name": "Paisa Ped — Vol 277",
+   "desc": "Day 8310 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 8310,
+   "reward": 7425
+  },
+  {
+   "id": "ba3_278",
+   "name": "Sona Chandi — Vol 278",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 7450
+  },
+  {
+   "id": "ba3_279",
+   "name": "Bazaar ka Raja — Vol 279",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 7475
+  },
+  {
+   "id": "ba3_280",
+   "name": "Sheher ka Naam — Vol 280",
+   "desc": "Net Worth ₹2,80,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 28000000,
+   "reward": 7500
+  },
+  {
+   "id": "ba3_281",
+   "name": "Seth ji Series — Vol 281",
+   "desc": "Day 8430 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 8430,
+   "reward": 7525
+  },
+  {
+   "id": "ba3_282",
+   "name": "Mehnat ka Fal — Vol 282",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 7550
+  },
+  {
+   "id": "ba3_283",
+   "name": "Hunar ka Khel — Vol 283",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 7575
+  },
+  {
+   "id": "ba3_284",
+   "name": "Waqt ka Badshah — Vol 284",
+   "desc": "Net Worth ₹2,84,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 28400000,
+   "reward": 7600
+  },
+  {
+   "id": "ba3_285",
+   "name": "Paisa Ped — Vol 285",
+   "desc": "Day 8550 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 8550,
+   "reward": 7625
+  },
+  {
+   "id": "ba3_286",
+   "name": "Sona Chandi — Vol 286",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 7650
+  },
+  {
+   "id": "ba3_287",
+   "name": "Bazaar ka Raja — Vol 287",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 7675
+  },
+  {
+   "id": "ba3_288",
+   "name": "Sheher ka Naam — Vol 288",
+   "desc": "Net Worth ₹2,88,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 28800000,
+   "reward": 7700
+  },
+  {
+   "id": "ba3_289",
+   "name": "Seth ji Series — Vol 289",
+   "desc": "Day 8670 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 8670,
+   "reward": 7725
+  },
+  {
+   "id": "ba3_290",
+   "name": "Mehnat ka Fal — Vol 290",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 7750
+  },
+  {
+   "id": "ba3_291",
+   "name": "Hunar ka Khel — Vol 291",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 7775
+  },
+  {
+   "id": "ba3_292",
+   "name": "Waqt ka Badshah — Vol 292",
+   "desc": "Net Worth ₹2,92,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 29200000,
+   "reward": 7800
+  },
+  {
+   "id": "ba3_293",
+   "name": "Paisa Ped — Vol 293",
+   "desc": "Day 8790 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 8790,
+   "reward": 7825
+  },
+  {
+   "id": "ba3_294",
+   "name": "Sona Chandi — Vol 294",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 7850
+  },
+  {
+   "id": "ba3_295",
+   "name": "Bazaar ka Raja — Vol 295",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 7875
+  },
+  {
+   "id": "ba3_296",
+   "name": "Sheher ka Naam — Vol 296",
+   "desc": "Net Worth ₹2,96,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 29600000,
+   "reward": 7900
+  },
+  {
+   "id": "ba3_297",
+   "name": "Seth ji Series — Vol 297",
+   "desc": "Day 8910 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 8910,
+   "reward": 7925
+  },
+  {
+   "id": "ba3_298",
+   "name": "Mehnat ka Fal — Vol 298",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 7950
+  },
+  {
+   "id": "ba3_299",
+   "name": "Hunar ka Khel — Vol 299",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 7975
+  },
+  {
+   "id": "ba3_300",
+   "name": "Waqt ka Badshah — Vol 300",
+   "desc": "Net Worth ₹3,00,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 30000000,
+   "reward": 8000
+  },
+  {
+   "id": "ba3_301",
+   "name": "Paisa Ped — Vol 301",
+   "desc": "Day 9030 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 9030,
+   "reward": 8025
+  },
+  {
+   "id": "ba3_302",
+   "name": "Sona Chandi — Vol 302",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 8050
+  },
+  {
+   "id": "ba3_303",
+   "name": "Bazaar ka Raja — Vol 303",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 8075
+  },
+  {
+   "id": "ba3_304",
+   "name": "Sheher ka Naam — Vol 304",
+   "desc": "Net Worth ₹3,04,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 30400000,
+   "reward": 8100
+  },
+  {
+   "id": "ba3_305",
+   "name": "Seth ji Series — Vol 305",
+   "desc": "Day 9150 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 9150,
+   "reward": 8125
+  },
+  {
+   "id": "ba3_306",
+   "name": "Mehnat ka Fal — Vol 306",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 8150
+  },
+  {
+   "id": "ba3_307",
+   "name": "Hunar ka Khel — Vol 307",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 8175
+  },
+  {
+   "id": "ba3_308",
+   "name": "Waqt ka Badshah — Vol 308",
+   "desc": "Net Worth ₹3,08,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 30800000,
+   "reward": 8200
+  },
+  {
+   "id": "ba3_309",
+   "name": "Paisa Ped — Vol 309",
+   "desc": "Day 9270 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 9270,
+   "reward": 8225
+  },
+  {
+   "id": "ba3_310",
+   "name": "Sona Chandi — Vol 310",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 8250
+  },
+  {
+   "id": "ba3_311",
+   "name": "Bazaar ka Raja — Vol 311",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 8275
+  },
+  {
+   "id": "ba3_312",
+   "name": "Sheher ka Naam — Vol 312",
+   "desc": "Net Worth ₹3,12,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 31200000,
+   "reward": 8300
+  },
+  {
+   "id": "ba3_313",
+   "name": "Seth ji Series — Vol 313",
+   "desc": "Day 9390 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 9390,
+   "reward": 8325
+  },
+  {
+   "id": "ba3_314",
+   "name": "Mehnat ka Fal — Vol 314",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 8350
+  },
+  {
+   "id": "ba3_315",
+   "name": "Hunar ka Khel — Vol 315",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 8375
+  },
+  {
+   "id": "ba3_316",
+   "name": "Waqt ka Badshah — Vol 316",
+   "desc": "Net Worth ₹3,16,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 31600000,
+   "reward": 8400
+  },
+  {
+   "id": "ba3_317",
+   "name": "Paisa Ped — Vol 317",
+   "desc": "Day 9510 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 9510,
+   "reward": 8425
+  },
+  {
+   "id": "ba3_318",
+   "name": "Sona Chandi — Vol 318",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 8450
+  },
+  {
+   "id": "ba3_319",
+   "name": "Bazaar ka Raja — Vol 319",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 8475
+  },
+  {
+   "id": "ba3_320",
+   "name": "Sheher ka Naam — Vol 320",
+   "desc": "Net Worth ₹3,20,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 32000000,
+   "reward": 8500
+  },
+  {
+   "id": "ba3_321",
+   "name": "Seth ji Series — Vol 321",
+   "desc": "Day 9630 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 9630,
+   "reward": 8525
+  },
+  {
+   "id": "ba3_322",
+   "name": "Mehnat ka Fal — Vol 322",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 8550
+  },
+  {
+   "id": "ba3_323",
+   "name": "Hunar ka Khel — Vol 323",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 8575
+  },
+  {
+   "id": "ba3_324",
+   "name": "Waqt ka Badshah — Vol 324",
+   "desc": "Net Worth ₹3,24,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 32400000,
+   "reward": 8600
+  },
+  {
+   "id": "ba3_325",
+   "name": "Paisa Ped — Vol 325",
+   "desc": "Day 9750 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 9750,
+   "reward": 8625
+  },
+  {
+   "id": "ba3_326",
+   "name": "Sona Chandi — Vol 326",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 8650
+  },
+  {
+   "id": "ba3_327",
+   "name": "Bazaar ka Raja — Vol 327",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 8675
+  },
+  {
+   "id": "ba3_328",
+   "name": "Sheher ka Naam — Vol 328",
+   "desc": "Net Worth ₹3,28,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 32800000,
+   "reward": 8700
+  },
+  {
+   "id": "ba3_329",
+   "name": "Seth ji Series — Vol 329",
+   "desc": "Day 9870 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 9870,
+   "reward": 8725
+  },
+  {
+   "id": "ba3_330",
+   "name": "Mehnat ka Fal — Vol 330",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 8750
+  },
+  {
+   "id": "ba3_331",
+   "name": "Hunar ka Khel — Vol 331",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 8775
+  },
+  {
+   "id": "ba3_332",
+   "name": "Waqt ka Badshah — Vol 332",
+   "desc": "Net Worth ₹3,32,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 33200000,
+   "reward": 8800
+  },
+  {
+   "id": "ba3_333",
+   "name": "Paisa Ped — Vol 333",
+   "desc": "Day 9990 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 9990,
+   "reward": 8825
+  },
+  {
+   "id": "ba3_334",
+   "name": "Sona Chandi — Vol 334",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 8850
+  },
+  {
+   "id": "ba3_335",
+   "name": "Bazaar ka Raja — Vol 335",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 8875
+  },
+  {
+   "id": "ba3_336",
+   "name": "Sheher ka Naam — Vol 336",
+   "desc": "Net Worth ₹3,36,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 33600000,
+   "reward": 8900
+  },
+  {
+   "id": "ba3_337",
+   "name": "Seth ji Series — Vol 337",
+   "desc": "Day 10110 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 10110,
+   "reward": 8925
+  },
+  {
+   "id": "ba3_338",
+   "name": "Mehnat ka Fal — Vol 338",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 8950
+  },
+  {
+   "id": "ba3_339",
+   "name": "Hunar ka Khel — Vol 339",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 8975
+  },
+  {
+   "id": "ba3_340",
+   "name": "Waqt ka Badshah — Vol 340",
+   "desc": "Net Worth ₹3,40,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 34000000,
+   "reward": 9000
+  },
+  {
+   "id": "ba3_341",
+   "name": "Paisa Ped — Vol 341",
+   "desc": "Day 10230 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 10230,
+   "reward": 9025
+  },
+  {
+   "id": "ba3_342",
+   "name": "Sona Chandi — Vol 342",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 9050
+  },
+  {
+   "id": "ba3_343",
+   "name": "Bazaar ka Raja — Vol 343",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 9075
+  },
+  {
+   "id": "ba3_344",
+   "name": "Sheher ka Naam — Vol 344",
+   "desc": "Net Worth ₹3,44,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 34400000,
+   "reward": 9100
+  },
+  {
+   "id": "ba3_345",
+   "name": "Seth ji Series — Vol 345",
+   "desc": "Day 10350 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 10350,
+   "reward": 9125
+  },
+  {
+   "id": "ba3_346",
+   "name": "Mehnat ka Fal — Vol 346",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 9150
+  },
+  {
+   "id": "ba3_347",
+   "name": "Hunar ka Khel — Vol 347",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 9175
+  },
+  {
+   "id": "ba3_348",
+   "name": "Waqt ka Badshah — Vol 348",
+   "desc": "Net Worth ₹3,48,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 34800000,
+   "reward": 9200
+  },
+  {
+   "id": "ba3_349",
+   "name": "Paisa Ped — Vol 349",
+   "desc": "Day 10470 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 10470,
+   "reward": 9225
+  },
+  {
+   "id": "ba3_350",
+   "name": "Sona Chandi — Vol 350",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 9250
+  },
+  {
+   "id": "ba3_351",
+   "name": "Bazaar ka Raja — Vol 351",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 9275
+  },
+  {
+   "id": "ba3_352",
+   "name": "Sheher ka Naam — Vol 352",
+   "desc": "Net Worth ₹3,52,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 35200000,
+   "reward": 9300
+  },
+  {
+   "id": "ba3_353",
+   "name": "Seth ji Series — Vol 353",
+   "desc": "Day 10590 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 10590,
+   "reward": 9325
+  },
+  {
+   "id": "ba3_354",
+   "name": "Mehnat ka Fal — Vol 354",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 9350
+  },
+  {
+   "id": "ba3_355",
+   "name": "Hunar ka Khel — Vol 355",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 9375
+  },
+  {
+   "id": "ba3_356",
+   "name": "Waqt ka Badshah — Vol 356",
+   "desc": "Net Worth ₹3,56,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 35600000,
+   "reward": 9400
+  },
+  {
+   "id": "ba3_357",
+   "name": "Paisa Ped — Vol 357",
+   "desc": "Day 10710 ka sangharsh paar karo",
+   "metric": "day",
+   "target": 10710,
+   "reward": 9425
+  },
+  {
+   "id": "ba3_358",
+   "name": "Sona Chandi — Vol 358",
+   "desc": "72 businesses ka jaal bichhao",
+   "metric": "own",
+   "target": 72,
+   "reward": 9450
+  },
+  {
+   "id": "ba3_359",
+   "name": "Bazaar ka Raja — Vol 359",
+   "desc": "Level 50 ki unchai chhuo",
+   "metric": "level",
+   "target": 50,
+   "reward": 9475
+  },
+  {
+   "id": "ba3_360",
+   "name": "Sheher ka Naam — Vol 360",
+   "desc": "Net Worth ₹3,60,00,000 ka naya padav",
+   "metric": "nw",
+   "target": 36000000,
+   "reward": 9500
+  },
+]

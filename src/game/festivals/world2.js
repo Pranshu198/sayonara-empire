@@ -1,0 +1,1351 @@
+// Global Festivals — World (top-up): national days aur sheher ke bade utsav
+export const FESTIVALS_WORLD_2 = [
+  {
+   "id": "fv2_nat_united_states",
+   "name": "National Day (United States)",
+   "scope": "country",
+   "region": "United States",
+   "start": 297,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_canada",
+   "name": "National Day (Canada)",
+   "scope": "country",
+   "region": "Canada",
+   "start": 188,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_mexico",
+   "name": "National Day (Mexico)",
+   "scope": "country",
+   "region": "Mexico",
+   "start": 263,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_brazil",
+   "name": "National Day (Brazil)",
+   "scope": "country",
+   "region": "Brazil",
+   "start": 202,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_argentina",
+   "name": "National Day (Argentina)",
+   "scope": "country",
+   "region": "Argentina",
+   "start": 301,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_chile",
+   "name": "National Day (Chile)",
+   "scope": "country",
+   "region": "Chile",
+   "start": 135,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_colombia",
+   "name": "National Day (Colombia)",
+   "scope": "country",
+   "region": "Colombia",
+   "start": 126,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_peru",
+   "name": "National Day (Peru)",
+   "scope": "country",
+   "region": "Peru",
+   "start": 302,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_united_kingdom",
+   "name": "National Day (United Kingdom)",
+   "scope": "country",
+   "region": "United Kingdom",
+   "start": 112,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_ireland",
+   "name": "National Day (Ireland)",
+   "scope": "country",
+   "region": "Ireland",
+   "start": 113,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_france",
+   "name": "National Day (France)",
+   "scope": "country",
+   "region": "France",
+   "start": 181,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_germany",
+   "name": "National Day (Germany)",
+   "scope": "country",
+   "region": "Germany",
+   "start": 73,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_spain",
+   "name": "National Day (Spain)",
+   "scope": "country",
+   "region": "Spain",
+   "start": 127,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_italy",
+   "name": "National Day (Italy)",
+   "scope": "country",
+   "region": "Italy",
+   "start": 285,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_netherlands",
+   "name": "National Day (Netherlands)",
+   "scope": "country",
+   "region": "Netherlands",
+   "start": 74,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_switzerland",
+   "name": "National Day (Switzerland)",
+   "scope": "country",
+   "region": "Switzerland",
+   "start": 105,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_austria",
+   "name": "National Day (Austria)",
+   "scope": "country",
+   "region": "Austria",
+   "start": 19,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_portugal",
+   "name": "National Day (Portugal)",
+   "scope": "country",
+   "region": "Portugal",
+   "start": 76,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_greece",
+   "name": "National Day (Greece)",
+   "scope": "country",
+   "region": "Greece",
+   "start": 147,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_poland",
+   "name": "National Day (Poland)",
+   "scope": "country",
+   "region": "Poland",
+   "start": 76,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_sweden",
+   "name": "National Day (Sweden)",
+   "scope": "country",
+   "region": "Sweden",
+   "start": 174,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_norway",
+   "name": "National Day (Norway)",
+   "scope": "country",
+   "region": "Norway",
+   "start": 80,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_denmark",
+   "name": "National Day (Denmark)",
+   "scope": "country",
+   "region": "Denmark",
+   "start": 56,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_finland",
+   "name": "National Day (Finland)",
+   "scope": "country",
+   "region": "Finland",
+   "start": 200,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_turkey",
+   "name": "National Day (Turkey)",
+   "scope": "country",
+   "region": "Turkey",
+   "start": 204,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_russia",
+   "name": "National Day (Russia)",
+   "scope": "country",
+   "region": "Russia",
+   "start": 281,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_united_arab_emirates",
+   "name": "National Day (United Arab Emirates)",
+   "scope": "country",
+   "region": "United Arab Emirates",
+   "start": 121,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_saudi_arabia",
+   "name": "National Day (Saudi Arabia)",
+   "scope": "country",
+   "region": "Saudi Arabia",
+   "start": 100,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_qatar",
+   "name": "National Day (Qatar)",
+   "scope": "country",
+   "region": "Qatar",
+   "start": 35,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_israel",
+   "name": "National Day (Israel)",
+   "scope": "country",
+   "region": "Israel",
+   "start": 78,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_egypt",
+   "name": "National Day (Egypt)",
+   "scope": "country",
+   "region": "Egypt",
+   "start": 201,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_south_africa",
+   "name": "National Day (South Africa)",
+   "scope": "country",
+   "region": "South Africa",
+   "start": 195,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_nigeria",
+   "name": "National Day (Nigeria)",
+   "scope": "country",
+   "region": "Nigeria",
+   "start": 143,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_kenya",
+   "name": "National Day (Kenya)",
+   "scope": "country",
+   "region": "Kenya",
+   "start": 34,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_morocco",
+   "name": "National Day (Morocco)",
+   "scope": "country",
+   "region": "Morocco",
+   "start": 222,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_china",
+   "name": "National Day (China)",
+   "scope": "country",
+   "region": "China",
+   "start": 193,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_japan",
+   "name": "National Day (Japan)",
+   "scope": "country",
+   "region": "Japan",
+   "start": 140,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_south_korea",
+   "name": "National Day (South Korea)",
+   "scope": "country",
+   "region": "South Korea",
+   "start": 261,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_singapore",
+   "name": "National Day (Singapore)",
+   "scope": "country",
+   "region": "Singapore",
+   "start": 166,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_malaysia",
+   "name": "National Day (Malaysia)",
+   "scope": "country",
+   "region": "Malaysia",
+   "start": 137,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_thailand",
+   "name": "National Day (Thailand)",
+   "scope": "country",
+   "region": "Thailand",
+   "start": 65,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_vietnam",
+   "name": "National Day (Vietnam)",
+   "scope": "country",
+   "region": "Vietnam",
+   "start": 134,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_indonesia",
+   "name": "National Day (Indonesia)",
+   "scope": "country",
+   "region": "Indonesia",
+   "start": 242,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_philippines",
+   "name": "National Day (Philippines)",
+   "scope": "country",
+   "region": "Philippines",
+   "start": 147,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_pakistan",
+   "name": "National Day (Pakistan)",
+   "scope": "country",
+   "region": "Pakistan",
+   "start": 267,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_bangladesh",
+   "name": "National Day (Bangladesh)",
+   "scope": "country",
+   "region": "Bangladesh",
+   "start": 201,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_sri_lanka",
+   "name": "National Day (Sri Lanka)",
+   "scope": "country",
+   "region": "Sri Lanka",
+   "start": 51,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_nepal",
+   "name": "National Day (Nepal)",
+   "scope": "country",
+   "region": "Nepal",
+   "start": 86,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_australia",
+   "name": "National Day (Australia)",
+   "scope": "country",
+   "region": "Australia",
+   "start": 254,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_nat_new_zealand",
+   "name": "National Day (New Zealand)",
+   "scope": "country",
+   "region": "New Zealand",
+   "start": 23,
+   "days": 1,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.3
+   },
+   "theme": "Rashtriya garv aur chhutti",
+   "special": [
+    "National Day Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_mardi_gras",
+   "name": "Mardi Gras",
+   "scope": "country",
+   "region": "United States",
+   "start": 47,
+   "days": 2,
+   "cats": {
+    "Food": 1.4,
+    "Service": 1.35
+   },
+   "theme": "New Orleans ka carnival",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_calgary_stampede",
+   "name": "Calgary Stampede",
+   "scope": "country",
+   "region": "Canada",
+   "start": 184,
+   "days": 10,
+   "cats": {
+    "Service": 1.35,
+    "Food": 1.3
+   },
+   "theme": "Rodeo mela",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_venice_carnival",
+   "name": "Venice Carnival",
+   "scope": "country",
+   "region": "Italy",
+   "start": 44,
+   "days": 10,
+   "cats": {
+    "Retail": 1.35,
+    "Service": 1.4
+   },
+   "theme": "Mask aur gondola",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_christmas_markets_germany",
+   "name": "Christmas Markets (Germany)",
+   "scope": "country",
+   "region": "Germany",
+   "start": 327,
+   "days": 28,
+   "cats": {
+    "Retail": 1.45,
+    "Food": 1.4
+   },
+   "theme": "Weihnachtsmarkt ronak",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_vivid_sydney",
+   "name": "Vivid Sydney",
+   "scope": "country",
+   "region": "Australia",
+   "start": 143,
+   "days": 18,
+   "cats": {
+    "Service": 1.4,
+    "Food": 1.3
+   },
+   "theme": "Roshni ka utsav",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_lantern_festival",
+   "name": "Lantern Festival",
+   "scope": "country",
+   "region": "China",
+   "start": 42,
+   "days": 1,
+   "cats": {
+    "Food": 1.35,
+    "Retail": 1.3
+   },
+   "theme": "Lalten aur tangyuan",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_diwali_uk_diaspora",
+   "name": "Diwali (UK Diaspora)",
+   "scope": "country",
+   "region": "United Kingdom",
+   "start": 301,
+   "days": 2,
+   "cats": {
+    "Food": 1.35,
+    "Retail": 1.4
+   },
+   "theme": "Leicester ki mashhoor diwali",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_diwali_usa_diaspora",
+   "name": "Diwali (USA Diaspora)",
+   "scope": "country",
+   "region": "United States",
+   "start": 301,
+   "days": 2,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.35
+   },
+   "theme": "Times Square tak ronak",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_diwali_canada_diaspora",
+   "name": "Diwali (Canada Diaspora)",
+   "scope": "country",
+   "region": "Canada",
+   "start": 301,
+   "days": 2,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.35
+   },
+   "theme": "Toronto ki diwali",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_diwali_uae",
+   "name": "Diwali (UAE)",
+   "scope": "country",
+   "region": "United Arab Emirates",
+   "start": 301,
+   "days": 3,
+   "cats": {
+    "Retail": 1.5,
+    "Food": 1.35
+   },
+   "theme": "Gold souk ki diwali",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_eid_uk",
+   "name": "Eid (UK)",
+   "scope": "country",
+   "region": "United Kingdom",
+   "start": 90,
+   "days": 2,
+   "cats": {
+    "Food": 1.35,
+    "Retail": 1.35
+   },
+   "theme": "London ki eid ronak",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_cherry_blossom_festival_dc",
+   "name": "Cherry Blossom Festival (DC)",
+   "scope": "country",
+   "region": "United States",
+   "start": 80,
+   "days": 14,
+   "cats": {
+    "Service": 1.35,
+    "Food": 1.25
+   },
+   "theme": "Sakura in DC",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_summer_sonic",
+   "name": "Summer Sonic",
+   "scope": "country",
+   "region": "Japan",
+   "start": 226,
+   "days": 2,
+   "cats": {
+    "Service": 1.35,
+    "Food": 1.3
+   },
+   "theme": "Music festival",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_toronto_caribbean_carnival",
+   "name": "Toronto Caribbean Carnival",
+   "scope": "country",
+   "region": "Canada",
+   "start": 211,
+   "days": 3,
+   "cats": {
+    "Food": 1.35,
+    "Service": 1.3
+   },
+   "theme": "Caribana",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_melbourne_food_wine_festival",
+   "name": "Melbourne Food & Wine Festival",
+   "scope": "country",
+   "region": "Australia",
+   "start": 81,
+   "days": 10,
+   "cats": {
+    "Food": 1.45,
+    "Service": 1.3
+   },
+   "theme": "Khane ka mela",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_dubai_food_festival",
+   "name": "Dubai Food Festival",
+   "scope": "country",
+   "region": "United Arab Emirates",
+   "start": 44,
+   "days": 17,
+   "cats": {
+    "Food": 1.45,
+    "Service": 1.3
+   },
+   "theme": "Khane ki duniya",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_seoul_lantern_festival",
+   "name": "Seoul Lantern Festival",
+   "scope": "country",
+   "region": "South Korea",
+   "start": 301,
+   "days": 16,
+   "cats": {
+    "Service": 1.3,
+    "Food": 1.25
+   },
+   "theme": "Cheonggyecheon roshni",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_bangkok_countdown",
+   "name": "Bangkok Countdown",
+   "scope": "country",
+   "region": "Thailand",
+   "start": 360,
+   "days": 1,
+   "cats": {
+    "Service": 1.45,
+    "Food": 1.4
+   },
+   "theme": "CentralWorld countdown",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_bali_arts_festival",
+   "name": "Bali Arts Festival",
+   "scope": "country",
+   "region": "Indonesia",
+   "start": 165,
+   "days": 30,
+   "cats": {
+    "Service": 1.35,
+    "Retail": 1.3
+   },
+   "theme": "Kala ka mahina",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_cape_town_jazz_festival",
+   "name": "Cape Town Jazz Festival",
+   "scope": "country",
+   "region": "South Africa",
+   "start": 88,
+   "days": 2,
+   "cats": {
+    "Service": 1.35,
+    "Food": 1.3
+   },
+   "theme": "Jazz ki dhun",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_cairo_film_festival",
+   "name": "Cairo Film Festival",
+   "scope": "country",
+   "region": "Egypt",
+   "start": 313,
+   "days": 10,
+   "cats": {
+    "Service": 1.3,
+    "Food": 1.25
+   },
+   "theme": "Cinema mela",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_istanbul_tulip_festival",
+   "name": "Istanbul Tulip Festival",
+   "scope": "country",
+   "region": "Turkey",
+   "start": 91,
+   "days": 30,
+   "cats": {
+    "Service": 1.3,
+    "Retail": 1.25
+   },
+   "theme": "Lale ka mausam",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_moscow_maslenitsa",
+   "name": "Moscow Maslenitsa",
+   "scope": "country",
+   "region": "Russia",
+   "start": 54,
+   "days": 7,
+   "cats": {
+    "Food": 1.35
+   },
+   "theme": "Blini ka hafta",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_auckland_lantern_festival",
+   "name": "Auckland Lantern Festival",
+   "scope": "country",
+   "region": "New Zealand",
+   "start": 44,
+   "days": 3,
+   "cats": {
+    "Food": 1.3,
+    "Retail": 1.25
+   },
+   "theme": "Lalten ronak",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+  {
+   "id": "fv2_singapore_food_festival",
+   "name": "Singapore Food Festival",
+   "scope": "country",
+   "region": "Singapore",
+   "start": 205,
+   "days": 10,
+   "cats": {
+    "Food": 1.45
+   },
+   "theme": "Hawker se fine-dine tak",
+   "special": [
+    "Festival Special Pack"
+   ],
+   "major": false,
+   "staffLeave": false
+  },
+]

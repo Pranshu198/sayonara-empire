@@ -1,0 +1,107 @@
+// Deep Content Loader — 3-lakh+ wali badi libraries splash ke peeche async load hoti hain
+// Pehli paint sirf base pools se hoti hai (tez), deep pools ghuste hi saare pickers unhe bhi istemal karte hain
+// (saare ALL_* arrays live references hain — push hote hi engine ke random picker unhe utha lete hain)
+import { ALL_EVENTS } from './content/events/index.js'
+import { ALL_CUSTOMERS } from './content/customers/index.js'
+import { ALL_NEWS } from './content/news/index.js'
+import { ALL_CARDS } from './content/decisions/index.js'
+import { ALL_STAFF } from './content/staff/index.js'
+import { ALL_MISSIONS } from './content/missions/index.js'
+import { ALL_PRODUCTS } from './content/products/index.js'
+import { ALL_COLLECTIBLES } from './content/collectibles/index.js'
+import { ALL_STARTUPS } from './content/startups/index.js'
+import { ALL_MOVIES } from './content/movies/index.js'
+import { MYSTERY } from './content/opportunities/index.js'
+import { TREASURES } from './content/opportunities/index.js'
+import { PREDICTIONS } from './content/opportunities/index.js'
+import { ENCYCLOPEDIA } from './content/encyclopedia/terms.js'
+import { BULK_ACH } from './content/achievements/bulk.js'
+import { ALL_DIALOGUES } from './content/rivals/index.js'
+const jobs = []
+function load(fn, target, name) { jobs.push(fn().then((m) => { if (m[name]) target.push(...m[name]) }).catch(() => {})) }
+load(() => import('./content/events/events09.js'), ALL_EVENTS, 'EVENTS_9')
+load(() => import('./content/events/events10.js'), ALL_EVENTS, 'EVENTS_10')
+load(() => import('./content/events/events11.js'), ALL_EVENTS, 'EVENTS_11')
+load(() => import('./content/events/events12.js'), ALL_EVENTS, 'EVENTS_12')
+load(() => import('./content/events/events13.js'), ALL_EVENTS, 'EVENTS_13')
+load(() => import('./content/events/events14.js'), ALL_EVENTS, 'EVENTS_14')
+load(() => import('./content/events/events15.js'), ALL_EVENTS, 'EVENTS_15')
+load(() => import('./content/events/events16.js'), ALL_EVENTS, 'EVENTS_16')
+load(() => import('./content/events/events17.js'), ALL_EVENTS, 'EVENTS_17')
+load(() => import('./content/events/events18.js'), ALL_EVENTS, 'EVENTS_18')
+load(() => import('./content/events/events19.js'), ALL_EVENTS, 'EVENTS_19')
+load(() => import('./content/events/events20.js'), ALL_EVENTS, 'EVENTS_20')
+load(() => import('./content/customers/customers09.js'), ALL_CUSTOMERS, 'CUSTOMERS_9')
+load(() => import('./content/customers/customers10.js'), ALL_CUSTOMERS, 'CUSTOMERS_10')
+load(() => import('./content/customers/customers17.js'), ALL_CUSTOMERS, 'CUSTOMERS_17')
+load(() => import('./content/customers/customers18.js'), ALL_CUSTOMERS, 'CUSTOMERS_18')
+load(() => import('./content/customers/customers19.js'), ALL_CUSTOMERS, 'CUSTOMERS_19')
+load(() => import('./content/customers/customers20.js'), ALL_CUSTOMERS, 'CUSTOMERS_20')
+load(() => import('./content/customers/customers21.js'), ALL_CUSTOMERS, 'CUSTOMERS_21')
+load(() => import('./content/customers/customers22.js'), ALL_CUSTOMERS, 'CUSTOMERS_22')
+load(() => import('./content/customers/customers23.js'), ALL_CUSTOMERS, 'CUSTOMERS_23')
+load(() => import('./content/customers/customers24.js'), ALL_CUSTOMERS, 'CUSTOMERS_24')
+load(() => import('./content/news/news07.js'), ALL_NEWS, 'NEWS_7')
+load(() => import('./content/news/news08.js'), ALL_NEWS, 'NEWS_8')
+load(() => import('./content/news/news09.js'), ALL_NEWS, 'NEWS_9')
+load(() => import('./content/news/news10.js'), ALL_NEWS, 'NEWS_10')
+load(() => import('./content/news/news11.js'), ALL_NEWS, 'NEWS_11')
+load(() => import('./content/news/news12.js'), ALL_NEWS, 'NEWS_12')
+load(() => import('./content/news/news13.js'), ALL_NEWS, 'NEWS_13')
+load(() => import('./content/news/news14.js'), ALL_NEWS, 'NEWS_14')
+load(() => import('./content/news/news15.js'), ALL_NEWS, 'NEWS_15')
+load(() => import('./content/decisions/cards03.js'), ALL_CARDS, 'CARDS_3')
+load(() => import('./content/decisions/cards04.js'), ALL_CARDS, 'CARDS_4')
+load(() => import('./content/decisions/cards05.js'), ALL_CARDS, 'CARDS_5')
+load(() => import('./content/decisions/cards06.js'), ALL_CARDS, 'CARDS_6')
+load(() => import('./content/decisions/cards07.js'), ALL_CARDS, 'CARDS_7')
+load(() => import('./content/decisions/cards08.js'), ALL_CARDS, 'CARDS_8')
+load(() => import('./content/staff/staff06.js'), ALL_STAFF, 'STAFF_6')
+load(() => import('./content/staff/staff07.js'), ALL_STAFF, 'STAFF_7')
+load(() => import('./content/staff/staff08.js'), ALL_STAFF, 'STAFF_8')
+load(() => import('./content/staff/staff09.js'), ALL_STAFF, 'STAFF_9')
+load(() => import('./content/staff/staff10.js'), ALL_STAFF, 'STAFF_10')
+load(() => import('./content/staff/staff11.js'), ALL_STAFF, 'STAFF_11')
+load(() => import('./content/staff/staff12.js'), ALL_STAFF, 'STAFF_12')
+load(() => import('./content/missions/missions02.js'), ALL_MISSIONS, 'MISSIONS_2')
+load(() => import('./content/missions/missions03.js'), ALL_MISSIONS, 'MISSIONS_3')
+load(() => import('./content/missions/missions04.js'), ALL_MISSIONS, 'MISSIONS_4')
+load(() => import('./content/missions/missions05.js'), ALL_MISSIONS, 'MISSIONS_5')
+load(() => import('./content/products/deep1_food.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep1_retail.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep1_service.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep2_service.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep1_edu.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep2_edu.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep1_health.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep2_health.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep1_tech.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep1_industry.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep2_industry.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/products/deep1_energy.js'), ALL_PRODUCTS, 'PRODUCTS_DEEP')
+load(() => import('./content/collectibles/items03.js'), ALL_COLLECTIBLES, 'COLLECTIBLES_3')
+load(() => import('./content/collectibles/items04.js'), ALL_COLLECTIBLES, 'COLLECTIBLES_4')
+load(() => import('./content/collectibles/items05.js'), ALL_COLLECTIBLES, 'COLLECTIBLES_5')
+load(() => import('./content/startups/startups03.js'), ALL_STARTUPS, 'STARTUPS_3')
+load(() => import('./content/movies/movies03.js'), ALL_MOVIES, 'MOVIES_3')
+load(() => import('./content/movies/movies04.js'), ALL_MOVIES, 'MOVIES_4')
+load(() => import('./content/opportunities/mystery2.js'), MYSTERY, 'MYSTERY_2')
+load(() => import('./content/opportunities/treasures2.js'), TREASURES, 'TREASURES_2')
+load(() => import('./content/opportunities/predictions2.js'), PREDICTIONS, 'PREDICTIONS_2')
+load(() => import('./content/encyclopedia/terms2.js'), ENCYCLOPEDIA, 'ENCYCLOPEDIA_2')
+load(() => import('./content/encyclopedia/terms3.js'), ENCYCLOPEDIA, 'ENCYCLOPEDIA_3')
+load(() => import('./content/achievements/bulk2.js'), BULK_ACH, 'BULK_ACH_2')
+load(() => import('./content/achievements/bulk3.js'), BULK_ACH, 'BULK_ACH_3')
+load(() => import('./content/rivals/dialogues_simran2.js'), ALL_DIALOGUES, 'DIALOGUES_DEEP')
+load(() => import('./content/rivals/dialogues_vikram2.js'), ALL_DIALOGUES, 'DIALOGUES_DEEP')
+load(() => import('./content/rivals/dialogues_ananya2.js'), ALL_DIALOGUES, 'DIALOGUES_DEEP')
+load(() => import('./content/rivals/dialogues_rohit2.js'), ALL_DIALOGUES, 'DIALOGUES_DEEP')
+load(() => import('./content/rivals/dialogues_priya2.js'), ALL_DIALOGUES, 'DIALOGUES_DEEP')
+load(() => import('./content/rivals/dialogues_sharma2.js'), ALL_DIALOGUES, 'DIALOGUES_DEEP')
+load(() => import('./content/seasons/garmi.js'), ALL_EVENTS, 'SEASON_EVENTS')
+load(() => import('./content/seasons/barsaat.js'), ALL_EVENTS, 'SEASON_EVENTS')
+load(() => import('./content/seasons/tyohar.js'), ALL_EVENTS, 'SEASON_EVENTS')
+load(() => import('./content/seasons/sardi.js'), ALL_EVENTS, 'SEASON_EVENTS')
+load(() => import('./content/seasons/vasant.js'), ALL_EVENTS, 'SEASON_EVENTS')
+export const deepReady = Promise.allSettled(jobs)
+export const deepTotal = 84

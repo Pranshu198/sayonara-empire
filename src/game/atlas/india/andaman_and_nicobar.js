@@ -1,0 +1,32 @@
+// World Atlas — India: Andaman and Nicobar (rajya profile, sheher aur unke zile)
+export const STATE = {
+ "name": "Andaman and Nicobar",
+ "capital": "Port Blair",
+ "language": "Hindi",
+ "primeFestival": "Island Tourism Festival",
+ "knownFor": "Andaman and Nicobar apni Hindi sanskriti, khana aur Island Tourism Festival ke liye mashhoor hai. Vyapaar ke liye yaha ke bazaar har season me rang badalte hain.",
+ "cities": [
+  {
+   "name": "Port Blair",
+   "tier": 3,
+   "pop": "Zila mukhyalaya",
+   "income": "madhyam-unch",
+   "rentIndex": 1.14,
+   "climate": "baarish wala",
+   "festival": "Island Tourism Festival",
+   "language": "Hindi",
+   "currency": "₹ INR",
+   "demandTop": [
+    "Tech",
+    "Health"
+   ],
+   "districts": [
+    "Port Blair Sadar Bazaar",
+    "Port Blair Nai Basti",
+    "Port Blair Purana Sheher",
+    "Port Blair Station Road",
+    "Port Blair Civil Lines"
+   ]
+  }
+ ]
+}

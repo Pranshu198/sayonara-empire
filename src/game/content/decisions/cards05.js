@@ -1,0 +1,5893 @@
+// Decision Cards (deep) — part 5: roz ek faisla, asar cash aur reputation par
+export const CARDS_5 = [
+  {
+   "id": "dc2_3_1",
+   "tier": 9,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #1",
+   "story": "Food inspector ek saajhedari ka haath badhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,11,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2800,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_2",
+   "tier": 2,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #2",
+   "story": "Purana dost ek saajhedari ka haath badhata hai. Baat me dum lagta hai. Isme lagbhag ₹73,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6700,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_3",
+   "tier": 2,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #3",
+   "story": "Food inspector ek gupt suchna deta hai. Maamla thoda tedha hai. Isme lagbhag ₹1,64,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2900,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_4",
+   "tier": 6,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #4",
+   "story": "Ad agency wala ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,96,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1200,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -1000,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_5",
+   "tier": 3,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #5",
+   "story": "Purana karmchari ek bada order lekar aata hai. Baat me dum lagta hai. Isme lagbhag ₹38,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -500,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -1000,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_6",
+   "tier": 4,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #6",
+   "story": "Pandit ji ek gupt suchna deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹37,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 800,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 2000,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_7",
+   "tier": 3,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #7",
+   "story": "Food inspector ek purani baat yaad dilata hai. Rakam chhoti nahi hai. Isme lagbhag ₹2,31,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1900,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_8",
+   "tier": 3,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #8",
+   "story": "Purana dost ek purani baat yaad dilata hai. Ye mauka roz nahi aata. Isme lagbhag ₹2,05,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4500,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1700,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_9",
+   "tier": 7,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #9",
+   "story": "Wholesale mandi ka sardar ek mushkil ghadi me salah deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹98,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3200,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 0,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_10",
+   "tier": 9,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #10",
+   "story": "Ad agency wala ek saajhedari ka haath badhata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹6,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6400,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_11",
+   "tier": 1,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #11",
+   "story": "Bijli vibhag ka afsar ek gupt suchna deta hai. Baat me dum lagta hai. Isme lagbhag ₹25,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4000,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -800,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_12",
+   "tier": 5,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #12",
+   "story": "Hospital administrator ek saajhedari ka haath badhata hai. Baat me dum lagta hai. Isme lagbhag ₹2,05,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8800,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_13",
+   "tier": 1,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #13",
+   "story": "Purana supplier ek saajhedari ka haath badhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,94,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1500,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_14",
+   "tier": 3,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #14",
+   "story": "Graahak sangh ka neta ek gupt suchna deta hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,24,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4900,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1700,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_15",
+   "tier": 6,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #15",
+   "story": "Ward councillor ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹2,04,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4400,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_16",
+   "tier": 9,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #16",
+   "story": "Property dealer ek bada order lekar aata hai. Rakam chhoti nahi hai. Isme lagbhag ₹2,01,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4300,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -800,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_17",
+   "tier": 7,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #17",
+   "story": "Food inspector ek mushkil ghadi me salah deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹2,18,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1900,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_18",
+   "tier": 1,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #18",
+   "story": "School ke principal ek saajhedari ka haath badhata hai. Baat me dum lagta hai. Isme lagbhag ₹62,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -500,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1800,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_19",
+   "tier": 3,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #19",
+   "story": "School ke principal ek bada order lekar aata hai. Ye mauka roz nahi aata. Isme lagbhag ₹2,06,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3400,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1000,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_20",
+   "tier": 6,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #20",
+   "story": "Purana supplier ek naya raasta dikhata hai. Maamla thoda tedha hai. Isme lagbhag ₹83,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7800,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_21",
+   "tier": 5,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #21",
+   "story": "Import dealer ek jhilmilata prastav rakhta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹33,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5000,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_22",
+   "tier": 6,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #22",
+   "story": "Purana karmchari ek jhilmilata prastav rakhta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹74,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8100,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1400,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_23",
+   "tier": 4,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #23",
+   "story": "Purana supplier ek naya raasta dikhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,55,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3100,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_24",
+   "tier": 7,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #24",
+   "story": "Import dealer ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹2,26,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4400,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -100,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_25",
+   "tier": 4,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #25",
+   "story": "Ad agency wala ek jhilmilata prastav rakhta hai. Ye mauka roz nahi aata. Isme lagbhag ₹22,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2500,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -200,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_26",
+   "tier": 6,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #26",
+   "story": "Wholesale mandi ka sardar ek jhilmilata prastav rakhta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹85,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5100,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -1000,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_27",
+   "tier": 4,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #27",
+   "story": "Purana dost ek purani baat yaad dilata hai. Baat me dum lagta hai. Isme lagbhag ₹1,26,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3300,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_28",
+   "tier": 4,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #28",
+   "story": "Purana supplier ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,27,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4700,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 100,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_29",
+   "tier": 2,
+   "fam": "business",
+   "title": "Ek CA (accountant) ka Prastav #29",
+   "story": "Ek CA (accountant) ek bada order lekar aata hai. Maamla thoda tedha hai. Isme lagbhag ₹2,22,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4800,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1700,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_30",
+   "tier": 2,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #30",
+   "story": "Food inspector ek purani baat yaad dilata hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,41,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4600,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1800,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_31",
+   "tier": 7,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #31",
+   "story": "Purana karmchari ek saajhedari ka haath badhata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,41,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4800,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -100,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_32",
+   "tier": 1,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #32",
+   "story": "School ke principal ek mushkil ghadi me salah deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹43,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7300,
+    "rep": 0,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1400,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_33",
+   "tier": 8,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #33",
+   "story": "Import dealer ek purani baat yaad dilata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,72,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1900,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_34",
+   "tier": 6,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #34",
+   "story": "Pandit ji ek chetaavni deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹77,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 900,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1000,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_35",
+   "tier": 3,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #35",
+   "story": "Bijli vibhag ka afsar ek naya raasta dikhata hai. Baat me dum lagta hai. Isme lagbhag ₹26,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8500,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 0,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_36",
+   "tier": 8,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #36",
+   "story": "Ward councillor ek bada order lekar aata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,95,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3300,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_37",
+   "tier": 5,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #37",
+   "story": "Purana dost ek gupt suchna deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,44,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 400,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_38",
+   "tier": 2,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #38",
+   "story": "Ad agency wala ek jhilmilata prastav rakhta hai. Maamla thoda tedha hai. Isme lagbhag ₹2,09,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1100,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -500,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_39",
+   "tier": 5,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #39",
+   "story": "Ek YouTuber ek purani baat yaad dilata hai. Baat me dum lagta hai. Isme lagbhag ₹97,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2500,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_40",
+   "tier": 1,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #40",
+   "story": "Purana supplier ek gupt suchna deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹60,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3900,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_41",
+   "tier": 3,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #41",
+   "story": "Wholesale mandi ka sardar ek chetaavni deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹2,28,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4500,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_42",
+   "tier": 3,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #42",
+   "story": "Graahak sangh ka neta ek chetaavni deta hai. Baat me dum lagta hai. Isme lagbhag ₹2,22,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -600,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_43",
+   "tier": 5,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #43",
+   "story": "Bank manager ek chetaavni deta hai. Maamla thoda tedha hai. Isme lagbhag ₹2,07,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3400,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -400,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_44",
+   "tier": 4,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #44",
+   "story": "Bank manager ek naya raasta dikhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,81,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5100,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_45",
+   "tier": 9,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #45",
+   "story": "Property dealer ek jhilmilata prastav rakhta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹85,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3800,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_46",
+   "tier": 3,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #46",
+   "story": "Ek YouTuber ek naya raasta dikhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,83,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2800,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -400,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_47",
+   "tier": 1,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #47",
+   "story": "Pandit ji ek naya raasta dikhata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹2,09,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -100,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -800,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_48",
+   "tier": 1,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #48",
+   "story": "Graahak sangh ka neta ek saajhedari ka haath badhata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,86,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4900,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -200,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_49",
+   "tier": 8,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #49",
+   "story": "Property dealer ek jhilmilata prastav rakhta hai. Baat me dum lagta hai. Isme lagbhag ₹1,26,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5300,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_50",
+   "tier": 7,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #50",
+   "story": "Hospital administrator ek chetaavni deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹13,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8700,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_51",
+   "tier": 9,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #51",
+   "story": "Property dealer ek saajhedari ka haath badhata hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,35,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2900,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1800,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_52",
+   "tier": 3,
+   "fam": "business",
+   "title": "Local neta ka Prastav #52",
+   "story": "Local neta ek naya raasta dikhata hai. Maamla thoda tedha hai. Isme lagbhag ₹4,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4500,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 2000,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_53",
+   "tier": 7,
+   "fam": "business",
+   "title": "Local neta ka Prastav #53",
+   "story": "Local neta ek saajhedari ka haath badhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,42,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1200,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1000,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_54",
+   "tier": 4,
+   "fam": "business",
+   "title": "Local neta ka Prastav #54",
+   "story": "Local neta ek purani baat yaad dilata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹9,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3300,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 600,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_55",
+   "tier": 9,
+   "fam": "business",
+   "title": "Ek CA (accountant) ka Prastav #55",
+   "story": "Ek CA (accountant) ek purani baat yaad dilata hai. Baat me dum lagta hai. Isme lagbhag ₹1,08,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1700,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 0,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_56",
+   "tier": 1,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #56",
+   "story": "Franchise agent ek naya raasta dikhata hai. Rakam chhoti nahi hai. Isme lagbhag ₹82,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1900,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_57",
+   "tier": 6,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #57",
+   "story": "Bijli vibhag ka afsar ek chetaavni deta hai. Baat me dum lagta hai. Isme lagbhag ₹1,97,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2300,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_58",
+   "tier": 4,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #58",
+   "story": "Bank manager ek gupt suchna deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹75,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7600,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_59",
+   "tier": 7,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #59",
+   "story": "Ad agency wala ek gupt suchna deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,08,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3200,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_60",
+   "tier": 3,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #60",
+   "story": "Bank manager ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹80,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2000,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -100,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_61",
+   "tier": 4,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #61",
+   "story": "Ad agency wala ek bada order lekar aata hai. Maamla thoda tedha hai. Isme lagbhag ₹1,38,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6400,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_62",
+   "tier": 6,
+   "fam": "business",
+   "title": "Local neta ka Prastav #62",
+   "story": "Local neta ek purani baat yaad dilata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,74,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2500,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1700,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_63",
+   "tier": 9,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #63",
+   "story": "Wholesale mandi ka sardar ek mushkil ghadi me salah deta hai. Baat me dum lagta hai. Isme lagbhag ₹34,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 800,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -100,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_64",
+   "tier": 7,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #64",
+   "story": "Pandit ji ek jhilmilata prastav rakhta hai. Rakam chhoti nahi hai. Isme lagbhag ₹84,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2000,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_65",
+   "tier": 8,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #65",
+   "story": "Purana karmchari ek saajhedari ka haath badhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,92,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 800,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_66",
+   "tier": 3,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #66",
+   "story": "Purana dost ek jhilmilata prastav rakhta hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3100,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_67",
+   "tier": 3,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #67",
+   "story": "Purana dost ek jhilmilata prastav rakhta hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,93,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7300,
+    "rep": 0,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_68",
+   "tier": 7,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #68",
+   "story": "Graahak sangh ka neta ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹72,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7900,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_69",
+   "tier": 7,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #69",
+   "story": "Hospital administrator ek naya raasta dikhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹55,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7100,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -200,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_70",
+   "tier": 4,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #70",
+   "story": "Hospital administrator ek saajhedari ka haath badhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹2,27,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4300,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 2000,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_71",
+   "tier": 7,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #71",
+   "story": "Graahak sangh ka neta ek naya raasta dikhata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,46,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4800,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_72",
+   "tier": 4,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #72",
+   "story": "Hospital administrator ek purani baat yaad dilata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹7,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 500,
+    "rep": 0,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 2000,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_73",
+   "tier": 9,
+   "fam": "business",
+   "title": "Local neta ka Prastav #73",
+   "story": "Local neta ek gupt suchna deta hai. Rakam chhoti nahi hai. Isme lagbhag ₹2,12,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3700,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_74",
+   "tier": 3,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #74",
+   "story": "Rishte ka mama ek mushkil ghadi me salah deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹2,37,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4100,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1400,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_75",
+   "tier": 2,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #75",
+   "story": "Bank manager ek saajhedari ka haath badhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,71,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4700,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_76",
+   "tier": 7,
+   "fam": "business",
+   "title": "Local neta ka Prastav #76",
+   "story": "Local neta ek saajhedari ka haath badhata hai. Baat me dum lagta hai. Isme lagbhag ₹83,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5700,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_77",
+   "tier": 7,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #77",
+   "story": "Purana karmchari ek mushkil ghadi me salah deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,54,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2200,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_78",
+   "tier": 6,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #78",
+   "story": "Pandit ji ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,19,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1600,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_79",
+   "tier": 2,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #79",
+   "story": "Pandit ji ek mushkil ghadi me salah deta hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,21,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7700,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1700,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_80",
+   "tier": 6,
+   "fam": "business",
+   "title": "Local neta ka Prastav #80",
+   "story": "Local neta ek purani baat yaad dilata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹76,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7900,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 100,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_81",
+   "tier": 6,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #81",
+   "story": "Pandit ji ek naya raasta dikhata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,05,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8400,
+    "rep": 3,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_82",
+   "tier": 6,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #82",
+   "story": "Ward councillor ek saajhedari ka haath badhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹60,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3800,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -600,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_83",
+   "tier": 6,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #83",
+   "story": "Ward councillor ek jhilmilata prastav rakhta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹94,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5700,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_84",
+   "tier": 2,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #84",
+   "story": "Ek YouTuber ek bada order lekar aata hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,18,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3900,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_85",
+   "tier": 4,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #85",
+   "story": "Hospital administrator ek naya raasta dikhata hai. Baat me dum lagta hai. Isme lagbhag ₹99,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1900,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1100,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_86",
+   "tier": 9,
+   "fam": "business",
+   "title": "Local neta ka Prastav #86",
+   "story": "Local neta ek bada order lekar aata hai. Baat me dum lagta hai. Isme lagbhag ₹13,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6100,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_87",
+   "tier": 5,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #87",
+   "story": "Ek YouTuber ek bada order lekar aata hai. Baat me dum lagta hai. Isme lagbhag ₹1,04,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2900,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -800,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_88",
+   "tier": 4,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #88",
+   "story": "Franchise agent ek gupt suchna deta hai. Maamla thoda tedha hai. Isme lagbhag ₹1,37,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8900,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_89",
+   "tier": 9,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #89",
+   "story": "Property dealer ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹2,27,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6200,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1100,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_90",
+   "tier": 6,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #90",
+   "story": "Property dealer ek bada order lekar aata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,08,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5800,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -800,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_91",
+   "tier": 8,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #91",
+   "story": "Import dealer ek mushkil ghadi me salah deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹79,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5100,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 600,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_92",
+   "tier": 8,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #92",
+   "story": "Purana supplier ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹13,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2600,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_93",
+   "tier": 7,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #93",
+   "story": "Franchise agent ek purani baat yaad dilata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,50,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2500,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -500,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_94",
+   "tier": 5,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #94",
+   "story": "Franchise agent ek mushkil ghadi me salah deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,43,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3500,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_95",
+   "tier": 9,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #95",
+   "story": "Bijli vibhag ka afsar ek gupt suchna deta hai. Rakam chhoti nahi hai. Isme lagbhag ₹2,21,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7800,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_96",
+   "tier": 2,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #96",
+   "story": "Pandit ji ek saajhedari ka haath badhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,01,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6700,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_97",
+   "tier": 6,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #97",
+   "story": "Purana supplier ek gupt suchna deta hai. Maamla thoda tedha hai. Isme lagbhag ₹82,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -900,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1700,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_98",
+   "tier": 8,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #98",
+   "story": "Import dealer ek purani baat yaad dilata hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,41,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2100,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 100,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_99",
+   "tier": 9,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #99",
+   "story": "Ward councillor ek purani baat yaad dilata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹70,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2200,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_100",
+   "tier": 2,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #100",
+   "story": "Property dealer ek mushkil ghadi me salah deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,24,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 700,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_101",
+   "tier": 2,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #101",
+   "story": "School ke principal ek saajhedari ka haath badhata hai. Maamla thoda tedha hai. Isme lagbhag ₹2,15,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3100,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_102",
+   "tier": 5,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #102",
+   "story": "Purana karmchari ek gupt suchna deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹2,31,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7000,
+    "rep": 3,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_103",
+   "tier": 9,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #103",
+   "story": "Ward councillor ek bada order lekar aata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,46,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2200,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -800,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_104",
+   "tier": 6,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #104",
+   "story": "School ke principal ek jhilmilata prastav rakhta hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,42,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5400,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 0,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_105",
+   "tier": 1,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #105",
+   "story": "Hospital administrator ek bada order lekar aata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,05,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -100,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -1000,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_106",
+   "tier": 3,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #106",
+   "story": "Ward councillor ek naya raasta dikhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹2,08,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 100,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_107",
+   "tier": 8,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #107",
+   "story": "Rishte ka mama ek gupt suchna deta hai. Maamla thoda tedha hai. Isme lagbhag ₹1,31,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5000,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -200,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_108",
+   "tier": 6,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #108",
+   "story": "Wholesale mandi ka sardar ek naya raasta dikhata hai. Maamla thoda tedha hai. Isme lagbhag ₹20,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6700,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -600,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_109",
+   "tier": 5,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #109",
+   "story": "Purana dost ek chetaavni deta hai. Maamla thoda tedha hai. Isme lagbhag ₹53,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3700,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -800,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_110",
+   "tier": 8,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #110",
+   "story": "Graahak sangh ka neta ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,59,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2200,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_111",
+   "tier": 1,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #111",
+   "story": "Rishte ka mama ek mushkil ghadi me salah deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹30,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5900,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_112",
+   "tier": 7,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #112",
+   "story": "Food inspector ek naya raasta dikhata hai. Maamla thoda tedha hai. Isme lagbhag ₹56,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3300,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 100,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_113",
+   "tier": 2,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #113",
+   "story": "Purana dost ek gupt suchna deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹2,29,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3400,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_114",
+   "tier": 9,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #114",
+   "story": "Ward councillor ek chetaavni deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,03,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -700,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_115",
+   "tier": 3,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #115",
+   "story": "School ke principal ek naya raasta dikhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹59,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6100,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_116",
+   "tier": 8,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #116",
+   "story": "Graahak sangh ka neta ek naya raasta dikhata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹94,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2300,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_117",
+   "tier": 5,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #117",
+   "story": "Property dealer ek jhilmilata prastav rakhta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,24,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2100,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -400,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_118",
+   "tier": 8,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #118",
+   "story": "Graahak sangh ka neta ek mushkil ghadi me salah deta hai. Baat me dum lagta hai. Isme lagbhag ₹1,97,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3300,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_119",
+   "tier": 1,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #119",
+   "story": "Wholesale mandi ka sardar ek gupt suchna deta hai. Maamla thoda tedha hai. Isme lagbhag ₹37,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5400,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_120",
+   "tier": 1,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #120",
+   "story": "Hospital administrator ek purani baat yaad dilata hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,84,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1200,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1400,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_121",
+   "tier": 5,
+   "fam": "business",
+   "title": "Ek CA (accountant) ka Prastav #121",
+   "story": "Ek CA (accountant) ek naya raasta dikhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹92,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3600,
+    "rep": 3,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 0,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_122",
+   "tier": 8,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #122",
+   "story": "Purana dost ek naya raasta dikhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,97,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5000,
+    "rep": 3,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_123",
+   "tier": 8,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #123",
+   "story": "Ek YouTuber ek purani baat yaad dilata hai. Maamla thoda tedha hai. Isme lagbhag ₹58,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 9000,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -400,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_124",
+   "tier": 7,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #124",
+   "story": "Import dealer ek naya raasta dikhata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹75,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4500,
+    "rep": 0,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_125",
+   "tier": 5,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #125",
+   "story": "Bank manager ek mushkil ghadi me salah deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,37,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1900,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_126",
+   "tier": 1,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #126",
+   "story": "Purana supplier ek chetaavni deta hai. Baat me dum lagta hai. Isme lagbhag ₹56,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4800,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1100,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_127",
+   "tier": 2,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #127",
+   "story": "Graahak sangh ka neta ek jhilmilata prastav rakhta hai. Maamla thoda tedha hai. Isme lagbhag ₹18,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3200,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_128",
+   "tier": 7,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #128",
+   "story": "Bijli vibhag ka afsar ek bada order lekar aata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹64,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 700,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 2000,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_129",
+   "tier": 3,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #129",
+   "story": "School ke principal ek jhilmilata prastav rakhta hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,80,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8300,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -1000,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_130",
+   "tier": 8,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #130",
+   "story": "Bijli vibhag ka afsar ek jhilmilata prastav rakhta hai. Baat me dum lagta hai. Isme lagbhag ₹2,17,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3700,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_131",
+   "tier": 7,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #131",
+   "story": "Purana supplier ek naya raasta dikhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,62,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1100,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_132",
+   "tier": 1,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #132",
+   "story": "Bank manager ek gupt suchna deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,44,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4400,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1400,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_133",
+   "tier": 4,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #133",
+   "story": "Franchise agent ek mushkil ghadi me salah deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹2,35,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7300,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_134",
+   "tier": 2,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #134",
+   "story": "Purana karmchari ek naya raasta dikhata hai. Maamla thoda tedha hai. Isme lagbhag ₹1,28,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5800,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_135",
+   "tier": 6,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #135",
+   "story": "Rishte ka mama ek chetaavni deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,94,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3000,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 100,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_136",
+   "tier": 2,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #136",
+   "story": "Ward councillor ek bada order lekar aata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹2,28,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4700,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_137",
+   "tier": 6,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #137",
+   "story": "Purana karmchari ek naya raasta dikhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹2,26,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1200,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -200,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_138",
+   "tier": 4,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #138",
+   "story": "Bijli vibhag ka afsar ek gupt suchna deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹61,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5100,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_139",
+   "tier": 9,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #139",
+   "story": "Bank manager ek chetaavni deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹27,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4500,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_140",
+   "tier": 8,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #140",
+   "story": "Wholesale mandi ka sardar ek saajhedari ka haath badhata hai. Maamla thoda tedha hai. Isme lagbhag ₹1,01,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6400,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 100,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_141",
+   "tier": 9,
+   "fam": "business",
+   "title": "Local neta ka Prastav #141",
+   "story": "Local neta ek saajhedari ka haath badhata hai. Maamla thoda tedha hai. Isme lagbhag ₹1,63,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -100,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_142",
+   "tier": 4,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #142",
+   "story": "Purana karmchari ek saajhedari ka haath badhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,03,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5800,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 2000,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_143",
+   "tier": 1,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #143",
+   "story": "Graahak sangh ka neta ek jhilmilata prastav rakhta hai. Rakam chhoti nahi hai. Isme lagbhag ₹48,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2300,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_144",
+   "tier": 1,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #144",
+   "story": "Bijli vibhag ka afsar ek saajhedari ka haath badhata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,83,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5000,
+    "rep": 0,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_145",
+   "tier": 5,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #145",
+   "story": "Property dealer ek purani baat yaad dilata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,43,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6400,
+    "rep": 0,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_146",
+   "tier": 7,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #146",
+   "story": "Rishte ka mama ek gupt suchna deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹16,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4500,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1700,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_147",
+   "tier": 1,
+   "fam": "business",
+   "title": "Local neta ka Prastav #147",
+   "story": "Local neta ek bada order lekar aata hai. Maamla thoda tedha hai. Isme lagbhag ₹2,03,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7500,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_148",
+   "tier": 1,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #148",
+   "story": "Bijli vibhag ka afsar ek mushkil ghadi me salah deta hai. Baat me dum lagta hai. Isme lagbhag ₹17,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5700,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_149",
+   "tier": 7,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #149",
+   "story": "School ke principal ek bada order lekar aata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,78,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 200,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_150",
+   "tier": 9,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #150",
+   "story": "Purana karmchari ek bada order lekar aata hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,82,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6100,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_151",
+   "tier": 8,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #151",
+   "story": "Purana karmchari ek mushkil ghadi me salah deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹48,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3600,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_152",
+   "tier": 7,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #152",
+   "story": "Food inspector ek mushkil ghadi me salah deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹10,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3400,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_153",
+   "tier": 4,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #153",
+   "story": "Food inspector ek naya raasta dikhata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,46,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8600,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_154",
+   "tier": 3,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #154",
+   "story": "Graahak sangh ka neta ek chetaavni deta hai. Baat me dum lagta hai. Isme lagbhag ₹2,10,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4500,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_155",
+   "tier": 5,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #155",
+   "story": "School ke principal ek chetaavni deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,89,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1000,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -500,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_156",
+   "tier": 2,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #156",
+   "story": "Import dealer ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹81,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -100,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 600,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_157",
+   "tier": 9,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #157",
+   "story": "Franchise agent ek purani baat yaad dilata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹62,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -200,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -400,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_158",
+   "tier": 2,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #158",
+   "story": "Purana supplier ek jhilmilata prastav rakhta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹66,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5300,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_159",
+   "tier": 2,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #159",
+   "story": "Rishte ka mama ek gupt suchna deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹97,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2000,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_160",
+   "tier": 8,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #160",
+   "story": "Purana supplier ek purani baat yaad dilata hai. Rakam chhoti nahi hai. Isme lagbhag ₹16,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1100,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_161",
+   "tier": 7,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #161",
+   "story": "Import dealer ek chetaavni deta hai. Baat me dum lagta hai. Isme lagbhag ₹1,68,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -200,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1800,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_162",
+   "tier": 5,
+   "fam": "business",
+   "title": "Ek CA (accountant) ka Prastav #162",
+   "story": "Ek CA (accountant) ek gupt suchna deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹8,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 100,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1100,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_163",
+   "tier": 7,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #163",
+   "story": "Ek YouTuber ek saajhedari ka haath badhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,97,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 700,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -400,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_164",
+   "tier": 2,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #164",
+   "story": "Purana karmchari ek saajhedari ka haath badhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,40,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3400,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_165",
+   "tier": 9,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #165",
+   "story": "Bank manager ek mushkil ghadi me salah deta hai. Maamla thoda tedha hai. Isme lagbhag ₹1,76,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3900,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_166",
+   "tier": 8,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #166",
+   "story": "Hospital administrator ek jhilmilata prastav rakhta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,44,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7300,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -500,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_167",
+   "tier": 8,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #167",
+   "story": "Purana dost ek jhilmilata prastav rakhta hai. Ye mauka roz nahi aata. Isme lagbhag ₹2,23,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2300,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -100,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_168",
+   "tier": 7,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #168",
+   "story": "Franchise agent ek mushkil ghadi me salah deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,14,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2000,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1700,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_169",
+   "tier": 6,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #169",
+   "story": "Ward councillor ek mushkil ghadi me salah deta hai. Baat me dum lagta hai. Isme lagbhag ₹1,90,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7500,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1100,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_170",
+   "tier": 4,
+   "fam": "business",
+   "title": "Local neta ka Prastav #170",
+   "story": "Local neta ek bada order lekar aata hai. Rakam chhoti nahi hai. Isme lagbhag ₹2,14,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7900,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_171",
+   "tier": 8,
+   "fam": "business",
+   "title": "Local neta ka Prastav #171",
+   "story": "Local neta ek chetaavni deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹84,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5900,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_172",
+   "tier": 4,
+   "fam": "business",
+   "title": "Ek CA (accountant) ka Prastav #172",
+   "story": "Ek CA (accountant) ek bada order lekar aata hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,29,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3100,
+    "rep": 3,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_173",
+   "tier": 7,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #173",
+   "story": "Hospital administrator ek naya raasta dikhata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,52,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 700,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -500,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_174",
+   "tier": 4,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #174",
+   "story": "Franchise agent ek naya raasta dikhata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,92,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6300,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 0,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_175",
+   "tier": 9,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #175",
+   "story": "Property dealer ek chetaavni deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹62,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5400,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -1000,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_176",
+   "tier": 4,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #176",
+   "story": "Ek YouTuber ek jhilmilata prastav rakhta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,42,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4400,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_177",
+   "tier": 8,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #177",
+   "story": "Bank manager ek gupt suchna deta hai. Baat me dum lagta hai. Isme lagbhag ₹1,14,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8000,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -100,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_178",
+   "tier": 8,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #178",
+   "story": "Bijli vibhag ka afsar ek naya raasta dikhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹59,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3300,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_179",
+   "tier": 4,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #179",
+   "story": "Ward councillor ek saajhedari ka haath badhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,01,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4800,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 600,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_180",
+   "tier": 3,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #180",
+   "story": "Hospital administrator ek mushkil ghadi me salah deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹2,38,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5400,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_181",
+   "tier": 4,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #181",
+   "story": "Franchise agent ek jhilmilata prastav rakhta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,25,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 100,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_182",
+   "tier": 4,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #182",
+   "story": "Ek YouTuber ek purani baat yaad dilata hai. Maamla thoda tedha hai. Isme lagbhag ₹1,18,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -900,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1800,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_183",
+   "tier": 6,
+   "fam": "business",
+   "title": "Ek CA (accountant) ka Prastav #183",
+   "story": "Ek CA (accountant) ek chetaavni deta hai. Baat me dum lagta hai. Isme lagbhag ₹1,81,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8600,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_184",
+   "tier": 5,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #184",
+   "story": "School ke principal ek purani baat yaad dilata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹69,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6500,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_185",
+   "tier": 8,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #185",
+   "story": "Property dealer ek naya raasta dikhata hai. Rakam chhoti nahi hai. Isme lagbhag ₹2,09,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2500,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_186",
+   "tier": 7,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #186",
+   "story": "Purana dost ek naya raasta dikhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹59,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5100,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_187",
+   "tier": 3,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #187",
+   "story": "Ek YouTuber ek chetaavni deta hai. Baat me dum lagta hai. Isme lagbhag ₹57,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 9000,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_188",
+   "tier": 7,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #188",
+   "story": "Franchise agent ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹2,33,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4100,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_189",
+   "tier": 5,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #189",
+   "story": "Ward councillor ek purani baat yaad dilata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,41,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7600,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_190",
+   "tier": 9,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #190",
+   "story": "Hospital administrator ek mushkil ghadi me salah deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹2,03,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 500,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1800,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_191",
+   "tier": 5,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #191",
+   "story": "Wholesale mandi ka sardar ek mushkil ghadi me salah deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹87,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8000,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_192",
+   "tier": 6,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #192",
+   "story": "Pandit ji ek mushkil ghadi me salah deta hai. Baat me dum lagta hai. Isme lagbhag ₹44,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3600,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_193",
+   "tier": 8,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #193",
+   "story": "Purana supplier ek purani baat yaad dilata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹45,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 9000,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_194",
+   "tier": 3,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #194",
+   "story": "Import dealer ek naya raasta dikhata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹10,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4400,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_195",
+   "tier": 3,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #195",
+   "story": "Import dealer ek saajhedari ka haath badhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,04,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7500,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_196",
+   "tier": 9,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #196",
+   "story": "Hospital administrator ek saajhedari ka haath badhata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,78,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2900,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1700,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_197",
+   "tier": 1,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #197",
+   "story": "Purana supplier ek gupt suchna deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹98,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1500,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -400,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_198",
+   "tier": 6,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #198",
+   "story": "Rishte ka mama ek mushkil ghadi me salah deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹22,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -600,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_199",
+   "tier": 8,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #199",
+   "story": "Ward councillor ek saajhedari ka haath badhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹47,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1900,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_200",
+   "tier": 1,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #200",
+   "story": "Bijli vibhag ka afsar ek bada order lekar aata hai. Baat me dum lagta hai. Isme lagbhag ₹1,28,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 700,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -1000,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_201",
+   "tier": 9,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #201",
+   "story": "Graahak sangh ka neta ek naya raasta dikhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,67,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1000,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_202",
+   "tier": 4,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #202",
+   "story": "Graahak sangh ka neta ek bada order lekar aata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,45,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2400,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 100,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_203",
+   "tier": 1,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #203",
+   "story": "Ad agency wala ek jhilmilata prastav rakhta hai. Baat me dum lagta hai. Isme lagbhag ₹1,20,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1500,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_204",
+   "tier": 1,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #204",
+   "story": "Ward councillor ek gupt suchna deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹2,05,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1800,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_205",
+   "tier": 2,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #205",
+   "story": "Ad agency wala ek mushkil ghadi me salah deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,56,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1700,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1000,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_206",
+   "tier": 5,
+   "fam": "business",
+   "title": "Ek CA (accountant) ka Prastav #206",
+   "story": "Ek CA (accountant) ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹45,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6600,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_207",
+   "tier": 7,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #207",
+   "story": "Franchise agent ek mushkil ghadi me salah deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,91,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4000,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_208",
+   "tier": 2,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #208",
+   "story": "Food inspector ek bada order lekar aata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,34,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1700,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1100,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_209",
+   "tier": 3,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #209",
+   "story": "Bank manager ek chetaavni deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹76,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4400,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_210",
+   "tier": 4,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #210",
+   "story": "Graahak sangh ka neta ek mushkil ghadi me salah deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,80,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8300,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_211",
+   "tier": 4,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #211",
+   "story": "Bank manager ek jhilmilata prastav rakhta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹58,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1100,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -200,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_212",
+   "tier": 1,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #212",
+   "story": "School ke principal ek naya raasta dikhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹2,30,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5500,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1000,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_213",
+   "tier": 3,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #213",
+   "story": "Pandit ji ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,96,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4700,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_214",
+   "tier": 6,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #214",
+   "story": "Franchise agent ek bada order lekar aata hai. Maamla thoda tedha hai. Isme lagbhag ₹60,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5900,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_215",
+   "tier": 3,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #215",
+   "story": "Graahak sangh ka neta ek bada order lekar aata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹77,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5000,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -1000,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_216",
+   "tier": 4,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #216",
+   "story": "Bank manager ek bada order lekar aata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹71,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 900,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -200,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_217",
+   "tier": 3,
+   "fam": "business",
+   "title": "Local neta ka Prastav #217",
+   "story": "Local neta ek jhilmilata prastav rakhta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹65,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4000,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_218",
+   "tier": 5,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #218",
+   "story": "Rishte ka mama ek naya raasta dikhata hai. Maamla thoda tedha hai. Isme lagbhag ₹1,54,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4800,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 600,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_219",
+   "tier": 1,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #219",
+   "story": "Food inspector ek naya raasta dikhata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,99,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -700,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 100,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_220",
+   "tier": 7,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #220",
+   "story": "Franchise agent ek chetaavni deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹56,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3700,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_221",
+   "tier": 7,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #221",
+   "story": "Purana dost ek chetaavni deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,67,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1100,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_222",
+   "tier": 7,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #222",
+   "story": "Ek YouTuber ek naya raasta dikhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹2,09,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5200,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_223",
+   "tier": 6,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #223",
+   "story": "Purana dost ek jhilmilata prastav rakhta hai. Maamla thoda tedha hai. Isme lagbhag ₹1,70,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4500,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_224",
+   "tier": 1,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #224",
+   "story": "Purana karmchari ek bada order lekar aata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹81,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7200,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1000,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_225",
+   "tier": 1,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #225",
+   "story": "Franchise agent ek naya raasta dikhata hai. Rakam chhoti nahi hai. Isme lagbhag ₹5,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5200,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_226",
+   "tier": 8,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #226",
+   "story": "Bijli vibhag ka afsar ek chetaavni deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,11,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5900,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_227",
+   "tier": 9,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #227",
+   "story": "Rishte ka mama ek jhilmilata prastav rakhta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹2,08,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3900,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_228",
+   "tier": 5,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #228",
+   "story": "Ad agency wala ek chetaavni deta hai. Maamla thoda tedha hai. Isme lagbhag ₹58,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5000,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_229",
+   "tier": 5,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #229",
+   "story": "Franchise agent ek purani baat yaad dilata hai. Baat me dum lagta hai. Isme lagbhag ₹2,16,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3500,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_230",
+   "tier": 8,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #230",
+   "story": "Rishte ka mama ek jhilmilata prastav rakhta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹94,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5500,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_231",
+   "tier": 8,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #231",
+   "story": "Ward councillor ek saajhedari ka haath badhata hai. Maamla thoda tedha hai. Isme lagbhag ₹20,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3100,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -100,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_232",
+   "tier": 4,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #232",
+   "story": "Wholesale mandi ka sardar ek naya raasta dikhata hai. Maamla thoda tedha hai. Isme lagbhag ₹94,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1600,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_233",
+   "tier": 8,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #233",
+   "story": "Ad agency wala ek mushkil ghadi me salah deta hai. Maamla thoda tedha hai. Isme lagbhag ₹6,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 800,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_234",
+   "tier": 2,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #234",
+   "story": "Ward councillor ek saajhedari ka haath badhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹97,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7800,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 600,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_235",
+   "tier": 8,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #235",
+   "story": "Food inspector ek saajhedari ka haath badhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹79,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1800,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_236",
+   "tier": 8,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #236",
+   "story": "Franchise agent ek bada order lekar aata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,69,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6300,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_237",
+   "tier": 3,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #237",
+   "story": "Purana dost ek saajhedari ka haath badhata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹24,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3900,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_238",
+   "tier": 6,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #238",
+   "story": "Rishte ka mama ek gupt suchna deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹31,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1600,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": 0,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_239",
+   "tier": 7,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #239",
+   "story": "Hospital administrator ek chetaavni deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹2,00,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4000,
+    "rep": -2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_240",
+   "tier": 6,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #240",
+   "story": "Purana karmchari ek purani baat yaad dilata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹24,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2800,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_241",
+   "tier": 1,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #241",
+   "story": "Ad agency wala ek naya raasta dikhata hai. Ye mauka roz nahi aata. Isme lagbhag ₹44,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4500,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_242",
+   "tier": 1,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #242",
+   "story": "Purana karmchari ek purani baat yaad dilata hai. Baat me dum lagta hai. Isme lagbhag ₹1,85,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5900,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_243",
+   "tier": 3,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #243",
+   "story": "Pandit ji ek chetaavni deta hai. Rakam chhoti nahi hai. Isme lagbhag ₹85,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4800,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_244",
+   "tier": 1,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #244",
+   "story": "Purana dost ek bada order lekar aata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,40,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1700,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_245",
+   "tier": 9,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #245",
+   "story": "Ek YouTuber ek gupt suchna deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹17,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8100,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_246",
+   "tier": 7,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #246",
+   "story": "Property dealer ek gupt suchna deta hai. Maamla thoda tedha hai. Isme lagbhag ₹1,21,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3500,
+    "rep": 3,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_247",
+   "tier": 1,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #247",
+   "story": "Ward councillor ek jhilmilata prastav rakhta hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,02,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -900,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1400,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_248",
+   "tier": 4,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #248",
+   "story": "Bijli vibhag ka afsar ek purani baat yaad dilata hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,61,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3300,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_249",
+   "tier": 1,
+   "fam": "business",
+   "title": "Ek CA (accountant) ka Prastav #249",
+   "story": "Ek CA (accountant) ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹57,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3400,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_250",
+   "tier": 2,
+   "fam": "business",
+   "title": "Local neta ka Prastav #250",
+   "story": "Local neta ek jhilmilata prastav rakhta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹10,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4200,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1000,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_251",
+   "tier": 7,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #251",
+   "story": "Pandit ji ek bada order lekar aata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,85,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3100,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_252",
+   "tier": 8,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #252",
+   "story": "Bank manager ek purani baat yaad dilata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,29,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5600,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_253",
+   "tier": 6,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #253",
+   "story": "Wholesale mandi ka sardar ek jhilmilata prastav rakhta hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,87,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1200,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -500,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_254",
+   "tier": 7,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #254",
+   "story": "Franchise agent ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹10,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -200,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_255",
+   "tier": 1,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #255",
+   "story": "Ward councillor ek gupt suchna deta hai. Baat me dum lagta hai. Isme lagbhag ₹1,95,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2200,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_256",
+   "tier": 5,
+   "fam": "business",
+   "title": "Local neta ka Prastav #256",
+   "story": "Local neta ek saajhedari ka haath badhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹43,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -200,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_257",
+   "tier": 5,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #257",
+   "story": "Import dealer ek jhilmilata prastav rakhta hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,09,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1800,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_258",
+   "tier": 6,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #258",
+   "story": "Property dealer ek jhilmilata prastav rakhta hai. Maamla thoda tedha hai. Isme lagbhag ₹81,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2500,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_259",
+   "tier": 2,
+   "fam": "business",
+   "title": "Franchise agent ka Prastav #259",
+   "story": "Franchise agent ek bada order lekar aata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,29,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6300,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -200,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_260",
+   "tier": 7,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #260",
+   "story": "Property dealer ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,10,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2400,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 300,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_261",
+   "tier": 6,
+   "fam": "business",
+   "title": "Ek CA (accountant) ka Prastav #261",
+   "story": "Ek CA (accountant) ek saajhedari ka haath badhata hai. Maamla thoda tedha hai. Isme lagbhag ₹1,48,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1800,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_262",
+   "tier": 6,
+   "fam": "business",
+   "title": "Purana karmchari ka Prastav #262",
+   "story": "Purana karmchari ek jhilmilata prastav rakhta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,58,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5700,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -800,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_263",
+   "tier": 4,
+   "fam": "business",
+   "title": "Local neta ka Prastav #263",
+   "story": "Local neta ek chetaavni deta hai. Rakam chhoti nahi hai. Isme lagbhag ₹98,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6100,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_264",
+   "tier": 9,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #264",
+   "story": "Import dealer ek bada order lekar aata hai. Baat me dum lagta hai. Isme lagbhag ₹93,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4200,
+    "rep": 2,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -900,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_265",
+   "tier": 5,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #265",
+   "story": "Ward councillor ek jhilmilata prastav rakhta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹47,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1100,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_266",
+   "tier": 8,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #266",
+   "story": "Ek YouTuber ek gupt suchna deta hai. Baat me dum lagta hai. Isme lagbhag ₹1,65,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 700,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_267",
+   "tier": 4,
+   "fam": "business",
+   "title": "Local neta ka Prastav #267",
+   "story": "Local neta ek saajhedari ka haath badhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹71,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3100,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1800,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_268",
+   "tier": 9,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #268",
+   "story": "Ward councillor ek chetaavni deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹47,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4900,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": -1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_269",
+   "tier": 6,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #269",
+   "story": "Pandit ji ek chetaavni deta hai. Baat me dum lagta hai. Isme lagbhag ₹1,52,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 9000,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": 2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_270",
+   "tier": 7,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #270",
+   "story": "Bank manager ek mushkil ghadi me salah deta hai. Baat me dum lagta hai. Isme lagbhag ₹59,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5100,
+    "rep": 4,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_271",
+   "tier": 4,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #271",
+   "story": "Wholesale mandi ka sardar ek chetaavni deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹44,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -200,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_272",
+   "tier": 8,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #272",
+   "story": "Purana dost ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹13,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2600,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_273",
+   "tier": 7,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #273",
+   "story": "Pandit ji ek chetaavni deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹20,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2800,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -1000,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_274",
+   "tier": 3,
+   "fam": "business",
+   "title": "Local neta ka Prastav #274",
+   "story": "Local neta ek chetaavni deta hai. Maamla thoda tedha hai. Isme lagbhag ₹2,34,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7500,
+    "rep": 0,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 400,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_275",
+   "tier": 6,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #275",
+   "story": "Import dealer ek mushkil ghadi me salah deta hai. Maamla thoda tedha hai. Isme lagbhag ₹1,78,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5200,
+    "rep": 1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_276",
+   "tier": 1,
+   "fam": "business",
+   "title": "School ke principal ka Prastav #276",
+   "story": "School ke principal ek naya raasta dikhata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹60,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2000,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 2000,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_277",
+   "tier": 4,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #277",
+   "story": "Hospital administrator ek mushkil ghadi me salah deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹37,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 9000,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -500,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_278",
+   "tier": 1,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #278",
+   "story": "Property dealer ek mushkil ghadi me salah deta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,03,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1000,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_279",
+   "tier": 1,
+   "fam": "business",
+   "title": "Local neta ka Prastav #279",
+   "story": "Local neta ek saajhedari ka haath badhata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹2,21,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -600,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_280",
+   "tier": 2,
+   "fam": "business",
+   "title": "Property dealer ka Prastav #280",
+   "story": "Property dealer ek purani baat yaad dilata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹19,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7600,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_281",
+   "tier": 4,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #281",
+   "story": "Wholesale mandi ka sardar ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹44,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3800,
+    "rep": 4,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1800,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_282",
+   "tier": 9,
+   "fam": "business",
+   "title": "Graahak sangh ka neta ka Prastav #282",
+   "story": "Graahak sangh ka neta ek mushkil ghadi me salah deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,29,700 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 9000,
+    "rep": 3,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_283",
+   "tier": 4,
+   "fam": "business",
+   "title": "Wholesale mandi ka sardar ka Prastav #283",
+   "story": "Wholesale mandi ka sardar ek mushkil ghadi me salah deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,45,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 6900,
+    "rep": -1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 100,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_284",
+   "tier": 2,
+   "fam": "business",
+   "title": "Ward councillor ka Prastav #284",
+   "story": "Ward councillor ek naya raasta dikhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹2,17,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5200,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 100,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_285",
+   "tier": 4,
+   "fam": "business",
+   "title": "Local neta ka Prastav #285",
+   "story": "Local neta ek gupt suchna deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹2,17,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1000,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_286",
+   "tier": 4,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #286",
+   "story": "Purana dost ek chetaavni deta hai. Baat me dum lagta hai. Isme lagbhag ₹1,91,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1200,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -600,
+    "rep": 2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_287",
+   "tier": 2,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #287",
+   "story": "Hospital administrator ek purani baat yaad dilata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,15,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 9000,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": 3,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_288",
+   "tier": 6,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #288",
+   "story": "Import dealer ek mushkil ghadi me salah deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,41,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 7400,
+    "rep": -2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -700,
+    "rep": 0,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_289",
+   "tier": 3,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #289",
+   "story": "Import dealer ek naya raasta dikhata hai. Galti hui to naam kharab hoga. Isme lagbhag ₹53,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2400,
+    "rep": 4,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": -1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_290",
+   "tier": 1,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #290",
+   "story": "Bank manager ek mushkil ghadi me salah deta hai. Baat me dum lagta hai. Isme lagbhag ₹62,600 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3500,
+    "rep": -1,
+    "note": "Mauka haath se jaane nahi diya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_291",
+   "tier": 5,
+   "fam": "business",
+   "title": "Food inspector ka Prastav #291",
+   "story": "Food inspector ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹1,70,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -500,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1800,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_292",
+   "tier": 4,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #292",
+   "story": "Purana dost ek bada order lekar aata hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹1,58,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -5700,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -300,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_293",
+   "tier": 8,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #293",
+   "story": "Rishte ka mama ek jhilmilata prastav rakhta hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,21,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2600,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1400,
+    "rep": -1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_294",
+   "tier": 8,
+   "fam": "business",
+   "title": "Local neta ka Prastav #294",
+   "story": "Local neta ek jhilmilata prastav rakhta hai.  kagaz pure hai, par bharosa kagaz se bada hota hai. Isme lagbhag ₹2,30,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 0,
+    "rep": 0,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 2000,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_295",
+   "tier": 7,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #295",
+   "story": "Purana dost ek saajhedari ka haath badhata hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹2,39,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2300,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": 1,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_296",
+   "tier": 8,
+   "fam": "business",
+   "title": "Pandit ji ka Prastav #296",
+   "story": "Pandit ji ek naya raasta dikhata hai. Rakam chhoti nahi hai. Isme lagbhag ₹2,23,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 800,
+    "rep": 0,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_297",
+   "tier": 1,
+   "fam": "business",
+   "title": "Bijli vibhag ka afsar ka Prastav #297",
+   "story": "Bijli vibhag ka afsar ek chetaavni deta hai. Galti hui to naam kharab hoga. Isme lagbhag ₹1,72,500 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -4900,
+    "rep": -2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1400,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_298",
+   "tier": 3,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #298",
+   "story": "Ek YouTuber ek jhilmilata prastav rakhta hai. Rakam chhoti nahi hai. Isme lagbhag ₹1,85,400 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2800,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 700,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_299",
+   "tier": 8,
+   "fam": "business",
+   "title": "Purana dost ka Prastav #299",
+   "story": "Purana dost ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹52,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 4200,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 900,
+    "rep": 3,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_300",
+   "tier": 9,
+   "fam": "business",
+   "title": "Ad agency wala ka Prastav #300",
+   "story": "Ad agency wala ek naya raasta dikhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,01,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 900,
+    "rep": 0,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1600,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_301",
+   "tier": 8,
+   "fam": "business",
+   "title": "Purana supplier ka Prastav #301",
+   "story": "Purana supplier ek chetaavni deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹41,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2000,
+    "rep": -1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_302",
+   "tier": 7,
+   "fam": "business",
+   "title": "Local neta ka Prastav #302",
+   "story": "Local neta ek chetaavni deta hai. Ye mauka roz nahi aata. Isme lagbhag ₹13,300 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 2600,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1900,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_303",
+   "tier": 8,
+   "fam": "business",
+   "title": "Import dealer ka Prastav #303",
+   "story": "Import dealer ek jhilmilata prastav rakhta hai. Ye mauka roz nahi aata. Isme lagbhag ₹1,98,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 8200,
+    "rep": 0,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 500,
+    "rep": -2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_304",
+   "tier": 9,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #304",
+   "story": "Hospital administrator ek gupt suchna deta hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,44,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 3500,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": -100,
+    "rep": -2,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_305",
+   "tier": 9,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #305",
+   "story": "Ek YouTuber ek naya raasta dikhata hai. Waqt kam hai, faisla abhi hai. Isme lagbhag ₹1,89,800 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -1000,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1000,
+    "rep": 1,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+  {
+   "id": "dc2_3_306",
+   "tier": 4,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #306",
+   "story": "Hospital administrator ek chetaavni deta hai. Maamla thoda tedha hai. Isme lagbhag ₹1,73,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3600,
+    "rep": 3,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1300,
+    "rep": 3,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_307",
+   "tier": 6,
+   "fam": "business",
+   "title": "Bank manager ka Prastav #307",
+   "story": "Bank manager ek bada order lekar aata hai. Rakam chhoti nahi hai. Isme lagbhag ₹42,200 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -2700,
+    "rep": 1,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 800,
+    "rep": 1,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_308",
+   "tier": 5,
+   "fam": "business",
+   "title": "Rishte ka mama ka Prastav #308",
+   "story": "Rishte ka mama ek jhilmilata prastav rakhta hai. Baat me dum lagta hai. Isme lagbhag ₹2,28,100 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 5300,
+    "rep": 1,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1500,
+    "rep": -2,
+    "note": "Bina soche koi sauda nahi — manaa kar diya."
+   }
+  },
+  {
+   "id": "dc2_3_309",
+   "tier": 4,
+   "fam": "business",
+   "title": "Hospital administrator ka Prastav #309",
+   "story": "Hospital administrator ek chetaavni deta hai. Mohalle me baat phail chuki hai. Isme lagbhag ₹48,900 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": 1700,
+    "rep": 2,
+    "note": "Jo hoga dekha jayega — kadam aage badhaya."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 1200,
+    "rep": 0,
+    "note": "Suraksha pehle rakhi — dheere par pakka."
+   }
+  },
+  {
+   "id": "dc2_3_310",
+   "tier": 5,
+   "fam": "business",
+   "title": "Ek YouTuber ka Prastav #310",
+   "story": "Ek YouTuber ek bada order lekar aata hai. Maamla thoda tedha hai. Isme lagbhag ₹1,60,000 ka sawaal hai — paisa ya bharosa — ek chunna hai.",
+   "a": {
+    "label": "Haan — mauka lo",
+    "cash": -3400,
+    "rep": 2,
+    "note": "Bol diya haan — ab mehnat dugni."
+   },
+   "b": {
+    "label": "Nahi — sambhal ke chalo",
+    "cash": 200,
+    "rep": 2,
+    "note": "Na bolna bhi ek kala hai — aaj wahi kaam aayi."
+   }
+  },
+]
