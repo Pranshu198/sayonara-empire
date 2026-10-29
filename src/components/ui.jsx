@@ -11,7 +11,7 @@ export function Section({ id, title, icon, right, children, defaultOpen = true }
   useEffect(() => { try { localStorage.setItem(key, open ? '1' : '0') } catch {} }, [open])
   return (
     <div className="card section">
-      <button className="sec-head" onClick={() => setOpen(!open)}>
+      <button className="sec-head" aria-expanded={open} onClick={() => setOpen(!open)}>
         <span className="sec-title">{icon && <Icon name={icon} size={17} />} {title}</span>
         <span className="sec-right">{right}<motion.span animate={{ rotate: open ? 180 : 0 }} className="chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M5 9.5l7 7 7-7"/></svg></motion.span></span>
       </button>

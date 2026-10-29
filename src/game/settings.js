@@ -28,6 +28,7 @@ export const DEFAULT_SETTINGS = {
   largeText: false,
   contrast: false,
   reducedMotion: false,
+  haptics: true,             // Pass 3.5: navigator.vibrate wala tactile feedback
   // Advanced / Developer
   showFps: false,
   debug: false,              // engine ke andar ke number dikhao
@@ -44,7 +45,7 @@ export const SETTING_GROUPS = [
   { id: 'display', title: ' Display / UI', keys: ['accent', 'fontScale', 'animLevel', 'numFmt', 'amoled'] },
   { id: 'audio', title: ' Audio', keys: ['sound', 'volume'] },
   { id: 'data', title: ' Data', keys: ['autosaveSec'] },
-  { id: 'access', title: ' Accessibility', keys: ['largeText', 'contrast', 'reducedMotion'] },
+  { id: 'access', title: ' Accessibility', keys: ['largeText', 'contrast', 'reducedMotion', 'haptics'] },
   { id: 'advanced', title: ' Advanced / Developer', keys: ['showFps', 'debug', 'perfMode'] },
   { id: 'sandbox', title: ' Cheats / Sandbox (save par nishan lagega)', keys: ['sandbox'] },
   { id: 'language', title: ' Language', keys: ['lang'] },
@@ -64,7 +65,8 @@ export const SETTING_META = {
   accent: { label: 'Accent Colour', type: 'choice', options: [['gold', ' Gold'], ['violet', ' Violet (motion-graphics wala)'], ['green', ' Green'], ['pink', ' Pink']], help: 'Poori app ke highlight rang badal jata hai.' },
   fontScale: { label: 'Font Size', type: 'choice', options: [[0.9, 'Chhota'], [1, 'Aam'], [1.15, 'Bada']], help: 'Poori app ke akshar bade/chhote.' },
   animLevel: { label: 'Animations', type: 'choice', options: [['full', ' Full (motion graphics)'], ['reduced', 'Halki'], ['off', 'Band']], help: 'Splash, bursts aur bade animations ka star.' },
-  numFmt: { label: 'Number Format', type: 'choice', options: [['short', '₹1.2 L (chhota)'], ['full', '₹1,20,000 (poora)']], help: 'Paisa kis roop me dikhe — HUD ke number turant badalte hain.' },
+  numFmt: { label: 'Number Format', type: 'choice', options: [['short', '₹1.2 L (Indian)'], ['full', '₹1,20,000 (poora)'], ['intl', '₹1.2M (International)']], help: 'Paisa kis roop me dikhe — HUD aur Home ke number turant badalte hain.' },
+  haptics: { label: 'Haptic Feedback (vibration)', type: 'toggle', help: 'Phone par halki vibration — kharid, jeet aur bade palon par. Desktop par apne aap band rehta hai.' },
   amoled: { label: 'AMOLED Style', type: 'choice', options: [['pure', 'Pure Black (#000)'], ['soft', 'Soft Black (halki roshni)']], help: 'Pure = battery bachat zyada; Soft = cards thode zyada saaf.' },
   sound: { label: 'Sound Effects', type: 'toggle', help: 'Chhoti WebAudio awaazein — kamaai, click aur jeet par. Koi file nahi, browser khud banata hai.' },
   volume: { label: 'Volume', type: 'slider', min: 0, max: 1, step: 0.1, help: 'Sound ki awaz kitni tez.' },

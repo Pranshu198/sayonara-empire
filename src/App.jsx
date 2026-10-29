@@ -25,12 +25,15 @@ const ImportPanel = lazyNamed(import('./components/ImportPanel.jsx'), 'ImportPan
 const ProcurementPanel = lazyNamed(import('./components/ProcurementPanel.jsx'), 'ProcurementPanel')
 const StatsPanel = lazyNamed(import('./components/StatsPanel.jsx'), 'StatsPanel')
 const HqPanel = lazyNamed(import('./components/HqPanel.jsx'), 'HqPanel')
+const HomePanel = lazyNamed(import('./components/HomePanel.jsx'), 'HomePanel')
 import { StatsIcon } from './components/StatsIcon.jsx'
 import { Icon, CatIcon } from './components/icons/index.jsx'
 import { SkeletonCard } from './components/cards.jsx'
 import { bizIdOf, branchKey } from './game/businesses/index.js'
 import { loadLang, makeT, chromeFromPack, isRTL, FONT_STACKS, detectLang } from './i18n/index.js'
 import { stripEmoji } from './utils/text.js'
+import { fmtIntl } from './utils/fmt.js'
+import { buzz, BUZZ } from './utils/haptics.js'
 import { ensureStaffLib } from './game/staffSystem.js'
 const PanelFallback = () => <SkeletonCard lines={4} />
 import { withDefaults, chromeText } from './game/settings.js'
@@ -59,6 +62,11 @@ function migrate(saved) {
   // Purana save: lifetime counters aaj (uske maujooda din) se ginne shuru — Stats tab par note bhi yahi kehta hai
   if (!hadLife && saved.life) saved.life = { ...saved.life, lifeStartDay: saved.day || 1 }
   saved.settings = withDefaults(saved.settings)
+  // Pass 3.5: purane/khel chuke saves par tutorial dobara na dikhe — veteran = auto-complete
+  if (!saved.tut || !Object.keys(saved.tut).length) {
+    if ((saved.day || 1) > 1 || Object.keys(saved.biz || {}).length > 0) saved.tut = { done: 1 }
+    else saved.tut = {}
+  }
   // Pass 3.2: purane single-location businesses ko branch keys (type@city) me badlo — save surakshit migration
   if (saved.biz) {
     const nb = {}
@@ -72,7 +80,12 @@ function migrate(saved) {
 }
 
 const SAVE_KEY = 'sayonara_empire_vite_v1'
-const load = () => { try { const r = localStorage.getItem(SAVE_KEY); return r ? JSON.parse(r) : null } catch { return null } }
+const BACKUP_KEY = SAVE_KEY + '_backup'
+// Pass 3.5: main save kharab nikle to last-good backup se uthao — progress kabhi ek corrupt write se na mare
+const load = () => {
+  try { const r = localStorage.getItem(SAVE_KEY); if (r) return JSON.parse(r) } catch {}
+  try { const b = localStorage.getItem(BACKUP_KEY); return b ? JSON.parse(b) : null } catch { return null }
+}
 
 export default function App() {
   const [s, setS] = useState(() => {
@@ -82,7 +95,7 @@ export default function App() {
       const awayH = Math.min(8, (Date.now() - (saved.lastSaveAt || Date.now())) / 3600000)
       const est = Object.entries(saved.biz || {}).reduce((a, [id, o]) => { const d = bizDef(id); return a + d.rev * 0.3 * (1 + 0.18 * (o.lv - 1)) }, 0)
       saved.offlineGain = Math.round(est * awayH * 0.2)
-      if (saved.offlineGain > 0) saved.cash += saved.offlineGain
+      if (saved.offlineGain > 0) { saved.cash += saved.offlineGain; saved.awayReport = { hours: Math.round(awayH * 10) / 10, gain: saved.offlineGain } }
       return saved
     }
     const init = initialState()
@@ -125,6 +138,8 @@ export default function App() {
   const [catFilter, setCatFilter] = useState('All')
   const [importTxt, setImportTxt] = useState('')
   const [spinDeg, setSpinDeg] = useState(0)
+  const [sheet, setSheet] = useState(null) // Pass 3.5: bottom-sheet — 'actions' | 'prestige'
+  const [swReg, setSwReg] = useState(null) // Pass 3.5: SW update taiyaar ho to prompt
   const [showSplash, setShowSplash] = useState(!urlTab)
   useEffect(() => {
     const st = s.settings || {}
@@ -137,22 +152,45 @@ export default function App() {
   useEffect(() => { ensureStaffLib() }, [])
   useEffect(() => { let on = true; loadLang(langId).then((pk) => { if (on) setPack(pk) }).catch(() => {}); return () => { on = false } }, [langId])
   const tx = makeT(pack)
-  const fmtN = (s.settings && s.settings.numFmt === 'full') ? fmtFull : fmt
+  const fmtN = (s.settings && s.settings.numFmt === 'full') ? fmtFull : (s.settings && s.settings.numFmt === 'intl') ? fmtIntl : fmt
   const chrome = chromeFromPack(pack) || chromeText(s.settings)
   const toastT = useRef(null)
   const nw = useMemo(() => netWorth(s), [s])
-  const say = (m, celebrate) => { setToast(stripEmoji(m)); if (celebrate) setBurst(b => b + 1); playSound(celebrate ? 'cash' : 'click', s.settings); clearTimeout(toastT.current); toastT.current = setTimeout(() => setToast(''), 2600) }
+  const say = (m, celebrate) => { setToast(stripEmoji(m)); if (celebrate) { setBurst(b => b + 1); buzz(s.settings, BUZZ.success) } playSound(celebrate ? 'cash' : 'click', s.settings); clearTimeout(toastT.current); toastT.current = setTimeout(() => setToast(''), 2600) }
 
+  // Pass 3.5: har save se pehle maujooda achha save BACKUP me — agli corrupt write se pichhla surakshit rahe
+  const persist = (st) => {
+    try {
+      const prev = localStorage.getItem(SAVE_KEY)
+      if (prev) { try { JSON.parse(prev); localStorage.setItem(BACKUP_KEY, prev) } catch {} }
+      localStorage.setItem(SAVE_KEY, JSON.stringify({ ...st, lastSaveAt: Date.now() }))
+    } catch {}
+  }
   const saveTimer = useRef(null); const latestState = useRef(s); latestState.current = s
   useEffect(() => {
     if (saveTimer.current) return
-    saveTimer.current = setTimeout(() => { saveTimer.current = null; try { localStorage.setItem(SAVE_KEY, JSON.stringify({ ...latestState.current, lastSaveAt: Date.now() })) } catch {} }, 1500)
+    saveTimer.current = setTimeout(() => { saveTimer.current = null; persist(latestState.current) }, 1500)
   }, [s])
   useEffect(() => {
-    const flush = () => { try { localStorage.setItem(SAVE_KEY, JSON.stringify({ ...latestState.current, lastSaveAt: Date.now() })) } catch {} }
+    const flush = () => persist(latestState.current)
     window.addEventListener('beforeunload', flush); document.addEventListener('visibilitychange', flush)
     return () => { window.removeEventListener('beforeunload', flush); document.removeEventListener('visibilitychange', flush) }
   }, [])
+  // Pass 3.5: tutorial flags asal khel se auto-set + milestone par celebration
+  useEffect(() => {
+    const t = s.tut || {}; const patch = {}
+    if (!t.buy && Object.keys(s.biz || {}).length) patch.buy = 1
+    if (!t.price && Object.values(s.biz || {}).some(o => o.price !== 1)) patch.price = 1
+    if (!t.day && s.lastDayReport) patch.day = 1
+    if (!t.report && (t.day || patch.day) && tab === 'home') patch.report = 1
+    if (Object.keys(patch).length) setS(p => ({ ...p, tut: { ...(p.tut || {}), ...patch } }))
+  }, [s, tab])
+  const msCount = useRef(-1)
+  useEffect(() => {
+    const c = Object.keys((s.life && s.life.milestones) || {}).length
+    if (msCount.current >= 0 && c > msCount.current) { buzz(s.settings, BUZZ.big); say(' Milestone haasil! Net worth ka naya mukaam — Stats me dekho', true) }
+    msCount.current = c
+  }, [s.life])
   useEffect(() => { if (s.offlineGain) { say(` Offline kamaai mili: ${fmt(s.offlineGain)}`, true); setS(p => ({ ...p, offlineGain: 0 })) } }, [])
 
   // Auto mode timer: phase duration = dayLen/4 divided by speed
@@ -165,6 +203,40 @@ export default function App() {
 
   const upd = (fn) => setS(p => { const n = structuredClone(p); fn(n); return n })
   const nextPhase = () => setS(p => phaseTick(p))
+  const endDayNow = () => setS(p => { let n = p; for (let i = 0; i < 4 - p.phase; i++) n = phaseTick(n); return n })
+  // Pass 3.5: SW update flow — naya version waiting ho to chip dikhao, Refresh par activate + reload
+  const refreshingRef = useRef(false)
+  useEffect(() => {
+    if (!('serviceWorker' in navigator)) return
+    navigator.serviceWorker.getRegistration().then((reg) => {
+      if (!reg) return
+      if (reg.waiting && navigator.serviceWorker.controller) setSwReg(reg)
+      reg.addEventListener('updatefound', () => { const nw2 = reg.installing; if (nw2) nw2.addEventListener('statechange', () => { if (nw2.state === 'installed' && navigator.serviceWorker.controller) setSwReg(reg) }) })
+    }).catch(() => {})
+    const onCtrl = () => { if (refreshingRef.current) window.location.reload() }
+    navigator.serviceWorker.addEventListener('controllerchange', onCtrl)
+    return () => navigator.serviceWorker.removeEventListener('controllerchange', onCtrl)
+  }, [])
+  // Pass 3.5: desktop keyboard shortcuts — Space/→ = next phase, E = end day, 1-9 = tabs
+  useEffect(() => {
+    const h = (e) => {
+      const t = e.target
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable)) return
+      if (e.key === ' ' || e.key === 'ArrowRight') { e.preventDefault(); setS(p => phaseTick(p)) }
+      else if (e.key === 'e' || e.key === 'E') endDayNow()
+      else if (/^[1-9]$/.test(e.key)) { const tg = TAB_ORDER[Number(e.key) - 1]; if (tg) setTab(tg) }
+    }
+    window.addEventListener('keydown', h)
+    return () => window.removeEventListener('keydown', h)
+  }, [])
+  // Pass 3.5: bottom-sheet khula ho to browser Back pehle sheet band kare (back-friendly)
+  useEffect(() => {
+    if (!sheet) return
+    history.pushState({ seSheet: 1 }, '')
+    const onPop = () => setSheet(null)
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [sheet])
 
   // ---------- business actions ----------
   const buyBiz = (d) => { const locId = buyLoc || HOME_CITY; const key = branchKey(d.id, locId); const isBranch = !!s.biz[key] || Object.keys(s.biz).some((k) => bizIdOf(k) === d.id); const price = isBranch && !s.biz[key] ? Math.round(d.cost * 0.5) : d.cost; if (s.biz[key]) return say('Is sheher me is brand ki branch pehle se hai — HQ se nayi jagah kholo'); if (s.cash < price) return say('Cash kam hai!'); upd(n => { n.cash -= price; n.biz[key] = { lv: 1, price: 1, stock: 100, staff: d.staff, profitToday: 0, profitTotal: 0, rating: 4.0, mktDays: 0, loc: locId, employees: [] }; n.xp += 20; n.story = [`Day ${n.day}: ${d.name} ${isBranch ? 'ki nayi branch' : 'kharida'} ${fmt(price)} me — ${cityNameOf(locId)}`, ...n.story].slice(0, 20) }); say(`${d.name} ${isBranch ? 'ki branch' : ''} tumhara hua — ${cityNameOf(locId)}`, true) }
@@ -172,6 +244,9 @@ export default function App() {
   const sellBiz = (d) => { const o = s.biz[d.id]; const val = Math.round(d.cost * (0.6 + 0.25 * o.lv)); upd(n => { n.cash += val; delete n.biz[d.id] }); say(` ${d.name} becha: ${fmt(val)}`) }
   const upgradeBiz = (d) => { const o = s.biz[d.id]; const cost = Math.round(d.cost * 0.55 * o.lv); if (o.lv >= 10) return say(' Max level 10!'); if (s.cash < cost) return say(' Cash kam hai'); upd(n => { n.cash -= cost; n.biz[d.id].lv += 1; n.xp += 10 }); say(` ${d.name} ab Level ${o.lv + 1}`, true) }
   const restock = (d) => { const o = s.biz[d.id]; const miss = 100 - o.stock; const cost = Math.round(d.rev * d.cogs * miss / 100 * 0.9) + 10; if (s.cash < cost) return say(' Restock ke paise nahi'); upd(n => { n.cash -= cost; n.biz[d.id].stock = 100 }); say(` ${d.name} full restock (${fmt(cost)})`) }
+  // Pass 3.5: Home alerts ke liye branch-key se restock + idle-cash deposit (one-tap actions)
+  const restockKey = (key) => { const d = bizDef(key); const o = s.biz[key]; if (!d || !o) return; const miss = 100 - o.stock; const cost = Math.round(d.rev * d.cogs * miss / 100 * 0.9) + 10; if (s.cash < cost) return say(' Restock ke paise nahi'); upd(n => { n.cash -= cost; n.biz[key].stock = 100; n.tut = { ...(n.tut || {}), restock: 1 } }); say(` ${d.name} full restock (${fmt(cost)})`) }
+  const depositIdle = () => { const amt = Math.max(0, Math.floor((s.cash - 25000) / 2)); if (amt <= 0) return; upd(n => { n.cash -= amt; n.bank += amt }); say(` ${fmt(amt)} bank me gaya — waha surakshit aur badhega`) }
   const marketing = (d) => { const cost = Math.round(d.rev * 1.2); if (s.cash < cost) return say(' Cash kam hai'); upd(n => { n.cash -= cost; n.biz[d.id].mktDays = 3 }); say(` Marketing chalu — 3 din demand +30%`) }
   const setPrice = (d, v) => upd(n => { n.biz[d.id].price = v })
   const setStaff = (d, delta) => upd(n => { const o = n.biz[d.id]; o.staff = Math.max(0, Math.min(d.staff * 3, o.staff + delta)) })
@@ -191,13 +266,27 @@ export default function App() {
   const prestige = () => { if (nw < 10000000) return say(' Prestige ke liye net worth ₹1 Cr chahiye'); upd(n => { const keep = 25000; Object.assign(n, initialState()); n.cash = keep; n.prestige = (s.prestige || 0) + 1; n.prestigeMult = 1 + (s.prestige + 1) * 0.25; n.day = 1 }); say(' PRESTIGE! Nayi peedhi, permanent earning multiplier badha', true) }
   const claimAch = (a) => { upd(n => { n.cash += a.reward; n.ach.push(a.id); n.xp += 15 }); say(` ${a.name}: +${fmt(a.reward)}`, true) }
   const claimMission = (m) => { upd(n => { n.cash += m.reward; n.missionsDone = [...n.missionsDone, m.id + '_' + n.day] }); say(` Mission complete: +${fmt(m.reward)}`, true) }
+  const homeAct = { restockKey, claimMission, claimDaily, depositIdle } // Pass 3.5: HomePanel ke one-tap actions (sab handlers ke baad — TDZ safe)
 
-  const doExport = () => { const code = btoa(unescape(encodeURIComponent(JSON.stringify(s)))); if (navigator.clipboard) navigator.clipboard.writeText(code); setImportTxt(code); say('Save code copy ho gaya') }
-  const doImportBox = () => { try { const obj = migrate(JSON.parse(decodeURIComponent(escape(atob(importTxt.trim()))))); setS(obj); say('Save import ho gaya!') } catch { say('Galat code hai') } }
+  // Pass 3.5: export ab checksum ke saath — kata-phata code import par turant pakda jayega
+  const checksum = (str) => { let h = 5381; for (let i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) >>> 0; return h.toString(36) }
+  const doExport = () => { const data = JSON.stringify(s); const code = btoa(unescape(encodeURIComponent(JSON.stringify({ app: 'sayonara', v: 35, sum: checksum(data), data })))); if (navigator.clipboard) navigator.clipboard.writeText(code); setImportTxt(code); say('Save code copy ho gaya (checksum ke saath)') }
+  const doImportBox = () => {
+    try {
+      const outer = JSON.parse(decodeURIComponent(escape(atob(importTxt.trim()))))
+      let obj = outer
+      if (outer && outer.data && outer.sum) { // naya checksummed format; purana raw format bhi chalega (neeche fallback)
+        if (checksum(outer.data) !== outer.sum) return say(' Checksum mismatch — code adhoora ya kharab hai, import nahi hua')
+        obj = JSON.parse(outer.data)
+      }
+      setS(migrate(obj)); say('Save import ho gaya!')
+    } catch { say('Galat code hai') }
+  }
   const doImportData = (obj) => { setS(migrate(obj)) }
   const doReset = () => { localStorage.removeItem(SAVE_KEY); setS(initialState()); say('Naya game shuru!') }
 
   const tabs = [['home', 'home', tx('empire')], ['biz', 'shop', tx('business')], ['hq', 'hq', tx('hq')], ['stats', 'stats', tx('stats')], ['market', 'trend', tx('markets')], ['prop', 'building', tx('property')], ['wealth', 'gem', tx('wealth')], ['bank', 'bank', tx('bank')], ['more', 'more', tx('more')]]
+  const hasRewards = s.lastDaily !== s.day || s.lastSpin !== s.day || (s.missions || []).some(m => missionProgress(s, m) >= m.target && !s.missionsDone.includes(m.id + '_' + s.day))
   const xpLv = levelOf(s.xp)
 
   const accentColor = { gold: '#f5c542', violet: '#a855f7', green: '#2ee06f', pink: '#ec4899' }[(s.settings && s.settings.accent) || 'gold']
@@ -209,7 +298,7 @@ export default function App() {
       {s.settings && s.settings.showFps && <FpsMeter />}
       <Burst burstKey={burst} />
       <header className="hud">
-        <div className="brand"><h1>SAYONARA <span>EMPIRE</span></h1><div className="dayline">Day {s.day} • {PHASES[s.phase]} • Lv {xpLv} • {seasonOf(s.day).name}{(() => { const af = activeFestivals(s.day, cityOf(HOME_CITY)); return af.length ? ` • Festival: ${af[0].name}` : '' })()}</div></div>
+        <div className="brand"><h1>SAYONARA <span>EMPIRE</span></h1><div className="dayline">Day {s.day} • {PHASES[s.phase]} • Lv {xpLv} • {seasonOf(s.day).name}{(() => { const af = activeFestivals(s.day, cityOf(HOME_CITY)); return af.length ? ` • Festival: ${af[0].name}` : '' })()}</div><button className="hud-help" aria-label={tx('help')} onClick={() => setTab('more')}><Icon name="help" size={19} /></button></div>
         <div className="money-row">
           <div className="money-box"><div className="lbl">{chrome.cash}</div><div className="val green"><AnimatedNumber value={s.cash} format={fmtN} /></div></div>
           <div className="money-box"><div className="lbl">{chrome.bank}</div><div className="val"><AnimatedNumber value={s.bank} format={fmtN} /></div></div>
@@ -223,6 +312,7 @@ export default function App() {
         <AnimatePresence mode="wait">
           <motion.div key={tab} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }} transition={{ duration: 0.18 }}>
             {tab === 'home' && <>
+              <Suspense fallback={<PanelFallback />}><HomePanel s={s} nw={nw} fmtN={fmtN} tx={tx} go={setTab} upd={upd} say={say} act={homeAct} /></Suspense>
               <Section id="time" title={tx('timeControl')} right={s.mode === 'auto' ? 'AUTO' : 'MANUAL'}>
                 <div className="time-ctrl">
                   <button className={'chip' + (s.mode === 'manual' ? ' on' : '')} onClick={() => upd(n => n.mode = 'manual')}> Manual</button>
@@ -379,7 +469,7 @@ export default function App() {
                 <div className="row"><span>Prestige</span><b>{s.prestige} baar • Multiplier {s.prestigeMult.toFixed(2)}x</b></div>
                 <div className="grid2">
                   <button className="btn small green" onClick={claimDaily}> Daily Reward {s.lastDaily === s.day ? 'OK' : '₹750'}</button>
-                  <button className="btn small" onClick={prestige}> Prestige (₹1Cr NW)</button>
+                  <button className="btn small" onClick={() => setSheet('prestige')}> Prestige (₹1Cr NW)</button>
                 </div>
               </Section>
               <Section id="spin" title="Lucky Spin" defaultOpen={false}>
@@ -406,7 +496,7 @@ export default function App() {
               <Section id="savesec" title="Save / Export / Import" defaultOpen={false}>
                 <div className="grid2">
                   <button className="btn small ghost" onClick={() => { const code = btoa(unescape(encodeURIComponent(JSON.stringify(s)))); navigator.clipboard && navigator.clipboard.writeText(code); setImportTxt(code); say(' Save code copy ho gaya — neeche box me bhi hai') }}> Export Code</button>
-                  <button className="btn small ghost" onClick={() => { try { const obj = JSON.parse(decodeURIComponent(escape(atob(importTxt.trim())))); setS(obj); say(' Save import ho gaya!') } catch { say(' Galat code hai') } }}> Import (box se)</button>
+                  <button className="btn small ghost" onClick={doImportBox}> Import (box se)</button>
                 </div>
                 <textarea rows={3} style={{ marginTop: 8 }} placeholder="Export code yaha aayega / Import ke liye code paste karo" value={importTxt} onChange={e => setImportTxt(e.target.value)} />
                 <button className="btn red" style={{ width: '100%', marginTop: 8 }} onClick={() => { if (confirm('Pakka? Pura game reset ho jayega!')) { localStorage.removeItem(SAVE_KEY); setS(initialState()) } }}> Reset Game</button>
@@ -421,7 +511,7 @@ export default function App() {
               <Suspense fallback={<PanelFallback />}><SettingsPanel s={s} upd={upd} say={say} onExport={doExport} onImport={(data) => { if (data) doImportData(data); else doImportBox() }} importTxt={importTxt} setImportTxt={setImportTxt} onReset={doReset} /></Suspense>
 
               <Section id="help" title="Kaise Khele — Simple Bhasha Me" defaultOpen={false}>
-                <p className="small">1) Business kharido → har phase (subah/dopahar/shaam/raat) bikri hogi.<br />2) Price zyada = zyada margin par kam customers; sahi balance rakho.<br />3) Stock khatm hone se pehle Restock karo, Marketing se 3 din demand badegi.<br />4) Munafa bank me rakho, FD/SIP se badhao; shares me paisa lagao par risk samjho.<br />5) Property se roz rent, loan se tezi — par EMI time par.<br />6) Manual mode = time tumhare haath me; Auto mode = din khud chalega.<br />7) Tax har 30 din me sirf us mahine ke profit par lagta hai — Day 30 par game rukta NAHI hai.</p>
+                <p className="small">1) Business kharido → har phase (subah/dopahar/shaam/raat) bikri hogi.<br />2) Price zyada = zyada margin par kam customers; sahi balance rakho.<br />3) Stock khatm hone se pehle Restock karo, Marketing se 3 din demand badegi.<br />4) Munafa bank me rakho, FD/SIP se badhao; shares me paisa lagao par risk samjho.<br />5) Property se roz rent, loan se tezi — par EMI time par.<br />6) Manual mode = time tumhare haath me; Auto mode = din khud chalega.<br />7) Tax har 30 din me sirf us mahine ke profit par lagta hai — Day 30 par game rukta NAHI hai.<br />8) Desktop par keyboard: <span className="kbd">Space</span>/<span className="kbd">→</span> = Next Phase, <span className="kbd">E</span> = End Day, <span className="kbd">1–9</span> = tabs.</p>
               </Section>
             </>}
           </motion.div>
@@ -436,11 +526,43 @@ export default function App() {
             <div className="ic-s">Home screen icon • Fullscreen • Offline bhi chalega</div>
           </div>
           <button onClick={async () => { try { installEvt.prompt(); await installEvt.userChoice } catch {} setInstallEvt(null) }}>Install</button>
-          <button className="ic-x" onClick={() => { setInstallClosed(true); try { localStorage.setItem('se_install_closed', '1') } catch {} }}>✕</button>
+          <button className="ic-x" aria-label="Close" onClick={() => { setInstallClosed(true); try { localStorage.setItem('se_install_closed', '1') } catch {} }}><Icon name="x" size={15} /></button>
+        </div>
+      )}
+      {!showSplash && tab !== 'more' && (
+        <button className="fab" aria-label={tx('quickActions')} onClick={() => { buzz(s.settings, BUZZ.tap); setSheet('actions') }}><Icon name="bolt" size={24} /></button>
+      )}
+      <AnimatePresence>
+        {sheet && (
+          <div className="sheet-wrap" role="dialog" aria-modal="true" aria-label={sheet === 'prestige' ? 'Prestige' : tx('quickActions')}>
+            <motion.div className="sheet-bg" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSheet(null)} />
+            <motion.div className="sheet" initial={{ y: 320 }} animate={{ y: 0 }} exit={{ y: 320 }} transition={{ type: 'spring', damping: 30, stiffness: 320 }}>
+              <div className="grab" />
+              {sheet === 'actions' && <>
+                <h3>{tx('quickActions')}</h3>
+                <button className="sheet-btn" onClick={() => { nextPhase(); setSheet(null) }}><Icon name="play" size={19} /> {tx('nextPhase')} — {PHASES[s.phase]}</button>
+                <button className="sheet-btn" onClick={() => { endDayNow(); setSheet(null) }}><Icon name="clock" size={19} /> {tx('endDay')}</button>
+                <button className="sheet-btn" onClick={() => { claimDaily(); setSheet(null) }}><Icon name="gift" size={19} /> Daily Reward {s.lastDaily === s.day ? 'OK' : '₹750'}</button>
+                <button className="sheet-btn" onClick={() => setSheet(null)}><Icon name="x" size={19} /> {tx('dismiss')}</button>
+              </>}
+              {sheet === 'prestige' && <>
+                <h3>Prestige — Pakka?</h3>
+                <p className="small" style={{ marginBottom: 12 }}>Prestige karne par cash, businesses, shares — <b>sab reset</b> ho jayega (sirf ₹25K + permanent earning multiplier bachega). Ye wapas nahi hoga. Net worth ₹1 Cr chahiye, tumhara abhi {fmtN(nw)} hai.</p>
+                <button className="sheet-btn danger" onClick={() => { setSheet(null); prestige() }}><Icon name="crown" size={19} /> Ha, Prestige karo</button>
+                <button className="sheet-btn" onClick={() => setSheet(null)}><Icon name="x" size={19} /> Nahi, rehne do</button>
+              </>}
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+      {swReg && (
+        <div className="update-chip" role="status">
+          <Icon name="refresh" size={17} /><span style={{ flex: 1 }}>{tx('newVersion')}</span>
+          <button onClick={() => { refreshingRef.current = true; if (swReg.waiting) swReg.waiting.postMessage({ type: 'SKIP_WAITING' }); else window.location.reload() }}>{tx('refreshNow')}</button>
         </div>
       )}
       <nav className="tabbar">
-        {tabs.map(([id, ic, label]) => <button key={id} className={tab === id ? 'on' : ''} onClick={() => setTab(id)}><span className="ic">{id === 'stats' ? <StatsIcon size={20} /> : <Icon name={ic} size={20} />}</span>{label}</button>)}
+        {tabs.map(([id, ic, label]) => <button key={id} className={tab === id ? 'on' : ''} aria-label={label} aria-current={tab === id ? 'page' : undefined} onClick={() => { buzz(s.settings, BUZZ.tap); setTab(id) }}><span className="ic">{id === 'stats' ? <StatsIcon size={20} /> : <Icon name={ic} size={20} />}</span>{label}{id === 'more' && hasRewards && <span className="tab-badge" />}</button>)}
       </nav>
       <Toast msg={toast} />
     </div>

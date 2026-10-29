@@ -91,6 +91,7 @@ export function initialState(savedElapsedSec = 0) {
     life: freshLife(1), lastBreakdown: null, bd: null,
     nwHist: [50000],
     totalEarned: 0,
+    tut: {}, awayReport: null, // Pass 3.5: guided first-run flags + "while you were away" summary
   }
 }
 
@@ -116,6 +117,7 @@ export function phaseTick(prev) {
   let phaseRev = 0, phaseCost = 0
   for (const [id, o] of Object.entries(s.biz)) {
     const d = bizDef(id)
+    if (!d) continue // Pass 3.5 stability: purane save me koi aisi biz id ho jo ab data me nahi — crash ki jagah skip
     const w = PHASE_W[d.cat][phaseW]
     const lvMult = 1 + 0.18 * (o.lv - 1)
     const { elasticity, ratingF, mktF, eventF, stockF } = phaseDemand(d, o, s, phaseW)
@@ -162,6 +164,25 @@ export function phaseTick(prev) {
   s.xp += 2
   runManagerPhase(s, bizDef, fmt)
   if (s.phase === 3) endDay(s); else s.phase += 1
+  sanitizeNums(s)
+  return s
+}
+
+// Pass 3.5 stability: koi bhi core number NaN/Infinity ho jaye to game crash ki jagah surakshit default.
+const NUM_FIELDS = ['cash', 'bank', 'sip', 'bonds', 'receivables', 'monthProfit', 'dayRevenue', 'dayCosts', 'xp']
+export function sanitizeNums(s) {
+  for (const k of NUM_FIELDS) if (!Number.isFinite(s[k])) s[k] = 0
+  if (!Number.isFinite(s.supplier) || s.supplier <= 0) s.supplier = 1
+  if (!Number.isFinite(s.sentiment)) s.sentiment = 0
+  if (!Number.isFinite(s.cash)) s.cash = 0
+  for (const o of Object.values(s.biz || {})) {
+    if (!Number.isFinite(o.stock)) o.stock = 50
+    o.stock = Math.min(100, Math.max(0, o.stock))
+    if (!Number.isFinite(o.price) || o.price <= 0) o.price = 1
+    if (!Number.isFinite(o.rating)) o.rating = 4
+    if (!Number.isFinite(o.profitTotal)) o.profitTotal = 0
+    if (!Number.isFinite(o.profitToday)) o.profitToday = 0
+  }
   return s
 }
 
@@ -186,8 +207,18 @@ function endDay(s) {
   s.supplier = supplierDrift(s, rnd, volF, infF)
   s.sentiment = Math.max(-3, Math.min(3, s.sentiment + rnd(-0.7, 0.7) * volF))
   s.seasonBoost = seasonBoostFor(s.day)
-  // rivals grow — Rival AI Engine
+  // rivals grow — Rival AI Engine (Pass 3.5: khiladi ki NW rival engine ko di taaki woh react kare)
+  const prevTop = topRival(s)
+  const prevTopName = prevTop ? prevTop.name : null
+  const prevPlayerRank = [...s.rivals].filter((r) => r.nw > netWorth(s)).length
+  s._playerNw = netWorth(s)
   growRivals(s, rnd)
+  // Rank badlav ki khabar — rivalry me drama yahi se aata hai
+  const newTop = topRival(s)
+  const newPlayerRank = [...s.rivals].filter((r) => r.nw > s._playerNw).length
+  if (prevTopName && newTop && newTop.name !== prevTopName) s.news = [{ day: s.day + 1, text: ` Sheher Times: Rich List me ulat-pher — ${newTop.name} ab #1 hai, ${prevTopName} peeche hata.` }, ...s.news].slice(0, 12)
+  else if (newPlayerRank < prevPlayerRank) s.news = [{ day: s.day + 1, text: ` Sheher Times: Sayonara Empire ne ek aur rival ko peeche chhoda! Ab rank #${newPlayerRank + 1}. Sheher me charcha hai.` }, ...s.news].slice(0, 12)
+  else if (newPlayerRank > prevPlayerRank) s.news = [{ day: s.day + 1, text: ` Sheher Times: Ek rival tumse aage nikal gaya — ab tum rank #${newPlayerRank + 1} par ho. Jawabi hamla baki hai.` }, ...s.news].slice(0, 12)
   // random event — 2400 wali badi library se, frequency setting ke hisaab se
   if (Math.random() < 0.3 * ((s.settings && s.settings.eventFreq) || 1)) {
     const ev = randomEvent()
