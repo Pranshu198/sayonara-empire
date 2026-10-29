@@ -15,6 +15,7 @@ export function StatsPanel({ s }) {
   const tr = statsText(s.settings)
   const nw = useMemo(() => netWorth(s), [s])
   const [tick, setTick] = useState(0)
+  const [wfSel, setWfSel] = useState(null)
   useEffect(() => { const iv = setInterval(() => setTick((t) => t + 1), 1000); return () => clearInterval(iv) }, [])
 
   const life = s.life || { rev: 0, costs: 0, tax: 0, wages: 0, customers: 0, items: 0, phases: 0, bestDayProfit: null, worstDayProfit: null, bestDay: 0, worstDay: 0, biggestDayCost: 0, streak: 0, longestStreak: 0, milestones: {}, lifeStartDay: s.day }
@@ -118,6 +119,30 @@ export function StatsPanel({ s }) {
             <b>{Math.round((v / bdTotal) * 100)}%</b>
           </div>
         ))}
+      </Section>
+
+      <Section id="stats_waterfall" title={tr.waterfall} defaultOpen={false}>
+        {(() => {
+          if (!s.lastDayReport || !s.lastBreakdown) return <p className="muted">{tr.wfEmpty}</p>
+          const rev = s.lastDayReport.revenue || 0
+          const parts = [[tr.cogs, s.lastBreakdown.cogs || 0, '#e879f9'], [tr.wages, s.lastBreakdown.wages || 0, '#f5c542'], [tr.rent, s.lastBreakdown.rent || 0, '#60a5fa'], [tr.util, s.lastBreakdown.util || 0, '#34d399'], [tr.wastage, s.lastBreakdown.wastage || 0, '#f87171'], [tr.interest, s.lastBreakdown.interest || 0, '#a78bfa']].filter((p) => p[1] > 0)
+          let cum = rev
+          const steps = [{ label: tr.wfRevenue, val: rev, from: 0, to: rev, col: '#f5c542', total: true }]
+          for (const [l, v, col] of parts) { steps.push({ label: l, val: -v, from: cum - v, to: cum, col }); cum -= v }
+          steps.push({ label: tr.wfProfit, val: cum, from: 0, to: cum, col: cum >= 0 ? '#2ee06f' : '#ff5252', total: true })
+          const max = Math.max(rev, 1)
+          return <>
+            {steps.map((st, i) => (
+              <button className="wf-row" key={i} onClick={() => setWfSel(st)} aria-label={`${st.label} ${fmt(st.val)}`}>
+                <span className="wf-lbl">{st.label}</span>
+                <span className="wf-track"><i style={{ left: (Math.max(0, st.from) / max) * 100 + '%', width: Math.max(1.5, (Math.abs(st.to - st.from) / max) * 100) + '%', background: st.col }} /></span>
+                <b className={st.total ? (st.val >= 0 ? 'pos' : 'neg') : 'neg'}>{fmt(st.val)}</b>
+              </button>
+            ))}
+            {wfSel && <p className="small" style={{ marginTop: 6 }}><b>{wfSel.label}:</b> {fmt(wfSel.val)}{wfSel.total ? '' : ` (${((Math.abs(wfSel.val) / Math.max(1, rev)) * 100).toFixed(1)}% of revenue)`}</p>}
+            <p className="muted">{tr.wfNote}</p>
+          </>
+        })()}
       </Section>
 
       <Section id="stats_life" title={tr.lifetime} defaultOpen={false}>

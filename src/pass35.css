@@ -48,6 +48,13 @@
 nav.tabbar button{position:relative}
 .hud-help{margin-left:auto;background:var(--surface2);border:1px solid var(--line);color:var(--muted);width:38px;height:38px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .hud-help:active{transform:scale(.94)}
+/* P&L Waterfall (Stats) */
+.wf-row{display:flex;align-items:center;gap:9px;width:100%;background:none;border:none;border-bottom:1px solid #141414;color:var(--text);padding:7px 0;min-height:40px;text-align:left;cursor:pointer}
+.wf-row:last-of-type{border-bottom:none}
+.wf-lbl{width:104px;flex-shrink:0;font-size:12px;color:var(--muted)}
+.wf-track{flex:1;position:relative;height:15px;background:#121212;border-radius:5px;overflow:hidden}
+.wf-track i{position:absolute;top:0;height:100%;border-radius:5px;display:block}
+.wf-row b{width:74px;text-align:right;font-size:12.5px;font-variant-numeric:tabular-nums}
 /* Away card */
 .away-card{background:linear-gradient(160deg,#160b2e,#0a0a0a);border:1px solid #3b2070}
 [dir="rtl"] .fab{right:auto;left:max(14px,calc(50% - 252px))}
